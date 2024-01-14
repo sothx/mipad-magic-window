@@ -10,5 +10,7 @@
 
 <a href="https://ybcq.github.io/2023/02/12/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91MIUI%E5%B9%B3%E8%A1%8C%E8%A7%86%E7%95%8C%E5%85%A8%E6%8E%A2%E7%B4%A2/" target="_blank">【原创教程】MIUI平行视界全探索 —— 御坂初琴软件屋</a>
 
+Tips:使用MT管理器可用方便地获取应用的Activity 记录
+
 
 
