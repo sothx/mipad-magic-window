@@ -1,0 +1,2098 @@
+<package_config>
+    <package name="cn.com.langeasy.LangEasyLexis" fullRule="*" />
+    <package name="com.tencent.mm" fullRule="nra:cr:rcr" />
+    <!-- package name="com.quark.browser" fullRule="nra:cr:rcr:nr" /-->
+    <package name="com.xunmeng.pinduoduo"
+        activityRule="com.xunmeng.pinduoduo.login.LoginActivity,com.xunmeng.pinduoduo.activity.NewPageFoldActivity"
+        clearTop="false" relaunch="false" isShowDivider="true"
+        splitPairRule="com.xunmeng.pinduoduo.activity.NewPageFoldActivity:*,com.xunmeng.pinduoduo.ui.activity.HomeActivity:*"
+        transitionRules="com.xunmeng.pinduoduo.activity.NewPageMaskActivity,com.xunmeng.pinduoduo.login.PhoneLoginActivity,com.xunmeng.pinduoduo.ui.activity.MainFrameActivity,com.xunmeng.pinduoduo.permission.request.PermissionRequestActivityV2" />
+    <package name="com.baidu.searchbox" isShowDivider="true" supportFullSize="true"
+        splitPairRule="com.baidu.searchbox.MainActivity:*"
+        activityRule="com.baidu.searchbox.video.feedflow.tab.VideoTabActivity"
+        transitionRules="com.baidu.searchbox.SplashActivity,com.baidu.searchbox.CodeScannerActivity,com.baidu.searchbox.ugc.activity.LocalAlbumDelegateActivity,com.baidu.searchbox.permission.PermissionActivity" />
+    <package name="com.zhihu.android" activityRule="com.zhihu.android.app.ebook.activity.EBookHostActivity"
+        isShowDivider="true" supportFullSize="true"
+        splitPairRule="com.zhihu.android.app.ui.activity.MainActivity:*"
+        flags="ignoreActivityBelowWhenJudgeMiddle:com.zhihu.android.app.ui.activity.TransActivity,com.zhihu.android.app.ui.activity.DealLoginActivity"
+        transitionRules="com.zhihu.android.app.ebook.activity.EBookHostActivity,com.zhihu.android.app.ui.activity.LaunchAdActivity,com.zhihu.android.app.ui.activity.TransActivity,com.zhihu.android.app.ui.activity.LauncherActivity,com.zhihu.android.panel.ui.attach.PanelAttachActivity,com.zhihu.android.app.ui.activity.SocialOauthActivity,com.zhihu.android.app.ui.activity.HostActivity" />
+    <package name="com.jingdong.app.mall"
+        placeholder="com.jingdong.app.mall.MainFrameActivity:com.jingdong.app.mall.home.activity.MainRightWebActivity" scaleMode="1"
+        splitPairRule="com.jingdong.app.mall.MainFrameActivity:*"
+        transitionRules="com.jingdong.app.mall.main.MainActivity" />
+    <package name="tv.danmaku.bili" activityRule="com.bilibili.upper.module.archive.activity.ArchiveTempActivity"
+        isShowDivider="true" disableSensor="true"
+        splitPairRule="tv.danmaku.bili.MainActivityV2:*"
+        transitionRules="tv.danmaku.bili.sms.SmsLoginDialogActivityV2,com.bilibili.teenagersmode.ui.TeenagersModeDialogActivity,tv.danmaku.bili.ui.answer.AnswerDialogTransferActivity,com.bilibili.bilibililive.ui.room.modresource.BlinkModResourceLoadingActivity,com.bilibili.bilibililive.ui.room.BlinkRoomActivityV2,com.bilibili.lib.fasthybrid.blrouter.SADispatcherActivity,com.bilibili.lib.fasthybrid.container.GameContainerActivity0" />
+    <package name="com.ss.android.lark.kami" activityRule="com.ss.lark.android.signinsdk.v2.featurec.login.LoginClearTaskActivity,com.ss.lark.android.signinsdk.v2.featurec.login_input.LoginInputActivity,com.ss.lark.android.signinsdk.v2.featurec.InputCodeActivity,com.ss.android.lark.authorization.AuthorizationActivity,com.ss.android.lark.guide.landing.general.ui.GuidePageActivity,com.ss.android.lark.main.splash.SplashAdActivity"
+        isShowDivider="true" supportFullSize="true"
+        splitPairRule="com.ss.android.lark.main.app.MainActivity:*" splitRatio="0.4"
+        transitionRules="com.ss.android.lark.ka.KaLoginActivity,com.tt.miniapphost.placeholder.MiniappTabActivity0,com.ss.android.lark.threadwindow.ThreadWindowActivity,com.miui.example.A1Activity,com.miui.example.A2Activity,com.bytedance.lark.webview.container.impl.WebContainerMainProcessActivity,com.ss.android.lark.passport.ka.KaLoginActivity" />
+    <package name="com.ss.android.lark" activityRule="com.ss.lark.android.signinsdk.v2.featurec.login.LoginClearTaskActivity,com.ss.lark.android.signinsdk.v2.featurec.login_input.LoginInputActivity,com.ss.lark.android.signinsdk.v2.featurec.InputCodeActivity,com.ss.android.lark.authorization.AuthorizationActivity,com.ss.android.lark.guide.landing.general.ui.GuidePageActivity,com.ss.android.lark.main.splash.SplashAdActivity"
+        isShowDivider="true" supportFullSize="true"
+        splitPairRule="com.ss.android.lark.main.app.MainActivity:*" splitRatio="0.4"
+        transitionRules="com.ss.android.lark.ka.KaLoginActivity,com.tt.miniapphost.placeholder.MiniappTabActivity0,com.ss.android.lark.threadwindow.ThreadWindowActivity,com.bytedance.lark.webview.container.impl.WebContainerMainProcessActivity,com.ss.android.lark.passport.ka.KaLoginActivity" />
+    <package name="com.A17zuoye.mobile.homework" activityRule="com.A17zuoye.mobile.homework.primary.activity.PrimaryHomeWorkActivity,com.yiqizuoye.library.papercalculaterecognition.activity.TakePictureActivity"
+        isShowDivider="true" supportFullSize="true"
+        splitPairRule="com.A17zuoye.mobile.homework.primary.activity.MainActivityNew:*" />
+    <package name="com.cctv.yangshipin.app.androidp" supportFullSize="true" isShowDivider="true" splitRatio="0.4"
+        splitPairRule="com.tencent.videolite.android.ui.HomeActivity:*"
+        transitionRules="com.tencent.videolite.android.component.literoute.OpenActivity,com.tencent.videolite.android.push.api.PushActivity,com.tencent.videolite.android.ui.huawei.AgreementActivity,com.tencent.videolite.android.ui.huawei.AgreementChangedActivity,com.tencent.videolite.android.ui.GuidePageActivity" />
+    <package name="com.xiachufang" isShowDivider="true"
+        splitPairRule="com.xiachufang.activity.home.HomeActivity:*,com.xiachufang.activity.recipe.SearchResultsActivity:com.xiachufang.activity.recipe.RecipeDetailActivity,com.xiachufang.essay.ui.EssaySearchActivity:com.xiachufang.activity.recipe.RecipeDetailActivity" />
+    <package name="com.bilibili.comic" isShowDivider="true" supportFullSize="true"
+        splitPairRule="com.bilibili.comic.home.view.FlutterMainActivity:*,com.bilibili.comic.home.view.MainActivity:*" />
+    <package name="com.ss.android.auto"
+        activityRule="com.ss.android.garage.activity.CarAtlasActivity,com.ss.android.mediachooser.MediaChooserActivity"
+        splitPairRule="com.ss.android.auto.activity.SplashActivity:*"
+        transitionRules="com.ss.android.article.base.feature.app.schema.AdsAppActivity,com.ss.android.auto.activity.UploadBrowserActivity,com.bytedance.bdauditsdkbase.permission.ui.PermissionMaskActivity,com.ss.android.article.base.feature.detail2.view.NewDetailActivity,com.ss.android.auto.ugc.video.activity.UgcVideoDetailActivity,com.ss.android.auto.ugc.video.activity.UgcNewDetailActivity" />
+    <package name="com.suning.mobile.ebuy" scaleMode="1"
+        placeholder="com.suning.mobile.ebuy.host.MainActivity:com.suning.mobile.foldingscreen.SuningFoldingActivity"
+        relaunch="false" splitPairRule="com.suning.mobile.ebuy.host.MainActivity:*" />
+    <package name="cn.xuexi.android" activityRule="com.taobao.ma.ui.ScanCombineActivity" transitionRules="com.alibaba.android.rimet.biz.SplashActivity,com.alibaba.android.rimet.biz.privacy.PrivacyShowDialogActivity" isShowDivider="true" />
+    <package name="com.baidu.searchbox.lite" isShowDivider="true" supportFullSize="true"
+        splitPairRule="com.baidu.searchbox.MainActivity:*"
+        transitionRules="com.baidu.searchbox.CodeScannerActivity,com.baidu.searchbox.discovery.novel.NovelHomeActivity,com.baidu.searchbox.permission.PermissionActivity,com.baidu.searchbox.account.userinfo.activity.PortraitSettingActivity,com.baidu.searchbox.CommandHandleActivity,com.baidu.sapi2.activity.social.WXLoginActivity,com.tencent.connect.common.AssistActivity,com.baidu.searchbox.location.activity.LocationEmptyActivity,com.baidu.searchbox.lite.wxapi.WXEntryActivity,com.baidu.sapi2.activity.LoginActivity,com.baidu.searchbox.hybrid.container.TaskImmerseBrowserActivity" />
+    <package name="com.tigerbrokers.stock"
+        activityRule="base.stock.community.ui.tweet.LargeScreenTweetDetailActivity,com.tigerbrokers.stockdetail.ui.activity.StockLargeScreenActivity2,com.tigerbrokers.stockdetail.ui.activity.StockDetailFoldFullScreenActivity,com.tigerbrokers.stockdetail.ui.activity.StockDetailPortraitWrapperActivity,com.tigerbrokers.stock.ui.detail.ShareScreenShotActivity,com.tigerbrokers.stock.ui.detail.ShareScreenShotActivity,com.tigerbrokers.stock.LandscapeFoldScreenActivity"
+        splitPairRule="com.tigerbrokers.stock.ui.MainActivity2:base.stock.community.ui.tweet.TweetDetailActivity"
+        transitionRules="com.tigerbrokers.stock.LandscapeFoldScreenActivity" />
+    <package name="com.eastmoney.android.berlin" activityRule="com.eastmoney.android.news.activity.FullscreenVideoActivity,com.eastmoney.android.account.activity.PassportLoginActivity,com.eastmoney.android.module.launcher.internal.settings.SkinThemeSettingActivity"
+        isShowDivider="true" supportFullSize="true"
+        splitPairRule="com.eastmoney.android.module.launcher.internal.home.HomeActivity:*" />
+    <package name="com.duowan.kiwi" activityRule="com.duowan.kiwi.teenager.impl.activity.TeenagerActivity"
+        isShowDivider="true" relaunch="false"
+        splitPairRule="com.duowan.kiwi.homepage.Homepage:*"
+        transitionRules="com.duowan.kiwi.simpleactivity.SplashActivity,com.duowan.kiwi.adsplash.view.AdSplashActivity" />
+    <package name="com.icloudoor.bizranking" />
+    <package name="com.intsig.BizCardReader" />
+    <package name="com.banma" />
+    <package name="com.kwai.thanos" />
+    <package name="com.xvideostudio.videoeditor" />
+    <package name="com.hhdd.kada" activityRule="com.hhdd.kada.module.bookplayer.BookInfoActivity" isShowDivider="true" />
+    <package name="com.winking.pwdcheck" />
+    <package name="com.wyfc.writenovel" />
+    <package name="com.xunai.sleep" />
+    <package name="com.dalongtech.cloud" isShowDivider="true" />
+    <package name="com.wxkj.relx.relx" />
+    <package name="com.up366.mobile" />
+    <package name="com.zplay.hamster.mi" />
+    <package name="com.dp.android.elong" />
+    <package name="com.jtjr99.jiayoubao" />
+    <package name="com.wbxm.icartoon" isShowDivider="true" />
+    <package name="com.psyone.brainmusic" isShowDivider="true" />
+    <package name="cc.kdqbxs.reader" />
+    <package name="com.iningke.jiakaojl" />
+    <package name="com.daofeng.zuhaowan" isShowDivider="true"
+        transitionRules="com.daofeng.zuhaowan.ui.splash.view.SplashActivity" />
+    <package name="com.thinkive.investxdtx" />
+    <package name="com.vivo.space" />
+    <package name="com.kuke" />
+    <package name="so.ofo.labofo" />
+    <package name="com.adinnet.xlebike" />
+    <package name="com.chipsea.btcontrol" />
+    <package name="com.p1.mobile.putong" isShowDivider="true" supportFullSize="true" />
+    <package name="wind.android" />
+    <package name="com.qcymall.earphonesetup" />
+    <package name="com.tulingweier.yw.minihorsetravelapp" />
+    <package name="com.unicde.smartcity_lyg" />
+    <package name="com.jimi.tuqiang" />
+    <package name="com.jiaoyinbrother.monkeyking" />
+    <package name="com.haier.uhome.washer" />
+    <package name="com.xpx365.projphoto" relaunch="true" />
+    <package name="com.talk51.kid" transitionRules="com.talk51.login.LoginCodeOrAccountActivity" isShowDivider="true" />
+    <package name="com.f100.android" relaunch="true" />
+    <package name="com.earth.bdspace" isShowDivider="true" />
+    <package name="com.geek.weathergj365" />
+    <package name="com.seewo.en" isShowDivider="true" />
+    <package name="com.example.examda" finishSecondaryWithPrimary="0" isShowDivider="true" />
+    <package name="com.kuaiyin.player" isShowDivider="true" />
+    <package name="com.kanlixiang.android" />
+    <package name="com.tencent.weishi" splitPairRule="com.tencent.oscar.module.main.MainActivity:*"
+        activityRule="com.tencent.weseevideo.schema.MovieTemplateDownloadActivity" />
+    <package name="com.chrissen.card" />
+    <package name="com.vphonegaga.titan" />
+    <package name="com.hcrs" />
+    <package name="com.zmyouke.course" />
+    <package name="com.android.weici.senior.student" />
+    <package name="com.zlfcapp.batterymanager" />
+    <package name="com.yunmi.water" />
+    <package name="com.xbcx.gdwx3" />
+    <package name="com.moliao.main" />
+    <package name="cn.runtu.app.android" />
+    <package name="cn.dxy.idxyer" />
+    <package name="com.netease.buff" />
+    <package name="com.xmbranch.morestep" />
+    <package name="com.subway.bjsubway" />
+    <package name="gov.pianzong.androidnga" />
+    <package name="com.haobo.huilife" />
+    <package name="com.puscene.client" />
+    <package name="com.delicloud.app.smartoffice" />
+    <package name="com.xiaozhu.xzdz" />
+    <package name="com.chunyuqiufeng.gaozhongapp.zhiyuan" />
+    <package name="com.dmzjsq.manhua" />
+    <package name="com.diershoubing.erbing" />
+    <package name="com.yzxx.ljxtc.mi" />
+    <package name="com.shuidi.sdhealth" />
+    <package name="com.chinablue.tv" />
+    <package name="com.tuanzi.savemoney"
+        transitionRules="com.tuanzi.account.main.BlackLoginActivity,com.tuanzi.savemoney.main.StartAdvertiseActivity" />
+    <package name="com.chinasofti.shanghaihuateng.jnmetroapp" />
+    <package name="com.wandafilm.app" />
+    <package name="com.cqmc.client" />
+    <package name="com.qingdaonews.bus" />
+    <package name="com.huiian.timing" />
+    <package name="com.inspur.vista.labor" />
+    <package name="com.esound.app" />
+    <package name="com.leduoworks.gpstoolbox" />
+    <package name="com.laifenqi.android.app" />
+    <package name="com.tima.gac.passengercar" />
+    <package name="cn.com.changan.cvim" />
+    <package name="com.bet007.mobile.new007" />
+    <package name="com.ifeng.newvideo" />
+    <package name="cn.com.spdb.mobilebank.per" />
+    <package name="cn.weli.story" />
+    <package name="com.hujiang.dict" />
+    <package name="com.kugou.android.ringtone" isShowDivider="true" supportFullSize="true" />
+    <package name="com.runsdata.socialsecurity.shanxi" />
+    <package name="com.jiuyu.sptcc.cordova" />
+    <package name="com.dreamtd.kjshenqi" />
+    <package name="com.pa.health" />
+    <package name="com.vanke.activity" relaunch="false"
+        splitPairRule="com.vanke.activity.module.common.SplashAct:com.vanke.activity.module.main.NewMainActivity,com.vanke.activity.module.main.NewMainActivity:*" />
+    <package name="com.geek.jk.weather" />
+    <package name="com.cat.supercleaner.cn" />
+    <package name="com.qianxunmall.wheelquery" />
+    <package name="com.jingcai.apps.qualitydev" />
+    <package name="com.dinoenglish.yyb" activityRule="com.dinoenglish.book.clickread.ClickActivity" relaunch="false" />
+    <package name="com.steampy.app" />
+    <package name="com.somer.sq.puzzle" relaunch="false" />
+    <package name="com.psbc.citizencard" />
+    <package name="com.yiyou.ga" supportCameraPreview="false" isShowDivider="true"
+        transitionRules="com.yanzhenjie.permission.bridge.BridgeActivity,com.quwan.tt.biz.postDetail.UgcPostDetailActivity" />
+    <package name="cn.com.sina.sports" />
+    <package name="time.master.aiera.com" />
+    <package name="com.iflytek.readassistant" />
+    <package name="com.antfortune.wealth"
+        splitPairRule="com.alipay.mobile.quinox.LauncherActivity:*" />
+    <package name="com.iflytek.vflynote"
+        transitionRules="com.iflytek.vflynote.permission.PermissionActivity" />
+    <package name="com.cloudy.linglingbang" relaunch="false" />
+    <package name="com.draw.guess" />
+    <package name="co.runner.app" />
+    <package name="com.svw.sc.mos" />
+    <package name="cn.hsa.app" />
+    <package name="com.quqi.quqioffice" />
+    <package name="com.remotecontrol.homef" relaunch="true" />
+    <package name="space.xinzhi.map" fullRule="nra" />
+    <package name="com.aikan" />
+    <package name="com.sina.mail.free" />
+    <package name="com.mobilesecurity.lite" />
+    <package name="com.bilibili.qing" />
+    <package name="com.wuyissds.red.app" />
+    <package name="com.kanman.allfree" />
+    <package name="com.jianzhiman.customer" />
+    <package name="com.zzbank.pibp" />
+    <package name="com.ctrip.izuche" />
+    <package name="com.fy.tjxd.net.mi" />
+    <package name="com.relief.space.master.cleaner" />
+    <package name="cn.com.weilaihui3" />
+    <package name="com.woyue.batchat" />
+    <package name="com.record.memo" />
+    <package name="com.fantuankanshujbk" />
+    <package name="com.mc.cpyr.wywifizs.jswifi" />
+    <package name="com.missu.girlscalendar" />
+    <package name="com.bsit.coband" />
+    <package name="com.cssweb.android.main" />
+    <package name="com.jieshun.jscarlife" />
+    <package name="com.quanminweather.weige" />
+    <package name="com.duoduo.opera" />
+    <package name="com.hbmcc.heshenghuo" />
+    <package name="com.tencent.k12" />
+    <package name="com.huohua.android" />
+    <package name="com.benew.ntt" />
+    <package name="com.tencent.qqmusic" activityRule="com.tencent.qqmusic.activity.YoungModeActivity,com.tencent.qqmusic.activity.PortMVPlayerActivity"
+        splitPairRule="com.tencent.qqmusic.activity.AppStarterActivity:*"
+        transitionRules="com.tencent.qqmusic.activity.baseactivity.StartUpPrivacyPolicyActivity,com.tencent.qqmusic.activity.baseactivity.StartConfigActivity" />
+    <package name="info.red.virtual" />
+    <package name="cn.com.njcb.android.mobilebank" />
+    <package name="com.tadu.read" relaunch="true" />
+    <package name="com.jzyd.coupon" />
+    <package name="com.p1.mobile.light" />
+    <package name="com.dtdream.sygovernment" />
+    <package name="com.icbc.im" />
+    <package name="com.yirendai" />
+    <package name="co.xingtuan.tingkeling" />
+    <package name="com.haizitong.hzt.jia" />
+    <package name="com.jx.cmcc.ict.ibelieve" />
+    <package name="cn.colorv" />
+    <package name="com.houdask.app" />
+    <package name="com.renrendai.haohuan" />
+    <package name="cc.jianke.jianzhike" />
+    <package name="com.unnoo.quan" />
+    <package name="swin.com.iapp" />
+    <package name="com.meituan.grocery.gh" />
+    <package name="com.qihoo.cleandroid_lite" />
+    <package name="com.ftl.redmi" />
+    <package name="com.quan.taotaoquan" relaunch="true" />
+    <package name="com.heytap.health" />
+    <package name="com.android.tiku.architect" />
+    <package name="com.qihoo.srouter.n300" />
+    <package name="com.kingsoft" isShowDivider="true" />
+    <package name="com.martian.ttbookhd" isShowDivider="true"
+        activityRule="com.martian.mibook.activity.reader.ReadingActivity"
+        splitPairRule="com.martian.mibook.activity.book.TeenagerBookmallActivity:*,com.martian.mibook.activity.Homepage:*" />
+    <package name="net.whty.app.eyu" isShowDivider="true" />
+    <package name="com.supi.supireader" />
+    <package name="com.dingda.app" />
+    <package name="com.iksocial.queen" />
+    <package name="com.zhanlang.notes" isShowDivider="true" />
+    <package name="com.haojiazhang.activity" isShowDivider="true" />
+    <package name="org.fungo.fungoliveallstar" />
+    <package name="cn.mama.pregnant" />
+    <package name="com.flyingeffects.com" />
+    <package name="com.hjwordgames" />
+    <package name="com.youqi.miaomiao" />
+    <package name="com.mmc.fengshui.pass" />
+    <package name="com.alo7.android.student" />
+    <package name="com.aolgsky.android.show.hai" />
+    <package name="com.smkj.zzj" relaunch="false" />
+    <package name="com.palmtop.android" />
+    <package name="com.meishubao.artaiclass" isShowDivider="true" />
+    <package name="com.wochacha" />
+    <package name="com.zhumadian.apps.android.myzmd" />
+    <package name="com.wifi.accelerator" />
+    <package name="com.lmiot.autotool"
+        transitionRules="com.lmiot.autotool.Activity.ActionActivity" />
+    <package name="com.hundsun.qy.hospitalcloud.bj.xhhosp.hsyy" />
+    <package name="com.tools.audioeditor" />
+    <package name="com.cmcc.hemuyi" />
+    <package name="com.suma.gztong" />
+    <package name="com.chudiangameplay.android" />
+    <package name="com.galaxy.stock" />
+    <package name="bingdic.android.activity"
+        transitionRules="bingdic.android.module.personalization.activity.BasicSettingActivity" />
+    <package name="com.immomo.vchat" />
+    <package name="com.seetong.app.seetong" />
+    <package name="com.messi.languagehelper" />
+    <package name="com.wepie.wespy" />
+    <package name="com.feiniu.actogo" relaunch="true" />
+    <package name="com.tencent.now" />
+    <package name="com.infinitus.bupm" />
+    <package name="com.ushaqi.zhuishushenqi.adfree" />
+    <package name="com.baicizhan.ireading" />
+    <package name="com.imassbank.loan" />
+    <package name="com.shensu.jmb" />
+    <package name="com.jime.encyclopediascanning" />
+    <package name="com.wonderfull.mobileshop" />
+    <package name="com.xiaoshuo.yueluread" />
+    <package name="com.fcbox.hiveconsumer" />
+    <package name="com.mydream.wifi" />
+    <package name="cn.poco.jane" />
+    <package name="com.denglin.duck" />
+    <package name="com.chinaamc.MainActivityAMC" />
+    <package name="com.hlg.daydaytobusiness" />
+    <package name="com.lmiot.xyclick" />
+    <package name="mall.weizhegou.shop" />
+    <package name="com.qijia.o2o" />
+    <package name="com.zmlearn.course.am" />
+    <package name="com.nt.ptc.enterprise" />
+    <package name="com.xwtec.sd.mobileclient" />
+    <package name="com.intotherain.voicechange" />
+    <package name="com.abm.app" />
+    <package name="com.shark.jizhang" />
+    <package name="com.dlmetro.app" />
+    <package name="com.longshine.smartcity" />
+    <package name="tv.acfun.lite.video" isShowDivider="true" />
+    <package name="com.fqapps.fdsh" />
+    <package name="com.chineseall.reader" relaunch="false" />
+    <package name="com.rong360.app" />
+    <package name="com.lingan.yunqi" />
+    <package name="com.bestv.app" isShowDivider="true" />
+    <package name="com.allhistory.dls.marble" />
+    <package name="com.baidu.xin.aiqicha" />
+    <package name="com.iMMcque.VCore" />
+    <package name="com.ecommerce.xmnair" />
+    <package name="com.xinpianchang.newstudios" />
+    <package name="com.cecurs.dazhou" />
+    <package name="com.vipkid.app" />
+    <package name="com.xtuone.android.syllabus" />
+    <package name="cn.xdf.roombox.app" activityRule="cn.xdf.roombox.star.MyStarActivity" isShowDivider="true" />
+    <package name="com.founder.hsdt" relaunch="true" />
+    <package name="com.xinmang.videoconvert" />
+    <package name="com.taou.maimai"
+        activityRule="com.taou.maimai.growth.component.reglogv7.RegLogV7Activity" clearTop="false"
+        splitPairRule="com.taou.maimai.MainActivity:*"
+        transitionRules="com.taou.maimai.PrivacyDialogActivity,com.taou.maimai.growth.component.reglogv7.LoginNewV7Activity,com.taou.maimai.qrcode.ScanHandlerActivity,com.taou.maimai.FlowBridgeActivity" />
+    <package name="com.tencent.mp" />
+    <package name="cn.fmsyjhgb" />
+    <package name="com.nike.snkrs" />
+    <package name="cn.ulearning.yxy" />
+    <package name="cn.com.pcauto.android.browser" relaunch="false" />
+    <package name="cn.nineton.sayingwrod" />
+    <package name="com.csair.mbp" />
+    <package name="com.rytong.airchina" />
+    <package name="com.pingan.lifecircle" />
+    <package name="com.fanqie.lizhi" isShowDivider="true" />
+    <package name="com.yjqlds.clean" relaunch="true" />
+    <package name="com.gxrcw.activity" />
+    <package name="com.fantuantanshujbk" />
+    <package name="com.neusoft.gopaynt" />
+    <package name="com.wukongtv.wkremote.client" />
+    <package name="com.cutler.dragonmap" fullRule="nra" />
+    <package name="com.vgjump.jump" />
+    <package name="com.tzb.mobilehub" />
+    <package name="com.glodon.constructioncalculators" />
+    <package name="com.kuaiyin.mj.music" />
+    <package name="com.shanbay.news" />
+    <package name="cn.com.bjx.bjxtalents" />
+    <package name="com.gengcon.android.jccloudprinter" />
+    <package name="com.app.Minibox" />
+    <package name="com.aikucun.akapp" />
+    <package name="com.now.video" relaunch="true" />
+    <package name="com.sankuai.meituan.dispatch.homebrew" />
+    <package name="com.yimo.wfysds" />
+    <package name="com.mogujie" />
+    <package name="com.goodhelper.wifi" />
+    <package name="com.dawenming.novelreader" />
+    <package name="all.mobileparttimejob" />
+    <package name="com.shanp.qgsb" />
+    <package name="com.hoolai.sds.mi" />
+    <package name="com.shanbay.listen" />
+    <package name="com.tool.txtqbydq" />
+    <package name="com.oneapp.max.cleaner.booster.cn" />
+    <package name="com.shuqi.controller" activityRule="com.shuqi.reader.ShuqiReaderActivity"/>
+    <package name="com.xjlmh.classic" relaunch="true" />
+    <package name="com.nowcasting.activity" />
+    <package name="com.genshuixue.student" />
+    <package name="com.tuotuo.solo" />
+    <package name="com.sainti.eduread" />
+    <package name="com.newedge.jupaoapp" />
+    <package name="com.weipaitang.wpt" />
+    <package name="com.alipay.m.portal" />
+    <package name="cn.com.hsbc.hsbcchina" />
+    <package name="com.luojilab.player" activityRule="com.luojilab.reader.MainActivity" isShowDivider="true" />
+    <package name="com.ailiyong.jojo.chants" activityRule="com.sinyee.babybus.android.videoplay.VideoPlayActivity" isShowDivider="true" />
+    <package name="com.tuya.smart" />
+    <package name="com.geek.weather365" />
+    <package name="com.dfg.dftb" />
+    <package name="com.sportq.fit" />
+    <package name="com.qihoo.appstore" isShowDivider="true" />
+    <package name="com.cleanmaster.lite_cn" />
+    <package name="com.iflytek.oshall.ahzwfw" />
+    <package name="com.sunland.app" />
+    <package name="com.shell.sitibv.motorist.china" />
+    <package name="com.inspur.icity.icityapp" />
+    <package name="com.danale.video" />
+    <package name="com.jovetech.CloudSee.temp" />
+    <package name="com.zjsyinfo.smartcity" />
+    <package name="com.sjhl.visionlive" />
+    <package name="com.xstop.videoclip" />
+    <package name="com.baidu.fengchao.ui" />
+    <package name="com.gamersky" />
+    <package name="com.cmcc.qianliyan" />
+    <package name="com.express.relief.wifimaster" />
+    <package name="cn.com.yjpay.shoufubao" />
+    <package name="com.shinyv.cnr" isShowDivider="true"
+        transitionRules="com.linker.xlyt.module.user.login.LoginPhoneActivity,com.linker.xlyt.module.user.login.LoginSMSActivity,com.linker.xlyt.module.children.activity.ChildrenMainActivity" />
+    <package name="org.zzmetro.eticket" />
+    <package name="com.lakala.shanghutong" />
+    <package name="com.netease.mobimail" isShowDivider="true" supportFullSize="true" />
+    <package name="cn.com.enorth.jinyun" />
+    <package name="com.meitu.meipaimv" />
+    <package name="com.un.real.antiscreen" />
+    <package name="com.mxxq.pro" />
+    <package name="com.haokebang.learning" />
+    <package name="com.enniu.xiaolanben" />
+    <package name="com.seriesn" />
+    <package name="com.renrenche.carapp" />
+    <package name="com.chinalife.ebz" />
+    <package name="cn.paperang.mm" supportCameraPreview="false" isShowDivider="true" />
+    <package name="com.knew.feed" />
+    <package name="com.huahua.testing" />
+    <package name="com.baidu.finance" />
+    <package name="cn.damai" />
+    <package name="com.mediaeditor.video" />
+    <package name="com.guanaitong" />
+    <package name="com.drcom.DuoDian" />
+    <package name="com.quanleimu.activity" />
+    <package name="com.icbc.biz.elife" />
+    <package name="com.timemicrotech.miaozou" />
+    <package name="com.beijingshiyou.APP123" />
+    <package name="com.byql.nswd" />
+    <package name="com.i61.draw.live" />
+    <package name="io.dcloud.H51C58F39" relaunch="true" />
+    <package name="com.cleanmaster.mguard_cn" isShowDivider="true" supportFullSize="true" />
+    <package name="com.botvxww.oumxc" />
+    <package name="com.borderxlab.bieyang" />
+    <package name="com.quvideo.xiaoying" />
+    <package name="com.calendar2345" />
+    <package name="com.ymt360.app.mass" />
+    <package name="com.ryx.payment.ruihebao" />
+    <package name="com.yitong.xian.mbank" />
+    <package name="com.wish.callshow" />
+    <package name="cn.shcab.passenger" />
+    <package name="com.elong.hotel.ui" />
+    <package name="com.shipxy.android" />
+    <package name="com.excelliance.dualaid"
+        transitionRules="com.excelliance.kxqp.ui.HelloActivity,com.excelliance.kxqp.user.LoginActivity" />
+    <package name="com.wondertek.paper" isShowDivider="true" supportFullSize="true" />
+    <package name="com.sina.oasis" />
+    <package name="youqu.android.todesk" isShowDivider="true" activityRule="youqu.android.todesk.activity.WelcomeActivity" />
+    <package name="sz.szsmk.citizencard" />
+    <package name="com.abifong.mfxssc" />
+    <package name="com.tlbank" />
+    <package name="com.sxm.yiwei" />
+    <package name="com.bcxin.bbdpro" />
+    <package name="com.hf" />
+    <package name="cn.com.htjc.pay" />
+    <package name="com.csii.csbank" />
+    <package name="com.whs.ylsh" />
+    <package name="com.ctl.student" />
+    <package name="com.shoujiduoduo.ringtone" isShowDivider="true" relaunch="false"
+        transitionRules="com.shoujiduoduo.charge.ChargePermissionFixActivity" />
+    <package name="cn.yiqi.photo" />
+    <package name="com.datayes.irr" />
+    <package name="cn.medlive.android" />
+    <package name="tuoyan.com.xinghuo_daying" isShowDivider="true" />
+    <package name="com.qp333.car" />
+    <package name="com.leixun.taofen8" />
+    <package name="com.rj.syslearning" scaleMode="1" />
+    <package name="com.softin.copydata" />
+    <package name="com.mianfeia.book" />
+    <package name="com.xiaodao.huangli" />
+    <package name="com.mm.calendar" />
+    <package name="com.qinhe.ispeak" relaunch="false" />
+    <package name="com.neusoft.smartcity.henan" />
+    <package name="com.xkw.client" />
+    <package name="com.seewo.easicare.pro" isShowDivider="true" />
+    <package name="com.zhongduomei.rrmj.society" supportFullSize="true" isShowDivider="true" />
+    <package name="com.le123.ysdq" />
+    <package name="com.chaozh.xincao.only.sk" />
+    <package name="com.gem.tastyfood" />
+    <package name="com.android.app.quanmama" />
+    <package name="com.gonlan.iplaymtg" />
+    <package name="com.shsp.cleanmaster" />
+    <package name="com.yicai.news" />
+    <package name="com.jym.mall" transitionRules="com.jym.mall.launch.LaunchActivity" />
+    <package name="cn.missfresh.application"
+        transitionRules="cn.missfresh.module.main.view.SplashActivity" />
+    <package name="com.mercury.ipc" />
+    <package name="com.student.yuwen.yimilan" />
+    <package name="com.tencent.xriver" />
+    <package name="com.quchaogu.dxw" />
+    <package name="com.sprint.cltool.supreme" />
+    <package name="com.guangle.happywalk" />
+    <package name="cn.gzmovement" />
+    <package name="com.comic.isaman" />
+    <package name="com.ichoice.wemay" />
+    <package name="com.mnkllgg.tyyupoohh" />
+    <package name="com.readboy.rbmanager" />
+    <package name="com.zhihu.daily.android" />
+    <package name="com.wondersgroup.app.cqyth.ydzsrs" />
+    <package name="com.cib.cibmb"
+        transitionRules="com.newland.app.ui.firstpage.FirstPageActivity" />
+    <package name="com.icoolme.android.weather" />
+    <package name="com.xiaochang.claw" />
+    <package name="com.pantum.mobileprint" />
+    <package name="com.hzhealth.medicalcare" />
+    <package name="com.uedzen.autophoto" relaunch="false" />
+    <package name="com.kanshu.ksgb.fastread.doudou" />
+    <package name="com.tencent.reading" />
+    <package name="com.hctforgf.gff" />
+    <package name="com.tencent.radio" />
+    <package name="com.lanjing.sports" />
+    <package name="com.we.yuanqu" />
+    <package name="ai.zuoye.app" isShowDivider="true" />
+    <package name="com.baidu.mbaby" />
+    <package name="com.che300.price" />
+    <package name="com.diancanme.changchunnewsmk" />
+    <package name="com.csxx.walker" />
+    <package name="com.helian.wifi" />
+    <package name="com.taobao.movie.android" />
+    <package name="com.mc.ql.qldzg" />
+    <package name="com.showstartfans.activity" />
+    <package name="com.entrobus.dreamlife" />
+    <package name="com.borsche.zyb" />
+    <package name="com.dewmobile.kuaiya" isShowDivider="true" />
+    <package name="vip.qufenqian.speedwifi" />
+    <package name="com.qima.kdt" />
+    <package name="com.pxkjformal.parallelcampus" />
+    <package name="com.lxt.app" />
+    <package name="com.alibaba.mro" />
+    <package name="com.ujigu.ytb" />
+    <package name="com.dianzhong.xgxs" />
+    <package name="com.free_ride.yiwei" />
+    <package name="com.cliff" relaunch="false" isShowDivider="true" transitionRules="com.cliff.ui.discover.publish.PublishViewPointActivity" />
+    <package name="com.cib.xyk" />
+    <package name="com.kuangxiang.novel" />
+    <package name="cn.danatech.xingseapp" />
+    <package name="com.wallstreetcn.news" />
+    <package name="com.nxy.gs" />
+    <package name="me.hongdou.reader" />
+    <package name="com.tieyou.train.ark" />
+    <package name="com.account.book.quanzi" relaunch="false" />
+    <package name="com.saltchucker" />
+    <package name="com.huaai.chho" />
+    <package name="com.ikang.web" />
+    <package name="qsbk.app" />
+    <package name="com.alibaba.ailabs.tg" isShowDivider="true" />
+    <package name="gz.lifesense.weidong" />
+    <package name="com.jlpay.feishua" />
+    <package name="com.yunyi.smartcamera" />
+    <package name="com.mucfc.hqdapp" />
+    <package name="com.babytree.apps.pregnancy" />
+    <package name="com.wlqq" />
+    <package name="com.lysoft.android.lyyd.report" />
+    <package name="com.zhijie.creditloan" />
+    <package name="com.qiyi.video.reader" />
+    <package name="com.plateno.botaoota" />
+    <package name="com.netease.moyi" />
+    <package name="com.jnzc.shipudaquan" />
+    <package name="com.netease.snailread" isShowDivider="true"
+        transitionRules="com.netease.snailread.activity.NewGuideRecommendPopupActivity"
+        activityRule="com.netease.snailread.activity.NewBookNoteActivity,com.netease.snailread.activity.ReadBookNewActivity" />
+    <package name="com.wtyt.goods.driver" />
+    <package name="com.jzzs.ParentsHelper" isShowDivider="true" supportFullSize="true"
+        transitionRules="com.jzzs.ParentsHelper.ui.notice.activity.OpenAppletActivity" />
+    <package name="com.godimage.knockout.free.cn" />
+    <package name="com.baosight.carsharing" />
+    <package name="cool.dingstock.mobile" relaunch="true" />
+    <package name="com.gree.greesmarthome" />
+    <package name="com.eno.android.cj.page" />
+    <package name="cn.com.csbank" />
+    <package name="com.jianyou.swatch" />
+    <package name="com.moji.mjweather" isShowDivider="true" supportFullSize="true"
+        transitionRules="com.moji.mjweather.LauncherActivity" />
+    <package name="cn.cdyl.zwxt" />
+    <package name="com.pingan.yancheng" />
+    <package name="com.bwton.szfreego" />
+    <package name="com.maiju.camera" />
+    <package name="com.icinfo.EZT" />
+    <package name="com.feemoo" />
+    <package name="cn.medlive.guideline.android" />
+    <package name="com.lixiangdong.textscanner" />
+    <package name="com.smkj.audioclip" />
+    <package name="com.jianshu.haruki" />
+    <package name="mobi.wonders.android.apps.smy" />
+    <package name="com.hexin.plat.android.CaitongSecurity" />
+    <package name="com.wswy.wzcx" />
+    <package name="com.youloft.calendar" />
+    <package name="com.zwfw.YueZhengYi" />
+    <package name="com.cctir.huinongbao" />
+    <package name="com.meitu.makeup" />
+    <package name="com.ibplus.client" />
+    <package name="com.example.servyouappzhuhai" />
+    <package name="com.uxin.kilaaudio" isShowDivider="true" />
+    <package name="com.nasoft.socmark" />
+    <package name="com.bytedance.ep.android"
+        splitPairRule="com.bytedance.ep.host.newhome.HomeActivity:*" />
+    <package name="com.ycc365plus.ali" />
+    <package name="com.color.by.number.paint.ly.pixel.art.cn" />
+    <package name="com.hytch.ftthemepark" />
+    <package name="com.hongxiu.app" />
+    <package name="com.greatefunhy.sdgs.mi" />
+    <package name="com.ks.gjykl.mi" />
+    <package name="com.changshuo.ui" finishSecondaryWithPrimary="0" />
+    <package name="com.dheaven.mscapp.SIGFFCNFN" />
+    <package name="com.express.speed.booster.cn" />
+    <package name="cn.com.huishangbank.mbank" />
+    <package name="com.tvbc.maiduidui" isShowDivider="true" />
+    <package name="com.shizi.paomo" />
+    <package name="io.moreless.tide" />
+    <package name="com.themewallpaper.douping" />
+    <package name="com.HaoTuBang.H3DBodyFree" />
+    <package name="com.gumi.spokenenglish" />
+    <package name="com.lanjinger.choiassociatedpress" />
+    <package name="com.lgq.struggle.photo.scanner" />
+    <package name="com.mobile.myeye" />
+    <package name="com.jjs.android.butler" />
+    <package name="com.yek.android.game5173" />
+    <package name="com.gotokeep.keep" supportCameraPreview="false" supportFullSize="true" isShowDivider="true" />
+    <package name="com.unipus" relaunch="false" />
+    <package name="com.uxin.live" finishSecondaryWithPrimary="0" />
+    <package name="com.bytedance.ad.deliver" />
+    <package name="com.orange" />
+    <package name="com.cmplay.tiles2_cn.mi" />
+    <package name="com.youcash.ZYWallet"
+        transitionRules="com.youcash.ZYWallet.BridgeActivity,com.youcash.ZYWallet.StartupActivity" />
+    <package name="az.studio.gkztc" />
+    <package name="com.zjy.ykt" />
+    <package name="hbyc.china.medical.view" />
+    <package name="com.cssq.walker" />
+    <package name="net.afdian.afdian" isShowDivider="true" />
+    <package name="com.pengda.mobile.hhjz" />
+    <package name="com.tgelec.aqsh" />
+    <package name="com.sogou.translator" isShowDivider="true" />
+    <package name="com.rt.market.fresh" />
+    <package name="com.citic21.user" relaunch="true" />
+    <package name="com.flomeapp.flome" />
+    <package name="com.hbrb.jiyun" />
+    <package name="com.shunmao.xsssydq" />
+    <package name="com.sesame.video" isShowDivider="true" />
+    <package name="com.bjtongan.anjia365.llpx" />
+    <package name="com.mxbc.mxsa" />
+    <package name="com.tencent.nbagametime" />
+    <package name="com.Kingdee.Express" />
+    <package name="com.umetrip.android.msky.app" relaunch="true" />
+    <package name="com.kekeclient_" isShowDivider="true" />
+    <package name="com.gopro.smarty" />
+    <package name="com.leeryou.dragonking" />
+    <package name="com.sports.douqiu" isShowDivider="true" />
+    <package name="com.kyscgenuiphone" transitionRules="com.newtzt.activity.hq.activity.tztSearchStockActivity" />
+    <package name="com.qianhuan.wifi.key" />
+    <package name="com.haowan.huabar" relaunch="false" isShowDivider="true" />
+    <package name="com.uroad.carclub" />
+    <package name="com.lloo.w.painting" />
+    <package name="com.nxy.sc" />
+    <package name="com.guazi.newcar"
+        transitionRules="com.guazi.nc.login.view.LoginActivity,com.cars.awesome.uc.ui.guazi.LoginActivity" />
+    <package name="com.dw.ttdezbj.net.mi" />
+    <package name="com.kongtiao.fsefeggw" relaunch="true" />
+    <package name="com.hcc.app" />
+    <package name="vip.qufenqian.intellwifi" />
+    <package name="com.starbaba.cheetahcharge" />
+    <package name="com.qihoo360.mobilesafe" transitionRules="com.qihoo360.mobilesafe.skin.SkinActivity" isShowDivider="true" />
+    <package name="com.teddy.migou" relaunch="false" />
+    <package name="com.fy.qxds.mi" />
+    <package name="com.yixia.youguo" />
+    <package name="com.navinfo.gwead" />
+    <package name="com.together.answer" />
+    <package name="com.weizq" />
+    <package name="com.shanghaigm.mychevy" />
+    <package name="com.hudun.videoedit" />
+    <package name="com.zxscnew" />
+    <package name="com.wangyin.payment" />
+    <package name="com.foxit.mobile.pdf.lite" fullRule="cr" isShowDivider="true" />
+    <package name="com.wuba.huoyun" />
+    <package name="com.bwton.msx.czb" />
+    <package name="cn.youth.school" />
+    <package name="com.nosetime.perfume" relaunch="false" />
+    <package name="com.ys.chongdian" />
+    <package name="com.qsmy.walkmonkey" />
+    <package name="com.yaya.zone" />
+    <package name="com.tencent.qqmusiccall" />
+    <package name="com.xuexiaoyi.xxy" isShowDivider="true" />
+    <package name="cn.iyidui" />
+    <package name="com.memezhibo.android" />
+    <package name="com.camera.ligo" />
+    <package name="com.huya.pitaya" />
+    <package name="com.ichano.athome.camera" />
+    <package name="com.wifi.key" />
+    <package name="com.xmcy.hykb" isShowDivider="true" supportFullSize="true" />
+    <package name="com.ihd.ihardware" />
+    <package name="tv.yixia.bobo" />
+    <package name="com.superstar.fantuan" />
+    <package name="cn.neoclub.uki" />
+    <package name="cn.xiaochuankeji.pipilite" />
+    <package name="com.tencent.kg.android.lite" />
+    <package name="com.qdtevc.teld.app" finishSecondaryWithPrimary="0" />
+    <package name="com.huayi.cme" isShowDivider="true"
+        activityRule="com.huayi.cme.ui.web.WebActivity"
+        transitionRules="com.huayi.cme.ui.WelcomeActivity,com.huayi.cme.ui.hyh.SubscribeHomeActivity,com.huayi.cme.ui.SplashActivity" />
+    <package name="com.ysy.ayy" />
+    <package name="cn.wsds.gamemaster" isShowDivider="true" />
+    <package name="com.yoosee" />
+    <package name="us.pinguo.april_collage" />
+    <package name="com.u17.comic.phone" />
+    <package name="cn.weli.maybe" />
+    <package name="com.xiaodu.smartspeaker" />
+    <package name="com.neusoft.hrssapp" />
+    <package name="com.badmintoncn.bbs"
+        splitPairRule="net.duohuo.magappx.main.IndexTabActivity:*" />
+    <package name="com.melon.clean" />
+    <package name="com.hp.android.printservice" />
+    <package name="com.shuchuang.shihua" />
+    <package name="cn.opda.a.phonoalbumshoushou" />
+    <package name="com.neusoft.gopaycz" />
+    <package name="com.xunmeng.merchant" isShowDivider="true" supportFullSize="true" supportCameraPreview="false"
+        transitionRules="com.xunmeng.merchant.ui.PolicyConfirmActivity,com.xunmeng.merchant.login.LauncherActivity" />
+    <package name="com.xmiles.colorfulcallshow" />
+    <package name="com.lucky.luckyclient" />
+    <package name="com.news.tigerobo" />
+    <package name="com.refrigerator.control" />
+    <package name="com.jinse.app" />
+    <package name="com.netease.edu.study" isShowDivider="true" />
+    <package name="com.connectandroid.server.ctseasy" />
+    <package name="com.ibox.calculators" />
+    <package name="com.glodon.drawingexplorer" isShowDivider="true" supportFullSize="true" />
+    <package name="com.zol.android" />
+    <package name="com.jovision.xiaowei" />
+    <package name="com.china" />
+    <package name="com.hyww.wisdomtree" relaunch="true" />
+    <package name="com.cloudpower.netsale.activity" />
+    <package name="com.miandan.live" relaunch="false" isShowDivider="true"
+        transitionRules="com.jj.comics.ui.main.mine.login.GlobleLoginActivity,com.jj.comics.ui.release.ReleaseDynamicActivity,com.jj.comics.ui.release.ReleaseFreshNewsActivity"  />
+    <package name="com.taiju.taijm" />
+    <package name="com.thinkwu.live" />
+    <package name="com.hoge.android.app.hljapp" />
+    <package name="aiera.sneaker.snkrs.aiera" />
+    <package name="com.edu.android.daliketang" />
+    <package name="com.eebbk.parentalcontrol" />
+    <package name="com.shouqu.mommypocket" />
+    <package name="weiyan.cartoon.android" />
+    <package name="com.wemomo.moremo" />
+    <package name="com.iflytek.chinese.mandarin_simulation_test" />
+    <package name="com.dofun.zhw.pro" />
+    <package name="com.bamboo.ibike" />
+    <package name="com.msxf.ayh" />
+    <package name="com.thestore.main" scaleMode="1"
+        transitionRules="com.thestore.main.core.permission.ShadowPermissionActivity" />
+    <package name="com.xinhu.steward" />
+    <package name="com.starbaba.speed.guardian" />
+    <package name="com.autohome.speed" />
+    <package name="com.zuoyebang.knowledge" relaunch="true" />
+    <package name="com.xintiaotime.yoy" />
+    <package name="com.guangmingzmt.oem" />
+    <package name="com.paic.zhifu.wallet.activity" />
+    <package name="com.kooup.student" />
+    <package name="cn.vcinema.cinema" transitionRules="cn.vcinema.cinema.activity.renew.RenewActivity" isShowDivider="true" />
+    <package name="app.ehafo" />
+    <package name="com.huicent" />
+    <package name="com.sh.shuihulu.kiwi" />
+    <package name="com.hundun.yanxishe"
+        transitionRules="com.hundun.yanxishe.modules.course.replay.VideoReplayActivity" />
+    <package name="com.cdrcbperson.mobilebank" />
+    <package name="com.bytedance.ad.crm" />
+    <package name="cn.TuHu.android" />
+    <package name="com.sohu.infonews" />
+    <package name="com.hundsun.stockwinner.sxzq" />
+    <package name="com.talicai.timiclient" />
+    <package name="video.vue.android" />
+    <package name="com.tencent.gamehelper.speed" />
+    <package name="com.jkydt.app" />
+    <package name="cn.ishansong" />
+    <package name="com.globaltide" />
+    <package name="cn.yq.days" relaunch="true" />
+    <package name="com.hundsun.stockwinner.gdzq" />
+    <package name="com.samoyed.credit" />
+    <package name="com.geek.xycalendar" />
+    <package name="com.yunmai.scale" />
+    <package name="com.xiaoxiaoVideo.app.android" relaunch="false" isShowDivider="true" />
+    <package name="com.cmbc.cc.mbank"
+        transitionRules="com.cmbc.cc.mbank.module.main.MainActivity" />
+    <package name="cn.artstudent.app" />
+    <package name="com.tcps.xiangyangtravel" />
+    <package name="cn.gogpay.dcb" />
+    <package name="com.bokecc.dance" />
+    <package name="com.nyato.client" />
+    <package name="com.wiwj.xiangyucustomer" />
+    <package name="com.cdel.accmobile" activityRule="com.cdel.accmobile.newplayer.video.CourseWareActivity" isShowDivider="true" />
+    <package name="qzyd.speed.nethelper" />
+    <package name="cc.forestapp" />
+    <package name="com.yzd.mycd" />
+    <package name="me.suncloud.marrymemo" />
+    <package name="com.wrd" />
+    <package name="com.diyidan" />
+    <package name="com.poly.mobile" />
+    <package name="com.acadsoc.talkshow" />
+    <package name="com.wandoujia.phoenix2" isShowDivider="true" />
+    <package name="ch999.app.UI" />
+    <package name="com.ss.android.article.lite" supportFullSize="true" isShowDivider="true" relaunch="false" />
+    <package name="com.mobirix.newomoknet.off" />
+    <package name="com.n_add.android" />
+    <package name="com.yumc.phsuperapp" />
+    <package name="insigma.waybook.jinan" />
+    <package name="com.fcb.bao.consumer" />
+    <package name="com.xiachufang.lazycook" />
+    <package name="com.caict.xingchengka" />
+    <package name="com.yzsmk.minsheng" />
+    <package name="com.ruijie.wifim" />
+    <package name="com.duorong.smarttool" />
+    <package name="com.funshion.video.mobile" />
+    <package name="com.fungo.xmsport" />
+    <package name="com.winbaoxian.wybx" />
+    <package name="com.hexin.android.stockassistant" />
+    <package name="com.express.speed.space.cleaner.cn" />
+    <package name="com.sina.weibolite" />
+    <package name="com.cloudbae.lovenanning" relaunch="false" />
+    <package name="com.qihoo360.antilostwatch" />
+    <package name="com.wodan.xianshijian" />
+    <package name="com.lecai" />
+    <package name="com.xstore.sevenfresh" />
+    <package name="com.browser2345" />
+    <package name="com.speedandroid.actsite" />
+    <package name="com.thel" relaunch="true" />
+    <package name="com.fxphone" />
+    <package name="com.lolaage.tbulu.tools" />
+    <package name="com.example.countdown" />
+    <package name="com.sankuai.moviepro" />
+    <package name="com.uchappy.riddles" />
+    <package name="com.dw.xprqj.mi" />
+    <package name="com.pipipifa.pilaipiwang" />
+    <package name="club.jijigugu.yiguan" relaunch="false" />
+    <package name="com.chanyouji.birth" />
+    <package name="io.dushu.fandengreader" isShowDivider="true"/>
+    <package name="com.paic.yl.health" relaunch="true" />
+    <package name="com.tianqiyubao2345" />
+    <package name="com.wanbu.dascom" />
+    <package name="com.dajiazhongyi.dajia" />
+    <package name="com.xm.xmcsee" />
+    <package name="com.taobao.qianniutjb" />
+    <package name="com.wondersgroup.hs.healthcloud.patient" relaunch="true" />
+    <package name="com.huawei.welink" />
+    <package name="com.dsm.secondlock" />
+    <package name="com.cleandroid.server.ctsthor" />
+    <package name="com.hujiang.cctalk" />
+    <package name="com.yiche.autoeasy" isShowDivider="true" supportFullSize="true" />
+    <package name="com.cyqxx.puzzle.idiom.cn" />
+    <package name="com.neusoft.ihrss.shandong.linyi" />
+    <package name="com.tal.imonkey.chinese" isShowDivider="true" />
+    <package name="com.liuzhou.apps.android.lcsmy" />
+    <package name="com.yc.hayloufit" />
+    <package name="com.enqualcomm.kids.cyp" />
+    <package name="com.gzyct.yctwallet" />
+    <package name="com.cmri.universalapp" isShowDivider="true" supportFullSize="true" />
+    <package name="com.xyz.qingtian" />
+    <package name="com.PEP.biaori" />
+    <package name="com.cmcc.gs" />
+    <package name="com.greenline.guahao" />
+    <package name="com.zmsoft.forwatch" />
+    <package name="com.alpha.lagouapk" />
+    <package name="club.imjk" />
+    <package name="com.fivehundredpx.viewer.main" />
+    <package name="com.gangduo.microbeauty" />
+    <package name="com.rockets.chang" isShowDivider="true" />
+    <package name="com.qihoo.camera" relaunch="false" />
+    <package name="com.sinyee.babybus.story" />
+    <package name="com.weathercyhl" />
+    <package name="com.cdel.medmobile" />
+    <package name="com.zhinengremote.mohan" />
+    <package name="com.ddsy.songyao" />
+    <package name="com.jywifi.xiaoleida" />
+    <package name="com.ZArchiver.chengyuda" />
+    <package name="com.eeepay.eeepay_shop_sqb" />
+    <package name="com.szzc.ucar.pilot" />
+    <package name="com.lingxi.cupid" />
+    <package name="com.huami.watch.hmwatchmanager" supportCameraPreview="false" />
+    <package name="com.gzrcb.mobilebank" />
+    <package name="com.rwy.ui" />
+    <package name="com.maka.app" />
+    <package name="com.haixue.app.android.HaixueAcademy.h4" supportCameraPreview="false" activityRule="com.haixue.academy.main.WebActivity,com.haixue.academy.discover.VideoDetailActivity" isShowDivider="true" />
+    <package name="com.zhengnengliang.precepts" />
+    <package name="com.vbill.shoushua.biz" />
+    <package name="com.boohee.food" />
+    <package name="com.lywx.lyxq.mi" />
+    <package name="com.xiaomai.wifi.enjoy" />
+    <package name="com.dangdang.buy2" />
+    <package name="com.zhproperty" relaunch="false" />
+    <package name="com.bestmind.antifraud" />
+    <package name="com.htjy.university" />
+    <package name="vz.com" />
+    <package name="com.yueyou.adreader" />
+    <package name="make.more.r2d2.cellular_z" />
+    <package name="com.babytree.apps.lama" />
+    <package name="cn.com.zjol" />
+    <package name="com.hnjc.dl" />
+    <package name="com.nw.cleansite.novel" isShowDivider="true" />
+    <package name="com.tencent.qt.qtl" relaunch="false" isShowDivider="true" />
+    <package name="com.iyuba.ted"  isShowDivider="true" />
+    <package name="net.iusky.yijiayou" />
+    <package name="dji.mimo" />
+    <package name="com.ushaqi.zhuishushenqi" />
+    <package name="com.tencent.news" isShowDivider="true" supportFullSize="true"
+        transitionRules="com.tencent.news.startup.InitAppActivity, com.tencent.news.ui.visitmode.VisitModeNewsDetailActivity" />
+    <package name="com.duia.duiaapp" finishSecondaryWithPrimary="0" isShowDivider="true" />
+    <package name="com.microsoft.bing" />
+    <package name="tech.caicheng.judourili" />
+    <package name="com.bocichina.e" />
+    <package name="com.fenbi.android.kyzz" isShowDivider="true" />
+    <package name="com.ltzk.mbsf" isShowDivider="true" />
+    <package name="com.cashtoutiao" />
+    <package name="com.ysepay.mobileportal.activity" relaunch="true" />
+    <package name="com.julanling.app" relaunch="false" />
+    <package name="com.zhenai.android" />
+    <package name="com.ys.felicityzl" />
+    <package name="cn.com.lzb.mobilebank.per" />
+    <package name="cn.tk.online" />
+    <package name="com.aquila.bible" />
+    <package name="com.immotor.batterystation.android" />
+    <package name="com.renyu.speedbrowser" />
+    <package name="net.whty.app.eyu.ycz" />
+    <package name="com.yek.android.kfc.activitys" />
+    <package name="com.huitouche.android.app" />
+    <package name="com.ionicframework.cgbank122507" />
+    <package name="com.cctv4g.cctvmobiletv" isShowDivider="true" />
+    <package name="com.lechuan.mdwz" isShowDivider="true" transitionRules="com.lechuan.mdwz.ui.activity.TransActivity" />
+    <package name="com.nd.hy.android.edu.study.commune" />
+    <package name="com.nngdjt.app" />
+    <package name="com.duia.cet4" />
+    <package name="com.chaozh.iReader.dj" activityRule="com.zhangyue.iReader.read.ui.Activity_BookBrowser_TXT" isShowDivider="true" />
+    <package name="com.adnonstop.mancamera2017" />
+    <package name="com.bikann.dzsk" />
+    <package name="com.doc88.reader" />
+    <package name="com.xdf.recite" isShowDivider="true" />
+    <package name="com.sencent.mm" />
+    <package name="com.clb.sr.show" />
+    <package name="com.songheng.weatherexpress" />
+    <package name="com.yangliu.shushe.shushe" />
+    <package name="com.comjia.kanjiaestate" relaunch="false" />
+    <package name="com.idiaoyan.app" />
+    <package name="com.lalamove.huolala.eclient" />
+    <package name="com.ebank.creditcard" />
+    <package name="com.tencent.ttpic" isShowDivider="true" splitPairRule="com.tencent.ttpic.main.MainActivity:*" />
+    <package name="com.ihaozhuo.youjiankang" />
+    <package name="com.tencent.dwdcoco" />
+    <package name="com.taihe.fans" />
+    <package name="com.vyou.vcameraclient" />
+    <package name="org.fungo.fungolive" />
+    <package name="com.xzgdjt.smartmetro" />
+    <package name="com.tiantianaituse" />
+    <package name="com.yyhd.happywolf" />
+    <package name="com.netease.hearthstone" />
+    <package name="com.pingan.smt" />
+    <package name="com.pingan.genbao" />
+    <package name="com.xiaoshi.tuse" />
+    <package name="com.ifext.news" />
+    <package name="com.wawj.app.t" isShowDivider="true" />
+    <package name="com.xiangha" />
+    <package name="com.firebear.androil" />
+    <package name="com.offcn.zhibo" />
+    <package name="com.hengchang.client" />
+    <package name="com.guzhen.xiucai" />
+    <package name="com.wondertek.ahPalm10000" />
+    <package name="com.gzqs.dscjyxld.mi" />
+    <package name="com.ks.sfybzzl.mi" />
+    <package name="com.maidu.gkld" scaleMode="1" supportCameraPreview="false" />
+    <package name="tools.cooler.da" />
+    <package name="com.youkagames.murdermystery" />
+    <package name="com.baidu.yuedu" relaunch="false" />
+    <package name="com.mrbonemission.mi" />
+    <package name="com.barleygame.runningfish" />
+    <package name="com.flightmanager.view" />
+    <package name="com.yitantech.gaigai" isShowDivider="true" />
+    <package name="com.didi.oil" />
+    <package name="com.modernsky.istv" />
+    <package name="com.bankcomm.Bankcomm" />
+    <package name="com.shiqiu.wifi.all" />
+    <package name="com.hfi.hangzhoubanshi" />
+    <package name="com.sixrpg.opalyer" splitPairRule="com.sixrpg.opalyer.main.opalyer.MainActive:*" />
+    <package name="com.dlxx.mam.Internal" />
+    <package name="com.uxin.usedcar" />
+    <package name="com.knew.webbrowser" />
+    <package name="com.eco.global.app" />
+    <package name="com.qibu.zzloan" />
+    <package name="com.moji.mjweather.light" />
+    <package name="com.baoli.blzj" />
+    <package name="com.offcn.stuservice" />
+    <package name="com.wodidashi.avalon" />
+    <package name="com.sogou.activity.src" />
+    <package name="com.xhqb.app" />
+    <package name="com.tencent.tim" disableSensor="true"
+        splitPairRule="com.tencent.mobileqq.activity.SplashActivity:*"
+        transitionRules="com.tencent.mobileqq.activity.LoginActivity" />
+    <package name="cn.wywk.app" />
+    <package name="com.hlkj.gnsmrz" />
+    <package name="com.husor.beidian" />
+    <package name="com.aibaoxian.car.optimus" />
+    <package name="com.inspur.icity.yantaisd" />
+    <package name="com.netease.cbg" />
+    <package name="com.focustech.medical" />
+    <package name="com.dw.hzwzm.mi" />
+    <package name="com.xplaygame.ndhhh.mi" />
+    <package name="com.dianyun.pcgo" />
+    <package name="com.easyfunny.camera.magic" />
+    <package name="app.podcast.cosmos" />
+    <package name="com.doupin.show" />
+    <package name="com.ttyongche.ttpinecone" />
+    <package name="com.techwolf.kanzhun.app" />
+    <package name="com.geek.jk.weather.jishi" />
+    <package name="com.tencent.gamehelper.nz" />
+    <package name="com.tencent.tgp" />
+    <package name="im.xingzhe" />
+    <package name="com.tplink.ipc" />
+    <package name="com.leku.diary" transitionRules="com.leku.diary.activity.WelcomeActivity" />
+    <package name="com.sogou.map.android.maps" fullRule="nra" />
+    <package name="com.dudiangushi.dudiangushi" />
+    <package name="com.sjst.xgfe.android.kmall" />
+    <package name="com.v.zy" />
+    <package name="com.nike.omega" />
+    <package name="com.ylzinfo.chinahrss" />
+    <package name="com.znxh.hyhuo" />
+    <package name="com.pep.diandu" />
+    <package name="com.chan.cwallpaper" />
+    <package name="com.hupu.games" activityRule="com.hupu.android.bbs_video.BBSVideoViewerActivity"
+        isShowDivider="true" supportFullSize="true" />
+    <package name="com.excean.maid" relaunch="false"
+        transitionRules="com.excean.maid.icg52ewf.fwb49se45zfob,com.excean.maid.iis68rt22gsut,com.excean.maid.icg52ewf.udh95ok67uvtv" />
+    <package name="com.codetime" />
+    <package name="com.zhl.czxx.aphone" />
+    <package name="com.tuoluo.shijie" />
+    <package name="com.daofeng.peiwan" />
+    <package name="com.qiaoancloud" />
+    <package name="com.versa.vanilla" />
+    <package name="com.alading.mobclient" />
+    <package name="jyeoo.app.ystudy" />
+    <package name="com.ninexiu.sixninexiu" />
+    <package name="cn.xiaochuankeji.zuiyouLite" isShowDivider="true" supportFullSize="true" />
+    <package name="com.fy.tjxd.mi" />
+    <package name="com.spdbccc.app" />
+    <package name="com.shuhekeji" />
+    <package name="com.zdwh.wwdz" />
+    <package name="com.huifu.merchant" relaunch="true" />
+    <package name="com.menstrual.menstrualcycle" />
+    <package name="com.eduu.bang" />
+    <package name="cn.eclicks.wzsearch" />
+    <package name="com.vcredit.ddcash" relaunch="false" />
+    <package name="com.qihoo.dr" />
+    <package name="com.yxcps.trainning" />
+    <package name="com.eastmoney.android.newyork" />
+    <package name="cn.ecook.jiachangcai" />
+    <package name="com.songheng.eastnews" />
+    <package name="com.antutu.ABenchMark" isShowDivider="true"
+        transitionRules="com.module.benchmark.platform.ux.ActivityUILagTest,com.module.benchmark.platform.ux.WebViewTestActivity,com.module.benchmark.platform.ux.ActivityQRCodeTest,com.android.module.app.ui.test.activity.ActivityScoreBench"/>
+    <package name="com.xunrui.videowallpaper" />
+    <package name="com.innovation.driftbottle" />
+    <package name="com.wenhua.bamboo" />
+    <package name="com.yiwang" />
+    <package name="com.moji.calendar" />
+    <package name="com.ximalaya.qiqi.android" activityRule="com.ximalaya.qiqi.android.container.navigation.mine.QrCodeScanActivity" supportCameraPreview="false" isShowDivider="true" />
+    <package name="com.xuanke.kaochong" isShowDivider="true" />
+    <package name="com.xunlei.downloadprovider"
+        isShowDivider="true"
+        relaunch="false" supportFullSize="true"  />
+    <package name="com.hongbaoshuapp" />
+    <package name="com.ldygo.qhzc" />
+    <package name="com.shineyie.aijianji" />
+    <package name="com.xxt.jxlxandroid" />
+    <package name="com.yzxx.yqlzg.mi" />
+    <package name="com.jime.stu" />
+    <package name="com.ihuman.recite" finishSecondaryWithPrimary="0" isShowDivider="true" />
+    <package name="com.yuantu.huiyi" />
+    <package name="com.digitalchina.mobile.dfhfz1" />
+    <package name="com.eoffcn.mobile" />
+    <package name="org.wanmen.wanmenuni" />
+    <package name="com.dk.huangdaobus" />
+    <package name="com.wuba.zhuanzhuan" />
+    <package name="com.taige.mygold" />
+    <package name="com.candy.high.speed.wifi" />
+    <package name="com.nfyg.hsbb" />
+    <package name="com.linglong.android" />
+    <package name="com.ganji.android.haoche_c" isShowDivider="true" />
+    <package name="com.gdctl0000" />
+    <package name="com.qmnl.qmpd" />
+    <package name="com.juanvision.EseeNetProj" />
+    <package name="com.olg.olg" />
+    <package name="com.tencent.qqlite" />
+    <package name="com.kaoshibaodian.app" />
+    <package name="com.dianjiqi" />
+    <package name="com.iiisland.android" />
+    <package name="com.banshenghuo.mobile" />
+    <package name="com.candy.caller.show" relaunch="true" />
+    <package name="com.nowcoder.app.florida" />
+    <package name="vip.qufenqian.phonewifi" />
+    <package name="com.mvideoc.qp" />
+    <package name="com.hxcx.morefun" />
+    <package name="io.liuliu.music" />
+    <package name="com.nineton.weatherforecast" />
+    <package name="com.tencent.tgclub" splitPairRule="com.tencent.tgclub.business.appframe.MainActivity:*" isShowDivider="true" />
+    <package name="com.itangyuan" />
+    <package name="a.baozouptu" />
+    <package name="com.sausage.download" />
+    <package name="com.tool.matrix_talentedme" />
+    <package name="com.jin10" />
+    <package name="com.yeahka.flagship" />
+    <package name="com.cignacmb.hmsapp" />
+    <package name="com.video.lizhi" isShowDivider="true" />
+    <package name="com.xtc.watch" isShowDivider="true" supportFullSize="true" />
+    <package name="com.generalcomp.luowice" />
+    <package name="com.app.moontv" relaunch="false" isShowDivider="true" />
+    <package name="com.koolearn.android" />
+    <package name="com.hzins.mobile" />
+    <package name="com.modian.app" relaunch="true" />
+    <package name="com.netease.newsreader.activity" isShowDivider="true" supportFullSize="true" transitionRules="com.netease.newsreader.newarch.capture.CaptureActivity" />
+    <package name="com.pinguo.edit.sdk" />
+    <package name="com.skyplatanus.crucio" isShowDivider="true" />
+    <package name="com.picahealth.yunque" />
+    <package name="sina.mobile.tianqitong" />
+    <package name="com.jklight.weather" />
+    <package name="com.jiuxianapk.ui" />
+    <package name="com.jz.youyu" />
+    <package name="com.hexin.plat.android.ZhongyuanSecurity" />
+    <package name="com.yanjing.yami" />
+    <package name="com.szlanyou.nissaniov" />
+    <package name="cbs.chaboshi" relaunch="true" />
+    <package name="com.ocj.oms.mobile" />
+    <package name="com.kk.xx.newplayer" />
+    <package name="com.sgkt.phone" />
+    <package name="com.xiaojukeji.finance" />
+    <package name="com.timanetworks.android.faw.vw.aftermarket.release" />
+    <package name="com.kwai.livepartner" scaleMode="1" />
+    <package name="com.bank.nanhairuralcommercial.mobile" />
+    <package name="cn.com.sina.finance" isShowDivider="true" supportFullSize="true" />
+    <package name="com.cmschina.stock" />
+    <package name="com.oceansoft.gzpolice" />
+    <package name="com.saicmobility.user" />
+    <package name="com.tiantonglaw.readlaw" />
+    <package name="com.hexin.plat.android.XinanSecurity" />
+    <package name="com.fy.sgds.mi" />
+    <package name="com.anzogame.hs" />
+    <package name="com.mymoney" isShowDivider="true" />
+    <package name="com.jiuwei.ptcat.lite" />
+    <package name="com.android.benlailife.activity" />
+    <package name="com.kdweibo.client" />
+    <package name="com.logictech.scs" />
+    <package name="com.afa.recovery" />
+    <package name="com.yitong.cd.mbank.android" />
+    <package name="com.xinmang.unzip" />
+    <package name="com.ncc.fm" />
+    <package name="com.xk.span.zutuan" />
+    <package name="com.autohome.usedcar" />
+    <package name="com.lingyue.zebraloan" />
+    <package name="com.videogo" scaleMode="1" />
+    <package name="com.fenbi.android.leo" isShowDivider="true" />
+    <package name="com.sankuai.meituan.merchant" relaunch="false"  isShowDivider="true" />
+    <package name="com.ycyh.comemeet" />
+    <package name="cn.net.tiku.shikaobang.syn" finishSecondaryWithPrimary="0"
+        transitionRules="com.ccb.fintech.app.productions.hbga.ui.starter.StartPageActivity" />
+    <package name="com.lixiangdong.songcutter" />
+    <package name="cn.com.whty.hfcard" />
+    <package name="com.zwcode.p6slite" />
+    <package name="cn.suanya.ticket" />
+    <package name="com.niwodai.universityloan" />
+    <package name="com.cebbank.yaoyao" />
+    <package name="com.heytap.headset" />
+    <package name="com.yukexing.mobileticket" />
+    <package name="com.qihoo.haosou.subscribe.vertical.book" />
+    <package name="com.kugou.fanxing" />
+    <package name="me.yidui" />
+    <package name="com.auntec.zhuoshixiong" />
+    <package name="com.pcncn.jj" isShowDivider="true" />
+    <package name="com.pingan.lifeinsurance" />
+    <package name="com.rytong.hnair" />
+    <package name="com.mutangtech.qianji" relaunch="false" />
+    <package name="com.showself.ui.appunion" />
+    <package name="com.umaman.laiyifen" />
+    <package name="com.huluxia.gametools" />
+    <package name="com.seblong.idream" />
+    <package name="com.findbest.idiomtto" />
+    <package name="com.sankuai.meituan.dispatch.crowdsource" />
+    <package name="com.midao.lbvideochat" />
+    <package name="com.wosai.cashbar" />
+    <package name="com.smzdm.client.android" />
+    <package name="com.tujia.hotel" />
+    <package name="com.moocxuetang" />
+    <package name="com.seerlah.kapuou" />
+    <package name="com.uh.rdsp" />
+    <package name="com.caiyuninterpreter.activity" />
+    <package name="com.yuncheapp.android.pearl" relaunch="true" />
+    <package name="cn.xiaofengkj.fitpro" />
+    <package name="com.yaya.mmbang" />
+    <package name="com.starbucks.cn" />
+    <package name="com.kaluli" />
+    <package name="com.lzj.shanyi" />
+    <package name="com.netease.epay" supportCameraPreview="false" />
+    <package name="tv.acfundanmaku.video" relaunch="false" isShowDivider="true" disableSensor="true" />
+    <package name="com.geek.luck.calendar.app" />
+    <package name="com.dfxny.dfcxrenter.beta" />
+    <package name="com.juefeng.app.leveling" />
+    <package name="guoyuan.szkingdom.android.phone" />
+    <package name="com.shmetro" />
+    <package name="com.happy.walker" />
+    <package name="com.gmlive.soulmatch" />
+    <package name="cn.com.hrcrb.mobilebank.per" />
+    <package name="com.laihua.standard" relaunch="true" />
+    <package name="com.linkedin.android" />
+    <package name="com.ushaqi.fantuan" />
+    <package name="com.netease.a13.avg" isShowDivider="true" />
+    <package name="com.dzmf.zmfxsdq" />
+    <package name="com.unicom.woshipin" relaunch="true" />
+    <package name="com.geek.jk.weather.fission" />
+    <package name="com.picooc" />
+    <package name="com.shoujiduoduo.duoshow" />
+    <package name="com.imbastar.c5game" />
+    <package name="predictor.ui" />
+    <package name="com.hiby.music" relaunch="false" />
+    <package name="com.dailyyoga.cn" isShowDivider="true" />
+    <package name="com.tencent.wehear" />
+    <package name="com.chery.zhiyunhulian.assistant" />
+    <package name="com.gsww.gsrhc.jkgs" />
+    <package name="com.azure.authenticator" />
+    <package name="com.qihoo.cloudisk" />
+    <package name="com.hd.smartVillage" />
+    <package name="com.android.nineton.elfinapp" />
+    <package name="com.pacf" />
+    <package name="com.qianmai.liveroom" />
+    <package name="com.ecovacs.ecosphere" />
+    <package name="com.shusheng.JoJoRead" />
+    <package name="com.openlanguage.kaiyan" />
+    <package name="com.doudou.flashlight"
+        transitionRules="com.miui.permcenter.permissions.PermissionsEditorActivity" />
+    <package name="com.qeeyou.app.accelerator" isShowDivider="true" />
+    <package name="com.yipiao" />
+    <package name="com.xsjinye.xsjinye" />
+    <package name="com.k12n" />
+    <package name="com.cmf.cqwallet" />
+    <package name="com.vsco.cam" />
+    <package name="com.weathermaster.fingercalendar" />
+    <package name="com.zy.game.thief.mi" />
+    <package name="com.linli.llwifi" />
+    <package name="com.huaban.android" />
+    <package name="com.eagersoft.youzy.youzy" />
+    <package name="com.yitong.bbw.mbank.android" finishSecondaryWithPrimary="0" />
+    <package name="com.zhangkongapp.joke.bamenshenqi" />
+    <package name="cn.com.hzb.mobilebank.per" />
+    <package name="com.netease.lotterynews" />
+    <package name="com.anjuke.android.app" isShowDivider="true" supportFullSize="true"
+        transitionRules="com.anjuke.android.app.mainmodule.WelcomeActivity,com.anjuke.android.app.mainmodule.common.activity.GuideActivity" />
+    <package name="com.yiding.jianhuo" />
+    <package name="com.game.escape3d.mi" />
+    <package name="com.xiaoniu.master.cleanking" />
+    <package name="com.icbc.emallmobile" />
+    <package name="com.sf.activity" />
+    <package name="com.eastmoney.android.lead" />
+    <package name="com.ecarx.xiaoka.voice_assistant" />
+    <package name="com.zm.joyfulwalk" />
+    <package name="com.kidswant.ss" relaunch="false" />
+    <package name="com.geek.zwweather" />
+    <package name="com.pplive.androidphone.sport" />
+    <package name="com.newcapec.mobile.ncp" />
+    <package name="com.lenovo.club.app" />
+    <package name="tv.tvguo.androidphone" />
+    <package name="com.android.app.notificationbar" />
+    <package name="cn.wlantv.kznk" />
+    <package name="com.gvsoft.gofun" />
+    <package name="com.jieyuebook.zengzhi" />
+    <package name="com.duoyi.implayer" />
+    <package name="cn.codemao.android.kids.lite" />
+    <package name="com.gacne.www" />
+    <package name="com.hanweb.android.zhejiang.activity" relaunch="true" />
+    <package name="com.yinpai" relaunch="true" />
+    <package name="com.baidu.hi" />
+    <package name="com.gwm.tank" relaunch="false" />
+    <package name="com.find.hidden.object.difference.clue.cn" />
+    <package name="cn.soulapp.android" isShowDivider="true" supportFullSize="true" />
+    <package name="com.tencent.forest" />
+    <package name="com.fzisen.app51zxw" isShowDivider="true" />
+    <package name="cn.ninebot.ninebot" />
+    <package name="com.weilaihong.gaokao02" />
+    <package name="com.lalamove.huolala.client" />
+    <package name="com.tieyou.bus.ark" />
+    <package name="com.muxin.happysport" />
+    <package name="com.myzaker.ZAKER_Phone" />
+    <package name="com.jsmcc" />
+    <package name="com.ibike.publicbicycle.activity" />
+    <package name="com.yiwugou.yiwukan" />
+    <package name="cn.wps.note" transitionRules="cn.wps.note.edit.EditNoteActivity,cn.wps.note.PermissionHandleActivity" />
+    <package name="com.jixiang.rili" />
+    <package name="com.sinovatech.gxmobile.ui" relaunch="false" />
+    <package name="com.sx.xiaoai" />
+    <package name="com.screeclibinvoke" />
+    <package name="com.duowan.groundhog.mctools" />
+    <package name="com.jinxin.namibox" isShowDivider="true" relaunch="true" supportFullSize="true" />
+    <package name="com.powersi.zhsw" />
+    <package name="com.zaaap.app" />
+    <package name="com.bytxmt.banyuetan" isShowDivider="true"
+        splitPairRule="com.bytxmt.banyuetan.activity.MainActivity:*"
+        transitionRules="com.bytxmt.banyuetan.activity.LauncherActivity,com.bytxmt.banyuetan.activity.LoginActivity,com.bytxmt.banyuetan.activity.SpecialActivity" />
+    <package name="com.yhmobilebank" />
+    <package name="com.macrovideo.v380pro" />
+    <package name="com.lstt.wifilocating" />
+    <package name="com.growth.fgcalfun" />
+    <package name="com.agg.picent" />
+    <package name="com.tdx.AndroidMSZQ" />
+    <package name="com.jkx4rh.client" />
+    <package name="com.iss.taianbank" relaunch="true" />
+    <package name="com.tencent.qqpimsecure" transitionRules="com.tencent.server.fore.StandardActivity" isShowDivider="true" />
+    <package name="com.tencent.qqpim" />
+    <package name="com.cs_credit_bank" />
+    <package name="cn.dxy.medicinehelper" />
+    <package name="com.nuomi" finishSecondaryWithPrimary="0" />
+    <package name="com.jd.jdhealth" />
+    <package name="com.shenmo.yunxuetangapp" />
+    <package name="com.dangdang.reader" />
+    <package name="cn.goodjobs.client" />
+    <package name="com.aplum.androidapp" relaunch="true" />
+    <package name="com.htinns" transitionRules="com.htinns.reactnative.v2.RNContainerActivity" />
+    <package name="com.hori.smartcommunity" />
+    <package name="com.immomo.momo" relaunch="true"
+        transitionRules="com.immomo.molive.gui.activities.live.base.LiveActivity,com.immomo.momo.videochat.friendvideo.videoOrderRoom.activity.WebPanelActivity"
+        activityRule="com.immomo.momo.mk.MomoMKWebActivity,com.immomo.momo.videochat.friendvideo.videoOrderRoom.activity.WebPanelActivity" />
+    <package name="com.lechuan.midunovel" />
+    <package name="com.iccapp.tici" />
+    <package name="com.netease.play" />
+    <package name="com.shuabei.mpos" />
+    <package name="com.coomix.app.all" />
+    <package name="com.shengjingbank.mobile.cust" />
+    <package name="com.zcbl.bjjj_driving" />
+    <package name="com.caibeike.android" />
+    <package name="com.mihoyo.hyperion" relaunch="false" />
+    <package name="com.i61.ailesson" isShowDivider="true" />
+    <package name="com.xiaoshijie.sqb" />
+    <package name="com.fcbox.hivebox" />
+    <package name="my.maya.android" />
+    <package name="com.xmtj.mkz" />
+    <package name="com.taobao.live4anchor" />
+    <package name="com.express.relief.weather.clear" />
+    <package name="com.taobao.live"
+        transitionRules="com.taobao.live.weex.WXContainerActivity" />
+    <package name="com.tipsoon.android" isShowDivider="true" activityRule="com.sina.weibo.sdk.share.ShareTransActivity,com.sina.weibo.sdk.web.WebActivity" />
+    <package name="com.bwton.msx.sjz" relaunch="true" />
+    <package name="com.idianVideo.app.android" />
+    <package name="org.sojex.finance" />
+    <package name="com.oppo.store" />
+    <package name="com.enjoy.malt" />
+    <package name="com.dingYZ.dingyzwater" />
+    <package name="cn.owhatlab" />
+    <package name="com.jxrs.jxrsapp" />
+    <package name="com.king.weather" />
+    <package name="dopool.player" isShowDivider="true" />
+    <package name="com.smartisan.notes" />
+    <package name="com.violationquery" />
+    <package name="com.jinglan.yaowang" clearTop="false" />
+    <package name="com.netease.gl" scaleMode="1" />
+    <package name="com.tianlutech.ebus" />
+    <package name="com.deepfusion.zao" />
+    <package name="com.wimetro.iafc" />
+    <package name="software.ecenter.study" />
+    <package name="com.qiyi.video.sdkplayer" />
+    <package name="com.kekenet.baby" />
+    <package name="com.www.ccoocity.ui" />
+    <package name="com.quyue.android" />
+    <package name="com.jd.paipai.ppershou" />
+    <package name="com.bwton.msx.ncb" relaunch="true" />
+    <package name="com.mkarpenko.worldbox.mt" />
+    <package name="com.wakeup.howear" />
+    <package name="com.lbvolunteer.gaokao" />
+    <package name="cn.nineton.recordpro" />
+    <package name="com.tencent.qgame" />
+    <package name="com.ccic.bros" />
+    <package name="com.yunxiao.hfs4p" />
+    <package name="com.mianfeinovel" />
+    <package name="protect.eye" />
+    <package name="com.zhl.fep.aphone" />
+    <package name="com.haidilao" />
+    <package name="com.edujia.ime" relaunch="true" />
+    <package name="com.sevenplus.chinascience" />
+    <package name="cmccwm.mobilemusic" supportFullSize="true" isShowDivider="true" relaunch="false" />
+    <package name="com.zhuanyejun.club" />
+    <package name="com.cdsg.zgph" relaunch="true" />
+    <package name="cn.tape.tapeapp" />
+    <package name="com.sogou.upd.x1" />
+    <package name="cn.com.drivedu.chexuetang" />
+    <package name="com.jrjr.jrchina"
+        transitionRules="com.jrjr.jrchina.view.activity.LoginActivity" />
+    <package name="com.sina.wbsupergroup" />
+    <package name="com.bose.bosemusic.china" />
+    <package name="com.qihoo.loan" />
+    <package name="com.jco.aiview" />
+    <package name="com.offcn.android.offcn" transitionRules="com.offcn.android.offcn.ui.activity.OneClickLoginActivity" />
+    <package name="cn.mucang.xiaomi.android.wz" />
+    <package name="com.fenbi.android.yingyu" relaunch="true" />
+    <package name="com.wacai365" />
+    <package name="com.yuedan" />
+    <package name="com.fingersoft.hillclimb.noncmcc" />
+    <package name="com.black.unique" />
+    <package name="com.sogou.reader.free" />
+    <package name="cn.edaijia.android.client" />
+    <package name="com.shineyue.sjgjj" />
+    <package name="com.wallpaperang.starsvideo" />
+    <package name="com.jd.jmworkstation" relaunch="true" />
+    <package name="com.hichip" />
+    <package name="com.sina.news" />
+    <package name="com.tool.biqudaogexs" />
+    <package name="com.zhihuianxin.xyaxf" />
+    <package name="com.dossen.app" />
+    <package name="com.shuqi.controller.lite" />
+    <package name="com.cmb.transpal" />
+    <package name="com.example.wygxw"
+        transitionRules="com.example.wygxw.ui.account.UmAkeyLoginActivity" />
+    <package name="com.mistong.ewt360" isShowDivider="true" />
+    <package name="tv.xiaoka.live" />
+    <package name="com.xm.csee" />
+    <package name="com.martian.ttbook" relaunch="true" />
+    <package name="com.msyc.onion" />
+    <package name="com.jm.android.jumei" />
+    <package name="com.drcuiyutao.babyhealth"
+        transitionRules="com.drcuiyutao.lib.ui.activity.SchemeFilterActivity" />
+    <package name="com.xingluo.mpa" />
+    <package name="com.android.tiku.union" relaunch="true" />
+    <package name="com.ss.android.caijing.stock" />
+    <package name="com.fenbi.android.gaozhong" isShowDivider="true" />
+    <package name="com.lovebizhi.wallpaper" />
+    <package name="com.aishuke.vux" />
+    <package name="com.blizzard.messenger" />
+    <package name="com.sogou.novel" />
+    <package name="com.wifipassword.wifimanager" />
+    <package name="com.betterwifi.conns" />
+    <package name="cn.longmaster.pengpeng" />
+    <package name="zhongxinjiantou.szkingdom.android.newphone" />
+    <package name="cn.bigfun" finishSecondaryWithPrimary="0" />
+    <package name="com.ymatou.shop" />
+    <package name="com.thinkyeah.galleryvault" />
+    <package name="com.navinfo.gw" />
+    <package name="com.song.king" />
+    <package name="com.nxy.mobilebank.hunan" />
+    <package name="com.atonce.goosetalk" />
+    <package name="com.tal.monkey" />
+    <package name="com.ss.android.article.calendar" />
+    <package name="com.game.bikeInsane.mi" />
+    <package name="net.easyconn.carman.neutral" />
+    <package name="com.esbook.reader" />
+    <package name="com.alibaba.wireless.microsupply" />
+    <package name="com.naver.linewebtoon.cn" transitionRules="com.naver.linewebtoon.search.SearchActivity" isShowDivider="true" />
+    <package name="com.runbey.ybjk" />
+    <package name="com.yzxx.hcrttt.mi" />
+    <package name="com.uusense.speed" />
+    <package name="com.gooclient.anycam.neye3ctwo" />
+    <package name="com.wifisecurity.safeassistant" />
+    <package name="com.zongheng.reader" />
+    <package name="com.cib.qdzg" />
+    <package name="com.ztesoft.homecare" />
+    <package name="com.jesson.meishi" />
+    <package name="com.im.todayz" />
+    <package name="com.alibaba.aliyun" />
+    <package name="com.duoduo.child.games.babysong" />
+    <package name="com.xbiao" />
+    <package name="com.longshine.wisdomcode" />
+    <package name="com.leqi.idpicture" />
+    <package name="com.cygnus.scanner" />
+    <package name="com.nxy.mobilebank.shanxi" />
+    <package name="com.kuangxiangciweimao.novel" />
+    <package name="com.hpbr.bosszhipin" supportFullSize="true" isShowDivider="true" />
+    <package name="com.sina.heimao" />
+    <package name="com.lchr.diaoyu" />
+    <package name="com.baidu.browser.apps" />
+    <package name="com.mg.ec" />
+    <package name="com.yuwan.tmyh" />
+    <package name="com.cainiao.cs" />
+    <package name="com.bianlifeng.customer.android" splitPairRule="com.rnx.react.activityfork.RNXActivity1:*" scaleMode="1" />
+    <package name="com.haixiu.ui" />
+    <package name="com.eastmoney.app.qhsjkh" />
+    <package name="com.dfzq.winner" />
+    <package name="com.oda_cad" />
+    <package name="com.rayclear.renrenjiang"
+        transitionRules="com.rayclear.renrenjiang.ui.activity.SplashActivity" />
+    <package name="com.iqiyi.wlanplay" />
+    <package name="com.cupidapp.live" />
+    <package name="cn.ji_cloud.android" />
+    <package name="com.truedian.dragon" />
+    <package name="com.garmin.android.apps.connectmobile" />
+    <package name="com.jiongji.andriod.card" activityRule="com.baicizhan.main.activity.setting.SettingsActivity"
+        transitionRules="com.baicizhan.main.activity.LoadingPageActivity,cn.hugo.android.scanner.CaptureActivity,com.baicizhan.main.activity.protocol.ProtocolActivity"
+        flags="ignoreActivityBelowWhenJudgeMiddle:cn.hugo.android.scanner.CaptureActivity"
+        isShowDivider="true" relaunch="false" />
+    <package name="com.xmbranch.pocketstep" />
+    <package name="com.xiaoenai.app" />
+    <package name="com.doudoubird.weather" />
+    <package name="com.tnscreen.main" />
+    <package name="com.eno.android" />
+    <package name="com.yd.circle" />
+    <package name="com.sdhs.easy.high.road" />
+    <package name="com.coomix.app.car" />
+    <package name="cn.com.bodivis.mybody" relaunch="false" />
+    <package name="com.hudun.androidrecorder" />
+    <package name="com.hd.smarttour" />
+    <package name="com.pingan.xueyuan" />
+    <package name="com.tuan800.tao800" />
+    <package name="com.androidesk" />
+    <package name="com.merchantplatform" />
+    <package name="com.dw.wzsjkthk.mi" />
+    <package name="com.xmiles.luckcycloud" />
+    <package name="com.whrcbank.mbank" relaunch="false" />
+    <package name="com.ym.ecpark.obd" />
+    <package name="com.yixianghua" />
+    <package name="com.slkj.paotui.customer" />
+    <package name="com.czb.charge" />
+    <package name="com.iqiyi.acg" />
+    <package name="com.hnnx.mbank" />
+    <package name="com.cmcc.hebao" relaunch="false"
+        transitionRules="com.cmcc.wallet.mocam.activity.LoginHasMobileActivity" />
+    <package name="com.wanxiangsiwei.beisu" isShowDivider="true" />
+    <package name="com.firstcapital" />
+    <package name="com.aliyun.alink" />
+    <package name="com.tencent.qqmusicrecognition" />
+    <package name="com.m1905.mobilefree" />
+    <package name="com.ifreetalk.ftalk" isShowDivider="true" />
+    <package name="com.byd.aeri.caranywhere" />
+    <package name="com.jsb.gov.cn2" />
+    <package name="com.biyao.fu" />
+    <package name="com.apowersoft.mirror" />
+    <package name="com.sohu.sohuhy" />
+    <package name="com.hnzycfc.zyxj" />
+    <package name="cn.knet.eqxiu" />
+    <package name="com.tan8" relaunch="false" />
+    <package name="com.txtqbmfxsks.freenovel" />
+    <package name="cn.ccspeed" activityRule="cn.ccspeed.app.TransparentActivity"
+        splitPairRule="cn.ccspeed.app.MainActivity:*" isShowDivider="true"
+        transitionRules="cn.ccspeed.app.InitActivity,com.bytedance.sdk.openadsdk.stub.activity.Stub_Standard_Portrait_Activity" />
+    <package name="com.kugou.viper" />
+    <package name="com.duowan.gamevoice" />
+    <package name="com.liulishuo.sprout" transitionRules="com.liulishuo.sprout.launcher.PrivacyActivity" isShowDivider="true" />
+    <package name="com.longfor.app.uhome" />
+    <package name="com.speedguard.wifi" />
+    <package name="com.ifeng.news2" relaunch="false" />
+    <package name="com.jiaodong.bus" />
+    <package name="com.hexin.plat.monitrade"
+        transitionRules="com.hexin.b2c.android.liveplayercomponent.NewAffinityLiveActivity" />
+    <package name="com.baidu.duer.superapp" isShowDivider="true"
+        transitionRules="com.baidu.duer.superapp.flutter.SplashFlutterActivity" />
+    <package name="com.rytong.ceair" />
+    <package name="com.bikann.mfxssk" />
+    <package name="com.qihoo.cleandroid_cn" />
+    <package name="com.xunmeng.ddjinbao" />
+    <package name="com.yl.edu" splitPairRule="com.youlu.splash.mvp.ui.activity.MainActivity:*" isShowDivider="true" />
+    <package name="cn.com.essence.stock" />
+    <package name="com.geek.hxcalendar"
+        splitPairRule="com.geek.jk.weather.main.activity.MainActivity:*"
+        transitionRules="com.xiaoniu.cleanking.ui.viruskill.VirusKillActivity" />
+    <package name="com.xindong.rocket" isShowDivider="true" />
+    <package name="com.zyhd.voice" />
+    <package name="com.doudoubird.compass" />
+    <package name="com.changsha.apps.android.mycs" />
+    <package name="com.longping.farmcourses" />
+    <package name="com.umiao.app" />
+    <package name="com.sunboxsoft.oilforhenanandroid" />
+    <package name="com.hlds.daoshuri"
+        transitionRules="com.hlds.daoshuri.activity.SplashAcitivity,com.android.systemui.media.MediaProjectionPermissionActivity,com.hlds.daoshuri.wxapi.WXEntryActivity" />
+    <package name="com.hsbank.mobilebank" />
+    <package name="com.example.mofajingling" isShowDivider="true" />
+    <package name="com.weatherday" finishSecondaryWithPrimary="0"
+        transitionRules="com.tianqi2345.activity.CoveryActivity" />
+    <package name="com.nsmetro.shengjingtong" />
+    <package name="net.xinhuamm.mainclient" />
+    <package name="com.citiccard.mobilebank" />
+    <package name="com.manga.manhuaren" />
+    <package name="com.oyohotels.consumer" />
+    <package name="com.gioct.weather"
+        transitionRules="com.gioct.weather.activity.StartPermissionActivity" />
+    <package name="com.seculink.app" />
+    <package name="com.zhubajie.client" />
+    <package name="com.sfexpress.merchant" relaunch="false" />
+    <package name="com.klcxkj.rs" />
+    <package name="com.lty.zhuyitong" />
+    <package name="com.xiaobu121.xiaobu.xiaobu_android" />
+    <package name="cn.ibuka.manga.ui" />
+    <package name="com.lizhiweike" />
+    <package name="com.sparke.clipmaster" />
+    <package name="com.qxhc.shihuituan" />
+    <package name="com.dream.zncd.intelligentcharge" />
+    <package name="com.cootek.literature" />
+    <package name="com.zm.sport" />
+    <package name="com.tianxingjian.supersound" />
+    <package name="com.fy.ttds.mi" />
+    <package name="com.when.coco" />
+    <package name="com.zy.game.fireescape.mi" />
+    <package name="com.ruguoapp.jike" />
+    <package name="iHealth.AiJiaKang.MI" />
+    <package name="com.inwhoop.mvpart.xinjiang_subway" />
+    <package name="com.gemdale.client" />
+    <package name="com.qixin.mihuas" />
+    <package name="com.lomijoka.game.mi" />
+    <package name="com.netease.mail" isShowDivider="true" supportFullSize="true"
+        transitionRules="com.netease.mail.ad.launch.ui.SplashAdActivity" />
+    <package name="com.magic.clmanager" />
+    <package name="com.xinrenlei.koubeigongzuo" />
+    <package name="com.forever.browser" />
+    <package name="com.kingdon.mycz" />
+    <package name="com.kk.poem" isShowDivider="true" />
+    <package name="me.chunyu.ChunyuDoctor" />
+    <package name="com.cictec.busintelligentonline" />
+    <package name="com.thinkive.android.invest_ha" />
+    <package name="com.basestonedata.instalment" />
+    <package name="cn.xiaoniangao.xngapp" />
+    <package name="com.listcloud.wateraffairs" />
+    <package name="com.niu.cloud" />
+    <package name="com.maiya.weather" />
+    <package name="com.qts.customer" />
+    <package name="com.ecej.ui" />
+    <package name="com.a3xh1.phoenix" relaunch="true" />
+    <package name="com.tmri.nda" />
+    <package name="com.hzhu.m" transitionRules="com.hzhu.dialog.ui.DialogSurveyActivity" />
+    <package name="com.huania.earthquakewarning" />
+    <package name="com.sicent.app.baba" />
+    <package name="com.xiaoniu.hulumusic" />
+    <package name="com.upin.app" />
+    <package name="com.bee.supercleaner.cn" />
+    <package name="com.chaozh.iReaderFree15" />
+    <package name="com.taobao.shoppingstreets" />
+    <package name="com.sinaapp.qwwpoo.rar" />
+    <package name="com.imohoo.shanpao" />
+    <package name="com.qihoo.video" />
+    <package name="com.kmxs.reader" isShowDivider="true" supportFullSize="true"
+        activityRule="org.geometerplus.android.fbreader.FBReader"
+        splitPairRule="com.km.app.home.view.HomeYoungActivity:*,com.kmxs.reader.home.ui.HomeActivity:*" />
+    <package name="com.peopletech.peopleplus" />
+    <package name="com.youdao.kiddict"
+        activityRule="com.youdao.kiddict.ui.main.WebGameActivity"
+        splitPairRule="com.youdao.kiddict.MainActivity:*"
+        scaleMode="1" transitionRules="com.youdao.kiddict.ui.detaildata.WordDetailActivity" />
+    <package name="com.joyshebao.joy"
+        transitionRules="com.sina.weibo.sdk.share.WbShareTransActivity,com.joyshebao.moudle.login.ui.JOYLoginActivity" />
+    <package name="com.traffic.handtrafficbible" />
+    <package name="com.ijinshan.browser_fast" />
+    <package name="com.gzsd.hcrcjtj.mi" />
+    <package name="com.dongchu.yztq" />
+    <package name="com.txtqbmf.zjqy" />
+    <package name="com.ktls.fileinfo" />
+    <package name="com.ikang.official" />
+    <package name="com.zivn.cloudbrush3" />
+    <package name="com.yiqizuoye.jzt" isShowDivider="true" />
+    <package name="llbt.ccb.lnga" />
+    <package name="com.duapps.recorder" />
+    <package name="com.binfenyinbiao.binfen" />
+    <package name="com.yishouapp.fumi" />
+    <package name="com.dmzj.manhua" />
+    <package name="com.qlscupgrade" />
+    <package name="com.huke.hk" />
+    <package name="com.sitech.ac" />
+    <package name="com.zhima.aurora" />
+    <package name="com.feiteng.lieyou" />
+    <package name="cc.kixmix.video" />
+    <package name="com.arivoc.kouyu" isShowDivider="true" />
+    <package name="com.kwai.videoeditor" supportFullSize="true" isShowDivider="true" />
+    <package name="com.teambition.teambition" />
+    <package name="com.jisilu.lowrisk" />
+    <package name="com.uccb.mobile" />
+    <package name="com.zhangmen.braintrain" />
+    <package name="com.wondersgroup.scsiservicepro" />
+    <package name="com.comic.manhuatai" splitPairRule="com.comic.manhuatai.MHTMainActivity:*" />
+    <package name="com.hbcmcc.hyh" />
+    <package name="com.print.suittwo" />
+    <package name="com.ws.lite.worldscan" />
+    <package name="com.jieyi.citycomm.jilin" />
+    <package name="com.yoc.take" />
+    <package name="cn.emoney.level2" relaunch="true" />
+    <package name="com.kingwin.piano" />
+    <package name="com.wwwscn.yuexingbao" />
+    <package name="cn.xdf.woxue.student" />
+    <package name="com.yynova.wifiassistant" />
+    <package name="com.xgimi.zhushou" />
+    <package name="com.inspur.icity.neimenggu" />
+    <package name="com.liulishuo.vira" relaunch="true" />
+    <package name="cn.com.bailian.bailianmobile" />
+    <package name="c.l.a" />
+    <package name="com.crc.hrt" />
+    <package name="com.tencent.token" />
+    <package name="com.sj4399.gamehelper.hpjy" />
+    <package name="com.zhulu.zhulubazipaipan" />
+    <package name="com.vipshop.vswxk" />
+    <package name="com.clover.daysmatter" isShowDivider="true" supportFullSize="true" />
+    <package name="com.ucmobile.elder" />
+    <package name="com.uroad.unitoll" />
+    <package name="com.jumai.wifi.quickly" />
+    <package name="com.hundsun.stockwinner.gszq" />
+    <package name="com.fiveplay" />
+    <package name="com.gwsoft.imusic.controller" />
+    <package name="edu.www.qsxt" isShowDivider="true" />
+    <package name="com.planet.light2345" />
+    <package name="com.happyteam.dubbingshow" />
+    <package name="com.wodi.who" isShowDivider="true" />
+    <package name="com.eoffcn.questions" />
+    <package name="com.handsgo.jiakao.android" supportFullSize="true" isShowDivider="true" relaunch="false"
+        splitPairRule="com.handsgo.jiakao.android.main.activity.MainActivity:*"
+        transitionRules="com.handsgo.jiakao.android.splash.Login" />
+    <package name="com.ludashi.benchmark" isShowDivider="true" />
+    <package name="cn.com.xbscPhone3" />
+    <package name="com.linkandroid.server.ctsmate" />
+    <package name="com.netease.xyqcbg" />
+    <package name="com.starbaba.clean.spirit" />
+    <package name="com.immomo.young" />
+    <package name="cn.rainbow.westore" />
+    <package name="com.meelive.ingkee" />
+    <package name="com.kongfz.app" />
+    <package name="com.pagoda.buy" />
+    <package name="com.hongxia.location" />
+    <package name="com.ygkj.chelaile.standard"
+        splitPairRule="dev.xesam.chelaile.app.module.PanelHostActivity:*"
+        transitionRules="dev.xesam.chelaile.app.module.city.CityGuideActivity, dev.xesam.chelaile.app.module.func.SplashActivity" />
+    <package name="com.baidu.autocar" />
+    <package name="com.suning.mobile.microshop" />
+    <package name="com.iflytek.inputmethod" relaunch="true"
+        splitPairRule="com.iflytek.inputmethod.settingsnew.main.MainActivity:*"
+        transitionRules="com.iflytek.inputmethod.remote.SpeechNoteProcessActivity,com.iflytek.inputmethod.setting.widget.BundleLoadingActivity,com.android.packageinstaller.permission.ui.GrantPermissionsActivity,com.iflytek.libdynamicpermission.external.RequestPermissionActivity,com.iflytek.inputmethod.remote.MmpProcessActivity" />
+    <package name="com.television.ysjj" />
+    <package name="com.hualongxiang" />
+    <package name="com.saicmotor.tocapp" />
+    <package name="com.baidu.dict" isShowDivider="true" />
+    <package name="com.zhl.jjyy.aphone" />
+    <package name="com.dragon.read" isShowDivider="true" supportFullSize="true"
+        transitionRules="com.dragon.read.pages.splash.SplashActivity"  activityRule="com.dragon.read.reader.ReaderActivity"
+        placeholder="com.dragon.read.pages.main.MainFragmentActivity:com.dragon.read.component.biz.impl.SearchActivity" />
+    <package name="com.xiaolian.prometheus" />
+    <package name="com.shyz.toutiao" relaunch="true" />
+    <package name="com.jm.video" />
+    <package name="com.moyou" />
+    <package name="com.qeeniao.mobile.kdjz" />
+    <package name="jdfbx.videotool.water" />
+    <package name="com.mcforemost.flowking" />
+    <package name="com.szt.pay" />
+    <package name="com.ailian.hope" />
+    <package name="com.ease.callshow" />
+    <package name="com.duitang.main" isShowDivider="true" />
+    <package name="com.zhuochi.hydream" />
+    <package name="com.iflytek.elpmobile.smartlearning" isShowDivider="true" />
+    <package name="com.tsy.tsy" />
+    <package name="com.iflyrec.tjapp" />
+    <package name="com.cjtec.fmradio" />
+    <package name="dongzheng.szkingdom.android.phone" />
+    <package name="com.hfzqsc" />
+    <package name="com.yizhe_temai" relaunch="true" />
+    <package name="com.zwang.clouds" isShowDivider="true"
+        transitionRules="com.excean.masteraid.rsv18mcf.ghb59mn25fnlz" />
+    <package name="com.baidu.netdisk.xiaomi.appunion" />
+    <package name="com.sup.android.slite" />
+    <package name="com.jd.smart" />
+    <package name="com.meituan.phoenix" />
+    <package name="oms.mmc.app.almanac_inland" />
+    <package name="com.csii.xm" />
+    <package name="com.bw30.zsch" />
+    <package name="com.suma.baoditong" />
+    <package name="com.sdiread.kt.ktandroid" />
+    <package name="com.tencent.map" fullRule="nra" />
+    <package name="com.ichangtou" />
+    <package name="cn.etouch.ecalendar" />
+    <package name="com.feeyo.vz.pro.cdm" />
+    <package name="com.zhenhui.huilianyi" />
+    <package name="com.jingdianxst.tool" />
+    <package name="com.youdao.reciteword" />
+    <package name="com.douyu.rush" />
+    <package name="com.zbx.ct.tvzhibohd" isShowDivider="true" />
+    <package name="com.yy.huanju" />
+    <package name="org.zxq.teleri" />
+    <package name="com.wanmeizhensuo.zhensuo" />
+    <package name="com.wuxibus.app" />
+    <package name="com.shoujiduoduo.story" />
+    <package name="com.tencent.nowod" />
+    <package name="com.zjwh.android_wh_physicalfitness" />
+    <package name="cn.kidyn.qdmedical160" />
+    <package name="com.ingkee.lite" />
+    <package name="com.eg.android.AlipayGphone" isShowDivider="true" supportFullSize="true" />
+    <package name="com.edcsc.wbus" />
+    <package name="com.lion.market" isShowDivider="true" supportFullSize="true" />
+    <package name="com.ips_app" />
+    <package name="com.macrovideo.v380" />
+    <package name="com.android.comicsisland.activity" />
+    <package name="com.xiangha.caipudaquan" relaunch="true" />
+    <package name="info.cd120" />
+    <package name="com.zheyouhui.app" />
+    <package name="com.xyhui" transitionRules="com.xyhui.start.StartHomeActivity" />
+    <package name="com.power.dapengeducation" isShowDivider="true" />
+    <package name="com.hzpd.jwztc"
+        transitionRules="com.alibaba.gov.android.privacy.service.permission.PermissionActivity" />
+    <package name="com.codoon.gps" />
+    <package name="cn.imsummer.summer" />
+    <package name="com.maiqiu.shiwu" />
+    <package name="com.huahua.learningpth" />
+    <package name="com.ss.android.tuchong"
+        splitPairRule="com.ss.android.tuchong.main.controller.MainActivity:*"
+        transitionRules="com.ss.android.tuchong.account.login.landing.RecommendUserLandingActivity" />
+    <package name="com.ssports.mobile.video" />
+    <package name="com.mostphoto.mymaker" />
+    <package name="com.icbc.elife" />
+    <package name="com.jd.jxj" />
+    <package name="com.xbxd.remote.control.electrical" fullRule="*" />
+    <package name="com.paem" fullRule="cr:rcr" />
+    <package name="com.lew.game.lock.mi" fullRule="*" />
+    <package name="com.mobile.kadian" fullRule="*" />
+    <package name="cn.cty.hbzw" fullRule="*" />
+    <package name="com.soft.blued" fullRule="*" />
+    <package name="com.efund.jqb" fullRule="*" />
+    <package name="com.ksxxzk.edu" fullRule="*" />
+    <package name="com.mengjun.DanNovel" fullRule="*" />
+    <package name="com.pwrd.steam.esports" fullRule="*" />
+    <package name="com.ziipin.homeinn" fullRule="*" />
+    <package name="com.zone2345" fullRule="*" />
+    <package name="com.chaoji.konglongkuaida.mt" fullRule="*" />
+    <package name="cn.org.gzjjzd.gzjjzd" fullRule="*" />
+    <package name="cn.suanya.zhixing" fullRule="*" />
+    <package name="com.intbull.pano3d" fullRule="*" />
+    <package name="beiq.daoh.sdit" fullRule="*" />
+    <package name="com.lanjingren.ivwen" relaunch="false" isShowDivider="true" />
+    <package name="com.edifier.edifierconnect" fullRule="*" />
+    <package name="com.heishi.android.app" fullRule="*" />
+    <package name="com.jooan.qiaoanzhilian" fullRule="*" />
+    <package name="com.qujianpan.duoduo" fullRule="*" />
+    <package name="com.lvman" fullRule="*" />
+    <package name="com.yuedong.sport" fullRule="*" />
+    <package name="paint.by.number.pixel.art.coloring.drawing.puzzle" fullRule="*" />
+    <package name="com.ddnapalon.calculator.gp" fullRule="*" />
+    <package name="cn.tianya.light" fullRule="*" />
+    <package name="com.qingdou.android" fullRule="*" />
+    <package name="video.player.videoplayer" fullRule="*" />
+    <package name="com.yek.android.uniqlo" fullRule="*" />
+    <package name="com.edu24ol.newclass" fullRule="*" />
+    <package name="cn.eagri.measurement" fullRule="*" />
+    <package name="com.yzxx.cycsdmn.mi" fullRule="*" />
+    <package name="com.kugou.android.child" fullRule="*" />
+    <package name="com.xnhd.apkxmxx.mi" fullRule="*" />
+    <package name="com.zzsoft.app" fullRule="*" />
+    <package name="com.ea.games.r3_row" fullRule="*" />
+    <package name="com.geek.familyalbum" fullRule="*" />
+    <package name="com.doumi.jianzhi" fullRule="*" />
+    <package name="com.edrawsoft.mindmaster" fullRule="*" />
+    <package name="com.android.auto.skip" fullRule="*" />
+    <package name="free.automatic.autoclick" fullRule="*" />
+    <package name="com.tencent.tv.qie" fullRule="nr" />
+    <package name="com.nice.main" fullRule="*" />
+    <package name="com.bwton.msx.tyb" fullRule="*" />
+    <package name="com.duozhuayu.dejavu" fullRule="*" />
+    <package name="com.weface.kksocialsecurity" fullRule="*" />
+    <package name="com.xueqiu.fund" fullRule="*" />
+    <package name="com.jd.b2b" fullRule="*" />
+    <package name="cn.com.gjzq.yjb2" fullRule="*" />
+    <package name="com.threegene.yeemiao" fullRule="*" />
+    <package name="com.color365.drawboard" fullRule="*" />
+    <package name="com.wdkxjy.mm.mi" fullRule="*" />
+    <package name="com.chaozh.iReaderFree" fullRule="nra" />
+    <package name="com.pokercity.ddz.mi" fullRule="*" />
+    <package name="com.videoplayer.magnetotaku" fullRule="*" />
+    <package name="com.comic.shenmanhua" fullRule="*" />
+    <package name="com.chif.weather" fullRule="*" />
+    <package name="com.microsoft.launcher" fullRule="*" />
+    <package name="cn.txtqbmfyd.reader" fullRule="*" />
+    <package name="com.maiya.xiangyu" fullRule="*" />
+    <!--<package name="com.baidu.BaiduMap" fullRule="nra" />-->
+    <package name="com.sfacg" fullRule="*" />
+    <package name="com.erciyuanpaint" fullRule="*" />
+    <package name="com.donghaisc" fullRule="*" />
+    <package name="com.ss.android.homed" isShowDivider="true" />
+    <package name="com.ph.xxxlj.mi" fullRule="*" />
+    <package name="com.ruqi.travel" fullRule="*" />
+    <package name="com.escape.zjy.mi" />
+    <package name="com.autonavi.minimap" fullRule="nra" />
+    <package name="com.baidu.input" fullRule="*" />
+    <package name="com.boly.wxmultopen" fullRule="*" />
+    <package name="com.yy.dreamer" fullRule="*" />
+    <package name="com.chenggua" fullRule="*" />
+    <package name="com.tencent.fvb" fullRule="*" />
+    <package name="com.pupumall.customer" />
+    <package name="com.cssq.weather" fullRule="*" />
+    <package name="com.weiran.yyddz.mi" fullRule="*" />
+    <package name="ru.brothersappsandgames.smashdiyslimefidgetslimy.dbzq.m" fullRule="*" />
+    <package name="com.tal.kaoyan" fullRule="nr" />
+    <package name="com.hexin.zhanghu" fullRule="*" />
+    <package name="com.hexin.android.bank" fullRule="*" />
+    <package name="cn.buding.martin" fullRule="*" />
+    <package name="com.duowan.bi" fullRule="*" />
+    <package name="com.sinotech.ln_student" fullRule="*" />
+    <package name="com.meiyi.wallpaper" fullRule="*" relaunch="false" />
+    <package name="com.netease.android.cloudgame" fullRule="*" />
+    <package name="com.masterblock.craftgamesbuilding.xc" fullRule="*" />
+    <package name="com.jovision.ivbaby" fullRule="*" />
+    <package name="com.arvato.sephora.app" fullRule="*" />
+    <package name="com.qujianpan.client.fast" fullRule="*" />
+    <package name="com.g316522678.jnh" fullRule="*" />
+    <package name="com.ehai" fullRule="*" />
+    <package name="com.jd.game.popbear.mi" fullRule="*" />
+    <package name="com.cyg.novafly.mi" fullRule="*" />
+    <package name="net.unitepower.zhitong" fullRule="*" />
+    <package name="com.tencent.wemeet.app" fullRule="nra:cr:rcr" />
+    <package name="com.daojia.jz.ayi" fullRule="*" />
+    <package name="com.biquge.book.noverls" fullRule="*" />
+    <package name="com.jd.game.bubblezuma.mi" fullRule="*" />
+    <package name="com.cutv.shakeshakestglt" fullRule="*" />
+    <package name="cn.missevan" fullRule="*" />
+    <package name="com.codemao.lunarb2c" fullRule="*" />
+    <package name="com.vehicles.activities" fullRule="*" />
+    <package name="com.gzsd.mhttt.mi" fullRule="*" />
+    <package name="com.android36kr.app" fullRule="*" />
+    <package name="aihuishou.aihuishouapp" fullRule="*" />
+    <package name="tv.dasheng.vs" fullRule="*" />
+    <package name="com.iodkols.onekeylockscreen" fullRule="*" />
+    <package name="com.shsc.gen" fullRule="*" />
+    <package name="com.lets.p3.mi" fullRule="*" />
+    <package name="com.lazada.android"
+        scaleMode="1"
+        transitionRules="com.etao.feimagesearch.util.PermissionActivity" />
+    <package name="com.zzkko" transitionRules="com.shein.welcome.WelcomeActivity" />
+    <package name="com.shopee.my"
+        scaleMode="1" flags="reusePreContainer:com.shopee.app.react.ReactActivity_" />
+    <package name="com.shopee.ph"
+        scaleMode="1" flags="reusePreContainer:com.shopee.app.react.ReactActivity_" />
+    <package name="com.shopee.th"
+        scaleMode="1" flags="reusePreContainer:com.shopee.app.react.ReactActivity_" />
+    <package name="com.shopee.vn"
+        scaleMode="1" flags="reusePreContainer:com.shopee.app.react.ReactActivity_" />
+    <package name="com.shopee.tw"
+        scaleMode="1" flags="reusePreContainer:com.shopee.app.react.ReactActivity_" />
+    <package name="com.hunantv.imgo.activity"
+        scaleMode="1"
+        transitionRules="com.tencent.connect.common.AssistActivity,com.mgtv.ui.personalhomepage.PersonalHomePageActivity,com.tencent.connect.common.AssistActivity,com.mgtv.ui.login.CaptureActivity"
+        flags="ignoreActivityBelowWhenJudgeMiddle:com.mgtv.ui.login.CaptureActivity" />
+    <package name="com.sup.android.superb" scaleMode="1" />
+    <package name="com.sankuai.meituan"
+        activityRule="com.meituan.android.upgrade.UpgradeDialogActivity,com.sankuai.waimai.business.restaurant.base.WebImagePreviewActivity,com.sankuai.titans.widget.media.MediaActivity,com.dianping.bizcomponent.preview.ui.BizImagePreviewActivity"
+        scaleMode="1"
+        transitionRules="com.sankuai.meituan.mbc.dsp.DspActivity,com.sankuai.meituan.mbc.dsp.TransitActivity,com.meituan.android.pt.group.transit.TransitCenterActivity,com.dianping.base.push.pushservice.HWPushDetailActivity,com.sankuai.waimai.foundation.core.base.activity.transfer.TransferActivity,com.meituan.mmp.lib.RouterCenterActivity,com.meituan.android.scan.ScanQRInMeituanActivity" />
+    <package name="com.mt.mtxx.mtxx" scaleMode="1"
+        transitionRules="com.meitu.mtxx.img.IMGMainActivity,com.meitu.puzzle.rebuild.PuzzleRebuildActivity,com.mt.mtxx.beauty.gl.BeautyMainGlActivity,com.mt.mtxx.tool.MTXXToolActivity,com.mt.mtxx.camera.view.CameraActivity" />
+    <package name="com.shizhuang.duapp" scaleMode="1"
+        transitionRules="com.shizhuang.duapp.du_login.LoginHelperActivity,com.shizhuang.duapp.du_login.LoginEntryActivity,om.shizhuang.duapp.du_login.business.LoginContainerActivity,com.shizhuang.duapp.modules.du_finance_common.activity.FinanceRouterActivity" />
+    <package name="com.sankuai.meituan.takeoutnew" scaleMode="1" />
+    <package name="com.achievo.vipshop"
+        placeholder="com.achievo.vipshop.homepage.activity.MainActivity:com.achievo.vipshop.usercenter.activity.MyCenterActivity"
+        scaleMode="1" splitPairRule="com.achievo.vipshop.homepage.activity.MainActivity:*" />
+    <package name="ctrip.android.view" scaleMode="1" />
+    <package name="com.duowan.mobile" scaleMode="1"
+        splitPairRule="com.yy.mobile.plugin.homepage.ui.home.HomeActivity:*" transitionRules="com.duowan.mobile.basemedia.watchlive.activity.LiveTemplateActivity" />
+    <package name="com.hupu.shihuo" scaleMode="1" />
+    <package name="com.intsig.camscanner" scaleMode="1"
+        transitionRules="com.intsig.camscanner.ImageScannerActivity" supportCameraPreview="true" />
+    <package name="com.homelink.android" scaleMode="1" />
+    <package name="com.tencent.djcity" scaleMode="1" />
+    <package name="com.wuba"
+        activityRule="com.wuba.activity.launch.LaunchActivity,com.wuba.activity.hotlaunch.HotLaunchActivity,com.wuba.tribe.live.activity.TribeAudienceActivity,com.wuba.tribe.live.activity.TribeAnchorActivity"
+        scaleMode="1" splitPairRule="com.wuba.home.activity.HomeActivity:*"
+        transitionRules="com.wuba.job.activity.JobDetailActivity,com.wuba.activity.launch.LeadingActivity" />
+    <package name="com.zhaopin.social" scaleMode="1"
+        splitPairRule="com.zhaopin.social.homepage.ZSC_MainTabActivity:*"
+        transitionRules="com.zhaopin.social.homepage.MagicWindowActivity,com.zhaopin.liteav.liveroom.ui.FlutterLiveRoomActivity" />
+    <package name="com.taobao.litetao"
+        placeholder="com.taobao.ltao.maintab.MainFrameActivity:com.taobao.search.searchdoor.SearchDoorLanucherActivity"
+        scaleMode="1" splitPairRule="com.taobao.ltao.maintab.MainFrameActivity:*" />
+    <package name="com.qingqi.dianbo" scaleMode="1" />
+    <package name="com.ishowedu.peiyin" scaleMode="1"
+        transitionRules="com.fz.module.dub.originalVideo.plan.TransParentOriginalVideoActivity,refactor.business.dub.dubbing.FZDubbingActivity,refactor.business.dub.dub.DubActivity" />
+    <package name="com.qq.ac.android" scaleMode="1" />
+    <package name="zwzt.fangqiu.edu.com.zwzt" transitionRules="com.zwzt.feature_setting.activity.WebViewTransferActivity" scaleMode="1" />
+    <package name="com.baidu.netdisk" activityRule="com.baidu.netdisk.video.ui.preview.video.VideoPlayerActivity"
+        flags="ignoreActivityBelowWhenJudgeMiddle:com.baidu.netdisk.ui.account.LoginRegisterActivity;useSameTfcOnCreateInPortrait:com.baidu.netdisk.ui.Navigate,com.baidu.netdisk.ui.account.LoginRegisterActivity"
+        isShowDivider="true" scaleMode="1" supportFullSize="true"
+        splitPairRule="com.baidu.netdisk.ui.MainActivity:*"
+        transitionRules="com.baidu.netdisk.ui.cloudfile.HomeEntryActivity,com.baidu.netdisk.flutter.ui.FlutterBusinessActivity,com.baidu.netdisk.ui.preview.OpenFileDialog,com.baidu.netdisk.ui.Navigate,com.baidu.netdisk.ui.cloudp2p.ShareGuideDialogActivity" />
+    <package name="com.qh.tesla" scaleMode="1" />
+    <package name="com.xs.fm" scaleMode="1"
+        transitionRules="com.dragon.read.plugin.live.LivePlayerActivity"
+        activityRule="com.dragon.read.reader.ReaderActivity"/>
+    <package name="com.tencent.qqsports" scaleMode="1" />
+    <package name="com.ximalaya.ting.lite" scaleMode="1" />
+    <package name="com.netease.vopen" scaleMode="1"
+        splitPairRule="com.netease.vopen.feature.home.HomeActivity:*"
+        flags="reusePreContainer:com.netease.vopen.feature.classbreak.community.preview.PicturePreviewActivity"/>
+    <package name="com.jxedt" relaunch="false" scaleMode="1" transitionRules="com.jxedt.ui.activitys.live.LiveWebActivity" />
+    <package name="com.huati" scaleMode="1" />
+    <package name="com.netease.cloudmusic"
+        activityRule="com.netease.cloudmusic.module.login.LoginActivity" scaleMode="1"
+        splitPairRule="com.netease.cloudmusic.activity.MainActivity:*,com.netease.cloudmusic.activity.IconChangeDefaultAlias:*"
+        transitionRules="com.netease.cloudmusic.activity.RedirectActivity,com.netease.cloudmusic.activity.LoadingActivity,com.netease.cloudmusic.activity.LockScreenActivity" />
+    <package name="com.lingan.seeyou" scaleMode="1" />
+    <package name="com.ks.kaishustory" scaleMode="1" />
+    <package name="com.baidu.tieba" supportFullSize="true" isShowDivider="true"
+        transitionRules="com.baidu.tieba.pb.pb.main.PbActivity,com.baidu.tieba.memberCenter.memberpay.MemberPayFragmentActivity,com.baidu.tieba.memberCenter.memberpay.MemberPayFragmentActivity,com.baidu.tieba.LogoActivity,com.baidu.tbadk.browser.TBWebContainerActivity,com.baidu.tieba.UpdateDialog,com.baidu.sapi2.activity.LoginActivity,com.baidu.tieba.passaccount.app.LoginActivity" />
+    <package name="com.qq.qcloud" scaleMode="1" relaunch="false"
+        transitionRules="com.qq.qcloud.activity.WeiyunRootActivity,com.qq.qcloud.activity.MMKVSplashActivity,com.qq.qcloud/.cts.RequestPrivacyActivity4ZeroFlow,com.qq.qcloud.login.LoginActivity,com.qq.qcloud.activity.detail.ViewDetailActivity" />
+    <package name="com.cubic.autohome" scaleMode="1"
+        transitionRules="com.autohome.main.me.ui.activity.OwnerLocalLoginActivity,com.autohome.main.me.ui.activity.OwnerOneKeyLoginActivity" />
+    <package name="cn.kuwo.player" clearTop="false" supportFullSize="true" isShowDivider="true" scaleMode="1"
+        transitionRules="com.kugou.fanxing.allinone.watch.liveroominone.media.FALiveRoomInOneActivity"/>
+    <package name="com.lofter.android" scaleMode="1" disableSensor="true" />
+    <package name="com.shoujiduoduo.wallpaper" scaleMode="1" />
+    <package name="com.kugou.android" scaleMode="1" activityRule="com.kugou.android.app.splash.SplashActivity"
+        transitionRules="com.kugou.modulesv.materialselection.materialUi3.KGMaterialPickerForDynamicVideoActivity,com.kugou.android.gallery.albums.KGImagePickerAlbumActivity,com.kugou.modulesv.svedit.KGSvEditForMvUploadActivity" />
+    <package name="com.tencent.karaoke"
+        activityRule="com.tencent.karaoke.module.relaygame.ui.RelayGameActivity,com.tme.karaoke_game.loading.KaraGameLoadingActivity,com.tme.karaoke_game.KaraGameActivity,com.tencent.karaoke.module.webview.ui.WebViewContainerActivity,com.tencent.karaoke.module.recording.ui.main.RecordingActivity"
+        scaleMode="1" splitPairRule="com.tencent.karaoke.module.main.ui.MainTabActivity:*"
+        transitionRules="com.tencent.karaoke.module.ktvroom.ui.KtvRoomActivityNew,com.tencent.karaoke.module.hippy.ui.HippyInstanceActivity"
+        flags="ignoreActivityBelowWhenJudgeMiddle:com.tencent.karaoke.module.ktvroom.ui.KtvRoomActivityNew" />
+    <package name="com.liulishuo.engzo" scaleMode="1" />
+    <package name="com.peopledailychina.activity" scaleMode="1" />
+    <package name="com.tencent.gamehelper.pg" scaleMode="1" />
+    <package name="com.fenbi.android.solar" scaleMode="1" />
+    <package name="com.baidu.searchbox.tomas" scaleMode="1" />
+    <package name="com.tmri.app.main" scaleMode="1" />
+    <package name="air.tv.douyu.android" relaunch="false" isShowDivider="true"
+        activityRule="com.douyu.ybimage.module_image_picker.views.ImagePickerActivity" />
+    <package name="cn.xiaochuankeji.tieba" scaleMode="1" />
+    <package name="com.jd.jrapp" scaleMode="1" transitionRules="com.jd.jrapp.bm.mainbox.PrivacyActiviy" />
+    <package name="com.tencent.gamehelper.smoba" scaleMode="1" />
+    <package name="com.yizhilu.qh" scaleMode="1" />
+    <package name="com.job.android" scaleMode="1"
+        splitPairRule="com.job.android.pages.apphome.AppHomeActivity:*"
+        transitionRules="com.job.android.pages.launcher.LauncherActivity,com.job.android.pages.jobsearch.keyword.SearchKeywordActivity" />
+    <package name="com.baidu.wenku" scaleMode="1" activityRule="com.baidu.bdlayout.ui.BDBookActivity" />
+    <package name="com.xiaoe.client" scaleMode="1" />
+    <package name="com.taobao.taobao" minSupportVersion="1:20230413"
+        placeholder="com.taobao.tao.welcome.Welcome:com.taobao.tao.MagicWindowActivity,com.taobao.tao.TBMainActivity:com.taobao.tao.MagicWindowActivity"
+        transitionRules="com.taobao.tao.TBMainActivity,com.taobao.android.shop.activity.ShopUrlRouterActivity,com.taobao.linkmanager.afc.TbFlowInActivity,com.taobao.cun.bundle.community.ui.activity.CuntaoRouterActivity,com.taobao.tao.rushpromotion.luaview.activity.LuaOrH5RouterActivity,com.taobao.browser.router.FromH5RouterActivity,com.taobao.android.shop.activity.ShopUrlRouterActivity,com.taobao.taolive.room.TaoLiveRouterActivity"
+        relaunch="false"
+        scaleMode="1" />
+    <package name="com.dianping.v1" minSupportVersion="1:20230413" procCompat="true"
+        scaleMode="1" />
+    <!-- package name="com.baidu.haokan" fullRule="nra:uc" minSupportVersion="1:20230510" /-->
+    <package name="com.baidu.homework" minSupportVersion="1:20230413" procCompat="true"
+        scaleMode="1" supportCameraPreview="false" />
+    <package name="com.hbo.hbonow" fullRule="*" />
+    <package name="com.happymod.apk" fullRule="*" />
+    <package name="com.facebook.katana" fullRule="nr" />
+    <package name="com.wildberries.ru" />
+    <package name="com.sina.weibo" fullRule="nra:cr:rcr:nr" isShowDivider="true" supportFullSize="true" />
+    <package name="com.qiyi.video" minSupportVersion="1:20230510" isShowDivider="true" clearTop="false"
+        transitionRules="com.qiyi.video.pages.category.activity.HomeTopMenuCategoryV2Activity" />
+    <!-- package name="com.tencent.mtt" fullRule="*" minSupportVersion="1:20230510" /-->
+    <!-- package name="com.ss.android.article.video" fullRule="*" minSupportVersion="1:20230510" /-->
+    <!-- package name="com.UCMobile" fullRule="nra" minSupportVersion="1:20230510" /-->
+    <package name="com.taptap" fullRule="cr" minSupportVersion="1:20230510" />
+    <package name="com.dianzhong.hmxs" fullRule="*" minSupportVersion="1:20230510" />
+    <package name="com.babycloud.hanju" minSupportVersion="1:20230510" scaleMode="1" />
+    <package name="com.sinyee.babybus.recommendapp" minSupportVersion="1:20230510" isShowDivider="true"
+        activityRule="com.sinyee.babybus.android.mainvideo.videoplay.VideoPlayActivity,com.sinyee.android.gameengine.library.activity.GameZeroActivity,com.sinyee.android.gameengine.library.activity.GameOneActivity,com.sinyee.android.gameengine.library.activity.GameTwoActivity,com.soundcloud.android.crop.CropImageActivity,com.sinyee.android.game.activity.gamezero.GameZeroActivity,com.sinyee.android.game.activity.gameone.GameOneActivity,com.sinyee.android.game.activity.gametwo.GameTwoActivity" />
+    <package name="tv.hanju.lite" minSupportVersion="1:20230510" isShowDivider="true" />
+    <package name="com.qiyi.video.lite" isShowDivider="true" supportFullSize="true"
+        minSupportVersion="1:20230510" />
+    <package name="com.fenbi.android.zenglish" isShowDivider="true" minSupportVersion="1:20230510"
+        relaunch="false" supportFullSize="true"
+        transitionRules="com.fenbi.android.zebraenglish.activity.portal.WelcomeActivity,com.fenbi.android.zebraenglish.splash.SplashActivity" />
+    <package name="com.ss.android.ugc.live" minSupportVersion="1:20230510" defaultSettings="false"
+        transitionRules="com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity" />
+    <package name="com.all.video" isShowDivider="true" supportFullSize="true" minSupportVersion="1:20230510" />
+    <package name="com.snda.wifilocating" minSupportVersion="1:20230510" />
+    <package name="com.sohu.inputmethod.sogou" minSupportVersion="1:20230510" />
+    <package name="com.taobao.idlefish" minSupportVersion="1:20230510"
+        placeholder="com.taobao.idlefish.maincontainer.activity.MainActivity:com.taobao.idlefish.category.CategoryPageActivity"
+        activityRule="com.taobao.idlefish.permission.PermissionActivity,com.taobao.fleamarket.scancode.as.tool.ToolsCaptureActivity,com.taobao.fleamarket.call.ui.FishRtcCallActivity,com.idlefish.flutterbridge.flutterboost.IdleFishFlutterFullActivity"
+        splitPairRule="com.taobao.idlefish.maincontainer.activity.MainActivity:*"
+        flags="forceResumeOnFocus:*"
+        scaleMode="1" />
+    <package name="com.xt.retouch" activityRule="com.xt.retouch.feed.impl.TemplateDetailActivity" isShowDivider="true"
+        minSupportVersion="1:20230510" supportFullSize="true"
+        splitPairRule="com.xt.retouch.uilauncher.MainActivity:*" />
+    <package name="com.kuaiduizuoye.scan" minSupportVersion="1:20230510" isShowDivider="true"
+        splitPairRule="com.kuaiduizuoye.scan.activity.main.activity.MainActivity:*" supportCameraPreview="true" />
+    <package name="com.kuaikan.comic" minSupportVersion="1:20230510"
+        transitionRules="com.kuaikan.library.social.main.SocialDelegateActivity"
+        splitPairRule="com.kuaikan.main.MainActivity:*" />
+    <package name="com.kwai.m2u" isShowDivider="true" supportFullSize="true" minSupportVersion="1:20230510" />
+    <package name="com.chaoxing.mobile" supportCameraPreview="true" supportFullSize="true" isShowDivider="true" minSupportVersion="1:20230510" />
+    <package name="com.cmcc.cmvideo" minSupportVersion="1:20230510" activityRule="com.cmvideo.mgvui.PersonalElderModeActivity, com.cmcc.cmvideo.main.teeny.TeenModeOpenActivity" />
+    <package name="com.gkid.crazyrope" minSupportVersion="1:20230510" splitPairRule="com.gkid.crazyrope.ui.home.HomeActivity:*" />
+    <package name="com.nineton.shouzhang" minSupportVersion="1:20230510" />
+    <package name="com.njh.biubiu" minSupportVersion="1:20230510" transitionRules="com.njh.ping.crop.CropDialogActivity" />
+    <!--package name="com.yangcong345.android.phone" fullRule="*" minSupportVersion="1:20230510" /-->
+    <package name="com.gh.gamecenter" fullRule="*" minSupportVersion="1:20230510" />
+    <package name="cn.cntv" supportFullSize="true" isShowDivider="true" minSupportVersion="1:20230510"  transitionRules="com.cctv.mcctv.login.view.activity.AuthenticationActivity"/>
+    <package name="com.hexin.plat.android" activityRule="com.hexin.android.biz_frame.subbiz.LandscapeActivity" minSupportVersion="1:20230510" />
+    <package name="com.mampod.ergedd" minSupportVersion="1:20230510" isShowDivider="true" />
+    <package name="com.netease.edu.ucmooc" isShowDivider="true" minSupportVersion="1:20230510" />
+    <package name="cn.eeo.classin" isShowDivider="true"
+        activityRule="cn.eeo.liveroom.ClassRoomActivity,cn.eeo.liveroom.CheckInActivity,cn.eeo.liveroom.ClassRoomDelegateActivity"
+        supportCameraPreview="false" minSupportVersion="1:20230510" />
+    <package name="com.ss.android.article.news"
+        activityRule="com.bytedance.ugc.publishwenda.article.PgcEditorActivity"
+        isShowDivider="true" supportFullSize="true"
+        minSupportVersion="1:20230510"
+        flags="reusePreContainer:com.bytedance.android.openlive.plugin.OpenLiveDummyActivity;ignoreActivityBelowWhenJudgeMiddle:com.ss.android.publish.send.TTSendPostActivity,com.bytedance.ugc.publishaggr.AggrPublishActivity"
+        splitPairRule="com.ss.android.article.news.activity.MainActivity:*"
+        transitionRules="com.ss.android.article.base.feature.isolation.view.IsolationActivity,com.ss.android.tma.view.TmgPluginLoadingActivity,com.bytedance.ugc.publishaggr.AggrPublishActivity,com.ss.android.publish.send.TTSendPostActivity" />
+    <package name="com.miui.player" version="9999" />
+    <package name="net.huanci.hsj" activityRule="net.huanci.hsj.activities.PaintActivity"
+        minSupportVersion="1:20230510" />
+    <package name="com.tencent.androidqqmail" fullRule="nra" minSupportVersion="1:20230510" />
+    <package name="com.outfit7.talkingtomgoldrun.mi" fullRule="nra:nr" minSupportVersion="1:20230510" />
+    <package name="com.duoduo.child.story" activityRule="com.duoduo.child.story.ui.activity.PGameServerActivity,com.duoduo.child.story.ui.activity.GameServerActivity,com.duoduo.child.story.ui.activity.PlayActivity"
+        isShowDivider="true" supportFullSize="true" />
+    <package name="com.qidian.QDReader" supportFullSize="true" fullRule="nra:cr:rcr" isShowDivider="true" />
+    <package name="com.ruanmei.ithome" supportFullSize="true" fullRule="*" isShowDivider="true" />
+    <package name="com.douban.frodo" fullRule="nr" />
+    <package name="com.xueersi.parentsmeeting" fullRule="nra:cr:rcr" />
+    <package name="cn.com.chsi.chsiapp" isShowDivider="true" />
+    <package name="com.qunhe.designer" isShowDivider="true" />
+    <package name="com.qiudashi.qiudashitiyu" scaleMode="1" relaunch="false"/>
+    <package name="draw.dkqoir.qiao" splitPairRule="draw.dkqoir.qiao.activity.MainActivity:*"
+        activityRule="draw.dkqoir.qiao.activity.SketchpadActivity,draw.dkqoir.qiao.activity.function.FunctionWebActivity,draw.dkqoir.qiao.activity.CalculatorActivity" />
+    <package name="com.maimemo.android.momo" />
+    <package name="com.sinyee.babybus.chants" isShowDivider="true" />
+    <package name="com.boxuegu" splitPairRule="com.boxuegu.activity.MainFlutterActivity:*"/>
+    <package name="com.comic.kaimanhua" fullRule="nr" />
+    <package name="com.xiwang.zaixian" fullRule="nra" />
+</package_config>
