@@ -3410,4 +3410,5 @@
     <package name="com.max.xiaoheihe" isShowDivider="true" supportFullSize="true"  placeholder="com.max.xiaoheihe.MainActivity:com.max.hbsearch.SearchNewActivity" activityRule="com.max.xiaoheihe.module.bbs.ImageActivity" splitPairRule="com.max.xiaoheihe.MainActivity:*,com.max.hbsearch.SearchNewActivity:*,com.max.xiaoheihe.module.bbs.ChannelsDetailActivity:*,com.max.xiaoheihe.module.bbs.post.ui.activitys.PicturePostPageActivity:*,com.max.xiaoheihe.bean.recommend.RecommendBoardActivity:*" transitionRules="com.max.xiaoheihe.module.account.RegisterOrLoginActivityV2"  />
     <package name="com.mi.health" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.ximalaya.ting.android" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="com.c114.c114__android" scaleMode="1" fullRule="nra:cr:rcr" />
 </package_config>
