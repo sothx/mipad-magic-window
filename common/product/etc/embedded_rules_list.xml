@@ -674,7 +674,6 @@
     <package name="com.hundsun.stockwinner.sxzq" />
     <package name="com.talicai.timiclient" />
     <package name="video.vue.android" />
-    <package name="com.tencent.gamehelper.speed" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.tencent.gamehelper.ui.main.WelcomeActivity,com.tencent.gamehelper.ui.information.activity.InfoFullScreenPlayerActivity" placeholder="com.tencent.gamehelper.ui.main.MainActivity:com.tencent.gamehelper.ui.search.SearchActivity" />
     <package name="com.jkydt.app" />
     <package name="cn.ishansong" />
     <package name="com.globaltide" />
@@ -988,7 +987,6 @@
     <package name="com.hxcx.morefun" />
     <package name="io.liuliu.music" />
     <package name="com.nineton.weatherforecast" />
-    <package name="com.tencent.tgclub" />
     <package name="com.itangyuan" />
     <package name="a.baozouptu" />
     <package name="com.sausage.download" />
@@ -1212,7 +1210,6 @@
     <package name="com.shengjingbank.mobile.cust" />
     <package name="com.zcbl.bjjj_driving" />
     <package name="com.caibeike.android" />
-    <package name="com.mihoyo.hyperion" relaunch="false" placeholder="com.mihoyo.hyperion.main.HyperionMainActivity:com.mihoyo.hyperion.search.GlobalSearchActivity" activityRule="com.draggable.library.extension.ImagesViewerActivity" splitPairRule="com.mihoyo.hyperion.main.HyperionMainActivity:*,com.mihoyo.hyperion.search.GlobalSearchActivity:*,com.mihoyo.hyperion.post.detail.PostDetailActivity:*,com.mihoyo.hyperion.user.favorites.MeFavoriteActivity:*,com.mihoyo.hyperion.user.history.HistoryActivity:*" />
     <package name="com.i61.ailesson" />
     <package name="com.xiaoshijie.sqb" />
     <package name="com.fcbox.hivebox" />
@@ -1815,7 +1812,6 @@
     <package name="com.jd.jrapp" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.Qunar" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.mqunar.splash.SplashActivity,com.mqunar.atom.uc.access.activity.UCLoginByPhoneActivity" splitPairRule="com.mqunar.react.base.stack.container.QReactNativeActivity1:com.mqunar.react.base.stack.container.QReactNativeActivity2,com.mqunar.react.base.stack.container.QReactNativeActivity2:com.mqunar.react.base.stack.container.QReactNativeActivity3" transitionRules="com.mqunar.splash.SplashActivity,com.mqunar.atom.uc.access.activity.UCLoginByPhoneActivity" />
     <package name="com.ct.client" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
-    <package name="com.tencent.gamehelper.smoba" isShowDivider="true" supportFullSize="true" splitRatio="0.3" scaleMode="1" activityRule="com.tencent.gamehelper.ui.information.activity.InfoFullScreenPlayerActivity" placeholder="com.tencent.gamehelper.ui.main.MainActivity:com.tencent.gamehelper.ui.search2.SearchActivity2" />
     <package name="com.jingyao.easybike" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.hicorenational.antifraud" />
     <package name="com.gorgeous.lite" />
@@ -1963,7 +1959,6 @@
     <package name="com.taobao.mobile.dipei" />
     <package name="com.yuantiku.tutor" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.xiaoniu.aidou" />
-    <package name="com.tencent.gamehelper.dnf" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.tencent.gamehelper.ui.main.WelcomeActivity,com.tencent.gamehelper.ui.information.activity.InfoFullScreenPlayerActivity" placeholder="com.tencent.gamehelper.ui.main.MainActivity:com.tencent.gamehelper.ui.search.SearchActivity" />
     <package name="com.hundsun.winner.pazq" />
     <package name="com.liulishuo.engzo" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.yangcong345.android.phone" />
@@ -3411,4 +3406,9 @@
     <package name="com.c114.c114__android" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.boohee.one" splitRatio="0.3" isShowDivider="true" supportFullSize="true" activityRule="com.boohee.one.app.home.ui.activity.main.MainActivity,com.boohee.one.app.home.ui.activity.SplashActivity,com.boohee.one.app.home.ui.activity.GuideActivity,com.boohee.one.app.account.ui.activity.PhoneLoginActivity,com.sensorsdata.sf.ui.view.DialogActivity" transitionRules="com.boohee.one.app.home.ui.activity.main.MainActivity,com.boohee.one.app.home.ui.activity.SplashActivity,com.boohee.one.app.home.ui.activity.GuideActivity,com.boohee.one.app.account.ui.activity.PhoneLoginActivity,com.sensorsdata.sf.ui.view.DialogActivity" supportCameraPreview="true" />
     <package name="com.netease.gl" splitRatio="0.33" isShowDivider="true" supportFullSize="true" activityRule="com.netease.gl.ui.activity.welcome.WelcomeActivity" splitPairRule="com.netease.gl.ui.activity.welcome.WelcomeActivity:*" transitionRules="com.netease.gl.ui.activity.welcome.WelcomeActivity" supportCameraPreview="true" />
+    <package name="com.mihoyo.hyperion" relaunch="false" splitRatio="0.33" isShowDivider="true" activityRule="com.mihoyo.hyperion.main.HyperionMainActivity,com.draggable.library.extension.ImagesViewerActivity" transitionRules="com.mihoyo.hyperion.main.HyperionMainActivity,com.draggable.library.extension.ImagesViewerActivity" splitPairRule="com.mihoyo.hyperion.main.HyperionMainActivity:*,com.mihoyo.hyperion.search.GlobalSearchActivity:*,com.mihoyo.hyperion.post.detail.PostDetailActivity:*,com.mihoyo.hyperion.user.favorites.MeFavoriteActivity:*,com.mihoyo.hyperion.user.history.HistoryActivity:*" />
+    <package name="com.tencent.tgclub" relaunch="false" splitRatio="0.33" isShowDivider="true" placeholder="com.tencent.tgclub.business.appframe.MainActivity:com.tencent.tgclub.function.flutter.SearchActivity"  activityRule="com.tencent.tgclub.business.appframe.WelcomeActivity,com.tencent.tgclub.function.login.LoginActivity" transitionRules="com.tencent.tgclub.business.appframe.WelcomeActivity,com.tencent.tgclub.function.login.LoginActivity" splitPairRule="com.tencent.tgclub.business.appframe.MainActivity:*,com.tencent.tgclub.function.flutter.SearchActivity:*" />
+    <package name="com.tencent.gamehelper.speed" isShowDivider="true"  supportFullSize="true" splitRatio="0.33" splitPairRule="com.tencent.gamehelper.ui.search.SearchActivity:*,com.tencent.gamehelper.ui.main.MainActivity:*" activityRule="com.tencent.gamehelper.ui.main.WelcomeActivity,com.tencent.gamehelper.ui.login.LoginActivity,com.tencent.gamehelper.ui.main.GuideActivity,com.tencent.gamehelper.ui.information.activity.InfoFullScreenPlayerActivity,com.tencent.gamehelper.ui.main.WelcomeActivity,com.tencent.gamehelper.flutter.FlutterFragmentHostActivity" transitionRules="com.tencent.gamehelper.ui.main.WelcomeActivity,com.tencent.gamehelper.ui.login.LoginActivity,com.tencent.gamehelper.ui.main.GuideActivity,com.tencent.gamehelper.ui.information.activity.InfoFullScreenPlayerActivity,com.tencent.gamehelper.ui.main.WelcomeActivity,com.tencent.gamehelper.flutter.FlutterFragmentHostActivity" />
+    <package name="com.tencent.gamehelper.dnf" isShowDivider="true" supportFullSize="true" splitPairRule="com.tencent.gamehelper.ui.search.SearchActivity:*,com.tencent.gamehelper.ui.main.MainActivity:*" activityRule="com.tencent.gamehelper.ui.main.MainActivity,com.tencent.gamehelper.ui.main.WelcomeActivity,com.tencent.gamehelper.ui.login.LoginActivity,com.tencent.gamehelper.ui.main.GuideActivity,com.tencent.gamehelper.ui.information.activity.InfoFullScreenPlayerActivity,com.tencent.gamehelper.ui.main.WelcomeActivity,com.tencent.gamehelper.flutter.FlutterFragmentHostActivity" transitionRules="com.tencent.gamehelper.ui.main.MainActivity,com.tencent.gamehelper.ui.main.WelcomeActivity,com.tencent.gamehelper.ui.login.LoginActivity,com.tencent.gamehelper.ui.main.GuideActivity,com.tencent.gamehelper.ui.information.activity.InfoFullScreenPlayerActivity,com.tencent.gamehelper.ui.main.WelcomeActivity,com.tencent.gamehelper.flutter.FlutterFragmentHostActivity" />
+    <package name="com.tencent.gamehelper.smoba" isShowDivider="true" supportFullSize="true" splitPairRule="com.tencent.gamehelper.ui.search.SearchActivity:*,com.tencent.gamehelper.ui.main.MainActivity:*" activityRule="com.tencent.gamehelper.ui.main.MainActivity,com.tencent.gamehelper.ui.main.WelcomeActivity,com.tencent.gamehelper.ui.login.LoginActivity,com.tencent.gamehelper.ui.main.GuideActivity,com.tencent.gamehelper.ui.information.activity.InfoFullScreenPlayerActivity,com.tencent.gamehelper.ui.main.WelcomeActivity,com.tencent.gamehelper.flutter.FlutterFragmentHostActivity" transitionRules="com.tencent.gamehelper.ui.main.MainActivity,com.tencent.gamehelper.ui.main.WelcomeActivity,com.tencent.gamehelper.ui.login.LoginActivity,com.tencent.gamehelper.ui.main.GuideActivity,com.tencent.gamehelper.ui.information.activity.InfoFullScreenPlayerActivity,com.tencent.gamehelper.ui.main.WelcomeActivity,com.tencent.gamehelper.flutter.FlutterFragmentHostActivity" />
 </package_config>
