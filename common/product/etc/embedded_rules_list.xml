@@ -1235,7 +1235,6 @@
     <package name="com.smartisan.notes" />
     <package name="com.violationquery" />
     <package name="com.jinglan.yaowang" clearTop="false" />
-    <package name="com.netease.gl" />
     <package name="com.tianlutech.ebus" />
     <package name="com.deepfusion.zao" />
     <package name="com.wimetro.iafc" />
@@ -3411,4 +3410,5 @@
     <package name="com.ximalaya.ting.android" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.c114.c114__android" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.boohee.one" splitRatio="0.3" isShowDivider="true" supportFullSize="true" activityRule="com.boohee.one.app.home.ui.activity.main.MainActivity,com.boohee.one.app.home.ui.activity.SplashActivity,com.boohee.one.app.home.ui.activity.GuideActivity,com.boohee.one.app.account.ui.activity.PhoneLoginActivity,com.sensorsdata.sf.ui.view.DialogActivity" transitionRules="com.boohee.one.app.home.ui.activity.main.MainActivity,com.boohee.one.app.home.ui.activity.SplashActivity,com.boohee.one.app.home.ui.activity.GuideActivity,com.boohee.one.app.account.ui.activity.PhoneLoginActivity,com.sensorsdata.sf.ui.view.DialogActivity" supportCameraPreview="true" />
+    <package name="com.netease.gl" splitRatio="0.33" isShowDivider="true" supportFullSize="true" activityRule="com.netease.gl.ui.activity.welcome.WelcomeActivity" splitPairRule="com.netease.gl.ui.activity.welcome.WelcomeActivity:*" transitionRules="com.netease.gl.ui.activity.welcome.WelcomeActivity" supportCameraPreview="true" />
 </package_config>
