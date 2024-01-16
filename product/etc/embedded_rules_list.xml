@@ -1993,7 +1993,6 @@
     <package name="com.yzxx.mnfkcl.mi" />
     <package name="com.gaotu100.superclass" />
     <package name="com.shanbay.sentence" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.shanbay.bay.biz.words.v2.study.StudyActivity,com.shanbay.biz.web.activity.ShanbayWebPageActivity" splitPairRule="com.shanbay.words.home.mvp.HomeActivity:*,com.shanbay.words.search.thiz.SearchWordActivity:*,com.shanbay.words.search.thiz.SearchWordActivityV2:*,com.shanbay.words.setting.SettingActivity:*,com.shanbay.bay.biz.words.v2.book.activity.MyWordBookActivity:*" placeholder="com.shanbay.words.home.mvp.HomeActivity:com.shanbay.words.search.thiz.SearchWordActivityV2" />
-    <package name="com.boohee.one" />
     <package name="com.kugou.android.ktvapp" />
     <package name="com.hoperun.intelligenceportal" />
     <package name="com.sh.cm.shydhn" />
@@ -3411,4 +3410,5 @@
     <package name="com.mi.health" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.ximalaya.ting.android" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.c114.c114__android" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="com.boohee.one" splitRatio="0.3" isShowDivider="true" supportFullSize="true" activityRule="com.boohee.one.app.home.ui.activity.main.MainActivity,com.boohee.one.app.home.ui.activity.SplashActivity,com.boohee.one.app.home.ui.activity.GuideActivity,com.boohee.one.app.account.ui.activity.PhoneLoginActivity,com.sensorsdata.sf.ui.view.DialogActivity" transitionRules="com.boohee.one.app.home.ui.activity.main.MainActivity,com.boohee.one.app.home.ui.activity.SplashActivity,com.boohee.one.app.home.ui.activity.GuideActivity,com.boohee.one.app.account.ui.activity.PhoneLoginActivity,com.sensorsdata.sf.ui.view.DialogActivity" supportCameraPreview="true" />
 </package_config>
