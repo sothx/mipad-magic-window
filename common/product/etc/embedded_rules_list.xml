@@ -178,7 +178,6 @@
     <package name="com.qihoo.cleandroid_lite" />
     <package name="com.ftl.redmi" />
     <package name="com.quan.taotaoquan" relaunch="true" />
-    <package name="com.heytap.health" />
     <package name="com.android.tiku.architect" />
     <package name="com.qihoo.srouter.n300" />
     <package name="com.kingsoft" />
@@ -3414,4 +3413,5 @@
     <package name="com.netease.ccliveaudio" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.oppo.store" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.lenovo.club.app" splitRatio="0.33" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
+    <package name="com.heytap.health" scaleMode="1" fullRule="nra:cr:rcr" />
 </package_config>
