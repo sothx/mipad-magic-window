@@ -1143,7 +1143,6 @@
     <package name="com.geek.zwweather" />
     <package name="com.pplive.androidphone.sport" />
     <package name="com.newcapec.mobile.ncp" />
-    <package name="com.lenovo.club.app" />
     <package name="tv.tvguo.androidphone" />
     <package name="com.android.app.notificationbar" />
     <package name="cn.wlantv.kznk" />
@@ -1220,7 +1219,6 @@
     <package name="com.bwton.msx.sjz" relaunch="true" />
     <package name="com.idianVideo.app.android" />
     <package name="org.sojex.finance" />
-    <package name="com.oppo.store" />
     <package name="com.enjoy.malt" />
     <package name="com.dingYZ.dingyzwater" />
     <package name="cn.owhatlab" />
@@ -2135,7 +2133,6 @@
     <package name="com.imaginer.yunji" />
     <package name="com.cnki.client" />
     <package name="com.yitong.mbank.psbc.creditcard" />
-    <package name="com.ingka.ikea.app.cn.prod" />
     <package name="com.plat.swhydyj.android.ShenWanHongYuanSecurity" />
     <package name="com.tsingzone.questionbank" />
     <package name="com.bertadata.qxb" />
@@ -3414,4 +3411,7 @@
     <package name="com.netease.snailread" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" splitPairRule="com.netease.snailread.activity.HomeMainActivity:*,com.netease.snailread.activity.SearchActivity:*,com.netease.snailread.activity.ReadBookNewActivity:*,com.netease.snailread.topic.activity.BookTopicListActivity:*,com.netease.snailread.activity.UserMainPageActivity:*" placeholder="com.netease.snailread.activity.HomeMainActivity:com.netease.snailread.activity.SearchActivity" activityRule="com.netease.snailread.activity.ReadBookNewActivity,com.netease.snailread.activity.SplashActivity,com.netease.snailread.activity.NewGuideRecommendPopupActivity,com.netease.snailread.activity.NewGuideRecommendPopupActivity,com.netease.snailread.activity.FullScreenVideoPlayActivity" transitionRules="com.netease.snailread.activity.ReadBookNewActivity,com.netease.snailread.activity.SplashActivity,com.netease.snailread.activity.NewGuideRecommendPopupActivity,com.netease.snailread.activity.NewGuideRecommendPopupActivity,com.netease.snailread.activity.FullScreenVideoPlayActivity" />
     <package name="com.youdao.course" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.netease.ccliveaudio" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="com.ingka.ikea.app.cn.prod" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="com.oppo.store" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="com.lenovo.club.app" splitRatio="0.33" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" activityRule="com.lenovo.club.app.page.MainActivity" transitionRules="com.lenovo.club.app.page.MainActivity"  />
 </package_config>
