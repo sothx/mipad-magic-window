@@ -347,7 +347,6 @@
     <package name="com.huahua.testing" />
     <package name="com.baidu.finance" />
     <package name="com.fenbi.android.zenglish" relaunch="true" transitionRules="com.fenbi.android.zebraenglish.activity.portal.WelcomeActivity,com.fenbi.android.zebraenglish.splash.SplashActivity" />
-    <package name="cn.damai" />
     <package name="com.mediaeditor.video" />
     <package name="com.guanaitong" />
     <package name="com.drcom.DuoDian" />
@@ -442,7 +441,6 @@
     <package name="com.helian.wifi" />
     <package name="com.taobao.movie.android" />
     <package name="com.mc.ql.qldzg" />
-    <package name="com.showstartfans.activity" />
     <package name="com.entrobus.dreamlife" />
     <package name="com.borsche.zyb" />
     <package name="com.dewmobile.kuaiya" />
@@ -767,7 +765,6 @@
     <package name="com.weathercyhl" />
     <package name="com.cdel.medmobile" />
     <package name="com.zhinengremote.mohan" />
-    <package name="com.ddsy.songyao" />
     <package name="com.jywifi.xiaoleida" />
     <package name="com.fenbi.android.zhaojiao" />
     <package name="com.ZArchiver.chengyuda" />
@@ -3414,4 +3411,9 @@
     <package name="com.oppo.store" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.lenovo.club.app" splitRatio="0.33" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
     <package name="com.heytap.health" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="cn.damai" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="com.showstartfans.activity" isShowDivider="true" splitRatio="0.33" supportFullSize="true" supportCameraPreview="true" placeholder="com.showstartfans.activity.activitys.maintab.newmain.MainNewActivity:com.showstartfans.activity.activitys.other.SearchListActivity" splitPairRule="com.showstartfans.activity.activitys.maintab.newmain.MainNewActivity:*,com.showstartfans.activity.activitys.other.SearchTabMainActivity:*"  activityRule="com.showstartfans.activity.activitys.welcome.AdvertActivity" transitionRules="com.showstartfans.activity.activitys.welcome.AdvertActivity" />
+    <package name="com.sankuai.movie" scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.taobao.movie.android" scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.ddsy.songyao" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" placeholder="com.ddsy.songyao.activity.MainActivity:com.ddsy.songyao.search.SearchH5Activity" splitPairRule="com.ddsy.songyao.activity.MainActivity:*,com.ddsy.songyao.activity.SearchListPlusActivity:*"  activityRule="com.ddsy.songyao.login.LoginActivity,com.ddsy.songyao.activity.SplashActivity,com.ddsy.songyao.activity.VideoWelcomeActivity,com.ddsy.songyao.video.DDSmallVideoActivity" transitionRules="com.ddsy.songyao.login.LoginActivity,com.ddsy.songyao.activity.SplashActivity,com.ddsy.songyao.activity.VideoWelcomeActivity,com.ddsy.songyao.video.DDSmallVideoActivity" />
 </package_config>
