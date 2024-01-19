@@ -947,7 +947,6 @@
     <package name="com.moji.calendar" />
     <package name="com.ximalaya.qiqi.android" />
     <package name="com.xuanke.kaochong" />
-    <package name="com.xunlei.downloadprovider" relaunch="true" />
     <package name="com.hongbaoshuapp" />
     <package name="com.ldygo.qhzc" />
     <package name="com.shineyie.aijianji" />
@@ -1755,7 +1754,6 @@
     <package name="com.sankuai.meituan.takeoutnew" splitRatio="0.49" placeholder="com.sankuai.waimai.business.page.homepage.MainActivity:com.sankuai.waimai.business.search.ui.GlobalSearchActivity" splitPairRule="com.sankuai.waimai.business.page.homepage.MainActivity:*,com.sankuai.waimai.business.search.ui.GlobalSearchActivity:*,com.sankuai.waimai.reactnative.WmRNActivity:*" />
     <package name="com.achievo.vipshop" placeholder="com.achievo.vipshop.homepage.activity.MainActivity:com.achievo.vipshop.usercenter.activity.MyCenterActivity" scaleMode="1" splitPairRule="com.achievo.vipshop.homepage.activity.MainActivity:*" />
     <package name="com.lianjia.beike" scaleMode="1" />
-    <package name="com.duowan.mobile" scaleMode="1" splitPairRule="com.yy.mobile.plugin.homepage.ui.home.HomeActivity:*" />
     <package name="com.hupu.shihuo" scaleMode="1" />
     <package name="com.intsig.camscanner" scaleMode="1" />
     <package name="com.homelink.android" placeholder="com.homelink.android.MainActivity:com.homelink.android.common.search.SearchHouseSuggestActivity" />
@@ -1917,7 +1915,6 @@
     <package name="com.seebaby" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.tencent.edu" />
     <package name="com.baidu.youavideo" placeholder="com.baidu.youavideo.home.view.HomeActivity:com.baidu.youavideo.search.ui.view.activity.SearchActivity" />
-    <package name="com.qq.qcloud" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="com.qq.qcloud.global.ui.MainFrameActivity:com.qq.qcloud.search.SearchActivity" />
     <package name="com.yzxx.btts.mi" />
     <package name="cn.com.chsi.chsiapp" fullRule="nra:cr:rcr" />
     <package name="com.koudai.weidian.buyer" />
@@ -2575,7 +2572,6 @@
     <package name="com.nd.pptshell" />
     <package name="com.cvte.link" />
     <package name="flipboard.cn" />
-    <package name="cn.wenyu.bodian" />
     <package name="com.kdanmobile.android.pdfreader.google.pad" />
     <package name="com.ericsson.geely" />
     <package name="com.umpay.qingdaonfc" />
@@ -3416,4 +3412,11 @@
     <package name="com.taobao.movie.android" isShowDivider="true" splitRatio="0.33" supportFullSize="true" splitPairRule="com.taobao.movie.android.app.home.activity.MainActivity:*" activityRule="com.taobao.movie.android.app.home.activity.MainActivity,com.ali.user.mobile.login.ui.UserLoginActivity,com.taobao.movie.android.app.oscar.ui.Region.RegionListActivity,com.taobao.movie.android.common.scan.ScanCodeActivity" transitionRules="com.taobao.movie.android.app.home.activity.MainActivity,com.ali.user.mobile.login.ui.UserLoginActivity,com.taobao.movie.android.app.oscar.ui.Region.RegionListActivity,com.taobao.movie.android.common.scan.ScanCodeActivity" />
     <package name="com.sankuai.movie"  isShowDivider="true"  supportFullSize="true" splitPairRule="com.sankuai.movie.MovieMainActivity:*"  activityRule="com.sankuai.movie.MovieMainActivity,com.sankuai.movie.PrivacyActivity,com.sankuai.movie.welcome.Welcome,com.sankuai.movie.account.MaoyanLoginActivity,com.meituan.android.yoda.activity.YodaConfirmActivity,com.sankuai.movie.transit.TransitActivity" transitionRules="com.sankuai.movie.MovieMainActivity,com.sankuai.movie.PrivacyActivity,com.sankuai.movie.welcome.Welcome,com.sankuai.movie.account.MaoyanLoginActivity,com.meituan.android.yoda.activity.YodaConfirmActivity,com.sankuai.movie.transit.TransitActivity" />
     <package name="com.ddsy.songyao" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" placeholder="com.ddsy.songyao.activity.MainActivity:com.ddsy.songyao.search.SearchH5Activity" splitPairRule="com.ddsy.songyao.activity.MainActivity:*,com.ddsy.songyao.activity.SearchListPlusActivity:*,com.alibaba.pictures.bricks.search.v2.SearchActivity:*,com.taobao.movie.android.app.oscar.search.RemoteSearchActivity:*"  activityRule="com.ddsy.songyao.login.LoginActivity,com.ddsy.songyao.activity.SplashActivity,com.ddsy.songyao.activity.VideoWelcomeActivity,com.ddsy.songyao.video.DDSmallVideoActivity" transitionRules="com.ddsy.songyao.login.LoginActivity,com.ddsy.songyao.activity.SplashActivity,com.ddsy.songyao.activity.VideoWelcomeActivity,com.ddsy.songyao.video.DDSmallVideoActivity" />
+    <package name="com.xiaomi.router" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="com.xunlei.downloadprovider" relaunch="true" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="cn.cntv" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="cn.wenyu.bodian" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="com.duowan.mobile" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="com.jiandanxinli.smileback" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="com.qq.qcloud" isShowDivider="true" supportFullSize="true" splitRatio="0.33" activityRule="com.qq.qcloud.global.ui.MainFrameActivity,com.qq.qcloud.login.LoginActivity,com.qq.qcloud.activity.MMKVSplashActivity,com.qq.qcloud.cts.RequestPrivacyActivity4ZeroFlow,com.qq.qcloud.activity.WeiyunRootActivity,com.qq.qcloud.activity.setting.OpenBackupActivity,com.qq.qcloud.openin.OpenInActivity,com.qq.qcloud.openin.HandleOpenInActivity,com.qq.qcloud.activity.picker.PickerWeiyunFolderActivity" transitionRules="com.qq.qcloud.global.ui.MainFrameActivity,com.qq.qcloud.login.LoginActivity,com.qq.qcloud.activity.MMKVSplashActivity,com.qq.qcloud.cts.RequestPrivacyActivity4ZeroFlow,com.qq.qcloud.activity.WeiyunRootActivity,com.qq.qcloud.activity.setting.OpenBackupActivity,com.qq.qcloud.openin.OpenInActivity,com.qq.qcloud.openin.HandleOpenInActivity,com.qq.qcloud.activity.picker.PickerWeiyunFolderActivity" splitPairRule="com.qq.qcloud.global.ui.MainFrameActivity:*" />
 </package_config>
