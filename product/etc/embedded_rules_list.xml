@@ -548,7 +548,6 @@
     <package name="com.shunmao.xsssydq" />
     <package name="com.sesame.video" />
     <package name="com.bjtongan.anjia365.llpx" />
-    <package name="com.mxbc.mxsa" />
     <package name="com.tencent.nbagametime" />
     <package name="com.Kingdee.Express" />
     <package name="com.umetrip.android.msky.app" />
@@ -1107,7 +1106,6 @@
     <package name="com.openlanguage.kaiyan" />
     <package name="com.doudou.flashlight" transitionRules="com.miui.permcenter.permissions.PermissionsEditorActivity" />
     <package name="com.qeeyou.app.accelerator" />
-    <package name="com.yipiao" placeholder="com.app.main.entrance.MainActivity:com.app.search.ZTSearchActivity" splitPairRule="com.app.main.entrance.MainActivity:*,com.app.search.ZTSearchActivity:*" />
     <package name="com.xsjinye.xsjinye" />
     <package name="com.k12n" />
     <package name="com.cmf.cqwallet" />
@@ -1237,7 +1235,6 @@
     <package name="com.mianfeinovel" />
     <package name="protect.eye" />
     <package name="com.zhl.fep.aphone" />
-    <package name="com.haidilao" placeholder="com.haidilao.hailehui.biz.impl.activity.MainActivityNew:com.haidilao.hailehui.biz.impl.activity.SearchHomePageActivity" splitPairRule="com.haidilao.hailehui.biz.impl.activity.MainActivityNew:*,com.haidilao.hailehui.biz.impl.activity.SearchHomePageActivity:*" />
     <package name="com.edujia.ime" relaunch="true" />
     <package name="com.sevenplus.chinascience" />
     <package name="com.zhuanyejun.club" />
@@ -3421,4 +3418,7 @@
     <package name="com.mfw.roadbook"  />
     <package name="com.jingdong.app.mall" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="com.jingdong.app.mall.MainFrameActivity:com.jd.lib.search.view.Activity.SearchActivity" splitPairRule="com.jd.lib.search.view.Activity.SearchActivity:*,com.jd.lib.search.view.Activity.ProductListActivity:*,com.jd.lib.jshop.jshop.JshopMainShopActivity:*" />
     <package name="com.taobao.idlefish" supportFullSize="true" splitRatio="0.33" minSupportVersion="1:20230510" placeholder="com.taobao.idlefish.maincontainer.activity.MainActivity:com.taobao.idlefish.category.CategoryPageActivity" activityRule="com.taobao.idlefish.permission.PermissionActivity,com.taobao.fleamarket.scancode.as.tool.ToolsCaptureActivity,com.taobao.fleamarket.call.ui.FishRtcCallActivity,com.idlefish.flutterbridge.flutterboost.IdleFishFlutterFullActivity" flags="forceResumeOnFocus:*" />
+    <package name="com.haidilao" splitPairRule="com.haidilao.hailehui.biz.impl.activity.MainActivityNew:*,com.haidilao.hailehui.biz.impl.activity.SearchHomePageActivity:*" />
+    <package name="com.mxbc.mxsa" middleRule="*" scaleMode="1" procCompat="true" />
+    <package name="com.yipiao" supportFullSize="true" isShowDivider="true" splitPairRule="com.app.main.entrance.MainActivity:*,com.app.search.ZTSearchActivity:*" />
 </package_config>
