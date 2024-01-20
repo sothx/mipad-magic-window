@@ -915,7 +915,6 @@
     <setting name="com.doupin.show" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.njh.biubiu" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="cn.edu.zjicm.wordsnet_d" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
-    <setting name="com.taobao.trip" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.csii.sns.ui" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.tencent.tgp" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.tplink.ipc" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />

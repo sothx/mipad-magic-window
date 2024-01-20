@@ -1814,7 +1814,6 @@
     <package name="com.bankcomm.maidanba" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.kuaiduizuoye.scan" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.netease.mc.mi" />
-    <package name="com.taobao.trip" />
     <package name="com.campmobile.snowcamera" />
     <package name="cn.xiaochuankeji.tieba" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="cn.xiaochuankeji.tieba.ui.base.SplashActivity,cn.xiaochuankeji.tieba.media.browse.MediaActivity" splitPairRule="cn.xiaochuankeji.tieba.ui.home.page.PageMainActivity:*,cn.xiaochuankeji.tieba.ui.search.ui.SearchActivity:*" placeholder="cn.xiaochuankeji.tieba.ui.home.page.PageMainActivity:cn.xiaochuankeji.tieba.ui.search.ui.SearchActivity" />
     <package name="com.sankuai.youxuan" />

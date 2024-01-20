@@ -1814,7 +1814,6 @@
     <package name="com.bankcomm.maidanba" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.kuaiduizuoye.scan" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.netease.mc.mi" />
-    <package name="com.taobao.trip" />
     <package name="com.campmobile.snowcamera" />
     <package name="cn.xiaochuankeji.tieba" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="cn.xiaochuankeji.tieba.ui.base.SplashActivity,cn.xiaochuankeji.tieba.media.browse.MediaActivity" splitPairRule="cn.xiaochuankeji.tieba.ui.home.page.PageMainActivity:*,cn.xiaochuankeji.tieba.ui.search.ui.SearchActivity:*" placeholder="cn.xiaochuankeji.tieba.ui.home.page.PageMainActivity:cn.xiaochuankeji.tieba.ui.search.ui.SearchActivity" />
     <package name="com.sankuai.youxuan" />
@@ -3421,5 +3420,5 @@
     <package name="com.tipsoon.android" scaleMode="1" fullRule="nra:cr:rcr"  />
     <package name="com.mfw.roadbook"  />
     <package name="com.jingdong.app.mall" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="com.jingdong.app.mall.MainFrameActivity:com.jd.lib.search.view.Activity.SearchActivity" splitPairRule="com.jd.lib.search.view.Activity.SearchActivity:*,com.jd.lib.search.view.Activity.ProductListActivity:*,com.jd.lib.jshop.jshop.JshopMainShopActivity:*" />
-    <package name="com.taobao.idlefish" supportFullSize="true" minSupportVersion="1:20230510" placeholder="com.taobao.idlefish.maincontainer.activity.MainActivity:com.taobao.idlefish.category.CategoryPageActivity" activityRule="com.taobao.idlefish.permission.PermissionActivity,com.taobao.fleamarket.scancode.as.tool.ToolsCaptureActivity,com.taobao.fleamarket.call.ui.FishRtcCallActivity,com.idlefish.flutterbridge.flutterboost.IdleFishFlutterFullActivity" flags="forceResumeOnFocus:*" />
+    <package name="com.taobao.idlefish" supportFullSize="true" splitRatio="0.33" minSupportVersion="1:20230510" placeholder="com.taobao.idlefish.maincontainer.activity.MainActivity:com.taobao.idlefish.category.CategoryPageActivity" activityRule="com.taobao.idlefish.permission.PermissionActivity,com.taobao.fleamarket.scancode.as.tool.ToolsCaptureActivity,com.taobao.fleamarket.call.ui.FishRtcCallActivity,com.idlefish.flutterbridge.flutterboost.IdleFishFlutterFullActivity" flags="forceResumeOnFocus:*" />
 </package_config>
