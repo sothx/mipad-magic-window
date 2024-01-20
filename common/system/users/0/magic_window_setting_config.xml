@@ -3463,4 +3463,7 @@
     <setting name="com.xiaomi.router" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.jiandanxinli.smileback" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="cn.cntv" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="cn.nineton.dailycheck" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="com.nnsz.diy" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="app.huawei.auto" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
 </setting_config>

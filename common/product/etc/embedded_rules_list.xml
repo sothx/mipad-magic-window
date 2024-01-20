@@ -1206,7 +1206,7 @@
     <package name="com.taobao.live4anchor" />
     <package name="com.express.relief.weather.clear" />
     <package name="com.taobao.live" relaunch="true" transitionRules="com.taobao.live.weex.WXContainerActivity" placeholder="com.taobao.live.home.activity.TaoLiveHomeActivity:com.taobao.live.TaoLiveSearchActivity" />
-    <package name="com.tipsoon.android" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.tipsoon.android.activity.MainActivity,com.tipsoon.android.activity.WelcomeActivity,com.tipsoon.android.activity.LoginActivity" transitionRules="com.tipsoon.android.activity.MainActivity,com.tipsoon.android.activity.WelcomeActivity,com.tipsoon.android.activity.LoginActivity"  />
+    <package name="com.tipsoon.android" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.tipsoon.android.activity.MainActivity,com.tipsoon.android.activity.WelcomeActivity,com.tipsoon.android.activity.LoginActivity" transitionRules="com.tipsoon.android.activity.MainActivity,com.tipsoon.android.activity.WelcomeActivity,com.tipsoon.android.activity.LoginActivity" splitPairRule="com.tipsoon.android.activity.MainActivity:*"  />
     <package name="com.bwton.msx.sjz" relaunch="true" />
     <package name="com.idianVideo.app.android" />
     <package name="org.sojex.finance" />
@@ -3419,7 +3419,7 @@
     <package name="cmccwm.mobilemusic" relaunch="false" scaleMode="1" fullRule="nra:cr:rcr"  />
     <package name="com.shinyv.cnr" scaleMode="1" fullRule="nra:cr:rcr"  />
     <package name="cn.nineton.dailycheck" scaleMode="1" fullRule="nra:cr:rcr"  />
-    <package name="com.mfw.roadbook" scaleMode="1" fullRule="nra:cr:rcr"  />
-    <package name="com.krniu.notes" scaleMode="1" fullRule="nra:cr:rcr"  />
     <package name="com.nnsz.diy" scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="app.huawei.auto" scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.mfw.roadbook"  />
 </package_config>
