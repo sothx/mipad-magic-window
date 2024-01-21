@@ -472,7 +472,6 @@
     <package name="com.lysoft.android.lyyd.report" />
     <package name="com.zhijie.creditloan" />
     <package name="com.qiyi.video.reader" />
-    <package name="com.plateno.botaoota" />
     <package name="com.netease.moyi" />
     <package name="com.jnzc.shipudaquan" />
     <package name="com.wtyt.goods.driver" />
@@ -1084,7 +1083,6 @@
     <package name="com.ushaqi.fantuan" />
     <package name="com.netease.a13.avg" />
     <package name="com.dzmf.zmfxsdq" />
-    <package name="com.unicom.woshipin" relaunch="true" />
     <package name="com.geek.jk.weather.fission" />
     <package name="com.picooc" />
     <package name="com.shoujiduoduo.duoshow" />
@@ -1184,7 +1182,6 @@
     <package name="com.dangdang.reader" />
     <package name="cn.goodjobs.client" />
     <package name="com.aplum.androidapp" relaunch="true" />
-    <package name="com.htinns" />
     <package name="com.hori.smartcommunity" />
     <package name="com.immomo.momo" relaunch="true" />
     <package name="com.lechuan.midunovel" />
@@ -1783,12 +1780,11 @@
     <package name="com.tencent.wework" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.baidu.haokan" middleRule="*" minSupportVersion="1:20230413" procCompat="true" scaleMode="1" />
     <package name="air.tv.douyu.android" isShowDivider="true" supportFullSize="true" splitRatio="0.3" clearTop="true" placeholder="com.douyu.module.home.pages.main.MainActivity:com.douyu.module.search.view.activity.SearchActivity" splitPairRule="com.douyu.module.home.pages.main.MainActivity:*,com.douyu.module.search.view.activity.SearchActivity:*" />
-    <package name="ctrip.android.view" placeholder="ctrip.android.publicproduct.home.view.CtripHomeActivity:ctrip.android.tmkit.activity.TouristMapActivity" />
+    <!-- <package name="ctrip.android.view" placeholder="ctrip.android.publicproduct.home.view.CtripHomeActivity:ctrip.android.tmkit.activity.TouristMapActivity" /> -->
     <package name="cn.gov.tax.its" fullRule="nra:cr:rcr" />
     <package name="com.yitong.mbank.psbc" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.sohu.inputmethod.sogou" />
     <package name="com.jd.jrapp" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
-    <package name="com.Qunar" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.mqunar.splash.SplashActivity,com.mqunar.atom.uc.access.activity.UCLoginByPhoneActivity" splitPairRule="com.mqunar.react.base.stack.container.QReactNativeActivity1:com.mqunar.react.base.stack.container.QReactNativeActivity2,com.mqunar.react.base.stack.container.QReactNativeActivity2:com.mqunar.react.base.stack.container.QReactNativeActivity3" transitionRules="com.mqunar.splash.SplashActivity,com.mqunar.atom.uc.access.activity.UCLoginByPhoneActivity" />
     <package name="com.ct.client" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.jingyao.easybike" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.hicorenational.antifraud" />
@@ -1879,7 +1875,6 @@
     <package name="com.lwby.breader.ad" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="bubei.tingshu" />
     <package name="com.sohu.newsclient" />
-    <package name="com.tongcheng.android" />
     <package name="enfc.metro" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.imibaby.client" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.dw.jrccc.mi" />
@@ -3421,4 +3416,9 @@
     <package name="com.mxbc.mxsa" middleRule="*" scaleMode="1" procCompat="true" />
     <package name="com.yipiao" supportFullSize="true" isShowDivider="true" splitPairRule="com.app.main.entrance.MainActivity:*,com.app.search.ZTSearchActivity:*" />
     <package name="com.bilibili.app.blue" splitRatio="0.3" isShowDivider="true" supportFullSize="true" clearTop="true" placeholder="tv.danmaku.bili.MainActivityV2:*" splitPairRule="tv.danmaku.bili.MainActivityV2:*,com.bilibili.search.main.BiliMainSearchActivity:*,com.bilibili.bplus.followinglist.quick.consume.QuickConsumeActivity:*,tv.danmaku.bili.ui.videodownload.VideoDownloadListActivity:*,com.bilibili.lib.ui.GeneralActivity:*,tv.danmaku.bili.ui.favorite.FavoriteBoxActivity:*,tv.danmaku.bili.ui.main2.WatchLaterActivity:*,com.bilibili.lib.ui.GeneralActivity:*,com.bilibili.app.preferences.BiliPreferencesActivity:*,com.mall.ui.page.search.SearchFragmentLoadActivity:*" />
+    <package name="com.unicom.woshipin" supportFullSize="true" procCompat="true" middleRule="*" />
+    <package name="com.tongcheng.android"  supportFullSize="true" activityRule="com.tongcheng.android.module.qrcode.CaptureActivity,com.tongcheng.android.module.account.LoginActivity,com.tongcheng.android.module.account.login.VerifyRegisterActivity,com.tongcheng.android.LoadingActivity,com.tongcheng.android.module.account.activity.HalfScreenLoginActivity" transitionRules="com.tongcheng.android.module.qrcode.CaptureActivity,com.tongcheng.android.module.account.LoginActivity,com.tongcheng.android.module.account.login.VerifyRegisterActivity,com.tongcheng.android.LoadingActivity,com.tongcheng.android.module.account.activity.HalfScreenLoginActivity"  />
+    <package name="com.plateno.botaoota" supportFullSize="true" />
+    <package name="com.htinns" supportFullSize="true" activityRule="com.htinns.zxing.CaptureActivity,com.huazhu.loading.LoadingActivity" />
+    <package name="ctrip.android.view" supportFullSize="true" activityRule="ctrip.android.qrcode.QRScanActivity" transitionRules="ctrip.android.qrcode.QRScanActivity" />
 </package_config>

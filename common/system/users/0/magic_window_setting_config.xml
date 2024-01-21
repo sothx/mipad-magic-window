@@ -1216,7 +1216,6 @@
     <setting name="com.oppo.store" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.enjoy.malt" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.joydo.cnr.mi" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
-    <setting name="com.Qunar" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="1" />
     <setting name="com.king.weather" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.chinamworld.main" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="1" />
     <setting name="com.codemao.lunarb2c" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
