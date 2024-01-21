@@ -1780,7 +1780,6 @@
     <package name="com.tencent.wework" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.baidu.haokan" middleRule="*" minSupportVersion="1:20230413" procCompat="true" scaleMode="1" />
     <package name="air.tv.douyu.android" isShowDivider="true" supportFullSize="true" splitRatio="0.3" clearTop="true" placeholder="com.douyu.module.home.pages.main.MainActivity:com.douyu.module.search.view.activity.SearchActivity" splitPairRule="com.douyu.module.home.pages.main.MainActivity:*,com.douyu.module.search.view.activity.SearchActivity:*" />
-    <!-- <package name="ctrip.android.view" placeholder="ctrip.android.publicproduct.home.view.CtripHomeActivity:ctrip.android.tmkit.activity.TouristMapActivity" /> -->
     <package name="cn.gov.tax.its" fullRule="nra:cr:rcr" />
     <package name="com.yitong.mbank.psbc" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.sohu.inputmethod.sogou" />
