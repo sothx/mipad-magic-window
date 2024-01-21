@@ -37,14 +37,12 @@
     <package name="com.iningke.jiakaojl" />
     <package name="com.daofeng.zuhaowan" />
     <package name="com.thinkive.investxdtx" />
-    <package name="com.vivo.space" />
     <package name="com.kuke" isShowDivider="true" supportFullSize="true" placeholder="com.kuke.module_business_home.ui.home.MainActivity:com.kuke.module_business_home.ui.search.SearchActivity" splitPairRule="com.kuke.module_business_home.ui.home.MainActivity:*,com.kuke.module_business_home.ui.search.SearchActivity:*,com.kuke.module_business_home.ui.search.SearchResultActivity:*,com.kuke.module_business_me.ui.MyFavoriteActivity:*,com.kuke.module_business_me.ui.BrowsingHistoryActivity:*,com.kuke.module_business_me.ui.MyBoughtActivity:*,com.kuke.module_business_order.ui.MyOrderActivity:*,com.kuke.mvp.ui.activity.download.MyCourseDownloadActivity:*" />
     <package name="so.ofo.labofo" />
     <package name="com.adinnet.xlebike" />
     <package name="com.chipsea.btcontrol" />
     <package name="com.p1.mobile.putong" />
     <package name="wind.android" />
-    <package name="com.qcymall.earphonesetup" />
     <package name="com.tulingweier.yw.minihorsetravelapp" />
     <package name="com.unicde.smartcity_lyg" />
     <package name="com.jimi.tuqiang" />
@@ -3420,4 +3418,9 @@
     <package name="com.htinns" supportFullSize="true" activityRule="com.htinns.zxing.CaptureActivity,com.huazhu.loading.LoadingActivity" />
     <package name="ctrip.android.view" supportFullSize="true" activityRule="ctrip.android.qrcode.QRScanActivity" transitionRules="ctrip.android.qrcode.QRScanActivity" />
     <package name="com.mfw.roadbook" supportFullSize="true" isShowDivider="true" splitRatio="0.33" splitPairRule="com.mfw.roadbook.business.main.MainActivity:*,com.mfw.search.implement.searchpage.SearchActivity:*,com.mfw.personal.implement.profilenew.PersonalProfileActivity:*,com.mfw.im.implement.module.messagecenter.activity.MessageCenterActivity:*" activityRule="com.mfw.personal.implement.scanpage.CaptureActivity" transitionRules="com.mfw.personal.implement.scanpage.CaptureActivity" />
+    <package name="com.mi.earphone" scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.vivo.vivotws" scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.huawei.audiogenesis" scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.vivo.space" scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.qcymall.earphonesetup" scaleMode="1" fullRule="nra:cr:rcr"  />
 </package_config>

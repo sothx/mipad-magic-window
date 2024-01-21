@@ -3420,4 +3420,9 @@
     <package name="com.htinns" supportFullSize="true" activityRule="com.htinns.zxing.CaptureActivity,com.huazhu.loading.LoadingActivity" />
     <package name="ctrip.android.view" supportFullSize="true" activityRule="ctrip.android.qrcode.QRScanActivity" transitionRules="ctrip.android.qrcode.QRScanActivity" />
     <package name="com.mfw.roadbook" supportFullSize="true" isShowDivider="true" splitRatio="0.33" splitPairRule="com.mfw.roadbook.business.main.MainActivity:*,com.mfw.search.implement.searchpage.SearchActivity:*,com.mfw.personal.implement.profilenew.PersonalProfileActivity:*,com.mfw.im.implement.module.messagecenter.activity.MessageCenterActivity:*" activityRule="com.mfw.personal.implement.scanpage.CaptureActivity" transitionRules="com.mfw.personal.implement.scanpage.CaptureActivity" />
+    <package name="com.mi.earphone" scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.vivo.vivotws" scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.huawei.audiogenesis" scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.vivo.space" scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.qcymall.earphonesetup" scaleMode="1" fullRule="nra:cr:rcr"  />
 </package_config>
