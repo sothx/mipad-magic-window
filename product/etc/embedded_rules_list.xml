@@ -3420,5 +3420,5 @@
     <package name="com.plateno.botaoota" supportFullSize="true" />
     <package name="com.htinns" supportFullSize="true" activityRule="com.htinns.zxing.CaptureActivity,com.huazhu.loading.LoadingActivity" />
     <package name="ctrip.android.view" supportFullSize="true" activityRule="ctrip.android.qrcode.QRScanActivity" transitionRules="ctrip.android.qrcode.QRScanActivity" />
-    <package name="com.mfw.roadbook" supportFullSize="true" isShowDivider="true" splitRatio="0.33" splitPairRule="com.mfw.roadbook.business.main.MainActivity:*,com.mfw.search.implement.searchpage.SearchActivity:*,com.mfw.personal.implement.profilenew.PersonalProfileActivity:*,com.mfw.ychat.implement.setting.YChatRoomSettingActivity:*" activityRule="com.mfw.personal.implement.scanpage.CaptureActivity" transitionRules="com.mfw.personal.implement.scanpage.CaptureActivity" />
+    <package name="com.mfw.roadbook" supportFullSize="true" isShowDivider="true" splitRatio="0.33" splitPairRule="com.mfw.roadbook.business.main.MainActivity:*,com.mfw.search.implement.searchpage.SearchActivity:*,com.mfw.personal.implement.profilenew.PersonalProfileActivity:*,com.mfw.im.implement.module.messagecenter.activity.MessageCenterActivity:*" activityRule="com.mfw.personal.implement.scanpage.CaptureActivity" transitionRules="com.mfw.personal.implement.scanpage.CaptureActivity" />
 </package_config>
