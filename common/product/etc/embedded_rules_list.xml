@@ -1332,6 +1332,10 @@
     <package name="cn.ji_cloud.android" />
     <package name="com.truedian.dragon" />
     <package name="com.garmin.android.apps.connectmobile" />
+    <package name="com.jiongji.andriod.card" activityRule="com.baicizhan.main.activity.setting.SettingsActivity"
+        transitionRules="com.baicizhan.main.activity.LoadingPageActivity,cn.hugo.android.scanner.CaptureActivity,com.baicizhan.main.activity.protocol.ProtocolActivity"
+        flags="ignoreActivityBelowWhenJudgeMiddle:cn.hugo.android.scanner.CaptureActivity"
+        isShowDivider="true" relaunch="false" />
     <package name="com.xmbranch.pocketstep" />
     <package name="com.xiaoenai.app" />
     <package name="com.doudoubird.weather" />
@@ -3338,7 +3342,6 @@
     <!-- For WDB/RedMi Use Only-->
     <package name="com.sina.weibo" fullRule="nra:cr:rcr:nr" />
     <package name="com.tencent.tim" fullRule="nra:cr:rcr" />
-    <package name="com.jiongji.andriod.card" fullRule="nra:cr:rcr" />
     <package name="com.joyshebao.joy" fullRule="nra:cr:rcr:nr" />
     <package name="com.uzero.baimiao" fullRule="nra:cr:rcr" />
     <package name="com.sina.weibog3" fullRule="nra:cr:rcr:nr" />
@@ -3405,7 +3408,7 @@
     <package name="app.huawei.auto" scaleMode="1" fullRule="nra:cr:rcr"  />
     <package name="com.tipsoon.android" scaleMode="1" fullRule="nra:cr:rcr"  />
     <package name="com.jingdong.app.mall" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="com.jingdong.app.mall.MainFrameActivity:com.jd.lib.search.view.Activity.SearchActivity" splitPairRule="com.jd.lib.search.view.Activity.SearchActivity:*,com.jd.lib.search.view.Activity.ProductListActivity:*,com.jd.lib.jshop.jshop.JshopMainShopActivity:*" />
-    <package name="com.taobao.idlefish" supportFullSize="true" relaunch="true" minSupportVersion="1:20230510" placeholder="com.taobao.idlefish.maincontainer.activity.MainActivity:com.taobao.idlefish.category.CategoryPageActivity" activityRule="com.taobao.idlefish.permission.PermissionActivity,com.taobao.fleamarket.scancode.as.tool.ToolsCaptureActivity,com.taobao.fleamarket.call.ui.FishRtcCallActivity,com.idlefish.flutterbridge.flutterboost.IdleFishFlutterFullActivity" flags="forceResumeOnFocus:*" />
+    <package name="com.taobao.idlefish" supportFullSize="true" minSupportVersion="1:20230510" placeholder="com.taobao.idlefish.maincontainer.activity.MainActivity:com.taobao.idlefish.category.CategoryPageActivity" activityRule="com.taobao.idlefish.permission.PermissionActivity,com.taobao.fleamarket.scancode.as.tool.ToolsCaptureActivity,com.taobao.fleamarket.call.ui.FishRtcCallActivity,com.idlefish.flutterbridge.flutterboost.IdleFishFlutterFullActivity" flags="forceResumeOnFocus:*" />
     <package name="com.haidilao" splitPairRule="com.haidilao.hailehui.biz.impl.activity.MainActivityNew:*,com.haidilao.hailehui.biz.impl.activity.SearchHomePageActivity:*" />
     <package name="com.mxbc.mxsa" supportFullSize="true" middleRule="*" scaleMode="1" procCompat="true" />
     <package name="com.yipiao" supportFullSize="true" isShowDivider="true" splitPairRule="com.app.main.entrance.MainActivity:*,com.app.search.ZTSearchActivity:*" />
