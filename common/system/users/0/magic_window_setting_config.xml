@@ -669,7 +669,7 @@
     <setting name="com.paic.zhifu.wallet.activity" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.kooup.student" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.tigerbrokers.stock" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
-    <setting name="com.xt.retouch" miuiMagicWinEnabled="false" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="com.xt.retouch" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.jooan.qalink" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.accordion.prettyo.cn" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.hundun.yanxishe" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />

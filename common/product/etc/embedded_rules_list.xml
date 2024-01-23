@@ -1461,7 +1461,6 @@
     <package name="com.sinaapp.qwwpoo.rar" />
     <package name="com.imohoo.shanpao" />
     <package name="com.qihoo.video" />
-    <package name="com.kmxs.reader" splitPairRule="com.km.app.home.view.HomeYoungActivity:*,com.kmxs.reader.home.ui.HomeActivity:*" />
     <package name="com.peopletech.peopleplus" />
     <package name="com.fy.wdxd.mi" />
     <package name="com.youdao.kiddict" />
@@ -1792,12 +1791,10 @@
     <package name="com.hicorenational.antifraud" />
     <package name="com.gorgeous.lite" />
     <package name="com.cmbchina.ccd.pluto.cmbActivity" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
-    <package name="com.xs.fm" />
     <package name="com.tmall.wireless" placeholder="com.tmall.wireless.maintab.module.TMMainTabActivity:com.tmall.wireless.tmallcategory.CategoryActivity" splitPairRule="com.tmall.wireless.module.search.searchinput.input.activity.TMSearchInputActivity:com.tmall.wireless.module.search.searchresult.TMSearchResultActivity,com.tmall.wireless.module.search.searchresult.TMSearchResultActivity:*" />
     <package name="com.meitu.meiyancamera" isShowDivider="true" supportFullSize="true" splitRatio="0.3" splitPairRule="com.meitu.myxj.home.activity.NewHomeActivity:*" />
     <package name="com.cubic.autohome" placeholder="com.cubic.autohome.MainActivity:com.autohome.main.car.activitys.carranknew.CarRankActivity" splitPairRule="com.cubic.autohome.MainActivity:com.autohome.plugin.search.ui.activity.SearchActivity,com.autohome.plugin.search.ui.activity.SearchActivity:*" />
     <package name="com.sgcc.wsgw.cn" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
-    <package name="com.xt.retouch" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.jd.pingou" />
     <package name="com.pingan.paces.ccms" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.fenbi.android.solar" isShowDivider="true" supportFullSize="true" splitRatio="0.7" placeholder="com.fenbi.android.solar.activity.HomeActivity:com.fenbi.android.solar.activity.QueryHistoryActivity" activityRule="com.fenbi.android.solar.crop.SearchCrop,com.fenbi.android.solar.common.activity.ImagePreviewActivity" splitPairRule="com.fenbi.android.solar.activity.HomeActivity:*,com.fenbi.android.solar.activity.SettingsActivity:*,com.fenbi.android.solar.activity.FavoriteCourseListActivity:*,com.fenbi.android.solar.activity.MyFavoritesEntryActivity:*,com.fenbi.android.solar.activity.UserLiberActivity:*,com.fenbi.android.solar.activity.MyAccountActivity:*" />
@@ -1961,7 +1958,6 @@
     <package name="com.kugou.android.ktvapp" />
     <package name="com.hoperun.intelligenceportal" />
     <package name="com.sh.cm.shydhn" />
-    <package name="com.kiloo.subwaysurf" />
     <package name="com.juhe.soochowcode" />
     <package name="com.dongqiudi.news" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="mobi.w3studio.apps.android.shsmy.phone" />
@@ -2040,7 +2036,6 @@
     <package name="com.ywhy.zjxjy.mi" />
     <package name="com.netandroid.server.ctselves" />
     <package name="com.klcxkj.zqxy" />
-    <package name="cn.cj.pe" />
     <package name="com.tencent.peng" />
     <package name="cn.com.yunma.school.app" />
     <package name="com.yitong.fjnx.mbank.android" />
@@ -3432,4 +3427,12 @@
     <package name="com.hongbeibang.app"  supportFullSize="true" procCompat="true" middleRule="*"  />
     <package name="com.zeropasson.zp" supportFullSize="true" isShowDivider="true" splitRatio="0.33" splitPairRule="com.zeropasson.zp.ui.main.MainActivity:*,com.zeropasson.zp.ui.search.SearchActivity:*,com.zeropasson.zp.ui.personal.PersonalHomeActivity:*,com.zeropasson.zp.ui.mine.FavoriteListActivity:*,com.zeropasson.zp.ui.settings.address.AddressBookActivity:*" activityRule="com.zeropasson.zp.ui.login.LoginActivity,com.zeropasson.zp.ui.login.BindPhoneActivity" transitionRules="com.zeropasson.zp.ui.login.LoginActivity,com.zeropasson.zp.ui.login.BindPhoneActivity" />
     <package name="cn.dxy.idxyer" relaunch="true" isShowDivider="true" splitRatio="0.33" supportFullSize="true" activityRule="cn.dxy.idxyer.biz.main.MainActivity,cn.dxy.idxyer.common.scan.ScanActivity" transitionRules="cn.dxy.idxyer.biz.main.MainActivity,cn.dxy.idxyer.common.scan.ScanActivity" splitPairRule="cn.dxy.idxyer.biz.main.MainActivity:*,cn.dxy.idxyer.biz.search.SearchActivity:*,cn.dxy.idxyer.biz.user.ProfileActivity:*,cn.dxy.idxyer.biz.user.UserPostSearchActivity:*,cn.dxy.idxyer.biz.drugslib.DrugsBizHomeActivity:*,cn.dxy.idxyer.biz.main.mine.common.FavoriteActivity:*,cn.dxy.idxyer.biz.main.mine.common.LocalAttachmentActivity:*,cn.dxy.idxyer.book.activity.BookActivity:*,cn.dxy.idxyer.book.activity.BookSearchActivity:*,cn.dxy.idxyer.book.activity.BookBoughtListActivity:*,cn.dxy.idxyer.biz.main.mine.common.ReadHistoryActivity:*" />
+    <package name="com.kiloo.subwaysurf" scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.xt.retouch"  scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.microsoft.office.outlook"  scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.xiaomi.mitime" supportFullSize="true" procCompat="true" middleRule="*"  />
+    <package name="com.xs.fm" supportFullSize="true" isShowDivider="true" splitRatio="0.33" relaunch="true" splitPairRule="com.dragon.read.pages.main.MainFragmentActivity:*,com.dragon.read.pages.search.SearchActivity:*,com.dragon.community.web.CommunityWebActivity:*,com.dragon.read.reader.speech.bullet.BulletActivity:*,com.dragon.read.pages.category.BookCategoryActivity:*,com.xs.fm.mine.impl.homepage.UserHomePageActivity:*" activityRule="com.dragon.read.pages.main.MainFragmentActivity,com.dragon.read.reader.ReaderActivity" transitionRules="com.dragon.read.pages.main.MainFragmentActivity,com.dragon.read.reader.ReaderActivity" />
+    <package name="com.xs.fm.lite" supportFullSize="true" isShowDivider="true" splitRatio="0.33" relaunch="true" splitPairRule="com.dragon.read.pages.main.MainFragmentActivity:*,com.dragon.read.pages.search.SearchActivity:*,com.dragon.community.web.CommunityWebActivity:*,com.dragon.read.reader.speech.bullet.BulletActivity:*,com.dragon.read.pages.category.BookCategoryActivity:*,com.xs.fm.mine.impl.homepage.UserHomePageActivity:*" activityRule="com.dragon.read.pages.main.MainFragmentActivity,com.dragon.read.reader.ReaderActivity" transitionRules="com.dragon.read.pages.main.MainFragmentActivity,com.dragon.read.reader.ReaderActivity" />
+    <package name="com.kmxs.reader" supportFullSize="true" scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="cn.cj.pe" supportFullSize="true" isShowDivider="true" splitRatio="0.33" splitPairRule="cn.cj.pe.activity.MessageList:*,cn.cj.pe.search.view.MessageSearchActivity:*,com.chinamobile.mcloud.sdk.file.filelist.CloudSdkFileListActivity:*,com.mail139.contacts.activity.v2.ContactAppActivity:*" activityRule="cn.cj.pe.activity.MessageList,cn.cj.qrcode.MipcaActivityCapture" transitionRules="cn.cj.pe.activity.MessageList,cn.cj.qrcode.MipcaActivityCapture" />
 </package_config>
