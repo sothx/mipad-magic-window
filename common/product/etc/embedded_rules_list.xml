@@ -3440,4 +3440,5 @@
     <package name="com.sinovatech.unicom.ui"  supportCameraPreview="false" supportFullSize="true" />
     <package name="com.allhistory.dls.marble" relaunch="true"  isShowDivider="true" supportFullSize="true" splitRatio="0.33" splitPairRule="com.pwrd.dls.marble.moudle.homepage.HomePageActivity:*,com.pwrd.dls.marble.moudle.bigsearch.BigSearchActivity:*,com.pwrd.dls.marble.moudle.top100.categorylist.ui.Top100CategoryListActivity:*,com.pwrd.dls.marble.moudle.historyRule.ui.HistoryRuleActivity:*,com.pwrd.dls.marble.moudle.worldHistory.ui.WorldHistoryActivity:*,com.pwrd.dls.marble.moudle.homepage.msg.SessionListActivity:*,com.pwrd.dls.marble.moudle.homepage.square.SquareActivity:*,com.pwrd.dls.marble.moudle.user.person.PersonV2Activity:*,com.pwrd.dls.marble.moudle.premium.free.PremiumForFreeActivity:*" />
     <package name="com.wibo.bigbang.ocr"  scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.papegames.lysk.cn"  scaleMode="1" fullRule="nra:cr:rcr"  />
 </package_config>
