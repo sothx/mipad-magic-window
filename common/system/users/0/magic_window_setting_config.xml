@@ -3472,4 +3472,8 @@
     <setting name="com.zeropasson.zp" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.microsoft.office.outlook" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.xiaomi.mitime" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="com.tencent.wetype" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="com.zhihu.vip.android" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="net.ltfc.chinese_art_gallery" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="com.huaxiafengwu.android" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
 </setting_config>

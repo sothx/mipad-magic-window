@@ -245,7 +245,6 @@
     <package name="com.rong360.app" />
     <package name="com.lingan.yunqi" />
     <package name="com.bestv.app" />
-    <package name="com.allhistory.dls.marble" />
     <package name="com.baidu.xin.aiqicha" />
     <package name="com.iMMcque.VCore" />
     <package name="com.ecommerce.xmnair" />
@@ -943,7 +942,6 @@
     <package name="com.xxt.jxlxandroid" />
     <package name="com.yzxx.yqlzg.mi" />
     <package name="com.jime.stu" />
-    <package name="com.ihuman.recite" finishSecondaryWithPrimary="0" />
     <package name="com.yuantu.huiyi" />
     <package name="com.digitalchina.mobile.dfhfz1" />
     <package name="com.eoffcn.mobile" />
@@ -1769,7 +1767,6 @@
     <package name="com.tencent.karaoke" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.tencent.karaoke.module.relaygame.ui.RelayGameActivity,com.tme.karaoke_game.loading.KaraGameLoadingActivity,com.tme.karaoke_game.KaraGameActivity,com.tencent.karaoke.module.webview.ui.WebViewContainerActivity,com.tencent.karaoke.module.recording.ui.main.RecordingActivity" splitPairRule="com.tencent.karaoke.module.main.ui.MainTabActivity:*" transitionRules="com.tencent.karaoke.module.ktvroom.ui.KtvRoomActivityNew,com.tencent.karaoke.module.hippy.ui.HippyInstanceActivity" flags="ignoreActivityBelowWhenJudgeMiddle:com.tencent.karaoke.module.ktvroom.ui.KtvRoomActivityNew" />
     <package name="me.ele" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.sdu.didi.psnger" placeholder="com.didi.sdk.app.MainActivity:com.didi.beatles.im.activity.IMFeedMsgListActivity" />
-    <package name="com.sinovatech.unicom.ui" scaleMode="1" clearTop="true" supportCameraPreview="false" isShowDivider="true" supportFullSize="true" splitRatio="0.3" splitPairRule="com.sinovatech.unicom.basic.ui.activity.WebDetailActivity:*" />
     <package name="com.chinamworld.bocmbci" isShowDivider="true" supportFullSize="true" placeholder="com.boc.bocsoft.mobile.bocmobile.buss.system.main.ui.MainActivity:com.boc.bocsoft.mobile.bocmobile.buss.communication.push.PushActivity" />
     <package name="com.MobileTicket" fullRule="nra:cr:rcr" />
     <package name="com.unionpay" placeholder="com.unionpay.activity.UPActivityMain:com.unionpay.activity.react.UPActivityReactNative" />
@@ -2952,7 +2949,6 @@
     <package name="com.ks.kzyj.mi" />
     <package name="cloud.miplus.tft" />
     <package name="com.bcxgame.lw.superclass.app.mi" />
-    <package name="com.Apricotforest_epocket" />
     <package name="com.antutu.aibenchmark" />
     <package name="com.outfit7.mytalkinghank.mi" />
     <package name="com.wodidashi.paint" />
@@ -3424,7 +3420,6 @@
     <package name="com.zeropasson.zp" supportFullSize="true" isShowDivider="true" splitRatio="0.33" splitPairRule="com.zeropasson.zp.ui.main.MainActivity:*,com.zeropasson.zp.ui.search.SearchActivity:*,com.zeropasson.zp.ui.personal.PersonalHomeActivity:*,com.zeropasson.zp.ui.mine.FavoriteListActivity:*,com.zeropasson.zp.ui.settings.address.AddressBookActivity:*" activityRule="com.zeropasson.zp.ui.login.LoginActivity,com.zeropasson.zp.ui.login.BindPhoneActivity" transitionRules="com.zeropasson.zp.ui.login.LoginActivity,com.zeropasson.zp.ui.login.BindPhoneActivity" />
     <package name="cn.dxy.idxyer" relaunch="true" isShowDivider="true" splitRatio="0.33" supportFullSize="true" activityRule="cn.dxy.idxyer.biz.main.MainActivity,cn.dxy.idxyer.common.scan.ScanActivity" transitionRules="cn.dxy.idxyer.biz.main.MainActivity,cn.dxy.idxyer.common.scan.ScanActivity" splitPairRule="cn.dxy.idxyer.biz.main.MainActivity:*,cn.dxy.idxyer.biz.search.SearchActivity:*,cn.dxy.idxyer.biz.user.ProfileActivity:*,cn.dxy.idxyer.biz.user.UserPostSearchActivity:*,cn.dxy.idxyer.biz.drugslib.DrugsBizHomeActivity:*,cn.dxy.idxyer.biz.main.mine.common.FavoriteActivity:*,cn.dxy.idxyer.biz.main.mine.common.LocalAttachmentActivity:*,cn.dxy.idxyer.book.activity.BookActivity:*,cn.dxy.idxyer.book.activity.BookSearchActivity:*,cn.dxy.idxyer.book.activity.BookBoughtListActivity:*,cn.dxy.idxyer.biz.main.mine.common.ReadHistoryActivity:*" />
     <package name="com.kiloo.subwaysurf" scaleMode="1" fullRule="nra:cr:rcr"  />
-    <package name="com.xt.retouch"  scaleMode="1" fullRule="nra:cr:rcr"  />
     <package name="com.microsoft.office.outlook"  scaleMode="1" fullRule="nra:cr:rcr"  />
     <package name="com.xiaomi.mitime" supportFullSize="true" procCompat="true" middleRule="*"  />
     <package name="com.xs.fm" supportFullSize="true" isShowDivider="true" splitRatio="0.33" splitPairRule="com.dragon.read.pages.main.MainFragmentActivity:*,com.dragon.read.pages.search.SearchActivity:*,com.dragon.community.web.CommunityWebActivity:*,com.dragon.read.reader.speech.bullet.BulletActivity:*,com.dragon.read.pages.category.BookCategoryActivity:*,com.xs.fm.mine.impl.homepage.UserHomePageActivity:*" activityRule="com.dragon.read.pages.main.MainFragmentActivity,com.dragon.read.reader.ReaderActivity" transitionRules="com.dragon.read.pages.main.MainFragmentActivity,com.dragon.read.reader.ReaderActivity" />
@@ -3435,4 +3430,13 @@
     <package name="com.netease.mobimail" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.netease.mail.biz.main.MainITabActivity,com.netease.mobimail.module.qrcode.ScanQRCodeActivity" transitionRules="com.netease.mail.biz.main.MainITabActivity,com.netease.mobimail.module.qrcode.ScanQRCodeActivity" splitPairRule="com.netease.mail.biz.main.MainITabActivity:*" />
     <package name="com.netease.mail" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.netease.mail.biz.main.MainITabActivity,com.netease.mobimail.module.qrcode.ScanQRCodeActivity" transitionRules="com.netease.mail.biz.main.MainITabActivity,com.netease.mobimail.module.qrcode.ScanQRCodeActivity" splitPairRule="com.netease.mail.biz.main.MainITabActivity:*,com.netease.mobimail.module.maillist.search.SearchActivity:*" />
     <package name="com.sina.mail.free" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.sina.mail.controller.maillist.MessageListActivity2,com.sina.scanner.ScanCodeActivity,com.sina.mail.controller.FreeEntryActivity,com.sina.mail.controller.ad.SplashAdActivity" splitPairRule="com.sina.mail.controller.maillist.MessageListActivity2:*,com.sina.mail.controller.maillist.MessageSearchActivity:*,com.sina.mail.controller.contact.ContactListActivity:*" transitionRules="com.sina.mail.controller.maillist.MessageListActivity2,com.sina.scanner.ScanCodeActivity,com.sina.mail.controller.FreeEntryActivity,com.sina.mail.controller.ad.SplashAdActivity" />
+    <package name="com.xt.retouch" isShowDivider="true" supportFullSize="true" splitRatio="0.33" splitPairRule="com.xt.retouch.uilauncher.MainActivity:*,com.lynx.tasm.behavior.KeyboardMonitor:*,com.xt.retouch.feed.impl.MessageCenterActivity:*" activityRule="com.xt.retouch.uilauncher.MainActivity" transitionRules="com.xt.retouch.uilauncher.MainActivity" />
+    <package name="com.tencent.wetype"  scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.Apricotforest_epocket" isShowDivider="true" supportFullSize="true" splitRatio="0.33" splitPairRule="com.xsl.epocket.features.homepage.MainTabActivity:*,com.xsl.epocket.features.search.view.SearchTabActivity:*,com.xsl.epocket.features.guide.view.GuideTabActivity:*,com.xsl.epocket.features.book.recommendation.BookRecommendationActivity:*,com.xsl.epocket.features.literature.view.LiteratureActivity:*,com.xsl.epocket.features.drug.view.DrugCategoryListActivity:*,com.xsl.epocket.features.drug.view.DrugListActivity:*,com.xsl.epocket.features.calculate.CalculateListActivity:*,com.xsl.epocket.features.medicalcase.view.MedicalCaseListActivity:*,com.Apricotforest_epocket.ProductTabBarCatalog.ProductTabBarCatalogActivity:*,com.Apricotforest_epocket.ProductColumn.ProductColumnListActivity:*,com.xsl.epocket.features.user.userInfo.UserInfoActivity:*" activityRule="com.xsl.epocket.features.homepage.MainTabActivity" transitionRules="com.xsl.epocket.features.homepage.MainTabActivity" />
+    <package name="com.zhihu.vip.android"  isShowDivider="true" supportFullSize="true" splitRatio="0.33" splitPairRule="com.zhihu.android.app.ui.activity.MainActivity:*" activityRule="com.zhihu.android.vip.manuscript.ManuscriptHostActivity" transitionRules="com.zhihu.android.vip.manuscript.ManuscriptHostActivity" />
+    <package name="com.ihuman.recite" isShowDivider="true" supportFullSize="true" splitRatio="0.33" splitPairRule="com.ihuman.recite.ui.tabmain.TabMainActivity:*,com.ihuman.recite.ui.search.SearchWordActivity:*,com.ihuman.recite.ui.soundread.SubjectActivity:*,com.ihuman.recite.ui.soundread.ReadHistoryActivity:*" />
+    <package name="net.ltfc.chinese_art_gallery" isShowDivider="true" supportFullSize="true" splitRatio="0.33"  splitPairRule="net.ltfc.chinese_art_gallery.activity.MainActivity:*,com.idlefish.flutterboost.containers.FlutterBoostActivity:*,net.ltfc.chinese_art_gallery.activity.ShiYHomeActivity:*" activityRule="net.ltfc.chinese_art_gallery.activity.MainActivity,net.ltfc.chinese_art_gallery.activity.ScanActivity" transitionRules="net.ltfc.chinese_art_gallery.activity.MainActivity,net.ltfc.chinese_art_gallery.activity.ScanActivity" />
+    <package name="com.huaxiafengwu.android" supportFullSize="true" procCompat="true" middleRule="*" />
+    <package name="com.sinovatech.unicom.ui" clearTop="true" supportCameraPreview="false" supportFullSize="true" />
+    <package name="com.allhistory.dls.marble" relaunch="true" clearTop="true" isShowDivider="true" supportFullSize="true" splitRatio="0.33" splitPairRule="com.pwrd.dls.marble.moudle.homepage.HomePageActivity:*,com.pwrd.dls.marble.moudle.bigsearch.BigSearchActivity:*,com.pwrd.dls.marble.moudle.top100.categorylist.ui.Top100CategoryListActivity:*,com.pwrd.dls.marble.moudle.historyRule.ui.HistoryRuleActivity:*,com.pwrd.dls.marble.moudle.worldHistory.ui.WorldHistoryActivity:*,com.pwrd.dls.marble.moudle.homepage.msg.SessionListActivity:*,com.pwrd.dls.marble.moudle.homepage.square.SquareActivity:*,com.pwrd.dls.marble.moudle.user.person.PersonV2Activity:*,com.pwrd.dls.marble.moudle.premium.free.PremiumForFreeActivity:*" />
 </package_config>
