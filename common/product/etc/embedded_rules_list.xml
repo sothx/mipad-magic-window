@@ -1421,7 +1421,6 @@
     <package name="com.fy.ttds.mi" />
     <package name="com.when.coco" />
     <package name="com.zy.game.fireescape.mi" />
-    <package name="com.ruguoapp.jike" placeholder="com.ruguoapp.jike.bu.main.ui.MainActivity:com.ruguoapp.jike.bu.search.ui.SearchActivity" splitPairRule="com.ruguoapp.jike.bu.main.ui.MainActivity:*,com.ruguoapp.jike.bu.search.ui.SearchActivity:*" />
     <package name="iHealth.AiJiaKang.MI" />
     <package name="com.inwhoop.mvpart.xinjiang_subway" />
     <package name="com.gemdale.client" />
@@ -1930,7 +1929,6 @@
     <package name="com.yuwan.tmshipin" />
     <package name="com.xueqiu.android" />
     <package name="org.xinkb.blackboard.android" />
-    <package name="net.csdn.csdnplus" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="net.csdn.csdnplus.activity.MainActivity:net.csdn.csdnplus.module.search.SearchActivity" splitPairRule="net.csdn.csdnplus.activity.MainActivity:*,net.csdn.csdnplus.module.search.SearchActivity:*,net.csdn.csdnplus.mvvm.ui.activity.PersonalCenterActivity:*,net.csdn.csdnplus.activity.BrowsingHistoryActivity:*,net.csdn.csdnplus.activity.MyCollectActivity:*,io.dcloud.feature.sdk.multi.DCUniMPTopActivity0:*,net.csdn.csdnplus.activity.SetActivity:*" />
     <package name="com.changba" />
     <package name="com.dou_pai.DouPai" />
     <package name="com.zybang.parent" />
@@ -3441,4 +3439,8 @@
     <package name="com.allhistory.dls.marble" relaunch="true"  isShowDivider="true" supportFullSize="true" splitRatio="0.33" splitPairRule="com.pwrd.dls.marble.moudle.homepage.HomePageActivity:*,com.pwrd.dls.marble.moudle.bigsearch.BigSearchActivity:*,com.pwrd.dls.marble.moudle.top100.categorylist.ui.Top100CategoryListActivity:*,com.pwrd.dls.marble.moudle.historyRule.ui.HistoryRuleActivity:*,com.pwrd.dls.marble.moudle.worldHistory.ui.WorldHistoryActivity:*,com.pwrd.dls.marble.moudle.homepage.msg.SessionListActivity:*,com.pwrd.dls.marble.moudle.homepage.square.SquareActivity:*,com.pwrd.dls.marble.moudle.user.person.PersonV2Activity:*,com.pwrd.dls.marble.moudle.premium.free.PremiumForFreeActivity:*" />
     <package name="com.wibo.bigbang.ocr"  scaleMode="1" fullRule="nra:cr:rcr"  />
     <package name="com.papegames.lysk.cn"  scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.ruguoapp.jike" supportFullSize="true" isShowDivider="true" splitRatio="0.3" placeholder="com.ruguoapp.jike.bu.main.ui.MainActivity:com.ruguoapp.jike.bu.search.ui.SearchActivity" splitPairRule="com.ruguoapp.jike.bu.main.ui.MainActivity:*,com.ruguoapp.jike.bu.search.ui.SearchActivity:*,com.ruguoapp.jike.bu.personal.ui.PersonalViewPagerActivity:*,com.ruguoapp.jike.bu.main.ui.mytopics.MyTopicsActivity:*,com.ruguoapp.jike.bu.main.ui.topicdetail.TopicActivity:*,com.ruguoapp.jike.bu.search.ui.SearchSingleModeActivity:*" />
+    <package name="com.baidu.newapp"  scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="net.csdn.csdnplus" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="net.csdn.csdnplus.activity.MainActivity:net.csdn.csdnplus.module.search.SearchActivity" splitPairRule="net.csdn.csdnplus.activity.MainActivity:*,net.csdn.csdnplus.module.search.SearchActivity:*,net.csdn.csdnplus.mvvm.ui.activity.PersonalCenterActivity:*,net.csdn.csdnplus.activity.BrowsingHistoryActivity:*,net.csdn.csdnplus.activity.MyCollectActivity:*,io.dcloud.feature.sdk.multi.DCUniMPTopActivity0:*,net.csdn.csdnplus.activity.SetActivity:*,net.csdn.csdnplus.activity.VisitorMainActivity:*" />
+    <package name="com.panda.gout" isShowDivider="true" supportFullSize="true" splitRatio="0.3" splitPairRule="com.panda.gout.activity.HomeActivity:*,com.panda.gout.activity.food.SearchAllActivity:*,com.panda.gout.activity.health.UaHomeActivity:*,com.panda.gout.activity.food.FoodTypeListActivity:*,com.panda.gout.activity.msg.MsgActivity:*,com.panda.gout.activity.my.MyScListActivity:*,com.panda.gout.activity.my.MyHisListActivity:*,com.panda.gout.activity.my.MyGzListActivity:*,com.panda.gout.activity.my.MyQaListActivity:*,com.panda.gout.activity.qa.QaJxListActivity:*,com.panda.gout.activity.my.MyBbsListActivity:*" activityRule="com.panda.gout.activity.HomeActivity" transitionRules="com.panda.gout.activity.HomeActivity" />
 </package_config>
