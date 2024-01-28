@@ -3454,6 +3454,7 @@
     <setting name="com.boxuegu" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.comic.kaimanhua" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.xiwang.zaixian" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="com.yingyinng.np" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <!-- Adaptive For Sothx 1.60.x -->
     <setting name="com.hihonor.appmarket" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="one.hh.oneclient" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
