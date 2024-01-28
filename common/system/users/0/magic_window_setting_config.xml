@@ -1213,7 +1213,6 @@
     <setting name="com.tipsoon.android" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.xiaomi.shop" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.bwton.msx.sjz" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
-    <setting name="com.oppo.store" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.enjoy.malt" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.joydo.cnr.mi" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.king.weather" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
@@ -3386,10 +3385,12 @@
     <setting name="com.flash.download" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="xzr.konabess" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="ipnossoft.rma.free" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <!-- ver 1.00 -->
     <setting name="me.tasy5kg.cutegif" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.luna.music" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.xiaomi.youpin" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.offcn.android.offcn" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <!-- ver 1.01 -->
     <setting name="com.ylmf.androidclient" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.zentraedi.zspace" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.edu.wenliang" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
@@ -3404,6 +3405,7 @@
     <setting name="cn.kaiheila" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.yeagle.orc" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="yitu.tv.laobai.www" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <!-- ver 1.02 -->
     <setting name="com.lucinhu.bili_you" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="rocket.service.super" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="net.lab.flying" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
@@ -3429,24 +3431,30 @@
     <setting name="com.duorong.smarttool" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.viva.note" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.gptbot" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <!-- ver 1.03 -->
     <setting name="com.aiyu.kaipanla" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.nn.accelerator.box" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.twitter.android" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.zongheng.reader" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <!-- ver 1.04 -->
     <setting name="com.tadu.read" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.bkneng.reader" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="world.letsgo.booster.android.pro" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.zhiliaoapp.musically" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <!-- ver 1.05 -->
     <setting name="com.xwind.network" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.movie.store" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.facebook.katanq" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.qingsong.yingmi" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.btows.photo" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="com.free.player" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="e.cofco.com" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="me.tshine.easymarm" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <!-- Adaptive For Hyper OS-->
     <setting name="com.boxuegu" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.comic.kaimanhua" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.xiwang.zaixian" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
-    <!-- Adaptive For Sothx -->
+    <!-- Adaptive For Sothx 1.60.x -->
     <setting name="com.hihonor.appmarket" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="one.hh.oneclient" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.jhyan.yan" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
@@ -3454,17 +3462,24 @@
     <setting name="com.chinaunicom.bol.cloudapp" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.xinli.yixinli" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.mi.health" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
-    <setting name="com.ximalaya.ting.android" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.c114.c114__android" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.zhangyue.read.iReader" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.youdao.course" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.netease.ccliveaudio" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="com.oppo.store" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.xiaomi.router" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.jiandanxinli.smileback" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="cn.cntv" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="cn.nineton.dailycheck" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.nnsz.diy" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="app.huawei.auto" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <!-- 1.07.0 -->
+    <setting name="com.music.moment" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="com.richtech.spacevpn" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="com.open.hotspot.vpn.free" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="com.atom.live" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="com.zhouyu.music" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <!-- Adaptive For Sothx 1.70.x -->
     <setting name="com.mi.earphone" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.vivo.vivotws" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.huawei.audiogenesis" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
@@ -3480,4 +3495,5 @@
     <package name="com.papegames.lysk.cn"  miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0"  />
     <package name="com.baidu.newapp"  miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0"  />
     <package name="com.panda.gout"  miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0"  />
+    <setting name="com.miui.fm" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
 </setting_config>
