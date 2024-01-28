@@ -1662,7 +1662,7 @@
     <package name="com.baidu.homework" isShowDivider="true" supportFullSize="true" splitRatio="0.7" supportCameraPreview="false" placeholder="com.baidu.homework.activity.index.IndexActivity:com.baidu.homework.activity.user.UserAskRecordActivity" activityRule="com.baidu.homework.common.photo.PhotoShowActivity,com.baidu.homework.common.camera.NewCameraManyQuestionsActivity,com.baidu.homework.common.paperupload.activity.PaperUploadCameraActivity,com.baidu.homework.common.photo.PhotoCropActivity,com.homework.translate.paragraph.TranslateParagraphActivity,com.homework.translate.word.TranslateWordActivity,com.homework.translate.sentence.TranslateSentenceActivity,com.baidu.homework.activity.search.correct.CorrectSearchActivity,com.homework.translate.TranslateLoadActivity,com.baidu.homework.activity.search.whole.PicManySearchActivity,com.baidu.homework.activity.search.singlequestion.PicSearchActivity,com.baidu.homework.common.camera.CameraManyQuestionsActivity" splitPairRule="com.baidu.homework.activity.index.IndexActivity:*,com.baidu.homework.activity.web.ZybWebActivity:*,com.baidu.homework.activity.index.indexsearch.IndexSearchActivity:*" />
     <!-- MiPad 6 Max Add-->
     <package name="cn.com.langeasy.LangEasyLexis" fullRule="*" />
-    <package name="com.dianzhong.hmxscom.dianzhong.hmxs" fullRule="*" minSupportVersion="1:20230510" />
+    <package name="com.dianzhong.hmxs" fullRule="*" minSupportVersion="1:20230510" />
     <package name="tv.hanju.lite" minSupportVersion="1:20230510" />
     <package name="com.gh.gamecenter" fullRule="*" minSupportVersion="1:20230510" />
     <package name="com.miui.player" version="9999" />
