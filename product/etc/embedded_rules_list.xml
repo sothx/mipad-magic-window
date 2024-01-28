@@ -291,7 +291,6 @@
     <package name="com.cleanmaster.lite_cn" />
     <package name="com.iflytek.oshall.ahzwfw" />
     <package name="com.sunland.app" />
-    <package name="com.duoduo.child.story" />
     <package name="com.shell.sitibv.motorist.china" />
     <package name="com.inspur.icity.icityapp" />
     <package name="com.danale.video" />
@@ -375,7 +374,6 @@
     <package name="com.android.app.quanmama" />
     <package name="com.gonlan.iplaymtg" />
     <package name="com.shsp.cleanmaster" />
-    <package name="com.mampod.ergedd" relaunch="true" />
     <package name="com.yicai.news" />
     <package name="com.jym.mall" transitionRules="com.jym.mall.launch.LaunchActivity" />
     <package name="cn.missfresh.application" transitionRules="cn.missfresh.module.main.view.SplashActivity" />
@@ -1454,13 +1452,9 @@
     <package name="com.hundsun.stockwinner.gszq" />
     <package name="com.fiveplay" />
     <package name="com.gwsoft.imusic.controller" />
-    <package name="edu.www.qsxt" />
     <package name="com.planet.light2345" />
     <package name="com.happyteam.dubbingshow" />
-    <package name="com.wodi.who" />
     <package name="com.eoffcn.questions" />
-    <package name="com.handsgo.jiakao.android" relaunch="true" splitPairRule="com.handsgo.jiakao.android.main.activity.MainActivity:*" transitionRules="com.handsgo.jiakao.android.splash.Login" />
-    <package name="com.ludashi.benchmark" />
     <package name="cn.com.xbscPhone3" />
     <package name="com.linkandroid.server.ctsmate" />
     <package name="com.netease.xyqcbg" />
@@ -1478,7 +1472,6 @@
     <package name="com.television.ysjj" />
     <package name="com.hualongxiang" />
     <package name="com.saicmotor.tocapp" />
-    <package name="com.baidu.dict" />
     <package name="com.zhl.jjyy.aphone" />
     <package name="com.xiaolian.prometheus" />
     <package name="com.shyz.toutiao" relaunch="true" />
@@ -1490,16 +1483,13 @@
     <package name="com.szt.pay" />
     <package name="com.ailian.hope" />
     <package name="com.ease.callshow" />
-    <package name="com.duitang.main" />
     <package name="com.zhuochi.hydream" />
-    <package name="com.iflytek.elpmobile.smartlearning" />
     <package name="com.tsy.tsy" />
     <package name="com.iflyrec.tjapp" />
     <package name="com.cjtec.fmradio" />
     <package name="dongzheng.szkingdom.android.phone" />
     <package name="com.hfzqsc" />
     <package name="com.yizhe_temai" relaunch="true" />
-    <package name="com.zwang.clouds" transitionRules="com.excean.masteraid.rsv18mcf.ghb59mn25fnlz" />
     <package name="com.baidu.netdisk.xiaomi.appunion" fullRule="nra:cr:rcr" />
     <package name="com.baidu.netdisk" fullRule="nra:cr:rcr" />
     <package name="com.baidu.netdisk.samsung" fullRule="nra:cr:rcr" />
@@ -1519,7 +1509,6 @@
     <package name="com.jingdianxst.tool" />
     <package name="com.youdao.reciteword" />
     <package name="com.douyu.rush" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="com.douyu.rush.home.MainActivity:com.douyu.follow.pages.followmge.FollowManagerActivity" clearTop="true" splitPairRule="com.douyu.rush.home.MainActivity:*,com.douyu.module.search.view.activity.SearchActivity:*" />
-    <package name="com.zbx.ct.tvzhibohd" />
     <package name="com.yy.huanju" />
     <package name="org.zxq.teleri" />
     <package name="com.wanmeizhensuo.zhensuo" />
@@ -1530,7 +1519,6 @@
     <package name="cn.kidyn.qdmedical160" />
     <package name="com.ingkee.lite" />
     <package name="com.edcsc.wbus" />
-    <package name="com.lion.market" />
     <package name="com.ips_app" />
     <package name="com.macrovideo.v380" />
     <package name="com.android.comicsisland.activity" />
@@ -1538,7 +1526,6 @@
     <package name="info.cd120" />
     <package name="com.zheyouhui.app" />
     <package name="com.xyhui" transitionRules="com.xyhui.start.StartHomeActivity" />
-    <package name="com.power.dapengeducation" />
     <package name="com.hzpd.jwztc" transitionRules="com.alibaba.gov.android.privacy.service.permission.PermissionActivity" />
     <package name="com.codoon.gps" />
     <package name="cn.imsummer.summer" />
@@ -1566,7 +1553,6 @@
     <package name="cn.suanya.zhixing" fullRule="*" />
     <package name="com.intbull.pano3d" fullRule="*" />
     <package name="beiq.daoh.sdit" fullRule="*" />
-    <package name="com.lanjingren.ivwen" fullRule="*" />
     <package name="com.edifier.edifierconnect" fullRule="*" />
     <package name="com.heishi.android.app" fullRule="*" />
     <package name="com.jooan.qiaoanzhilian" fullRule="*" />
@@ -1613,8 +1599,6 @@
     <package name="com.baidu.BaiduMap" fullRule="nra" />
     <package name="com.sfacg" fullRule="*" />
     <package name="com.erciyuanpaint" fullRule="*" />
-    <package name="com.outfit7.talkingtomgoldrun.mi" fullRule="nr" />
-    <package name="com.sinyee.babybus.chants" fullRule="*" />
     <package name="com.donghaisc" fullRule="*" />
     <package name="com.ph.xxxlj.mi" fullRule="*" />
     <package name="com.ruqi.travel" fullRule="*" />
@@ -1663,8 +1647,6 @@
     <package name="com.shsc.gen" fullRule="*" />
     <package name="com.lets.p3.mi" fullRule="*" />
     <package name="jp.naver.line.android" />
-    <package name="com.lazada.android" />
-    <package name="com.zzkko" />
     <package name="com.shopee.my" scaleMode="1" flags="reusePreContainer:com.shopee.app.react.ReactActivity_" />
     <package name="com.shopee.th" scaleMode="1" flags="reusePreContainer:com.shopee.app.react.ReactActivity_" />
     <package name="com.shopee.vn" scaleMode="1" flags="reusePreContainer:com.shopee.app.react.ReactActivity_" />
@@ -1680,7 +1662,7 @@
     <package name="com.baidu.homework" isShowDivider="true" supportFullSize="true" splitRatio="0.7" supportCameraPreview="false" placeholder="com.baidu.homework.activity.index.IndexActivity:com.baidu.homework.activity.user.UserAskRecordActivity" activityRule="com.baidu.homework.common.photo.PhotoShowActivity,com.baidu.homework.common.camera.NewCameraManyQuestionsActivity,com.baidu.homework.common.paperupload.activity.PaperUploadCameraActivity,com.baidu.homework.common.photo.PhotoCropActivity,com.homework.translate.paragraph.TranslateParagraphActivity,com.homework.translate.word.TranslateWordActivity,com.homework.translate.sentence.TranslateSentenceActivity,com.baidu.homework.activity.search.correct.CorrectSearchActivity,com.homework.translate.TranslateLoadActivity,com.baidu.homework.activity.search.whole.PicManySearchActivity,com.baidu.homework.activity.search.singlequestion.PicSearchActivity,com.baidu.homework.common.camera.CameraManyQuestionsActivity" splitPairRule="com.baidu.homework.activity.index.IndexActivity:*,com.baidu.homework.activity.web.ZybWebActivity:*,com.baidu.homework.activity.index.indexsearch.IndexSearchActivity:*" />
     <!-- MiPad 6 Max Add-->
     <package name="cn.com.langeasy.LangEasyLexis" fullRule="*" />
-    <package name="com.dianzhong.hmxs" fullRule="*" minSupportVersion="1:20230510" />
+    <package name="com.dianzhong.hmxscom.dianzhong.hmxs" fullRule="*" minSupportVersion="1:20230510" />
     <package name="tv.hanju.lite" minSupportVersion="1:20230510" />
     <package name="com.gh.gamecenter" fullRule="*" minSupportVersion="1:20230510" />
     <package name="com.miui.player" version="9999" />
@@ -1695,7 +1677,6 @@
     <package name="com.tmri.app.main" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.taobao.litetao" relaunch="true" placeholder="com.taobao.ltao.maintab.MainFrameActivity:com.taobao.search.searchdoor.SearchDoorActivity" splitPairRule="com.taobao.ltao.maintab.MainFrameActivity:com.taobao.search.searchdoor.SearchDoorActivity,com.taobao.search.searchdoor.SearchDoorActivity:com.taobao.search.sf.srp.MainSearchResultActivity,com.taobao.search.sf.srp.MainSearchResultActivity:*" />
     <package name="com.chinamworld.main" isShowDivider="true" supportFullSize="true" placeholder="com.ccb.start.MainActivity:com.ccb.home.view.search.view.HomeMainPlusSearchActivity" />
-    <package name="com.ss.android.ugc.live" />
     <package name="com.android.bankabc" />
     <package name="com.tencent.karaoke" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.tencent.karaoke.module.relaygame.ui.RelayGameActivity,com.tme.karaoke_game.loading.KaraGameLoadingActivity,com.tme.karaoke_game.KaraGameActivity,com.tencent.karaoke.module.webview.ui.WebViewContainerActivity,com.tencent.karaoke.module.recording.ui.main.RecordingActivity" splitPairRule="com.tencent.karaoke.module.main.ui.MainTabActivity:*" transitionRules="com.tencent.karaoke.module.ktvroom.ui.KtvRoomActivityNew,com.tencent.karaoke.module.hippy.ui.HippyInstanceActivity" flags="ignoreActivityBelowWhenJudgeMiddle:com.tencent.karaoke.module.ktvroom.ui.KtvRoomActivityNew" />
     <package name="me.ele" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
@@ -1740,7 +1721,6 @@
     <package name="com.jifen.qukan" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.lemon.faceu" />
     <package name="tv.pps.mobile" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
-    <package name="com.kuaikan.comic" />
     <package name="com.job.android" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.tianyancha.skyeye" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.baidu.baidutranslate" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
@@ -1760,7 +1740,6 @@
     <package name="com.fenqile.fenqile" />
     <package name="com.hipu.yidian" />
     <package name="com.huawei.hwid" />
-    <package name="com.ximalaya.ting.lite" />
     <package name="com.cootek.crazyreader" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.xhey.xcamera" />
     <package name="com.qq.ac.android" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
@@ -1772,7 +1751,6 @@
     <package name="com.lphtsccft" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.wisedu.cpdaily" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.tencent.qqsports" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
-    <package name="com.jxedt" />
     <package name="com.fy.dmmdzz.mi" />
     <package name="com.huodao.hdphone" />
     <package name="com.able.wisdomtree" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="com.able.wisdomtree.login.MainGroupActivity:com.able.wisdomtree.findsearch.NewSearchGoodActivity" splitPairRule="com.able.wisdomtree.login.MainGroupActivity:*,com.able.wisdomtree.findsearch.NewSearchGoodActivity:*" />
@@ -1817,11 +1795,9 @@
     <package name="com.yzxx.btts.mi" />
     <package name="cn.com.chsi.chsiapp" fullRule="nra:cr:rcr" />
     <package name="com.koudai.weidian.buyer" />
-    <package name="com.qingqi.dianbo" />
     <package name="com.tencent.qqpinyin" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.tencent.qqgame.xq" />
     <package name="com.qihoo.browser" />
-    <package name="com.xueersi.parentsmeeting" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.cgbchina.xpt" />
     <package name="com.tencent.transfer" />
     <package name="android.zhibo8" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
@@ -1837,7 +1813,6 @@
     <package name="com.duxiaoman.umoney" />
     <package name="com.yunxiao.haofenshu" />
     <package name="com.tencent.gallerymanager" />
-    <package name="com.ks.kaishustory" />
     <package name="com.bmcc.ms.ui" />
     <package name="vip.qufenqian.wifionekey" />
     <package name="com.zidongdianji" />
@@ -1894,7 +1869,6 @@
     <package name="com.mm.android.lc" />
     <package name="com.ucmobile.lite" />
     <package name="com.ks.ggwzm.mi" />
-    <package name="zwzt.fangqiu.edu.com.zwzt" />
     <package name="io.dcloud.H576E6CC7" />
     <package name="com.hxb.mobile.client" />
     <package name="com.jf.lkrj" />
@@ -1919,7 +1893,6 @@
     <package name="com.kongming.android.h.parent" />
     <package name="cn.com.bmac.nfc" />
     <package name="com.huajiao" />
-    <package name="com.peopledailychina.activity" />
     <package name="com.ziroom.ziroomcustomer" />
     <package name="com.ataaw.tianyi" />
     <package name="cn.youth.news" />
@@ -2077,7 +2050,6 @@
     <package name="com.powersi.zhrs" />
     <package name="com.tdx.AndroidNew" />
     <package name="cn.com.nxy.mbank.hb" />
-    <package name="com.gkid.crazyrope" />
     <package name="com.hnzh.dldlwhjx.mi" />
     <package name="com.game.fallrace.mi" />
     <package name="com.ultron.crimaster" />
@@ -2168,7 +2140,6 @@
     <package name="com.xingluo.molitt" />
     <package name="com.yzxx.zdxsjjrw.mi" />
     <package name="com.hexin.android.futures" />
-    <package name="cn.eeo.classin" />
     <package name="com.dotamax.app" />
     <package name="com.inspur.icity.tianjin" />
     <package name="com.moyou.lianyou" />
@@ -2222,7 +2193,6 @@
     <package name="com.csg.palmhall" />
     <package name="com.yt.sz.szbank" />
     <package name="com.china3s.android" />
-    <package name="com.qunhe.designer" />
     <package name="com.cpic.sxbxxe" />
     <package name="com.zhongan.insurance" />
     <package name="com.digitalgd.yst" />
@@ -2265,7 +2235,6 @@
     <package name="com.gzsd.mhxrty.mi" />
     <package name="com.cubic.choosecar" />
     <package name="com.ll.nearby" />
-    <package name="com.shoujiduoduo.wallpaper" />
     <package name="com.hj119.sygjx" />
     <package name="com.bishijie" />
     <package name="com.jd.game.mazedaren.mi" />
@@ -2313,7 +2282,6 @@
     <package name="com.ht.hcrxd.mi" />
     <package name="com.hskj.palmmetro" />
     <package name="com.baidu.baijia" />
-    <package name="com.qh.tesla" />
     <package name="com.geek.xgweather" />
     <package name="com.vmos.app" />
     <package name="com.zhnovel.fengduxs" />
@@ -3133,7 +3101,6 @@
     <package name="com.huawei.genexcloud.speedtest" placeholder="com.huawei.genexcloud.speedtest.ui.SpeedMainActivity:com.huawei.genexcloud.speedtest.ui.HistoryRecordActivity" />
     <package name="web1n.stopapp" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="web1n.stopapp.activity.MainActivity:web1n.stopapp.activity.AppListActivity" />
     <package name="com.gombosdev.ampere" activityRule="com.gombosdev.ampere.MainActivity" />
-    <package name="com.wuba" />
     <package name="cc.oogm" fullRule="nra:cr:rcr" />
     <package name="com.bilibili.studio" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.fongmi.android.tv" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="com.fongmi.android.tv.ui.activity.MainActivity:com.fongmi.android.tv.ui.activity.KeepActivity" splitPairRule="com.fongmi.android.tv.ui.activity.MainActivity:*,com.fongmi.android.tv.ui.activity.KeepActivity:*" activityRule="com.fongmi.android.tv.ui.activity.LiveActivity" />
@@ -3214,7 +3181,6 @@
     <package name="com.aiwu.citra" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.hbo.hbonow" fullRule="*" />
     <package name="com.happymod.apk" fullRule="*" />
-    <package name="com.facebook.katana" fullRule="*" />
     <package name="com.wildberries.ru" />
     <package name="com.dianping.v1" minSupportVersion="1:20230413" procCompat="true" scaleMode="1" />
     <package name="dev.miuiicons.pedroz" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.projectkr.shell.MainActivity" transitionRules="com.projectkr.shell.MainActivity" />
@@ -3234,7 +3200,6 @@
     <package name="com.cfitcxwl.kdyutbu" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="flc.ast.HomeActivity" transitionRules="flc.ast.HomeActivity" />
     <package name="com.wandoujia.eyepetizer" placeholder="com.wandoujia.eyepetizercard.MainActivity:com.wandoujia.eyepetizer.ui.activity.AboutActivity" />
     <package name="com.ksf.yyx" />
-    <package name="com.qidian.QDReader" fullRule="nra:cr:rcr" />
     <package name="com.gptbot" fullRule="nra:cr:rcr" />
     <package name="com.csd.newyunketang.dhf" fullRule="nra:cr:rcr" />
     <package name="io.github.huskydg.magisk" fullRule="nra:cr:rcr" />
@@ -3385,7 +3350,7 @@
     <package name="com.fenbi.android.leo" isShowDivider="true" />
     <package name="com.sankuai.meituan.merchant" relaunch="false"  isShowDivider="true" />
     <package name="com.pcncn.jj" isShowDivider="true" />
-        <package name="com.antfortune.wealth"
+    <package name="com.antfortune.wealth"
         splitPairRule="com.alipay.mobile.quinox.LauncherActivity:*" />
     <package name="com.iflytek.vflynote"
         transitionRules="com.iflytek.vflynote.permission.PermissionActivity" />
@@ -3415,6 +3380,62 @@
     <package name="com.yiqizuoye.jzt" isShowDivider="true" />
     <package name="com.arivoc.kouyu" isShowDivider="true" />
     <package name="com.kwai.videoeditor" supportFullSize="true" isShowDivider="true" />
+    <package name="edu.www.qsxt" isShowDivider="true" />
+    <package name="com.wodi.who" isShowDivider="true" />
+    <package name="com.handsgo.jiakao.android" supportFullSize="true" isShowDivider="true" relaunch="false"
+        splitPairRule="com.handsgo.jiakao.android.main.activity.MainActivity:*"
+        transitionRules="com.handsgo.jiakao.android.splash.Login" />
+    <package name="com.ludashi.benchmark" isShowDivider="true" />
+    <package name="com.baidu.dict" isShowDivider="true" />
+    <package name="com.duitang.main" isShowDivider="true" />
+    <package name="com.iflytek.elpmobile.smartlearning" isShowDivider="true" />
+    <package name="com.zwang.clouds" isShowDivider="true" transitionRules="com.excean.masteraid.rsv18mcf.ghb59mn25fnlz" />
+    <package name="com.zbx.ct.tvzhibohd" isShowDivider="true" />
+    <package name="com.lion.market" isShowDivider="true" supportFullSize="true" />
+    <package name="com.power.dapengeducation" isShowDivider="true" />
+    <package name="com.lanjingren.ivwen" relaunch="false" isShowDivider="true" />
+    <package name="com.lazada.android"
+        scaleMode="1"
+        transitionRules="com.etao.feimagesearch.util.PermissionActivity" />
+    <package name="com.zzkko" transitionRules="com.shein.welcome.WelcomeActivity" />
+    <package name="com.hunantv.imgo.activity"
+        scaleMode="1"
+        transitionRules="com.tencent.connect.common.AssistActivity,com.mgtv.ui.personalhomepage.PersonalHomePageActivity,com.tencent.connect.common.AssistActivity,com.mgtv.ui.login.CaptureActivity"
+        flags="ignoreActivityBelowWhenJudgeMiddle:com.mgtv.ui.login.CaptureActivity" />
+    <package name="com.hunantv.imgo.activity"
+        scaleMode="1"
+        transitionRules="com.tencent.connect.common.AssistActivity,com.mgtv.ui.personalhomepage.PersonalHomePageActivity,com.tencent.connect.common.AssistActivity,com.mgtv.ui.login.CaptureActivity"
+        flags="ignoreActivityBelowWhenJudgeMiddle:com.mgtv.ui.login.CaptureActivity" />
+    <package name="com.wuba"
+        activityRule="com.wuba.activity.launch.LaunchActivity,com.wuba.activity.hotlaunch.HotLaunchActivity,com.wuba.tribe.live.activity.TribeAudienceActivity,com.wuba.tribe.live.activity.TribeAnchorActivity"
+        scaleMode="1" splitPairRule="com.wuba.home.activity.HomeActivity:*"
+        transitionRules="com.wuba.job.activity.JobDetailActivity,com.wuba.activity.launch.LeadingActivity" />
+    <package name="com.qingqi.dianbo" scaleMode="1" />
+    <package name="zwzt.fangqiu.edu.com.zwzt" transitionRules="com.zwzt.feature_setting.activity.WebViewTransferActivity" scaleMode="1" />
+    <package name="com.qh.tesla" scaleMode="1" />
+    <package name="com.ximalaya.ting.lite" scaleMode="1" />
+    <package name="com.jxedt" relaunch="false" scaleMode="1" transitionRules="com.jxedt.ui.activitys.live.LiveWebActivity" />
+    <package name="com.ks.kaishustory" scaleMode="1" />
+    <package name="com.shoujiduoduo.wallpaper" scaleMode="1" />
+    <package name="com.peopledailychina.activity" scaleMode="1" />
+    <package name="com.facebook.katana" fullRule="nr" />
+    <package name="com.ss.android.ugc.live" minSupportVersion="1:20230510" defaultSettings="false"
+        transitionRules="com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity" />
+    <package name="com.kuaikan.comic" minSupportVersion="1:20230510"
+        transitionRules="com.kuaikan.library.social.main.SocialDelegateActivity"
+        splitPairRule="com.kuaikan.main.MainActivity:*" />
+    <package name="com.gkid.crazyrope" minSupportVersion="1:20230510" splitPairRule="com.gkid.crazyrope.ui.home.HomeActivity:*" />
+    <package name="com.mampod.ergedd" minSupportVersion="1:20230510" isShowDivider="true" />
+    <package name="cn.eeo.classin" isShowDivider="true"
+        activityRule="cn.eeo.liveroom.ClassRoomActivity,cn.eeo.liveroom.CheckInActivity,cn.eeo.liveroom.ClassRoomDelegateActivity"
+        supportCameraPreview="false" minSupportVersion="1:20230510" />
+    <package name="com.outfit7.talkingtomgoldrun.mi" fullRule="nra:nr" minSupportVersion="1:20230510" />
+    <package name="com.duoduo.child.story" activityRule="com.duoduo.child.story.ui.activity.PGameServerActivity,com.duoduo.child.story.ui.activity.GameServerActivity,com.duoduo.child.story.ui.activity.PlayActivity"
+        isShowDivider="true" supportFullSize="true" />
+    <package name="com.qidian.QDReader" supportFullSize="true" fullRule="nra:cr:rcr" />
+    <package name="com.xueersi.parentsmeeting" fullRule="nra:cr:rcr" />
+    <package name="com.qunhe.designer" isShowDivider="true" />
+    <package name="com.sinyee.babybus.chants" isShowDivider="true" activityRule="com.sinyee.babybus.android.videoplay.VideoPlayActivity" />
     <!-- Adaptive For Sothx 1.70.x -->
     <package name="com.haidilao" splitPairRule="com.haidilao.hailehui.biz.impl.activity.MainActivityNew:*,com.haidilao.hailehui.biz.impl.activity.SearchHomePageActivity:*" />
     <package name="com.mxbc.mxsa" supportFullSize="true" middleRule="*" scaleMode="1" procCompat="true" />
