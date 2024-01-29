@@ -3498,4 +3498,10 @@
     <package name="com.baidu.newapp"  miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0"  />
     <package name="com.panda.gout"  miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0"  />
     <setting name="com.miui.fm" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="com.nintendo.znca" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="com.nintendo.znma" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="com.nintendo.zara" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="com.nintendo.zaka" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="com.nintendo.zaca" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="jp.pokemon.pokemonhome" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
 </setting_config>
