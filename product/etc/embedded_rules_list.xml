@@ -1045,7 +1045,6 @@
     <package name="com.tencent.wehear" />
     <package name="com.chery.zhiyunhulian.assistant" />
     <package name="com.gsww.gsrhc.jkgs" />
-    <package name="com.azure.authenticator" />
     <package name="com.qihoo.cloudisk" />
     <package name="com.hd.smartVillage" />
     <package name="com.android.nineton.elfinapp" />
@@ -3492,6 +3491,8 @@
     <package name="com.nintendo.zaka"  scaleMode="1" fullRule="nra:cr:rcr"  />
     <package name="com.nintendo.zaca"  supportFullSize="true" procCompat="true" middleRule="*"  />
     <package name="jp.pokemon.pokemonhome"  supportFullSize="true" procCompat="true" middleRule="*"  />
+    <package name="com.azure.authenticator"  scaleMode="1" fullRule="nra:cr:rcr"   />
+    <package name="com.yunlan.xjlm"  supportFullSize="true" isShowDivider="true" splitRatio="0.3"  splitPairRule="com.yunlan.xjlm.MainActivity:*,com.yunlan.xjlm.activity.HomeSearchActivity:*,com.yunlan.xjlm.activity.my.PersonalHomepageActivity:*,com.yunlan.xjlm.activity.my.MyCollectionActivity:*,com.yunlan.xjlm.forum.history.BrowseHistoryActivity:*" activityRule="com.yunlan.xjlm.MainActivity" transitionRules="com.yunlan.xjlm.MainActivity" />
     <!-- For WDB/RedMi Use Only-->
     <package name="com.sina.weibo" fullRule="nra:cr:rcr:nr" />
     <package name="com.tencent.tim" fullRule="nra:cr:rcr" />

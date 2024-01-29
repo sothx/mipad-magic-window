@@ -3504,4 +3504,5 @@
     <setting name="com.nintendo.zaka" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.nintendo.zaca" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="jp.pokemon.pokemonhome" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="com.yunlan.xjlm" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
 </setting_config>
