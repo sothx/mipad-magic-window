@@ -97,7 +97,6 @@
     <package name="com.cat.supercleaner.cn" />
     <package name="com.qianxunmall.wheelquery" />
     <package name="com.jingcai.apps.qualitydev" />
-    <package name="com.steampy.app" />
     <package name="com.somer.sq.puzzle" relaunch="false" />
     <package name="com.psbc.citizencard" />
     <package name="cn.com.sina.sports" />
@@ -420,7 +419,6 @@
     <package name="com.ujigu.ytb" />
     <package name="com.dianzhong.xgxs" />
     <package name="com.free_ride.yiwei" />
-    <package name="com.cliff" />
     <package name="com.cib.xyk" />
     <package name="com.kuangxiang.novel" />
     <package name="cn.danatech.xingseapp" />
@@ -433,7 +431,6 @@
     <package name="com.huaai.chho" />
     <package name="com.ikang.web" />
     <package name="qsbk.app" />
-    <package name="com.alibaba.ailabs.tg" />
     <package name="gz.lifesense.weidong" />
     <package name="com.jlpay.feishua" />
     <package name="com.yunyi.smartcamera" />
@@ -711,7 +708,6 @@
     <package name="com.yc.hayloufit" />
     <package name="com.enqualcomm.kids.cyp" />
     <package name="com.gzyct.yctwallet" />
-    <package name="com.cmri.universalapp" />
     <package name="com.xyz.qingtian" />
     <package name="com.PEP.biaori" />
     <package name="com.cmcc.gs" />
@@ -1480,7 +1476,6 @@
     <package name="jdfbx.videotool.water" />
     <package name="com.mcforemost.flowking" />
     <package name="com.szt.pay" />
-    <package name="com.ailian.hope" />
     <package name="com.ease.callshow" />
     <package name="com.zhuochi.hydream" />
     <package name="com.tsy.tsy" />
@@ -1608,7 +1603,6 @@
     <package name="com.yy.dreamer" fullRule="*" />
     <package name="com.chenggua" fullRule="*" />
     <package name="com.tencent.fvb" fullRule="*" />
-    <package name="com.pupumall.customer" />
     <package name="com.cssq.weather" fullRule="*" />
     <package name="com.weiran.yyddz.mi" fullRule="*" />
     <package name="ru.brothersappsandgames.smashdiyslimefidgetslimy.dbzq.m" fullRule="*" />
@@ -1730,8 +1724,6 @@
     <package name="com.ecitic.bank.mobile" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.mygolbs.mybus" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.czb.chezhubang" />
-    <package name="com.jingdong.pdj" />
-    <package name="com.yueme.itv" />
     <package name="com.example.businesshall" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.huaxiaozhu.rider" />
     <package name="com.dw.btime" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
@@ -1774,7 +1766,6 @@
     <package name="com.imibaby.client" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.dw.jrccc.mi" />
     <package name="com.xd.mnccc.mi" />
-    <package name="com.wepie.weplay" />
     <package name="com.yitong.zjrc.mfs.android" />
     <package name="com.baidu.student" />
     <package name="plus.H5A84F959" />
@@ -3132,7 +3123,6 @@
     <package name="com.mt.mtxx.mtxx" placeholder="com.mt.mtxx.mtxx.MainActivity:com.meitu.mtcommunity.search.activity.CommunitySearchActivity" activityRule="com.meitu.album2.ui.AlbumActivity,com.meitu.mtxx.img.IMGMainActivity,com.mt.mtxx.camera.view.CameraActivity,com.mt.mtxx.beauty.gl.BeautyMainGlActivity" />
     <package name="com.mfcloudcalculate.networkdisk" activityRule="com.mfcloudcalculate.networkdisk.MainActivity" transitionRules="com.mfcloudcalculate.networkdisk.MainActivity" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.hexin.plat.android" scaleMode="1" activityRule="com.hexin.plat.android.Hexin" transitionRules="com.hexin.plat.android.Hexin" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
-    <package name="com.jd.jdlite" scaleMode="1" placeholder="com.jd.jdlite.MainFrameActivity:com.jd.lib.search.view.Activity.SearchActivity" splitPairRule="com.jd.jdlite.MainFrameActivity:com.jd.lib.search.view.Activity.SearchActivity,com.jd.lib.search.view.Activity.SearchActivity:com.jd.lib.search.view.Activity.ProductListActivity,com.jd.lib.search.view.Activity.ProductListActivity:com.jd.pingou.newmodule.v.SXMainActivity" />
     <package name="cn.kuwo.tingshu" scaleMode="1" activityRule="cn.kuwo.player.activities.MainActivity" transitionRules="cn.kuwo.player.activities.MainActivity" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.kugou.android.lite" fullRule="nra:cr:rcr" activityRule="com.kugou.android.app.startguide.GuideActivity,com.kugou.android.app.MediaActivity" transitionRules="com.kugou.android.app.startguide.GuideActivity,com.kugou.android.app.MediaActivity" />
     <package name="cn.kuwo.player" fullRule="nra:cr:rcr" />
@@ -3493,6 +3483,19 @@
     <package name="jp.pokemon.pokemonhome"  supportFullSize="true" procCompat="true" middleRule="*"  />
     <package name="com.azure.authenticator"  scaleMode="1" fullRule="nra:cr:rcr"   />
     <package name="com.yunlan.xjlm"  supportFullSize="true" isShowDivider="true" splitRatio="0.3"  splitPairRule="com.yunlan.xjlm.MainActivity:*,com.yunlan.xjlm.activity.HomeSearchActivity:*,com.yunlan.xjlm.activity.my.PersonalHomepageActivity:*,com.yunlan.xjlm.activity.my.MyCollectionActivity:*,com.yunlan.xjlm.forum.history.BrowseHistoryActivity:*" activityRule="com.yunlan.xjlm.MainActivity" transitionRules="com.yunlan.xjlm.MainActivity" />
+    <package name="com.yueme.itv"  scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.cmri.universalapp"  scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.nineton.todolist"  scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="app.bookey"  scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.ailian.hope"  isShowDivider="true" supportFullSize="true" splitRatio="0.3"  />
+    <package name="com.newsweekly.livepi"  scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.alibaba.ailabs.tg"  scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="com.wepie.weplay" isShowDivider="true" supportFullSize="true" splitRatio="0.3" splitPairRule="com.wepie.wespy.module.main.MainActivity:*" activityRule="com.wepie.wespy.module.main.MainActivity" transitionRules="com.wepie.wespy.module.main.MainActivity" />
+    <package name="com.jd.jdlite" scaleMode="1" placeholder="com.jd.jdlite.MainFrameActivity:com.jd.lib.search.view.Activity.SearchActivity" splitPairRule="com.jd.jdlite.MainFrameActivity:*,com.jd.lib.search.view.Activity.SearchActivity:*,com.jd.lib.search.view.Activity.ProductListActivity:*" />
+    <package name="com.pupumall.customer" supportFullSize="true" isShowDivider="true" splitRatio="0.3"  splitPairRule="com.pupumall.customer.activity.MainPresenterActivity:*,com.pupumall.search.activity.SearchResultActivity:*,com.pupumall.category.page.CategoryActivity:*"/>
+    <package name="com.jingdong.pdj" scaleMode="1" placeholder="pdj.main.MainActivity:com.jingdong.pdj.plunginsearchall.SearchActivity" splitPairRule="pdj.main.MainActivity:*,com.jingdong.pdj.plunginsearchall.SearchAllActivity:*,com.jingdong.pdj.plunginnewstore.RedesignedStoreActivity:*,com.jingdong.pdj.plunginchannel.newchannel.ChannelNewDetailActivity:*,com.jingdong.pdj.plunginsearchstore.SearchShopHomeActivity:*" />
+    <package name="com.steampy.app" supportFullSize="true" isShowDivider="true" splitRatio="0.3" placeholder="com.steampy.app.activity.common.MainActivity:com.steampy.app.activity.buy.py.search.SearchActivity" splitPairRule="com.steampy.app.activity.common.MainActivity:*,com.steampy.app.activity.buy.py.search.SearchActivity:*,com.steampy.app.activity.buy.recommend.RecommendInfoNewActivity:*" />
+    <package name="com.cliff" scaleMode="1" fullRule="nra:cr:rcr" />
     <!-- For WDB/RedMi Use Only-->
     <package name="com.sina.weibo" fullRule="nra:cr:rcr:nr" />
     <package name="com.tencent.tim" fullRule="nra:cr:rcr" />
