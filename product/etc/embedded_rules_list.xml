@@ -31,13 +31,11 @@
     <package name="cc.kdqbxs.reader" />
     <package name="com.iningke.jiakaojl" />
     <package name="com.thinkive.investxdtx" />
-    <package name="com.vivo.space" />
     <package name="com.kuke" isShowDivider="true" supportFullSize="true" placeholder="com.kuke.module_business_home.ui.home.MainActivity:com.kuke.module_business_home.ui.search.SearchActivity" splitPairRule="com.kuke.module_business_home.ui.home.MainActivity:*,com.kuke.module_business_home.ui.search.SearchActivity:*,com.kuke.module_business_home.ui.search.SearchResultActivity:*,com.kuke.module_business_me.ui.MyFavoriteActivity:*,com.kuke.module_business_me.ui.BrowsingHistoryActivity:*,com.kuke.module_business_me.ui.MyBoughtActivity:*,com.kuke.module_business_order.ui.MyOrderActivity:*,com.kuke.mvp.ui.activity.download.MyCourseDownloadActivity:*" />
     <package name="so.ofo.labofo" />
     <package name="com.adinnet.xlebike" />
     <package name="com.chipsea.btcontrol" />
     <package name="wind.android" />
-    <package name="com.qcymall.earphonesetup" />
     <package name="com.tulingweier.yw.minihorsetravelapp" />
     <package name="com.unicde.smartcity_lyg" />
     <package name="com.jimi.tuqiang" />
@@ -56,7 +54,6 @@
     <package name="com.xbcx.gdwx3" />
     <package name="com.moliao.main" />
     <package name="cn.runtu.app.android" />
-    <package name="cn.dxy.idxyer" />
     <package name="com.xmbranch.morestep" />
     <package name="com.subway.bjsubway" />
     <package name="gov.pianzong.androidnga" isShowDivider="true" supportFullSize="true" splitRatio="0.3" splitPairRule="com.donews.nga.activitys.MainActivity:*,gov.pianzong.androidnga.activity.forumdetail.ForumDetailActivity:*,com.donews.nga.search.SearchActivity:*,com.donews.nga.activitys.historyactivity:*,com.donews.nga.user.activitys.UserDetailActivity:*" activityRule="com.donews.nga.activitys.MainActivity" transitionRules="com.donews.nga.activitys.MainActivity" />
@@ -136,7 +133,6 @@
     <package name="com.benew.ntt" />
     <package name="info.red.virtual" />
     <package name="cn.com.njcb.android.mobilebank" />
-    <package name="com.tadu.read" relaunch="true" />
     <package name="com.jzyd.coupon" />
     <package name="com.p1.mobile.light" />
     <package name="com.dtdream.sygovernment" />
@@ -161,7 +157,6 @@
     <package name="com.supi.supireader" />
     <package name="com.dingda.app" />
     <package name="com.iksocial.queen" />
-    <package name="com.zhanlang.notes" />
     <package name="org.fungo.fungoliveallstar" />
     <package name="cn.mama.pregnant" />
     <package name="com.flyingeffects.com" />
@@ -449,7 +444,6 @@
     <package name="com.eno.android.cj.page" />
     <package name="cn.com.csbank" />
     <package name="com.jianyou.swatch" />
-    <package name="com.moji.mjweather" />
     <package name="cn.cdyl.zwxt" />
     <package name="com.pingan.yancheng" />
     <package name="com.bwton.szfreego" />
@@ -588,7 +582,6 @@
     <package name="com.netease.edu.study" />
     <package name="com.connectandroid.server.ctseasy" />
     <package name="com.ibox.calculators" />
-    <package name="com.glodon.drawingexplorer" />
     <package name="com.zol.android" />
     <package name="com.jovision.xiaowei" />
     <package name="com.china" />
@@ -1241,13 +1234,11 @@
     <package name="com.esbook.reader" />
     <package name="com.alibaba.wireless" placeholder="com.alibaba.wireless.launch.home.V5HomeActivity:com.alibaba.wireless.search.aksearch.inputpage.SearchInputActivity" splitPairRule="com.alibaba.wireless.launch.home.V5HomeActivity:*,com.alibaba.wireless.search.aksearch.inputpage.SearchInputActivity:com.alibaba.wireless.search.aksearch.resultpage.SearchResultActivity,com.alibaba.wireless.search.aksearch.resultpage.SearchResultActivity:com.alibaba.wireless.detail_dx.activity.OfferDetailActivityDX" />
     <package name="com.alibaba.wireless.microsupply" />
-    <package name="com.naver.linewebtoon.cn" />
     <package name="com.runbey.ybjk" />
     <package name="com.yzxx.hcrttt.mi" />
     <package name="com.uusense.speed" />
     <package name="com.gooclient.anycam.neye3ctwo" />
     <package name="com.wifisecurity.safeassistant" />
-    <package name="com.zongheng.reader" />
     <package name="com.cib.qdzg" />
     <package name="com.ztesoft.homecare" />
     <package name="com.jesson.meishi" />
@@ -1643,7 +1634,6 @@
     <package name="in.startv.hotstar.dplus" />
     <package name="com.shizhuang.duapp" scaleMode="1" transitionRules="com.shizhuang.duapp.du_login.LoginHelperActivity,com.shizhuang.duapp.du_login.LoginEntryActivity,om.shizhuang.duapp.du_login.business.LoginContainerActivity" />
     <package name="com.sankuai.meituan.takeoutnew" splitRatio="0.49" placeholder="com.sankuai.waimai.business.page.homepage.MainActivity:com.sankuai.waimai.business.search.ui.GlobalSearchActivity" splitPairRule="com.sankuai.waimai.business.page.homepage.MainActivity:*,com.sankuai.waimai.business.search.ui.GlobalSearchActivity:*,com.sankuai.waimai.reactnative.WmRNActivity:*" />
-    <package name="com.achievo.vipshop" placeholder="com.achievo.vipshop.homepage.activity.MainActivity:com.achievo.vipshop.usercenter.activity.MyCenterActivity" scaleMode="1" splitPairRule="com.achievo.vipshop.homepage.activity.MainActivity:*" />
     <package name="com.lianjia.beike" scaleMode="1" />
     <package name="com.hupu.shihuo" scaleMode="1" />
     <package name="com.intsig.camscanner" scaleMode="1" />
@@ -1699,7 +1689,6 @@
     <package name="net.evecom.android.mztapp" />
     <package name="com.bankcomm.maidanba" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.kuaiduizuoye.scan" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
-    <package name="com.netease.mc.mi" />
     <package name="com.campmobile.snowcamera" />
     <package name="cn.xiaochuankeji.tieba" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="cn.xiaochuankeji.tieba.ui.base.SplashActivity,cn.xiaochuankeji.tieba.media.browse.MediaActivity" splitPairRule="cn.xiaochuankeji.tieba.ui.home.page.PageMainActivity:*,cn.xiaochuankeji.tieba.ui.search.ui.SearchActivity:*" placeholder="cn.xiaochuankeji.tieba.ui.home.page.PageMainActivity:cn.xiaochuankeji.tieba.ui.search.ui.SearchActivity" />
     <package name="com.sankuai.youxuan" />
@@ -3069,7 +3058,6 @@
     <package name="com.zhihu.android" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.zhihu.android.app.ebook.activity.EBookHostActivity,com.zhihu.android.app.ui.activity.MainActivity,com.zhihu.android.app.ui.activity.LauncherActivity" splitPairRule="com.zhihu.android.app.ui.activity.MainActivity:*,com.zhihu.android.app.SearchActivity:*" transitionRules="com.zhihu.android.app.ebook.activity.EBookHostActivity,com.zhihu.android.app.ui.activity.LaunchAdActivity,com.zhihu.android.app.ui.activity.TransActivity,com.zhihu.android.app.ui.activity.LauncherActivity,com.zhihu.android.panel.ui.attach.PanelAttachActivity,com.zhihu.android.app.ui.activity.SocialOauthActivity,com.zhihu.android.app.ui.activity.DealLoginActivity,com.zhihu.android.app.SearchActivity,com.zhihu.android.app.ui.activity.MainActivity,,com.ybcq.makeit" flags="ignoreActivityBelowWhenJudgeMiddle:com.zhihu.android.app.ui.activity.TransActivity,com.zhihu.android.app.ui.activity.DealLoginActivity" />
     <package name="com.caij.see" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.caii.see.ic_launcher_round,com.caij.see.ui.activity.home.MainContainActivity" transitionRules="com.caii.see.ic_launcher_round,com.caij.see.ui.activity.home.MainContainActivity" splitPairRule="com.caij.see.ui.activity.home.MainContainActivity:*,com.caij.see.ui.activity.search.SearchRecommendActivity:*,com.caij.see.ui.activity.AllSearchActivity:*,com.caij.see.ui.activity.DispatcherActivity:*" />
     <package name="com.cmcc.cmvideo" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="com.cmcc.cmvideo.main.application.CompatibleMainActivity:com.cmcc.cmvideo.main.search.SearchActivity" splitPairRule="com.cmcc.cmvideo.main.application.CompatibleMainActivity:*,com.cmcc.cmvideo.main.search.SearchActivity:*,com.cmcc.cmvideo.mgpersonalcenter.collect.PersonalNewCenterUserCollectActivity:*,com.cmcc.cmvideo.mgpersonalcenter.PersonalCenterSubscribedActivity:*,com.cmvideo.capability.playdetailshortvideo.StandardActivity:*,com.cmcc.cmvideo.mgpersonalcenter.presentation.ui.activities.PersonalUserSetActivity:*" />
-    <package name="com.dragon.read" clearTop="false" fullRule="nra:cr:rcr" supportCameraPreview="true" scaleMode="1" relaunch="true" />
     <package name="com.mantianxing.mtx" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.junyue.novel.ui.SplashActivity,com.junyue.novel.modules.index.ui.MainActivity" transitionRules="com.junyue.novel.ui.SplashActivity,com.junyue.novel.modules.index.ui.MainActivity" splitPairRule="com.junyue.novel.modules.index.ui.MainActivity:*,com.junyue.novel.modules.search.ui.MySearchActivity:*,com.junyue.novel.modules.bookshelf.ui.BookDownloadMangerActivity:*,com.junyue.novel.modules.user.ui.NewMessageCenterActivity:*,com.junyue.novel.modules.bookstore.ui.BookReviewActivity:*" />
     <package name="iot.clz.me" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="iot.clz.me.MainActivity" transitionRules="iot.clz.me.MainActivity" />
     <package name="com.maimemo.android.momo" fullRule="nra:cr:rcr" />
@@ -3320,7 +3308,6 @@
     <package name="com.psyone.brainmusic" isShowDivider="true" />
     <package name="com.dalongtech.cloud" isShowDivider="true" />
     <package name="com.hhdd.kada" activityRule="com.hhdd.kada.module.bookplayer.BookInfoActivity" isShowDivider="true" />
-    <package name="cn.xuexi.android" transitionRules="com.alibaba.android.rimet.biz.SplashActivity,com.alibaba.android.rimet.biz.privacy.PrivacyShowDialogActivity" isShowDivider="true" />
     <package name="com.yiyou.ga" supportCameraPreview="false" isShowDivider="true"
         transitionRules="com.yanzhenjie.permission.bridge.BridgeActivity,com.quwan.tt.biz.postDetail.UgcPostDetailActivity" />
     <package name="com.dinoenglish.yyb" activityRule="com.dinoenglish.book.clickread.ClickActivity" relaunch="false" />
@@ -3382,10 +3369,6 @@
         scaleMode="1"
         transitionRules="com.tencent.connect.common.AssistActivity,com.mgtv.ui.personalhomepage.PersonalHomePageActivity,com.tencent.connect.common.AssistActivity,com.mgtv.ui.login.CaptureActivity"
         flags="ignoreActivityBelowWhenJudgeMiddle:com.mgtv.ui.login.CaptureActivity" />
-    <package name="com.hunantv.imgo.activity"
-        scaleMode="1"
-        transitionRules="com.tencent.connect.common.AssistActivity,com.mgtv.ui.personalhomepage.PersonalHomePageActivity,com.tencent.connect.common.AssistActivity,com.mgtv.ui.login.CaptureActivity"
-        flags="ignoreActivityBelowWhenJudgeMiddle:com.mgtv.ui.login.CaptureActivity" />
     <package name="com.wuba"
         activityRule="com.wuba.activity.launch.LaunchActivity,com.wuba.activity.hotlaunch.HotLaunchActivity,com.wuba.tribe.live.activity.TribeAudienceActivity,com.wuba.tribe.live.activity.TribeAnchorActivity"
         scaleMode="1" splitPairRule="com.wuba.home.activity.HomeActivity:*"
@@ -3404,9 +3387,6 @@
         splitPairRule="com.kuaikan.main.MainActivity:*" />
     <package name="com.gkid.crazyrope" minSupportVersion="1:20230510" splitPairRule="com.gkid.crazyrope.ui.home.HomeActivity:*" />
     <package name="com.mampod.ergedd" minSupportVersion="1:20230510" isShowDivider="true" />
-    <package name="cn.eeo.classin" isShowDivider="true"
-        activityRule="cn.eeo.liveroom.ClassRoomActivity,cn.eeo.liveroom.CheckInActivity,cn.eeo.liveroom.ClassRoomDelegateActivity"
-        supportCameraPreview="false" minSupportVersion="1:20230510" />
     <package name="com.outfit7.talkingtomgoldrun.mi" fullRule="nra:nr" minSupportVersion="1:20230510" />
     <package name="com.duoduo.child.story" activityRule="com.duoduo.child.story.ui.activity.PGameServerActivity,com.duoduo.child.story.ui.activity.GameServerActivity,com.duoduo.child.story.ui.activity.PlayActivity"
         isShowDivider="true" supportFullSize="true" />
@@ -3440,7 +3420,6 @@
     <package name="com.hongbeibang.app"  supportFullSize="true" procCompat="true" middleRule="*"  />
     <package name="com.zeropasson.zp" supportFullSize="true" isShowDivider="true" splitRatio="0.3" splitPairRule="com.zeropasson.zp.ui.main.MainActivity:*,com.zeropasson.zp.ui.search.SearchActivity:*,com.zeropasson.zp.ui.personal.PersonalHomeActivity:*,com.zeropasson.zp.ui.mine.FavoriteListActivity:*,com.zeropasson.zp.ui.settings.address.AddressBookActivity:*" activityRule="com.zeropasson.zp.ui.login.LoginActivity,com.zeropasson.zp.ui.login.BindPhoneActivity" transitionRules="com.zeropasson.zp.ui.login.LoginActivity,com.zeropasson.zp.ui.login.BindPhoneActivity" />
     <package name="cn.dxy.idxyer" relaunch="true" isShowDivider="true" splitRatio="0.3" supportFullSize="true" activityRule="cn.dxy.idxyer.biz.main.MainActivity,cn.dxy.idxyer.common.scan.ScanActivity" transitionRules="cn.dxy.idxyer.biz.main.MainActivity,cn.dxy.idxyer.common.scan.ScanActivity" splitPairRule="cn.dxy.idxyer.biz.main.MainActivity:*,cn.dxy.idxyer.biz.search.SearchActivity:*,cn.dxy.idxyer.biz.user.ProfileActivity:*,cn.dxy.idxyer.biz.user.UserPostSearchActivity:*,cn.dxy.idxyer.biz.drugslib.DrugsBizHomeActivity:*,cn.dxy.idxyer.biz.main.mine.common.FavoriteActivity:*,cn.dxy.idxyer.biz.main.mine.common.LocalAttachmentActivity:*,cn.dxy.idxyer.book.activity.BookActivity:*,cn.dxy.idxyer.book.activity.BookSearchActivity:*,cn.dxy.idxyer.book.activity.BookBoughtListActivity:*,cn.dxy.idxyer.biz.main.mine.common.ReadHistoryActivity:*" />
-    <package name="com.kiloo.subwaysurf" scaleMode="1" fullRule="nra:cr:rcr"  />
     <package name="com.microsoft.office.outlook"  scaleMode="1" fullRule="nra:cr:rcr"  />
     <package name="com.xiaomi.mitime" supportFullSize="true" procCompat="true" middleRule="*"  />
     <package name="com.xs.fm" supportFullSize="true" isShowDivider="true" splitRatio="0.3" splitPairRule="com.dragon.read.pages.main.MainFragmentActivity:*,com.dragon.read.pages.search.SearchActivity:*,com.dragon.community.web.CommunityWebActivity:*,com.dragon.read.reader.speech.bullet.BulletActivity:*,com.dragon.read.pages.category.BookCategoryActivity:*,com.xs.fm.mine.impl.homepage.UserHomePageActivity:*" activityRule="com.dragon.read.pages.main.MainFragmentActivity,com.dragon.read.reader.ReaderActivity" transitionRules="com.dragon.read.pages.main.MainFragmentActivity,com.dragon.read.reader.ReaderActivity" />
@@ -3500,6 +3479,8 @@
     <package name="com.netease.buff" isShowDivider="true" supportFullSize="true" splitRatio="0.3" splitPairRule="com.netease.buff.entry.MainActivity:*,com.netease.buff.market_goods.ui.marketGoods.MarketGoodsActivity:*,com.netease.buff.news.ui.activity.column.ColumnThemeDetailActivity:*" activityRule="com.netease.buff.entry.MainActivity,com.netease.buff.qrcode.ui.ScanActivity,com.netease.buff.entry.SplashActivity" transitionRules="com.netease.buff.entry.MainActivity,com.netease.buff.qrcode.ui.ScanActivity,com.netease.buff.entry.SplashActivity" />
     <package name="com.peopledailychina.activity" isShowDivider="true" supportFullSize="true" splitRatio="0.3" splitPairRule="com.peopledailychina.activity.activity.MainActivity:*,com.peopledailychina.activity.activity.SearchActivity:*,com.peopledailychina.activity.activity.PeopleNumberHomeActivity:*,com.peopledailychina.activity.activity.SoundActivity:*,com.peopledailychina.activity.activity.AudioSeminarDetailActivity:*" activityRule="com.peopledailychina.activity.activity.MainActivity,com.peopledailychina.activity.activity.WelcomeActivity" transitionRules="com.peopledailychina.activity.activity.MainActivity,com.peopledailychina.activity.activity.WelcomeActivity" />
     <package name="com.vistastory.news" supportFullSize="true" procCompat="true" middleRule="*" />
+    <package name="com.moji.mjweather" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="com.achievo.vipshop" isShowDivider="true"  supportFullSize="true" splitRatio="0.3" placeholder="com.achievo.vipshop.homepage.activity.MainActivity:com.achievo.vipshop.search.activity.SearchActivity" splitPairRule="com.achievo.vipshop.homepage.activity.MainActivity:*,com.achievo.vipshop.search.activity.TabSearchProductListActivity:*,com.achievo.vipshop.productlist.activity.TabBrandLandingProductListActivity:*" transitionRules="com.achievo.vipshop.homepage.activity.MainActivity,com.achievo.vipshop.search.activity.SearchCameraActivity,com.achievo.vipshop.usercenter.activity.HWScanKitActivity" activityRule="com.achievo.vipshop.homepage.activity.MainActivity,com.achievo.vipshop.search.activity.SearchCameraActivity,com.achievo.vipshop.usercenter.activity.HWScanKitActivity" />
     <!-- For WDB/RedMi Use Only-->
     <package name="com.sina.weibo" fullRule="nra:cr:rcr:nr" />
     <package name="com.tencent.tim" fullRule="nra:cr:rcr" />
