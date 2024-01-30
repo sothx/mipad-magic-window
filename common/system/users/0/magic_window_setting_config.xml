@@ -3512,4 +3512,5 @@
     <setting name="com.yingpar.speak" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.guixue.m" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.yihu.medical" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="com.vistastory.news" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
 </setting_config>

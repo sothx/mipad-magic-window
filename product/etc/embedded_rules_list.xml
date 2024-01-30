@@ -57,7 +57,6 @@
     <package name="com.moliao.main" />
     <package name="cn.runtu.app.android" />
     <package name="cn.dxy.idxyer" />
-    <package name="com.netease.buff" />
     <package name="com.xmbranch.morestep" />
     <package name="com.subway.bjsubway" />
     <package name="gov.pianzong.androidnga" isShowDivider="true" supportFullSize="true" splitRatio="0.3" splitPairRule="com.donews.nga.activitys.MainActivity:*,gov.pianzong.androidnga.activity.forumdetail.ForumDetailActivity:*,com.donews.nga.search.SearchActivity:*,com.donews.nga.activitys.historyactivity:*,com.donews.nga.user.activitys.UserDetailActivity:*" activityRule="com.donews.nga.activitys.MainActivity" transitionRules="com.donews.nga.activitys.MainActivity" />
@@ -1980,7 +1979,6 @@
     <package name="com.imaginer.yunji" />
     <package name="com.cnki.client" />
     <package name="com.yitong.mbank.psbc.creditcard" />
-    <package name="com.ingka.ikea.app.cn.prod" />
     <package name="com.plat.swhydyj.android.ShenWanHongYuanSecurity" />
     <package name="com.tsingzone.questionbank" />
     <package name="com.bertadata.qxb" />
@@ -3398,7 +3396,6 @@
     <package name="com.jxedt" relaunch="false" scaleMode="1" transitionRules="com.jxedt.ui.activitys.live.LiveWebActivity" />
     <package name="com.ks.kaishustory" scaleMode="1" />
     <package name="com.shoujiduoduo.wallpaper" scaleMode="1" />
-    <package name="com.peopledailychina.activity" scaleMode="1" />
     <package name="com.facebook.katana" fullRule="nr" />
     <package name="com.ss.android.ugc.live" minSupportVersion="1:20230510" defaultSettings="false"
         transitionRules="com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity" />
@@ -3499,6 +3496,10 @@
     <package name="com.yihu.medical" isShowDivider="true" supportFullSize="true" splitRatio="0.3" splitPairRule="com.yihu.medical.view.activity.MainActivity:*,com.yihu.medical.register.view.activity.HomeSearchActivity:*" />
     <package name="com.ysy.ayy" isShowDivider="true" supportFullSize="true" placeholder="com.ysy.ayy.fk.main.activity.HomePageActivity:com.ysy.ayy.fk.house.seek.activity.SearchActivity" splitPairRule="com.ysy.ayy.fk.main.activity.HomePageActivity:*,com.ysy.ayy.fk.house.alllist.list.RoomListActivityV7:*" />
     <package name="com.ikang.official" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="com.ikang.official.ui.home.HomeActivity:com.ikang.official.ui.home.NewSearchActivity" splitPairRule="com.ikang.official.ui.home.HomeActivity:*,com.ikang.official.ui.home.NewSearchActivity:*,com.ikang.official.ui.appointment.hospital.InspectionLineHospitalDetailActivity:*" />
+    <package name="com.ingka.ikea.app.cn.prod" fullRule="nra:cr:rcr" />
+    <package name="com.netease.buff" isShowDivider="true" supportFullSize="true" splitRatio="0.3" splitPairRule="com.netease.buff.entry.MainActivity:*" activityRule="com.netease.buff.entry.MainActivity,com.netease.buff.qrcode.ui.ScanActivity" transitionRules="com.netease.buff.entry.MainActivity,com.netease.buff.qrcode.ui.ScanActivity" />
+    <package name="com.peopledailychina.activity" isShowDivider="true" supportFullSize="true" splitRatio="0.3" splitPairRule="com.peopledailychina.activity.activity.MainActivity:*,com.peopledailychina.activity.activity.SearchActivity:*,com.peopledailychina.activity.activity.PeopleNumberHomeActivity:*,com.peopledailychina.activity.activity.SoundActivity:*,com.peopledailychina.activity.activity.AudioSeminarDetailActivity:*" activityRule="com.peopledailychina.activity.activity.MainActivity,com.peopledailychina.activity.activity.WelcomeActivity" transitionRules="com.peopledailychina.activity.activity.MainActivity,com.peopledailychina.activity.activity.WelcomeActivity" />
+    <package name="com.vistastory.news" supportFullSize="true" procCompat="true" middleRule="*" />
     <!-- For WDB/RedMi Use Only-->
     <package name="com.sina.weibo" fullRule="nra:cr:rcr:nr" />
     <package name="com.tencent.tim" fullRule="nra:cr:rcr" />
