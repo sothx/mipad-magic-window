@@ -253,7 +253,6 @@
     <package name="com.tzb.mobilehub" />
     <package name="com.glodon.constructioncalculators" />
     <package name="com.kuaiyin.mj.music" />
-    <package name="com.shanbay.news" />
     <package name="cn.com.bjx.bjxtalents" />
     <package name="com.gengcon.android.jccloudprinter" />
     <package name="com.app.Minibox" />
@@ -568,7 +567,6 @@
     <package name="com.tencent.kg.android.lite" />
     <package name="com.qdtevc.teld.app" finishSecondaryWithPrimary="0" />
     <package name="com.huayi.cme" transitionRules="com.huayi.cme.ui.WelcomeActivity,com.huayi.cme.ui.hyh.SubscribeHomeActivity,com.huayi.cme.ui.SplashActivity" />
-    <package name="com.ysy.ayy" />
     <package name="cn.wsds.gamemaster" />
     <package name="com.yoosee" />
     <package name="us.pinguo.april_collage" />
@@ -1403,7 +1401,6 @@
     <package name="com.dongchu.yztq" />
     <package name="com.txtqbmf.zjqy" />
     <package name="com.ktls.fileinfo" />
-    <package name="com.ikang.official" />
     <package name="com.zivn.cloudbrush3" />
     <package name="llbt.ccb.lnga" />
     <package name="com.duapps.recorder" />
@@ -1837,7 +1834,6 @@
     <package name="com.ppdai.loan" />
     <package name="com.yzxx.mnfkcl.mi" />
     <package name="com.gaotu100.superclass" />
-    <package name="com.shanbay.sentence" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.shanbay.bay.biz.words.v2.study.StudyActivity,com.shanbay.biz.web.activity.ShanbayWebPageActivity" splitPairRule="com.shanbay.words.home.mvp.HomeActivity:*,com.shanbay.words.search.thiz.SearchWordActivity:*,com.shanbay.words.search.thiz.SearchWordActivityV2:*,com.shanbay.words.setting.SettingActivity:*,com.shanbay.bay.biz.words.v2.book.activity.MyWordBookActivity:*" placeholder="com.shanbay.words.home.mvp.HomeActivity:com.shanbay.words.search.thiz.SearchWordActivityV2" />
     <package name="com.kugou.android.ktvapp" />
     <package name="com.hoperun.intelligenceportal" />
     <package name="com.sh.cm.shydhn" />
@@ -3397,7 +3393,6 @@
         scaleMode="1" splitPairRule="com.wuba.home.activity.HomeActivity:*"
         transitionRules="com.wuba.job.activity.JobDetailActivity,com.wuba.activity.launch.LeadingActivity" />
     <package name="com.qingqi.dianbo" scaleMode="1" />
-    <package name="zwzt.fangqiu.edu.com.zwzt" transitionRules="com.zwzt.feature_setting.activity.WebViewTransferActivity" scaleMode="1" />
     <package name="com.qh.tesla" scaleMode="1" />
     <package name="com.ximalaya.ting.lite" scaleMode="1" />
     <package name="com.jxedt" relaunch="false" scaleMode="1" transitionRules="com.jxedt.ui.activitys.live.LiveWebActivity" />
@@ -3496,6 +3491,14 @@
     <package name="com.steampy.app" supportFullSize="true" isShowDivider="true" relaunch="true" placeholder="com.steampy.app.activity.common.MainActivity:com.steampy.app.activity.buy.py.search.SearchActivity" splitPairRule="com.steampy.app.activity.common.MainActivity:*,com.steampy.app.activity.buy.py.search.SearchActivity:*,com.steampy.app.activity.buy.recommend.RecommendInfoNewActivity:*" />
     <package name="com.cliff" isShowDivider="true" supportFullSize="true" splitRatio="0.3" splitPairRule="com.cliff.ui.main.MainActivity:*,com.cliff.ui.discover.richmedia.BookClassifyActivity:*,com.cliff.ui.search.MainSearchActivity:*,com.cliff.ui.borrow.BorrowListActivity:*,com.cliff.ui.discover.topic.TopicDetailActivity:*,com.cliff.ui.discover.system.UserInfoActivity:*,com.cliff.ui.my.mine.MyCollectActivity:*,com.cliff.ui.my.news.NewsActivity:*" activityRule="com.cliff.ui.reader.ReaderActivity" transitionRules="com.cliff.ui.reader.ReaderActivity" />
     <package name="cn.gov.pbc.dcep"  scaleMode="1" fullRule="nra:cr:rcr"  />
+    <package name="zwzt.fangqiu.edu.com.zwzt" isShowDivider="true" supportFullSize="true" splitPairRule="com.zwzt.feature_home.MainActivity:*,com.zwzt.feature_search.kotlin.SearchResultActivity:*,com.zwzt.feature_setting.activity.home.PersonalHomeActivity:*,com.zwzt.feature_circle.ui.circle.CircleHomeActivity:*,com.zwzt.feature_message.v2.MessageActivity:*,com.zwzt.feature_message.v2.system.MessageListActivity:*" activityRule="com.zwzt.feature_home.MainActivity,com.zwzt.feature_setting.activity.QRCodeScanActivity,com.zwzt.feature_splash.SplashActivity" transitionRules="com.zwzt.feature_home.MainActivity,com.zwzt.feature_setting.activity.QRCodeScanActivity,com.zwzt.feature_splash.SplashActivity" />
+    <package name="com.shanbay.news" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="com.yingpar.speak" isShowDivider="true" supportFullSize="true" splitRatio="0.3"  />
+    <package name="com.shanbay.sentence" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="com.guixue.m" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
+    <package name="com.yihu.medical" isShowDivider="true" supportFullSize="true" splitRatio="0.3" splitPairRule="com.yihu.medical.view.activity.MainActivity:*,com.yihu.medical.register.view.activity.HomeSearchActivity:*" />
+    <package name="com.ysy.ayy" isShowDivider="true" supportFullSize="true" placeholder="com.ysy.ayy.fk.main.activity.HomePageActivity:com.ysy.ayy.fk.house.seek.activity.SearchActivity" splitPairRule="com.ysy.ayy.fk.main.activity.HomePageActivity:*,com.ysy.ayy.fk.house.alllist.list.RoomListActivityV7:*" />
+    <package name="com.ikang.official" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="com.ikang.official.ui.home.HomeActivity:com.ikang.official.ui.home.NewSearchActivity" splitPairRule="com.ikang.official.ui.home.HomeActivity:*,com.ikang.official.ui.home.NewSearchActivity:*,com.ikang.official.ui.appointment.hospital.InspectionLineHospitalDetailActivity:*" />
     <!-- For WDB/RedMi Use Only-->
     <package name="com.sina.weibo" fullRule="nra:cr:rcr:nr" />
     <package name="com.tencent.tim" fullRule="nra:cr:rcr" />
