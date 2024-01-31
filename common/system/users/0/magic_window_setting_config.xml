@@ -3306,7 +3306,6 @@
     <setting name="com.jibaoge.jibaogeapp" miuiMagicWinEnabled="true" miuiDialogShown="true" miuiDragMode="0" />
     <setting name="com.chunqiu.ahsp" miuiMagicWinEnabled="true" miuiDialogShown="true" miuiDragMode="0" />
     <!-- ver 0.96 -->
-    <setting name="com.ss.android.article.video" miuiMagicWinEnabled="true" miuiDialogShown="true" miuiDragMode="0" />
     <setting name="com.topjohnwu.magisk" miuiMagicWinEnabled="true" miuiDialogShown="true" miuiDragMode="0" />
     <setting name="com.facetech.konking" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.huya.kiwi" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
@@ -3513,4 +3512,5 @@
     <setting name="com.guixue.m" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.yihu.medical" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
     <setting name="com.vistastory.news" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
+    <setting name="es.leishen.cn" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0" />
 </setting_config>
