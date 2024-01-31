@@ -3319,8 +3319,6 @@
     <package name="com.pcncn.jj" isShowDivider="true" />
     <package name="com.antfortune.wealth"
         splitPairRule="com.alipay.mobile.quinox.LauncherActivity:*" />
-    <package name="com.iflytek.vflynote"
-        transitionRules="com.iflytek.vflynote.permission.PermissionActivity" />
     <package name="com.zhanlang.notes" isShowDivider="true" />
     <package name="com.maidu.gkld" scaleMode="1" supportCameraPreview="false" />
     <package name="com.yitantech.gaigai" isShowDivider="true" />
@@ -3481,6 +3479,10 @@
     <package name="com.vistastory.news" supportFullSize="true" procCompat="true" middleRule="*" />
     <package name="com.moji.mjweather" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.achievo.vipshop" isShowDivider="true"  supportFullSize="true" splitRatio="0.3" splitPairRule="com.achievo.vipshop.homepage.activity.MainActivity:*,com.achievo.vipshop.search.activity.TabSearchProductListActivity:*,com.achievo.vipshop.productlist.activity.TabBrandLandingProductListActivity:*" transitionRules="com.achievo.vipshop.search.activity.SearchCameraActivity,com.achievo.vipshop.usercenter.activity.HWScanKitActivity" activityRule="com.achievo.vipshop.search.activity.SearchCameraActivity,com.achievo.vipshop.usercenter.activity.HWScanKitActivity" />
+    <package name="com.gamestar.pianoperfect" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="me.yoopu.app.songbook" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="com.iflytek.vflynote" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="com.kingagroot.kingdraw" scaleMode="1" fullRule="nra:cr:rcr" />
     <!-- For WDB/RedMi Use Only-->
     <package name="com.sina.weibo" fullRule="nra:cr:rcr:nr" />
     <package name="com.tencent.tim" fullRule="nra:cr:rcr" />
