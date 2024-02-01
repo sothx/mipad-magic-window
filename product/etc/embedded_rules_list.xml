@@ -3485,6 +3485,10 @@
     <package name="es.leishen.cn" supportFullSize="true" procCompat="true" middleRule="*" />
     <package name="com.hp.chinastoreapp" supportFullSize="true" splitPairRule="com.hp.chinastoreapp.ui.main.MainActivity:*,com.hp.chinastoreapp.ui.search.SearchResultActivity:*" />
     <package name="com.tonglubao.asusstore" isShowDivider="true" splitRatio="0.3" placeholder="com.tonglubao.asusstore.module.index.IndexActivity:com.tonglubao.asusstore.module.search.SearchActivity" supportFullSize="true" splitPairRule="com.tonglubao.asusstore.module.index.IndexActivity:*,com.tonglubao.asusstore.module.product.list.ProductListActivity:*,com.tonglubao.asusstore.module.message.MessageCenterActivity:*,com.tonglubao.asusstore.module.product.hotchart.HotSaleChartsActivity:*" activityRule="com.tonglubao.asusstore.module.scan.ScanActivity" transitionRules="com.tonglubao.asusstore.module.scan.ScanActivity" />
+    <package name="com.mi.global.bbs" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="com.mi.global.pocobbs" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="com.mi.android.globalFileexplorer" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="com.duokan.phone.remotecontroller" scaleMode="1" fullRule="nra:cr:rcr" />
     <!-- For WDB/RedMi Use Only-->
     <package name="com.sina.weibo" fullRule="nra:cr:rcr:nr" />
     <package name="com.tencent.tim" fullRule="nra:cr:rcr" />
