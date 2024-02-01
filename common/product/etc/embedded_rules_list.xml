@@ -2999,7 +2999,6 @@
     <package name="com.dtno1.WearPro" />
     <package name="com.yingsheng.hayloufun" />
     <package name="com.upgadata.up7723" placeholder="com.upgadata.up7723.main.activity.HomeActivity:com.upgadata.up7723.game.GameSearchActivity" splitPairRule="com.upgadata.up7723.main.activity.HomeActivity:*,com.upgadata.up7723.game.GameSearchActivity:*" />
-    <package name="com.taptap" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="cn.ninegame.gamemanager" fullRule="nra:cr:rcr" />
     <package name="com.aiwu.market" scaleMode="1" placeholder="com.aiwu.market.ui.activity.NewHomeActivity:com.aiwu.market.ui.activity.NewSearchActivity" splitPairRule="com.aiwu.market.ui.activity.NewHomeActivity:*,com.aiwu.market.ui.activity.NewSearchActivity:*" />
     <package name="com.lizisy.gamebox" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="com.lizisy.gamebox.ui.activity.MainActivity:com.lizisy.gamebox.ui.activity.SearchActivity" splitPairRule="com.lizisy.gamebox.ui.activity.MainActivity:*,com.lizisy.gamebox.ui.activity.GameHallActivity:*" />
@@ -3147,7 +3146,6 @@
     <package name="com.happymod.apk" fullRule="*" />
     <package name="com.wildberries.ru" />
     <package name="com.dianping.v1" minSupportVersion="1:20230413" procCompat="true" scaleMode="1" />
-    <package name="dev.miuiicons.pedroz" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.projectkr.shell.MainActivity" transitionRules="com.projectkr.shell.MainActivity" />
     <package name="com.byfen.market" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="com.byfen.market.ui.activity.MainActivity:com.byfen.market.ui.activity.SearchActivity" splitPairRule="com.byfen.market.ui.activity.MainActivity:com.byfen.market.ui.activity.SearchActivity,com.byfen.market.ui.activity.SearchActivity:com.byfen.market.ui.activity.appDetail.AppDetailActivity" />
     <package name="com.duolingo" fullRule="nra:cr:rcr" />
     <package name="com.youdao.note" fullRule="nra:cr:rcr" />
@@ -3489,6 +3487,8 @@
     <package name="com.mi.global.pocobbs" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.mi.android.globalFileexplorer" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.duokan.phone.remotecontroller" scaleMode="1" fullRule="nra:cr:rcr" />
+    <package name="dev.miuiicons.pedroz" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.projectkr.shell.MainActivity,com.projectkr.shell.SplashActivity" transitionRules="com.projectkr.shell.MainActivity,com.projectkr.shell.SplashActivity" />
+    <package name="com.taptap" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.taptap.other.basic.impl.TapMainActivity" transitionRules="com.taptap.other.basic.impl.TapMainActivity" />
     <!-- For WDB/RedMi Use Only-->
     <package name="com.sina.weibo" fullRule="nra:cr:rcr:nr" />
     <package name="com.tencent.tim" fullRule="nra:cr:rcr" />
