@@ -13,6 +13,8 @@
     "gulp": "^4.0.2"
   },
   "dependencies": {
+    "del": "^7.1.0",
+    "gulp-copy": "^4.0.1",
     "gulp-file-include": "^2.3.0",
     "gulp-include": "^2.4.1"
   }
