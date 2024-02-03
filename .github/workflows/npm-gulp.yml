@@ -20,12 +20,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Load environment
-    - uses: actions/checkout@v2.3.4
-    - uses: GuillaumeFalourd/convert-json-to-env@v1
-      with:
-        json_file: module_src/module.config.json
-
     - name: Build
       run: |
         npm install
