@@ -1,5 +1,27 @@
 # mipad-magic-window
 
+## 快速开发指南
+项目脚手架基于Gulp工作流，需要依赖Gulp-Cli，可以通过以下方式进行安装：
+
+Tips:推荐使用Node.js 18+版本。
+
+```base
+pnpm install gulp-cli -g
+```
+
+相关构建命令:
+```
+# 构建模块文件
+pnpm build
+
+# 将构建的模块文件进行打包成对应版本的zip
+pnpm release
+
+# 将构建和打包同时进行
+pnpm package
+```
+
+
 ## 支持的版本
 该Magisk模块Fork自酷安御板初琴大佬的完美横屏应用计划——Hyper OS For Pad专用版，根据我的个人使用习惯及应用体验修改并扩充了部分应用的平行窗口适配规则，不保证与原版体验一致，如有需要可以从下方获取御板初琴大佬编写的正式版规则。
 
