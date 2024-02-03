@@ -37,4 +37,3 @@ jobs:
       with:
         name: ${{ env.VERSION }}
         path: "dist/**"
-        compression-level: 0
