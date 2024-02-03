@@ -2,7 +2,7 @@ const { series, parallel, task, src } = require('gulp');
 const delDist = require('./tasks/delDist');
 const buildTemplate = require('./tasks/buildTemplate');
 const integrateConfig = require('./tasks/integrateConfig');
-const buildRelease = require('./tasks/buildRelease');
+const buildrelease = require('./tasks/buildrelease');
 const jsonToProp = require('./tasks/jsonToProp');
 
 const buildTasks = series(
@@ -14,9 +14,9 @@ const buildTasks = series(
 
 exports.build = buildTasks
 
-const releaseTasks = series(
-  buildTasks,
-  buildRelease
-);
 
-exports.release = releaseTasks
+exports.release = buildrelease
+
+const publishTasks = series(build, buildrelease)
+
+exports.publish = publishTasks
