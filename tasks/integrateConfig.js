@@ -8,11 +8,6 @@ const systemDist = 'dist'
  * 混入公共配置
  */
 
-// function copyModuleProp() {
-//   return src(`module_src/module.prop`)
-//   .pipe(dest(`dist`))
-// }
-
 function copyREADME() {
   return src(`README.md`)
     .pipe(dest(`${systemDist}/`))
