@@ -1,5 +1,6 @@
-const { src, dest } = require('gulp');
 const del = require('del');
-exports.default = function () {
-  return del(['dist/*'])
-}
+module.exports = function clean(cb) {
+  return del('dist').then(() => {
+    cb()
+  })
+};

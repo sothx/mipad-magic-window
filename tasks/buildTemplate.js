@@ -1,5 +1,6 @@
 const { src, dest } = require('gulp');
-exports.default = function () {
-  return src('module_src/*').
-    pipe(dest('dist'))
+
+module.exports = function buildTemplate() {
+  return src('module_template/**')
+  .pipe(dest('dist'))
 }
