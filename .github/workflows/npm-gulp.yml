@@ -19,14 +19,26 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Build
-      run: |
-        npm install
-        gulp release
+
+        - name: Build
+          run: |
+            npm install
+            gulp build
+
+        - name: Load .env file
+          uses: xom9ikk/dotenv@v2
+          with:
+            path: module_src/module.config.json
+            load-mode: strict
+
+        - name: Release
+          run: |
+            npm install
+            gulp release
 
     - name: Upload Release Zip
       uses: actions/upload-artifact@v4
       with:
-        name: Update-Release
+        name: ${{ env.version }}
         path: "release/*.zip"
         compression-level: 0
