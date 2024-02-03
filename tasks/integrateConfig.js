@@ -4,15 +4,23 @@ const moduleSrc = 'module_src'
 const commonDist = '/dist/common'
 const systemDist = '/dist'
 
+/**
+ * 混入公共配置
+ */
+
 function copyModuleProp() {
   return src(`${systemDist}/module.prop`)
   .pipe(dest(`${systemDist}/`))
 }
 
-function copyMagicWindowSettingConfig() {
-  return src(`${moduleSrc}/magic_window_setting_config.xml`)
-    .pipe(dest(`${commonDist}/system/users/0/`))
+function copyREADME() {
+  return src(`/README.md`)
+    .pipe(dest(`${systemDist}/`))
 }
+
+/**
+ * 混入Android 11 下的平行窗口配置
+ */
 
 function copyMagicWindowApplicationList() {
   return src(`${moduleSrc}/magicWindowFeature_magic_window_application_list.xml`)
@@ -24,6 +32,10 @@ function copyOriginEmbeddedRuleListToCommon() {
   return src(`${moduleSrc}/embedded_rules_list_bak`)
     .pipe(dest(`${commonDist}/product/etc/`))
 }
+
+/**
+ * 混入Android 12L 起的平行窗口配置
+ */
 
 function copyEmbeddedRuleListToCommon() {
   return src(`${moduleSrc}/embedded_rules_list.xml`)
@@ -38,4 +50,4 @@ function copyEmbeddedRuleListToSystem() {
 
 
 
-module.exports = parallel(copyModuleProp,copyMagicWindowSettingConfig, copyMagicWindowApplicationList, copyOriginEmbeddedRuleListToCommon, copyEmbeddedRuleListToCommon, copyEmbeddedRuleListToSystem)
+module.exports = parallel(copyModuleProp,copyREADME, copyMagicWindowApplicationList, copyOriginEmbeddedRuleListToCommon, copyEmbeddedRuleListToCommon, copyEmbeddedRuleListToSystem)
