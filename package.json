@@ -6,7 +6,7 @@
   "scripts": {
     "build": "gulp build",
     "release": "gulp release",
-    "publish": "gulp publish"
+    "package": "gulp package"
   },
   "keywords": [],
   "author": "",

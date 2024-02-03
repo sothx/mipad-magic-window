@@ -17,6 +17,6 @@ exports.build = buildTasks
 
 exports.release = buildRelease
 
-const publishTasks = series(buildTasks, buildRelease)
+const packageTasks = series(buildTasks, buildRelease)
 
-exports.publish = publishTasks
+exports.package = packageTasks
