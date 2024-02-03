@@ -3,8 +3,6 @@ name: NodeJS with Gulp
 on:
   push:
     branches: [ "main" ]
-    tags: 
-      - '**'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,3 +23,10 @@ jobs:
       run: |
         npm install
         gulp release
+
+    - name: Upload Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+        name: Update-Release
+        path: "release/*.zip"
+        compression-level: 9
