@@ -20,21 +20,16 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
 
+    - name: Load .env file
+      uses: actions/checkout@v2.3.4
+      - uses: GuillaumeFalourd/convert-json-to-env@v1
+      with:
+        json_file: module_src/module.config.json
+
     - name: Build
       run: |
         npm install
-        gulp build
-
-    - name: Load .env file
-      uses: xom9ikk/dotenv@v2
-      with:
-        path: module_src/module.config.json
-        load-mode: strict
-
-    - name: Release
-      run: |
-        npm install
-        gulp release
+        gulp publish
 
     - name: Upload Release Zip
       uses: actions/upload-artifact@v4
