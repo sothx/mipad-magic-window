@@ -23,5 +23,5 @@ module.exports = function jsonToProp() {
     }
   }))
   .pipe(gulpRename('module.prop'))
-  .pipe(dest('dist'));
+  .pipe(dest('dist'))
 }
