@@ -36,5 +36,5 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: ${{ env.VERSION }}
-        path: "release/*.zip"
+        path: "dist/**"
         compression-level: 0
