@@ -1,16 +1,16 @@
 const { src, dest, parallel } = require('gulp');
 
 const moduleSrc = 'module_src'
-const commonDist = '/dist/common'
-const systemDist = '/dist'
+const commonDist = 'dist/common'
+const systemDist = 'dist'
 
 /**
  * 混入公共配置
  */
 
 function copyModuleProp() {
-  return src(`${moduleSrc}/module.prop`)
-  .pipe(dest(`${systemDist}/`))
+  return src(`module_src/module.prop`)
+  .pipe(dest(`dist`))
 }
 
 function copyREADME() {
@@ -24,18 +24,24 @@ function copyREADME() {
 
 function copyMagicWindowApplicationList() {
   return src(`${moduleSrc}/magicWindowFeature_magic_window_application_list.xml`)
-    .pipe(dest(`${systemDist}/system/`))
+    .pipe(dest(`${commonDist}/system/`))
 }
 
+function copyMagicWindowSettingConfig() {
+  return src(`${moduleSrc}/magic_window_setting_config.xml`)
+  .pipe(dest(`${commonDist}/system/users/0/`))
+}
+
+
+/**
+ * 混入Android 12L 起的平行窗口配置
+ */
 
 function copyOriginEmbeddedRuleListToCommon() {
   return src(`${moduleSrc}/embedded_rules_list_bak`)
     .pipe(dest(`${commonDist}/product/etc/`))
 }
 
-/**
- * 混入Android 12L 起的平行窗口配置
- */
 
 function copyEmbeddedRuleListToCommon() {
   return src(`${moduleSrc}/embedded_rules_list.xml`)
@@ -50,4 +56,6 @@ function copyEmbeddedRuleListToSystem() {
 
 
 
-module.exports = parallel(copyModuleProp,copyREADME, copyMagicWindowApplicationList, copyOriginEmbeddedRuleListToCommon, copyEmbeddedRuleListToCommon, copyEmbeddedRuleListToSystem)
+
+
+exports.integrateConfig = parallel(copyModuleProp,copyREADME,copyMagicWindowApplicationList,copyMagicWindowSettingConfig,copyOriginEmbeddedRuleListToCommon,copyEmbeddedRuleListToCommon,copyEmbeddedRuleListToSystem)
