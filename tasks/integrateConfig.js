@@ -2,7 +2,12 @@ const { src, dest, parallel } = require('gulp');
 
 const moduleSrc = 'module_src'
 const commonDist = '/dist/common'
-const systemDist = '/dst'
+const systemDist = '/dist'
+
+function copyModuleProp() {
+  return src(`${systemDist}/module.prop`)
+  .pipe(dest(`${systemDist}/`))
+}
 
 function copyMagicWindowSettingConfig() {
   return src(`${moduleSrc}/magic_window_setting_config.xml`)
@@ -33,4 +38,4 @@ function copyEmbeddedRuleListToSystem() {
 
 
 
-module.exports = parallel(copyMagicWindowSettingConfig, copyMagicWindowApplicationList, copyOriginEmbeddedRuleListToCommon, copyEmbeddedRuleListToCommon, copyEmbeddedRuleListToSystem)
+module.exports = parallel(copyModuleProp,copyMagicWindowSettingConfig, copyMagicWindowApplicationList, copyOriginEmbeddedRuleListToCommon, copyEmbeddedRuleListToCommon, copyEmbeddedRuleListToSystem)
