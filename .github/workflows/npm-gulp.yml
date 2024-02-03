@@ -26,6 +26,7 @@ jobs:
       uses: GuillaumeFalourd/convert-json-to-env@v1
       with:
         json_file: module_src/module.config.json
+    - run: echo ${{ env.version }}
 
     - name: Build
       run: |
