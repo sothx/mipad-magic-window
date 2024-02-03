@@ -9,12 +9,12 @@ const systemDist = '/dist'
  */
 
 function copyModuleProp() {
-  return src(`${systemDist}/module.prop`)
+  return src(`${moduleSrc}/module.prop`)
   .pipe(dest(`${systemDist}/`))
 }
 
 function copyREADME() {
-  return src(`/README.md`)
+  return src(`README.md`)
     .pipe(dest(`${systemDist}/`))
 }
 
