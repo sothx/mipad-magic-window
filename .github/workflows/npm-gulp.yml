@@ -30,7 +30,7 @@ jobs:
     - name: Build Pad
       run: |
         npm install
-        npm build:pad
+        npm run build:pad
 
     - name: Upload Pad Release Zip
       uses: actions/upload-artifact@v4
@@ -41,8 +41,7 @@ jobs:
 
     - name: Build Fold
       run: |
-        npm install
-        npm build:fold
+        npm run build:fold
 
     - name: Upload Fold Release Zip
       uses: actions/upload-artifact@v4
