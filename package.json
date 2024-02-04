@@ -17,7 +17,9 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-ejs": "^5.1.0",
+    "gulp-jsontoxml": "^1.0.3",
     "gulp-rename": "^2.0.0",
+    "gulp-xml2json": "^0.1.5",
     "gulp-zip": "^5.1.0",
     "minimist": "^1.2.8",
     "through2": "^4.0.2"
