@@ -6,12 +6,18 @@
 Tips:推荐使用Node.js 18+版本。
 
 ```base
+# 安装gulp-cli
 pnpm install gulp-cli -g
+# 安装项目依赖
+pnpm install
 ```
 
 相关构建命令:
 
 ```
+# 安装项目依赖
+pnpm install
+
 # 构建模块文件
 pnpm build
 
@@ -20,6 +26,29 @@ pnpm release
 
 # 将构建和打包同时进行
 pnpm package
+```
+
+项目使用了ejs作为模块的模板引擎，可以根据不同的设备平台差异化平行窗口的配置。
+在脚本执行时通过--use-platform来指定需要差异化适配的设备类型。
+一般来说：
+平板设备可以使用 pad 作为参数，折叠屏设备可以使用 fold 作为参数。
+
+```bash
+# 构建平板设备的模块包
+gulp package --use-platform pad
+# 构建折叠屏设备的模块包
+gulp package --use-platform fold
+```
+
+在平行窗口的配置文件中可以使用ejs的相关语法来差异化适配不同的设备端：
+```ejs
+<% if (['fold'].includes(platform)) {%>
+    <!-- 仅在折叠屏设备使用 -->
+    <package name="com.twitter.android" scaleMode="1" fullRule="nra:cr:rcr" />
+    <%} else {%>
+    <!-- 非折叠屏设备使用 -->
+    <package name="com.twitter.android" scaleMode="1" supportFullSize="true" splitPairRule="com.twitter.app.main.MainActivity:*,com.twitter.app.profiles.ProfileActivity:*,com.twitter.android.search.implementation.results.SearchActivity:*,com.twitter.communities.detail.CommunitiesDetailActivity:*,com.twitter.communities.search.CommunitiesSearchActivity:*,com.twitter.channels.details.ChannelsDetailsActivity:*,com.twitter.app.bookmarks.legacy.BookmarkActivity:*,com.twitter.channels.management.manage.UrtListManagementActivity:*,com.twitter.app.settings.search.SettingsSearchResultsActivity:*,com.twitter.app.settings.SettingsRootCompatActivity:*" activityRule="com.twitter.app.main.MainActivity,com.twitter.app.gallery.GalleryActivity,com.twitter.explore.immersivemediaplayer.ui.activity.ImmersiveMediaPlayerActivity,com.twitter.communities.detail.CommunitiesDetailActivity,com.twitter.creator.impl.main.MonetizationActivity,com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity,com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity,com.twitter.app.settings.SettingsRootCompatActivity,com.twitter.app.bookmarks.legacy.BookmarkActivity,com.twitter.channels.management.manage.UrtListManagementActivity,com.twitter.app.profiles.ProfileActivity,com.twitter.browser.BrowserActivity" transitionRules="com.twitter.app.main.MainActivity,com.twitter.communities.detail.CommunitiesDetailActivity,com.twitter.creator.impl.main.MonetizationActivity,com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity,com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity,com.twitter.app.settings.SettingsRootCompatActivity,com.twitter.app.bookmarks.legacy.BookmarkActivity,com.twitter.channels.management.manage.UrtListManagementActivity,com.twitter.app.profiles.ProfileActivity" />
+<% } %>
 ```
 
 
