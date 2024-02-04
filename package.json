@@ -13,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-ejs": "^5.1.0",
     "gulp-rename": "^2.0.0",
     "gulp-zip": "^5.1.0",
     "through2": "^4.0.2"
@@ -20,6 +21,8 @@
   "dependencies": {
     "del": "^5.1.0",
     "gulp-file-include": "^2.3.0",
-    "gulp-include": "^2.4.1"
+    "gulp-if": "^3.0.0",
+    "gulp-include": "^2.4.1",
+    "gulp-useref": "^5.0.0"
   }
 }

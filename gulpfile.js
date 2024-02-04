@@ -1,13 +1,16 @@
 const { series, parallel, task, src } = require('gulp');
-const delDist = require('./tasks/delDist');
+const { cleanDist,cleanTemp } = require('./tasks/cleanDir');
 const buildTemplate = require('./tasks/buildTemplate');
 const integrateConfig = require('./tasks/integrateConfig');
 const buildRelease = require('./tasks/buildRelease');
 const jsonToProp = require('./tasks/jsonToProp');
+const buildEjsTemplate = require('./tasks/buildEjsTemplate');
 
 const buildTasks = series(
-  delDist,
+  cleanDist,
+  cleanTemp,
   buildTemplate,
+  buildEjsTemplate,
   integrateConfig,
   jsonToProp
 )
