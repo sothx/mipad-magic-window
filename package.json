@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "gulp build --use_platform pad",
-    "release": "gulp release --use_platform pad",
-    "package": "gulp package --use_platform pad",
+    "build": "gulp build",
+    "release": "gulp release",
+    "package": "gulp package",
+    "build:pad": "gulp build --use_platform pad",
+    "release:pad": "gulp release --use_platform pad",
+    "package:pad": "gulp package --use_platform pad",
     "build:fold": "gulp build --use_platform fold",
     "release:fold": "gulp release --use_platform fold",
     "package:fold": "gulp package --use_platform fold"
