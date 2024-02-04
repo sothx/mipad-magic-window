@@ -42,13 +42,11 @@ gulp package --use-platform fold
 
 在平行窗口的配置文件中可以使用ejs的相关语法来差异化适配不同的设备端：
 ```ejs
-<% if (['fold'].includes(platform)) {%>
-    <!-- 仅在折叠屏设备使用 -->
+    <%_ if (['fold'].includes(platform)) { _%>
     <package name="com.twitter.android" scaleMode="1" fullRule="nra:cr:rcr" />
-    <%} else {%>
-    <!-- 非折叠屏设备使用 -->
+    <%_ } else { _%>
     <package name="com.twitter.android" scaleMode="1" supportFullSize="true" splitPairRule="com.twitter.app.main.MainActivity:*,com.twitter.app.profiles.ProfileActivity:*,com.twitter.android.search.implementation.results.SearchActivity:*,com.twitter.communities.detail.CommunitiesDetailActivity:*,com.twitter.communities.search.CommunitiesSearchActivity:*,com.twitter.channels.details.ChannelsDetailsActivity:*,com.twitter.app.bookmarks.legacy.BookmarkActivity:*,com.twitter.channels.management.manage.UrtListManagementActivity:*,com.twitter.app.settings.search.SettingsSearchResultsActivity:*,com.twitter.app.settings.SettingsRootCompatActivity:*" activityRule="com.twitter.app.main.MainActivity,com.twitter.app.gallery.GalleryActivity,com.twitter.explore.immersivemediaplayer.ui.activity.ImmersiveMediaPlayerActivity,com.twitter.communities.detail.CommunitiesDetailActivity,com.twitter.creator.impl.main.MonetizationActivity,com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity,com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity,com.twitter.app.settings.SettingsRootCompatActivity,com.twitter.app.bookmarks.legacy.BookmarkActivity,com.twitter.channels.management.manage.UrtListManagementActivity,com.twitter.app.profiles.ProfileActivity,com.twitter.browser.BrowserActivity" transitionRules="com.twitter.app.main.MainActivity,com.twitter.communities.detail.CommunitiesDetailActivity,com.twitter.creator.impl.main.MonetizationActivity,com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity,com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity,com.twitter.app.settings.SettingsRootCompatActivity,com.twitter.app.bookmarks.legacy.BookmarkActivity,com.twitter.channels.management.manage.UrtListManagementActivity,com.twitter.app.profiles.ProfileActivity" />
-<% } %>
+    <%_ } _%>
 ```
 
 
