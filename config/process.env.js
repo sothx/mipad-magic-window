@@ -6,6 +6,9 @@ let knownOptions = {
   default: {
     use_platform: "pad" // 平板则为pad，折叠屏则为fold
   },
+  alias: {
+    p: 'use_platform'
+  }
 };
 
 const options = minimist(process.argv.slice(2), knownOptions);
