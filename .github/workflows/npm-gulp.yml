@@ -27,14 +27,27 @@ jobs:
       with:
         json_file: ./config/module.config.json
 
-    - name: Build
+    - name: Build Pad
       run: |
         npm install
-        gulp build
+        npm build:pad
 
-    - name: Upload Release Zip
+    - name: Upload Pad Release Zip
       uses: actions/upload-artifact@v4
       with:
-        name: ${{ env.VERSION }}
+        name: pad-${{ env.VERSION }}
         path: "dist/**"
         overwrite: true
+
+    - name: Build Fold
+      run: |
+        npm install
+        npm build:fold
+
+    - name: Upload Fold Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+        name: fold-${{ env.VERSION }}
+        path: "dist/**"
+        overwrite: true
+
