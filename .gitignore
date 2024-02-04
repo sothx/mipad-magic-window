@@ -24,3 +24,4 @@ dist-ssr
 release
 .vscode/.debug.env
 temp
+src_ext
