@@ -10,7 +10,7 @@ function transformKeyValue(key, value) {
 }
 
 module.exports = function jsonToProp() {
-  return src('module_src/module.config.json')
+  return src('config/module.config.json')
   .pipe(through.obj((file, enc, cb) => {
     const json = JSON.parse(file.contents.toString());
     const keyValues = Object.keys(json).map(key => {
