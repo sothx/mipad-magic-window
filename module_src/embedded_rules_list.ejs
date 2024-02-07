@@ -3116,7 +3116,11 @@
     <!-- ver 1.01 -->
     <package name="com.ylmf.androidclient" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.zentraedi.zspace" scaleMode="1" fullRule="nra:cr:rcr" />
+    <%_ if (['fold'].includes(platform)) { _%>
+    <package name="com.tencent.mobileqq" activityRule="com.tencent.mobileqq.filemanager.fileviewer.FileBrowserActivity,com.tencent.mobileqq.filemanager.fileviewer.TroopFileDetailBrowserActivity,cooperation.qqfav.QfavPluginProxyActivity$SingleTop,cooperation.qqfav.QfavPluginProxyActivity$ImageViewer,com.tencent.mobileqq.activity.shortvideo.ShortVideoPlayActivity,com.tencent.av.ui.AVActivity,com.tencent.av.ui.VideoInviteActivity" splitPairRule="com.tencent.mobileqq.activity.SplashActivity:*" transitionRules="com.tencent.mobileqq.mini.appbrand.ui.AppBrandUI,com.tencent.mobileqq.mini.appbrand.ui.AppBrandUI1,com.tencent.mobileqq.minigame.ui.GameActivity1,com.tencent.mobileqq.minigame.ui.GameActivity2,com.tencent.mobileqq.activity.LoginActivity" />
+    <%_ } else { _%>
     <package name="com.tencent.mobileqq" scaleMode="1" fullRule="nra:cr:rcr" />
+    <%_ } _%>
     <package name="com.xingin.xhs" fullRule="nra:cr:rcr"/>
     <package name="com.smile.gifmaker" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.wei.account" scaleMode="1" fullRule="nra:cr:rcr" />
@@ -3136,7 +3140,11 @@
     <package name="rocket.service.super" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="net.lab.flying" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.nawang.bigbear" scaleMode="1" fullRule="nra:cr:rcr" />
+    <%_ if (['fold'].includes(platform)) { _%>
+    <package name="com.alibaba.android.rimet" activityRule="com.alibaba.android.dingtalkim.activities.VideoPlayerActivityV2,com.alibaba.android.dingtalk.player.VideoPlayerActivity,com.alibaba.dingtalk.cspace.activity.SpacePreviewActivity,com.alibaba.android.dingtalk.live.ui.LiveVideoPlayerActivity,com.alibaba.dingtalk.cspace.activity.SpacePreviewV1Activity,com.alibaba.dingtalk.cspace.activity.SpacePicPreviewActivity,com.alibaba.android.rimet.biz.im.activities.PicViewActivity,com.alibaba.android.user.pwd.activities.LockScreenPwdActivity,com.alibaba.dingtalk.flutterimpl.container.DTFlutterActivity,com.alibaba.android.teleconf.mozi.activity.TeleVideoConfActivity" splitPairRule="com.alibaba.android.rimet.biz.LaunchHomeActivity:*" transitionRules="com.alibaba.android.rimet.biz.BokuiActivity,com.alibaba.android.user.login.NewUserLoginActivity,com.alibaba.android.user.login.SignUpWithPwdActivity,com.alibaba.android.rimet.PrivacyPolicyActivity" />
+    <%_ } else { _%>
     <package name="com.alibaba.android.rimet" scaleMode="1" fullRule="nra:cr:rcr" />
+    <%_ } _%>
     <package name="com.netease.mc.mi" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.netease.mc" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.kuaishou.nebula" scaleMode="1" fullRule="nra:cr:rcr" />
