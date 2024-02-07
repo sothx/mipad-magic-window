@@ -4,33 +4,37 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "gulp build",
-    "release": "gulp release",
-    "package": "gulp package",
-    "build:pad": "gulp build --use_platform pad",
-    "release:pad": "gulp release --use_platform pad",
-    "package:pad": "gulp package --use_platform pad",
-    "build:fold": "gulp build --use_platform fold",
-    "release:fold": "gulp release --use_platform fold",
-    "package:fold": "gulp package --use_platform fold"
+    "build": "cross-env gulp build",
+    "release": "cross-env gulp release",
+    "package": "cross-env gulp package",
+    "package:all": "cross-env gulp package --use_platform pad && gulp package --use_platform fold",
+    "build:pad": "cross-env gulp build --use_platform pad",
+    "release:pad": "cross-env gulp release --use_platform pad",
+    "package:pad": "cross-env gulp package --use_platform pad",
+    "build:fold": "cross-env gulp build --use_platform fold",
+    "release:fold": "cross-env gulp release --use_platform fold",
+    "package:fold": "cross-env gulp package --use_platform fold"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "gulp": "^4.0.2",
     "gulp-ejs": "^5.1.0",
+    "gulp-if": "^3.0.0",
     "gulp-jsontoxml": "^1.0.3",
     "gulp-rename": "^2.0.0",
+    "gulp-xml": "^1.0.5",
     "gulp-xml2json": "^0.1.5",
     "gulp-zip": "^5.1.0",
     "minimist": "^1.2.8",
-    "through2": "^4.0.2"
+    "through2": "^4.0.2",
+    "xmldom": "^0.6.0"
   },
   "dependencies": {
     "del": "^5.1.0",
     "gulp-file-include": "^2.3.0",
-    "gulp-if": "^3.0.0",
     "gulp-include": "^2.4.1",
     "gulp-useref": "^5.0.0"
   }
