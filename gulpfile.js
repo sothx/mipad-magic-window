@@ -7,12 +7,14 @@ const jsonToProp = require('./tasks/jsonToProp');
 const buildEjsTemplate = require('./tasks/buildEjsTemplate');
 const { options } = require('./config/process.env');
 const adaptivePlatformToFold = require('./tasks/adaptivePlatformToFold');
+const buildExtConfig = require('./tasks/buildExtConfig');
 const buildTasks = series(
   cleanDist,
   cleanTemp,
   buildTemplate,
   buildEjsTemplate,
   adaptivePlatformToFold,
+  buildExtConfig,
   integrateConfig,
   jsonToProp
 )

@@ -15,26 +15,28 @@ const buildActionIsFold = function() {
   return false;
 }
 
+let extConfigStack = {}
+
 /**
  * 支持扩展应用规则(Only Android 12+)
  */
 module.exports = function buildExtConfig() {
-  return src(['temp/embedded_rules_list.xml','src_ext/embedded_rules_list.xml']) // 指定XML文件的路径
+  return src('temp/ext/embedded_rules_list.xml') // 指定XML文件的路径
     .pipe(gulpXML({
         callback: function(result) {
-          console.log(result)
-          // const doc = new DOMParser().parseFromString(result, 'text/xml')
-          // const elementsWithAttribute = doc.getElementsByTagName('package');
-          // for (let i = 0; i < elementsWithAttribute.length; i++) {
-          //   const attrs = elementsWithAttribute[i].attributes;
-          //   for (var j = attrs.length - 1; j >= 0; j--) {
-          //     if (attrs[j].name === 'splitRatio') {
-          //       elementsWithAttribute[i].removeAttribute(attrs[j].name);
-          //     }
-          //   }
-          // }
-          // return new XMLSerializer().serializeToString(doc);
+          const doc = new DOMParser().parseFromString(result, 'text/xml');
+          const elementsWithAttribute = doc.getElementsByTagName('package');
+          // console.log(doc,'doc')
+          for (let i = 0; i < elementsWithAttribute.length; i++) {
+            const attrs = elementsWithAttribute[i].attributes;
+            const currentAttrName = elementsWithAttribute[i].getAttribute('name')
+            if (currentAttrName) {
+              extConfigStack[currentAttrName] = {}
+              for (var j = attrs.length - 1; j >= 0; j--) {
+                extConfigStack[currentAttrName][attrs[j].name] = attrs[j].value
+              }
+            }
+          }
         }
       }))
-    .pipe(dest('temp'));
 }
