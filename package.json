@@ -13,7 +13,8 @@
     "package:pad": "cross-env gulp package --use_platform pad",
     "build:fold": "cross-env gulp build --use_platform fold",
     "release:fold": "cross-env gulp release --use_platform fold",
-    "package:fold": "cross-env gulp package --use_platform fold"
+    "package:fold": "cross-env gulp package --use_platform fold",
+    "package-ext:pad": "cross-env gulp build --use_platform pad --use_ext true"
   },
   "keywords": [],
   "author": "",
