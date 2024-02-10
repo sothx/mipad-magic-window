@@ -6,6 +6,6 @@ const { options } = require('../config/process.env');
 
 module.exports = function buildRelease() {
   return src('dist/**')
-    .pipe(gulpzip(`${options.use_platform}-${moduleConfig.version}.zip`))
+    .pipe(gulpzip(`${options.use_platform}${options.use_ext ? `-ext` : ''}-${moduleConfig.version}.zip`))
     .pipe(dest(`release`))
 }
