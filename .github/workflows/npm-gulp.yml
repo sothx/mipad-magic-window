@@ -50,3 +50,14 @@ jobs:
         path: "dist/**"
         overwrite: true
 
+    - name: Build Ext Pad
+      run: |
+        npm run build-ext:pad
+
+    - name: Upload Ext Pad Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+        name: pad-ext-${{ env.VERSION }}
+        path: "dist/**"
+        overwrite: true
+
