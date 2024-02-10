@@ -5,7 +5,7 @@ const { options } = require('../config/process.env');
 
 function buildExtEjsTemplate() {
   const use_platform = options.use_platform
-  return src('src_ext/*.ejs')
+  return src('ext_src/*.ejs')
     .pipe(gulpEjs({
       platform: use_platform
     }))
