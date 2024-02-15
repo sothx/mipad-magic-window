@@ -1,9 +1,10 @@
-const gulpzip = require('gulp-zip');
 const gulpRename = require('gulp-rename');
 const { src, dest } = require('gulp');
 const through = require('through2');
 const gulpIf = require('gulp-if');
 const gulpJSONEdit = require('gulp-json-editor');
+const { options } = require('../config/process.env');
+
 
 const buildActionIsTransplant = function () {
   const is_transplant = options.is_transplant
