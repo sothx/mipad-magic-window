@@ -71,4 +71,26 @@ jobs:
         name: fold-ext-${{ env.VERSION }}
         path: "dist/**"
         overwrite: true
+        
+    - name: Build Transplant Pad
+      run: |
+          npm run build:transplant
+  
+    - name: Upload Transplant Pad Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+          name: transplant-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
 
+    - name: Build Ext Transplant Pad
+      run: |
+          npm run build-ext:transplant
+  
+    - name: Upload Transplant Pad Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+          name: transplant-ext-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
+  
