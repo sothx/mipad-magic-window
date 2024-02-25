@@ -3354,17 +3354,7 @@
     isShowDivider="true"
     splitPairRule="cn.com.cmbc.newmbank.activity.MainActivity:*,cn.com.cmbc.newmbank.activity.AllMenusActivityFold:*,cn.com.cmbc.newmbank.activity.WebViewActivity:cn.com.cmbc.newmbank.activity.WebViewActivityHw,cn.com.cmbc.newmbank.activity.WebViewActivityHw:cn.com.cmbc.newmbank.activity.WebViewActivity,cn.com.cmbc.newmbank.activity.login.fingerlogin.activity.FingerLoginActivity:cn.com.cmbc.newmbank.activity.WebViewActivity,cn.com.cmbc.newmbank.activity.login.tradlogin.LoginActivity:cn.com.cmbc.newmbank.activity.WebViewActivity,cn.com.cmbc.newmbank.activity.login.gesturelogin.activity.GestureLoginActivity:cn.com.cmbc.newmbank.activity.WebViewActivity,cn.com.cmbc.newmbank.activity.login.fingerlogin.activity.FingerLoginActivity:com.noknok.android.uaf.framework.service.MfacIntentActivity"
     transitionRules="com.lenovo.appsdk.commlib.IntentHelperActivity" />
-    <%_ if (['fold'].includes(platform)) { _%>
-    <package name="com.alibaba.android.rimet"
-      activityRule="com.alibaba.android.dingtalkim.activities.VideoPlayerActivityV2,com.alibaba.android.dingtalk.player.VideoPlayerActivity,com.alibaba.dingtalk.cspace.activity.SpacePreviewActivity,com.alibaba.android.dingtalk.live.ui.LiveVideoPlayerActivity,com.alibaba.dingtalk.cspace.activity.SpacePreviewV1Activity,com.alibaba.dingtalk.cspace.activity.SpacePicPreviewActivity,com.alibaba.android.rimet.biz.im.activities.PicViewActivity,com.alibaba.android.user.pwd.activities.LockScreenPwdActivity,com.alibaba.dingtalk.flutterimpl.container.DTFlutterActivity,com.alibaba.android.teleconf.mozi.activity.TeleVideoConfActivity"
-      defaultSettings="false"
-      supportCameraPreview="false"
-      isShowDivider="true"
-      splitPairRule="com.alibaba.android.rimet.biz.LaunchHomeActivity:*"
-      transitionRules="com.alibaba.android.rimet.biz.BokuiActivity,com.alibaba.android.user.login.NewUserLoginActivity,com.alibaba.android.user.login.SignUpWithPwdActivity,com.alibaba.android.rimet.PrivacyPolicyActivity,com.alibaba.android.user.login.change.SwitchAccountActivity" />
-    <%_ } else { _%>
     <package name="com.alibaba.android.rimet" scaleMode="1" fullRule="nra:cr:rcr" />
-    <%_ } _%>
     <%_ if (['fold'].includes(platform)) { _%>
     <package name="com.sina.weibo" activityRule="com.sina.weibo.story.publisher.activity.StorySendActivity,com.sina.weibo.feed.detail.composer.ComposerActivity,com.sina.weibo.photoalbum.imageviewer.ImageViewer"
         isShowDivider="true"
@@ -3411,26 +3401,9 @@
     splitRatio="0.3"
     splitPairRule="com.android.dazhihui.ui.screen.stock.MainScreen:*"
     transitionRules="com.tencent.im.live.LiveActivity,com.android.dazhihui.ui.screen.stock.LoginMainScreen,com.android.dazhihui.ui.screen.stock.LoginScreen" />
-    <%_ if (['fold'].includes(platform)) { _%>
-    <package name="com.huawei.health"
-      activityRule="com.huawei.indoorequip.activity.IndoorEquipDisplayActivity,com.huawei.indoorequip.activity.IndoorEquipLandDisplayActivity,com.huawei.ui.main.stories.me.views.privacy.ServiceItemActivity,com.huawei.ui.main.stories.me.views.privacy.PrivacyStatementActivity,com.huawei.healthcloud.plugintrack.ui.activity.SportBaseActivity,com.huawei.health.suggestion.ui.fitness.activity.CoachActivity"
-      splitPairRule="com.huawei.health.MainActivity:*"
-      transitionRules="com.huawei.health.browseraction.HwHealthBrowserActionActivity,com.huawei.health.browseraction.HwSchemeQrCodeActivity,com.huawei.health.ServiceAreaAlertActivity,com.huawei.health.browseraction.HwSchemeFilterActivity,com.huawei.hwidauth.ui.WebViewActivity,com.huawei.health.suggestion.ui.fitness.activity.TrainDetail" />
-    <%_ } else { _%>
     <package name="com.huawei.health" fullRule="cr:rcr" />
-    <%_ } _%>
-    <%_ if (['fold'].includes(platform)) { _%>
-    <package name="com.qidian.QDReader" activityRule="com.qidian.QDReader.ui.activity.QDReaderActivity"
-        isShowDivider="true"
-        splitPairRule="com.qidian.QDReader.ui.activity.MainGroupActivity:*,com.qidian.QDReader.ui.activity.QDSearchActivity:*" />
-    <%_ } else { _%>
     <package name="com.qidian.QDReader" supportFullSize="true" fullRule="nra:cr:rcr" />
-    <%_ } _%>
-    <%_ if (['fold'].includes(platform)) { _%>
-    <package name="com.duowan.mobile" defaultSettings="true" splitPairRule="com.yy.mobile.plugin.homepage.ui.home.HomeActivity:*" />
-    <%_ } else { _%>
     <package name="com.duowan.mobile" scaleMode="1" fullRule="nra:cr:rcr" />
-    <%_ } _%>
     <package name="com.tencent.wework" activityRule="com.tencent.wework.multitalk.controller.VoipCallActivity" splitPairRule="com.tencent.wework.launch.WwMainActivity:*" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
     <package name="com.sankuai.meituan"
     activityRule="com.meituan.android.upgrade.UpgradeDialogActivity,com.sankuai.waimai.business.restaurant.base.WebImagePreviewActivity,com.sankuai.titans.widget.media.MediaActivity,com.dianping.bizcomponent.preview.ui.BizImagePreviewActivity"
