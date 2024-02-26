@@ -3617,7 +3617,11 @@
     <package name="com.mi.print" isShowDivider="true" supportFullSize="true" splitPairRule="com.mi.print.MainActivity:*" activityRule="com.mi.print.activity.SplashActivity" />
     <package name="com.xiaomi.mitv.phone.tvassistant" isShowDivider="true" supportFullSize="true" activityRule="com.xiaomi.mitv.phone.assistant.app.SplashActivity,com.xiaomi.mitv.phone.assistant.scan.ScanActivity" splitPairRule="com.xiaomi.mitv.phone.assistant.app.MainActivity:*" />
     <package name="com.ximalayaos.app.sport" isShowDivider="true" supportFullSize="true" splitPairRule="com.ximalayaos.app.ui.main.MainActivity:*,com.ximalayaos.app.voice.SearchActivity:*" supportFullSize="true" scaleMode="1" />
+    <%_ if (['fold'].includes(platform)) { _%>
+    <package name="com.facebook.katana" fullRule="nr" />
+    <%_ } else { _%>
     <package name="com.facebook.katana" supportFullSize="true" procCompat="true" middleRule="*" />
+    <%_ } _%>
     <package name="com.kmvpn.net" scaleMode="1" fullRule="nra:cr:rcr" />
     <!-- For WDB/RedMi Use Only-->
     <package name="com.tencent.tim" fullRule="nra:cr:rcr" />
