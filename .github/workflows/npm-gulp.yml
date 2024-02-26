@@ -87,10 +87,32 @@ jobs:
       run: |
           npm run build-ext:transplant
   
-    - name: Upload Transplant Pad Release Zip
+    - name: Upload Ext Transplant Pad Release Zip
       uses: actions/upload-artifact@v4
       with:
           name: transplant-ext-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
+
+    - name: Build Pad Ratio Of 3 To 2
+      run: |
+          npm run build:pad-ratio=3:2
+  
+    - name: Upload Pad Ratio Of 3 To 2 Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+          name: pad-ratioOf3To2-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
+
+    - name: Build Ext Pad Ratio Of 3 To 2
+      run: |
+          npm run build-ext:pad-ratio=3:2
+  
+    - name: Upload Ext Pad Ratio Of 3 To 2 Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+          name: pad-ext-ratioOf3To2-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
   

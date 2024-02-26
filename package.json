@@ -27,12 +27,12 @@
     "release-ext:transplant": "cross-env gulp release --use_platform pad --is_transplant true --use_ext true",
     "package:transplant": "cross-env gulp package --use_platform pad --is_transplant true",
     "package-ext:transplant": "cross-env gulp package --use_platform pad --is_transplant true --use_ext true",
-    "build:pad-3:2": "cross-env gulp build --use_platform pad --use_ratio 3:2",
-    "build-ext:pad-3:2": "cross-env gulp build --use_platform pad --is_transplant true --use_ext true --use_ratio 3:2",
-    "release:pad-3:2": "cross-env gulp release --use_platform pad --use_ratio 3:2",
-    "release-ext:pad-3:2": "cross-env gulp release --use_platform pad --use_ext true --use_ratio 3:2",
-    "package:pad-3:2": "cross-env gulp package --use_platform pad --use_ratio 3:2",
-    "package-ext:pad-3:2": "cross-env gulp package --use_platform pad --use_ext true --use_ratio 3:2"
+    "build:pad-ratio=3:2": "cross-env gulp build --use_platform pad --use_ratio 3:2",
+    "build-ext:pad-ratio=3:2": "cross-env gulp build --use_platform pad --is_transplant true --use_ext true --use_ratio 3:2",
+    "release:pad-ratio=3:2": "cross-env gulp release --use_platform pad --use_ratio 3:2",
+    "release-ext:pad-ratio=3:2": "cross-env gulp release --use_platform pad --use_ext true --use_ratio 3:2",
+    "package:pad-ratio=3:2": "cross-env gulp package --use_platform pad --use_ratio 3:2",
+    "package-ext:pad-ratio=3:2": "cross-env gulp package --use_platform pad --use_ext true --use_ratio 3:2"
   },
   "keywords": [],
   "author": "",
