@@ -20,6 +20,14 @@ const buildActionIsFold = function () {
   return false;
 }
 
+const buildActionIsPad6SPro = function () {
+  const use_ratio = options.use_ratio
+  if (use_ratio === '3:2') {
+    return true;
+  }
+  return false;
+}
+
 function transformKeyValue(key, value) {
   return `${key}=${value}`;
 }
@@ -27,11 +35,15 @@ function transformKeyValue(key, value) {
 module.exports = function jsonToProp() {
   return src('config/module.config.json')
   .pipe(gulpIf(buildActionIsFold, gulpJSONEdit(function (json) {
-    json.description = `适用于HyperOS For Pad/Fold，用于扩展平行视界的支持范围，以及优化平行视界的体验。当前刷入的是[小米折叠屏专用版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(此版本为酷安 @做梦书 自用版，旨在快速扩充更多应用的平行窗口体验，反馈应用适配问题可前往酷安私信或者Github:https://github.com/sothx/mipad-magic-window)`;
+    json.description = `适用于HyperOS For Pad/Fold，用于扩展平行视界的支持范围，以及优化平行视界的体验。当前刷入的是[小米折叠屏专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(此版本为酷安 @做梦书 自用版，旨在快速扩充更多应用的平行窗口体验，反馈应用适配问题可前往酷安私信或者Github:https://github.com/sothx/mipad-magic-window)`;
     return json;
   })))
   .pipe(gulpIf(buildActionIsTransplant, gulpJSONEdit(function (json) {
-    json.description = `适用于HyperOS For Pad/Fold，用于扩展平行视界的支持范围，以及优化平行视界的体验。当前刷入的是[小米平板6Max移植包专用版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(此版本为酷安 @做梦书 自用版，旨在快速扩充更多应用的平行窗口体验，反馈应用适配问题可前往酷安私信或者Github:https://github.com/sothx/mipad-magic-window)`;
+    json.description = `适用于HyperOS For Pad/Fold，用于扩展平行视界的支持范围，以及优化平行视界的体验。当前刷入的是[小米平板6Max移植包专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(此版本为酷安 @做梦书 自用版，旨在快速扩充更多应用的平行窗口体验，反馈应用适配问题可前往酷安私信或者Github:https://github.com/sothx/mipad-magic-window)`;
+    return json;
+  })))
+  .pipe(gulpIf(buildActionIsPad6SPro, gulpJSONEdit(function (json) {
+    json.description = `适用于HyperOS For Pad/Fold，用于扩展平行视界的支持范围，以及优化平行视界的体验。当前刷入的是[小米平板6S Pro专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(此版本为酷安 @做梦书 自用版，旨在快速扩充更多应用的平行窗口体验，反馈应用适配问题可前往酷安私信或者Github:https://github.com/sothx/mipad-magic-window)`;
     return json;
   })))
   .pipe(through.obj((file, enc, cb) => {
