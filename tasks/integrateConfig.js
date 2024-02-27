@@ -15,22 +15,6 @@ function copyREADME() {
     .pipe(dest(`${systemDist}/`))
 }
 
-
-/**
- * 混入Android 11 下的平行窗口配置
- */
-
-function copyMagicWindowApplicationList() {
-  return src(`${tempDir}/magicWindowFeature_magic_window_application_list.xml`)
-    .pipe(dest(`${commonDist}/system/`))
-}
-
-function copyMagicWindowSettingConfig() {
-  return src(`${tempDir}/magic_window_setting_config.xml`)
-  .pipe(dest(`${commonDist}/system/users/0/`))
-}
-
-
 /**
  * 混入Android 12L 起的平行窗口配置
  */
@@ -56,4 +40,4 @@ function copyEmbeddedRuleListToSystem() {
 
 
 
-module.exports = series(parallel(copyREADME,copyMagicWindowApplicationList,copyMagicWindowSettingConfig,copyOriginEmbeddedRuleListToCommon,copyEmbeddedRuleListToCommon,copyEmbeddedRuleListToSystem),cleanTemp)
+module.exports = series(parallel(copyREADME,copyOriginEmbeddedRuleListToCommon,copyEmbeddedRuleListToCommon,copyEmbeddedRuleListToSystem),cleanTemp)
