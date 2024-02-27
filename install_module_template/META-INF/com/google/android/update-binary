@@ -37,7 +37,7 @@ print_modname() {
   ui_print " $MODNAME "
   ui_print "$pounds"
   ui_print "*******************"
-  ui_print " HyperOS MagicWindow+ "
+  ui_print " Miui MagicWindow+ "
   ui_print "  NoDrag Version   "
   ui_print " Made by 御坂初琴  "
   ui_print " Powered by Magisk "

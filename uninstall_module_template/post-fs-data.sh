@@ -4,7 +4,7 @@
 MODDIR=${0%/*}
 
 # Enable Cloud Feature By:@Andrower
-chattr -R -i /data/adb/modules/HyperOS_MagicWindow+
+chattr -R -i /data/adb/modules/MIUI_MagicWindow+
 chattr -R -i /data/system/cloudFeature_embedded_rules_list.xml
 chattr -R -i /product/etc/embedded_rules_list.xml
 chattr -R -i /data/system/users/0/embedded_setting_config.xml

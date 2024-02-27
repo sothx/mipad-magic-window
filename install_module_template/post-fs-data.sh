@@ -9,6 +9,10 @@ chcon u:object_r:system_file:s0 $MODDIR/common/product/etc/embedded_rules_list.x
 #chattr -i /product/etc/embedded_rules_list.xml
 #chattr -i /data/system/users/0/embedded_setting_config.xml
 
+# For Android 11
+#cp $MODDIR/common/system/users/0/magic_window_setting_config.xml /data/system/users/0/magic_window_setting_config.xml
+#cp $MODDIR/common/system/magicWindowFeature_magic_window_application_list.xml /data/system/magicWindowFeature_magic_window_application_list.xml
+
 # For Android 12/Android13 By:醋腌老编
 chmod 666 /product/etc/embedded_rules_list.xml
 chown root:root /product/etc/embedded_rules_list.xml
@@ -22,16 +26,16 @@ mv $MODDIR/common/product/etc/embedded_rules_list.xml /data/system/cloudFeature_
 cp -l $MODDIR/product/etc/embedded_rules_list.xml $MODDIR/common/product/etc/embedded_rules_list.xml
 
 # For Android 12
-rm /data/system/users/0/embedded_setting_config.xml
-cp -l $MODDIR/common/system/users/0/embedded_setting_config.xml /data/system/users/0/embedded_setting_config.xml
+# rm /data/system/users/0/embedded_setting_config.xml
+# cp -l $MODDIR/common/system/users/0/embedded_setting_config.xml /data/system/users/0/embedded_setting_config.xml
 
 # Disable Cloud Feature
 chmod 440 /product/etc/embedded_rules_list.xml
 chown system /product/etc/embedded_rules_list.xml
 chmod 440 /data/system/cloudFeature_embedded_rules_list.xml
 chown system /data/system/cloudFeature_embedded_rules_list.xml
-chmod 440 /data/system/users/0/embedded_setting_config.xml
-chown system /data/system/users/0/embedded_setting_config.xml
+# chmod 440 /data/system/users/0/embedded_setting_config.xml
+# chown system /data/system/users/0/embedded_setting_config.xml
 
 # chattr +i /data/system/cloudFeature_embedded_rules_list.xml
 # chattr +i /product/etc/embedded_rules_list.xml
