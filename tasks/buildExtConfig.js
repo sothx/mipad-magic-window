@@ -60,8 +60,6 @@ function mergeExtConfig() {
           }
         }
         for (const [key, value] of Object.entries(extConfigStack)) {
-          // 检查元素是否为需要删除的元素
-          let isExtNeedDeletePackage = false;
           // 创建一个新元素  
           const newElement = doc.createElement('package');
           newElement.setAttribute('name',key)
@@ -70,11 +68,8 @@ function mergeExtConfig() {
               // 为新元素设置属性
               newElement.setAttribute(vKey, vValue);
             }
-            if (vKey === 'isExtNeedDeletePackage' && vValue === 'true') {
-              isExtNeedDeletePackage = true;
-            }
           }
-          if (!isExtNeedDeletePackage) {
+          
             // 创建一个包含两个空格的文本节点  
             const spaceTextNode = doc.createTextNode('  '); // 两个空格  
             packageConfigNode.appendChild(spaceTextNode);
@@ -83,7 +78,6 @@ function mergeExtConfig() {
             // 添加换行符
             const newLineNode = doc.createTextNode('\n');
             packageConfigNode.appendChild(newLineNode);     
-          }
         }
         const serializedXml = new XMLSerializer().serializeToString(doc);
         // 使用正则表达式删除空行  
