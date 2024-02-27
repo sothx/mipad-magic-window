@@ -9,7 +9,7 @@ const tempDir = 'temp'
 const commonDist = 'dist/common'
 const systemDist = 'dist'
 
-let ruleListStack = {}
+// let ruleListStack = {}
 
 /**
  * 混入公共配置
