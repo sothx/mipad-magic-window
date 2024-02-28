@@ -10,8 +10,8 @@ chcon u:object_r:system_file:s0 $MODDIR/common/product/etc/embedded_rules_list.x
 #chattr -i /data/system/users/0/embedded_setting_config.xml
 
 # For Android 11
-cp $MODDIR/common/system/users/0/magic_window_setting_config.xml /data/system/users/0/magic_window_setting_config.xml
-cp $MODDIR/common/system/magicWindowFeature_magic_window_application_list.xml /data/system/magicWindowFeature_magic_window_application_list.xml
+# cp $MODDIR/common/system/users/0/magic_window_setting_config.xml /data/system/users/0/magic_window_setting_config.xml
+# cp $MODDIR/common/system/magicWindowFeature_magic_window_application_list.xml /data/system/magicWindowFeature_magic_window_application_list.xml
 
 # For Android 12/Android13 By:醋腌老编
 chmod 666 /product/etc/embedded_rules_list.xml
