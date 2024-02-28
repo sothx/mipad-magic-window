@@ -3643,8 +3643,12 @@
     <package name="com.byfen.market" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="com.byfen.market.ui.activity.MainActivity:com.byfen.market.ui.activity.SearchActivity" splitPairRule="com.byfen.market.ui.activity.MainActivity:*,com.byfen.market.ui.activity.SearchActivity:*,com.byfen.market.ui.activity.personalspace.PersonalSpaceActivity:*,com.byfen.market.ui.activity.appDetail.AppDetailActivity:*" activityRule="com.byfen.market.ui.activity.SplashActivity,com.byfen.market.ui.activity.MainActivity" transitionRules="com.byfen.market.ui.activity.MainActivity" />
     <package name="com.wangc.bill" fullRule="*" />
     <package name="gov.pianzong.androidnga" isShowDivider="true" supportFullSize="true" splitRatio="0.3" splitPairRule="com.donews.nga.activitys.MainActivity:*,gov.pianzong.androidnga.activity.forumdetail.ForumDetailActivity:*,com.donews.nga.search.SearchActivity:*,com.donews.nga.activitys.historyactivity:*,com.donews.nga.user.activitys.UserDetailActivity:*" activityRule="com.donews.nga.activitys.MainActivity" transitionRules="com.donews.nga.activitys.MainActivity" />
-    <package name="com.mymoney" isShowDivider="true" splitRatio="0.3" splitPairRule="com.mymoney.biz.home.HomeActivity:*,com.mymoney.biz.home.search.SearchAccountBookActivity:*" activityRule="com.mymoney.biz.home.HomeActivity,com.mymoney.biz.personalcenter.qrcode.scan.QRCodeScanActivity" transitionRules="com.mymoney.biz.home.HomeActivity,com.mymoney.cloud.ui.basicdata.categorytag.CloudCategoryTagActivity,com.mymoney.cloud.ui.supertrans.SuperTransActivity,com.mymoney.cloud.ui.bookkeeping.BookKeepingActivity" />
-    <package name="com.talicai.timiclient" isShowDivider="true" splitRatio="0.3" splitPairRule="com.talicai.timiclient.ui.MainActivity:*,com.talicai.timiclient.ui.SearchActivity:*" activityRule="com.talicai.timiclient.ui.MainActivity" transitionRules="com.talicai.timiclient.ui.MainActivity" />
+    <package name="com.mymoney" isShowDivider="true" splitRatio="0.3" splitPairRule="com.mymoney.biz.home.HomeActivity:*,com.mymoney.biz.home.search.SearchAccountBookActivity:*" activityRule="com.mymoney.biz.home.HomeActivity,com.mymoney.biz.personalcenter.qrcode.scan.QRCodeScanActivity" transitionRules="com.mymoney.biz.home.HomeActivity" />
+    <%_ if (['fold'].includes(platform)) { _%>
+    <package name="com.talicai.timiclient" isShowDivider="true" splitPairRule="com.talicai.timiclient.ui.MainActivity:*,com.talicai.timiclient.ui.SearchActivity:*" activityRule="com.talicai.timiclient.ui.MainActivity" transitionRules="com.talicai.timiclient.ui.MainActivity" />
+    <%_ } else { _%>
+    <package name="com.talicai.timiclient" fullRule="*" />
+    <%_ } _%>
     <!-- For WDB/RedMi Use Only-->
     <package name="com.tencent.tim" fullRule="nra:cr:rcr" />
     <package name="com.joyshebao.joy" fullRule="nra:cr:rcr:nr" />
