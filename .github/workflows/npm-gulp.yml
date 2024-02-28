@@ -115,4 +115,26 @@ jobs:
           name: pad-ext-ratioOf3To2-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
+
+    - name: Build Pad Mode Use MagicWindow
+      run: |
+          npm run build:pad-ratio=3:2
+  
+    - name: Upload Pad Mode Use MagicWindow Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+          name: pad-magicWindow-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
+
+    - name: Build Ext Pad Mode Use MagicWindow
+      run: |
+          npm run build-ext:pad-ratio=3:2
+  
+    - name: Upload Ext Pad Mode Use MagicWindow Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+          name: pad-ext-magicWindow-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
   
