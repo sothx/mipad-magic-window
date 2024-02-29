@@ -2,7 +2,7 @@
 
 ## 模块版本说明
 
-[小米(红米)平板专版]
+[小米平板专版]
 
 该版本适用于所有小米/红米平板，无论是MIUI For Pad还是Hyper OS For Pad，均可以安装且正常使用，模块安装包格式为pad-x.xx.xx.zip。
 
@@ -16,6 +16,8 @@
 
 该版本适用于小米 Mix Fold系列折叠屏手机，模块安装包格式为fold-x.xx.xx.zip。
 
+[小米平板魔窗专版]
+版本仅适用于安卓11的MIUI For Pad，基于MIUI老版魔窗逻辑进行适配，模块安装包格式为pad-margicWindow-x.xx.xx.zip。
 
 [基于小米平板6 Max 下MIUI 14 For Pad的移植包专版]
 
