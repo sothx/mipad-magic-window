@@ -1,5 +1,13 @@
 const { src, dest, parallel, series } = require('gulp');
 const { cleanTemp } = require('./cleanDir');
+const { options } = require('../config/process.env');
+const gulpIf = require('gulp-if');
+
+const buildActionIsMagicWindow = function () {
+  const use_mode = options.use_mode
+  const is_magicWindow = use_mode === 'magicWindow'
+  return is_magicWindow
+}
 
 const moduleSrc = 'module_src'
 const tempDir = 'temp'
@@ -22,12 +30,12 @@ function copyREADME() {
 
 function copyMagicWindowApplicationList() {
   return src(`${tempDir}/magicWindowFeature_magic_window_application_list.xml`)
-    .pipe(dest(`${commonDist}/system/`))
+    .pipe(gulpIf(buildActionIsMagicWindow,dest(`${commonDist}/system/`)))
 }
 
 function copyMagicWindowSettingConfig() {
   return src(`${tempDir}/magic_window_setting_config.xml`)
-  .pipe(dest(`${commonDist}/system/users/0/`))
+  .pipe(gulpIf(buildActionIsMagicWindow,dest(`${commonDist}/system/users/0/`)))
 }
 
 
