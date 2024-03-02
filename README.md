@@ -18,7 +18,7 @@
 
 [小米平板魔窗专版]
 
-版本仅适用于安卓11的MIUI For Pad，基于MIUI老版魔窗逻辑进行适配，模块安装包格式为pad-margicWindow-x.xx.xx.zip。
+版本仅适用于安卓11的MIUI For Pad，基于MIUI老版魔窗逻辑进行适配，模块安装包格式为pad-magicWindow-x.xx.xx.zip。
 
 [基于小米平板6 Max 下MIUI 14 For Pad的移植包专版]
 
