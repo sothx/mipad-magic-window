@@ -1,3 +1,6 @@
+/**
+ * 已适配横屏的应用，没必要为他二次适配平行视界，任何情况下混入规则均需要移除以下应用的横屏适配
+ */
 module.exports = {
   'com.taobao.taobao': true, // 淘宝
   'com.tencent.wework': true, // 企业微信
