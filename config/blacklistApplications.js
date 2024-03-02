@@ -12,4 +12,6 @@ module.exports = {
   'com.valvesoftware.android.steam.community': true, // Steam
   'com.douban.book.reader': true, // 豆瓣阅读
   'com.amazon.kindlefc': true, // Kindle
+  'com.alicloud.databox': true, // 阿里云盘
+  'com.huawei.appmarket': true, // 华为应用商店
 }
