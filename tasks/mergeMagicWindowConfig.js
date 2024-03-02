@@ -6,11 +6,14 @@ const gulpXML = require('gulp-xml');
 const gulpIf = require('gulp-if');
 const DOMParser = require('xmldom').DOMParser;
 const XMLSerializer = require('xmldom').XMLSerializer;
-const fs = require('fs')
+const fs = require('fs');
+const blacklistApplicationsList = require('../config/blacklistApplications');
 
 let hwConfigStack = {}
 
 let OPPOConfigStack = {}
+
+let activityEmbeddingStack = {}
 
 
 const isUseHwConfig = function() {
@@ -43,7 +46,7 @@ function getHwMagicWindowConfigData() {
         for (let i = 0; i < elementsWithAttribute.length; i++) {
           const attrs = elementsWithAttribute[i].attributes;
           const currentAttrName = elementsWithAttribute[i].getAttribute('name')
-          if (currentAttrName) {
+          if (currentAttrName && !blacklistApplicationsList[currentAttrName]) {
             hwConfigStack[currentAttrName] = {}
             for (var j = attrs.length - 1; j >= 0; j--) {
               hwConfigStack[currentAttrName][attrs[j].name] = attrs[j].value
@@ -69,7 +72,7 @@ function getOPPOMagicWindowConfigData() {
         for (let i = 0; i < elementsWithAttribute.length; i++) {
           const attrs = elementsWithAttribute[i].attributes;
           const currentAttrName = elementsWithAttribute[i].getAttribute('package_name')
-          if (currentAttrName) {
+          if (currentAttrName && !blacklistApplicationsList[currentAttrName]) {
             OPPOConfigStack[currentAttrName] = {}
             for (var j = attrs.length - 1; j >= 0; j--) {
               if (attrs[j].name === 'custom_config_body') {
@@ -98,8 +101,8 @@ function getOPPOMagicWindowConfigData() {
 
 
 function mergeToActivityEmbeddingConfig() {
-  return src('input_merge_config/oppo_magicwindow_config/sys_fantasy_window_managed.xml') // 指定XML文件的路径
-    .pipe(gulpIf(isNeedExtConfig,gulpXML({
+  return src('input_merge_config/mi_magicwindow_config/embedded_rules_list.xml') // 指定XML文件的路径
+    .pipe(gulpIf(isUseOPPOConfig, gulpXML({
       callback: function (result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml')
         // 获取根节点  
@@ -107,18 +110,79 @@ function mergeToActivityEmbeddingConfig() {
         const elementsWithAttribute = doc.getElementsByTagName('package');
         for (let i = 0; i < elementsWithAttribute.length; i++) {
           const currentAttrName = elementsWithAttribute[i].getAttribute('name')
-          if (extConfigStack[currentAttrName]) {
-            elementsWithAttribute[i].parentNode.removeChild(elementsWithAttribute[i])
+          if (OPPOConfigStack[currentAttrName]) {
+            delete OPPOConfigStack[currentAttrName]
           }
         }
-        for (const [key, value] of Object.entries(extConfigStack)) {
+        for (const [key, value] of Object.entries(OPPOConfigStack)) {
           // 创建一个新元素  
           const newElement = doc.createElement('package');
-          newElement.setAttribute('name',key)
+          newElement.setAttribute('name', key)
+          // TODO：设置视频全屏
+          newElement.setAttribute('supportFullSize','true')
           for (const [vKey,vValue] of Object.entries(value)) {
             if (vKey !== 'name') {
               // 为新元素设置属性
-              newElement.setAttribute(vKey, vValue);
+              // TODO：左右滑动条
+              if (vKey === 'force_custom_pw_mode' && vValue === 'true') {
+                newElement.setAttribute('isShowDivider','true')
+              }
+              // TODO：分屏规则
+              if (vKey === 'activityPairs' && vValue.length > 0) {
+                let splitPairRule = ''
+                vValue.map((splitPairItem,splitPairIndex) => {
+                  splitPairRule += `${splitPairItem.from}:${splitPairItem.to}`
+                  if (splitPairIndex !== vValue.length - 1) {
+                    splitPairRule += ','
+                  }
+                })
+                if (splitPairRule) {
+                  newElement.setAttribute('splitPairRule',splitPairRule)
+                }
+              }
+              // TODO：全屏规则
+              if (vKey === 'Activities' && vValue.length > 0) {
+                let activityRule = ''
+                vValue.map((activityItem, activityIndex) => {
+                  if (activityItem.name === '*') { 
+                    return;
+                  }
+                  if (activityItem.defaultFullScreen && activityItem.defaultFullScreen === 'true') {
+                    activityRule += `${activityItem.name}`
+                    if (activityIndex !== vValue.length - 1) {
+                      activityRule += ','
+                    }
+                  }
+                })
+                if (activityRule) {
+                  newElement.setAttribute('activityRule',activityRule)
+                }
+              }
+              // TODO: 过渡规则
+              if (vKey === 'transActivities' && vValue.length > 0) {
+                let transitionRules = ''
+                vValue.map((transitionItem, transitionIndex) => {
+                  transitionRules += `${transitionItem}`
+                  if (transitionIndex !== vValue.length - 1) {
+                    transitionRules += ','
+                  }
+                })
+                if (transitionRules) {
+                  newElement.setAttribute('transitionRules',transitionRules)
+                }
+              }
+              // 缩放
+              if (vKey === 'scaleWindow' && vValue !== '-1') {
+                newElement.setAttribute('scaleMode', 1)
+                if (newElement.getAttribute('isShowDivider') === 'true') {
+                  newElement.removeAttribute('isShowDivider')
+                } 
+              }
+              // 重载
+              if (vKey === 'noRelaunchOnResize' && vValue === 'false') {
+                newElement.setAttribute('relaunch', true)
+              }
+              // newElement.setAttribute(vKey, vValue);
             }
           }
             // 创建一个包含两个空格的文本节点  
@@ -134,8 +198,79 @@ function mergeToActivityEmbeddingConfig() {
         // 使用正则表达式删除空行  
         const cleanedXml = serializedXml.replace(/^\s*[\r\n]|[\r\n]+\s*$/gm, ''); 
         return cleanedXml;
-      }})))
-    .pipe(dest('temp'));
+      }
+    })))
+    .pipe(gulpIf(isUseHwConfig,gulpXML({
+      callback: function (result) {
+        const doc = new DOMParser().parseFromString(result, 'text/xml')
+        // 获取根节点  
+        const packageConfigNode = doc.getElementsByTagName('package_config')[0]
+        const elementsWithAttribute = doc.getElementsByTagName('package');
+        for (let i = 0; i < elementsWithAttribute.length; i++) {
+          const currentAttrName = elementsWithAttribute[i].getAttribute('name')
+          if (hwConfigStack[currentAttrName]) {
+            delete hwConfigStack[currentAttrName]
+          }
+        }
+        for (const [key, value] of Object.entries(hwConfigStack)) {
+          // 创建一个新元素  
+          const newElement = doc.createElement('package');
+          newElement.setAttribute('name', key)
+            // 为新元素设置属性
+          // 0: 信箱模式
+            if (value.window_mode === '0') {
+              
+              newElement.setAttribute('supportFullSize', 'true')
+              newElement.setAttribute('procCompat', 'true')
+              newElement.setAttribute('middleRule', '*')
+            }
+            // 1001: 强制横屏
+            if (value.window_mode === '1001') {
+              newElement.setAttribute('fullRule', '*')
+            }
+            // 1001: 平行视界
+            if (value.window_mode === '1' || value.window_mode === '2') {
+              // 左右滑动条
+              if (value.is_dragable === 'true') {
+                newElement.setAttribute('isShowDivider','true')
+              }
+              // 缩放
+              if (value.is_scaled === 'true') {
+                newElement.setAttribute('scaleMode','1')
+              }
+              // 全屏视频
+              if (value.support_fullscreen_video === 'true') {
+                newElement.setAttribute('supportFullSize','true')
+              }
+              // 相机预览
+              if (value.support_camera_preview === 'true') {
+                newElement.setAttribute('supportCameraPreview','true')
+              }
+              // 是否需要重载
+              if (value.need_relaunch === 'true') {
+                newElement.setAttribute('relaunch','true')
+              }
+              // 默认设置
+              if (value.default_setting === 'true') {
+                newElement.setAttribute('defaultSettings','true')
+              }
+            }
+            // 创建一个包含两个空格的文本节点  
+            const spaceTextNode = doc.createTextNode('  '); // 两个空格  
+            packageConfigNode.appendChild(spaceTextNode);
+            // 将文本节点附加到新元素  
+            packageConfigNode.appendChild(newElement);
+            // 添加换行符
+            const newLineNode = doc.createTextNode('\n');
+            packageConfigNode.appendChild(newLineNode);     
+        }
+        const serializedXml = new XMLSerializer().serializeToString(doc);
+        // 使用正则表达式删除空行  
+        const cleanedXml = serializedXml.replace(/^\s*[\r\n]|[\r\n]+\s*$/gm, ''); 
+        return cleanedXml;
+      }
+    })))
+    .pipe(dest('output_config'));
 }
 
 function mergeToMagicWindowSettingConfig() {
@@ -228,7 +363,6 @@ function mergeToMagicWindowApplicationListConfig() {
 
 
 module.exports = {
-  mergeHwConfig: getHwMagicWindowConfigData,
-  mergeOPPOConfig: getOPPOMagicWindowConfigData
+  mergeConfig: series(getOPPOMagicWindowConfigData,getHwMagicWindowConfigData,mergeToActivityEmbeddingConfig)
   // mergeOPPOConfig: series(getOPPOMagicWindowConfigData,mergeActivityEmbedding,mergeMagicWindow)
 }
