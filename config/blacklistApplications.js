@@ -8,4 +8,5 @@ module.exports = {
   'com.xiaomi.smarthome': true, // 米家
   'com.youdao.dict': true, // 网易有道词典
   'com.netease.uu': true, // UU加速器
+  'com.lemon.lv': true, // 剪映
 }
