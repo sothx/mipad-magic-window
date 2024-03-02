@@ -17,4 +17,5 @@ module.exports = {
   'com.amazon.kindlefc': true, // Kindle
   'com.alicloud.databox': true, // 阿里云盘
   'com.huawei.appmarket': true, // 华为应用商店
+  'com.huawei.smarthome': true, // 华为智慧生活
 }
