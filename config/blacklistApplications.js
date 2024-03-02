@@ -6,4 +6,5 @@ module.exports = {
   'com.duokan.reader': true,// 多看阅读
   'com.xiaomi.shop': true, // 小米商城
   'com.xiaomi.smarthome': true, // 米家
+  'com.youdao.dict': true, // 网易有道词典
 }
