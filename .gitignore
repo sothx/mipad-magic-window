@@ -25,3 +25,4 @@ release
 .vscode/.debug.env
 temp
 output_config
+output_temp
