@@ -80,11 +80,9 @@ function getOPPOMagicWindowConfigData() {
                     OPPOConfigStack[currentAttrName][cbKey] = cbValue
                   }
                 } catch (e) {
+                  console.warn(`${currentAttrName}发生JSON错误，请检查！`)
                   OPPOConfigStack[currentAttrName]['custom_config_body'] = currentConfigBody
                 }
-                // for (const [cbKey, cbValue] of Object.entries(currentConfigBody)) { 
-                //   OPPOConfigStack[currentAttrName]['custom_config_body'] = cbValue
-                // }
               } else {
                 OPPOConfigStack[currentAttrName][attrs[j].name] = attrs[j].value
               }
