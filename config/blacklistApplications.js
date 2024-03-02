@@ -7,4 +7,5 @@ module.exports = {
   'com.xiaomi.shop': true, // 小米商城
   'com.xiaomi.smarthome': true, // 米家
   'com.youdao.dict': true, // 网易有道词典
+  'com.netease.uu': true, // UU加速器
 }
