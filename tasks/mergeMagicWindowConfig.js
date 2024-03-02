@@ -40,7 +40,6 @@ function getHwMagicWindowConfigData() {
       callback: function(result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml');
         const elementsWithAttribute = doc.getElementsByTagName('package');
-        // console.log(doc,'doc')
         for (let i = 0; i < elementsWithAttribute.length; i++) {
           const attrs = elementsWithAttribute[i].attributes;
           const currentAttrName = elementsWithAttribute[i].getAttribute('name')
@@ -51,10 +50,11 @@ function getHwMagicWindowConfigData() {
             }
           }
         }
+        return JSON.stringify(hwConfigStack)
       }
     })))
-    .pipe(gulpRename('hw_magicwindow_config.json'))
-    .pipe(dest('output_temp/json/'))
+    .pipe(gulpIf(isUseHwConfig,gulpRename('hw_magicwindow_config.json')))
+    .pipe(gulpIf(isUseHwConfig,dest('output_temp/json/')))
 }
 
 /**
@@ -68,18 +68,34 @@ function getOPPOMagicWindowConfigData() {
         const elementsWithAttribute = doc.getElementsByTagName('a');
         for (let i = 0; i < elementsWithAttribute.length; i++) {
           const attrs = elementsWithAttribute[i].attributes;
-          const currentAttrName = elementsWithAttribute[i].getAttribute('name')
+          const currentAttrName = elementsWithAttribute[i].getAttribute('package_name')
           if (currentAttrName) {
             OPPOConfigStack[currentAttrName] = {}
             for (var j = attrs.length - 1; j >= 0; j--) {
-              OPPOConfigStack[currentAttrName][attrs[j].name] = attrs[j].value
+              if (attrs[j].name === 'custom_config_body') {
+                const currentConfigBody = attrs[j].value.replace(/\\/g, '').replace(/\^/g, '"')
+                try {
+                  const parseCurrentConfigBody = JSON.parse(currentConfigBody)
+                  for (const [cbKey, cbValue] of Object.entries(parseCurrentConfigBody)) { 
+                    OPPOConfigStack[currentAttrName][cbKey] = cbValue
+                  }
+                } catch (e) {
+                  OPPOConfigStack[currentAttrName]['custom_config_body'] = currentConfigBody
+                }
+                // for (const [cbKey, cbValue] of Object.entries(currentConfigBody)) { 
+                //   OPPOConfigStack[currentAttrName]['custom_config_body'] = cbValue
+                // }
+              } else {
+                OPPOConfigStack[currentAttrName][attrs[j].name] = attrs[j].value
+              }
             }
           }
         }
+        return JSON.stringify(OPPOConfigStack)
       }
     })))
-    .pipe(gulpRename('oppo_magicwindow_config.json'))
-    .pipe(dest('output_temp/json/'))
+    .pipe(gulpIf(isUseOPPOConfig,gulpRename('oppo_magicwindow_config.json')))
+    .pipe(gulpIf(isUseOPPOConfig,dest('output_temp/json/')))
 }
 
 
@@ -207,13 +223,14 @@ function mergeToMagicWindowApplicationListConfig() {
 }
 
 
-const mergeActivityEmbedding = gulpIf(isUseActivityEmbedding,mergeToActivityEmbeddingConfig)
+// const mergeActivityEmbedding = gulpIf(isUseActivityEmbedding,mergeToActivityEmbeddingConfig)
 
-const mergeMagicWindow = gulpIf(isUseMagicWindow,mergeToMagicWindowSettingConfig,mergeToMagicWindowApplicationListConfig)
+// const mergeMagicWindow = gulpIf(isUseMagicWindow,mergeToMagicWindowSettingConfig,mergeToMagicWindowApplicationListConfig)
 
 
 
 module.exports = {
-  mergeHwConfig:series(getHwMagicWindowConfigData,mergeActivityEmbedding,mergeMagicWindow),
-  mergeOPPOConfig: series(getOPPOMagicWindowConfigData,mergeActivityEmbedding,mergeMagicWindow)
+  mergeHwConfig: getHwMagicWindowConfigData,
+  mergeOPPOConfig: getOPPOMagicWindowConfigData
+  // mergeOPPOConfig: series(getOPPOMagicWindowConfigData,mergeActivityEmbedding,mergeMagicWindow)
 }

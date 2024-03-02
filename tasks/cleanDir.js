@@ -14,8 +14,15 @@ const cleanTemp = function (cb) {
   })
 }
 
+const cleanOutputTemp = function (cb) {
+  return del('output_temp').then(() => {
+    cb()
+  })
+}
+
 
 module.exports = {
   cleanDist,
-  cleanTemp
+  cleanTemp,
+  cleanOutputTemp
 }

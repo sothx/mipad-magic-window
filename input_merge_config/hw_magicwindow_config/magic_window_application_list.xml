@@ -1,6 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<version>1.10.21.112</version>
-<compatativeVersion>1</compatativeVersion>
 <package_config>
   <package window_mode="1" support_multi_resume="false" support_fullscreen_video="true" support_camera_preview="true" is_scaled="true" need_relaunch="false" default_setting="" is_dragable="false" notch_adapt="false" drag_to_fullscreen="false" home="" name="com.tencent.mm"/>
   <package window_mode="1" support_multi_resume="false" support_fullscreen_video="true" support_camera_preview="true" is_scaled="false" need_relaunch="false" default_setting="" is_dragable="true" notch_adapt="false" drag_to_fullscreen="false" home="" name="com.tencent.mobileqq"/>
