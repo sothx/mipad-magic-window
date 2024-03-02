@@ -11,4 +11,5 @@ module.exports = {
   'com.lemon.lv': true, // 剪映
   'com.valvesoftware.android.steam.community': true, // Steam
   'com.douban.book.reader': true, // 豆瓣阅读
+  'com.amazon.kindlefc': true, // Kindle
 }
