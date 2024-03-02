@@ -9,4 +9,6 @@ module.exports = {
   'com.youdao.dict': true, // 网易有道词典
   'com.netease.uu': true, // UU加速器
   'com.lemon.lv': true, // 剪映
+  'com.valvesoftware.android.steam.community': true, // Steam
+  'com.douban.book.reader': true, // 豆瓣阅读
 }
