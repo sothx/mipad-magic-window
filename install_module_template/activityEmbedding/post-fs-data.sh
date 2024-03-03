@@ -5,9 +5,6 @@ MODDIR=${0%/*}
 
 chcon u:object_r:system_file:s0 $MODDIR/common/product/etc/embedded_rules_list.xml
 
-# Enable Cloud Feature
-chmod 660 /data/system/users/0/embedded_setting_config.xml
-chown system /data/system/users/0/embedded_setting_config.xml
 
 #chattr -i /data/system/cloudFeature_embedded_rules_list.xml
 #chattr -i /product/etc/embedded_rules_list.xml
