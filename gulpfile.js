@@ -9,6 +9,8 @@ const adaptivePlatformToFold = require('./tasks/adaptivePlatformToFold');
 const buildExtConfig = require('./tasks/buildExtConfig');
 const adaptiveTransplantRom = require('./tasks/adaptiveTransplantRom');
 const { mergeActivityEmbeddingConfig, mergeMagicWindowConfig } = require('./tasks/mergeMagicWindowConfig');
+const buildNetdiskRelease = require('./tasks/buildNetdiskRelease');
+
 const buildTasks = series(
   cleanDist,
   cleanTemp,
@@ -35,3 +37,5 @@ exports.mergeActivityEmbeddingConfig = mergeActivityEmbeddingConfig
 
 exports.mergeMagicWindowConfig = mergeMagicWindowConfig
 
+
+exports.buildNetdiskRelease = buildNetdiskRelease

@@ -38,7 +38,8 @@
     "release:pad-ratio=3:2": "cross-env gulp release --use_platform pad --use_ratio 3:2",
     "release-ext:pad-ratio=3:2": "cross-env gulp release --use_platform pad --use_ext true --use_ratio 3:2",
     "package:pad-ratio=3:2": "cross-env gulp package --use_platform pad --use_ratio 3:2",
-    "package-ext:pad-ratio=3:2": "cross-env gulp package --use_platform pad --use_ext true --use_ratio 3:2"
+    "package-ext:pad-ratio=3:2": "cross-env gulp package --use_platform pad --use_ext true --use_ratio 3:2",
+    "netdisk": "cross-env gulp buildNetdiskRelease"
   },
   "keywords": [],
   "author": "",
