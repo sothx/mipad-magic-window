@@ -36,7 +36,7 @@ function copyREADME() {
 
 function copyMagicWindowApplicationList() {
   return src(`${tempDir}/magicWindowFeature_magic_window_application_list.xml`)
-    .pipe(gulpXML({
+    .pipe(gulpIf(buildActionIsMagicWindow,gulpXML({
       callback: function (result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml');
         const elementsWithAttribute = doc.getElementsByTagName('package');
@@ -51,13 +51,13 @@ function copyMagicWindowApplicationList() {
           }
         }
       }
-    }))
+    })))
     .pipe(gulpIf(buildActionIsMagicWindow, dest(`${commonDist}/system/`)))
 }
 
 function copyMagicWindowSettingConfig() {
   return src(`${tempDir}/magic_window_setting_config.xml`)
-    .pipe(gulpXML({
+    .pipe(gulpIf(buildActionIsMagicWindow,gulpXML({
       callback: function (result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml')
         // 获取根节点  
@@ -83,7 +83,7 @@ function copyMagicWindowSettingConfig() {
         const cleanedXml = serializedXml.replace(/^\s*[\r\n]|[\r\n]+\s*$/gm, '');
         return cleanedXml;
       }
-    }))
+    })))
     .pipe(gulpIf(buildActionIsMagicWindow, dest(`${commonDist}/system/users/0/`)))
 }
 
