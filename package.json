@@ -39,7 +39,11 @@
     "release-ext:pad-ratio=3:2": "cross-env gulp release --use_platform pad --use_ext true --use_ratio 3:2",
     "package:pad-ratio=3:2": "cross-env gulp package --use_platform pad --use_ratio 3:2",
     "package-ext:pad-ratio=3:2": "cross-env gulp package --use_platform pad --use_ext true --use_ratio 3:2",
-    "netdisk": "cross-env gulp buildNetdiskRelease"
+    "netdisk": "cross-env gulp buildNetdiskRelease",
+    "activityEmbedding:hw": "cross-env gulp mergeActivityEmbeddingConfig --use_merge_config_brand hw",
+    "activityEmbedding:oppo": "cross-env gulp mergeActivityEmbeddingConfig --use_merge_config_brand oppo",
+    "magicWindow:hw": "cross-env gulp mergeMagicWindowConfig --use_merge_config_brand hw",
+    "magicWindow:oppo": "cross-env gulp mergeMagicWindowConfig --use_merge_config_brand oppo"
   },
   "keywords": [],
   "author": "",
