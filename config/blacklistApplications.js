@@ -18,4 +18,7 @@ module.exports = {
   'com.alicloud.databox': true, // 阿里云盘
   'com.huawei.appmarket': true, // 华为应用商店
   'com.huawei.smarthome': true, // 华为智慧生活
+  'mark.via': true, //via
+  'com.fenbi.android.servant': true, // 粉笔
+  'com.fenbi.android.zhaojiao': true, // 粉笔教师
 }
