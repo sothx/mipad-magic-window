@@ -374,7 +374,7 @@ function mergeToMagicWindowApplicationListConfig() {
           }
           newElement.setAttribute('window_mode', windowModeMap[value.window_mode])
           for (const [vKey, vValue] of Object.entries(value)) {
-            if (vKey !== 'name' && vKey !== 'window_mode') {
+            if (vKey !== 'name' && vKey !== 'window_mode' && vKey !== 'drag_to_fullscreen') {
               // 为新元素设置属性
               newElement.setAttribute(vKey, vValue);
             }
