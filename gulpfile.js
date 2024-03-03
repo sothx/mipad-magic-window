@@ -8,7 +8,7 @@ const buildEjsTemplate = require('./tasks/buildEjsTemplate');
 const adaptivePlatformToFold = require('./tasks/adaptivePlatformToFold');
 const buildExtConfig = require('./tasks/buildExtConfig');
 const adaptiveTransplantRom = require('./tasks/adaptiveTransplantRom');
-const { mergeConfig } = require('./tasks/mergeMagicWindowConfig');
+const { mergeActivityEmbeddingConfig, mergeMagicWindowConfig } = require('./tasks/mergeMagicWindowConfig');
 const buildTasks = series(
   cleanDist,
   cleanTemp,
@@ -31,5 +31,7 @@ const packageTasks = series(buildTasks, buildRelease)
 exports.package = packageTasks
 
 
-exports.mergeConfig = mergeConfig
+exports.mergeActivityEmbeddingConfig = mergeActivityEmbeddingConfig
+
+exports.mergeMagicWindowConfig = mergeMagicWindowConfig
 

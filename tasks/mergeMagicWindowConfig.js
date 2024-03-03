@@ -16,16 +16,16 @@ let OPPOConfigStack = {}
 let activityEmbeddingStack = {}
 
 
-const isUseHwConfig = function() {
+const isUseHwConfig = function () {
   return options.use_merge_config_brand === 'hw';
 }
 
-const isUseOPPOConfig = function() {
+const isUseOPPOConfig = function () {
   return options.use_merge_config_brand === 'oppo';
 }
 
 
-const isUseMagicWindow = function() {
+const isUseMagicWindow = function () {
   return options.use_mode === 'magicWindow';
 }
 
@@ -39,8 +39,8 @@ const isUseActivityEmbedding = function () {
  */
 function getHwMagicWindowConfigData() {
   return src('input_merge_config/hw_magicwindow_config/magic_window_application_list.xml') // 指定XML文件的路径
-    .pipe(gulpIf(isUseHwConfig,gulpXML({
-      callback: function(result) {
+    .pipe(gulpIf(isUseHwConfig, gulpXML({
+      callback: function (result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml');
         const elementsWithAttribute = doc.getElementsByTagName('package');
         for (let i = 0; i < elementsWithAttribute.length; i++) {
@@ -56,8 +56,8 @@ function getHwMagicWindowConfigData() {
         return JSON.stringify(hwConfigStack)
       }
     })))
-    .pipe(gulpIf(isUseHwConfig,gulpRename('hw_magicwindow_config.json')))
-    .pipe(gulpIf(isUseHwConfig,dest('output_temp/json/')))
+    .pipe(gulpIf(isUseHwConfig, gulpRename('hw_magicwindow_config.json')))
+    .pipe(gulpIf(isUseHwConfig, dest('output_temp/json/')))
 }
 
 /**
@@ -65,8 +65,8 @@ function getHwMagicWindowConfigData() {
  */
 function getOPPOMagicWindowConfigData() {
   return src('input_merge_config/oppo_magicwindow_config/sys_fantasy_window_managed.xml') // 指定XML文件的路径
-    .pipe(gulpIf(isUseOPPOConfig,gulpXML({
-      callback: function(result) {
+    .pipe(gulpIf(isUseOPPOConfig, gulpXML({
+      callback: function (result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml');
         const elementsWithAttribute = doc.getElementsByTagName('a');
         for (let i = 0; i < elementsWithAttribute.length; i++) {
@@ -79,7 +79,7 @@ function getOPPOMagicWindowConfigData() {
                 const currentConfigBody = attrs[j].value.replace(/\\/g, '').replace(/\^/g, '"')
                 try {
                   const parseCurrentConfigBody = JSON.parse(currentConfigBody)
-                  for (const [cbKey, cbValue] of Object.entries(parseCurrentConfigBody)) { 
+                  for (const [cbKey, cbValue] of Object.entries(parseCurrentConfigBody)) {
                     OPPOConfigStack[currentAttrName][cbKey] = cbValue
                   }
                 } catch (e) {
@@ -95,8 +95,8 @@ function getOPPOMagicWindowConfigData() {
         return JSON.stringify(OPPOConfigStack)
       }
     })))
-    .pipe(gulpIf(isUseOPPOConfig,gulpRename('oppo_magicwindow_config.json')))
-    .pipe(gulpIf(isUseOPPOConfig,dest('output_temp/json/')))
+    .pipe(gulpIf(isUseOPPOConfig, gulpRename('oppo_magicwindow_config.json')))
+    .pipe(gulpIf(isUseOPPOConfig, dest('output_temp/json/')))
 }
 
 
@@ -119,32 +119,32 @@ function mergeToActivityEmbeddingConfig() {
           const newElement = doc.createElement('package');
           newElement.setAttribute('name', key)
           // TODO：设置视频全屏
-          newElement.setAttribute('supportFullSize','true')
-          for (const [vKey,vValue] of Object.entries(value)) {
+          newElement.setAttribute('supportFullSize', 'true')
+          for (const [vKey, vValue] of Object.entries(value)) {
             if (vKey !== 'name') {
               // 为新元素设置属性
               // TODO：左右滑动条
               if (vKey === 'force_custom_pw_mode' && vValue === 'true') {
-                newElement.setAttribute('isShowDivider','true')
+                newElement.setAttribute('isShowDivider', 'true')
               }
               // TODO：分屏规则
               if (vKey === 'activityPairs' && vValue.length > 0) {
                 let splitPairRule = ''
-                vValue.map((splitPairItem,splitPairIndex) => {
+                vValue.map((splitPairItem, splitPairIndex) => {
                   splitPairRule += `${splitPairItem.from}:${splitPairItem.to}`
                   if (splitPairIndex !== vValue.length - 1) {
                     splitPairRule += ','
                   }
                 })
                 if (splitPairRule) {
-                  newElement.setAttribute('splitPairRule',splitPairRule)
+                  newElement.setAttribute('splitPairRule', splitPairRule)
                 }
               }
               // TODO：全屏规则
               if (vKey === 'Activities' && vValue.length > 0) {
                 let activityRule = ''
                 vValue.map((activityItem, activityIndex) => {
-                  if (activityItem.name === '*') { 
+                  if (activityItem.name === '*') {
                     return;
                   }
                   if (activityItem.defaultFullScreen && activityItem.defaultFullScreen === 'true') {
@@ -155,7 +155,7 @@ function mergeToActivityEmbeddingConfig() {
                   }
                 })
                 if (activityRule) {
-                  newElement.setAttribute('activityRule',activityRule)
+                  newElement.setAttribute('activityRule', activityRule)
                 }
               }
               // TODO: 过渡规则
@@ -168,7 +168,7 @@ function mergeToActivityEmbeddingConfig() {
                   }
                 })
                 if (transitionRules) {
-                  newElement.setAttribute('transitionRules',transitionRules)
+                  newElement.setAttribute('transitionRules', transitionRules)
                 }
               }
               // 缩放
@@ -176,7 +176,7 @@ function mergeToActivityEmbeddingConfig() {
                 newElement.setAttribute('scaleMode', 1)
                 if (newElement.getAttribute('isShowDivider') === 'true') {
                   newElement.removeAttribute('isShowDivider')
-                } 
+                }
               }
               // 重载
               if (vKey === 'noRelaunchOnResize' && vValue === 'false') {
@@ -185,22 +185,22 @@ function mergeToActivityEmbeddingConfig() {
               // newElement.setAttribute(vKey, vValue);
             }
           }
-            // 创建一个包含两个空格的文本节点  
-            const spaceTextNode = doc.createTextNode('  '); // 两个空格  
-            packageConfigNode.appendChild(spaceTextNode);
-            // 将文本节点附加到新元素  
-            packageConfigNode.appendChild(newElement);
-            // 添加换行符
-            const newLineNode = doc.createTextNode('\n');
-            packageConfigNode.appendChild(newLineNode);     
+          // 创建一个包含两个空格的文本节点  
+          const spaceTextNode = doc.createTextNode('  '); // 两个空格  
+          packageConfigNode.appendChild(spaceTextNode);
+          // 将文本节点附加到新元素  
+          packageConfigNode.appendChild(newElement);
+          // 添加换行符
+          const newLineNode = doc.createTextNode('\n');
+          packageConfigNode.appendChild(newLineNode);
         }
         const serializedXml = new XMLSerializer().serializeToString(doc);
         // 使用正则表达式删除空行  
-        const cleanedXml = serializedXml.replace(/^\s*[\r\n]|[\r\n]+\s*$/gm, ''); 
+        const cleanedXml = serializedXml.replace(/^\s*[\r\n]|[\r\n]+\s*$/gm, '');
         return cleanedXml;
       }
     })))
-    .pipe(gulpIf(isUseHwConfig,gulpXML({
+    .pipe(gulpIf(isUseHwConfig, gulpXML({
       callback: function (result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml')
         // 获取根节点  
@@ -216,57 +216,57 @@ function mergeToActivityEmbeddingConfig() {
           // 创建一个新元素  
           const newElement = doc.createElement('package');
           newElement.setAttribute('name', key)
-            // 为新元素设置属性
+          // 为新元素设置属性
           // 0: 信箱模式
-            if (value.window_mode === '0') {
-              
+          if (value.window_mode === '0') {
+
+            newElement.setAttribute('supportFullSize', 'true')
+            newElement.setAttribute('procCompat', 'true')
+            newElement.setAttribute('middleRule', '*')
+          }
+          // 1001: 强制横屏
+          if (value.window_mode === '1001') {
+            newElement.setAttribute('fullRule', '*')
+          }
+          // 1001: 平行视界
+          if (value.window_mode === '1' || value.window_mode === '2') {
+            // 左右滑动条
+            if (value.is_dragable === 'true') {
+              newElement.setAttribute('isShowDivider', 'true')
+            }
+            // 缩放
+            if (value.is_scaled === 'true') {
+              newElement.setAttribute('scaleMode', '1')
+            }
+            // 全屏视频
+            if (value.support_fullscreen_video === 'true') {
               newElement.setAttribute('supportFullSize', 'true')
-              newElement.setAttribute('procCompat', 'true')
-              newElement.setAttribute('middleRule', '*')
             }
-            // 1001: 强制横屏
-            if (value.window_mode === '1001') {
-              newElement.setAttribute('fullRule', '*')
+            // 相机预览
+            if (value.support_camera_preview === 'true') {
+              newElement.setAttribute('supportCameraPreview', 'true')
             }
-            // 1001: 平行视界
-            if (value.window_mode === '1' || value.window_mode === '2') {
-              // 左右滑动条
-              if (value.is_dragable === 'true') {
-                newElement.setAttribute('isShowDivider','true')
-              }
-              // 缩放
-              if (value.is_scaled === 'true') {
-                newElement.setAttribute('scaleMode','1')
-              }
-              // 全屏视频
-              if (value.support_fullscreen_video === 'true') {
-                newElement.setAttribute('supportFullSize','true')
-              }
-              // 相机预览
-              if (value.support_camera_preview === 'true') {
-                newElement.setAttribute('supportCameraPreview','true')
-              }
-              // 是否需要重载
-              if (value.need_relaunch === 'true') {
-                newElement.setAttribute('relaunch','true')
-              }
-              // 默认设置
-              if (value.default_setting === 'true') {
-                newElement.setAttribute('defaultSettings','true')
-              }
+            // 是否需要重载
+            if (value.need_relaunch === 'true') {
+              newElement.setAttribute('relaunch', 'true')
             }
-            // 创建一个包含两个空格的文本节点  
-            const spaceTextNode = doc.createTextNode('  '); // 两个空格  
-            packageConfigNode.appendChild(spaceTextNode);
-            // 将文本节点附加到新元素  
-            packageConfigNode.appendChild(newElement);
-            // 添加换行符
-            const newLineNode = doc.createTextNode('\n');
-            packageConfigNode.appendChild(newLineNode);     
+            // 默认设置
+            if (value.default_setting === 'true') {
+              newElement.setAttribute('defaultSettings', 'true')
+            }
+          }
+          // 创建一个包含两个空格的文本节点  
+          const spaceTextNode = doc.createTextNode('  '); // 两个空格  
+          packageConfigNode.appendChild(spaceTextNode);
+          // 将文本节点附加到新元素  
+          packageConfigNode.appendChild(newElement);
+          // 添加换行符
+          const newLineNode = doc.createTextNode('\n');
+          packageConfigNode.appendChild(newLineNode);
         }
         const serializedXml = new XMLSerializer().serializeToString(doc);
         // 使用正则表达式删除空行  
-        const cleanedXml = serializedXml.replace(/^\s*[\r\n]|[\r\n]+\s*$/gm, ''); 
+        const cleanedXml = serializedXml.replace(/^\s*[\r\n]|[\r\n]+\s*$/gm, '');
         return cleanedXml;
       }
     })))
@@ -274,49 +274,83 @@ function mergeToActivityEmbeddingConfig() {
 }
 
 function mergeToMagicWindowSettingConfig() {
-  return src('temp/embedded_rules_list.xml') // 指定XML文件的路径
-    .pipe(gulpIf(isNeedExtConfig,gulpXML({
+  return src('input_merge_config/mi_magicwindow_config/magic_window_setting_config.xml') // 指定XML文件的路径
+    .pipe(gulpIf(isUseHwConfig, gulpXML({
       callback: function (result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml')
         // 获取根节点  
-        const packageConfigNode = doc.getElementsByTagName('package_config')[0]
-        const elementsWithAttribute = doc.getElementsByTagName('package');
+        const packageConfigNode = doc.getElementsByTagName('setting_config')[0]
+        const elementsWithAttribute = doc.getElementsByTagName('setting');
         for (let i = 0; i < elementsWithAttribute.length; i++) {
           const currentAttrName = elementsWithAttribute[i].getAttribute('name')
-          if (extConfigStack[currentAttrName]) {
-            elementsWithAttribute[i].parentNode.removeChild(elementsWithAttribute[i])
+          if (hwConfigStack[currentAttrName]) {
+            delete hwConfigStack[currentAttrName]
           }
         }
-        for (const [key, value] of Object.entries(extConfigStack)) {
+        for (const [key] of Object.entries(hwConfigStack)) {
           // 创建一个新元素  
           const newElement = doc.createElement('package');
-          newElement.setAttribute('name',key)
-          for (const [vKey,vValue] of Object.entries(value)) {
-            if (vKey !== 'name') {
-              // 为新元素设置属性
-              newElement.setAttribute(vKey, vValue);
-            }
-          }
-            // 创建一个包含两个空格的文本节点  
-            const spaceTextNode = doc.createTextNode('  '); // 两个空格  
-            packageConfigNode.appendChild(spaceTextNode);
-            // 将文本节点附加到新元素  
-            packageConfigNode.appendChild(newElement);
-            // 添加换行符
-            const newLineNode = doc.createTextNode('\n');
-            packageConfigNode.appendChild(newLineNode);     
+          newElement.setAttribute('name', key)
+          // 为新元素设置属性
+          newElement.setAttribute('miuiMagicWinEnabled', 'true')
+          newElement.setAttribute('miuiDialogShown', 'false')
+          newElement.setAttribute('miuiDragMode', '0')
+          // 创建一个包含两个空格的文本节点  
+          const spaceTextNode = doc.createTextNode('  '); // 两个空格  
+          packageConfigNode.appendChild(spaceTextNode);
+          // 将文本节点附加到新元素  
+          packageConfigNode.appendChild(newElement);
+          // 添加换行符
+          const newLineNode = doc.createTextNode('\n');
+          packageConfigNode.appendChild(newLineNode);
         }
         const serializedXml = new XMLSerializer().serializeToString(doc);
         // 使用正则表达式删除空行  
-        const cleanedXml = serializedXml.replace(/^\s*[\r\n]|[\r\n]+\s*$/gm, ''); 
+        const cleanedXml = serializedXml.replace(/^\s*[\r\n]|[\r\n]+\s*$/gm, '');
         return cleanedXml;
-      }})))
-    .pipe(dest('temp'));
+      }
+    })))
+    .pipe(gulpIf(isUseOPPOConfig, gulpXML({
+      callback: function (result) {
+        const doc = new DOMParser().parseFromString(result, 'text/xml')
+        // 获取根节点  
+        const packageConfigNode = doc.getElementsByTagName('setting_config')[0]
+        const elementsWithAttribute = doc.getElementsByTagName('setting');
+        for (let i = 0; i < elementsWithAttribute.length; i++) {
+          const currentAttrName = elementsWithAttribute[i].getAttribute('name')
+          if (OPPOConfigStack[currentAttrName]) {
+            delete OPPOConfigStack[currentAttrName]
+          }
+        }
+        for (const [key] of Object.entries(OPPOConfigStack)) {
+          // 创建一个新元素  
+          const newElement = doc.createElement('package');
+          newElement.setAttribute('name', key)
+          // 为新元素设置属性
+          newElement.setAttribute('miuiMagicWinEnabled', 'true')
+          newElement.setAttribute('miuiDialogShown', 'false')
+          newElement.setAttribute('miuiDragMode', '0')
+          // 创建一个包含两个空格的文本节点  
+          const spaceTextNode = doc.createTextNode('  '); // 两个空格  
+          packageConfigNode.appendChild(spaceTextNode);
+          // 将文本节点附加到新元素  
+          packageConfigNode.appendChild(newElement);
+          // 添加换行符
+          const newLineNode = doc.createTextNode('\n');
+          packageConfigNode.appendChild(newLineNode);
+        }
+        const serializedXml = new XMLSerializer().serializeToString(doc);
+        // 使用正则表达式删除空行  
+        const cleanedXml = serializedXml.replace(/^\s*[\r\n]|[\r\n]+\s*$/gm, '');
+        return cleanedXml;
+      }
+    })))
+    .pipe(dest('output_config'));
 }
 
 function mergeToMagicWindowApplicationListConfig() {
-  return src('temp/embedded_rules_list.xml') // 指定XML文件的路径
-    .pipe(gulpIf(isNeedExtConfig,gulpXML({
+  return src('input_merge_config/mi_magicwindow_config/magicWindowFeature_magic_window_application_list.xml') // 指定XML文件的路径
+    .pipe(gulpIf(isUseHwConfig, gulpXML({
       callback: function (result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml')
         // 获取根节点  
@@ -324,45 +358,136 @@ function mergeToMagicWindowApplicationListConfig() {
         const elementsWithAttribute = doc.getElementsByTagName('package');
         for (let i = 0; i < elementsWithAttribute.length; i++) {
           const currentAttrName = elementsWithAttribute[i].getAttribute('name')
-          if (extConfigStack[currentAttrName]) {
-            elementsWithAttribute[i].parentNode.removeChild(elementsWithAttribute[i])
+          if (hwConfigStack[currentAttrName]) {
+            delete hwConfigStack[currentAttrName]
           }
         }
-        for (const [key, value] of Object.entries(extConfigStack)) {
+        for (const [key, value] of Object.entries(hwConfigStack)) {
           // 创建一个新元素  
           const newElement = doc.createElement('package');
-          newElement.setAttribute('name',key)
-          for (const [vKey,vValue] of Object.entries(value)) {
-            if (vKey !== 'name') {
+          newElement.setAttribute('name', key)
+          // 平行视界的模式
+          const windowModeMap = {
+            0: '0', // 信箱模式
+            1001: '4', // 全屏模式
+            1: '1', // 普通模式
+            2: '2' // 递进模式
+          }
+          newElement.setAttribute('window_mode', windowModeMap[value.window_mode])
+          for (const [vKey, vValue] of Object.entries(value)) { 
+            if (vKey !== 'name' && vKey !== 'window_mode') {
               // 为新元素设置属性
               newElement.setAttribute(vKey, vValue);
             }
           }
-            // 创建一个包含两个空格的文本节点  
-            const spaceTextNode = doc.createTextNode('  '); // 两个空格  
-            packageConfigNode.appendChild(spaceTextNode);
-            // 将文本节点附加到新元素  
-            packageConfigNode.appendChild(newElement);
-            // 添加换行符
-            const newLineNode = doc.createTextNode('\n');
-            packageConfigNode.appendChild(newLineNode);     
+          newElement.setAttribute('is_left_window_one_third', '');
+          newElement.setAttribute('version', '');
+
+          // 创建一个包含两个空格的文本节点  
+          const spaceTextNode = doc.createTextNode('  '); // 两个空格  
+          packageConfigNode.appendChild(spaceTextNode);
+          // 将文本节点附加到新元素  
+          packageConfigNode.appendChild(newElement);
+          // 添加换行符
+          const newLineNode = doc.createTextNode('\n');
+          packageConfigNode.appendChild(newLineNode);
         }
         const serializedXml = new XMLSerializer().serializeToString(doc);
         // 使用正则表达式删除空行  
-        const cleanedXml = serializedXml.replace(/^\s*[\r\n]|[\r\n]+\s*$/gm, ''); 
+        const cleanedXml = serializedXml.replace(/^\s*[\r\n]|[\r\n]+\s*$/gm, '');
         return cleanedXml;
-      }})))
-    .pipe(dest('temp'));
+      }
+    })))
+    .pipe(gulpIf(isUseOPPOConfig, gulpXML({
+      callback: function (result) {
+        const doc = new DOMParser().parseFromString(result, 'text/xml')
+        // 获取根节点  
+        const packageConfigNode = doc.getElementsByTagName('package_config')[0]
+        const elementsWithAttribute = doc.getElementsByTagName('package');
+        for (let i = 0; i < elementsWithAttribute.length; i++) {
+          const currentAttrName = elementsWithAttribute[i].getAttribute('name')
+          if (hwConfigStack[currentAttrName]) {
+            delete hwConfigStack[currentAttrName]
+          }
+        }
+        for (const [key, value] of Object.entries(hwConfigStack)) {
+          // 创建一个新元素  
+          const newElement = doc.createElement('package');
+          newElement.setAttribute('name', key)
+          // 为新元素设置属性
+          // 0: 信箱模式
+          if (value.window_mode === '0') {
+            newElement.setAttribute('window_mode', '0')
+            newElement.setAttribute('support_multi_resume', 'false')
+            newElement.setAttribute('support_fullscreen_video', 'true')
+            newElement.setAttribute('support_camera_preview', 'true')
+            newElement.setAttribute('is_scaled', 'true')
+            newElement.setAttribute('need_relaunch', 'false')
+            newElement.setAttribute('default_setting', '')
+            newElement.setAttribute('is_dragable', 'true')
+            newElement.setAttribute('is_left_window_one_third', '')
+            newElement.setAttribute('notch_adapt', 'false')
+            newElement.setAttribute('version', '')
+            newElement.setAttribute('home', '')
+          }
+          // 1001: 强制横屏
+          if (value.window_mode === '1001') {
+            newElement.setAttribute('window_mode', '4')
+            newElement.setAttribute('support_multi_resume', 'false')
+            newElement.setAttribute('support_fullscreen_video', 'true')
+            newElement.setAttribute('support_camera_preview', 'true')
+            newElement.setAttribute('is_scaled', 'true')
+            newElement.setAttribute('need_relaunch', 'false')
+            newElement.setAttribute('default_setting', '')
+            newElement.setAttribute('is_dragable', 'true')
+            newElement.setAttribute('is_left_window_one_third', '')
+            newElement.setAttribute('notch_adapt', 'false')
+            newElement.setAttribute('version', '')
+            newElement.setAttribute('home', '')
+          }
+          // 1001: 平行视界
+          if (value.window_mode === '1' || value.window_mode === '2') {
+            newElement.setAttribute('window_mode', '2')
+            newElement.setAttribute('support_multi_resume', 'false')
+            newElement.setAttribute('is_left_window_one_third', '')
+            newElement.setAttribute('notch_adapt', 'false')
+            newElement.setAttribute('version', '')
+            newElement.setAttribute('home', '')
+            // 左右滑动条
+            newElement.setAttribute('is_dragable', value?.is_dragable === 'true' ? 'true' : 'false')
+            // 缩放
+            newElement.setAttribute('is_scaled', value?.is_scaled === 'true' ? 'true' : 'false')
+            // 全屏视频
+            newElement.setAttribute('support_fullscreen_video', value?.support_fullscreen_video === 'true' ? 'true' : 'false')
+            // 相机预览
+            newElement.setAttribute('support_camera_preview', value?.support_camera_preview === 'true' ? 'true' : 'false')
+            // 是否需要重载
+            newElement.setAttribute('need_relaunch', value?.need_relaunch === 'true' ? 'true' : 'false')
+            // 默认设置
+            newElement.setAttribute('default_setting', value?.default_setting === 'true' ? 'true' : '')
+          }
+          // 创建一个包含两个空格的文本节点  
+          const spaceTextNode = doc.createTextNode('  '); // 两个空格  
+          packageConfigNode.appendChild(spaceTextNode);
+          // 将文本节点附加到新元素  
+          packageConfigNode.appendChild(newElement);
+          // 添加换行符
+          const newLineNode = doc.createTextNode('\n');
+          packageConfigNode.appendChild(newLineNode);
+        }
+        const serializedXml = new XMLSerializer().serializeToString(doc);
+        // 使用正则表达式删除空行  
+        const cleanedXml = serializedXml.replace(/^\s*[\r\n]|[\r\n]+\s*$/gm, '');
+        return cleanedXml;
+      }
+    })))
+    .pipe(dest('output_config'));
 }
 
-
-// const mergeActivityEmbedding = gulpIf(isUseActivityEmbedding,mergeToActivityEmbeddingConfig)
-
-// const mergeMagicWindow = gulpIf(isUseMagicWindow,mergeToMagicWindowSettingConfig,mergeToMagicWindowApplicationListConfig)
 
 
 
 module.exports = {
-  mergeConfig: series(getOPPOMagicWindowConfigData,getHwMagicWindowConfigData,mergeToActivityEmbeddingConfig)
-  // mergeOPPOConfig: series(getOPPOMagicWindowConfigData,mergeActivityEmbedding,mergeMagicWindow)
+  mergeActivityEmbeddingConfig: series(getOPPOMagicWindowConfigData, getHwMagicWindowConfigData, mergeToActivityEmbeddingConfig),
+  mergeMagicWindowConfig: series(getOPPOMagicWindowConfigData, getHwMagicWindowConfigData, mergeToMagicWindowSettingConfig, mergeToMagicWindowApplicationListConfig)
 }
