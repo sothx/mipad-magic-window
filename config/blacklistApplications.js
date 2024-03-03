@@ -21,4 +21,7 @@ module.exports = {
   'mark.via': true, //via
   'com.fenbi.android.servant': true, // 粉笔
   'com.fenbi.android.zhaojiao': true, // 粉笔教师
+  'com.eusoft.eudic': true, // 欧路词典
+  'com.eusoft.ting.en': true, // 每日英语体力
+  'com.cnki.android.cnkimobile': true, // 全球学术快报
 }
