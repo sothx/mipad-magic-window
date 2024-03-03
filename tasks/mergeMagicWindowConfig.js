@@ -365,16 +365,15 @@ function mergeToMagicWindowApplicationListConfig() {
         for (const [key, value] of Object.entries(hwConfigStack)) {
           // 创建一个新元素  
           const newElement = doc.createElement('package');
-          newElement.setAttribute('name', key)
           // 平行视界的模式
           const windowModeMap = {
             0: '0', // 信箱模式
             1001: '4', // 全屏模式
-            1: '1', // 普通模式
+            1: '2', // 普通模式
             2: '2' // 递进模式
           }
           newElement.setAttribute('window_mode', windowModeMap[value.window_mode])
-          for (const [vKey, vValue] of Object.entries(value)) { 
+          for (const [vKey, vValue] of Object.entries(value)) {
             if (vKey !== 'name' && vKey !== 'window_mode') {
               // 为新元素设置属性
               newElement.setAttribute(vKey, vValue);
@@ -382,7 +381,7 @@ function mergeToMagicWindowApplicationListConfig() {
           }
           newElement.setAttribute('is_left_window_one_third', '');
           newElement.setAttribute('version', '');
-
+          newElement.setAttribute('name', key)
           // 创建一个包含两个空格的文本节点  
           const spaceTextNode = doc.createTextNode('  '); // 两个空格  
           packageConfigNode.appendChild(spaceTextNode);
@@ -406,66 +405,44 @@ function mergeToMagicWindowApplicationListConfig() {
         const elementsWithAttribute = doc.getElementsByTagName('package');
         for (let i = 0; i < elementsWithAttribute.length; i++) {
           const currentAttrName = elementsWithAttribute[i].getAttribute('name')
-          if (hwConfigStack[currentAttrName]) {
-            delete hwConfigStack[currentAttrName]
+          if (OPPOConfigStack[currentAttrName]) {
+            delete OPPOConfigStack[currentAttrName]
           }
         }
-        for (const [key, value] of Object.entries(hwConfigStack)) {
+        for (const [key, value] of Object.entries(OPPOConfigStack)) {
           // 创建一个新元素  
           const newElement = doc.createElement('package');
-          newElement.setAttribute('name', key)
           // 为新元素设置属性
-          // 0: 信箱模式
-          if (value.window_mode === '0') {
-            newElement.setAttribute('window_mode', '0')
-            newElement.setAttribute('support_multi_resume', 'false')
-            newElement.setAttribute('support_fullscreen_video', 'true')
-            newElement.setAttribute('support_camera_preview', 'true')
-            newElement.setAttribute('is_scaled', 'true')
-            newElement.setAttribute('need_relaunch', 'false')
-            newElement.setAttribute('default_setting', '')
-            newElement.setAttribute('is_dragable', 'true')
-            newElement.setAttribute('is_left_window_one_third', '')
-            newElement.setAttribute('notch_adapt', 'false')
-            newElement.setAttribute('version', '')
+          newElement.setAttribute('window_mode', '2')
+          newElement.setAttribute('support_multi_resume', 'false')
+          newElement.setAttribute('is_left_window_one_third', '')
+          newElement.setAttribute('notch_adapt', 'false')
+          newElement.setAttribute('version', '')
+          if (value.activityPairs && value.activityPairs.length > 0) {
+            let homeRule = ''
+            value.activityPairs.map((activityPairsItem, activityPairsIndex) => {
+              homeRule += `${activityPairsItem.from}`
+              if (activityPairsIndex !== value.activityPairs.length - 1) {
+                homeRule += ','
+              }
+            })
+            newElement.setAttribute('home', homeRule)
+          } else {
             newElement.setAttribute('home', '')
           }
-          // 1001: 强制横屏
-          if (value.window_mode === '1001') {
-            newElement.setAttribute('window_mode', '4')
-            newElement.setAttribute('support_multi_resume', 'false')
-            newElement.setAttribute('support_fullscreen_video', 'true')
-            newElement.setAttribute('support_camera_preview', 'true')
-            newElement.setAttribute('is_scaled', 'true')
-            newElement.setAttribute('need_relaunch', 'false')
-            newElement.setAttribute('default_setting', '')
-            newElement.setAttribute('is_dragable', 'true')
-            newElement.setAttribute('is_left_window_one_third', '')
-            newElement.setAttribute('notch_adapt', 'false')
-            newElement.setAttribute('version', '')
-            newElement.setAttribute('home', '')
-          }
-          // 1001: 平行视界
-          if (value.window_mode === '1' || value.window_mode === '2') {
-            newElement.setAttribute('window_mode', '2')
-            newElement.setAttribute('support_multi_resume', 'false')
-            newElement.setAttribute('is_left_window_one_third', '')
-            newElement.setAttribute('notch_adapt', 'false')
-            newElement.setAttribute('version', '')
-            newElement.setAttribute('home', '')
-            // 左右滑动条
-            newElement.setAttribute('is_dragable', value?.is_dragable === 'true' ? 'true' : 'false')
-            // 缩放
-            newElement.setAttribute('is_scaled', value?.is_scaled === 'true' ? 'true' : 'false')
-            // 全屏视频
-            newElement.setAttribute('support_fullscreen_video', value?.support_fullscreen_video === 'true' ? 'true' : 'false')
-            // 相机预览
-            newElement.setAttribute('support_camera_preview', value?.support_camera_preview === 'true' ? 'true' : 'false')
-            // 是否需要重载
-            newElement.setAttribute('need_relaunch', value?.need_relaunch === 'true' ? 'true' : 'false')
-            // 默认设置
-            newElement.setAttribute('default_setting', value?.default_setting === 'true' ? 'true' : '')
-          }
+          // 左右滑动条
+          newElement.setAttribute('is_dragable', value?.force_custom_pw_mode === 'true' ? 'true' : 'false')
+          // 缩放
+          newElement.setAttribute('is_scaled', (value.scaleWindow && value.scaleWindow !== '-1') ? 'true' : 'false')
+          // 全屏视频
+          newElement.setAttribute('support_fullscreen_video', 'true')
+          // 相机预览
+          newElement.setAttribute('support_camera_preview', value?.support_camera_preview === 'true' ? 'true' : 'false')
+          // 是否需要重载
+          newElement.setAttribute('need_relaunch', value?.noRelaunchOnResize === 'false' ? 'true' : 'false')
+          // 默认设置
+          newElement.setAttribute('default_setting', '')
+          newElement.setAttribute('name', key)
           // 创建一个包含两个空格的文本节点  
           const spaceTextNode = doc.createTextNode('  '); // 两个空格  
           packageConfigNode.appendChild(spaceTextNode);
@@ -489,5 +466,5 @@ function mergeToMagicWindowApplicationListConfig() {
 
 module.exports = {
   mergeActivityEmbeddingConfig: series(getOPPOMagicWindowConfigData, getHwMagicWindowConfigData, mergeToActivityEmbeddingConfig),
-  mergeMagicWindowConfig: series(getOPPOMagicWindowConfigData, getHwMagicWindowConfigData, mergeToMagicWindowSettingConfig, mergeToMagicWindowApplicationListConfig)
+  mergeMagicWindowConfig: series(getOPPOMagicWindowConfigData, getHwMagicWindowConfigData, mergeToMagicWindowApplicationListConfig)
 }
