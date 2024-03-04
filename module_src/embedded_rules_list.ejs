@@ -2171,7 +2171,6 @@
     <package name="com.chinamobile.mcloud" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.chinamobile.mcloud.client.video.AppVideoPlayerActivity" transitionRules="com.chinamobile.mcloud.client.video.AppVideoPlayerActivity" />
     <package name="com.xinli.yixinli" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="com.xinli.yixinli.activity.MainNewActivity:com.xinli.yixinli.android.view.activity.search.SearchActivity" activityRule="com.xinli.yixinli.android.view.activity.user.LoginActivity" transitionRules="com.xinli.yixinli.android.view.activity.user.LoginActivity" />
     <package name="com.heytap.headset" scaleMode="1" fullRule="nra:cr:rcr" />
-    <package name="com.max.xiaoheihe" isShowDivider="true" supportFullSize="true"  placeholder="com.max.xiaoheihe.MainActivity:com.max.hbsearch.SearchNewActivity" activityRule="com.max.xiaoheihe.module.bbs.ImageActivity" splitPairRule="com.max.xiaoheihe.MainActivity:*,com.max.hbsearch.SearchNewActivity:*,com.max.xiaoheihe.module.bbs.ChannelsDetailActivity:*,com.max.xiaoheihe.module.bbs.post.ui.activitys.PicturePostPageActivity:*,com.max.xiaoheihe.bean.recommend.RecommendBoardActivity:*" transitionRules="com.max.xiaoheihe.module.account.RegisterOrLoginActivityV2"  />
     <package name="com.mi.health" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.ximalaya.ting.android" scaleMode="1" fullRule="nra:cr:rcr" />
     <package name="com.c114.c114__android" scaleMode="1" fullRule="nra:cr:rcr" />
@@ -6925,6 +6924,11 @@
     <package name="cn.com.langeasy.EasyListen" fullRule="nra:cr:rcr:nr"/>
     <package name="cn.com.bookan" fullRule="nra:cr:rcr:nr" />
     <package name="com.oray.sunlogin" fullRule="nra:cr:rcr:nr"/>
+    <%_ if (['pad'].includes(platform)) { _%>
+    <package name="com.max.xiaoheihe" scaleMode="1" fullRule="nra:cr:rcr:nr" />
+    <%_ } else { _%>
+    <package name="com.max.xiaoheihe" isShowDivider="true" supportFullSize="true"  placeholder="com.max.xiaoheihe.MainActivity:com.max.hbsearch.SearchNewActivity" activityRule="com.max.xiaoheihe.module.bbs.ImageActivity" splitPairRule="com.max.xiaoheihe.MainActivity:*,com.max.hbsearch.SearchNewActivity:*,com.max.xiaoheihe.module.bbs.ChannelsDetailActivity:*,com.max.xiaoheihe.module.bbs.post.ui.activitys.PicturePostPageActivity:*,com.max.xiaoheihe.bean.recommend.RecommendBoardActivity:*" transitionRules="com.max.xiaoheihe.module.account.RegisterOrLoginActivityV2"  />
+    <%_ } _%>
     <!-- Adaptive For System Fix -->
     <package name="com.android.browser" fullRule="nra:cr:rcr:nr" />
     <package name="com.microsoft.emmx" fullRule="nra:cr:rcr:nr" />
