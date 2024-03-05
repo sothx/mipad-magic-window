@@ -24,4 +24,5 @@ module.exports = {
   'com.eusoft.eudic': true, // 欧路词典
   'com.eusoft.ting.en': true, // 每日英语体力
   'com.cnki.android.cnkimobile': true, // 全球学术快报
+  'com.zui.calculator': true, // ZUI计算器
 }
