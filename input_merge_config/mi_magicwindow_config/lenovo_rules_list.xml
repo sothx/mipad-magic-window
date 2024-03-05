@@ -9,12 +9,8 @@
   <package name="com.eshore.ezone"/>
   <package name="com.nd.android.pandahome2"/>
   <package name="com.funcity.taxi.passenger"/>
-  <package name="com.netease.mobimail.zui"/>
-  <package name="com.sohu.inputmethod.sogou.zui"/>
   <package name="com.qihoo360.mobilesafe_mtk6573"/>
   <package name="com.qihoo.antivirus"/>
-  <package name="com.baidu.security"/>
-  <package name="com.lbe.security"/>
   <package name="com.ijinshan.mguard"/>
   <package name="com.anguanjia.safe"/>
   <package name="com.anyisheng.doctoran"/>
@@ -24,8 +20,6 @@
   <package name="com.yy.android.udbsec"/>
   <package name="project.rising"/>
   <package name="com.zrgiu.antivirus"/>
-  <package name="com.kms"/>
-  <package name="com.kms.free"/>
   <package name="com.symantec.mobilesecurity"/>
   <package name="com.mobileann.MobileAnn"/>
   <package name="com.suning.phonesecurity"/>
@@ -55,7 +49,6 @@
   <package name="com.suning.market"/>
   <package name="com.banma.market"/>
   <package name="com.newpower"/>
-  <package name="com.uc.appstore"/>
   <package name="com.infinit.wostore.ui"/>
   <package name="com.kaiqi"/>
   <package name="cn.com.zol.market"/>
@@ -171,7 +164,6 @@
   <package name="com.yueyundong"/>
   <package name="com.tenmini.sports"/>
   <package name="com.zfenan.jibu.qiqi.main"/>
-  <package name="com.qqreader.lenovo"/>
   <package name="com.panda.videoliveplatform"/>
   <package name="com.youku.crazytogether"/>
   <package name="com.kingroot.master"/>
@@ -316,9 +308,7 @@
   <package name="com.supercleaner"/>
   <package name="ne.lushi.lushilauncher"/>
   <package name="com.chaojishipin.sarrs"/>
-  <package name="com.gbits.atm.lenovo"/>
   <package name="com.creditease.zhiwang"/>
-  <package name="com.wanmei.zhuxian.lenovo"/>
   <package name="com.mycheering.apps"/>
   <package name="com.verizon.messaging.vzmsgs"/>
   <package name="com.weather.Weather"/>
@@ -331,17 +321,14 @@
   <package name="com.samsundot.talking"/>
   <package name="com.sinyee.babybus.vegetable"/>
   <package name="com.google.android.apps.docs"/>
-  <package name="com.yinhan.hunter.lenovo"/>
   <package name="com.lianlian.app"/>
   <package name="cc.morechinese.MMProjectJS"/>
   <package name="com.youba.flashlight"/>
-  <package name="com.gameloft.android.ANMP.GloftA8CN.lenovo"/>
   <package name="com.cootek.smartinputv5"/>
   <package name="com.sonymobile.sketch"/>
   <package name="com.amazon.mShop.android.shopping"/>
   <package name="com.google.android.apps.plus"/>
   <package name="com.teslacoilsw.launcher"/>
-  <package name="com.boyaa.chinesechess.lenovo"/>
   <package name="com.tencent.clover"/>
   <package name="com.supercell.clashofclans"/>
   <package name="com.google.android.apps.messagi"/>
@@ -350,7 +337,6 @@
   <package name="com.leleketang.SchoolFantasy"/>
   <package name="com.wuba.peipei"/>
   <package name="com.gangyun.makeup"/>
-  <package name="com.bf.sgs.hdexp.lenovo"/>
   <package name="com.wuba.weizhang"/>
   <package name="com.gto.zero.zboost"/>
   <package name="com.pinterest"/>
@@ -495,7 +481,6 @@
   <package name="com.kii.safe"/>
   <package name="com.dropbox.android"/>
   <package name="com.runtastic.android"/>
-  <package name="com.motozui.browser"/>
   <package name="com.alibaba.aliexpresshd"/>
   <package name="com.steam.photoeditor"/>
   <package name="mobi.supo.optimizer"/>
@@ -582,7 +567,6 @@
   <package name="jp.nicovideo.android"/>
   <package name="com.yyets.rrdict"/>
   <package name="com.yyets.pro"/>
-  <package name="com.cmplay.tiles2_cn.lenovo"/>
   <package name="com.polydice.icook"/>
   <package name="com.spetrl.rec"/>
   <package name="com.myntra.android"/>
@@ -616,7 +600,6 @@
   <package name="com.loveorange.wt"/>
   <package name="com.SleepBear.Comic"/>
   <package name="com.impawn.jh"/>
-  <package name="微约日历"/>
   <package name="com.cdwx.moka"/>
   <package name="com.google.android.apps.fireball"/>
   <package name="com.ne.boeing.plane.mountain.simulator"/>
@@ -652,7 +635,6 @@
   <package name="net.skywalkerhong.yangdun"/>
   <package name="com.puerlink.igo"/>
   <package name="com.lenskart.app"/>
-  <package name="com.mfp.jelly.lenovo"/>
   <package name="com.qqgame.happymj"/>
   <package name="com.northpark.drinkwater"/>
   <package name="com.diffcat.facedance2"/>
@@ -672,8 +654,6 @@
   <package name="com.hutchgames.hotwheels"/>
   <package name="com.scopely.whiplash"/>
   <package name="com.pianke.client"/>
-  <package name="com.cmcm.arrowio_cn.lenovo"/>
-  <package name="com.fgol.lenovo"/>
   <package name="com.lanrenzhoumo.weekend"/>
   <package name="com.baviux.voicechanger"/>
   <package name="com.xnview.hypocam"/>
@@ -828,10 +808,8 @@
   <package name="com.putaolab.mobile"/>
   <package name="com.mgyapp.android"/>
   <package name="com.boying.store"/>
-  <package name="com.qitu.market"/>
   <package name="com.snailgame.cjg"/>
   <package name="com.tpzvikm.hseuortly"/>
-  <package name="cn.mama.activity"/>
   <package name="com.vng.g6.a.zombie"/>
   <package name="com.nexstreaming.app.singplay"/>
   <package name="com.outthinking.photo"/>
@@ -853,6 +831,3 @@
   <package name="com.yundongquan.sya"/>
   <package name="com.juphoon.service"/>
   <package name="com.ted.number"/>
-  <package name="com.android.providers.media.module"/>
-  <package name="com.microsoft.office.lync15"/>
-  <package name="com.microsoft.teams"/>
