@@ -25,4 +25,6 @@ module.exports = {
   'com.eusoft.ting.en': true, // 每日英语体力
   'com.cnki.android.cnkimobile': true, // 全球学术快报
   'com.zui.calculator': true, // ZUI计算器
+  'com.jd.app.reader': true, // 京东读书
+  'com.huajiao': true, // 花椒直播
 }
