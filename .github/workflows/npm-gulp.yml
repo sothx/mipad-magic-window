@@ -138,3 +138,25 @@ jobs:
           path: "dist/**"
           overwrite: true
   
+    - name: Build Pad Compatibility Use SupportedShowDivider
+      run: |
+          npm run build:pad-compatibility=supported_show_divider
+  
+    - name: Upload Pad Compatibility Use SupportedShowDivider Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+          name: supportedShowDivider-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
+
+    - name: Build Ext Pad Compatibility Use SupportedShowDivider
+      run: |
+          npm run build-ext:pad-compatibility=supported_show_divider
+  
+    - name: Upload Ext Pad Compatibility Use SupportedShowDivider Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+          name: supportedShowDivider-ext-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
+  
