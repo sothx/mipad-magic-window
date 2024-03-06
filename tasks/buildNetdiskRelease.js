@@ -48,4 +48,4 @@ function releasePadByMIUI14Transplant() {
 
 
 
-module.exports = parallel(releasePad,releaseRatioOf3To2Pad,releaseFold,releasePadByMagicWindow,releasePadByMIUI14Transplant)
+module.exports = parallel(releasePad,releaseRatioOf3To2Pad,releasePadBySupportedShowDivider,releaseFold,releasePadByMagicWindow,releasePadByMIUI14Transplant)
