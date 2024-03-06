@@ -16,7 +16,7 @@ const releaseNetdiskDir = `release/${moduleConfig.version}/netdisk`
 
 function releasePad() {
   return src(`${releaseDir}/${moduleConfig.version}/pad-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/1.小米平板澎湃OS专版（推荐）/模块`))
+    .pipe(dest(`${releaseNetdiskDir}/1.小米平板专版（推荐）/模块`))
 }
 
 function releaseRatioOf3To2Pad() {
@@ -26,7 +26,7 @@ function releaseRatioOf3To2Pad() {
 
 function releasePadBySupportedShowDivider() {
   return src(`${releaseDir}/${moduleConfig.version}/pad-supportedShowDivider-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/3.小米平板MIUI14专版（不支持左右滑动调节）/模块`))
+    .pipe(dest(`${releaseNetdiskDir}/3.小米平板5系列A13专版（不支持左右滑动调节）/模块`))
 }
 
 function releaseFold() {
