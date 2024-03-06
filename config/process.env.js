@@ -10,7 +10,8 @@ let knownOptions = {
     is_transplant: false, // true为基于6max的移植包，false则为非移植包
     use_ratio: '16:10', // 模块适配比例，6pro及以下是16:10, 6s pro以上是3:2
     use_mode: 'activityEmbedding', // 使用的平行视界模式，支持安卓11时代的magicWindow和安装12L起的activityEmbedding
-    use_merge_config_brand: 'hw' // 合并平行视界规则时候使用的规则厂商品牌，hw——华为/荣耀平板，oppo——OPPO Pad
+    use_merge_config_brand: 'hw', // 合并平行视界规则时候使用的规则厂商品牌，hw——华为/荣耀平板，oppo——OPPO Pad
+    use_compatibility: '', // 特别版本的兼容参数，supported_show_divider——不支持左右滑动条的机型
   },
   alias: {
     p: 'use_platform',
@@ -18,7 +19,8 @@ let knownOptions = {
     t: 'is_transplant',
     r: 'use_ratio',
     m: 'use_mode',
-    b: 'use_merge_config_brand'
+    b: 'use_merge_config_brand',
+    pc: 'use_compatibility'
   }
 };
 
