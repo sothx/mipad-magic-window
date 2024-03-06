@@ -118,7 +118,7 @@ jobs:
 
     - name: Build Pad Mode Use MagicWindow
       run: |
-          npm run build:pad-ratio=3:2
+          npm run build:pad-mode=magicWindow
   
     - name: Upload Pad Mode Use MagicWindow Release Zip
       uses: actions/upload-artifact@v4
@@ -129,7 +129,7 @@ jobs:
 
     - name: Build Ext Pad Mode Use MagicWindow
       run: |
-          npm run build-ext:pad-ratio=3:2
+          npm run build-ext:pad-mode=magicWindow
   
     - name: Upload Ext Pad Mode Use MagicWindow Release Zip
       uses: actions/upload-artifact@v4
@@ -145,7 +145,7 @@ jobs:
     - name: Upload Pad Compatibility Use SupportedShowDivider Release Zip
       uses: actions/upload-artifact@v4
       with:
-          name: supportedShowDivider-${{ env.VERSION }}
+          name: pad-supportedShowDivider-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 
@@ -156,7 +156,7 @@ jobs:
     - name: Upload Ext Pad Compatibility Use SupportedShowDivider Release Zip
       uses: actions/upload-artifact@v4
       with:
-          name: supportedShowDivider-ext-${{ env.VERSION }}
+          name: pad-supportedShowDivider-ext-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
   
