@@ -2,7 +2,7 @@ const minimist = require("minimist");
 
 // 配置命令行可以接受的参数以及默认值
 let knownOptions = {
-  string: ['use_platform','use_ratio','use_mode'],
+  string: ['use_platform','use_ratio','use_mode','use_compatibility'],
   boolean: ['use_ext', 'is_transplant'],
   default: {
     use_platform: "pad", // 平板则为pad，折叠屏则为fold
