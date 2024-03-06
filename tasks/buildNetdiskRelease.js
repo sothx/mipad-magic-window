@@ -24,28 +24,23 @@ function releaseRatioOf3To2Pad() {
     .pipe(dest(`${releaseNetdiskDir}/2.小米平板6S Pro专版(适配3比2比例)/模块`))
 }
 
-function releasePadBySupportedShowDivider() {
-  return src(`${releaseDir}/${moduleConfig.version}/pad-supportedShowDivider-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/3.小米平板5系列A13专版（不支持左右滑动调节）/模块`))
-}
-
 function releaseFold() {
   return src(`${releaseDir}/${moduleConfig.version}/fold-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/4.小米折叠屏专版（适配Mix Fold系列）/模块`))
+    .pipe(dest(`${releaseNetdiskDir}/3.小米折叠屏专版（适配Mix Fold系列）/模块`))
 }
 
 
 function releasePadByMagicWindow() {
   return src(`${releaseDir}/${moduleConfig.version}/pad-magicWindow-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/5.小米平板老魔窗专版（适配安卓11）/模块`))
+    .pipe(dest(`${releaseNetdiskDir}/4.小米平板老魔窗专版（适配安卓11）/模块`))
 }
 
 
 function releasePadByMIUI14Transplant() {
   return src(`${releaseDir}/${moduleConfig.version}/transplant-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/6.基于MIUI14的6 Max移植包专版（仅MIUI14移植可刷）/模块`))
+    .pipe(dest(`${releaseNetdiskDir}/5.基于MIUI14的6 Max移植包专版（仅MIUI14移植可刷）/模块`))
 }
 
 
 
-module.exports = parallel(releasePad,releaseRatioOf3To2Pad,releasePadBySupportedShowDivider,releaseFold,releasePadByMagicWindow,releasePadByMIUI14Transplant)
+module.exports = parallel(releasePad,releaseRatioOf3To2Pad,releaseFold,releasePadByMagicWindow,releasePadByMIUI14Transplant)
