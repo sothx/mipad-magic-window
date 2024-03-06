@@ -145,7 +145,7 @@ jobs:
     - name: Upload Pad Compatibility Use SupportedShowDivider Release Zip
       uses: actions/upload-artifact@v4
       with:
-          name: pad-supportedShowDivider-${{ env.VERSION }}
+          name: pad-supported_show_divider-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 
@@ -156,7 +156,7 @@ jobs:
     - name: Upload Ext Pad Compatibility Use SupportedShowDivider Release Zip
       uses: actions/upload-artifact@v4
       with:
-          name: pad-supportedShowDivider-ext-${{ env.VERSION }}
+          name: pad-supported_show_divider-ext-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
   
