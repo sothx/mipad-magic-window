@@ -4,6 +4,7 @@
 MODDIR=${0%/*}
 
 chcon u:object_r:system_file:s0 $MODDIR/common/product/etc/embedded_rules_list.xml
+chcon u:object_r:system_file:s0 $MODDIR/common/product/etc/fixed_orientation_list.xml
 
 
 #chattr -i /data/system/cloudFeature_embedded_rules_list.xml
@@ -29,6 +30,20 @@ cp -l $MODDIR/product/etc/embedded_rules_list.xml $MODDIR/common/product/etc/emb
 # For Android 12
 # rm /data/system/users/0/embedded_setting_config.xml
 # cp -l $MODDIR/common/system/users/0/embedded_setting_config.xml /data/system/users/0/embedded_setting_config.xml
+
+# Control FixedOrientationList By:做梦书
+chmod 666 /product/etc/fixed_orientation_list.xml
+chown root:root /product/etc/fixed_orientation_list.xml
+chmod 666 /data/system/cloudFeature_fixed_orientation_list.xml
+chown root:root /data/system/cloudFeature_fixed_orientation_list.xml
+
+mv $MODDIR/common/product/etc/fixed_orientation_list.xml /product/etc/fixed_orientation_list.xml
+cp -l $MODDIR/product/etc/fixed_orientation_list.xml $MODDIR/common/product/etc/fixed_orientation_list.xml
+rm /data/system/cloudFeature_fixed_orientation_list.xml 
+mv $MODDIR/common/product/etc/embedded_rules_list.xml /data/system/cloudFeature_embedded_rules_list.xml
+cp -l $MODDIR/product/etc/embedded_rules_list.xml $MODDIR/common/product/etc/embedded_rules_list.xml
+
+
 
 # Disable Cloud Feature
 chmod 440 /product/etc/embedded_rules_list.xml

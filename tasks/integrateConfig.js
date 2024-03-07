@@ -93,7 +93,7 @@ function copyMagicWindowSettingConfig() {
  */
 
 function copyOriginEmbeddedRuleListToCommon() {
-  return src(`${moduleSrc}/embedded_rules_list_bak`)
+  return src(`${moduleSrc}/backup_config/${options.use_platform}/embedded_rules_list_bak`)
     .pipe(dest(`${commonDist}/product/etc/`))
 }
 

@@ -1,0 +1,220 @@
+<package_config>
+    <package name="com.xunmeng.pinduoduo"
+        activityRule="com.xunmeng.pinduoduo.activity.NewPageFoldActivity" clearTop="false"
+        defaultSettings="true" adaptCutout="1"
+        splitPairRule="com.xunmeng.pinduoduo.activity.NewPageFoldActivity:*,com.xunmeng.pinduoduo.ui.activity.HomeActivity:*"
+        transitionRules="com.xunmeng.pinduoduo.activity.NewPageMaskActivity,com.xunmeng.pinduoduo.login.LoginActivity,com.xunmeng.pinduoduo.login.PhoneLoginActivity" />
+    <!--<package name="com.tencent.mobileqq"
+        activityRule="com.tencent.mobileqq.filemanager.fileviewer.FileBrowserActivity,com.tencent.mobileqq.filemanager.fileviewer.TroopFileDetailBrowserActivity,cooperation.qqfav.QfavPluginProxyActivity$SingleTop,cooperation.qqfav.QfavPluginProxyActivity$ImageViewer,com.tencent.mobileqq.activity.shortvideo.ShortVideoPlayActivity,com.tencent.av.ui.AVActivity,com.tencent.av.ui.VideoInviteActivity"
+        isShowDivider="true" splitPairRule="com.tencent.mobileqq.activity.SplashActivity:*"
+        transitionRules="com.tencent.mobileqq.mini.appbrand.ui.AppBrandUI,com.tencent.mobileqq.mini.appbrand.ui.AppBrandUI1,com.tencent.mobileqq.minigame.ui.GameActivity1,com.tencent.mobileqq.minigame.ui.GameActivity2,com.tencent.mobileqq.activity.LoginActivity" />-->
+    <package name="com.baidu.searchbox" isShowDivider="true"
+        splitPairRule="com.baidu.searchbox.MainActivity:*"
+        transitionRules="com.baidu.searchbox.SplashActivity" />
+    <package name="com.sina.weibo" activityRule="com.sina.weibo.story.publisher.activity.StorySendActivity,com.sina.weibo.feed.detail.composer.ComposerActivity,com.sina.weibo.photoalbum.imageviewer.ImageViewer"
+        isShowDivider="true"
+        splitPairRule="com.sina.weibo.VisitorMainTabActivity:com.sina.weibo.MainTabActivity:0:0,com.sina.weibo.MainTabActivity:*,com.sina.weibo.VisitorMainTabActivity:*,com.sina.weibo.page.SearchResultActivity:*"
+        transitionRules="com.sina.weibo.page.SuperPageActivity,com.sina.weibo.composerinde.ComposerDispatchActivity,com.sina.weibo.OpenProductAppActivity,com.sina.weibo.video.recommend.DispatchActivity" />
+    <package name="com.zhihu.android" activityRule="com.zhihu.android.app.ebook.activity.EBookHostActivity"
+        isShowDivider="true"
+        splitPairRule="com.zhihu.android.app.ui.activity.MainActivity:*"
+        transitionRules="com.zhihu.android.app.ui.activity.LaunchAdActivity,com.zhihu.android.app.ui.activity.TransActivity,com.zhihu.android.app.ui.activity.LauncherActivity,com.zhihu.android.panel.ui.attach.PanelAttachActivity,com.zhihu.android.app.ui.activity.SocialOauthActivity,com.zhihu.android.app.ui.activity.DealLoginActivity,com.zhihu.android.app.ui.activity.HostActivity" />
+    <package name="com.jingdong.app.mall"
+        activityRule="com.jd.lib.mylive.view.activity.VideoLiveRoomActivity,com.jingdong.manto.ui.MantoActivitySingleProcess"
+        placeholder="com.jingdong.app.mall.MainFrameActivity:com.jingdong.app.mall.home.activity.MainRightWebActivity"
+        defaultSettings="true" scaleMode="1"
+        splitPairRule="com.jingdong.app.mall.MainFrameActivity:*" />
+    <package name="tv.danmaku.bili" isShowDivider="true"
+        splitPairRule="tv.danmaku.bili.MainActivityV2:*,com.bilibili.search.main.BiliMainSearchActivity:*"
+        transitionRules="tv.danmaku.bili.sms.SmsLoginDialogActivityV2,com.bilibili.teenagersmode.ui.TeenagersModeDialogActivity" />
+    <package name="com.ss.android.lark.kami"
+        activityRule="com.bytedance.lark.webview.container.impl.WebContainerMainProcessActivity,com.ss.android.lark.widget.photo_picker.PhotoPagerActivity2,com.ss.android.lark.widget.photo_picker.PhotoPagerActivity,com.bytedance.ee.bear.document.DocActivity,com.ss.lark.android.signinsdk.v2.featurec.login.LoginClearTaskActivity,com.ss.lark.android.signinsdk.v2.featurec.login_input.LoginInputActivity,com.ss.lark.android.signinsdk.v2.featurec.InputCodeActivity,com.ss.android.lark.authorization.AuthorizationActivity,com.ss.android.lark.guide.landing.general.ui.GuidePageActivity,com.ss.android.lark.main.splash.SplashAdActivity"
+        defaultSettings="true" splitPairRule="com.ss.android.lark.main.app.MainActivity:*"
+        splitRatio="0.4"
+        isShowDivider="true"
+        transitionRules="com.ss.android.lark.ka.KaLoginActivity,com.tt.miniapphost.placeholder.MiniappTabActivity0,com.ss.android.lark.threadwindow.ThreadWindowActivity,com.miui.example.A1Activity,com.miui.example.A2Activity,com.bytedance.lark.webview.container.impl.WebContainerMainProcessActivity,com.ss.android.lark.passport.ka.KaLoginActivity" />
+    <package name="com.ss.android.lark" activityRule="com.ss.android.vc.meeting.module.preview.facade.MeetingPreviewActivity,com.ss.android.vc.meeting.module.multi.ByteRTCMeetingActivity,com.ss.android.lark.widget.photo_picker.PhotoPagerActivity,com.bytedance.ee.bear.document.DocActivity,com.ss.lark.android.signinsdk.v2.featurec.login.LoginClearTaskActivity,com.ss.lark.android.signinsdk.v2.featurec.login_input.LoginInputActivity,com.ss.lark.android.signinsdk.v2.featurec.InputCodeActivity,com.ss.android.lark.authorization.AuthorizationActivity,com.ss.android.lark.guide.landing.general.ui.GuidePageActivity,com.ss.android.lark.main.splash.SplashAdActivity"
+        defaultSettings="true"
+        isShowDivider="true" splitPairRule="com.ss.android.lark.main.app.MainActivity:*"
+        splitRatio="0.4"
+        transitionRules="com.ss.android.lark.ka.KaLoginActivity,com.tt.miniapphost.placeholder.MiniappTabActivity0,com.ss.android.lark.threadwindow.ThreadWindowActivity,com.bytedance.lark.webview.container.impl.WebContainerMainProcessActivity,com.ss.android.lark.passport.ka.KaLoginActivity" />
+    <package name="com.A17zuoye.mobile.homework" activityRule="com.A17zuoye.mobile.homework.primary.activity.PrimaryHomeWorkActivity,com.yiqizuoye.library.papercalculaterecognition.activity.TakePictureActivity"
+        isShowDivider="true"
+        splitPairRule="com.A17zuoye.mobile.homework.primary.activity.MainActivityNew:*" />
+    <package name="com.kingpoint.gmcchh" activityRule="com.kingpoint.gmcchh.newui.common.splash.view.GmcchhSplashActivity"
+        isShowDivider="true"
+        placeholder="com.kingpoint.gmcchh.newui.main.skeleton.view.SkeletonActivity:com.kingpoint.gmcchh.newui.common.browser.view.ParallelHorizonRightPartBrowserActivity"
+        splitPairRule="com.kingpoint.gmcchh.newui.main.skeleton.view.SkeletonActivity:*,com.kingpoint.gmcchh.activity.MainActivity:*" />
+    <package name="com.kuaikan.comic" isShowDivider="true"
+        splitPairRule="com.kuaikan.main.MainActivity:*" />
+    <package name="com.cctv.yangshipin.app.androidp" isShowDivider="true"
+        splitPairRule="com.tencent.videolite.android.ui.HomeActivity:*"
+        transitionRules="com.tencent.videolite.android.component.literoute.OpenActivity,com.tencent.videolite.android.push.api.PushActivity,com.tencent.videolite.android.ui.huawei.AgreementActivity,com.tencent.videolite.android.ui.huawei.AgreementChangedActivity,com.tencent.videolite.android.ui.GuidePageActivity" />
+    <package name="com.shizhuang.duapp"
+        transitionRules="com.shizhuang.duapp.du_login.LoginHelperActivity,com.shizhuang.duapp.du_login.LoginEntryActivity,om.shizhuang.duapp.du_login.business.LoginContainerActivity" />
+    <package name="com.bilibili.comic" isShowDivider="true"
+        splitPairRule="com.bilibili.comic.home.view.FlutterMainActivity:*,com.bilibili.comic.home.view.MainActivity:*" />
+    <package name="com.duowan.mobile" defaultSettings="true"
+        splitPairRule="com.yy.mobile.plugin.homepage.ui.home.HomeActivity:*" />
+    <package name="com.tmall.wireless"
+        activityRule="com.tmall.wireless.splash.TMSplashActivity,mtopsdk.extra.antiattack.CheckCodeValidateActivity,com.tmall.wireless.webview.video.TMMoviePlayActivity,com.tmall.wireless.share.activity.TMShareMediatorActivity,com.tmall.wireless.share.activity.TMShareActivity"
+        defaultSettings="true"
+        placeholder="com.tmall.wireless.maintab.module.TMMainTabActivity:com.tmall.wireless.module.search.searchinput.input.activity.RelatePageActivity"
+        splitPairRule="com.tmall.wireless.maintab.module.TMMainTabActivity:*" />
+    <package name="com.cmcc.cmvideo"
+        placeholder="com.cmcc.cmvideo.main.application.CompatibleMainActivity:com.cmcc.cmvideo.playdetail.MagicMultiControlActivity"
+        splitPairRule="com.cmcc.cmvideo.main.application.CompatibleMainActivity:*" />
+    <package name="com.alibaba.android.rimet"
+        activityRule="com.alibaba.android.dingtalkim.activities.VideoPlayerActivityV2,com.alibaba.android.dingtalk.player.VideoPlayerActivity,com.alibaba.dingtalk.cspace.activity.SpacePreviewActivity,com.alibaba.android.dingtalk.live.ui.LiveVideoPlayerActivity,com.alibaba.dingtalk.cspace.activity.SpacePreviewV1Activity,com.alibaba.dingtalk.cspace.activity.SpacePicPreviewActivity,com.alibaba.android.rimet.biz.im.activities.PicViewActivity,com.alibaba.android.user.pwd.activities.LockScreenPwdActivity,com.alibaba.dingtalk.flutterimpl.container.DTFlutterActivity,com.alibaba.android.teleconf.mozi.activity.TeleVideoConfActivity"
+        defaultSettings="false"
+        supportCameraPreview="false"
+        isShowDivider="true"
+        splitPairRule="com.alibaba.android.rimet.biz.LaunchHomeActivity:*"
+        transitionRules="com.alibaba.android.rimet.biz.BokuiActivity,com.alibaba.android.user.login.NewUserLoginActivity,com.alibaba.android.user.login.SignUpWithPwdActivity,com.alibaba.android.rimet.PrivacyPolicyActivity,com.alibaba.android.user.login.change.SwitchAccountActivity" />
+    <package name="com.ss.android.auto"
+        activityRule="com.ss.android.garage.activity.CarAtlasActivity,com.ss.android.mediachooser.MediaChooserActivity"
+        isShowDivider="true" splitPairRule="com.ss.android.auto.activity.SplashActivity:*"
+        transitionRules="com.ss.android.article.base.feature.app.schema.AdsAppActivity,com.bytedance.bdauditsdkbase.permission.ui.PermissionMaskActivity,com.ss.android.auto.pgc.video.AutoPgcVideoDetailActivity" />
+    <package name="cn.com.cmbc.newmbank" activityRule="cn.com.cmbc.newmbank.keyboard.DigitKeyboardAct,cn.com.cmbc.newmbank.keyboard.AccountKeyboardAct,cn.com.cmbc.newmbank.keyboard.PassguardKeyboardAct,cn.com.cmbc.newmbank.keyboard.PassguardKeyboardActDS,cn.com.cmbc.newmbank.keyboard.PlainNumKeyboardAct,cn.com.cmbc.newmbank.keyboard.RechargeDigitKeyboardAct,cn.com.cmbc.safe.activity.FaceVerifyActivity,cn.com.cmbc.safe.activity.FaceYcVerifyActivity,cn.com.cmbc.safe.activity.FingerPrintVerifyActivity,cn.com.cmbc.safe.activity.IcVerifyActivity,cn.com.cmbc.safe.activity.OtpVerifyActivity,cn.com.cmbc.safe.activity.ProcessStateActivity,cn.com.cmbc.safe.activity.PwdCVerifyActivity,cn.com.cmbc.safe.activity.PwdVerifyActivity,cn.com.cmbc.safe.activity.PwdYcVerifyActivity,cn.com.cmbc.safe.activity.PwdZVerifyActivity,cn.com.cmbc.safe.activity.QRCodeCaptureActivity,cn.com.cmbc.safe.activity.QRCodeVerifyActivity,cn.com.cmbc.safe.activity.RemoteBankVerifyActivity,cn.com.cmbc.safe.activity.SelectToolsActivity,cn.com.cmbc.safe.activity.SmsVerifyActivity,cn.com.cmbc.safe.activity.SmsYcVerifyActivity,cn.com.cmbc.safe.activity.UBaoVerifyActivity,cn.com.cmbc.safe.activity.UKeyVerifyActivity,cn.com.cmbc.safe.activity.VerifyCoverActivity,cn.com.cmbc.safe.activity.XindunVerifyActivity,cn.com.cmbc.safe.nfc.NFCScanActivity"
+        isShowDivider="true"
+        splitPairRule="cn.com.cmbc.newmbank.activity.MainActivity:*,cn.com.cmbc.newmbank.activity.AllMenusActivityFold:*,cn.com.cmbc.newmbank.activity.WebViewActivity:cn.com.cmbc.newmbank.activity.WebViewActivityHw,cn.com.cmbc.newmbank.activity.WebViewActivityHw:cn.com.cmbc.newmbank.activity.WebViewActivity,cn.com.cmbc.newmbank.activity.login.fingerlogin.activity.FingerLoginActivity:cn.com.cmbc.newmbank.activity.WebViewActivity,cn.com.cmbc.newmbank.activity.login.tradlogin.LoginActivity:cn.com.cmbc.newmbank.activity.WebViewActivity,cn.com.cmbc.newmbank.activity.login.gesturelogin.activity.GestureLoginActivity:cn.com.cmbc.newmbank.activity.WebViewActivity,cn.com.cmbc.newmbank.activity.login.fingerlogin.activity.FingerLoginActivity:com.noknok.android.uaf.framework.service.MfacIntentActivity"
+        transitionRules="com.lenovo.appsdk.commlib.IntentHelperActivity" />
+    <package name="com.icbc" isShowDivider="true"
+        placeholder="com.icbc.activity.main.MainActivity:com.icbc.activity.message.MessageCenterActivity"
+        splitPairRule="com.icbc.activity.main.MainActivity:*" />
+    <package name="com.baidu.homework" activityRule="com.baidu.homework.common.camera.NewCameraManyQuestionsActivity,com.baidu.homework.common.camera.CameraManyQuestionsActivity,com.baidu.homework.common.camera.ZybSearchCameraActivity,com.zybang.camera.activity.PhotoCropSDKActivity,com.baidu.homework.common.photo.PhotoCropActivity,com.baidu.homework.activity.search.singlequestion.PicSearchActivity,com.baidu.homework.activity.search.whole.PicManySearchActivity"
+        isShowDivider="true"
+        splitPairRule="com.baidu.homework.activity.index.IndexActivity:*" />
+    <package name="com.chaoxing.mobile" activityRule="com.chaoxing.mobile.webapp.ui.WebAppViewerActivity"
+        defaultSettings="true" isShowDivider="true"
+        splitPairRule="com.chaoxing.mobile.main.ui.MainTabActivity:*" />
+    <package name="com.tencent.androidqqmail" activityRule="com.tencent.qqmail.activity.setting.GesturePwdActivity,com.tencent.qqmail.ocr.ScanRegionCameraActivityEx,com.tencent.qqmail.ocr.BitmapEditActivityEx,com.tencent.qqmail.activity.compose.ComposeMailActivity"
+        isShowDivider="true"
+        splitPairRule="com.tencent.qqmail.fragment.base.MailFragmentActivity:*,com.tencent.qqmail.xmbook.business.home.XMBookActivity:*,com.tencent.qqmail.xmailnote.XMailNoteListActivity:*" />
+    <package name="com.suning.mobile.ebuy"
+        activityRule="com.suning.mobile.weex.WXPageActivity,com.suning.mobile.mp.SMPActivity"
+        defaultSettings="true"
+        placeholder="com.suning.mobile.ebuy.host.MainActivity:com.suning.mobile.foldingscreen.SuningFoldingActivity"
+        splitPairRule="com.suning.mobile.ebuy.host.MainActivity:*" />
+    <package name="cn.xuexi.android" isShowDivider="true"
+        splitPairRule="com.alibaba.android.rimet.biz.home.activity.HomeActivity:*" />
+    <package name="com.achievo.vipshop" defaultSettings="true"
+        activityRule="com.achievo.vipshop.commons.logic.order.AlbumChooseActivity"
+        splitPairRule="com.achievo.vipshop.homepage.activity.MainActivity:*"
+        transitionRules="com.achievo.vipshop.search.activity.SearchCameraActivity" />
+    <package name="com.MobileTicket" allowRepeatPage="true" clearTop="false" isShowDivider="true"
+        splitPairRule="com.MobileTicket.ui.activity.MainActivity:*" />
+    <package name="com.baidu.searchbox.lite" activityRule="com.baidu.searchbox.CodeScannerActivity"
+        isShowDivider="true" splitPairRule="com.baidu.searchbox.MainActivity:*"
+        transitionRules="com.baidu.searchbox.discovery.novel.NovelHomeActivity,com.baidu.searchbox.permission.PermissionActivity,com.baidu.searchbox.account.userinfo.activity.PortraitSettingActivity,com.baidu.searchbox.CommandHandleActivity,com.baidu.sapi2.activity.social.WXLoginActivity,com.tencent.connect.common.AssistActivity,com.baidu.searchbox.location.activity.LocationEmptyActivity,com.baidu.sapi2.activity.social.QQSSOLoginActivity" />
+    <package name="com.tigerbrokers.stock" activityRule="com.tigerbrokers.stockdetail.ui.activity.StockDetailPortraitWrapperActivity,base.stock.community.ui.tweet.LargeScreenTweetDetailActivity,com.tigerbrokers.stockdetail.ui.activity.StockLargeScreenActivity2,com.tigerbrokers.stockdetail.ui.activity.StockDetailFoldFullScreenActivity,com.tigerbrokers.stock.ui.detail.ShareScreenShotActivity,com.tigerbrokers.stock.ui.detail.ShareScreenShotActivity,com.tigerbrokers.stock.LandscapeFoldScreenActivity"
+        isShowDivider="true"
+        splitPairRule="com.tigerbrokers.stock.ui.MainActivity2:base.stock.community.ui.tweet.TweetDetailActivity"
+        transitionRules="com.tigerbrokers.stock.ui.user.account.LogInActivity,com.tigerbrokers.stock.LandscapeFoldScreenActivity" />
+    <package name="com.eastmoney.android.berlin"
+        activityRule="com.eastmoney.android.account.activity.PassportLoginActivity,com.eastmoney.android.module.launcher.internal.settings.SkinThemeSettingActivity,com.eastmoney.android.gubainfo.activity.SelectPhotoActivity"
+        isShowDivider="true"
+        splitPairRule="com.eastmoney.android.module.launcher.internal.home.HomeActivity:*" />
+    <package name="com.android.dazhihui" activityRule="com.android.dazhihui.ui.screen.InitScreen,com.tencent.qcloud.xiaoshipin.common.adapter.VideoCommentActivity,com.tencent.im.activity.personalhome.HuixinPersonalScreen"
+        isShowDivider="true"
+        splitPairRule="com.android.dazhihui.ui.screen.stock.MainScreen:*"
+        transitionRules="com.tencent.im.live.LiveActivity,com.android.dazhihui.ui.screen.stock.LoginMainScreen,com.android.dazhihui.ui.screen.stock.LoginScreen" />
+    <package name="com.huawei.health"
+        activityRule="com.huawei.indoorequip.activity.IndoorEquipDisplayActivity,com.huawei.indoorequip.activity.IndoorEquipLandDisplayActivity,com.huawei.ui.main.stories.me.views.privacy.ServiceItemActivity,com.huawei.ui.main.stories.me.views.privacy.PrivacyStatementActivity,com.huawei.healthcloud.plugintrack.ui.activity.SportBaseActivity,com.huawei.health.suggestion.ui.fitness.activity.CoachActivity"
+        splitPairRule="com.huawei.health.MainActivity:*"
+        transitionRules="com.huawei.health.browseraction.HwHealthBrowserActionActivity,com.huawei.health.browseraction.HwSchemeQrCodeActivity,com.huawei.health.ServiceAreaAlertActivity,com.huawei.health.browseraction.HwSchemeFilterActivity,com.huawei.hwidauth.ui.WebViewActivity,com.huawei.health.suggestion.ui.fitness.activity.TrainDetail" />
+    <package name="com.qidian.QDReader" activityRule="com.qidian.QDReader.ui.activity.QDReaderActivity"
+        isShowDivider="true"
+        splitPairRule="com.qidian.QDReader.ui.activity.MainGroupActivity:*,com.qidian.QDReader.ui.activity.QDSearchActivity:*" />
+    <package name="com.duowan.kiwi" activityRule="com.duowan.kiwi.teenager.impl.activity.TeenagerActivity"
+        placeholder="com.duowan.kiwi.homepage.Homepage:com.duowan.kiwi.userinfo.historywatch.MyHistoryFavour"
+        isShowDivider="true"
+        splitPairRule="com.duowan.kiwi.homepage.Homepage:*"
+        transitionRules="com.duowan.kiwi.simpleactivity.SplashActivity,com.duowan.kiwi.adsplash.view.AdSplashActivity" />
+    <package name="com.tencent.wework" activityRule="com.tencent.wework.multitalk.controller.VoipCallActivity"
+        isShowDivider="true"
+        splitPairRule="com.tencent.wework.launch.WwMainActivity:*" />
+    <package name="com.baidu.baidutranslate" isShowDivider="true"
+        splitPairRule="com.baidu.baidutranslate.activity.MainActivity:*" />
+    <package name="com.sankuai.meituan"
+        activityRule="com.meituan.android.upgrade.UpgradeDialogActivity,com.sankuai.waimai.business.restaurant.base.WebImagePreviewActivity,com.sankuai.titans.widget.media.MediaActivity,com.dianping.bizcomponent.preview.ui.BizImagePreviewActivity"
+        defaultSettings="true" relaunch="true"
+        splitPairRule="com.meituan.android.pt.homepage.activity.MainActivity:*"
+        transitionRules="com.sankuai.meituan.mbc.dsp.DspActivity,com.sankuai.meituan.mbc.dsp.TransitActivity,com.meituan.android.pt.group.transit.TransitCenterActivity,com.dianping.base.push.pushservice.HWPushDetailActivity,com.sankuai.waimai.foundation.core.base.activity.transfer.TransferActivity,com.meituan.mmp.lib.RouterCenterActivity,com.meituan.android.scan.ScanQRInMeituanActivity" />
+    <package name="com.kugou.android" isShowDivider="true" />
+    <package name="com.taobao.taobao" defaultSettings="true"
+        placeholder="com.taobao.tao.welcome.Welcome:com.taobao.tao.MagicWindowActivity,com.taobao.tao.TBMainActivity:com.taobao.tao.MagicWindowActivity"
+        transitionRules="com.taobao.tao.TBMainActivity,com.taobao.android.shop.activity.ShopUrlRouterActivity,com.taobao.linkmanager.afc.TbFlowInActivity,com.taobao.cun.bundle.community.ui.activity.CuntaoRouterActivity,com.taobao.tao.rushpromotion.luaview.activity.LuaOrH5RouterActivity,com.taobao.browser.router.FromH5RouterActivity,com.taobao.android.shop.activity.ShopUrlRouterActivity,com.taobao.taolive.room.TaoLiveRouterActivity"
+        relaunch="false"
+        scaleMode="1" />
+    <package name="com.alibaba.wireless" defaultSettings="true"
+        placeholder="com.alibaba.wireless.launch.home.V5HomeActivity:com.alibaba.wireless.launch.MagicWindowActivity"
+        transitionRules="com.alibaba.wireless.msg.push.NotifyClickActivity"
+        scaleMode="1" />
+    <package name="com.taobao.idlefish" defaultSettings="true"
+        placeholder="com.taobao.idlefish.maincontainer.activity.MainActivity:com.taobao.idlefish.category.CategoryPageActivity"
+        activityRule="com.taobao.fleamarket.scancode.as.tool.ToolsCaptureActivity,com.taobao.fleamarket.call.ui.FishRtcCallActivity,com.idlefish.flutterbridge.flutterboost.IdleFishFlutterFullActivity"
+        scaleMode="1" />
+    <package name="com.taobao.etao" isShowDialog="true" />
+    <package name="com.sinovatech.unicom.ui" defaultSettings="true" transitionRules="com.sinovatech.unicom.basic.ui.activity.LoginBindActivity" />
+    <package name="com.qiyi.video"
+        transitionRules="com.qiyi.video.qigsaw.shortvideo.ShortVideoInstaller,org.qiyi.pluginlibrary.component.InstrActivityProxyTranslucent0" />
+    <package name="com.lemon.lv"/>
+    <package name="com.xiachufang" isShowDialog="true" />
+    <package name="com.tencent.portfolio" isShowDialog="true" />
+    <package name="com.xingin.xhs"
+        activityRule="com.xingin.hey.heylist.HeyDetailActivity"
+        transitionRules="com.xingin.capa.v2.framework.router.EmptyEntranceActivity,com.xingin.capa.lib.entrance.CapaEntranceActivity,com.xingin.hey.heyhomefeed.HeyHomeFeedActivity" />
+    <package name="com.chinamworld.bocmbci" activityRule="com.intsig.ccrengine.ISCardScanActivity"
+        transitionRules="com.boc.bocsoft.mobile.bocmobile.base.widget.ScanCradNumber.ui.ScanCardNumActivity"
+        defaultSettings="true" />
+    <package name="com.wudaokou.hippo"
+        activityRule="com.wudaokou.hippo.interaction.scan.alipay.AlipayScanActivity"
+        transitionRules="com.ali.user.mobile.login.ui.UserLoginActivity,com.ali.user.mobile.login.ui.UserLoginActivity,com.taobao.runtimepermission.PermissionActivity,com.wudaokou.hippo.launcher.agreement.AgreementActivity"
+        defaultSettings="true" relaunch="true" />
+    <package name="com.spdbccc.app" defaultSettings="true" />
+    <package name="com.ss.android.article.news"
+        activityRule="com.bytedance.ugc.publishwenda.article.PgcEditorActivity,com.ss.android.publish.send.TTSendPostActivity"
+        minSupportVersion="1:20230510"
+        splitPairRule="com.ss.android.article.news.activity.MainActivity:*"
+        transitionRules="com.ss.android.article.base.feature.isolation.view.IsolationActivity,com.ss.android.tma.view.TmgPluginLoadingActivity" />
+    <package name="com.tencent.qqmusic"
+        activityRule="com.tencent.qqmusic.activity.YoungModeActivity"
+        splitPairRule="com.tencent.qqmusic.activity.AppStarterActivity:*"
+        transitionRules="com.tencent.qqmusic.activity.baseactivity.StartUpPrivacyPolicyActivity,com.tencent.qqmusic.activity.baseactivity.StartConfigActivity,com.tencent.qqmusic.share.sharedialog.ShareSongDialogActivity,com.tencent.qqmusic.activity.ShareToTargetActivity,com.tencent.connect.common.AssistActivity,com.tencent.qqmusic.business.playernew.view.FoldScreenNewPlayerActivity,com.tencent.qqmusic.business.splash.hotlaunch.HotLaunchLargeScreenSplashActivity" />
+    <package name="com.kuaishou.nebula"
+        activityRule="com.yxcorp.gifshow.webview.KwaiYodaWebViewActivity,com.yxcorp.login.userlogin.activity.PhoneLoginActivity,com.yxcorp.gifshow.camera.record.CameraActivity" />
+    <package name="com.chinamworld.main" splitPairRule="com.ccb.start.MainActivity:*" />
+    <package name="com.dianping.v1"
+        minSupportVersion="1:20230413"
+        procCompat="true"
+        activityRule="com.dianping.main.login.picassologin.LoginLiteActivity,com.dianping.main.login.picassologin.PicassoLoginActivity,com.dianping.ugc.uploadphoto.ugcalbum.droplet.DrpLocalAlbumActivity"
+        scaleMode="1" />
+    <package name="ctrip.android.view"
+        activityRule="ctrip.android.reactnative.preloadv2.CRNBaseActivityV2" scaleMode="1" />
+    <package name="cmb.pb" />
+    <package name="com.taobao.litetao"
+        relaunch="true"
+        placeholder="com.taobao.ltao.maintab.MainFrameActivity:com.taobao.search.searchdoor.SearchDoorLanucherActivity"
+        scaleMode="1" splitPairRule="com.taobao.ltao.maintab.MainFrameActivity:*" />
+    <package name="com.sankuai.meituan.takeoutnew" scaleMode="1" />
+    <package name="com.wuba"
+        activityRule="com.wuba.activity.launch.LaunchActivity,com.wuba.activity.hotlaunch.HotLaunchActivity,com.wuba.tribe.live.activity.TribeAudienceActivity,com.wuba.tribe.live.activity.TribeAnchorActivity"
+        scaleMode="1" splitPairRule="com.wuba.home.activity.HomeActivity:*"
+        transitionRules="com.wuba.job.activity.JobDetailActivity,com.wuba.activity.launch.LeadingActivity,com.anjuke.android.app.aifang.home.NewHouseHomeActivity" />
+    <package name="com.cmbchina.ccd.pluto.cmbActivity" />
+    <package name="com.cainiao.wireless" />
+    <package name="cn.kuwo.player" isShowDivider="true" scaleMode="1" />
+    <package name="cn.soulapp.android" />
+    <package name="com.cs_credit_bank" />
+    <package name="com.jdd.motorfans" />
+    <package name="com.cgbchina.xpt" />
+    <package name="com.taobao.live" relaunch="true"
+        placeholder="com.taobao.live.home.activity.TaoLiveHomeActivity:com.taobao.live.TaoLiveSearchActivity"
+        transitionRules="com.taobao.live.weex.WXContainerActivity" />
+    <package name="com.zhaopin.social" scaleMode="1"
+        splitPairRule="com.zhaopin.social.homepage.ZSC_MainTabActivity:*,com.zhaopin.social.main.MainActivity:*"
+        transitionRules="com.zhaopin.social.homepage.MagicWindowActivity,com.zhaopin.liteav.liveroom.ui.FlutterLiveRoomActivity" />
+    <package name="com.bmcc.ms.ui" isShowDivider="true" />
+    <package name="com.sh.cm.shydhn" isShowDivider="true" />
+</package_config>

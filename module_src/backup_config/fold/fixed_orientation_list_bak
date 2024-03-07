@@ -1,0 +1,66 @@
+<package_config>
+    <package name="com.tencent.mobileqq" isShowDivider="true" />
+    <package name="com.ss.android.lark" isShowDivider="true" />
+    <package name="com.sina.weibo" isShowDivider="true" />
+    <package name="com.qidian.QDReader" isShowDivider="true" />
+    <package name="com.android.dazhihui" isShowDivider="true" />
+    <package name="com.tencent.mm" adaptCutout="1" isShowDivider="true" />
+    <package name="com.Qunar" adaptCutout="1" isShowDivider="true" />
+    <package name="me.ele" adaptCutout="1" isShowDivider="true" />
+    <package name="com.MobileTicket" isShowDivider="true" />
+    <package name="com.sina.news" isShowDivider="true" />
+    <package name="com.douban.frodo" isShowDivider="true" />
+    <package name="com.coolapk.market" isShowDivider="true" />
+    <package name="com.android.vending" adaptCutout="1" />
+    <package name="com.android.chrome" adaptCutout="1" />
+    <package name="com.youku.phone" adaptCutout="1" />
+    <package name="com.niksoftware.snapseed" adaptCutout="1" />
+    <package name="com.ddnapalon.calculator.gp" adaptCutout="1" />
+    <package name="com.hp.android.printservice" adaptCutout="1" />
+    <package name="com.microsoft.office.officehub" adaptCutout="1" />
+    <package name="com.google.android.wearable.app.cn" adaptCutout="1" />
+    <package name="com.google.android.apps.translate" adaptCutout="1" />
+    <package name="com.tencent.qt.sns" adaptCutout="1" />
+    <package name="com.heytap.health" adaptCutout="1" />
+    <package name="com.vmall.client" adaptCutout="1" />
+    <package name="com.timanetworks.android.faw.vw.aftermarket.release" adaptCutout="1" />
+    <package name="com.google.android.documentsui" adaptCutout="1" />
+    <package name="com.xinmang.camera.measure.altimeter" adaptCutout="1" />
+    <package name="com.ludashi.benchmark" adaptCutout="1" />
+    <package name="com.ez08.compass" adaptCutout="1" />
+    <package name="com.alibaba.cloudmail" adaptCutout="1" />
+    <package name="com.farplace.qingzhuo" adaptCutout="1" />
+    <package name="cn.com.enorth.jinyun" adaptCutout="1" />
+    <package name="com.gstarmc.lite" adaptCutout="1" />
+    <package name="com.tencent.pao" adaptCutout="1" />
+    <package name="com.antutu.benchmark.full" adaptCutout="1" />
+    <package name="com.neusoft.simobile.nm" adaptCutout="1" />
+    <package name="cn.dictcn.android.digitize.swg_xhzd_21003" adaptCutout="1" />
+    <package name="com.fenbi.android.servant" adaptCutout="1" />
+    <package name="com.yuantiku.tutor" adaptCutout="1" />
+    <package name="com.fenbi.android.zenglish" adaptCutout="1" />
+    <package name="com.huawei.welink" adaptCutout="1" />
+    <package name="com.airbnb.android" adaptCutout="1" />
+    <package name="com.ainemo.dragoon" adaptCutout="1" />
+    <package name="mark.via" adaptCutout="1" />
+    <package name="com.mmbox.xbrowser.pro" adaptCutout="1" />
+    <package name="com.microsoft.office.powerpoint" adaptCutout="1" />
+    <package name="com.cjtec.uncompress" adaptCutout="1" />
+    <package name="cn.gov.hrss.tj" adaptCutout="1" />
+    <package name="com.mxtech.videoplayer.ad" adaptCutout="1" />
+    <package name="com.tencent.docs" adaptCutout="1" />
+    <package name="com.gsww.gs_zwfw_android" adaptCutout="1" />
+    <package name="com.jsb.gov.cn2" adaptCutout="1" />
+    <package name="com.pplive.androidphone.sport" adaptCutout="1" />
+    <package name="com.neusoft.tax" adaptCutout="1" />
+    <package name="com.google.android.gms" adaptCutout="1" />
+    <package name="com.microsoft.teams" adaptCutout="1" />
+    <package name="tv.danmaku.bilibilihd" adaptCutout="1" />
+    <package name="com.handsgo.jiakao.android" adaptCutout="1" />
+    <package name="com.sinyee.babybus.recommendapp" adaptCutout="1" />
+    <package name="air.tv.douyu.android" adaptCutout="1" />
+    <package name="cn.mucang.android.jkxt" adaptCutout="1" />
+    <package name="com.ss.android.lark.kami" adaptCutout="1" />
+    <package name="com.ruanmei.ithome" adaptCutout="1" />
+    <package name="com.tujia.hotel" adaptCutout="1" />
+</package_config>

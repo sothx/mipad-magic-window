@@ -1,0 +1,550 @@
+<package_config>
+  <package name="com.baidu.searchbox" forcePortraitActivity="com.baidu.searchbox/.godeye.CodeScannerActivity" />
+  <package name="com.mihoyo.desktopportal" relaunch="false" />
+  <package name="com.kkptech.kkpsy" relaunch="false" />
+  <package name="com.cubic.autohome" allPortrait="true" />
+  <package name="com.xt.retouch" allPortrait="true" skipCompatMode="true" />
+  <package name="com.lofter.android" relaunch="false" />
+  <package name="com.wisedu.cpdaily" relaunch="false" />
+  <package name="com.kuaiduizuoye.scan" relaunch="false" />
+  <package name="com.fy.cjyxlm.mi" isScale="true" />
+  <package name="com.tencent.gamehelper.smoba" relaunch="false" />
+  <package name="com.cootek.crazyreader" relaunch="false" />
+  <package name="com.ishowedu.peiyin" relaunch="false" />
+  <package name="com.android.camera" disable="true" />
+  <package name="com.ucmobile.lite" allPortrait="true" skipCompatMode="true" supportCameraPreview="false" />
+  <package name="com.netease.cloudmusic" skipCompatMode="true" />
+  <package name="com.kwai.m2u" disable="true" skipCompatMode="true" />
+  <package name="com.fenbi.android.solar" skipCompatMode="true" />
+  <package name="com.outfit7.mytalkingtom2.mi" skipCompatMode="true" />
+  <package name="zwzt.fangqiu.edu.com.zwzt" skipCompatMode="true" />
+  <package name="com.wedobest.HD1010.one.mi" skipCompatMode="true" />
+  <package name="ctrip.android.view" skipCompatMode="true" />
+  <package name="com.outfit7.mytalkingangela2.mi" skipCompatMode="true" />
+  <package name="com.peopledailychina.activity" skipCompatMode="true" />
+  <package name="com.tencent.tmgp.lv" skipCompatMode="true" />
+  <package name="com.liulishuo.engzo" skipCompatMode="true" />
+  <package name="com.outfit7.mytalkingangelafree" skipCompatMode="true" />
+  <package name="com.wonder.fmsh.mi" skipCompatMode="true" />
+  <package name="com.liubowang.metronome" skipCompatMode="true" />
+  <package name="com.vmos.pro" skipCompatMode="true" />
+  <package name="com.pdragon.HD1010" skipCompatMode="true" />
+  <package name="com.leiting.jm.mi" skipCompatMode="true" />
+  <package name="com.xes.jazhanghui.activity" skipCompatMode="true" />
+  <package name="com.wumii.android.athena" skipCompatMode="true" />
+  <package name="com.happyelements.AndroidClover.mob" isScale="true" />
+  <package name="cn.jj" isScale="true" minSupportVersion="1:20230522" />
+  <package name="com.estrongs.android.pop" disable="true" />
+  <package name="com.tencent.wework" supportFullSize="true" isShowDivider="true" allowEmbInPortrait="false" />
+  <package name="com.ss.android.ugc.aweme.lite" disable="true" />
+  <package name="com.qiyi.video.pad" disable="true" />
+  <package name="com.smile.gifmaker" disable="true" />
+  <package name="com.kuaishou.nebula" disable="true" />
+  <package name="com.tencent.mobileqq" disable="true" />
+  <package name="com.minitech.miniaixue" disable="true" />
+  <package name="com.wedobest.shudu" isScale="true" minSupportVersion="1:20230522" />
+  <package name="com.baidu.baidutranslate" disable="true" />
+  <package name="com.lemon.lv" disable="true" />
+  <package name="com.dw.jrccc.mi" relaunch="false" />
+  <package name="com.ks.jjwbh.mi" relaunch="false" />
+  <package name="air.tv.douyu.android" relaunch="false" />
+  <package name="com.ximalaya.ting.android" disable="true" />
+  <package name="com.opera.browser" disable="true" />
+  <package name="com.yandex.browser" disable="true" />
+  <package name="com.ywhy.zjxjy.mi" relaunch="false" />
+  <package name="com.fy.jrxfd.mi" relaunch="false" />
+  <package name="com.alibaba.android.rimet" disable="true" supportFullSize="true" isShowDivider="true" />
+  <package name="com.fy.xdyqc.mi" relaunch="false" />
+  <package name="com.fy.fcds.mi" relaunch="false" />
+  <package name="com.dw.xydg.net.mi" relaunch="false" />
+  <package name="com.xplaygame.zdjz.mi" relaunch="false" isScale="true" />
+  <package name="com.yxhd.cool.game.mi" relaunch="false" />
+  <package name="com.fy.jldzz.mi" relaunch="false" />
+  <package name="net.cpwxw.cpfiction" relaunch="false" isScale="true" />
+  <package name="com.zf.mhjlxd.mi" relaunch="false" />
+  <package name="com.dw.hcdpp.mi" relaunch="false" />
+  <package name="com.dw.tyqs.net.mi" relaunch="false" />
+  <package name="com.fy.htfc.mi" relaunch="false" />
+  <package name="com.jd.pingou" skipCompatMode="true" />
+  <package name="com.zing.zalo" disable="true" />
+  <package name="com.tencent.qqpinyin" relaunch="false" isScale="true" minSupportVersion="1:20230522" />
+  <package name="com.fy.kxcf.mi" relaunch="false" />
+  <package name="com.jxedt" relaunch="false" />
+  <package name="com.syjxx.piano" relaunch="false" />
+  <package name="com.xplaygame.xuancaijiezou2.mi" relaunch="false" />
+  <package name="com.fy.dbgwb.mi" relaunch="false" />
+  <package name="com.fy.kztgd.gs.mi" relaunch="false" />
+  <package name="com.xplaygame.xuancaijiezousand.mi" relaunch="false" />
+  <package name="com.fy.tkdld.mi" relaunch="false" isScale="true" />
+  <package name="com.gameinlife.color.paint.cn" relaunch="false" />
+  <package name="com.m37.dldl.mi" relaunch="false" />
+  <package name="com.bj.palyer.wmspboq" relaunch="false" />
+  <package name="com.lew.game.jjkcg.mi" relaunch="false" />
+  <package name="com.ph.czndox.mi" relaunch="false" />
+  <package name="com.tuya.paintpro" relaunch="false" />
+  <package name="com.bj.palyer.kkkddd" relaunch="false" />
+  <package name="com.zf.jldj.mi" relaunch="false" />
+  <package name="com.wander.android.wallpaper" disable="true" />
+  <package name="com.benqu.wuta" isScale="true" />
+  <package name="com.mallestudio.gugu.app" relaunch="false" />
+  <package name="com.fy.tjxd.mi" relaunch="false" />
+  <package name="cn.knowbox.androidaiclass" relaunch="false" />
+  <package name="com.fy.dmmdzz.mi" />
+  <package name="com.lywx.wzqgs.mi" relaunch="false" />
+  <package name="com.yizhilu.qh" relaunch="false" />
+  <package name="com.dw.ttdezbj.mi" relaunch="false" />
+  <package name="com.dw.dytxj.mi" relaunch="false" />
+  <package name="com.dw.zynq.mi" relaunch="false" />
+  <package name="com.disney.WMW.elm" isScale="true" />
+  <package name="com.disney.WMW" isScale="true" />
+  <package name="com.xph.xeyaxz2.mi" isScale="true" />
+  <package name="com.zgm.eyxwp.mi" isScale="true" />
+  <package name="com.sgcc.wsgw.cn" relaunch="false" />
+  <package name="com.jd.game.babypuzzle.mi" isScale="true" />
+  <package name="com.mihuan.mgss.mi" isScale="true" />
+  <package name="com.wb.elsfkx.mi" isScale="true" />
+  <package name="com.jd.game.onetpet.mi" isScale="true" />
+  <package name="com.jd.game.fruitsmasher.mi" isScale="true" />
+  <package name="com.fy.hbwq.mi" isScale="true" />
+  <package name="com.by.butter.camera" isScale="true" />
+  <package name="com.tencent.tmgp.qjnn" isScale="true" />
+  <package name="com.offcn.mini.teacher" relaunch="false" />
+  <package name="com.ss.android.ugc.aweme" disable="true" />
+  <package name="com.stemu.psp.atmgdjh" disable="true" />
+  <package name="com.miui.gallery" disable="true" />
+  <package name="com.tencent.qqlive" disable="true" />
+  <package name="com.fenbi.android.servant" disable="true" />
+  <package name="cn.com.chsi.chsiapp" skipCompatMode="true" />
+  <package name="com.dongqiudi.news" allPortrait="true" />
+  <package name="com.campmobile.snowcamera" isScale="true" />
+  <package name="com.pfu.xxxxl.mi" disable="true" />
+  <package name="cn.wps.moffice_eng" disable="true" />
+  <package name="com.ylmf.androidclient" skipCompatMode="true" />
+  <package name="com.android.bankabc" relaunch="false" />
+  <package name="com.yzxx.hlncdz.mi" relaunch="false" />
+  <package name="com.kiteguard" relaunch="false" />
+  <package name="com.netease.mkey" relaunch="false" />
+  <package name="com.yinhai.xjzhrs" relaunch="false" />
+  <package name="com.jd.game.blockdaren.mi" relaunch="false" />
+  <package name="com.jd.game.mazedaren.mi" relaunch="false" />
+  <package name="com.lew.game.monster.mi" relaunch="false" />
+  <package name="com.wlqq4consignor" relaunch="false" />
+  <package name="com.shenzhen.vanke.vankeyi" relaunch="false" />
+  <package name="com.csii.bj.ui" relaunch="false" />
+  <package name="com.witgo.etc" relaunch="false" />
+  <package name="com.daojia.jz.app" relaunch="false" />
+  <package name="com.hfbank.mobile" relaunch="false" />
+  <package name="com.netease.sz.xxqa" relaunch="false" />
+  <package name="com.liveyap.timehut" relaunch="false" />
+  <package name="com.lws207lws" relaunch="false" />
+  <package name="cn.liuyanbing.surveyor" relaunch="false" />
+  <package name="com.lu.calendar" relaunch="false" />
+  <package name="com.bxkj.student" relaunch="false" />
+  <package name="com.guokr.mobile" relaunch="false" />
+  <package name="com.qianlima.yfb" relaunch="false" />
+  <package name="com.jf.lkrj" relaunch="false" />
+  <package name="com.crv.wanjia" relaunch="false" />
+  <package name="cc.quanbennovel" relaunch="false" />
+  <package name="com.rorally.wordtools" relaunch="false" />
+  <package name="com.toyota.ftmsApp" skipCompatMode="true" />
+  <package name="com.taoguba.app" relaunch="false" />
+  <package name="com.clipzz.media" relaunch="false" />
+  <package name="com.prompt.lines" relaunch="false" />
+  <package name="com.to8to.housekeeper" isScale="true" relaunch="false" skipCompatMode="true" />
+  <package name="com.qianbao.guanjia.mobile" relaunch="false" />
+  <package name="com.mostone.life" relaunch="false" />
+  <package name="com.caing.news" relaunch="false" />
+  <package name="com.tc.cm" relaunch="false" />
+  <package name="cn.beekee.zhongtong" relaunch="false" />
+  <package name="com.ywhy.wltnl.mi" relaunch="false" />
+  <package name="com.alltobid" relaunch="false" />
+  <package name="com.fy.bzzbc.mi" relaunch="false" />
+  <package name="com.outfit7.mytalkingtomfree" relaunch="false" />
+  <package name="com.sohu.inputmethod.sogou" relaunch="false" />
+  <package name="com.shixiseng.activity" relaunch="false" />
+  <package name="com.sevenVideo.app.android" relaunch="false" />
+  <package name="com.Antistress.wacky.jelly.mi" relaunch="false" />
+  <package name="com.honeymoon.stone.jean.poweredit" relaunch="false" />
+  <package name="com.powersi.zhrs" relaunch="false" />
+  <package name="com.mubu.app" disable="true" />
+  <package name="com.sflep.course" relaunch="false" />
+  <package name="com.lew.game.makepizza.mi" relaunch="false" />
+  <package name="com.youku.phone" disable="true" />
+  <package name="gmcc.g5" skipCompatMode="true" />
+  <package name="com.oupeng.mini.android" relaunch="false" />
+  <package name="com.ericsson.geely" relaunch="false" />
+  <package name="com.suixingpay.xinquickpay.app" relaunch="false" />
+  <package name="com.application.limits" relaunch="false" />
+  <package name="com.yixia.videoeditor" relaunch="false" />
+  <package name="com.miui.video" disable="true" />
+  <package name="com.yzxx.zqcdds.mi" relaunch="false" />
+  <package name="com.sinovatech.wdbbw.kidsplace" relaunch="false" skipCompatMode="true" />
+  <package name="com.app.shanghai.metro" skipCompatMode="true" />
+  <package name="com.yiche.price" skipCompatMode="true" />
+  <package name="com.wsecar.wsjc" relaunch="false" />
+  <package name="com.juzifenqi.app" relaunch="false" />
+  <package name="com.shenghuoquan" skipCompatMode="true" />
+  <package name="com.lemon.faceu" isScale="true" supportCameraPreview="true" />
+  <package name="com.cctv.cctv5ultimate" skipCompatMode="true" />
+  <package name="com.yibasan.lizhifm" relaunch="false" />
+  <package name="com.molink.john.hummingbird" relaunch="false" />
+  <package name="com.baidao.silver" relaunch="false" />
+  <package name="com.eno.xyzq.page" skipCompatMode="true" />
+  <package name="com.coolapps.doutu" relaunch="false" />
+  <package name="com.chebada" relaunch="false" />
+  <package name="com.hnr.dxxw" disable="true" />
+  <package name="com.fy.wdnc.mi" isScale="true" minSupportVersion="1:20230522" />
+  <package name="com.hoperun.intelligenceportal" relaunch="false" />
+  <package name="com.woobest.sgwg.mi" disable="true" />
+  <package name="com.f1player" skipCompatMode="true" />
+  <package name="com.jeejen.family" disable="true" />
+  <package name="com.telecom.video" disable="true" />
+  <package name="com.yzxx.jsxsdbz.mi" disable="true" />
+  <package name="com.dreamgame.fruitbubble.mi" disable="true" />
+  <package name="com.gamejoy.game.onetfruit" />
+  <package name="com.kaola" disable="true" />
+  <package name="com.yzxx.bwhhdzz.mi" disable="true" />
+  <package name="com.ywhy.zjwzc.mi" disable="true" />
+  <package name="com.qyz.fengshuicompass" disable="true" />
+  <package name="com.chinarainbow.tft" disable="true" />
+  <package name="com.yzxx.zdxsjjrw.mi" disable="true" />
+  <package name="com.aoyou.victory_android" disable="true" />
+  <package name="com.lew.game.danceball.mi" disable="true" />
+  <package name="com.changan.scrm" disable="true" />
+  <package name="com.bcxgame.lw.superclass.app.mi" disable="true" />
+  <package name="com.gryphpoem.civilization.mi" disable="true" />
+  <package name="com.wta.NewCloudApp.jiuwei80437" disable="true" />
+  <package name="com.sihai.lianxianlaile.mi" disable="true" />
+  <package name="com.generalcomp.batian" relaunch="false" />
+  <package name="com.lew.game.pianoblock.mi" relaunch="false" />
+  <package name="com.jd.game.piperoll.mi" relaunch="false" />
+  <package name="com.julanling.workschedule" relaunch="false" />
+  <package name="com.kibey.prophecy" relaunch="false" />
+  <package name="com.wanbangauto.chargepile" relaunch="false" />
+  <package name="com.yzxx.hcxssfr.mi" relaunch="false" />
+  <package name="com.ky.game.rocket.mi" relaunch="false" />
+  <package name="cn.dongguanbank.mbank.prd" relaunch="false" />
+  <package name="com.tian.phonebak" relaunch="false" />
+  <package name="com.qdccb.bank" disable="true" />
+  <package name="com.dream.daanjun" relaunch="false" />
+  <package name="com.people.health.doctor" relaunch="false" />
+  <package name="com.hfgdjt.hfmetro" relaunch="false" />
+  <package name="com.tenda.router.app" disable="true" />
+  <package name="com.yzxx.hgmxyj.mi" relaunch="false" />
+  <package name="com.fy.gyws.mi" relaunch="false" />
+  <package name="com.zcool.community" relaunch="false" />
+  <package name="com.ncarzone.tmyc" relaunch="false" />
+  <package name="com.zhuoqu.tiantianxiaoxingxing.mi" relaunch="false" />
+  <package name="cderg.cocc.cocc_cdids" relaunch="false" />
+  <package name="com.gzbank.mbank.externalpk" relaunch="false" />
+  <package name="com.mszmapp.detective" supportCameraPreview="false" />
+  <package name="com.brianbaek.popstar" />
+  <package name="com.gorgeous.lite" isScale="true" />
+  <package name="com.boohee.one" relaunch="false" supportCameraPreview="false"
+      forcePortraitActivity="com.boohee.one/.app.tools.food.ui.activity.CameraCommonActivity" />
+  <package name="com.yiruike.sodacn.android" disable="true" />
+  <package name="com.yunxiao.haofenshu" relaunch="false" />
+  <package name="com.outfit7.talkingtom2free" isScale="true" />
+  <package name="com.hichip.campro" skipCompatMode="true" />
+  <package name="com.devuni.flashlight" relaunch="false" />
+  <package name="com.blink.academy.nomo" isScale="true" skipCompatMode="true" />
+  <package name="com.yzxx.wqzzmnsj.mi" relaunch="false" />
+  <package name="com.csii.mobile.iap.bodl" disable="true" />
+  <package name="com.baihe" relaunch="false" skipCompatMode="true" isScale="true" />
+  <package name="com.anshibo.activity" relaunch="false" />
+  <package name="com.yzxx.jjlsj.mi" relaunch="false" />
+  <package name="com.pptiku.kaoshitiku" relaunch="false" />
+  <package name="com.liuniantech.fenshen123" relaunch="false" />
+  <package name="com.jlmobile" disable="true" />
+  <package name="com.izaodao.gps" relaunch="false" />
+  <package name="com.entgroup" disable="true" />
+  <package name="cn.gov.chinatax.jiangsu.etax.app" relaunch="false" />
+  <package name="com.yt.sz.szbank" relaunch="false" />
+  <package name="com.cmb.ubank.UBUI" disable="true" />
+  <package name="com.zhongan.insurance" disable="true" />
+  <package name="com.yzxx.kkcbf.mi" relaunch="false" />
+  <package name="com.csii.jiangnan" disable="true" />
+  <package name="com.nicomama.niangaomama" relaunch="false" />
+  <package name="com.jzbank" disable="true" />
+  <package name="com.cijianlink.cjlk" relaunch="false" />
+  <package name="com.ywhy.hgqqbht.mi" relaunch="false" />
+  <package name="com.boc.bocsoft.phone.enterprise" disable="true" />
+  <package name="com.fy.yxxfd.mi" relaunch="false" />
+  <package name="com.xplaygame.zhijianjiezousand.mi" relaunch="false" />
+  <package name="com.forms" relaunch="false" skipCompatMode="true" />
+  <package name="com.hzpd.zqzx" relaunch="false" skipCompatMode="true" />
+  <package name="com.aswn.weizhang" skipCompatMode="true" />
+  <package name="com.yzxx.rzxswd.mi" relaunch="false" />
+  <package name="com.jifen.qukan" relaunch="false" />
+  <package name="com.banciyuan.bcywebview" relaunch="false" />
+  <package name="com.tencent.cmocmna" relaunch="false" />
+  <package name="csii.com.qny" relaunch="false" />
+  <package name="com.alibaba.wireless" isScale="true" />
+  <package name="com.miui.greenguard" disable="true" skipCompatMode="true" />
+  <package name="com.zy.game.psdc.mi" relaunch="false" />
+  <package name="com.netease.cc" relaunch="false" />
+  <package name="com.kugou.shiqutouch" relaunch="false" />
+  <package name="com.fileunzip.zxwknight" relaunch="false" />
+  <package name="com.tencent.gallerymanager" relaunch="false" />
+  <package name="com.klcxkj.zqxy" relaunch="false" />
+  <package name="im.yixin" relaunch="false" />
+  <package name="com.careate.qyi" relaunch="false" />
+  <package name="com.motoband" relaunch="false" />
+  <package name="com.pfu.popstar" relaunch="false" />
+  <package name="com.fengwo.reading" relaunch="false" />
+  <package name="com.cntaiping.tpapp" relaunch="false" />
+  <package name="com.ccbhome.lanhai" relaunch="false" />
+  <package name="com.sfpay.mobile" relaunch="false" />
+  <package name="com.zsyj.trans" relaunch="false" />
+  <package name="cn.unipus.itest.student" skipCompatMode="true" />
+  <package name="cn.com.yunma.school.app" relaunch="false" />
+  <package name="com.StefMorojna.SpaceflightSimulator.mt" disable="true" />
+  <package name="com.xueqiu.android" relaunch="false" />
+  <package name="com.xingjiabi.shengsheng" relaunch="false" />
+  <package name="com.jk.cutout.application" relaunch="false" />
+  <package name="com.safeluck.life" relaunch="false" />
+  <package name="com.lokinfo.android.gamemarket.mmshow" relaunch="false" />
+  <package name="com.cdvcloud.qicaiyun" relaunch="false" />
+  <package name="com.jinglan.yaowang" relaunch="false" />
+  <package name="com.fec.runonce" disable="true" />
+  <package name="com.max.xiaoheihe" relaunch="false" />
+  <package name="com.goodtech.tq" relaunch="false" />
+  <package name="com.wodidashi.paint" relaunch="false" skipCompatMode="true" />
+  <package name="com.csii.jsh.ui" disable="true" />
+  <package name="com.huishuaka.fangdai" relaunch="false" />
+  <package name="reader.com.xmly.xmlyreader" relaunch="false" />
+  <package name="com.yaerxing.fkst" disable="true" />
+  <package name="com.eusoft.eudic" disable="true" />
+  <package name="com.hp.printercontrol" disable="true" />
+  <package name="com.wedobest.fivechess.mi" />
+  <package name="com.tianqi2345" relaunch="false" />
+  <package name="com.lightboat.wlmshop.android.mi" disable="true" />
+  <package name="com.kuaikan.comic" relaunch="false" />
+  <package name="com.lvsongguo" relaunch="false" />
+  <package name="com.scanner.discount" relaunch="false" />
+  <package name="cn.bevol.p" relaunch="false" />
+  <package name="com.tencent.gamehelper.dnf" relaunch="false" />
+  <package name="com.yzxx.fkzgz.mi" relaunch="false" />
+  <package name="com.imangi.templerun2" disable="true" />
+  <package name="com.hnzh.dldlwhjx.mi" disable="true" />
+  <package name="com.tencent.mm" disable="true" />
+  <package name="com.cmplay.tiles2_cn_new.mi" disable="true" />
+  <package name="com.cubic.choosecar" relaunch="false" />
+  <package name="com.gaotu100.superclass" relaunch="false" />
+  <package name="com.shuiyinbao.android" relaunch="false" />
+  <package name="com.doc360.client" relaunch="false" />
+  <package name="com.orangestudio.sudoku" disable="true" />
+  <package name="com.werf.dfjew" relaunch="false" />
+  <package name="com.sankuai.meituan.meituanwaimaibusiness" isScale="true" minSupportVersion="1:20230522" />
+  <package name="com.buli" disable="true" />
+  <package name="com.microsoft.office.officehub" disable="true" />
+  <package name="com.microsoft.office.onenote" disable="true" />
+  <package name="com.tuniu.app.ui" disable="true" />
+  <package name="com.shangfang.gylm" allPortrait="true" />
+  <package name="com.bank" disable="true" />
+  <package name="cn.com.cmbc.newmbank" disable="true" />
+  <package name="com.ydtx.camera" disable="true" />
+  <package name="cn.zepeto.main" skipCompatMode="true" />
+  <package name="com.easygame2022.sheepmatchcn.mi" relaunch="false" />
+  <package name="jianghu.lanjing.com.mi" disable="true" />
+  <package name="com.suirui.zhumu" isScale="true" />
+  <package name="com.jsfc.beicidaren" disable="true" />
+  <package name="com.umpay.qingdaonfc" disable="true" />
+  <package name="com.cd.eate.ktv" disable="true" />
+  <package name="com.bluedancer.bluedancer" disable="true" />
+  <package name="com.xnhd.apkhjkgsrb.mi" disable="true" />
+  <package name="com.xiaomi.shop" disable="true" />
+  <package name="com.xiaomi.youpin" disable="true" />
+  <package name="com.fenbi.android.zenglish" relaunch="false" skipCompatMode="true" />
+  <package name="com.sdu.didi.psnger" skipCompatMode="true" />
+  <package name="com.miui.mediaeditor" disable="true" />
+  <package name="com.yzxx.hjtszz.mi" disable="true" />
+  <package name="com.tsingzone.questionban" relaunch="false" />
+  <package name="com.soufun.app" relaunch="false" />
+  <package name="com.yzxx.bttp2.mi" disable="true" />
+  <package name="com.alicloud.databox" disable="true" />
+  <package name="com.android.quicksearchbox" disable="true" />
+  <package name="com.chinamworld.bocmbci" />
+  <package name="com.facebook.katana" relaunch="false" />
+  <package name="com.baidu.homework" disable="true" />
+  <package name="com.qiyi.video" allPortrait="true" />
+  <package name="com.hypergryph.arknights" disable="true" />
+  <package name="com.microsoft.emmx" disable="true" />
+  <package name="com.pingan.carowner" allPortrait="true" />
+  <package name="com.baijia.live" disable="true" />
+  <package name="com.elite.upgraded" disable="true" />
+  <package name="com.miui.notes" disable="true" />
+  <package name="com.tongcheng.android" skipCompatMode="true" />
+  <package name="com.twitter.android" disable="true" />
+  <package name="com.ebnews" relaunch="false" />
+  <package name="com.dygame.hyqs.mi" disable="true" />
+  <package name="com.icbc" relaunch="false" />
+  <package name="com.deerplay.appraisal" relaunch="false" />
+  <package name="com.yunbu.puppyblast.m1.mi" disable="true" />
+  <package name="com.xiaomi.smarthome" disable="true" />
+  <package name="com.jd.jdlite" relaunch="false" />
+  <package name="com.sankuai.youxuan" isScale="true" minSupportVersion="1:20230522" />
+  <package name="com.ataaw.tianyi" disable="true" />
+  <package name="com.didapinche.booking" skipCompatMode="true" />
+  <package name="com.miui.weather2" disable="true" />
+  <package name="com.duokan.reader" disable="true" />
+  <package name="com.netease.uu" disable="true" />
+  <package name="com.cib.cibmb" disable="true" />
+  <package name="com.miui.mediaviewer" disable="true" />
+  <package name="com.tencent.jkchess" disable="true" />
+  <package name="com.ikongjian.decoration" skipCompatMode="true" />
+  <package name="tv.danmaku.bilibilihd" disable="true" />
+  <package name="com.jingyao.easybike" relaunch="false" />
+  <package name="com.ss.android.lark" disable="true" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.kami" disable="true" isShowDivider="true" supportFullSize="true" />
+  <package name="cn.myhug.tiaoyin" disable="true" />
+  <package name="com.zhugezhaofang" skipCompatMode="true" />
+  <package name="com.cn21.ecloud" skipCompatMode="true" />
+  <package name="com.microsoft.teams" disable="true" />
+  <package name="jp.naver.line.android" disable="true" />
+  <package name="com.facebook.orca" disable="true" />
+  <package name="in.startv.hotstar.dplus" disable="true" />
+  <package name="com.skype.raider" disable="true" />
+  <package name="us.zoom.videomeetings" disable="true" />
+  <package name="com.microsoft.office.officehubrow" disable="true" />
+  <package name="com.miui.calculator" disable="true" />
+  <package name="com.baidu.input_mi" skipCompatMode="true"
+      forcePortraitActivity="com.baidu.input_mi/com.baidu.input_mi.ImeUserExperienceActivity,com.baidu.input_mi/com.baidu.input.ImeSubConfigActivity" />
+  <package name="com.outfit7.talkingtomgoldrun.mi" disable="true" />
+  <package name="com.zhiliaoapp.musically" isScale="true" />
+  <package name="com.picsart.studio" allPortrait="true" />
+  <package name="com.myntra.android" skipCompatMode="true" />
+  <package name="com.sina.weibo" allowEmbInPortrait="false" disable="true" isShowDivider="true" />
+  <package name="com.dw.xprqj.mi" disable="true" />
+  <package name="com.mxtech.videoplayer.ad" disable="true" />
+  <package name="com.xiaomi.gamecenter" disable="true" />
+  <package name="ru.mail.mailapp" relaunch="false" />
+  <package name="com.playgame.havefun.mi" relaunch="false" />
+  <package name="com.playgame.havefun" relaunch="false" />
+  <package name="com.dw.wxpk.mi" relaunch="false" />
+  <package name="com.fy.wdxd.mi" relaunch="false" />
+  <package name="com.ruanmei.ithome" allowEmbInPortrait="false" disable="true" isShowDivider="true"
+      supportFullSize="true" />
+  <package name="com.douban.frodo" allowEmbInPortrait="false" disable="true" isShowDivider="true" />
+  <package name="com.qidian.QDReader" allowEmbInPortrait="false" disable="true" isShowDivider="true"
+      supportFullSize="true" />
+  <package name="com.android.dazhihui" isShowDivider="true" supportFullSize="true" />
+  <package name="ru.ritmmedia.yappy" relaunch="false" />
+  <package name="com.Qunar" isShowDivider="true" supportFullSize="true" allowEmbInPortrait="false" />
+  <package name="com.ishowedu.child.peiyin" disable="true" />
+  <package name="com.chinamworld.main" isScale="true" />
+  <package name="com.meta.box" isScale="true" />
+  <package name="com.happyelements.AndroidAnimal" isScale="true" />
+  <package name="com.netease.mc.mi" isScale="true" />
+  <package name="com.tencent.qqgame.xq" isScale="true" />
+  <package name="com.yzxx.qmssyj.mi" isScale="true" />
+  <package name="com.dw.jjbb.mi" isScale="true" />
+  <package name="com.bjetc.mobile" relaunch="false" />
+  <package name="com.hegsyz.qqyx.mi" isScale="true" />
+  <package name="com.fy.zdxs.mi" isScale="true" />
+  <package name="cn.coldlake.stellarmobile" relaunch="false" />
+  <package name="com.xplaygame.mfbwz.mi" isScale="true" />
+  <package name="game.miplus.handwriting" isScale="true" />
+  <package name="com.study.adulttest" isScale="true" />
+  <package name="com.ruozhuo.jqb" relaunch="false" />
+  <package name="com.knowbox.rc.student.pk" isScale="true" />
+  <package name="com.facebook.lite" isScale="true" />
+  <package name="com.tencent.weread" disable="true" />
+  <package name="com.xingin.xhs" disable="true" />
+  <package name="com.miui.fm" disable="true" />
+  <package name="com.jqz.media" relaunch="false" />
+  <package name="com.ks.jyzxs.mi" isScale="true" />
+  <package name="com.jdd.motorfans" relaunch="false" supportCameraPreview="false" />
+  <package name="com.eastmoney.android.fund" isScale="true" />
+  <package name="com.vnision.inch" relaunch="false" />
+  <package name="cn.cntvnews" isScale="true" />
+  <package name="com.tencent.peng" isScale="true" />
+  <package name="com.pplive.androidphone" relaunch="false" />
+  <package name="com.zmzx.college.search" relaunch="false" isScale="true" />
+  <package name="com.cqwx.tyt.mi" isScale="true" />
+  <package name="com.xd.mnccc.mi" relaunch="false" />
+  <package name="com.onekeybeautify.picture" relaunch="false" />
+  <package name="com.daimajia.gold" relaunch="false" />
+  <package name="com.xj.article" relaunch="false" />
+  <package name="com.whj.app.stavemaster" relaunch="false" />
+  <package name="com.renyouwangluo.csxdr.mi" isScale="true" />
+  <package name="com.mcdonalds.gma.cn" isScale="true" />
+  <package name="com.dw.jlds.mi" relaunch="false" />
+  <package name="com.lsa17see.ali" relaunch="false" />
+  <package name="com.microsoft.skydrive" disable="true" />
+  <package name="com.papegames.evol.mi" />
+  <package name="cn.com.youda.youdajp" relaunch="false" />
+  <package name="com.tencent.zebra" disable="true" />
+  <package name="com.huawei.health" relaunch="false" />
+  <package name="com.ultron.crimaster" isScale="true" />
+  <package name="com.duwo.reading" disable="true" />
+  <package name="com.unionpay" relaunch="false" />
+  <package name="com.sinovatech.unicom.ui" relaunch="false" />
+  <package name="com.popcap.pvz2cthdxm" disable="true" />
+  <package name="com.cat.readall" isScale="true" />
+  <package name="com.xyhj.hanju" isScale="true" />
+  <package name="cn.readpad.whiteboard" disable="true" />
+  <package name="com.cqwx.jdelsfk.mi" isScale="true" />
+  <package name="com.tencent.edu" disable="true" />
+  <package name="com.gstarmc.android" disable="true" />
+  <package name="com.qb.qtranslator" relaunch="false" />
+  <package name="com.dw.btime" isScale="true" />
+  <package name="com.jyhy.dakaxiu" relaunch="false" />
+  <package name="com.giant.newconcept" relaunch="false" />
+  <package name="com.iflyrec.tingshuo" isScale="true" />
+  <package name="com.shuwei.sscm" relaunch="false" />
+  <package name="com.ss.android.ugc.live" disable="true" />
+  <package name="vStudio.Android.Camera360" disable="true" />
+  <package name="org.telegram.messenger" disable="true" />
+  <package name="com.lemon.lvoverseas" disable="true" />
+  <package name="com.mt.mtxx.mtxx" allPortrait="true" skipCompatMode="true" />
+  <package name="com.instagram.android" relaunch="false" />
+  <package name="com.ls.tyt.mi" isScale="true" />
+  <package name="com.coolapk.market" isShowDivider="true" disable="true" />
+  <package name="com.microsoft.office.outlook" disable="true" />
+  <package name="com.alibaba.aliexpresshd" isScale="true" />
+  <package name="com.maimemo.android.momo" disable="true" />
+  <package name="com.ouna.app.client" isScale="true" relaunch="false" />
+  <package name="com.qqgame.hlddz" disable="true" />
+  <package name="com.qqgame.happymj" disable="true" />
+  <package name="com.plan.kot32.tomatotime" disable="true" />
+  <package name="com.lanjiyin.lanjiyin" disable="true" />
+  <package name="com.xiaomi.vipaccount" disable="true" />
+  <package name="com.netflix.mediaclient" disable="true" />
+  <package name="com.eusoft.ting.en" disable="true" />
+  <package name="com.ss.android.article.video" disable="true" />
+  <package name="com.coupang.mobile" relaunch="false" />
+  <package name="com.touchtv.sihui" relaunch="false" />
+  <package name="com.able.wisdomtree" relaunch="false" />
+  <package name="com.youloft.icloser" relaunch="false" />
+  <package name="me.yoopu.app.songbook" relaunch="false" />
+  <package name="com.zhumaonline.exercise" disable="true" />
+  <package name="com.yinxiang" disable="true" />
+  <package name="com.huabenapp" isScale="true" relaunch="false" />
+  <package name="cn.qiaolatech.huihua" relaunch="false" />
+  <package name="com.zuoyebang.airclass" disable="true" />
+  <package name="com.fenbi.android.leo" isShowDivider="true" disable="true" />
+  <package name="com.ymtx.hgdxg.mi" skipCompatMode="true" />
+  <package name="com.mwkj.zgxqfyzz.mi" relaunch="false" />
+  <package name="com.taobao.etao" skipCompatMode="true"
+      forcePortraitActivity="com.taobao.etao/com.taobao.sns.app.scan.NewScanActivity" supportCameraPreview="false" />
+  <package name="com.sohu.sohuvideo" disable="true" />
+  <package name="me.ele" allowEmbInPortrait="false" />
+  <package name="com.ribencun.JapanVillage" relaunch="false" />
+  <package name="cn.luyiyuntech.daka" relaunch="false" />
+  <package name="com.zwhaoshangliang.android" relaunch="false" />
+  <package name="com.yxhc.djxq.mi" relaunch="false" />
+  <package name="com.shangxueba.open.sxb" relaunch="false" />
+  <package name="com.MobileTicket" allowEmbInPortrait="false" />
+  <package name="com.radical.huangshangjixiang.mi" disable="true" />
+  <package name="com.xmb.scanner" relaunch="false" />
+  <package name="com.zt.lhyx.mi" disable="true" />
+  <package name="com.psd.live" relaunch="false" skipCompatMode="true" />
+  <package name="com.sohu.sohuvideo" disable="true" />
+  <package name="com.tal.tiku" relaunch="false" />
+  <package name="com.lbe.security.miui" disable="true" />
+  <package name="com.dedao.juvenile" relaunch="false" />
+  <package name="com.maijun.voiceim" isScale="true" />
+  <package name="com.iflytek.inputmethods.DungkarIME" isScale="true" />
+  <package name="com.cerdillac.proccd.cn" disable="true" />
+</package_config>
