@@ -111,7 +111,12 @@ function copyEmbeddedRuleListToSystem() {
 /**
  * 混入Android 12L 起的修正方向位置的配置
  */
-function copyFixedOrientationToSystem() {
+function copyFixedOrientationListToCommon() {
+  return src(`${tempDir}/fixed_orientation_list.xml`)
+    .pipe(dest(`${commonDist}/product/etc/`))
+}
+
+function copyFixedOrientationListToSystem() {
   return src(`${tempDir}/fixed_orientation_list.xml`)
     .pipe(dest(`${systemDist}/product/etc/`))
 }
@@ -119,4 +124,4 @@ function copyFixedOrientationToSystem() {
 
 
 
-module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig), copyOriginEmbeddedRuleListToCommon, copyEmbeddedRuleListToCommon, copyEmbeddedRuleListToSystem,copyFixedOrientationToSystem), cleanTemp)
+module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig), copyOriginEmbeddedRuleListToCommon, copyEmbeddedRuleListToCommon, copyEmbeddedRuleListToSystem,copyFixedOrientationListToCommon,copyFixedOrientationListToSystem), cleanTemp)
