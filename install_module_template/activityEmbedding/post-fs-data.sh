@@ -36,13 +36,11 @@ chmod 666 /product/etc/fixed_orientation_list.xml
 chown root:root /product/etc/fixed_orientation_list.xml
 chmod 666 /data/system/cloudFeature_fixed_orientation_list.xml
 chown root:root /data/system/cloudFeature_fixed_orientation_list.xml
-
 mv $MODDIR/common/product/etc/fixed_orientation_list.xml /product/etc/fixed_orientation_list.xml
 cp -l $MODDIR/product/etc/fixed_orientation_list.xml $MODDIR/common/product/etc/fixed_orientation_list.xml
 rm /data/system/cloudFeature_fixed_orientation_list.xml 
-mv $MODDIR/common/product/etc/embedded_rules_list.xml /data/system/cloudFeature_embedded_rules_list.xml
-cp -l $MODDIR/product/etc/embedded_rules_list.xml $MODDIR/common/product/etc/embedded_rules_list.xml
-
+mv $MODDIR/common/product/etc/fixed_orientation_list.xml /data/system/cloudFeature_fixed_orientation_list.xml
+cp -l $MODDIR/product/etc/fixed_orientation_list.xml $MODDIR/common/product/etc/fixed_orientation_list.xml
 
 
 # Disable Cloud Feature
@@ -50,11 +48,17 @@ chmod 440 /product/etc/embedded_rules_list.xml
 chown system /product/etc/embedded_rules_list.xml
 chmod 440 /data/system/cloudFeature_embedded_rules_list.xml
 chown system /data/system/cloudFeature_embedded_rules_list.xml
+# Disable Cloud Feature FixedOrientation By:@做梦书
+chmod 440 /product/etc/fixed_orientation_list.xml
+chown system /product/etc/fixed_orientation_list.xml
+chmod 440 /data/system/cloudFeature_fixed_orientation_list.xml
+chown system /data/system/cloudFeature_fixed_orientation_list.xml
 # chmod 440 /data/system/users/0/embedded_setting_config.xml
 # chown system /data/system/users/0/embedded_setting_config.xml
 
 # chattr +i /data/system/cloudFeature_embedded_rules_list.xml
 # chattr +i /product/etc/embedded_rules_list.xml
 # chattr +i /data/system/users/0/embedded_setting_config.xml
+
 # 这个脚本将以 post-fs-data 模式执行
 # 更多信息请访问 Magisk 主题
