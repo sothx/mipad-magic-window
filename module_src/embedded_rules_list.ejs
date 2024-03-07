@@ -6926,7 +6926,7 @@
   <%_ if (['fold'].includes(platform)) { _%>
   <package name="com.sina.weibo" activityRule="com.sina.weibo.story.publisher.activity.StorySendActivity,com.sina.weibo.feed.detail.composer.ComposerActivity,com.sina.weibo.photoalbum.imageviewer.ImageViewer" isShowDivider="true" splitPairRule="com.sina.weibo.VisitorMainTabActivity:com.sina.weibo.MainTabActivity:0:0,com.sina.weibo.MainTabActivity:*,com.sina.weibo.VisitorMainTabActivity:*,com.sina.weibo.page.SearchResultActivity:*" transitionRules="com.sina.weibo.page.SuperPageActivity,com.sina.weibo.composerinde.ComposerDispatchActivity,com.sina.weibo.OpenProductAppActivity,com.sina.weibo.video.recommend.DispatchActivity" />
   <%_ } else { _%>
-  <package name="com.sina.weibo" activityRule="com.sina.weibo.MainTabActivity,com.sina.weibo.SplashActivity,com.sina.weibo.mobileads.view.c" splitRatio="0.3" isShowDivider="true" splitPairRule="com.sina.weibo.MainTabActivity:*,com.sina.weibo.page.searchv2.SearchActivityV2:*,com.sina.weibo.page.ProfileInfoActivity:*,com.sina.weibo.page.SearchResultActivity:*,com.sina.weibo.supergroup.SGPageActivity:*" transitionRules="com.sina.weibo.MainTabActivity,com.sina.weibo.SplashActivity,com.sina.weibo.mobileads.view.c" />
+    <package name="com.sina.weibo" fullRule="nra:cr:rcr:nr" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <!-- Adaptive For System Fix -->
   <package name="com.zui.browser" fullRule="nra:cr:rcr:nr" />
