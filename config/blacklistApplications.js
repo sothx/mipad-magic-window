@@ -27,4 +27,5 @@ module.exports = {
   'com.zui.calculator': true, // ZUI计算器
   'com.jd.app.reader': true, // 京东读书
   'com.huajiao': true, // 花椒直播
+  'com.youku.phone': true, // 优酷视频
 }
