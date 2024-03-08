@@ -20,6 +20,10 @@
 
 版本仅适用于安卓11的MIUI For Pad，基于MIUI老版魔窗逻辑进行适配，模块安装包格式为pad-magicWindow-x.xx.xx.zip。
 
+[小米平板5系列澎湃专版]
+
+版本适用于所有小米没给下放左右滑动条平行视界的应用，例如小米平板5系列的澎湃OS，模块安装包格式为pad-not_supported_show_divider--x.xx.xx.zip。
+
 [基于小米平板6 Max 下MIUI 14 For Pad的移植包专版]
 
 该版本仅适用于当前系统为MIUI14 For Pad，且是基于小米平板6 Max系统ROM制作的移植包，模块安装包格式为transplant-x.xx.xx.zip
@@ -28,6 +32,13 @@
 
 6 Max 移植包专版会随着时间推移逐渐停更，目前暂无停更计划。
 
+[卸载模块]
+
+uninstall-pad-0.00.00.zip——安卓12L以上版本小米平板模块适用
+
+uninstall-pad-magicWindow-0.00.00——安卓11版本小米平板模块适用
+
+uninstall-fold-0.00.00.zip——Mix Fold系列折叠屏适用
 
 ## 快速开发指南
 项目脚手架基于Gulp工作流，需要依赖Gulp-Cli，可以通过以下方式进行安装：
