@@ -1,7 +1,8 @@
 /**
  * 已适配横屏的应用，没必要为他二次适配平行视界，任何情况下混入规则均需要移除以下应用的横屏适配
  */
-module.exports = {
+
+const fullScreenList = {
   'com.taobao.taobao': true, // 淘宝
   'com.tencent.wework': true, // 企业微信
   'com.taobao.trip': true, // 飞猪
@@ -28,4 +29,22 @@ module.exports = {
   'com.jd.app.reader': true, // 京东读书
   'com.huajiao': true, // 花椒直播
   'com.youku.phone': true, // 优酷视频
+}
+
+/**
+ * 无法适配平行视界，但是对其做了横屏优化的应用
+ */
+
+const fixedOrientationList = {
+  'com.santi.sinology': true, // 国学启蒙古诗词典
+  'com.xifeng.fun': true, // OmoFun
+  'com.viva.note': true, // 囧次元
+  'com.mxbc.mxsa': true, // 蜜雪冰城
+  'com.ingka.ikea.app.cn.prod': true, // 宜家家居
+  'com.vpapps.hdwallpaper.xyz': true, // 小柚子
+}
+
+module.exports = {
+  ...fullScreenList,
+  ...fixedOrientationList,
 }

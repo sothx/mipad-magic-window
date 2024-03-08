@@ -1,833 +1,1708 @@
-  <package name="com.dragon.android.pandaspace"/>
-  <package name="com.tencent.powermanager"/>
-  <package name="com.android.chrome"/>
-  <package name="com.ijinshan.kbatterydoctor"/>
-  <package name="com.android.easou.easousearch"/>
-  <package name="com.esvideo"/>
-  <package name="com.snda.youni"/>
-  <package name="cn.wps.moffice_eng"/>
-  <package name="com.eshore.ezone"/>
-  <package name="com.nd.android.pandahome2"/>
-  <package name="com.funcity.taxi.passenger"/>
-  <package name="com.qihoo360.mobilesafe_mtk6573"/>
-  <package name="com.qihoo.antivirus"/>
-  <package name="com.ijinshan.mguard"/>
-  <package name="com.anguanjia.safe"/>
-  <package name="com.anyisheng.doctoran"/>
-  <package name="com.nqmobile.antivirus20"/>
-  <package name="kvpioneer.cmcc"/>
-  <package name="com.kindroid.security"/>
-  <package name="com.yy.android.udbsec"/>
-  <package name="project.rising"/>
-  <package name="com.zrgiu.antivirus"/>
-  <package name="com.symantec.mobilesecurity"/>
-  <package name="com.mobileann.MobileAnn"/>
-  <package name="com.suning.phonesecurity"/>
-  <package name="com.antivirus"/>
-  <package name="com.tdx.safe"/>
-  <package name="com.netqin.mobileguard"/>
-  <package name="com.ijinshan.duba"/>
-  <package name="com.baidu.passport.securitycenter"/>
-  <package name="com.wandoujia.phoenix2.usbproxy"/>
-  <package name="com.weather"/>
-  <package name="com.android.vending"/>
-  <package name="com.mumayi.market.ui"/>
-  <package name="com.nduoa.market"/>
-  <package name="com.eoemobile.netmarket"/>
-  <package name="com.netease.apper"/>
-  <package name="com.mappn.gfan"/>
-  <package name="com.anzhuocom.market"/>
-  <package name="com.jiubang.market"/>
-  <package name="www3gyu.com"/>
-  <package name="com.uucun1622.android.cms"/>
-  <package name="oms.danle"/>
-  <package name="com.dragon.android.pandaspace.pad"/>
-  <package name="com.liqucn.android"/>
-  <package name="com.angeeks.market"/>
-  <package name="com.sec.android.app.samsungapps"/>
-  <package name="cn.cst.apps.android"/>
-  <package name="com.suning.market"/>
-  <package name="com.banma.market"/>
-  <package name="com.newpower"/>
-  <package name="com.infinit.wostore.ui"/>
-  <package name="com.kaiqi"/>
-  <package name="cn.com.zol.market"/>
-  <package name="com.sohu.android.market"/>
-  <package name="com.doudouyou.client"/>
-  <package name="com.baoruan.appstore"/>
-  <package name="com.uucun838.android.cms"/>
-  <package name="com.feiliu"/>
-  <package name="com.apkok.gmarket"/>
-  <package name="com.amazon.venezia"/>
-  <package name="com.appsfire.appsfire"/>
-  <package name="com.mumayi.market3g.ui"/>
-  <package name="com.mooyy"/>
-  <package name="com.anshouji.market.enduser"/>
-  <package name="com.lexteltech.mon"/>
-  <package name="com.bzh.market.ui"/>
-  <package name="com.bodong.coolplay"/>
-  <package name="cn.ninegame.gamemanagerhd"/>
-  <package name="com.paojiao.gamecenter"/>
-  <package name="cn.ninegame.gamemanager.yz"/>
-  <package name="com.socogame.ppc"/>
-  <package name="cn.mbga.portal"/>
-  <package name="com.shendu.gamecenter"/>
-  <package name="com.jr.gamecenter"/>
-  <package name="app.ucgame.cn"/>
-  <package name="com.feiliu.gamecenter"/>
-  <package name="com.sogou.gamemall"/>
-  <package name="com.example.lanyou"/>
-  <package name="com.lokinfo.android.gamemarket"/>
-  <package name="com.viaplay.ime"/>
-  <package name="com.sohu.gamecenter"/>
-  <package name="com.androidemu.leo"/>
-  <package name="com.baozigames.gamecenter"/>
-  <package name="com.baoruan.lewan"/>
-  <package name="com.cooee.gamecenter"/>
-  <package name="com.nd.gamecenter91"/>
-  <package name="com.tencent.gameCenter"/>
-  <package name="com.ssjj.gamecenter"/>
-  <package name="com.sohu.store"/>
-  <package name="com.yulong.android.coolmart"/>
-  <package name="cn.com.vapk.vstore.client"/>
-  <package name="zte.com.market"/>
-  <package name="com.letv.tvos.appstore"/>
-  <package name="com.wcx.nfc_reader"/>
-  <package name="com.suning.markethd"/>
-  <package name="com.market"/>
-  <package name="com.crossmo.mobile.appstore"/>
-  <package name="cn.gamedog.market"/>
-  <package name="cn.ggg.market"/>
-  <package name="com.zdqk.sinacard"/>
-  <package name="com.skymobi.appstore"/>
-  <package name="com.muzhiwan.market.hd"/>
-  <package name="com.xunlei.appmarket"/>
-  <package name="com.idiantech.kuaihuwifi"/>
-  <package name="com.aimi.appstore"/>
-  <package name="com.hulu.market"/>
-  <package name="com.chinaway.android.appmarket"/>
-  <package name="com.sogou.wallpaper"/>
-  <package name="com.zuimeia.suite.lockscreen"/>
-  <package name="com.ijinshan.browser"/>
-  <package name="com.duomi.android"/>
-  <package name="com.baidu.baidufm"/>
-  <package name="com.yk.mhb"/>
-  <package name="com.autonavi.xmgd.navigator"/>
-  <package name="com.sportqsns"/>
-  <package name="cn.com.fetion"/>
-  <package name="com.bilin.huijiao.activity"/>
-  <package name="com.tencent.qq.kddi"/>
-  <package name="com.skype.raider"/>
-  <package name="net.icycloud.fdtodolist"/>
-  <package name="com.dayima"/>
-  <package name="com.ts.zys"/>
-  <package name="com.medapp.all"/>
-  <package name="com.medapp"/>
-  <package name="com.medapp.man"/>
-  <package name="com.sz.order"/>
-  <package name="com.tenpay.android"/>
-  <package name="lthj.exchangestock"/>
-  <package name="cn.com.cmbc.mbank"/>
-  <package name="com.pingan.pabank.activity"/>
-  <package name="com.bankcomm"/>
-  <package name="com.rytong.bankps"/>
-  <package name="com.iboxpay.minicashbox"/>
-  <package name="com.ss.android.essay.joke"/>
-  <package name="com.google.android.apps.maps"/>
-  <package name="com.pdager"/>
-  <package name="com.mapbar.android.mapbarmap"/>
-  <package name="cld.navi.mainframe"/>
-  <package name="com.baidu.navi"/>
-  <package name="com.edooon.gps"/>
-  <package name="com.qwebob.generaldev"/>
-  <package name="com.shengqi.mgc"/>
-  <package name="com.lazyswipe"/>
-  <package name="com.whatsapp"/>
-  <package name="kik.android"/>
-  <package name="com.viber.voip"/>
-  <package name="com.kakao.talk"/>
-  <package name="com.facebook.orca"/>
-  <package name="com.baozoumanhua.android"/>
-  <package name="com.nike.plusgps"/>
-  <package name="com.nike.plusgpschina"/>
-  <package name="com.hupu.joggers"/>
-  <package name="com.tulipsport.run"/>
-  <package name="com.endomondo.android.pro"/>
-  <package name="cn.runagain.run"/>
-  <package name="com.runtastic.android.pro2"/>
-  <package name="com.adidas.micoach"/>
-  <package name="com.sevenfifteen.sportsman"/>
-  <package name="com.fox.exercise"/>
-  <package name="com.hoolai.magic"/>
-  <package name="com.lvtech.hipal"/>
-  <package name="com.wowsai.yundongker"/>
-  <package name="com.yueyundong"/>
-  <package name="com.tenmini.sports"/>
-  <package name="com.zfenan.jibu.qiqi.main"/>
-  <package name="com.panda.videoliveplatform"/>
-  <package name="com.youku.crazytogether"/>
-  <package name="com.kingroot.master"/>
-  <package name="com.tencent.qlauncher.lite"/>
-  <package name="com.qihoo.yunpan"/>
-  <package name="com.dianxinos.superuser"/>
-  <package name="com.ubercab"/>
-  <package name="com.bdatu.georgraphy"/>
-  <package name="com.tuyou.travel"/>
-  <package name="cn.pocdoc.BurnFat"/>
-  <package name="cn.pocdoc.majiaxian"/>
-  <package name="com.fan.app"/>
-  <package name="com.onewaystreet.weread"/>
-  <package name="com.hodanet.yanwenzi"/>
-  <package name="com.baidu.notes"/>
-  <package name="com.iqinbao.android.childLearnDance"/>
-  <package name="com.longrundmt.jinyong"/>
-  <package name="com.ted.android"/>
-  <package name="com.yxeee.dongman"/>
-  <package name="com.moji.wallpaper"/>
-  <package name="air.Examination.p12"/>
-  <package name="com.lamarobot.activity"/>
-  <package name="com.ishehui.venus"/>
-  <package name="com.doutu.www"/>
-  <package name="com.tdaguage.whatson.easymindmap"/>
-  <package name="com.qihoo.secstore"/>
-  <package name="com.wigiheb.poetry"/>
-  <package name="shufa.cn"/>
-  <package name="cn.zsd.xueba"/>
-  <package name="com.microsoft.office.excel"/>
-  <package name="com.aa2.generaladaptiveapps"/>
-  <package name="org.coursera.android"/>
-  <package name="com.microsoft.office.powerpoint"/>
-  <package name="com.microsoft.office.word"/>
-  <package name="com.microsoft.office.onenote"/>
-  <package name="com.gongfu.onehit"/>
-  <package name="com.mymoney.voice"/>
-  <package name="com.yidou.earn"/>
-  <package name="com.xiaoniu.finance"/>
-  <package name="com.formaxcopymaster.activitys"/>
-  <package name="com.yz.dr_app"/>
-  <package name="com.pingan.wetalk"/>
-  <package name="com.quanmincai.caipiao"/>
-  <package name="com.pingan,yzt"/>
-  <package name="gnnt.MEBS.FrameWork"/>
-  <package name="com.trj.hp"/>
-  <package name="cn.com.gf.android_store"/>
-  <package name="com.ygline.frbao"/>
-  <package name="com.coohuaclient"/>
-  <package name="com.cmcc.mobilevideo"/>
-  <package name="com.qihoo360.launcher"/>
-  <package name="com.jiuyan.infashion"/>
-  <package name="com.blovestorm"/>
-  <package name="com.qihoo360.contacts"/>
-  <package name="com.surfing.kefu"/>
-  <package name="com.happyelements.AndroidAnimal.wdj"/>
-  <package name="com.v.study"/>
-  <package name="com.tuxing.app.home"/>
-  <package name="com.tuxing.app.teacher"/>
-  <package name="com.manyi.lovehouse"/>
-  <package name="com.lianjia.sh.android"/>
-  <package name="com.haofang.hftsoftapp"/>
-  <package name="com.bohejiaju.android"/>
-  <package name="com.pinganfang.haofang"/>
-  <package name="com.ganji.android.garield"/>
-  <package name="com.wepie.snake"/>
-  <package name="com.tencent.tmgp.sgame"/>
-  <package name="com.qqgame.hlddz"/>
-  <package name="com.bbk.appstore"/>
-  <package name="eu.chainfire.perfmon"/>
-  <package name="com.ishehui.tiger"/>
-  <package name="com.culiu.purchase"/>
-  <package name="com.alibaba"/>
-  <package name="com.qihoo.permmgr"/>
-  <package name="com.taobao.appcenter"/>
-  <package name="com.tencent.pao"/>
-  <package name="com.tencent.tmgp.cf"/>
-  <package name="com.akazam.android.wlandialer"/>
-  <package name="com.ciyun.tiantianhongbao"/>
-  <package name="com.mycheering.launcher"/>
-  <package name="com.cutt.zhiyue.android.app236492"/>
-  <package name="air.fyzb3"/>
-  <package name="com.duowan.lolbox"/>
-  <package name="com.wantu.activity"/>
-  <package name="com.baidu.image"/>
-  <package name="com.lesports.glivesports"/>
-  <package name="com.happy.lock"/>
-  <package name="com.storm.yeelion"/>
-  <package name="fw.cn.quanmin"/>
-  <package name="com.yinyuetai.ui"/>
-  <package name="com.evernote"/>
-  <package name="com.android.cts.usepermission"/>
-  <package name="com.sogou.appmall"/>
-  <package name="com.usky.hponline"/>
-  <package name="com.lr.jimuboxmobile"/>
-  <package name="com.my089"/>
-  <package name="com.yiqihao"/>
-  <package name="com.huaguo.app.android"/>
-  <package name="com.jiemian.news"/>
-  <package name="com.blinnnk.zeus"/>
-  <package name="cn.amazon.mShop.android"/>
-  <package name="my.beautyCamera"/>
-  <package name="com.zcdog.smartlocker.android"/>
-  <package name="com.ijinshan.ShouJiKongService"/>
-  <package name="com.ijinshan.ShouJiKong.AndroidDaemon"/>
-  <package name="com.xinhua.zidian"/>
-  <package name="com.kibey.echo"/>
-  <package name="com.pipcamera.activity"/>
-  <package name="com.mxtech.videoplayer.ad"/>
-  <package name="com.qihoo360.mobilesafe.opti"/>
-  <package name="com.maimiao.live.tv"/>
-  <package name="com.sdu.didi.gui"/>
-  <package name="com.yourdream.app.android"/>
-  <package name="com.linecorp.b612.android"/>
-  <package name="cn.com.nd.s"/>
-  <package name="com.vmall.client"/>
-  <package name="com.qisiemoji.inputmethod"/>
-  <package name="com.liquidum.castbox"/>
-  <package name="longbin.helloworld"/>
-  <package name="com.lemon.handzb"/>
-  <package name="org.dayup.gnotes"/>
-  <package name="com.adsafe"/>
-  <package name="com.google.android.voicesearch"/>
-  <package name="com.besttone.hall"/>
-  <package name="com.campmobile.snow"/>
-  <package name="com.google.android.youtube"/>
-  <package name="com.google.android.googlequicksearchbox"/>
-  <package name="com.infraware.office.link"/>
-  <package name="com.skype.rover"/>
-  <package name="com.taobao.cun"/>
-  <package name="com.google.android.inputmethod.pinyin"/>
-  <package name="com.zte.heartyservice"/>
-  <package name="eu.chainfire.supersu"/>
-  <package name="com.snapchat.android"/>
-  <package name="com.google.android.gm"/>
-  <package name="com.cleanmaster.mguard_x86"/>
-  <package name="com.youdao.translator"/>
-  <package name="cn.jj.hall"/>
-  <package name="com.baofeng.mj"/>
-  <package name="cn.jingling.motu.photowonder"/>
-  <package name="com.uc108.mobile.gamecenter"/>
-  <package name="com.supercleaner"/>
-  <package name="ne.lushi.lushilauncher"/>
-  <package name="com.chaojishipin.sarrs"/>
-  <package name="com.creditease.zhiwang"/>
-  <package name="com.mycheering.apps"/>
-  <package name="com.verizon.messaging.vzmsgs"/>
-  <package name="com.weather.Weather"/>
-  <package name="com.blizzard.wtcg.hearthstone"/>
-  <package name="com.jb.gosms"/>
-  <package name="com.linkage.mobile72.studywithme"/>
-  <package name="com.elinkway.tvlive2"/>
-  <package name="com.cleanmaster.security"/>
-  <package name="com.google.android.apps.photos"/>
-  <package name="com.samsundot.talking"/>
-  <package name="com.sinyee.babybus.vegetable"/>
-  <package name="com.google.android.apps.docs"/>
-  <package name="com.lianlian.app"/>
-  <package name="cc.morechinese.MMProjectJS"/>
-  <package name="com.youba.flashlight"/>
-  <package name="com.cootek.smartinputv5"/>
-  <package name="com.sonymobile.sketch"/>
-  <package name="com.amazon.mShop.android.shopping"/>
-  <package name="com.google.android.apps.plus"/>
-  <package name="com.teslacoilsw.launcher"/>
-  <package name="com.tencent.clover"/>
-  <package name="com.supercell.clashofclans"/>
-  <package name="com.google.android.apps.messagi"/>
-  <package name="com.lionmobi.powerclean"/>
-  <package name="com.imo.android.imoim"/>
-  <package name="com.leleketang.SchoolFantasy"/>
-  <package name="com.wuba.peipei"/>
-  <package name="com.gangyun.makeup"/>
-  <package name="com.wuba.weizhang"/>
-  <package name="com.gto.zero.zboost"/>
-  <package name="com.pinterest"/>
-  <package name="com.dianxinos.optimizer.duplay"/>
-  <package name="com.handcent.app.nextsms"/>
-  <package name="in.huohua.Yuki"/>
-  <package name="me.airtake"/>
-  <package name="com.dianxinos.dxbs"/>
-  <package name="com.textra"/>
-  <package name="com.soundcloud.android"/>
-  <package name="com.metropcs.metrozone"/>
-  <package name="com.jb.zcamera"/>
-  <package name="com.qihoo.magic"/>
-  <package name="com.cmcc.wallet"/>
-  <package name="com.bsb.hike"/>
-  <package name="com.google.android.music"/>
-  <package name="com.turboc.cleaner"/>
-  <package name="com.truecaller"/>
-  <package name="com.leo.appmaster"/>
-  <package name="com.olxmena.horizontal"/>
-  <package name="com.ksmobile.launcher"/>
-  <package name="com.hermes.superb.booster"/>
-  <package name="com.ushareit.cleanit"/>
-  <package name="com.cmcm.lite"/>
-  <package name="com.kingstudio.purity"/>
-  <package name="mobi.yellow.booster"/>
-  <package name="org.getlantern.lantern"/>
-  <package name="com.tencent.tgp.wzry"/>
-  <package name="com.zhongcai500"/>
-  <package name="com.moji.wear"/>
-  <package name="com.tvmining.yao8"/>
-  <package name="com.snapwork.sharekhan"/>
-  <package name="home.solo.launcher.free"/>
-  <package name="com.badoo.mobile"/>
-  <package name="com.tsf.shell"/>
-  <package name="com.ganji.android.broker"/>
-  <package name="com.tumblr"/>
-  <package name="com.txeasy.shoudiantong"/>
-  <package name="com.google.android.calendar"/>
-  <package name="com.lincomb.licai"/>
-  <package name="com.unicom.wotv"/>
-  <package name="com.google.android.play.games"/>
-  <package name="com.speedsoftware.rootexplorer"/>
-  <package name="com.tencent.pocket"/>
-  <package name="com.elinkway.infinitemovies"/>
-  <package name="com.mianfei.book"/>
-  <package name="com.uc.browser.en"/>
-  <package name="com.ijinshan.kbatterydoctor_en"/>
-  <package name="com.imangi.templerun2"/>
-  <package name="com.king.candycrushsaga"/>
-  <package name="com.cma.launcher.lite"/>
-  <package name="com.powerd.cleaner"/>
-  <package name="com.microsoft.cortana"/>
-  <package name="com.tiantiankan.ttkvod"/>
-  <package name="com.vpn.tianxing"/>
-  <package name="com.appshenqi.cilikanpian"/>
-  <package name="xsky.txvpn"/>
-  <package name="me.ddkj.we"/>
-  <package name="com.miniclip.eightballpool"/>
-  <package name="com.nextwave.wcc2"/>
-  <package name="com.gameloft.android.ANMP.GloftMTHM"/>
-  <package name="com.mobisystems.office"/>
-  <package name="air.com.gamesoft.perfectpoker.mobile.PerfectPoker"/>
-  <package name="air.com.sgn.juicejam.gp"/>
-  <package name="air.com.slotgalaxy"/>
-  <package name="air.com.sublinet.tastytale"/>
-  <package name="air.ru.crazypanda.wpcm"/>
-  <package name="com.ustwo.monumentvalleya"/>
-  <package name="com.abc.AgeofKingdomsHD"/>
-  <package name="com.actoz.mb"/>
-  <package name="jp.pxv.android"/>
-  <package name="com.dabaitv"/>
-  <package name="com.anydo"/>
-  <package name="com.tech.dbmci"/>
-  <package name="com.genie9.gcloudbackup"/>
-  <package name="com.avg.cleaner"/>
-  <package name="com.myfitnesspal.android"/>
-  <package name="com.speaktoit.assistant"/>
-  <package name="com.erosnow"/>
-  <package name="com.okcupid.okcupid"/>
-  <package name="com.wordsmobile.planesimulator"/>
-  <package name="com.ea.games.simsfreeplay_na"/>
-  <package name="com.zeptolab.thieves.google"/>
-  <package name="com.teamlava.dragon"/>
-  <package name="com.oxford.oald.common.gp"/>
-  <package name="com.plexapp.android"/>
-  <package name="com.lastpass.lpandroid"/>
-  <package name="ru.flirchi.android"/>
-  <package name="cz.aponia.bor3.offlinemaps"/>
-  <package name="com.smartisanos.home"/>
-  <package name="com.yf.smart.weloopx.dist"/>
-  <package name="com.phicomm.cloud.soho.router"/>
-  <package name="com.dv.adm.pay"/>
-  <package name="com.udemy.android"/>
-  <package name="com.flightradar24free"/>
-  <package name="com.unearby.sayhi"/>
-  <package name="com.avast.android.mobilesecurity"/>
-  <package name="one.caller.id.changer"/>
-  <package name="com.ninefolders.hd3"/>
-  <package name="com.hungama.myplay.activity"/>
-  <package name="com.magicjack"/>
-  <package name="com.gsn.android.casino"/>
-  <package name="com.hasbro.FurbyBoom"/>
-  <package name="com.hitwicketcricketgame"/>
-  <package name="com.hotheadgames.google.free.ks2"/>
-  <package name="com.hotheadgames.google.free.rawsniper"/>
-  <package name="com.igg.bzbee.deckheroes"/>
-  <package name="com.igg.bzbee.slotsdeluxe_ru"/>
-  <package name="com.mahjong.sichuang"/>
-  <package name="com.xiaoming.bike"/>
-  <package name="com.wlcxbj.bike"/>
-  <package name="net.edaibu.easywalking"/>
-  <package name="com.ttyongche.ttbike"/>
-  <package name="com.cool.coolqi"/>
-  <package name="com.chetianxia.yundanche"/>
-  <package name="com.wenxikeji.bike"/>
-  <package name="com.baicycle.app"/>
-  <package name="com.ekuaitu.kuaitu"/>
-  <package name="jinghao.com.ccbike"/>
-  <package name="cn.estronger.bike"/>
-  <package name="cn.yunjietong.bike100"/>
-  <package name="com.bike.cobike"/>
-  <package name="com.exampl.tata"/>
-  <package name="com.bikelock.m"/>
-  <package name="com.skt.joybike"/>
-  <package name="com.touchtype.swiftkey"/>
-  <package name="ru.litres.android.audio"/>
-  <package name="info.mapcam.droid"/>
-  <package name="com.squareenix.champman16"/>
-  <package name="air.com.kitchenscramble.goo"/>
-  <package name="com.ea.fifaultimate_row"/>
-  <package name="com.lingualeo.android"/>
-  <package name="com.azarlive.android"/>
-  <package name="ru.fotostrana.sweetmeet"/>
-  <package name="com.use2pay.misstravel"/>
-  <package name="com.quickheal.platform"/>
-  <package name="com.playstudios.mykonami"/>
-  <package name="com.gtp.nextlauncher.trial"/>
-  <package name="com.netqin.ps"/>
-  <package name="com.gaana"/>
-  <package name="ru.litres.android"/>
-  <package name="com.kii.safe"/>
-  <package name="com.dropbox.android"/>
-  <package name="com.runtastic.android"/>
-  <package name="com.alibaba.aliexpresshd"/>
-  <package name="com.steam.photoeditor"/>
-  <package name="mobi.supo.optimizer"/>
-  <package name="com.olx.ssa.ug"/>
-  <package name="jp.pokemon.pokenmoncomaster"/>
-  <package name="com.tv.v18.viola"/>
-  <package name="com.lltskb.lltskb"/>
-  <package name="com.tap.filemanager"/>
-  <package name="com.jingwei.reader"/>
-  <package name="com.oasisfeng.greenify"/>
-  <package name="com.xunlei.redcrystalandroid"/>
-  <package name="com.happyelements.AndroidAnimal"/>
-  <package name="com.bsbportal.music"/>
-  <package name="com.olacabs.customer"/>
-  <package name="com.myairtelapp"/>
-  <package name="com.supo.security"/>
-  <package name="com.commsource.beautyplus"/>
-  <package name="com.door.offroad.modern.drive.rickshaw"/>
-  <package name="com.surpax.ledflashlight.panel"/>
-  <package name="com.roboo.explorer"/>
-  <package name="com.huohoubrowser"/>
-  <package name="com.dolphin.browser.xf"/>
-  <package name="sg.bigo.live"/>
-  <package name="com.phonepe.app"/>
-  <package name="mobi.drupe.app"/>
-  <package name="com.opera.mini.native"/>
-  <package name="com.nazara.tinylabproductions.chhotabheem"/>
-  <package name="com.shopping.limeroad"/>
-  <package name="com.ztgame.bob"/>
-  <package name="com.bugua.fight"/>
-  <package name="com.ChillyRoom.DungeonShooter"/>
-  <package name="com.downloading.main.baiduyundownload"/>
-  <package name="com.fihtdc.note"/>
-  <package name="cn.jsx.youxidiantai"/>
-  <package name="com.dewmobile.kuaiya.play"/>
-  <package name="com.zhiyoo"/>
-  <package name="com.turbochilli.rollingsky"/>
-  <package name="com.tencent.tmgp.kof98"/>
-  <package name="com.eloancn.mclient"/>
-  <package name="com.nianticlabs.pokemongo"/>
-  <package name="com.sinyee.babybus.talk2kiki"/>
-  <package name="com.dianping.movieheaven"/>
-  <package name="com.rockstargames.gtasa"/>
-  <package name="com.lianzainovel"/>
-  <package name="com.psiphon3"/>
-  <package name="com.gameloft.android.ANMP.GloftGGHM"/>
-  <package name="com.uc.vmate"/>
-  <package name="in.org.npci.upiapp"/>
-  <package name="com.webgames.ghosts"/>
-  <package name="cn.jsx.youxidiantai.xm"/>
-  <package name="com.ushaqi.zhuishushenqitest"/>
-  <package name="com.remennovel"/>
-  <package name="cn.kdqbxs.reader"/>
-  <package name="com.wanshua"/>
-  <package name="iwan.tencent.com"/>
-  <package name="com.hangzhoucaimi.financial"/>
-  <package name="com.fingersoft.hillclimb"/>
-  <package name="com.newsdog"/>
-  <package name="com.teenpatti.hd.gold"/>
-  <package name="com.joeware.android.gpulumera"/>
-  <package name="com.yaoo.qlauncher"/>
-  <package name="cn.ginshell.bong"/>
-  <package name="com.cfgame.dtmj"/>
-  <package name="com.vkontakte.android"/>
-  <package name="com.jidian.neptune.release"/>
-  <package name="com.jixiang.game"/>
-  <package name="com.jysz.hbks"/>
-  <package name="com.nostop.eighthnote"/>
-  <package name="com.youku.vr.lite"/>
-  <package name="com.kuman.comic"/>
-  <package name="com.outfit7.talkingtom"/>
-  <package name="com.balancehero.truebalance"/>
-  <package name="com.duapps.antivirus"/>
-  <package name="com.dotc.ime.latin.flash"/>
-  <package name="com.meitu.beautyplusme"/>
-  <package name="com.CultureAlley.japanese.english"/>
-  <package name="com.mobikwik_new"/>
-  <package name="com.ovital.ovitalMap"/>
-  <package name="com.hb.dialer.free"/>
-  <package name="com.halo.wifikey.wifilocating"/>
-  <package name="weile.guiyangmj"/>
-  <package name="com.netease.gameforums"/>
-  <package name="com.itmo.momo"/>
-  <package name="jp.nicovideo.android"/>
-  <package name="com.yyets.rrdict"/>
-  <package name="com.yyets.pro"/>
-  <package name="com.polydice.icook"/>
-  <package name="com.spetrl.rec"/>
-  <package name="com.myntra.android"/>
-  <package name="com.yeecall.app"/>
-  <package name="com.fotoable.fotobeauty"/>
-  <package name="com.jabong.android"/>
-  <package name="com.duowan.makefriends"/>
-  <package name="com.mventus.selfcare.activity"/>
-  <package name="com.teniubi.moto.rider"/>
-  <package name="com.fundevs.app.mediaconverter"/>
-  <package name="com.apusapps.launcher"/>
-  <package name="com.xvideostudio.tapslide"/>
-  <package name="com.tencent.qqmusiclocalplayer"/>
-  <package name="overlay.codemybrainsout.com.overlay"/>
-  <package name="com.shopclues"/>
-  <package name="com.fungames.sniper3d"/>
-  <package name="com.railyatri.in.mobile"/>
-  <package name="com.smule.singandroid"/>
-  <package name="com.xyauto.carcenter"/>
-  <package name="com.mmmono.starcity"/>
-  <package name="com.xilu.wybz"/>
-  <package name="cn.eku.artclient"/>
-  <package name="com.yunva.changke"/>
-  <package name="com.same.android"/>
-  <package name="com.jio.mhood.jionet"/>
-  <package name="com.venticake.retrica"/>
-  <package name="com.snapdeal.main"/>
-  <package name="com.vocinno.griefstore"/>
-  <package name="cn.yupaopao.crop"/>
-  <package name="com.utan.android.h3y"/>
-  <package name="com.loveorange.wt"/>
-  <package name="com.SleepBear.Comic"/>
-  <package name="com.impawn.jh"/>
-  <package name="com.cdwx.moka"/>
-  <package name="com.google.android.apps.fireball"/>
-  <package name="com.ne.boeing.plane.mountain.simulator"/>
-  <package name="com.sbi.SBIFreedomPlus"/>
-  <package name="com.voonik.android"/>
-  <package name="com.mobilemotion.dubsmash"/>
-  <package name="com.gameloft.android.ANMP.GloftSIHM"/>
-  <package name="com.android.abustory"/>
-  <package name="com.ibanyi"/>
-  <package name="com.cmstop.qjwb"/>
-  <package name="com.fenzotech.zeroandroid"/>
-  <package name="com.king.candycrushsodasaga"/>
-  <package name="com.bt.bms"/>
-  <package name="com.whatscan"/>
-  <package name="in.mohalla.sharechat"/>
-  <package name="io.teslatech.callbreak"/>
-  <package name="com.qy_trip.release"/>
-  <package name="com.halfbrick.fruitninjafree"/>
-  <package name="com.sogou.dictation"/>
-  <package name="com.beta.bikestunt.ride"/>
-  <package name="com.lyrebirdstudio.collage"/>
-  <package name="com.google.android.apps.inputmethod.hindi"/>
-  <package name="com.ixigo.train.ixitrain"/>
-  <package name="com.bladeburning.racing.highway.offroad.hill.apps"/>
-  <package name="com.highlogix.temple.jungle.run2"/>
-  <package name="com.imo.android.imoimbeta"/>
-  <package name="com.ray3d.shootsniper"/>
-  <package name="com.bankapp.hi.banklist"/>
-  <package name="com.Dominos"/>
-  <package name="com.juejian.nothing"/>
-  <package name="com.moyou.moyoux.xmoyou"/>
-  <package name="cn.w3cschool.app"/>
-  <package name="net.skywalkerhong.yangdun"/>
-  <package name="com.puerlink.igo"/>
-  <package name="com.lenskart.app"/>
-  <package name="com.qqgame.happymj"/>
-  <package name="com.northpark.drinkwater"/>
-  <package name="com.diffcat.facedance2"/>
-  <package name="com.aawant.hunter"/>
-  <package name="com.likeshare.zalent"/>
-  <package name="cn.caiyu.magicbill"/>
-  <package name="com.ScnStudios.RealCityCarDriver3D"/>
-  <package name="com.kayak.studio.gifmaker"/>
-  <package name="in.AajTak.headlines"/>
-  <package name="cn.gogocity.suibian"/>
-  <package name="com.ingyomate.shakeit"/>
-  <package name="com.ddcc.caifu"/>
-  <package name="com.youpu.travel"/>
-  <package name="com.threeWater.yirimao"/>
-  <package name="HinKhoj.Dictionary"/>
-  <package name="com.internet.speed.meter.lite"/>
-  <package name="com.hutchgames.hotwheels"/>
-  <package name="com.scopely.whiplash"/>
-  <package name="com.pianke.client"/>
-  <package name="com.lanrenzhoumo.weekend"/>
-  <package name="com.baviux.voicechanger"/>
-  <package name="com.xnview.hypocam"/>
-  <package name="com.whizdm.moneyview"/>
-  <package name="com.application.zomato"/>
-  <package name="com.nekki.shadowfight"/>
-  <package name="com.gameloft.android.ANMP.Gloft5DHM"/>
-  <package name="so.dian.powerblue"/>
-  <package name="com.electric.chargingpile"/>
-  <package name="cn.com.ztev.android.driverapp"/>
-  <package name="free.mobile.internet.data.recharge"/>
-  <package name="com.gamoper.magiccandy.free"/>
-  <package name="com.grofers.customerapp"/>
-  <package name="com.nextwave.wcc_lt"/>
-  <package name="com.ril.ajio"/>
-  <package name="com.js.ludo"/>
-  <package name="com.hideitpro"/>
-  <package name="media.audioplayer.musicplayer"/>
-  <package name="com.google.android.apps.youtube.kids"/>
-  <package name="com.reliancejio.mobilesecurity"/>
-  <package name="com.aim.racing"/>
-  <package name="com.kathleenOswald.solitaireGooglePlay"/>
-  <package name="com.lumyer.app"/>
-  <package name="com.cyberlink.photodirector"/>
-  <package name="com.sonyliv"/>
-  <package name="com.gameone.superadventuresofjabber.free"/>
-  <package name="com.suitableapps.vehicleinfo"/>
-  <package name="com.outfit7.mytalkinghank"/>
-  <package name="com.gameloft.android.ANMP.GloftFWHM"/>
-  <package name="com.freecharge.android"/>
-  <package name="com.highlogix.temple.gold.run"/>
-  <package name="bubbleshooter.orig"/>
-  <package name="air.WR3DFree"/>
-  <package name="com.gameloft.android.ANMP.GloftM5HM"/>
-  <package name="com.aag.furious.train.sniper"/>
-  <package name="at.ner.lepsWorld2"/>
-  <package name="com.appsouls.shadikiraatkivideos"/>
-  <package name="com.droidhen.game.racingmoto"/>
-  <package name="com.newapps.bridal.suits.pictureeditor"/>
-  <package name="com.wpl.offroadtuktukautorickshaw"/>
-  <package name="com.games24x7.teenpatti.playstore"/>
-  <package name="com.alpha.applock"/>
-  <package name="com.happyadda.jalebi"/>
-  <package name="com.abof.android"/>
-  <package name="bubble.shoot.bubbles.game.saga.world"/>
-  <package name="com.supercell.clashroyale"/>
-  <package name="com.touchtalent.bobbleapp"/>
-  <package name="com.youdao.hindict"/>
-  <package name="com.king.hindi.english.translator"/>
-  <package name="com.spades.temple.surf"/>
-  <package name="com.prime.studio.apps.route.finder.map"/>
-  <package name="org.palmsoft.keyboardfree"/>
-  <package name="com.fotoable.temperature.weather"/>
-  <package name="com.playappking.ametalsoldiers2"/>
-  <package name="com.pingenie.screenlocker"/>
-  <package name="in.droom.online_obv_app"/>
-  <package name="com.droid.caller.id.phone.number.location"/>
-  <package name="com.triggerteam.ninjafighting2"/>
-  <package name="com.ebay.mobile"/>
-  <package name="com.ks.sniper.modern.elite.fury.mountain.apps"/>
-  <package name="com.mas3dstudio.motopizzadelivery"/>
-  <package name="com.globalfun.tj2015.google"/>
-  <package name="com.enstage.wibmo.hdfc"/>
-  <package name="com.google.android.apps.tachyon"/>
-  <package name="ru.mail"/>
-  <package name="mp3videoconverter.videotomp3converter.audioconverter"/>
-  <package name="com.oyo.consumer"/>
-  <package name="com.anydroid.caller.name.announcer"/>
-  <package name="naukriApp.appModules.login"/>
-  <package name="com.csam.icici.bank.imobile"/>
-  <package name="com.snapwork.hdfc"/>
-  <package name="com.stain.offroadoiltanker.fueltransporter.mountainclimb"/>
-  <package name="com.gamesoul.CargoTruck.transportSim2017"/>
-  <package name="com.junesoftware.nazara.motupatlurace"/>
-  <package name="com.tap4fun.reignofwar"/>
-  <package name="com.toi.reader.activities"/>
-  <package name="com.cleartrip.android"/>
-  <package name="com.indianrail.thinkapps.irctc"/>
-  <package name="com.mobond.mindicator"/>
-  <package name="com.labexception.truckdrivercargo"/>
-  <package name="com.feelingtouch.zf3d"/>
-  <package name="com.HighbrowInteractive.IndianTrainSim"/>
-  <package name="sun.way2sms.hyd.com"/>
-  <package name="com.pic.photoeditor"/>
-  <package name="com.cmcm.locker"/>
-  <package name="com.ninjakiwi.bftg"/>
-  <package name="com.rovio.angrybirdsrio"/>
-  <package name="hd.backgrounds.wallpapers.theme"/>
-  <package name="com.octro.cardroyale"/>
-  <package name="com.jio.lyfcare"/>
-  <package name="com.outfit7.talkingangelafree"/>
-  <package name="net.megawave.flashalerts"/>
-  <package name="com.instagram.layout"/>
-  <package name="co.gradeup.android"/>
-  <package name="com.adobe.adobephotoshopfix"/>
-  <package name="com.wordmobiles.bikeRacing"/>
-  <package name="com.onexsoftech.gpsroutefinder"/>
-  <package name="com.lionmobi.battery"/>
-  <package name="com.alvisha.turbanphotoeditor"/>
-  <package name="com.appmobie.auratkya"/>
-  <package name="com.mgs.drive.offroad.prado.free"/>
-  <package name="com.king.bubblewitch3"/>
-  <package name="com.phone.locationtracker.calleridnumberlocator"/>
-  <package name="com.justdial.jdlite"/>
-  <package name="org.khanacademy.android"/>
-  <package name="com.tul.tatacliq"/>
-  <package name="call.recorder.automatic.acr"/>
-  <package name="com.flashalerts.flashalertforallapps"/>
-  <package name="co.yellw.yellowapp"/>
-  <package name="com.indiagames.cricketfever"/>
-  <package name="com.gamma.scan"/>
-  <package name="com.epicwaronline.ms"/>
-  <package name="in.swiggy.android"/>
-  <package name="com.racergame.cityracinglite.free"/>
-  <package name="com.topactiongames.survivor.prision.escape"/>
-  <package name="com.lyrebirdstudio.art_filter"/>
-  <package name="com.junerking.archery"/>
-  <package name="com.ace.cleaner"/>
-  <package name="com.lyrebirdstudio.montagenscolagem"/>
-  <package name="com.wordmobile.waterslide"/>
-  <package name="tv.accedo.airtel.wynk"/>
-  <package name="com.indiagames.procricket_androidindia"/>
-  <package name="com.clicklab.nature.photo.frame"/>
-  <package name="com.outfit7.tomlovesangelafree"/>
-  <package name="com.junesoftware.nazara.cbrace"/>
-  <package name="com.reliance.jio.jioswitch"/>
-  <package name="air.com.dittotv.AndroidZEECommercial"/>
-  <package name="com.k7computing.android.security"/>
-  <package name="com.ea.gp.fifamobile"/>
-  <package name="com.quikr"/>
-  <package name="com.zenjoy.musicvideo"/>
-  <package name="com.google.android.apps.docs.editors.docs"/>
-  <package name="com.eyefilter.nightmode.bluelightfilter"/>
-  <package name="com.gta.real.gangster.crime.two"/>
-  <package name="bwebmedia.cookbakedlasagna"/>
-  <package name="com.kinteks.xhdcamera"/>
-  <package name="com.miniclip.archery"/>
-  <package name="com.appbasic.coupletraditionaldresses"/>
-  <package name="com.LiveIndianTrainStatus"/>
-  <package name="com.stain.farming.simulator.tractor"/>
-  <package name="com.xorware.network.s2g3g.settings"/>
-  <package name="com.am.girls.app1.hairstyle.designs"/>
-  <package name="com.lm.powersecurity"/>
-  <package name="com.appos.dev.angrylioncityattack"/>
-  <package name="com.vg.airportpilot.car.transporter.plane"/>
-  <package name="com.vtmobile.fastestflashlight"/>
-  <package name="com.ashar.naturedual"/>
-  <package name="com.easyx.coolermaster"/>
-  <package name="com.ushareit.lockit"/>
-  <package name="com.dangbeimarket"/>
-  <package name="com.brixd.niceapp"/>
-  <package name="com.putaolab.mobile"/>
-  <package name="com.mgyapp.android"/>
-  <package name="com.boying.store"/>
-  <package name="com.snailgame.cjg"/>
-  <package name="com.tpzvikm.hseuortly"/>
-  <package name="com.vng.g6.a.zombie"/>
-  <package name="com.nexstreaming.app.singplay"/>
-  <package name="com.outthinking.photo"/>
-  <package name="com.fotoable.locker"/>
-  <package name="com.gmfr.city.construction.hill.drive"/>
-  <package name="com.showself.ui"/>
-  <package name="com.wtzw.reader"/>
-  <package name="com.velocity.light"/>
-  <package name="com.everyday.caipiao"/>
-  <package name="com.lgcolorbu.appsnearmeclocker"/>
-  <package name="com.sogou.se.sogouhotspot"/>
-  <package name="com.xgbosh.xgplayas"/>
-  <package name="com.suncammi4.live"/>
-  <package name="com.edicionesbabylon.mimitos"/>
-  <package name="com.lightsky.video"/>
-  <package name="com.edog"/>
-  <package name="com.singulariti.niapp"/>
-  <package name="com.android.fmradio"/>
-  <package name="com.yundongquan.sya"/>
-  <package name="com.juphoon.service"/>
-  <package name="com.ted.number"/>
+<package name="com.dragon.android.pandaspace"/>
+<package name="com.tencent.powermanager"/>
+<package name="com.android.chrome"/>
+<package name="com.ijinshan.kbatterydoctor"/>
+<package name="com.android.easou.easousearch"/>
+<package name="com.esvideo"/>
+<package name="com.snda.youni"/>
+<package name="cn.wps.moffice_eng"/>
+<package name="com.eshore.ezone"/>
+<package name="com.nd.android.pandahome2"/>
+<package name="com.funcity.taxi.passenger"/>
+<package name="com.qihoo360.mobilesafe_mtk6573"/>
+<package name="com.qihoo.antivirus"/>
+<package name="com.ijinshan.mguard"/>
+<package name="com.anguanjia.safe"/>
+<package name="com.anyisheng.doctoran"/>
+<package name="com.nqmobile.antivirus20"/>
+<package name="kvpioneer.cmcc"/>
+<package name="com.kindroid.security"/>
+<package name="com.yy.android.udbsec"/>
+<package name="project.rising"/>
+<package name="com.zrgiu.antivirus"/>
+<package name="com.symantec.mobilesecurity"/>
+<package name="com.mobileann.MobileAnn"/>
+<package name="com.suning.phonesecurity"/>
+<package name="com.antivirus"/>
+<package name="com.tdx.safe"/>
+<package name="com.netqin.mobileguard"/>
+<package name="com.ijinshan.duba"/>
+<package name="com.baidu.passport.securitycenter"/>
+<package name="com.wandoujia.phoenix2.usbproxy"/>
+<package name="com.weather"/>
+<package name="com.android.vending"/>
+<package name="com.mumayi.market.ui"/>
+<package name="com.nduoa.market"/>
+<package name="com.eoemobile.netmarket"/>
+<package name="com.netease.apper"/>
+<package name="com.mappn.gfan"/>
+<package name="com.anzhuocom.market"/>
+<package name="com.jiubang.market"/>
+<package name="www3gyu.com"/>
+<package name="com.uucun1622.android.cms"/>
+<package name="oms.danle"/>
+<package name="com.dragon.android.pandaspace.pad"/>
+<package name="com.liqucn.android"/>
+<package name="com.angeeks.market"/>
+<package name="com.sec.android.app.samsungapps"/>
+<package name="cn.cst.apps.android"/>
+<package name="com.suning.market"/>
+<package name="com.banma.market"/>
+<package name="com.newpower"/>
+<package name="com.infinit.wostore.ui"/>
+<package name="com.kaiqi"/>
+<package name="cn.com.zol.market"/>
+<package name="com.sohu.android.market"/>
+<package name="com.doudouyou.client"/>
+<package name="com.baoruan.appstore"/>
+<package name="com.uucun838.android.cms"/>
+<package name="com.feiliu"/>
+<package name="com.apkok.gmarket"/>
+<package name="com.amazon.venezia"/>
+<package name="com.appsfire.appsfire"/>
+<package name="com.mumayi.market3g.ui"/>
+<package name="com.mooyy"/>
+<package name="com.anshouji.market.enduser"/>
+<package name="com.lexteltech.mon"/>
+<package name="com.bzh.market.ui"/>
+<package name="com.bodong.coolplay"/>
+<package name="cn.ninegame.gamemanagerhd"/>
+<package name="com.paojiao.gamecenter"/>
+<package name="cn.ninegame.gamemanager.yz"/>
+<package name="com.socogame.ppc"/>
+<package name="cn.mbga.portal"/>
+<package name="com.shendu.gamecenter"/>
+<package name="com.jr.gamecenter"/>
+<package name="app.ucgame.cn"/>
+<package name="com.feiliu.gamecenter"/>
+<package name="com.sogou.gamemall"/>
+<package name="com.example.lanyou"/>
+<package name="com.lokinfo.android.gamemarket"/>
+<package name="com.viaplay.ime"/>
+<package name="com.sohu.gamecenter"/>
+<package name="com.androidemu.leo"/>
+<package name="com.baozigames.gamecenter"/>
+<package name="com.baoruan.lewan"/>
+<package name="com.cooee.gamecenter"/>
+<package name="com.nd.gamecenter91"/>
+<package name="com.tencent.gameCenter"/>
+<package name="com.ssjj.gamecenter"/>
+<package name="com.sohu.store"/>
+<package name="com.yulong.android.coolmart"/>
+<package name="cn.com.vapk.vstore.client"/>
+<package name="zte.com.market"/>
+<package name="com.letv.tvos.appstore"/>
+<package name="com.wcx.nfc_reader"/>
+<package name="com.suning.markethd"/>
+<package name="com.market"/>
+<package name="com.crossmo.mobile.appstore"/>
+<package name="cn.gamedog.market"/>
+<package name="cn.ggg.market"/>
+<package name="com.zdqk.sinacard"/>
+<package name="com.skymobi.appstore"/>
+<package name="com.muzhiwan.market.hd"/>
+<package name="com.xunlei.appmarket"/>
+<package name="com.idiantech.kuaihuwifi"/>
+<package name="com.aimi.appstore"/>
+<package name="com.hulu.market"/>
+<package name="com.chinaway.android.appmarket"/>
+<package name="com.sogou.wallpaper"/>
+<package name="com.zuimeia.suite.lockscreen"/>
+<package name="com.ijinshan.browser"/>
+<package name="com.duomi.android"/>
+<package name="com.baidu.baidufm"/>
+<package name="com.yk.mhb"/>
+<package name="com.autonavi.xmgd.navigator"/>
+<package name="com.sportqsns"/>
+<package name="cn.com.fetion"/>
+<package name="com.bilin.huijiao.activity"/>
+<package name="com.tencent.qq.kddi"/>
+<package name="com.skype.raider"/>
+<package name="net.icycloud.fdtodolist"/>
+<package name="com.dayima"/>
+<package name="com.ts.zys"/>
+<package name="com.medapp.all"/>
+<package name="com.medapp"/>
+<package name="com.medapp.man"/>
+<package name="com.sz.order"/>
+<package name="com.tenpay.android"/>
+<package name="lthj.exchangestock"/>
+<package name="cn.com.cmbc.mbank"/>
+<package name="com.pingan.pabank.activity"/>
+<package name="com.bankcomm"/>
+<package name="com.rytong.bankps"/>
+<package name="com.iboxpay.minicashbox"/>
+<package name="com.ss.android.essay.joke"/>
+<package name="com.google.android.apps.maps"/>
+<package name="com.pdager"/>
+<package name="com.mapbar.android.mapbarmap"/>
+<package name="cld.navi.mainframe"/>
+<package name="com.baidu.navi"/>
+<package name="com.edooon.gps"/>
+<package name="com.qwebob.generaldev"/>
+<package name="com.shengqi.mgc"/>
+<package name="com.lazyswipe"/>
+<package name="com.whatsapp"/>
+<package name="kik.android"/>
+<package name="com.viber.voip"/>
+<package name="com.kakao.talk"/>
+<package name="com.facebook.orca"/>
+<package name="com.baozoumanhua.android"/>
+<package name="com.nike.plusgps"/>
+<package name="com.nike.plusgpschina"/>
+<package name="com.hupu.joggers"/>
+<package name="com.tulipsport.run"/>
+<package name="com.endomondo.android.pro"/>
+<package name="cn.runagain.run"/>
+<package name="com.runtastic.android.pro2"/>
+<package name="com.adidas.micoach"/>
+<package name="com.sevenfifteen.sportsman"/>
+<package name="com.fox.exercise"/>
+<package name="com.hoolai.magic"/>
+<package name="com.lvtech.hipal"/>
+<package name="com.wowsai.yundongker"/>
+<package name="com.yueyundong"/>
+<package name="com.tenmini.sports"/>
+<package name="com.zfenan.jibu.qiqi.main"/>
+<package name="com.panda.videoliveplatform"/>
+<package name="com.youku.crazytogether"/>
+<package name="com.kingroot.master"/>
+<package name="com.tencent.qlauncher.lite"/>
+<package name="com.qihoo.yunpan"/>
+<package name="com.dianxinos.superuser"/>
+<package name="com.ubercab"/>
+<package name="com.bdatu.georgraphy"/>
+<package name="com.tuyou.travel"/>
+<package name="cn.pocdoc.BurnFat"/>
+<package name="cn.pocdoc.majiaxian"/>
+<package name="com.fan.app"/>
+<package name="com.onewaystreet.weread"/>
+<package name="com.hodanet.yanwenzi"/>
+<package name="com.baidu.notes"/>
+<package name="com.iqinbao.android.childLearnDance"/>
+<package name="com.longrundmt.jinyong"/>
+<package name="com.ted.android"/>
+<package name="com.yxeee.dongman"/>
+<package name="com.moji.wallpaper"/>
+<package name="air.Examination.p12"/>
+<package name="com.lamarobot.activity"/>
+<package name="com.ishehui.venus"/>
+<package name="com.doutu.www"/>
+<package name="com.tdaguage.whatson.easymindmap"/>
+<package name="com.qihoo.secstore"/>
+<package name="com.wigiheb.poetry"/>
+<package name="shufa.cn"/>
+<package name="cn.zsd.xueba"/>
+<package name="com.microsoft.office.excel"/>
+<package name="com.aa2.generaladaptiveapps"/>
+<package name="org.coursera.android"/>
+<package name="com.microsoft.office.powerpoint"/>
+<package name="com.microsoft.office.word"/>
+<package name="com.microsoft.office.onenote"/>
+<package name="com.gongfu.onehit"/>
+<package name="com.mymoney.voice"/>
+<package name="com.yidou.earn"/>
+<package name="com.xiaoniu.finance"/>
+<package name="com.formaxcopymaster.activitys"/>
+<package name="com.yz.dr_app"/>
+<package name="com.pingan.wetalk"/>
+<package name="com.quanmincai.caipiao"/>
+<package name="com.pingan,yzt"/>
+<package name="gnnt.MEBS.FrameWork"/>
+<package name="com.trj.hp"/>
+<package name="cn.com.gf.android_store"/>
+<package name="com.ygline.frbao"/>
+<package name="com.coohuaclient"/>
+<package name="com.cmcc.mobilevideo"/>
+<package name="com.qihoo360.launcher"/>
+<package name="com.jiuyan.infashion"/>
+<package name="com.blovestorm"/>
+<package name="com.qihoo360.contacts"/>
+<package name="com.surfing.kefu"/>
+<package name="com.happyelements.AndroidAnimal.wdj"/>
+<package name="com.v.study"/>
+<package name="com.tuxing.app.home"/>
+<package name="com.tuxing.app.teacher"/>
+<package name="com.manyi.lovehouse"/>
+<package name="com.lianjia.sh.android"/>
+<package name="com.haofang.hftsoftapp"/>
+<package name="com.bohejiaju.android"/>
+<package name="com.pinganfang.haofang"/>
+<package name="com.ganji.android.garield"/>
+<package name="com.wepie.snake"/>
+<package name="com.tencent.tmgp.sgame"/>
+<package name="com.qqgame.hlddz"/>
+<package name="com.bbk.appstore"/>
+<package name="eu.chainfire.perfmon"/>
+<package name="com.ishehui.tiger"/>
+<package name="com.culiu.purchase"/>
+<package name="com.alibaba"/>
+<package name="com.qihoo.permmgr"/>
+<package name="com.taobao.appcenter"/>
+<package name="com.tencent.pao"/>
+<package name="com.tencent.tmgp.cf"/>
+<package name="com.akazam.android.wlandialer"/>
+<package name="com.ciyun.tiantianhongbao"/>
+<package name="com.mycheering.launcher"/>
+<package name="com.cutt.zhiyue.android.app236492"/>
+<package name="air.fyzb3"/>
+<package name="com.duowan.lolbox"/>
+<package name="com.wantu.activity"/>
+<package name="com.baidu.image"/>
+<package name="com.lesports.glivesports"/>
+<package name="com.happy.lock"/>
+<package name="com.storm.yeelion"/>
+<package name="fw.cn.quanmin"/>
+<package name="com.yinyuetai.ui"/>
+<package name="com.evernote"/>
+<package name="com.android.cts.usepermission"/>
+<package name="com.sogou.appmall"/>
+<package name="com.usky.hponline"/>
+<package name="com.lr.jimuboxmobile"/>
+<package name="com.my089"/>
+<package name="com.yiqihao"/>
+<package name="com.huaguo.app.android"/>
+<package name="com.jiemian.news"/>
+<package name="com.blinnnk.zeus"/>
+<package name="cn.amazon.mShop.android"/>
+<package name="my.beautyCamera"/>
+<package name="com.zcdog.smartlocker.android"/>
+<package name="com.ijinshan.ShouJiKongService"/>
+<package name="com.ijinshan.ShouJiKong.AndroidDaemon"/>
+<package name="com.xinhua.zidian"/>
+<package name="com.kibey.echo"/>
+<package name="com.pipcamera.activity"/>
+<package name="com.mxtech.videoplayer.ad"/>
+<package name="com.qihoo360.mobilesafe.opti"/>
+<package name="com.maimiao.live.tv"/>
+<package name="com.sdu.didi.gui"/>
+<package name="com.yourdream.app.android"/>
+<package name="com.linecorp.b612.android"/>
+<package name="cn.com.nd.s"/>
+<package name="com.vmall.client"/>
+<package name="com.qisiemoji.inputmethod"/>
+<package name="com.liquidum.castbox"/>
+<package name="longbin.helloworld"/>
+<package name="com.lemon.handzb"/>
+<package name="org.dayup.gnotes"/>
+<package name="com.adsafe"/>
+<package name="com.google.android.voicesearch"/>
+<package name="com.besttone.hall"/>
+<package name="com.campmobile.snow"/>
+<package name="com.google.android.youtube"/>
+<package name="com.google.android.googlequicksearchbox"/>
+<package name="com.infraware.office.link"/>
+<package name="com.skype.rover"/>
+<package name="com.taobao.cun"/>
+<package name="com.google.android.inputmethod.pinyin"/>
+<package name="com.zte.heartyservice"/>
+<package name="eu.chainfire.supersu"/>
+<package name="com.snapchat.android"/>
+<package name="com.google.android.gm"/>
+<package name="com.cleanmaster.mguard_x86"/>
+<package name="com.youdao.translator"/>
+<package name="cn.jj.hall"/>
+<package name="com.baofeng.mj"/>
+<package name="cn.jingling.motu.photowonder"/>
+<package name="com.uc108.mobile.gamecenter"/>
+<package name="com.supercleaner"/>
+<package name="ne.lushi.lushilauncher"/>
+<package name="com.chaojishipin.sarrs"/>
+<package name="com.creditease.zhiwang"/>
+<package name="com.mycheering.apps"/>
+<package name="com.verizon.messaging.vzmsgs"/>
+<package name="com.weather.Weather"/>
+<package name="com.blizzard.wtcg.hearthstone"/>
+<package name="com.jb.gosms"/>
+<package name="com.linkage.mobile72.studywithme"/>
+<package name="com.elinkway.tvlive2"/>
+<package name="com.cleanmaster.security"/>
+<package name="com.google.android.apps.photos"/>
+<package name="com.samsundot.talking"/>
+<package name="com.sinyee.babybus.vegetable"/>
+<package name="com.google.android.apps.docs"/>
+<package name="com.lianlian.app"/>
+<package name="cc.morechinese.MMProjectJS"/>
+<package name="com.youba.flashlight"/>
+<package name="com.cootek.smartinputv5"/>
+<package name="com.sonymobile.sketch"/>
+<package name="com.amazon.mShop.android.shopping"/>
+<package name="com.google.android.apps.plus"/>
+<package name="com.teslacoilsw.launcher"/>
+<package name="com.tencent.clover"/>
+<package name="com.supercell.clashofclans"/>
+<package name="com.google.android.apps.messagi"/>
+<package name="com.lionmobi.powerclean"/>
+<package name="com.imo.android.imoim"/>
+<package name="com.leleketang.SchoolFantasy"/>
+<package name="com.wuba.peipei"/>
+<package name="com.gangyun.makeup"/>
+<package name="com.wuba.weizhang"/>
+<package name="com.gto.zero.zboost"/>
+<package name="com.pinterest"/>
+<package name="com.dianxinos.optimizer.duplay"/>
+<package name="com.handcent.app.nextsms"/>
+<package name="in.huohua.Yuki"/>
+<package name="me.airtake"/>
+<package name="com.dianxinos.dxbs"/>
+<package name="com.textra"/>
+<package name="com.soundcloud.android"/>
+<package name="com.metropcs.metrozone"/>
+<package name="com.jb.zcamera"/>
+<package name="com.qihoo.magic"/>
+<package name="com.cmcc.wallet"/>
+<package name="com.bsb.hike"/>
+<package name="com.google.android.music"/>
+<package name="com.turboc.cleaner"/>
+<package name="com.truecaller"/>
+<package name="com.leo.appmaster"/>
+<package name="com.olxmena.horizontal"/>
+<package name="com.ksmobile.launcher"/>
+<package name="com.hermes.superb.booster"/>
+<package name="com.ushareit.cleanit"/>
+<package name="com.cmcm.lite"/>
+<package name="com.kingstudio.purity"/>
+<package name="mobi.yellow.booster"/>
+<package name="org.getlantern.lantern"/>
+<package name="com.tencent.tgp.wzry"/>
+<package name="com.zhongcai500"/>
+<package name="com.moji.wear"/>
+<package name="com.tvmining.yao8"/>
+<package name="com.snapwork.sharekhan"/>
+<package name="home.solo.launcher.free"/>
+<package name="com.badoo.mobile"/>
+<package name="com.tsf.shell"/>
+<package name="com.ganji.android.broker"/>
+<package name="com.tumblr"/>
+<package name="com.txeasy.shoudiantong"/>
+<package name="com.google.android.calendar"/>
+<package name="com.lincomb.licai"/>
+<package name="com.unicom.wotv"/>
+<package name="com.google.android.play.games"/>
+<package name="com.speedsoftware.rootexplorer"/>
+<package name="com.tencent.pocket"/>
+<package name="com.elinkway.infinitemovies"/>
+<package name="com.mianfei.book"/>
+<package name="com.uc.browser.en"/>
+<package name="com.ijinshan.kbatterydoctor_en"/>
+<package name="com.imangi.templerun2"/>
+<package name="com.king.candycrushsaga"/>
+<package name="com.cma.launcher.lite"/>
+<package name="com.powerd.cleaner"/>
+<package name="com.microsoft.cortana"/>
+<package name="com.tiantiankan.ttkvod"/>
+<package name="com.vpn.tianxing"/>
+<package name="com.appshenqi.cilikanpian"/>
+<package name="xsky.txvpn"/>
+<package name="me.ddkj.we"/>
+<package name="com.miniclip.eightballpool"/>
+<package name="com.nextwave.wcc2"/>
+<package name="com.gameloft.android.ANMP.GloftMTHM"/>
+<package name="com.mobisystems.office"/>
+<package name="air.com.gamesoft.perfectpoker.mobile.PerfectPoker"/>
+<package name="air.com.sgn.juicejam.gp"/>
+<package name="air.com.slotgalaxy"/>
+<package name="air.com.sublinet.tastytale"/>
+<package name="air.ru.crazypanda.wpcm"/>
+<package name="com.ustwo.monumentvalleya"/>
+<package name="com.abc.AgeofKingdomsHD"/>
+<package name="com.actoz.mb"/>
+<package name="jp.pxv.android"/>
+<package name="com.dabaitv"/>
+<package name="com.anydo"/>
+<package name="com.tech.dbmci"/>
+<package name="com.genie9.gcloudbackup"/>
+<package name="com.avg.cleaner"/>
+<package name="com.myfitnesspal.android"/>
+<package name="com.speaktoit.assistant"/>
+<package name="com.erosnow"/>
+<package name="com.okcupid.okcupid"/>
+<package name="com.wordsmobile.planesimulator"/>
+<package name="com.ea.games.simsfreeplay_na"/>
+<package name="com.zeptolab.thieves.google"/>
+<package name="com.teamlava.dragon"/>
+<package name="com.oxford.oald.common.gp"/>
+<package name="com.plexapp.android"/>
+<package name="com.lastpass.lpandroid"/>
+<package name="ru.flirchi.android"/>
+<package name="cz.aponia.bor3.offlinemaps"/>
+<package name="com.smartisanos.home"/>
+<package name="com.yf.smart.weloopx.dist"/>
+<package name="com.phicomm.cloud.soho.router"/>
+<package name="com.dv.adm.pay"/>
+<package name="com.udemy.android"/>
+<package name="com.flightradar24free"/>
+<package name="com.unearby.sayhi"/>
+<package name="com.avast.android.mobilesecurity"/>
+<package name="one.caller.id.changer"/>
+<package name="com.ninefolders.hd3"/>
+<package name="com.hungama.myplay.activity"/>
+<package name="com.magicjack"/>
+<package name="com.gsn.android.casino"/>
+<package name="com.hasbro.FurbyBoom"/>
+<package name="com.hitwicketcricketgame"/>
+<package name="com.hotheadgames.google.free.ks2"/>
+<package name="com.hotheadgames.google.free.rawsniper"/>
+<package name="com.igg.bzbee.deckheroes"/>
+<package name="com.igg.bzbee.slotsdeluxe_ru"/>
+<package name="com.mahjong.sichuang"/>
+<package name="com.xiaoming.bike"/>
+<package name="com.wlcxbj.bike"/>
+<package name="net.edaibu.easywalking"/>
+<package name="com.ttyongche.ttbike"/>
+<package name="com.cool.coolqi"/>
+<package name="com.chetianxia.yundanche"/>
+<package name="com.wenxikeji.bike"/>
+<package name="com.baicycle.app"/>
+<package name="com.ekuaitu.kuaitu"/>
+<package name="jinghao.com.ccbike"/>
+<package name="cn.estronger.bike"/>
+<package name="cn.yunjietong.bike100"/>
+<package name="com.bike.cobike"/>
+<package name="com.exampl.tata"/>
+<package name="com.bikelock.m"/>
+<package name="com.skt.joybike"/>
+<package name="com.touchtype.swiftkey"/>
+<package name="ru.litres.android.audio"/>
+<package name="info.mapcam.droid"/>
+<package name="com.squareenix.champman16"/>
+<package name="air.com.kitchenscramble.goo"/>
+<package name="com.ea.fifaultimate_row"/>
+<package name="com.lingualeo.android"/>
+<package name="com.azarlive.android"/>
+<package name="ru.fotostrana.sweetmeet"/>
+<package name="com.use2pay.misstravel"/>
+<package name="com.quickheal.platform"/>
+<package name="com.playstudios.mykonami"/>
+<package name="com.gtp.nextlauncher.trial"/>
+<package name="com.netqin.ps"/>
+<package name="com.gaana"/>
+<package name="ru.litres.android"/>
+<package name="com.kii.safe"/>
+<package name="com.dropbox.android"/>
+<package name="com.runtastic.android"/>
+<package name="com.alibaba.aliexpresshd"/>
+<package name="com.steam.photoeditor"/>
+<package name="mobi.supo.optimizer"/>
+<package name="com.olx.ssa.ug"/>
+<package name="jp.pokemon.pokenmoncomaster"/>
+<package name="com.tv.v18.viola"/>
+<package name="com.lltskb.lltskb"/>
+<package name="com.tap.filemanager"/>
+<package name="com.jingwei.reader"/>
+<package name="com.oasisfeng.greenify"/>
+<package name="com.xunlei.redcrystalandroid"/>
+<package name="com.happyelements.AndroidAnimal"/>
+<package name="com.bsbportal.music"/>
+<package name="com.olacabs.customer"/>
+<package name="com.myairtelapp"/>
+<package name="com.supo.security"/>
+<package name="com.commsource.beautyplus"/>
+<package name="com.door.offroad.modern.drive.rickshaw"/>
+<package name="com.surpax.ledflashlight.panel"/>
+<package name="com.roboo.explorer"/>
+<package name="com.huohoubrowser"/>
+<package name="com.dolphin.browser.xf"/>
+<package name="sg.bigo.live"/>
+<package name="com.phonepe.app"/>
+<package name="mobi.drupe.app"/>
+<package name="com.opera.mini.native"/>
+<package name="com.nazara.tinylabproductions.chhotabheem"/>
+<package name="com.shopping.limeroad"/>
+<package name="com.ztgame.bob"/>
+<package name="com.bugua.fight"/>
+<package name="com.ChillyRoom.DungeonShooter"/>
+<package name="com.downloading.main.baiduyundownload"/>
+<package name="com.fihtdc.note"/>
+<package name="cn.jsx.youxidiantai"/>
+<package name="com.dewmobile.kuaiya.play"/>
+<package name="com.zhiyoo"/>
+<package name="com.turbochilli.rollingsky"/>
+<package name="com.tencent.tmgp.kof98"/>
+<package name="com.eloancn.mclient"/>
+<package name="com.nianticlabs.pokemongo"/>
+<package name="com.sinyee.babybus.talk2kiki"/>
+<package name="com.dianping.movieheaven"/>
+<package name="com.rockstargames.gtasa"/>
+<package name="com.lianzainovel"/>
+<package name="com.psiphon3"/>
+<package name="com.gameloft.android.ANMP.GloftGGHM"/>
+<package name="com.uc.vmate"/>
+<package name="in.org.npci.upiapp"/>
+<package name="com.webgames.ghosts"/>
+<package name="cn.jsx.youxidiantai.xm"/>
+<package name="com.ushaqi.zhuishushenqitest"/>
+<package name="com.remennovel"/>
+<package name="cn.kdqbxs.reader"/>
+<package name="com.wanshua"/>
+<package name="iwan.tencent.com"/>
+<package name="com.hangzhoucaimi.financial"/>
+<package name="com.fingersoft.hillclimb"/>
+<package name="com.newsdog"/>
+<package name="com.teenpatti.hd.gold"/>
+<package name="com.joeware.android.gpulumera"/>
+<package name="com.yaoo.qlauncher"/>
+<package name="cn.ginshell.bong"/>
+<package name="com.cfgame.dtmj"/>
+<package name="com.vkontakte.android"/>
+<package name="com.jidian.neptune.release"/>
+<package name="com.jixiang.game"/>
+<package name="com.jysz.hbks"/>
+<package name="com.nostop.eighthnote"/>
+<package name="com.youku.vr.lite"/>
+<package name="com.kuman.comic"/>
+<package name="com.outfit7.talkingtom"/>
+<package name="com.balancehero.truebalance"/>
+<package name="com.duapps.antivirus"/>
+<package name="com.dotc.ime.latin.flash"/>
+<package name="com.meitu.beautyplusme"/>
+<package name="com.CultureAlley.japanese.english"/>
+<package name="com.mobikwik_new"/>
+<package name="com.ovital.ovitalMap"/>
+<package name="com.hb.dialer.free"/>
+<package name="com.halo.wifikey.wifilocating"/>
+<package name="weile.guiyangmj"/>
+<package name="com.netease.gameforums"/>
+<package name="com.itmo.momo"/>
+<package name="jp.nicovideo.android"/>
+<package name="com.yyets.rrdict"/>
+<package name="com.yyets.pro"/>
+<package name="com.polydice.icook"/>
+<package name="com.spetrl.rec"/>
+<package name="com.myntra.android"/>
+<package name="com.yeecall.app"/>
+<package name="com.fotoable.fotobeauty"/>
+<package name="com.jabong.android"/>
+<package name="com.duowan.makefriends"/>
+<package name="com.mventus.selfcare.activity"/>
+<package name="com.teniubi.moto.rider"/>
+<package name="com.fundevs.app.mediaconverter"/>
+<package name="com.apusapps.launcher"/>
+<package name="com.xvideostudio.tapslide"/>
+<package name="com.tencent.qqmusiclocalplayer"/>
+<package name="overlay.codemybrainsout.com.overlay"/>
+<package name="com.shopclues"/>
+<package name="com.fungames.sniper3d"/>
+<package name="com.railyatri.in.mobile"/>
+<package name="com.smule.singandroid"/>
+<package name="com.xyauto.carcenter"/>
+<package name="com.mmmono.starcity"/>
+<package name="com.xilu.wybz"/>
+<package name="cn.eku.artclient"/>
+<package name="com.yunva.changke"/>
+<package name="com.same.android"/>
+<package name="com.jio.mhood.jionet"/>
+<package name="com.venticake.retrica"/>
+<package name="com.snapdeal.main"/>
+<package name="com.vocinno.griefstore"/>
+<package name="cn.yupaopao.crop"/>
+<package name="com.utan.android.h3y"/>
+<package name="com.loveorange.wt"/>
+<package name="com.SleepBear.Comic"/>
+<package name="com.impawn.jh"/>
+<package name="com.cdwx.moka"/>
+<package name="com.google.android.apps.fireball"/>
+<package name="com.ne.boeing.plane.mountain.simulator"/>
+<package name="com.sbi.SBIFreedomPlus"/>
+<package name="com.voonik.android"/>
+<package name="com.mobilemotion.dubsmash"/>
+<package name="com.gameloft.android.ANMP.GloftSIHM"/>
+<package name="com.android.abustory"/>
+<package name="com.ibanyi"/>
+<package name="com.cmstop.qjwb"/>
+<package name="com.fenzotech.zeroandroid"/>
+<package name="com.king.candycrushsodasaga"/>
+<package name="com.bt.bms"/>
+<package name="com.whatscan"/>
+<package name="in.mohalla.sharechat"/>
+<package name="io.teslatech.callbreak"/>
+<package name="com.qy_trip.release"/>
+<package name="com.halfbrick.fruitninjafree"/>
+<package name="com.sogou.dictation"/>
+<package name="com.beta.bikestunt.ride"/>
+<package name="com.lyrebirdstudio.collage"/>
+<package name="com.google.android.apps.inputmethod.hindi"/>
+<package name="com.ixigo.train.ixitrain"/>
+<package name="com.bladeburning.racing.highway.offroad.hill.apps"/>
+<package name="com.highlogix.temple.jungle.run2"/>
+<package name="com.imo.android.imoimbeta"/>
+<package name="com.ray3d.shootsniper"/>
+<package name="com.bankapp.hi.banklist"/>
+<package name="com.Dominos"/>
+<package name="com.juejian.nothing"/>
+<package name="com.moyou.moyoux.xmoyou"/>
+<package name="cn.w3cschool.app"/>
+<package name="net.skywalkerhong.yangdun"/>
+<package name="com.puerlink.igo"/>
+<package name="com.lenskart.app"/>
+<package name="com.qqgame.happymj"/>
+<package name="com.northpark.drinkwater"/>
+<package name="com.diffcat.facedance2"/>
+<package name="com.aawant.hunter"/>
+<package name="com.likeshare.zalent"/>
+<package name="cn.caiyu.magicbill"/>
+<package name="com.ScnStudios.RealCityCarDriver3D"/>
+<package name="com.kayak.studio.gifmaker"/>
+<package name="in.AajTak.headlines"/>
+<package name="cn.gogocity.suibian"/>
+<package name="com.ingyomate.shakeit"/>
+<package name="com.ddcc.caifu"/>
+<package name="com.youpu.travel"/>
+<package name="com.threeWater.yirimao"/>
+<package name="HinKhoj.Dictionary"/>
+<package name="com.internet.speed.meter.lite"/>
+<package name="com.hutchgames.hotwheels"/>
+<package name="com.scopely.whiplash"/>
+<package name="com.pianke.client"/>
+<package name="com.lanrenzhoumo.weekend"/>
+<package name="com.baviux.voicechanger"/>
+<package name="com.xnview.hypocam"/>
+<package name="com.whizdm.moneyview"/>
+<package name="com.application.zomato"/>
+<package name="com.nekki.shadowfight"/>
+<package name="com.gameloft.android.ANMP.Gloft5DHM"/>
+<package name="so.dian.powerblue"/>
+<package name="com.electric.chargingpile"/>
+<package name="cn.com.ztev.android.driverapp"/>
+<package name="free.mobile.internet.data.recharge"/>
+<package name="com.gamoper.magiccandy.free"/>
+<package name="com.grofers.customerapp"/>
+<package name="com.nextwave.wcc_lt"/>
+<package name="com.ril.ajio"/>
+<package name="com.js.ludo"/>
+<package name="com.hideitpro"/>
+<package name="media.audioplayer.musicplayer"/>
+<package name="com.google.android.apps.youtube.kids"/>
+<package name="com.reliancejio.mobilesecurity"/>
+<package name="com.aim.racing"/>
+<package name="com.kathleenOswald.solitaireGooglePlay"/>
+<package name="com.lumyer.app"/>
+<package name="com.cyberlink.photodirector"/>
+<package name="com.sonyliv"/>
+<package name="com.gameone.superadventuresofjabber.free"/>
+<package name="com.suitableapps.vehicleinfo"/>
+<package name="com.outfit7.mytalkinghank"/>
+<package name="com.gameloft.android.ANMP.GloftFWHM"/>
+<package name="com.freecharge.android"/>
+<package name="com.highlogix.temple.gold.run"/>
+<package name="bubbleshooter.orig"/>
+<package name="air.WR3DFree"/>
+<package name="com.gameloft.android.ANMP.GloftM5HM"/>
+<package name="com.aag.furious.train.sniper"/>
+<package name="at.ner.lepsWorld2"/>
+<package name="com.appsouls.shadikiraatkivideos"/>
+<package name="com.droidhen.game.racingmoto"/>
+<package name="com.newapps.bridal.suits.pictureeditor"/>
+<package name="com.wpl.offroadtuktukautorickshaw"/>
+<package name="com.games24x7.teenpatti.playstore"/>
+<package name="com.alpha.applock"/>
+<package name="com.happyadda.jalebi"/>
+<package name="com.abof.android"/>
+<package name="bubble.shoot.bubbles.game.saga.world"/>
+<package name="com.supercell.clashroyale"/>
+<package name="com.touchtalent.bobbleapp"/>
+<package name="com.youdao.hindict"/>
+<package name="com.king.hindi.english.translator"/>
+<package name="com.spades.temple.surf"/>
+<package name="com.prime.studio.apps.route.finder.map"/>
+<package name="org.palmsoft.keyboardfree"/>
+<package name="com.fotoable.temperature.weather"/>
+<package name="com.playappking.ametalsoldiers2"/>
+<package name="com.pingenie.screenlocker"/>
+<package name="in.droom.online_obv_app"/>
+<package name="com.droid.caller.id.phone.number.location"/>
+<package name="com.triggerteam.ninjafighting2"/>
+<package name="com.ebay.mobile"/>
+<package name="com.ks.sniper.modern.elite.fury.mountain.apps"/>
+<package name="com.mas3dstudio.motopizzadelivery"/>
+<package name="com.globalfun.tj2015.google"/>
+<package name="com.enstage.wibmo.hdfc"/>
+<package name="com.google.android.apps.tachyon"/>
+<package name="ru.mail"/>
+<package name="mp3videoconverter.videotomp3converter.audioconverter"/>
+<package name="com.oyo.consumer"/>
+<package name="com.anydroid.caller.name.announcer"/>
+<package name="naukriApp.appModules.login"/>
+<package name="com.csam.icici.bank.imobile"/>
+<package name="com.snapwork.hdfc"/>
+<package name="com.stain.offroadoiltanker.fueltransporter.mountainclimb"/>
+<package name="com.gamesoul.CargoTruck.transportSim2017"/>
+<package name="com.junesoftware.nazara.motupatlurace"/>
+<package name="com.tap4fun.reignofwar"/>
+<package name="com.toi.reader.activities"/>
+<package name="com.cleartrip.android"/>
+<package name="com.indianrail.thinkapps.irctc"/>
+<package name="com.mobond.mindicator"/>
+<package name="com.labexception.truckdrivercargo"/>
+<package name="com.feelingtouch.zf3d"/>
+<package name="com.HighbrowInteractive.IndianTrainSim"/>
+<package name="sun.way2sms.hyd.com"/>
+<package name="com.pic.photoeditor"/>
+<package name="com.cmcm.locker"/>
+<package name="com.ninjakiwi.bftg"/>
+<package name="com.rovio.angrybirdsrio"/>
+<package name="hd.backgrounds.wallpapers.theme"/>
+<package name="com.octro.cardroyale"/>
+<package name="com.jio.lyfcare"/>
+<package name="com.outfit7.talkingangelafree"/>
+<package name="net.megawave.flashalerts"/>
+<package name="com.instagram.layout"/>
+<package name="co.gradeup.android"/>
+<package name="com.adobe.adobephotoshopfix"/>
+<package name="com.wordmobiles.bikeRacing"/>
+<package name="com.onexsoftech.gpsroutefinder"/>
+<package name="com.lionmobi.battery"/>
+<package name="com.alvisha.turbanphotoeditor"/>
+<package name="com.appmobie.auratkya"/>
+<package name="com.mgs.drive.offroad.prado.free"/>
+<package name="com.king.bubblewitch3"/>
+<package name="com.phone.locationtracker.calleridnumberlocator"/>
+<package name="com.justdial.jdlite"/>
+<package name="org.khanacademy.android"/>
+<package name="com.tul.tatacliq"/>
+<package name="call.recorder.automatic.acr"/>
+<package name="com.flashalerts.flashalertforallapps"/>
+<package name="co.yellw.yellowapp"/>
+<package name="com.indiagames.cricketfever"/>
+<package name="com.gamma.scan"/>
+<package name="com.epicwaronline.ms"/>
+<package name="in.swiggy.android"/>
+<package name="com.racergame.cityracinglite.free"/>
+<package name="com.topactiongames.survivor.prision.escape"/>
+<package name="com.lyrebirdstudio.art_filter"/>
+<package name="com.junerking.archery"/>
+<package name="com.ace.cleaner"/>
+<package name="com.lyrebirdstudio.montagenscolagem"/>
+<package name="com.wordmobile.waterslide"/>
+<package name="tv.accedo.airtel.wynk"/>
+<package name="com.indiagames.procricket_androidindia"/>
+<package name="com.clicklab.nature.photo.frame"/>
+<package name="com.outfit7.tomlovesangelafree"/>
+<package name="com.junesoftware.nazara.cbrace"/>
+<package name="com.reliance.jio.jioswitch"/>
+<package name="air.com.dittotv.AndroidZEECommercial"/>
+<package name="com.k7computing.android.security"/>
+<package name="com.ea.gp.fifamobile"/>
+<package name="com.quikr"/>
+<package name="com.zenjoy.musicvideo"/>
+<package name="com.google.android.apps.docs.editors.docs"/>
+<package name="com.eyefilter.nightmode.bluelightfilter"/>
+<package name="com.gta.real.gangster.crime.two"/>
+<package name="bwebmedia.cookbakedlasagna"/>
+<package name="com.kinteks.xhdcamera"/>
+<package name="com.miniclip.archery"/>
+<package name="com.appbasic.coupletraditionaldresses"/>
+<package name="com.LiveIndianTrainStatus"/>
+<package name="com.stain.farming.simulator.tractor"/>
+<package name="com.xorware.network.s2g3g.settings"/>
+<package name="com.am.girls.app1.hairstyle.designs"/>
+<package name="com.lm.powersecurity"/>
+<package name="com.appos.dev.angrylioncityattack"/>
+<package name="com.vg.airportpilot.car.transporter.plane"/>
+<package name="com.vtmobile.fastestflashlight"/>
+<package name="com.ashar.naturedual"/>
+<package name="com.easyx.coolermaster"/>
+<package name="com.ushareit.lockit"/>
+<package name="com.dangbeimarket"/>
+<package name="com.brixd.niceapp"/>
+<package name="com.putaolab.mobile"/>
+<package name="com.mgyapp.android"/>
+<package name="com.boying.store"/>
+<package name="com.snailgame.cjg"/>
+<package name="com.tpzvikm.hseuortly"/>
+<package name="com.vng.g6.a.zombie"/>
+<package name="com.nexstreaming.app.singplay"/>
+<package name="com.outthinking.photo"/>
+<package name="com.fotoable.locker"/>
+<package name="com.gmfr.city.construction.hill.drive"/>
+<package name="com.showself.ui"/>
+<package name="com.wtzw.reader"/>
+<package name="com.velocity.light"/>
+<package name="com.everyday.caipiao"/>
+<package name="com.lgcolorbu.appsnearmeclocker"/>
+<package name="com.sogou.se.sogouhotspot"/>
+<package name="com.xgbosh.xgplayas"/>
+<package name="com.suncammi4.live"/>
+<package name="com.edicionesbabylon.mimitos"/>
+<package name="com.lightsky.video"/>
+<package name="com.edog"/>
+<package name="com.singulariti.niapp"/>
+<package name="com.android.fmradio"/>
+<package name="com.yundongquan.sya"/>
+<package name="com.juphoon.service"/>
+<package name="com.ted.number"/>
+<package name="com.happyelements.AndroidAnimal" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cn.jj" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.cgbchina.xpt" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.tencent.transfer" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.by.butter.camera" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.idiom.king" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yiche.price" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.xplaygame.xuancaijiezou2.mi"/>
+<package name="cn.yonghui.hyd" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.wujie.chengxin" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.lietou.mishu" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cn.caocaokeji.user" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.duxiaoman.umoney" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.yunxiao.haofenshu" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.bmcc.ms.ui" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="vip.qufenqian.wifionekey" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.lu.ashionweather" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.tencent.wifimanager" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.mosheng" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.taobao.mobile.dipei" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.fy.bzzbc.mi"/>
+<package name="com.xiaoniu.aidou" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.hundsun.winner.pazq" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.yangcong345.android.phone" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.mosoink.teach" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.supercleaner.lite" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.yuwan.tmshipin" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.xueqiu.android" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.changba" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.dou_pai.DouPai" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.zybang.parent" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.sohu.sohuvideo" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.master.jilianwifi" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.alimama.moon" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.ks.jybh.mi"/>
+<package name="com.jeejen.family" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.lianaibiji.dev" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.gtgj.view" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.ubestkid.beilehu.android"/>
+<package name="com.superjiasu.wifi" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.guotai.dazhihui" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.ppdai.loan" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.gaotu100.superclass" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.kugou.android.ktvapp" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.hoperun.intelligenceportal" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.sh.cm.shydhn" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.juhe.soochowcode" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="mobi.w3studio.apps.android.shsmy.phone" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.huaxiaozhu.driver" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.systoon.beijingtoon" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.bankofbeijing.mobilebanking" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.laolaiwangtech" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.tencent.cmocmna" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.netease.yanxuan" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.csii.gdnx.mobilebank" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.fresh.feed" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.bwton.tjmetro" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.haier.uhome.uplus" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.jsb.china" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.mm.android.lc" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.ucmobile.lite" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="io.dcloud.H576E6CC7" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.hxb.mobile.client" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.jf.lkrj" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.nxy.mobilebank.gx" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.tfsmy.apps.android.tfsmy" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.txmpay.csewallet" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cn.gov.lottery" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.dianshijia.tvlive" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.kugou.shiqutouch" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.suning.mobile.epa" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.duxiaoman.wallet" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.kongming.android.h.parent" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.com.bmac.nfc" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.ataaw.tianyi" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.youth.news" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.zzw.october" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.yoloho.dayima" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.alukaxi.bqshugg.blue" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.ovelin.guitartuna" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.sxnxs.mbank" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cn.com.shbank.mper" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.magicpoint.mobile.bank" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.ydtx.camera" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.zl.fqbao" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.mengtuiapp.mall" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.chinasofti.shanghaihuateng.metroapp" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cn.bevol.p" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.mszmapp.detective" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.ccb.longjiLife" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.jf.my" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.csii.zybk.ui" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.qingqikeji.blackhorse.passenger" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.netandroid.server.ctselves" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.klcxkj.zqxy" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.tencent.peng" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.com.yunma.school.app" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yitong.fjnx.mbank.android" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.lptiyu.tanke" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.tencent.portfolio" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.gome.eshopnew" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.hanweb.izhengzhou.android" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.hpbr.directhires" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.mfp.jelly.xiaomi" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.wondertek.miguaikan" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.yzxx.hpryhyqz.mi"/>
+<package name="gov.zwfw.samr.djzc" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.ants360.yicamera" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.xiaoxun.xun" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.hanweb.android.sdzwfw.activity" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.jxnxs.mobile.bank" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.nbbank" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.chebada" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="im.weshine.keyboard" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.douguo.recipe" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cn.kuwo.tingshu.lite" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.shenghuoquan" isShowDivider="true" scaleMode="1" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.mybank.android.phone" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.forms" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.brianbaek.popstar" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.round.control" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.tencent.FileManager" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.jiankecom.jiankemall" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.secoo" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.pfu.xcxxl.jw2" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.eykid.android.ey" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cn.samsclub.app" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.xmrun.taurus" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.wisentsoft.chinapost.android" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.soufun.app" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.hp.printercontrol" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.HuaXiaBank.HuaCard" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.netease.mkey" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.wedobest.fivechess.mi"/>
+<package name="com.hanweb.android.jszwfw.activity" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.unicom.wopay" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.letv.android.client" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.baidu.minivideo" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.tplink.cloudrouter" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.taikang.tailife" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.crv.wanjia" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.shangfang.gylm" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.tencent.pao"/>
+<package name="com.bly.dkplat" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.hfgdjt.hfmetro" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.lalamove.huolala.driver" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.cctv.cctv5ultimate" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.imaginer.yunji" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.cnki.client" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.yitong.mbank.psbc.creditcard" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.plat.swhydyj.android.ShenWanHongYuanSecurity" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.tsingzone.questionbank" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.bertadata.qxb" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="rwy.baoan.netsupervisor" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.gd.siapp" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.service.android.gov.cn" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.nursinghome.monitor" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.cleanmaster.security_cn" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yiruike.sodacn.android" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.sevenVideo.app.android" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.jiliguala.niuwa" isShowDivider="true" scaleMode="1" supportFullSize="true" supportCameraPreview="true"/>
+<package name="vip.qufenqian.powerwifi" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.tencent.tmgp.lv" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.shensz.student" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.sanmao.newstudypstwo.appunion" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.blizzard.bma.cn" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="sogou.mobile.explorer" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.lvsongguo" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.shoujiduoduo.dj" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.szgov.entrance" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.csii.mobilebank" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.sdjictec.qdmetro" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.kiteguard" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.henzanapp.miaomiaozhe" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="csii.com.qny" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.cz.bible2" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.sflep.course" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.wedobest.shudu" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.aibang.bjtraffic" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.xes.jazhanghui.activity" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.knowbox.rc.student" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.webank.wemoney" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.icbc.wapc" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.linecorp.foodcamcn.android" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.blink.academy.nomo" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.outfit7.mytalkingtomfriends.mi"/>
+<package name="com.outfit7.mytalkingtomfree" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.qb.qtranslator" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.fanli.android.apps" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.infothinker.gzmetro" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="net.cpwxw.cpfiction" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cc.quanben.novel" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.xingjiabi.shengsheng" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.nx.nxapp" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.powersi.zhrs" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.tdx.AndroidNew" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.com.nxy.mbank.hb" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.ultron.crimaster" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.neusoft.iln" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.gomejr.icash" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.cctv4g.cctvmobiletv" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.ziipin.softkeyboard" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.shougang.shiftassistant" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.sdandroid.server.ctscard" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.lj.ljshell" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.redrcd.ylxf" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.shanghaionstar" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.qdccb.bank" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.dotreader.dnovel" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.mallestudio.gugu.app" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.haodf.android" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.crgt.ilife" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.dada.mobile.shop.android" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.com.gzbank.mbank" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.outfit7.mytalkingangelafree" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.thunder.cleaner" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.kuaiyuhudong.djshow" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.mihoyo.desktopportal" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.sgcc.evs.echarge" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.weatherfz2345" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.liubowang.metronome" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.devuni.flashlight" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.mendon.riza" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.jike.cleaner.qingli.jkql" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.jmforemost.wifienvoy" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.sitech.sx.wxcs" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.eol.wen" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.sunboxsoft.oilforgdandroid" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.anjuke.android.newbroker" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.jiuwu" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.kiigames.wifidashi.wfds" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.lufax.android" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.neptune.tmap" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.dxy.gaia" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.woapp.hebei" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.nineton.shouzhang" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="org.pigai.allround" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.generdal.rhgawd.aownd" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.korean.tv" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.csii.hkb" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.alibaba.wireless.lstretailer" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.wifi.reader" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cn.futu.trader" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="apps.lanmao.chuangke" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.careate.qyi" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.cisc" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.czbank.mbank" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.dte.pano3d" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.tbc.android.defaults" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.dedao.juvenile" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.nd.android.pandareader" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.csii.sns.ui" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.imbb.banban.android" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.hichip.campro" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.komoxo.octopusime" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.xihu.shihuimiao" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.wsecar.wsjc" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.prek.android.eb" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.xmiles.batterymaintenance" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.gxyzcwl.microkernel" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.xingluo.molitt" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.hexin.android.futures" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.dotamax.app" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.inspur.icity.tianjin" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.moyou.lianyou" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.outfit7.talkingtom" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="llbt.ccb.ynga" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.tencent.gamecommunity" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.storm.smart" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.to8to.housekeeper" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.leisu.sports" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="photo.editor.polarr" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.fvcorp.android.aijiasuclient" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.yuewen.authorapp" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.cz.hymn" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.joypuzzle.xswl" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cn.zepeto.main" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="org.c2h4.afei.beauty" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.car300.activity" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.knowbox.rc.student.pk" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.optimizeclean.clean" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.starbaba.answer" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yuewen.cooperate.reader.free" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.xxwolo.cc5" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.netease.urs.android.accountmanager" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.boc.bocsoft.phone.enterprise" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.jiange.cleanmaster" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yitong.hrb.people.android" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="org.tinghood.TpsForMobile.mi"/>
+<package name="com.generalcomp.batian" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.sfpay.mobile" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.jiayuan" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.wemomo.matchmaker" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yinhai.syAPP" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.srcb.pmbank" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.cmcc.numberportable" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cn.emoney.emstock" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.guess.video" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.dm.metro" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.huabenapp" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.mianfeizs.book" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.csg.palmhall" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yt.sz.szbank" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.china3s.android" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.cpic.sxbxxe" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.digitalgd.yst" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.android.corpormbank" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.sepnet.teacher" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.camerasideas.instashot" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.bsoft.mhealthp.zhongshan" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.oecommunity.oeshop" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.xiaolongonly.andpodsop" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.cd.eate.ktv" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.ustwo.monumentvalleyzz" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.zcool.community" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.qihoo.qeditor" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.cmdc.optimal" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.fprice.app" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.zhangdan.app" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="im.yixin" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.znxh.zujian" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.android.clock.sd" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="dxwt.questionnaire.ui" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.crland.mixc" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.shmlightning.clean" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.baidu.iknow" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.superrhino.rarering" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="org.ajmd" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.tencent.start" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.iflytek.elpmobile.marktool" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.eno.xyzq.page" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.hebbank.mob" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.idiom.book" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.ichinait.gbpassenger" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.baihe" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.cubic.choosecar" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.ll.nearby" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.hj119.sygjx" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.bishijie" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yinhai.xjzhrs" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.koudai.weishop" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.nixwang.tinydecisions" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.kk.dict" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.photowidgets.magicwidgets" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.molink.john.hummingbird" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.gov.cn" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.navibeidou.beidou" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.sy.government" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.wlqq4consignor" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.kugou.android.douge" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.zaxd.loan" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.jiaxun.acupoint" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.iss.qilubank" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.kuaidaan.app" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.tencent.nijigen" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yunxiao.yuejuan" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.fileunzip.zxwknight" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yitong.mbank.gy" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.tudou.android" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.shixiseng.activity" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.view.asim.enterprise" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.coolkit" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.taichuan.meiguanggong" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.juqitech.niumowang" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.scanner.discount" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="comm.cchong.BloodAssistant" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.gdftu.ygh" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.ccbhome.lanhai" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yykuaile.sh" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.xcpsp.atmgdjh0.xc"/>
+<package name="com.zgylsg.mi"/>
+<package name="com.baitian.aqcs.aqcssy.mi"/>
+<package name="com.tange365.icam365" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.dingdianxiaoshuo.ebook.app" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yitong.gansu.mobilebank" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.maxxipoint.android" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.ai.chinafpb.main" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.hskj.palmmetro" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.baidu.baijia" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.geek.xgweather" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.vmos.app" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.zhnovel.fengduxs" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.ishansong" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.x8zs.sandbox" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.redfinger.app" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.adamrocker.android.input.simeji" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="sogou.mobile.explorer.online" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.blueocean.musicplayer" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.yikaobang.yixue" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.dandelion.routine" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.igxe" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.yuanmengzhiyuan.ei8z.yuanmeng_app" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.com.bhbc.mobilebank.per" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.syido.decibel" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.uneed.yuni" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.bigwinepot.nwdn" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.yjs.android" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.minitech.miniaixue" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.happyelements.AndroidClover.mob" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yaofangwang.mall" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.bhfae.fae.production" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.com.bjns.mbank" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.seca.live" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.hujiang.hjclass" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.xinhu.clean" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.tencent.fit.ccm" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.gbcom.gwifi.school" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.constellation.goddess" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yimilan.yuwen.parent" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.sing.client" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yixia.videoeditor" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.lnrb.lnrbapp" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.bendibao" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.xm4399.hdczjh2.mi"/>
+<package name="com.welove520.qqsweet" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.mc.cpyr.wifidzg.nw" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.tencent.tmgp.qqx5" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.general.op" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.xmgov.xmapp" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.i61.dengta" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.songwu.antweather" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.hwabao.hbstockwarning" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.weige.cqcalendar" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.cntaiping.tpapp" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.excean.splay" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cn.edu.zjicm.wordsnet_d" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.fec.runonce" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.cdfgsanya.app.mobile" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.baidu.searchcraft" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.oupeng.mini.android" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.fujian.daily" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.mobike.mobikeapp" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.tuniu.app.ui" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.vmos.pro" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.bxs.note" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.xiaoying.cardloan" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.feierlaiedu.collegelive" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="huaxianduijue.xmjc.mi"/>
+<package name="com.bilibili.snake.mi"/>
+<package name="com.hundsun.mobile.hsbrowsertest" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.csii.tianjin.mobilebank" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.jeyluta.timestampcameracnfree" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.ht.esview" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.julanling.workschedule" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.ss.android.article.daziban" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.nxy.hn" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.seasun.tech.woh.jx3companion" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.lightricks.facetune.free.cn" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.welove520.welove" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cderg.cocc.cocc_cdids" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.entgroup" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.doc360.client" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.izaodao.gps" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.baidu.lbs.xinlingshou" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.shinemo.qoffice.zjcc" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="bubei.tingshu.pro" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.jt.hanhan.video" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.tianyancha.skyeyequery" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.xsyx.user" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.wish.ycj" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.jryg.driver" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.hisense.ms.fly2tv" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.stonecutter.faceteng" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.ttkmfxs.novel" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.xinmang.guitar.tuner" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.example.a14409.countdownday" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.wanbangauto.chargepile" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.banyac.midrive.app" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="windinfo.android" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.baidao.silver" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.ctrip.ct" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.borui.gsjk" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="mixiaba.com.Browser" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.jooan.qalink" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.rytong.egfbank" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.csii.mobile.iap.bodl" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.geenk.zto.sys" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.kibey.prophecy" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cn.eclicks.drivingtest" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="smskb.com" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.xuetangx.mobile" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.wj.wallet" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="jiakaokesi.app.good" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.twototwo.massage" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.qianbao.guanjia.mobile" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.octinn.birthdayplus" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.cidersoftware.slime.gtx" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="net.chinaedu.alioth" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.bdatu.geography" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.sichuanol.cbgc" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.truckhome.bbs" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.kongteng.streetscape" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.xinchuzu.driver" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="org.sugram.lite" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.hellotalk" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.cn.froad.mobileplatform" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.outfit7.talkingtom2free" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.wta.NewCloudApp.jiuwei80437" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.cmb.ubank.UBUI" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.mooda.xqrj" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.Hotel.EBooking" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.gov.chinatax.jiangsu.etax.app" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.csii.jiangnan" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="battymole.trainticket" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.benfu.yiqi" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.cloudy.component" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.xly.wechatrecover" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cc.quanbennovel" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.jiatingjiaoyu.hoi" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.nd.pptshell" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.cvte.link" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.kdanmobile.android.pdfreader.google.pad" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.ericsson.geely" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.umpay.qingdaonfc" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.zlketang.mm" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.cdvcloud.qicaiyun" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.liveyap.timehut" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="us.pinguo.idcamera" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.c2vl.peace" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.scrolling.ball.in.sky2.ncr" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.alibaba.wireless.seller" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.boc.PBPSD" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.jd.fanli" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.jsfc.beicidaren" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.suirui.zhumu" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yyxx.study" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.aijianji.doupai" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.dtdream.publictransit" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.luqiao.xmmetro" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.mampod.song" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.kingkr.keqiaoling" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.wondersgroup.hksmy" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.witgo.etc" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.ant.supercleaner.cn" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.baojiazhijia.qichebaojia" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.chengyu.chenxi" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.csii.guizhou" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.haoyisheng.mobile.app" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.jizhi.jlongg" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="top.cloudfun.read" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.duoduo.tuanzhang" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.ctid.open" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.pfu.popstar" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.motoband" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.sktq.weather" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.jk.cutout.application" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.com.busteanew" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.shiqichuban.android" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.fy.wdnc.mi"/>
+<package name="com.quickbird.speedtestmaster" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.zymk.comic" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.xmbranch.waterstep" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.kuaibao.skuaidi" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.buick" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.xinmang.camera.measure.altimeter" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.corp21cn.mail189" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yuanlue.photo" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.huiyinxun.wallet.laijc" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.czx.axbapp" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.jlmobile" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.polaris.shoudiantong" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.ninexiu.sixninexiu.appunion" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.rumtel.mobiletv" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.meitu.wheecam" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cn.com.thit.wxmetro" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="io.moreless.islanding" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.fangdai.fdjsq" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.mojitec.mojidict" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.v6.xiuchang" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.fosung.lighthouse" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.first.browser" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.yunti.zzm" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yuanding.seebaby" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.cdbwsoft.weimiquan" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.jhj.cloudman" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.alibaba.icbu.app.seller" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.feng.car" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.hlkj.jsgnsmrz" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.toyota.ftmsApp" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.qihoo.wg.wotbox.an" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.csii.yzbank" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.scrcu.ebap.mer" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.sunboxsoft.oilforyunnanandroid" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.huxiu" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.liubowang.magnifier" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.taobao.newjob" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cn.yingmi.qieman.hermione" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.ximi.weightrecord" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.wifi.reader.free" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.nicomama.niangaomama" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cn.guancha.app" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="ysbang.cn" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.qiqi.sns" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.painting.xswl" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.sflep.iting" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.lokinfo.android.gamemarket.mmshow" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cn.lezhi.speedtest" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.duowan.live" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.xuetangx.xuetangcloud" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.candy.wifi.key" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.baidu.flashlight" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.dbscgeneral" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cn.beekee.zhongtong" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.glsc2" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.meituan.qcs.r.android" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.dlmm.standard" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.tencent.eim" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="youqu.android.todesk"/>
+<package name="ai.zuoye.shijuanbao" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="de.bmw.connected.mobile20.cn" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.gzbank.mbank.externalpk" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.tencent.blackkey" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.nfdaily.nfplus" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.msxf.loan" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.fxicrazy.sjml" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="photo.collage.cn" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.smxxy.sc" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.uthink.ring" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.cloudora.android" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.mvw.nationalmedicalPhone" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.wscreativity.toxx" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="main.smart.HY" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.dzwww.sd.android" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.bilibili.bilibililive" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.gaiaworkforce.mobile" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.xybsyw.user" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.csii.bj.ui" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.mobikeeper.sjgj" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.ormatch.android.asmr" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.jx.fastbrowser" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.cijianlink.cjlk" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.jianbao.doctor" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.jsyc.driver" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.medicalproject.main" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.xunruifairy.wallpaper" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yitong.weather" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.qianlima.yfb" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.jzbank" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.tan8.tuner" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.orangestudio.sudoku" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.wsecar.wsjcsj" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.ime.linyi" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="top.xuante.moloc" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yusi.chongchong" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.question.canknow" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.tnt.madepingzi" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.bxkj.student" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.deppon.dpapp" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.liuyanbing.surveyor" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yijietc.kuoquan" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.hzpd.zqzx" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.sunrisedutyfree.apps.sunrisemembers" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.sinochem.argc" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.stkj.picturetoword" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.coderpage.mine" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.vphonegaga.titan" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.kunshan.main" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.woqu.attendance" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yaerxing.fkst" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.buyanchuantong.buyanshufa" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cn.eol.kaoyan" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.application.limits" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.teslamotors.tesla" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.sljh.uabrowser" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.pptiku.kaoshitiku" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.suixingpay.xinquickpay.app" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.f6car.mobile" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.accordion.prettyo.cn" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.uhaozu.app" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.qyz.fengshuicompass" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.joym.xiongdakuaipao" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.taoguba.app" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.droi.adocker.pro" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.lws207lws" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.iss.weifangbank" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.hexin.plat.android.ZheshangSecurity" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.bank" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.fzcx.supercoach.assistant" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.hnr.dxxw" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.aia.eservice" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.unicom.gudong.client" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.ikongji.cocity.android" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.founder.jincheng" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.app.huibo" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.zjw.chehang168" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.gzhzcj" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.qianyan2.ting.en" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.shrq.clockmorning" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.safeluck.life" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.zai.app" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.dn.cpyr.hcdj.mi" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.jx885.lrjk" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.csii.jsh.ui" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.bytedance.ad.videotool" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.daodao.note" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.pointone.buddy" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.xiaopeng.mycarinfo" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.zsyj.trans" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="app.tikteam.bind" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.htffund.mobile.ec.ui" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.netease.sz.xxqa" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.autohome.mycar" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.mostone.life" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.iss.jiningbank" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.qiangqu.sjlh" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.caing.news" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.lxt.cfmoto" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.microsoft.translator" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.pingan.hrxapp" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.bwton.msx.lyb" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.dream.coloring.book.cn" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.anjjie.elec.zxxy" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.xcsc.tdxapp" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.cgws.wealth" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.alltobid" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.mc.clean" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.lightpalm.fenqia" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.sprite.foreigners" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.alibaba.intl.android.apps.poseidon" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="jp.kingsoft.VirusVsVirus2.gtx" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.examcoo.m" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.zhichan.msmds" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.anshibo.activity" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.Upperpik.HairChallenge.bnn" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.hismart.easylink" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.alicom.smartdail" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.zun1.flyapp" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.dalingjia.shop" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.sonkwoapp" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.com.sf.tsbank" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.wakeup.smartband" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.babychat" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.nmpaic.hzp" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cn.dylovemm.csyh" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="me.czhd.venus" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.yoho" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.shywl.yjxz.mi" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yoc.bekoi" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.hmz.koudaiwriting" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.youloft.icloser" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.doron.xueche.stu" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.pdragon.HD1010" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.liuniantech.fenshen123" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.babybar.headking" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.shenzhen.vanke.vankeyi" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.daojia.jz.app" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.biku.diary" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="gmcc.g5" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.lezhi.mythcall" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.wisdomgarden.trpc" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.percentcompany.app" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.piaoquantv.piaoquanvideoplus" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.sankuai.xmpp" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.wetimetech.video" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.sousui.word" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.bt.ycehome.ui" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.huiyun.care.viewer" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.yy.ourtimes" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.app.hider.master.pro.cn" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.kuwo.tingshuxq" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.wdjr.loan" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.jm.fxw" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.hexin.plat.android.HengtaiSecurity" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.gnet.onemeeting" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.bill99.kuaiyishua" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.chinaums.onlineservice" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.daimler.ris.mercedesme.cn.android" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.xingfei.ui" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.xiaoyu.rightone" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.bluedancer.bluedancer" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.poliq.vyou" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.ford.fordpasscn" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.honeymoon.stone.jean.poweredit" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.app.bfb" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.exam8.wantiku" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.ypshengxian.daojia" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="howbuy.android.palmfund" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.gloud.client.mobile" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.huya.fig" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.xiaobu.busapp.tsx" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.iss.qishangbank" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.orion.xiaoya.speakerclient" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.fy.wdxd.net.mi" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.xiangzi.jukandian" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.tencent.gamestick" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.com.fateu.fateu" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.zhaopin.ihr" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.xgd.quyan" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.qding.community" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.changan.scrm" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.f1player" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.camera.dakaxiangji" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="winretailzctsaler.zct.hsgd.wincrm" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.meican.android" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="top.szhqiot.tracker.py" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.laidian.xiu" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="io.voodoo.holeio.mt" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.offcn.mini.teacher" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.yuanbei.driverlicence" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.ryx.payment.merchant" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.iyuba.englishfm" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.mylikefonts.activity" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.lvwan.ningbo110" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.fengwo.reading" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="DDT.QQ78551393" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.onething.minecloud" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.youloft.dearIceBox" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.linyi.apps.android.rybsmy" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.lixiangdong.LCDWatch.Pro" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.apicloud.A6999270760613" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.suanya.train" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.lphtsccft.zlqqt2" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="vStudio.Android.Camera360" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.lemon.u_course.talent" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.mayi.android.shortrent" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.payment.kay.aaa" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.evian.mobile.water.lq" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.kun.ems" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.ruijie.whistle" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="et.song.aj" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.liubowang.photoretouch" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.lixiangdong.audioextrator" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="io.dcloud.H5AC4580F" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.zxly.assist" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.weisheng.vvic" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.meijiale.macyandlarry" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.StefMorojna.SpaceflightSimulator.mt" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.meituan.banma.errand" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.sankuai.meituan.pai" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="io.dcloud.Gulu373" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.wewave.circlef" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.marriott.mrt" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.tencent.tmgp.jnbg2" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.example.reader.main" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.sunsoft.zyebiz.b2e" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.baidu.searchbox.vision" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.wedobest.llk" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.microsoft.office.officelens" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.dd.sandsortpuzzle.xc" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.baidu.baike" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.disney.shanghaidisneyland_goo" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.weli.weather" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.book.biqugelou" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.gaokaozhiyuan" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.topgether.sixfoot" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="cloud.miplus.tft" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.antutu.aibenchmark" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.wodidashi.paint" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="co.welab.wolaidai" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.offlineCloud" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="cn.swifthealth.patientApp" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.wjj.newscore" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.gl.happyalbum" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.imdada.winner" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.prompt.lines" supportFullSize="true" procCompat="true" middleRule="*"/>
+<package name="com.watsons.mobile" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.qx.gamingroom"/>
+<package name="com.tencent.docs"/>
+<package name="idm.internet.download.manager.plus"/>
+<package name="pan.qqcool.com"/>
+<package name="com.huya.kiwi"/>
+<package name="com.xiaoji.gamesirnsemulator"/>
+<package name="com.galaxylab.ss"/>
+<package name="com.pure.driverbrowser"/>
+<package name="com.dogal.kenhuangzhe.geh.dashixiong" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.android.camera"/>
+<package name="com.omarea.vtools"/>
+<package name="com.hengye.share" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.vmos.alhs"/>
+<package name="com.example.hikerview" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.edu.wenliang"/>
+<package name="com.miui.touchassistant"/>
+<package name="com.viva.note"/>
+<package name="com.facebook.katanq"/>
+<package name="com.hhdd.Kada" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
