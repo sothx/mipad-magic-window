@@ -11,7 +11,7 @@ const is_uninstall_package = options.is_uninstall_package
 
 const buildActionIsNoShowDivider = function () {
   const use_compatibility = options.use_compatibility
-  if (use_compatibility === 'supported_show_divider') {
+  if (use_compatibility === 'not_supported_show_divider') {
     return true;
   }
   return false;

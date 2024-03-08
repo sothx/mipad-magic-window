@@ -15,6 +15,12 @@ const buildActionIsMagicWindow = function () {
   return is_magicWindow
 }
 
+const buildActionIsActivityEmbedding = function () {
+  const use_mode = options.use_mode
+  const is_activityEmbedding = use_mode === 'activityEmbedding'
+  return is_activityEmbedding
+}
+
 const moduleSrc = 'module_src'
 const tempDir = 'temp'
 const commonDist = 'dist/common'
@@ -36,8 +42,8 @@ function copyREADME() {
  * 混入Android 11 下的平行窗口配置
  */
 
-function copyMagicWindowApplicationList() {
-  return src(`${tempDir}/magicWindowFeature_magic_window_application_list.xml`)
+function copyMagicWindowApplicationList(cb) {
+  return is_uninstall_package ? cb() : src(`${tempDir}/magicWindowFeature_magic_window_application_list.xml`)
     .pipe(gulpIf(buildActionIsMagicWindow,gulpXML({
       callback: function (result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml');
@@ -57,8 +63,8 @@ function copyMagicWindowApplicationList() {
     .pipe(gulpIf(buildActionIsMagicWindow, dest(`${commonDist}/system/`)))
 }
 
-function copyMagicWindowSettingConfig() {
-  return src(`${tempDir}/magic_window_setting_config.xml`)
+function copyMagicWindowSettingConfig(cb) {
+  return is_uninstall_package ? cb() : src(`${tempDir}/magic_window_setting_config.xml`)
     .pipe(gulpIf(buildActionIsMagicWindow,gulpXML({
       callback: function (result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml')
@@ -114,9 +120,9 @@ function copyEmbeddedRuleListToSystem(cb) {
  * 混入Android 12L 起的修正方向位置的配置
  */
 
-function copyOriginOrientationListToCommon() {
-  return src(`${moduleSrc}/backup_config/${options.use_platform}/fixed_orientation_list_bak`)
-    .pipe(dest(`${commonDist}/product/etc/`))
+function copyOriginOrientationListToCommon(cb) {
+  return buildActionIsActivityEmbedding() ? src(`${moduleSrc}/backup_config/${options.use_platform}/fixed_orientation_list_bak`)
+    .pipe(dest(`${commonDist}/product/etc/`)) : cb()
 }
 
 function copyFixedOrientationListToCommon(cb) {

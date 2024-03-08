@@ -21,7 +21,7 @@ function buildExtEjsTemplate(cb) {
     .pipe(dest('temp/ext/'))
 }
 
-function buildSourceEjsTemplate() {
+function buildSourceEjsTemplate(cb) {
   const use_platform = options.use_platform
   const use_ratio = options.use_ratio
   const use_compatibility = options.use_compatibility

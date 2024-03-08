@@ -46,7 +46,7 @@ function getExtConfigData(cb) {
     .pipe(dest('temp/json/'))
 }
 
-function mergeExtConfig() {
+function mergeExtConfig(cb) {
   return is_uninstall_package ? cb() : src('temp/embedded_rules_list.xml') // 指定XML文件的路径
     .pipe(gulpIf(isNeedExtConfig,gulpXML({
       callback: function (result) {
