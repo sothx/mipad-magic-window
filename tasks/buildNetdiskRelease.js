@@ -37,7 +37,7 @@ function releasePadByMagicWindow() {
 
 function releaseHyperOsForPad5() {
   return src(`${releaseDir}/${moduleConfig.version}/pad-not_supported_show_divider-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/5.小米平板5系列澎湃专版（不支持左右滑动条）/模块`))
+    .pipe(dest(`${releaseNetdiskDir}/5.小米平板5官方澎湃专版（不支持左右滑动条）/模块`))
 }
 
 
