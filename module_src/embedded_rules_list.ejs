@@ -6042,11 +6042,11 @@
   <package name="com.sina.weibo" fullRule="nra:cr:rcr:nr" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <!-- Adaptive For Sothx 1.10.x -->
-  <package name="com.qiyi.video" isShowDivider="true" supportFullSize="true"  minSupportVersion="1:20230510" isShowDivider="true" clearTop="false" activityRule="org.qiyi.pluginlibrary.component.InstrActivityProxy1,com.qiyi.video.reader.activity.ReadActivity" flags="reusePreContainer:org.qiyi.android.video.MiniModeMainActivity" transitionRules="com.qiyi.video.pages.category.activity.HomeTopMenuCategoryV2Activity,org.qiyi.pluginlibrary.component.InstrActivityProxy1,com.qiyi.video.qigsaw.shortvideo.ShortVideoInstaller,org.qiyi.pluginlibrary.component.InstrActivityProxyTranslucent0" splitPairRule="org.qiyi.android.video.MainActivity:*,org.qiyi.android.search.view.PhoneSearchActivity:*,com.iqiyi.user.ui.activity.MPGeneralCircleActivity:*,com.iqiyi.acg.comic.cdetail.FlatComicDetailActivity:*" placeholder="org.qiyi.android.video.MainActivity:org.qiyi.android.search.view.PhoneSearchActivity" />
+  <package name="com.qiyi.video" scaleMode="1" minSupportVersion="1:20230510" isShowDivider="true" clearTop="false" activityRule="org.qiyi.pluginlibrary.component.InstrActivityProxy1" flags="reusePreContainer:org.qiyi.android.video.MiniModeMainActivity" transitionRules="com.qiyi.video.pages.category.activity.HomeTopMenuCategoryV2Activity,org.qiyi.pluginlibrary.component.InstrActivityProxy1,com.qiyi.video.qigsaw.shortvideo.ShortVideoInstaller,org.qiyi.pluginlibrary.component.InstrActivityProxyTranslucent0"/>
   <package name="com.peopledailychina.activity" isShowDivider="true" supportFullSize="true" splitRatio="0.3" splitPairRule="com.peopledailychina.activity.activity.MainActivity:*,com.peopledailychina.activity.activity.SearchActivity:*,com.peopledailychina.activity.activity.PeopleNumberHomeActivity:*,com.peopledailychina.activity.activity.SoundActivity:*,com.peopledailychina.activity.activity.AudioSeminarDetailActivity:*" />
   <package name="com.baijiayun.jinbang" fullRule="nra:cr:rcr:nr" scaleMode="1" />
   <package name="com.baidu.netdisk.xiaomi.appunion" fullRule="nra:cr:rcr:nr" supportFullSize="true" />
-  <package name="com.baidu.netdisk" fullRule="nra:cr:rcr:nr" supportFullSize="true" />
+  <package name="com.baidu.netdisk" activityRule="com.baidu.netdisk.ui.MainActivity,com.baidu.netdisk.ocr.OCRTakePhotoActivity" transitionRules="com.baidu.netdisk.ui.MainActivity" isShowDivider="true" splitRatio="0.3" splitPairRule="com.baidu.netdisk.ui.MainActivity:*" supportFullSize="true" />
   <package name="com.baidu.netdisk.samsung" fullRule="nra:cr:rcr:nr" supportFullSize="true" />
   <!-- Adaptive For System Fix -->
   <package name="com.zui.browser" fullRule="nra:cr:rcr:nr" />
