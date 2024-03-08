@@ -19,8 +19,8 @@ chcon u:object_r:system_file:s0 $MODDIR/common/product/etc/embedded_rules_list.x
 chcon u:object_r:system_file:s0 $MODDIR/common/product/etc/fixed_orientation_list.xml
 
 # Remove Files
-# rm /data/system/users/0/magic_window_setting_config.xml
-# rm /data/system/magicWindowFeature_magic_window_application_list.xml
+rm /data/system/users/0/magic_window_setting_config.xml
+rm /data/system/magicWindowFeature_magic_window_application_list.xml
 
 # Move Back Files
 rm /product/etc/embedded_rules_list.xml

@@ -2,8 +2,8 @@
 MODDIR=${0%/*}
 
 # Remove Files
-# rm /data/system/users/0/magic_window_setting_config.xml
-# rm /data/system/magicWindowFeature_magic_window_application_list.xml
+rm /data/system/users/0/magic_window_setting_config.xml
+rm /data/system/magicWindowFeature_magic_window_application_list.xml
 
 # Move Back Files
 rm /product/etc/embedded_rules_list.xml
