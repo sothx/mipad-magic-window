@@ -35,12 +35,34 @@ function releasePadByMagicWindow() {
     .pipe(dest(`${releaseNetdiskDir}/4.小米平板老魔窗专版（适配安卓11）/模块`))
 }
 
-
-function releasePadByMIUI14Transplant() {
+function releaseHyperOsForPad5() {
   return src(`${releaseDir}/${moduleConfig.version}/transplant-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/5.基于MIUI14的6 Max移植包专版（仅MIUI14移植可刷）/模块`))
+    .pipe(dest(`${releaseNetdiskDir}/5.小米平板5系列澎湃专版（不支持左右滑动条）/模块`))
 }
 
 
 
-module.exports = parallel(releasePad,releaseRatioOf3To2Pad,releaseFold,releasePadByMagicWindow,releasePadByMIUI14Transplant)
+function releasePadByMIUI14Transplant() {
+  return src(`${releaseDir}/${moduleConfig.version}/transplant-${moduleConfig.version}.zip`)
+    .pipe(dest(`${releaseNetdiskDir}/6.基于MIUI14的6 Max移植包专版（仅MIUI14移植可刷）/模块`))
+}
+
+function releaseUnInstallPad() {
+  return src(`${releaseDir}/${moduleConfig.version}/uninstall-pad-0.00.00.zip`)
+    .pipe(dest(`${releaseNetdiskDir}/7.卸载模块/模块/安卓12L以上版本小米平板模块适用`))
+}
+
+function releaseUnInstallFold() {
+  return src(`${releaseDir}/${moduleConfig.version}/uninstall-fold-0.00.00.zip`)
+    .pipe(dest(`${releaseNetdiskDir}/7.卸载模块/模块/Mix Fold系列折叠屏适用`))
+}
+
+function releaseUnInstallMagicWindow() {
+  return src(`${releaseDir}/${moduleConfig.version}/uninstall-pad-magicWindow-0.00.00.zip`)
+    .pipe(dest(`${releaseNetdiskDir}/7.卸载模块/模块/安卓11版本小米平板模块适用`))
+}
+
+
+
+
+module.exports = parallel(releasePad,releaseRatioOf3To2Pad,releaseFold,releasePadByMagicWindow,releaseHyperOsForPad5,releasePadByMIUI14Transplant,releaseUnInstallPad,releaseUnInstallFold,releaseUnInstallMagicWindow)
