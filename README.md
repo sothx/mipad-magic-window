@@ -40,6 +40,8 @@ uninstall-pad-magicWindow-0.00.00——安卓11版本小米平板模块适用
 
 uninstall-fold-0.00.00.zip——Mix Fold系列折叠屏适用
 
+安装该模块后重启，然后再卸载该模块，再重启即可。
+
 ## 快速开发指南
 项目脚手架基于Gulp工作流，需要依赖Gulp-Cli，可以通过以下方式进行安装：
 
