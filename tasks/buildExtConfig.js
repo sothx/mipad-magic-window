@@ -13,16 +13,16 @@ let extConfigStack = {}
 
 const isNeedExtConfig = function() {
   const use_ext = options.use_ext
-  const is_uninstall_package = options.is_uninstall_package
-  return use_ext && !is_uninstall_package;
+  return use_ext
 }
 
+const is_uninstall_package = options.is_uninstall_package
 
 /**
  * 支持扩展应用规则(Only Android 12+)
  */
-function getExtConfigData() {
-  return src('temp/ext/embedded_rules_list.xml') // 指定XML文件的路径
+function getExtConfigData(cb) {
+  return is_uninstall_package ? cb() : src('temp/ext/embedded_rules_list.xml') // 指定XML文件的路径
     .pipe(gulpIf(isNeedExtConfig,gulpXML({
       callback: function(result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml');
@@ -40,14 +40,14 @@ function getExtConfigData() {
         }
       }
     })))
-    .pipe(gulpIf(isNeedExtConfig,gulpRename({
+    .pipe(gulpRename({
       extname: '.json'
-    })))
-    .pipe(gulpIf(isNeedExtConfig,dest('temp/json/')))
+    }))
+    .pipe(dest('temp/json/'))
 }
 
 function mergeExtConfig() {
-  return src('temp/embedded_rules_list.xml') // 指定XML文件的路径
+  return is_uninstall_package ? cb() : src('temp/embedded_rules_list.xml') // 指定XML文件的路径
     .pipe(gulpIf(isNeedExtConfig,gulpXML({
       callback: function (result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml')
@@ -84,7 +84,7 @@ function mergeExtConfig() {
         const cleanedXml = serializedXml.replace(/^\s*[\r\n]|[\r\n]+\s*$/gm, ''); 
         return cleanedXml;
       }})))
-    .pipe(gulpIf(isNeedExtConfig,dest('temp')));
+    .pipe(dest('temp'));
 }
 
 module.exports = series(getExtConfigData,mergeExtConfig)

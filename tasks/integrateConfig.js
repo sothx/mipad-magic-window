@@ -7,11 +7,12 @@ const DOMParser = require('xmldom').DOMParser;
 const XMLSerializer = require('xmldom').XMLSerializer;
 const blacklistApplicationsList = require('../config/blacklistApplications');
 
+const is_uninstall_package = options.is_uninstall_package
+
 const buildActionIsMagicWindow = function () {
   const use_mode = options.use_mode
-  const is_uninstall_package = options.is_uninstall_package
   const is_magicWindow = use_mode === 'magicWindow'
-  return is_magicWindow && !is_uninstall_package
+  return is_magicWindow
 }
 
 const moduleSrc = 'module_src'
@@ -20,11 +21,6 @@ const commonDist = 'dist/common'
 const systemDist = 'dist'
 
 let magicWindowApplicationListStack = {}
-
-const buildActionIsInstallPackage = function () {
-  const is_uninstall_package = options.is_uninstall_package
-  return is_uninstall_package === false
-}
 
 /**
  * 混入公共配置
@@ -104,14 +100,14 @@ function copyOriginEmbeddedRuleListToCommon() {
 }
 
 
-function copyEmbeddedRuleListToCommon() {
-  return src(`${tempDir}/embedded_rules_list.xml`)
-    .pipe(gulpIf(buildActionIsInstallPackage,dest(`${commonDist}/product/etc/`)))
+function copyEmbeddedRuleListToCommon(cb) {
+  return is_uninstall_package ? cb() : src(`${tempDir}/embedded_rules_list.xml`)
+    .pipe(dest(`${commonDist}/product/etc/`))
 }
 
-function copyEmbeddedRuleListToSystem() {
-  return src(`${tempDir}/embedded_rules_list.xml`)
-  .pipe(gulpIf(buildActionIsInstallPackage,dest(`${systemDist}/product/etc/`)))
+function copyEmbeddedRuleListToSystem(cb) {
+  return is_uninstall_package ? cb() : src(`${tempDir}/embedded_rules_list.xml`)
+  .pipe(dest(`${systemDist}/product/etc/`))
 }
 
 /**
@@ -123,14 +119,14 @@ function copyOriginOrientationListToCommon() {
     .pipe(dest(`${commonDist}/product/etc/`))
 }
 
-function copyFixedOrientationListToCommon() {
-  return src(`${tempDir}/fixed_orientation_list.xml`)
-    .pipe(gulpIf(buildActionIsInstallPackage,dest(`${commonDist}/product/etc/`)))
+function copyFixedOrientationListToCommon(cb) {
+  return is_uninstall_package ? cb() : src(`${tempDir}/fixed_orientation_list.xml`)
+    .pipe(dest(`${commonDist}/product/etc/`))
 }
 
-function copyFixedOrientationListToSystem() {
-  return src(`${tempDir}/fixed_orientation_list.xml`)
-    .pipe(gulpIf(buildActionIsInstallPackage,dest(`${systemDist}/product/etc/`)))
+function copyFixedOrientationListToSystem(cb) {
+  return is_uninstall_package ? cb() : src(`${tempDir}/fixed_orientation_list.xml`)
+    .pipe(dest(`${systemDist}/product/etc/`))
 }
 
 

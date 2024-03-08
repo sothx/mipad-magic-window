@@ -7,10 +7,11 @@ const gulpIf = require('gulp-if');
 const DOMParser = require('xmldom').DOMParser;
 const XMLSerializer = require('xmldom').XMLSerializer;
 
+const is_uninstall_package = options.is_uninstall_package
+
 const buildActionIsFold = function () {
   const use_platform = options.use_platform
-  const is_uninstall_package = options.is_uninstall_package
-  if (use_platform === 'fold' && !is_uninstall_package) {
+  if (use_platform === 'fold') {
     return true;
   }
   return false;
@@ -19,8 +20,8 @@ const buildActionIsFold = function () {
 /**
  * 折叠屏设备不适配splitRatio参数，统一去除
  */
-module.exports = function adaptivePlatformToFold() {
-  return src('temp/embedded_rules_list.xml') // 指定XML文件的路径
+module.exports = function adaptivePlatformToFold(cb) {
+  return is_uninstall_package ? cb() : src('temp/embedded_rules_list.xml') // 指定XML文件的路径
     .pipe(gulpIf(buildActionIsFold,gulpXML({
       callback: function (result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml')

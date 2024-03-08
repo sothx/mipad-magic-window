@@ -13,6 +13,6 @@ const unInstallPackageMap = {
 }
 
 module.exports = function buildTemplate() {
-  return src(options.is_uninstall_package ? unInstallPackageMap[use_platform === 'fold' ? 'fold' : options.use_mode] :  modeMap[options.use_mode])
+  return src(options.is_uninstall_package ? unInstallPackageMap[options.use_platform === 'fold' ? 'fold' : options.use_mode] :  modeMap[options.use_mode])
          .pipe(dest('dist'))
 }
