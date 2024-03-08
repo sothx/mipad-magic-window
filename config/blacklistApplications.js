@@ -29,6 +29,7 @@ const fullScreenList = {
   'com.jd.app.reader': true, // 京东读书
   'com.huajiao': true, // 花椒直播
   'com.youku.phone': true, // 优酷视频
+  'com.tencent.qqlive': true, // 腾讯视频
 }
 
 /**
