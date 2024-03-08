@@ -2,6 +2,7 @@ const gulpEjs = require('gulp-ejs');
 const gulpRename = require('gulp-rename');
 const { src, dest, parallel } = require('gulp');
 const { options } = require('../config/process.env');
+const gulpIf = require('gulp-if');
 
 const buildActionIsInstallPackage = function () {
   const is_uninstall_package = options.is_uninstall_package

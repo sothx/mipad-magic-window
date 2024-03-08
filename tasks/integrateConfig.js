@@ -23,7 +23,7 @@ let magicWindowApplicationListStack = {}
 
 const buildActionIsInstallPackage = function () {
   const is_uninstall_package = options.is_uninstall_package
-  return !is_uninstall_package
+  return is_uninstall_package === false
 }
 
 /**
@@ -100,18 +100,18 @@ function copyMagicWindowSettingConfig() {
 
 function copyOriginEmbeddedRuleListToCommon() {
   return src(`${moduleSrc}/backup_config/${options.use_platform}/embedded_rules_list_bak`)
-    .pipe(dest(gulpIf(buildActionIsInstallPackage,`${commonDist}/product/etc/`)))
+    .pipe(dest(`${commonDist}/product/etc/`))
 }
 
 
 function copyEmbeddedRuleListToCommon() {
   return src(`${tempDir}/embedded_rules_list.xml`)
-    .pipe(dest(gulpIf(buildActionIsInstallPackage,`${commonDist}/product/etc/`)))
+    .pipe(gulpIf(buildActionIsInstallPackage,dest(`${commonDist}/product/etc/`)))
 }
 
 function copyEmbeddedRuleListToSystem() {
   return src(`${tempDir}/embedded_rules_list.xml`)
-    .pipe(dest(gulpIf(buildActionIsInstallPackage,`${systemDist}/product/etc/`)))
+  .pipe(gulpIf(buildActionIsInstallPackage,dest(`${systemDist}/product/etc/`)))
 }
 
 /**
@@ -125,12 +125,12 @@ function copyOriginOrientationListToCommon() {
 
 function copyFixedOrientationListToCommon() {
   return src(`${tempDir}/fixed_orientation_list.xml`)
-    .pipe(dest(gulpIf(buildActionIsInstallPackage,`${commonDist}/product/etc/`)))
+    .pipe(gulpIf(buildActionIsInstallPackage,dest(`${commonDist}/product/etc/`)))
 }
 
 function copyFixedOrientationListToSystem() {
   return src(`${tempDir}/fixed_orientation_list.xml`)
-    .pipe(dest(gulpIf(buildActionIsInstallPackage,`${systemDist}/product/etc/`)))
+    .pipe(gulpIf(buildActionIsInstallPackage,dest(`${systemDist}/product/etc/`)))
 }
 
 

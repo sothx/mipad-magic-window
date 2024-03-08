@@ -9,7 +9,8 @@ const XMLSerializer = require('xmldom').XMLSerializer;
 
 const buildActionIsFold = function () {
   const use_platform = options.use_platform
-  if (use_platform === 'fold') {
+  const is_uninstall_package = options.is_uninstall_package
+  if (use_platform === 'fold' && !is_uninstall_package) {
     return true;
   }
   return false;

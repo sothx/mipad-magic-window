@@ -38,5 +38,5 @@ module.exports = function adaptiveCompatibilityToNoDivider() {
         return new XMLSerializer().serializeToString(doc);
       }
     })))
-    .pipe(dest('temp'));
+    .pipe(gulpIf(buildActionIsNoShowDivider,dest('temp')));
 }
