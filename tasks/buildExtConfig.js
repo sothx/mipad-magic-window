@@ -13,8 +13,10 @@ let extConfigStack = {}
 
 const isNeedExtConfig = function() {
   const use_ext = options.use_ext
-  return use_ext;
+  const is_uninstall_package = options.is_uninstall_package
+  return use_ext && !is_uninstall_package;
 }
+
 
 /**
  * 支持扩展应用规则(Only Android 12+)
@@ -38,10 +40,10 @@ function getExtConfigData() {
         }
       }
     })))
-    .pipe(gulpRename({
+    .pipe(gulpIf(isNeedExtConfig,gulpRename({
       extname: '.json'
-    }))
-    .pipe(dest('temp/json/'))
+    })))
+    .pipe(gulpIf(isNeedExtConfig,dest('temp/json/')))
 }
 
 function mergeExtConfig() {
@@ -82,7 +84,7 @@ function mergeExtConfig() {
         const cleanedXml = serializedXml.replace(/^\s*[\r\n]|[\r\n]+\s*$/gm, ''); 
         return cleanedXml;
       }})))
-    .pipe(dest('temp'));
+    .pipe(gulpIf(isNeedExtConfig,dest('temp')));
 }
 
 module.exports = series(getExtConfigData,mergeExtConfig)

@@ -1,5 +1,5 @@
 const { series, parallel, task, src } = require('gulp');
-const { cleanDist,cleanTemp,cleanOutputTemp } = require('./tasks/cleanDir');
+const { cleanDist, cleanTemp, cleanOutputTemp } = require('./tasks/cleanDir');
 const buildTemplate = require('./tasks/buildTemplate');
 const integrateConfig = require('./tasks/integrateConfig');
 const buildRelease = require('./tasks/buildRelease');
@@ -11,6 +11,9 @@ const adaptiveTransplantRom = require('./tasks/adaptiveTransplantRom');
 const { mergeActivityEmbeddingConfig, mergeMagicWindowConfig } = require('./tasks/mergeMagicWindowConfig');
 const buildNetdiskRelease = require('./tasks/buildNetdiskRelease');
 const adaptiveCompatibilityToNoDivider = require('./tasks/adaptiveCompatibilityToNoDivider');
+const { options } = require('./config/process.env');
+const gulpIf = require('gulp-if');
+
 
 const buildTasks = series(
   cleanDist,

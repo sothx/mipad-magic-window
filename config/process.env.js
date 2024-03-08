@@ -3,7 +3,7 @@ const minimist = require("minimist");
 // 配置命令行可以接受的参数以及默认值
 let knownOptions = {
   string: ['use_platform','use_ratio','use_mode','use_compatibility'],
-  boolean: ['use_ext', 'is_transplant'],
+  boolean: ['use_ext', 'is_transplant','is_uninstall_package'],
   default: {
     use_platform: "pad", // 平板则为pad，折叠屏则为fold
     use_ext: false,// true为混入扩展配置，false则不混入扩展配置
@@ -12,6 +12,7 @@ let knownOptions = {
     use_mode: 'activityEmbedding', // 使用的平行视界模式，支持安卓11时代的magicWindow和安装12L起的activityEmbedding
     use_merge_config_brand: 'hw', // 合并平行视界规则时候使用的规则厂商品牌，hw——华为/荣耀平板，oppo——OPPO Pad
     use_compatibility: '', // 特别版本的兼容参数，supported_show_divider——不支持左右滑动条的机型
+    is_uninstall_package: false, // true为打卸载包，false则为普通包
   },
   alias: {
     p: 'use_platform',
@@ -20,7 +21,8 @@ let knownOptions = {
     r: 'use_ratio',
     m: 'use_mode',
     b: 'use_merge_config_brand',
-    pc: 'use_compatibility'
+    pc: 'use_compatibility',
+    u: 'is_uninstall_package'
   }
 };
 

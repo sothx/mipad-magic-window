@@ -8,7 +8,8 @@ const moduleSrc = 'module_src'
 const buildActionIsTransplant = function () {
   const is_transplant = options.is_transplant
   const is_pad = options.use_platform === 'pad'
-  return is_transplant && is_pad
+  const is_uninstall_package = options.is_uninstall_package
+  return is_transplant && is_pad && !is_uninstall_package
 }
 
 /**

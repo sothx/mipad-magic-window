@@ -6,7 +6,13 @@ const modeMap = {
   activityEmbedding: 'install_module_template/activityEmbedding/**'
 }
 
+const unInstallPackageMap = {
+  magicWindow: 'uninstall_module_template/pad/magicWindow/**',
+  activityEmbedding: 'uninstall_module_template/pad/activityEmbedding/**',
+  fold: 'uninstall_module_template/fold/**'
+}
+
 module.exports = function buildTemplate() {
-  return src(modeMap[options.use_mode])
+  return src(options.is_uninstall_package ? unInstallPackageMap[use_platform === 'fold' ? 'fold' : options.use_mode] :  modeMap[options.use_mode])
          .pipe(dest('dist'))
 }

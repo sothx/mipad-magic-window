@@ -9,7 +9,8 @@ const XMLSerializer = require('xmldom').XMLSerializer;
 
 const buildActionIsNoShowDivider = function () {
   const use_compatibility = options.use_compatibility
-  if (use_compatibility === 'supported_show_divider') {
+  const is_uninstall_package = options.is_uninstall_package
+  if (use_compatibility === 'supported_show_divider' && !is_uninstall_package) {
     return true;
   }
   return false;

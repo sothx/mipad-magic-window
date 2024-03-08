@@ -9,8 +9,9 @@ const blacklistApplicationsList = require('../config/blacklistApplications');
 
 const buildActionIsMagicWindow = function () {
   const use_mode = options.use_mode
+  const is_uninstall_package = options.is_uninstall_package
   const is_magicWindow = use_mode === 'magicWindow'
-  return is_magicWindow
+  return is_magicWindow && !is_uninstall_package
 }
 
 const moduleSrc = 'module_src'
@@ -19,6 +20,11 @@ const commonDist = 'dist/common'
 const systemDist = 'dist'
 
 let magicWindowApplicationListStack = {}
+
+const buildActionIsInstallPackage = function () {
+  const is_uninstall_package = options.is_uninstall_package
+  return !is_uninstall_package
+}
 
 /**
  * 混入公共配置
@@ -94,34 +100,40 @@ function copyMagicWindowSettingConfig() {
 
 function copyOriginEmbeddedRuleListToCommon() {
   return src(`${moduleSrc}/backup_config/${options.use_platform}/embedded_rules_list_bak`)
-    .pipe(dest(`${commonDist}/product/etc/`))
+    .pipe(dest(gulpIf(buildActionIsInstallPackage,`${commonDist}/product/etc/`)))
 }
 
 
 function copyEmbeddedRuleListToCommon() {
   return src(`${tempDir}/embedded_rules_list.xml`)
-    .pipe(dest(`${commonDist}/product/etc/`))
+    .pipe(dest(gulpIf(buildActionIsInstallPackage,`${commonDist}/product/etc/`)))
 }
 
 function copyEmbeddedRuleListToSystem() {
   return src(`${tempDir}/embedded_rules_list.xml`)
-    .pipe(dest(`${systemDist}/product/etc/`))
+    .pipe(dest(gulpIf(buildActionIsInstallPackage,`${systemDist}/product/etc/`)))
 }
 
 /**
  * 混入Android 12L 起的修正方向位置的配置
  */
+
+function copyOriginOrientationListToCommon() {
+  return src(`${moduleSrc}/backup_config/${options.use_platform}/fixed_orientation_list_bak`)
+    .pipe(dest(`${commonDist}/product/etc/`))
+}
+
 function copyFixedOrientationListToCommon() {
   return src(`${tempDir}/fixed_orientation_list.xml`)
-    .pipe(dest(`${commonDist}/product/etc/`))
+    .pipe(dest(gulpIf(buildActionIsInstallPackage,`${commonDist}/product/etc/`)))
 }
 
 function copyFixedOrientationListToSystem() {
   return src(`${tempDir}/fixed_orientation_list.xml`)
-    .pipe(dest(`${systemDist}/product/etc/`))
+    .pipe(dest(gulpIf(buildActionIsInstallPackage,`${systemDist}/product/etc/`)))
 }
 
 
 
 
-module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig), copyOriginEmbeddedRuleListToCommon, copyEmbeddedRuleListToCommon, copyEmbeddedRuleListToSystem,copyFixedOrientationListToCommon,copyFixedOrientationListToSystem), cleanTemp)
+module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig), copyOriginEmbeddedRuleListToCommon, copyEmbeddedRuleListToCommon, copyEmbeddedRuleListToSystem,copyOriginOrientationListToCommon,copyFixedOrientationListToCommon,copyFixedOrientationListToSystem), cleanTemp)
