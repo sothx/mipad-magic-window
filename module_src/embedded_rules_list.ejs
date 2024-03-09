@@ -6042,10 +6042,17 @@
   <package name="com.peopledailychina.activity" isShowDivider="true" supportFullSize="true" splitRatio="0.3" splitPairRule="com.peopledailychina.activity.activity.MainActivity:*,com.peopledailychina.activity.activity.SearchActivity:*,com.peopledailychina.activity.activity.PeopleNumberHomeActivity:*,com.peopledailychina.activity.activity.SoundActivity:*,com.peopledailychina.activity.activity.AudioSeminarDetailActivity:*" />
   <package name="com.baijiayun.jinbang" fullRule="nra:cr:rcr:nr" scaleMode="1" />
   <package name="com.baidu.netdisk.xiaomi.appunion" fullRule="nra:cr:rcr:nr" supportFullSize="true" />
-  <package name="com.baidu.netdisk" activityRule="com.baidu.netdisk.ui.MainActivity,com.baidu.netdisk.ocr.OCRTakePhotoActivity" transitionRules="com.baidu.netdisk.ui.MainActivity" isShowDivider="true" splitRatio="0.3" splitPairRule="com.baidu.netdisk.ui.MainActivity:*" supportFullSize="true" />
+  <!-- <package name="com.baidu.netdisk" activityRule="com.baidu.netdisk.ui.MainActivity,com.baidu.netdisk.ocr.OCRTakePhotoActivity" transitionRules="com.baidu.netdisk.ui.MainActivity" isShowDivider="true" splitRatio="0.3" splitPairRule="com.baidu.netdisk.ui.MainActivity:*" supportFullSize="true" /> -->
+  <package name="com.baidu.netdisk" activityRule="com.baidu.netdisk.video.ui.preview.video.VideoPlayerActivity,com.baidu.netdisk.ui.MainActivity,com.baidu.netdisk.ocr.OCRTakePhotoActivity"
+  flags="ignoreActivityBelowWhenJudgeMiddle:com.baidu.netdisk.ui.account.LoginRegisterActivity;useSameTfcOnCreateInPortrait:com.baidu.netdisk.ui.Navigate,com.baidu.netdisk.ui.account.LoginRegisterActivity"
+  isShowDivider="true" supportFullSize="true"
+  splitPairRule="com.baidu.netdisk.ui.MainActivity:*"
+  splitRatio="0.3"
+  transitionRules="com.baidu.netdisk.ui.cloudfile.HomeEntryActivity,com.baidu.netdisk.flutter.ui.FlutterBusinessActivity,com.baidu.netdisk.ui.preview.OpenFileDialog,com.baidu.netdisk.ui.Navigate,com.baidu.netdisk.ui.cloudp2p.ShareGuideDialogActivity" />
   <package name="com.baidu.netdisk.samsung" fullRule="nra:cr:rcr:nr" supportFullSize="true" />
   <package name="com.kugou.android" fullRule="*" />
   <package name="com.wujie.connect" fullRule="*" />
+  <package name="com.facebook.katana" fullRule="nr" />
   <!-- Adaptive For System Fix -->
   <package name="com.zui.browser" fullRule="nra:cr:rcr:nr" />
   <package name="com.android.browser" fullRule="nra:cr:rcr:nr" />
