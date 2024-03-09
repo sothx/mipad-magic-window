@@ -30,6 +30,7 @@ const fullScreenList = {
   'com.huajiao': true, // 花椒直播
   'com.youku.phone': true, // 优酷视频
   'com.tencent.qqlive': true, // 腾讯视频
+  'com.kugou.android': true, // 酷狗音乐
 }
 
 /**
