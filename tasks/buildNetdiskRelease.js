@@ -16,7 +16,7 @@ const releaseNetdiskDir = `release/${moduleConfig.version}/netdisk`
 
 function releasePad() {
   return src(`${releaseDir}/${moduleConfig.version}/pad-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/1.小米平板专版（推荐）/模块`))
+    .pipe(dest(`${releaseNetdiskDir}/1.小米平板通用版（通用版，推荐）/模块`))
 }
 
 function releaseRatioOf3To2Pad() {
@@ -26,18 +26,18 @@ function releaseRatioOf3To2Pad() {
 
 function releaseFold() {
   return src(`${releaseDir}/${moduleConfig.version}/fold-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/3.小米折叠屏专版（适配Mix Fold系列）/模块`))
+    .pipe(dest(`${releaseNetdiskDir}/3.小米折叠屏通用版（适配Mix Fold系列）/模块`))
 }
 
 
 function releasePadByMagicWindow() {
   return src(`${releaseDir}/${moduleConfig.version}/pad-magicWindow-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/4.小米平板老魔窗专版（适配安卓11）/模块`))
+    .pipe(dest(`${releaseNetdiskDir}/4.小米平板安卓11通用版/模块`))
 }
 
 function releaseHyperOsForPad5() {
   return src(`${releaseDir}/${moduleConfig.version}/pad-not_supported_show_divider-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/5.小米平板5官方澎湃专版（不支持左右滑动条）/模块`))
+    .pipe(dest(`${releaseNetdiskDir}/5.小米平板5官方澎湃专版（不支持左右调节）/模块`))
 }
 
 
