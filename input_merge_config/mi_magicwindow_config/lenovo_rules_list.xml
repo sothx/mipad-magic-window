@@ -9,7 +9,6 @@
 <package name="com.eshore.ezone"/>
 <package name="com.nd.android.pandahome2"/>
 <package name="com.funcity.taxi.passenger"/>
-<package name="com.qihoo360.mobilesafe_mtk6573"/>
 <package name="com.qihoo.antivirus"/>
 <package name="com.ijinshan.mguard"/>
 <package name="com.anguanjia.safe"/>
@@ -832,7 +831,6 @@
 <package name="com.juphoon.service"/>
 <package name="com.ted.number"/>
 <package name="com.happyelements.AndroidAnimal" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
-<package name="cn.jj" supportFullSize="true" supportCameraPreview="true"/>
 <package name="com.cgbchina.xpt" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
 <package name="com.tencent.transfer" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
 <package name="com.by.butter.camera" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
@@ -848,9 +846,8 @@
 <package name="com.bmcc.ms.ui" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
 <package name="vip.qufenqian.wifionekey" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.lu.ashionweather" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
-<package name="com.tencent.wifimanager" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
 <package name="com.mosheng" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
-<package name="com.taobao.mobile.dipei" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
+<package name="com.taobao.mobile.dipei" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/><!--口碑，应用崩溃-->
 <package name="com.fy.bzzbc.mi"/>
 <package name="com.xiaoniu.aidou" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
 <package name="com.hundsun.winner.pazq" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
