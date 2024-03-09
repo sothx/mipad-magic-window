@@ -32,7 +32,7 @@ function releaseFold() {
 
 function releasePadByMagicWindow() {
   return src(`${releaseDir}/${moduleConfig.version}/pad-magicWindow-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/4.小米平板安卓11通用版/模块`))
+    .pipe(dest(`${releaseNetdiskDir}/4.小米平板安卓11专版/模块`))
 }
 
 function releaseHyperOsForPad5() {
