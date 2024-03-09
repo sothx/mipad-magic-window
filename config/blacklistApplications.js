@@ -34,6 +34,8 @@ const fullScreenList = {
   'com.ss.android.ugc.aweme': true, // 抖音
   'com.ss.android.ugc.live': true, // 抖音火山版
   'com.ss.android.ugc.aweme.lite': true, // 抖音极速版
+  'com.smile.gifmaker': true, // 快手
+  'com.kuaishou.nebula': true, // 快手极速版
 }
 
 /**
