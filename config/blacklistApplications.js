@@ -36,6 +36,7 @@ const fullScreenList = {
   'com.ss.android.ugc.aweme.lite': true, // 抖音极速版
   'com.smile.gifmaker': true, // 快手
   'com.kuaishou.nebula': true, // 快手极速版
+  'com.bdatu.geography': true, // 华夏地理
 }
 
 /**
