@@ -38,6 +38,8 @@ const fullScreenList = {
   'com.kuaishou.nebula': true, // 快手极速版
   'com.bdatu.geography': true, // 华夏地理
   'com.ubestkid.beilehu.android': true, // 贝乐虎儿歌
+  'youqu.android.todesk': true, // Todesk
+  'com.tencent.docs': true, // 腾讯文档
 }
 
 /**

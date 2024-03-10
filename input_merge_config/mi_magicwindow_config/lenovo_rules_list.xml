@@ -832,14 +832,11 @@
 <package name="com.ted.number"/>
 <package name="com.netandroid.server.ctselves" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.mfp.jelly.xiaomi" supportFullSize="true" procCompat="true" middleRule="*"/>
-<package name="com.yzxx.hpryhyqz.mi"/>
 <package name="gov.zwfw.samr.djzc" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="cn.kuwo.tingshu.lite" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.shenghuoquan" isShowDivider="true" scaleMode="1" supportFullSize="true" supportCameraPreview="true"/>
 <package name="com.brianbaek.popstar" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.pfu.xcxxl.jw2" supportFullSize="true" procCompat="true" middleRule="*"/>
-<package name="com.wedobest.fivechess.mi"/>
-<package name="com.tencent.pao"/>
 <package name="com.tencent.tmgp.lv" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.sanmao.newstudypstwo.appunion" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.blizzard.bma.cn" supportFullSize="true" procCompat="true" middleRule="*"/>
@@ -849,7 +846,6 @@
 <package name="com.cz.bible2" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.wedobest.shudu" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.linecorp.foodcamcn.android" supportFullSize="true" procCompat="true" middleRule="*"/>
-<package name="com.outfit7.mytalkingtomfriends.mi"/>
 <package name="com.outfit7.mytalkingtomfree" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.nx.nxapp" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.ultron.crimaster" supportFullSize="true" procCompat="true" middleRule="*"/>
@@ -874,7 +870,6 @@
 <package name="com.starbaba.answer" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.boc.bocsoft.phone.enterprise" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.jiange.cleanmaster" supportFullSize="true" procCompat="true" middleRule="*"/>
-<package name="org.tinghood.TpsForMobile.mi"/>
 <package name="com.wemomo.matchmaker" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.yinhai.syAPP" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.guess.video" supportFullSize="true" procCompat="true" middleRule="*"/>
@@ -901,9 +896,6 @@
 <package name="com.view.asim.enterprise" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.taichuan.meiguanggong" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.gdftu.ygh" supportFullSize="true" procCompat="true" middleRule="*"/>
-<package name="com.xcpsp.atmgdjh0.xc"/>
-<package name="com.zgylsg.mi"/>
-<package name="com.baitian.aqcs.aqcssy.mi"/>
 <package name="com.tange365.icam365" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.dingdianxiaoshuo.ebook.app" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.geek.xgweather" supportFullSize="true" procCompat="true" middleRule="*"/>
@@ -916,14 +908,11 @@
 <package name="com.tencent.fit.ccm" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.gbcom.gwifi.school" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.bendibao" supportFullSize="true" procCompat="true" middleRule="*"/>
-<package name="com.xm4399.hdczjh2.mi"/>
 <package name="com.mc.cpyr.wifidzg.nw" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.general.op" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.fec.runonce" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.vmos.pro" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.feierlaiedu.collegelive" supportFullSize="true" procCompat="true" middleRule="*"/>
-<package name="huaxianduijue.xmjc.mi"/>
-<package name="com.bilibili.snake.mi"/>
 <package name="com.ht.esview" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.julanling.workschedule" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.ss.android.article.daziban" supportFullSize="true" procCompat="true" middleRule="*"/>
@@ -967,7 +956,6 @@
 <package name="com.ctid.open" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.pfu.popstar" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.jk.cutout.application" supportFullSize="true" procCompat="true" middleRule="*"/>
-<package name="com.fy.wdnc.mi"/>
 <package name="com.quickbird.speedtestmaster" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.xmbranch.waterstep" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.czx.axbapp" supportFullSize="true" procCompat="true" middleRule="*"/>
@@ -977,7 +965,6 @@
 <package name="com.painting.xswl" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.xuetangx.xuetangcloud" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.dlmm.standard" supportFullSize="true" procCompat="true" middleRule="*"/>
-<package name="youqu.android.todesk"/>
 <package name="de.bmw.connected.mobile20.cn" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.fxicrazy.sjml" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="photo.collage.cn" supportFullSize="true" procCompat="true" middleRule="*"/>
@@ -1083,17 +1070,3 @@
 <package name="com.gl.happyalbum" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.imdada.winner" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.prompt.lines" supportFullSize="true" procCompat="true" middleRule="*"/>
-<package name="com.qx.gamingroom"/>
-<package name="com.tencent.docs"/>
-<package name="idm.internet.download.manager.plus"/>
-<package name="pan.qqcool.com"/>
-<package name="com.huya.kiwi"/>
-<package name="com.xiaoji.gamesirnsemulator"/>
-<package name="com.galaxylab.ss"/>
-<package name="com.pure.driverbrowser"/>
-<package name="com.android.camera"/>
-<package name="com.omarea.vtools"/>
-<package name="com.vmos.alhs"/>
-<package name="com.edu.wenliang"/>
-<package name="com.miui.touchassistant"/>
-<package name="com.facebook.katanq"/>
