@@ -41,6 +41,7 @@ const fullScreenList = {
   'youqu.android.todesk': true, // Todesk
   'com.tencent.docs': true, // 腾讯文档
   'com.github.metacubex.clash.meta': true, //Clash Meta for Android
+  'com.tencent.pao': true, // 天天酷跑
 }
 
 /**
@@ -58,9 +59,20 @@ const fixedOrientationList = {
   'com.happyelements.AndroidAnimal': true, // 开心消消乐
   'com.by.butter.camera': true, // 黄油相机
   'com.tencent.peng': true, // 天天爱消除
+  'com.fy.bzzbc.mi': true, // 搬砖争霸赛
+}
+
+
+/**
+ * 无任何适配意义的应用
+ */
+
+const NotNeedAdaptationList = {
+  'com.ks.jybh.mi': true, // 解压宝盒
 }
 
 module.exports = {
   ...fullScreenList,
+  ...NotNeedAdaptationList,
   ...fixedOrientationList,
 }
