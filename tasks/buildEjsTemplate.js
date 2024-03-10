@@ -6,11 +6,11 @@ const gulpIf = require('gulp-if');
 
 
 const is_uninstall_package = options.is_uninstall_package
+const use_platform = options.use_platform
+const use_ratio = options.use_ratio
+const use_compatibility = options.use_compatibility
 
 function buildExtEjsTemplate(cb) {
-  const use_platform = options.use_platform
-  const use_ratio = options.use_ratio
-  const use_compatibility = options.use_compatibility
   return is_uninstall_package ? cb() : src('ext_src/*.ejs')
     .pipe(gulpEjs({
       platform: use_platform,
@@ -22,9 +22,6 @@ function buildExtEjsTemplate(cb) {
 }
 
 function buildSourceEjsTemplate(cb) {
-  const use_platform = options.use_platform
-  const use_ratio = options.use_ratio
-  const use_compatibility = options.use_compatibility
   return is_uninstall_package ? cb() : src('module_src/*.ejs')
     .pipe(gulpEjs({
       platform: use_platform,
