@@ -40,6 +40,7 @@ const fullScreenList = {
   'com.ubestkid.beilehu.android': true, // 贝乐虎儿歌
   'youqu.android.todesk': true, // Todesk
   'com.tencent.docs': true, // 腾讯文档
+  'com.github.metacubex.clash.meta': true, //Clash Meta for Android
 }
 
 /**
