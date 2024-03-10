@@ -834,7 +834,6 @@
 <package name="com.mfp.jelly.xiaomi" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="gov.zwfw.samr.djzc" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="cn.kuwo.tingshu.lite" supportFullSize="true" procCompat="true" middleRule="*"/>
-<package name="com.shenghuoquan" isShowDivider="true" scaleMode="1" supportFullSize="true" supportCameraPreview="true"/>
 <package name="com.brianbaek.popstar" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.pfu.xcxxl.jw2" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.tencent.tmgp.lv" supportFullSize="true" procCompat="true" middleRule="*"/>
