@@ -831,8 +831,6 @@
 <package name="com.juphoon.service"/>
 <package name="com.ted.number"/>
 <package name="com.happyelements.AndroidAnimal" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
-<package name="com.cgbchina.xpt" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
-<package name="com.tencent.transfer" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
 <package name="com.by.butter.camera" isShowDivider="true" supportFullSize="true" supportCameraPreview="true"/>
 <package name="com.idiom.king" supportFullSize="true" procCompat="true" middleRule="*"/>
 <package name="com.yiche.price" supportFullSize="true" procCompat="true" middleRule="*"/>
