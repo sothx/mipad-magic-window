@@ -1,6 +1,5 @@
 <package name="com.dragon.android.pandaspace"/>
 <package name="com.tencent.powermanager"/>
-<package name="com.android.chrome"/>
 <package name="com.ijinshan.kbatterydoctor"/>
 <package name="com.android.easou.easousearch"/>
 <package name="com.esvideo"/>
@@ -28,7 +27,6 @@
 <package name="com.baidu.passport.securitycenter"/>
 <package name="com.wandoujia.phoenix2.usbproxy"/>
 <package name="com.weather"/>
-<package name="com.android.vending"/>
 <package name="com.mumayi.market.ui"/>
 <package name="com.nduoa.market"/>
 <package name="com.eoemobile.netmarket"/>
@@ -253,7 +251,6 @@
 <package name="fw.cn.quanmin"/>
 <package name="com.yinyuetai.ui"/>
 <package name="com.evernote"/>
-<package name="com.android.cts.usepermission"/>
 <package name="com.sogou.appmall"/>
 <package name="com.usky.hponline"/>
 <package name="com.lr.jimuboxmobile"/>
@@ -825,7 +822,6 @@
 <package name="com.lightsky.video"/>
 <package name="com.edog"/>
 <package name="com.singulariti.niapp"/>
-<package name="com.android.fmradio"/>
 <package name="com.yundongquan.sya"/>
 <package name="com.juphoon.service"/>
 <package name="com.ted.number"/>
