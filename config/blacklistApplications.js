@@ -37,6 +37,7 @@ const fullScreenList = {
   'com.smile.gifmaker': true, // 快手
   'com.kuaishou.nebula': true, // 快手极速版
   'com.bdatu.geography': true, // 华夏地理
+  'com.ubestkid.beilehu.android': true, // 贝乐虎儿歌
 }
 
 /**
@@ -50,6 +51,10 @@ const fixedOrientationList = {
   'com.mxbc.mxsa': true, // 蜜雪冰城
   'com.ingka.ikea.app.cn.prod': true, // 宜家家居
   'com.vpapps.hdwallpaper.xyz': true, // 小柚子
+  'cn.jj': true, // JJ斗地主
+  'com.happyelements.AndroidAnimal': true, // 开心消消乐
+  'com.by.butter.camera': true, // 黄油相机
+  'com.tencent.peng': true, // 天天爱消除
 }
 
 module.exports = {
