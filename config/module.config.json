@@ -1,8 +1,8 @@
 {
   "id": "MIUI_MagicWindow+",
   "name": "MIUI MagicWindow+",
-  "version": "1.10.09",
-  "versionCode": "11009",
+  "version": "1.10.10",
+  "versionCode": "11010",
   "author": "御坂初琴 等",
   "description": "适用于HyperOS For Pad/Fold，用于扩展平行视界的支持范围，以及优化平行视界的体验。当前刷入的是[小米(红米)平板通用版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(此版本为酷安 @做梦书 自用版，反馈应用适配问题可前往酷安私信或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请使用GitHub上的卸载模块进行卸载，与原作者的卸载模块不通用)",
   "updateJson": "http://client-updater.sothx.com/mipad-magic-window/update.json"
