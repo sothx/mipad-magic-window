@@ -60,6 +60,7 @@ const fixedOrientationList = {
   'com.by.butter.camera': true, // 黄油相机
   'com.tencent.peng': true, // 天天爱消除
   'com.fy.bzzbc.mi': true, // 搬砖争霸赛
+  'com.netease.sz.xxqa': true, // 南国强安
 }
 
 
