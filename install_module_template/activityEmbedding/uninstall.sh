@@ -43,4 +43,4 @@ else
   cp $MODDIR/common/product/etc/fixed_orientation_list_bak /data/system/cloudFeature_fixed_orientation_list.xml
 fi
 
-ui_print "- HyperOS For Pad/Fold 完美横屏应用计划卸载完成，当前未使用“卸载模块”进行卸载，平行视界及信箱模式的配置仅沿用当前模块版本提供的备份配置。"
+ui_print "- 《HyperOS For Pad/Fold 完美横屏应用计划》卸载完成，当前未使用“卸载模块”进行卸载，平行视界及信箱模式的配置仅沿用当前模块版本提供的备份配置。"
