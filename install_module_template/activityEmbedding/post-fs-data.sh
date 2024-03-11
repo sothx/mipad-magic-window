@@ -5,7 +5,6 @@ MODDIR=${0%/*}
 # 获取安卓版本
 ANDROID_VERSION=$(getprop ro.build.version.release)
 
-ui_print "- 当前系统版本为Android $ANDROID_VERSION，写入Android $ANDROID_VERSION 的相关模块配置"
 if [ ${ANDROID_VERSION} -le "11" ]; then
   # For Android 11
   cp -f $MODDIR/common/system/users/0/magic_window_setting_config.xml /data/system/users/0/magic_window_setting_config.xml
@@ -51,6 +50,5 @@ else
   chattr +i /data/system/cloudFeature_embedded_rules_list.xml
   chattr +i /data/system/cloudFeature_fixed_orientation_list.xml
 fi
-ui_print "- HyperOS For Pad/Fold 完美横屏应用计划预加载配置完成，感谢使用！"
 # 这个脚本将以 post-fs-data 模式执行
 # 更多信息请访问 Magisk 主题

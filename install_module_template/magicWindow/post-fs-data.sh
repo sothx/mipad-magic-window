@@ -51,6 +51,5 @@ else
   chattr +i /data/system/cloudFeature_embedded_rules_list.xml
   chattr +i /data/system/cloudFeature_fixed_orientation_list.xml
 fi
-ui_print "- HyperOS For Pad/Fold 完美横屏应用计划预加载配置完成，感谢使用！"
 # 这个脚本将以 post-fs-data 模式执行
 # 更多信息请访问 Magisk 主题
