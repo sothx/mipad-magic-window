@@ -55,9 +55,7 @@ chmod 440 /data/system/cloudFeature_fixed_orientation_list.xml
 chown system /data/system/cloudFeature_fixed_orientation_list.xml
 
 ## 对模块控制的文件写保护
-chattr +i /product/etc/embedded_rules_list.xml
 chattr +i /data/system/cloudFeature_embedded_rules_list.xml
-chattr +i /product/etc/fixed_orientation_list.xml
 chattr +i /data/system/cloudFeature_fixed_orientation_list.xml
 
 # chmod 440 /data/system/users/0/embedded_setting_config.xml
