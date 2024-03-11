@@ -16,7 +16,6 @@ rm /data/system/magicWindowFeature_magic_window_application_list.xml
 
 # For Android 12+
 # 对云控文件解除写保护
-chattr -i /data/adb/modules/MIUI_MagicWindow+
 chattr -i /data/system/cloudFeature_embedded_rules_list.xml
 chattr -i /product/etc/embedded_rules_list.xml
 chattr -i /data/system/cloudFeature_fixed_orientation_list.xml
