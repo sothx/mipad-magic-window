@@ -42,6 +42,7 @@ const fullScreenList = {
   'com.tencent.docs': true, // 腾讯文档
   'com.github.metacubex.clash.meta': true, //Clash Meta for Android
   'com.tencent.pao': true, // 天天酷跑
+  'com.estrongs.android.pop': true, // ES文件管理器
 }
 
 /**
