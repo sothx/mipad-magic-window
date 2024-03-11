@@ -18,7 +18,7 @@ const buildActionIsNoShowDivider = function () {
 }
 
 /**
- * 不支持左右滑动条的设备，默认分屏比例从0.3统一改为0.35
+ * 不支持左右滑动条的设备，默认分屏比例从0.3统一改为0.35(强迫症？)
  */
 module.exports = function adaptiveCompatibilityToNoDivider(cb) {
   return is_uninstall_package ? cb() : src('temp/embedded_rules_list.xml') // 指定XML文件的路径
