@@ -102,18 +102,18 @@ function copyMagicWindowSettingConfig(cb) {
 
 function copyOriginEmbeddedRuleListToCommon() {
   return src(`${moduleSrc}/backup_config/${options.use_platform}/embedded_rules_list_bak`)
-    .pipe(dest(`${commonDist}/product/etc/`))
+    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/`)))
 }
 
 
 function copyEmbeddedRuleListToCommon(cb) {
   return is_uninstall_package ? cb() : src(`${tempDir}/embedded_rules_list.xml`)
-    .pipe(dest(`${commonDist}/product/etc/`))
+    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/`)))
 }
 
 function copyEmbeddedRuleListToSystem(cb) {
   return is_uninstall_package ? cb() : src(`${tempDir}/embedded_rules_list.xml`)
-  .pipe(dest(`${systemDist}/product/etc/`))
+  .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${systemDist}/product/etc/`)))
 }
 
 /**
@@ -122,17 +122,17 @@ function copyEmbeddedRuleListToSystem(cb) {
 
 function copyOriginOrientationListToCommon(cb) {
   return buildActionIsActivityEmbedding() ? src(`${moduleSrc}/backup_config/${options.use_platform}/fixed_orientation_list_bak`)
-    .pipe(dest(`${commonDist}/product/etc/`)) : cb()
+    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/`))) : cb()
 }
 
 function copyFixedOrientationListToCommon(cb) {
   return is_uninstall_package ? cb() : src(`${tempDir}/fixed_orientation_list.xml`)
-    .pipe(dest(`${commonDist}/product/etc/`))
+    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/`)))
 }
 
 function copyFixedOrientationListToSystem(cb) {
   return is_uninstall_package ? cb() : src(`${tempDir}/fixed_orientation_list.xml`)
-    .pipe(dest(`${systemDist}/product/etc/`))
+    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${systemDist}/product/etc/`)))
 }
 
 

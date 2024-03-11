@@ -9,6 +9,8 @@ ANDROID_VERSION=$(getprop ro.build.version.release)
 ui_print "- 当前系统版本为Android $ANDROID_VERSION，移除Android $ANDROID_VERSION 的相关模块配置"
 if [ ${ANDROID_VERSION} -le "11" ]; then
   # For Android 11
+  # 对云控文件解除写保护
+  chattr -i /data/adb/modules/MIUI_MagicWindow+
   # 直接删除A11配置文件，重启后系统会自动重新生成
   rm /data/system/users/0/magic_window_setting_config.xml
   rm /data/system/magicWindowFeature_magic_window_application_list.xml
