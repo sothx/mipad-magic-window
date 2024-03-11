@@ -37,6 +37,10 @@ chown system /data/system/cloudFeature_embedded_rules_list.xml
 chmod 440 /data/system/users/0/embedded_setting_config.xml
 chown system /data/system/users/0/embedded_setting_config.xml
 
+## 对模块控制的文件写保护
+chattr +i /data/system/cloudFeature_embedded_rules_list.xml
+chattr +i /data/system/cloudFeature_fixed_orientation_list.xml
+
 # chattr +i /data/system/cloudFeature_embedded_rules_list.xml
 # chattr +i /product/etc/embedded_rules_list.xml
 # chattr +i /data/system/users/0/embedded_setting_config.xml
