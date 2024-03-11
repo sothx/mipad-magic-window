@@ -12,4 +12,4 @@ if [ ${ANDROID_VERSION} -ge "12" ]; then
   chattr -R -i /data/system/cloudFeature_fixed_orientation_list.xml
   ui_print "- 已经移除《HyperOS For Pad/Fold 完美横屏应用计划》模块文件的写保护！"
 fi
-ui_print "- HyperOS For Pad/Fold 完美横屏应用计划安装/更新完成，重启系统后生效！"
+ui_print "- 《HyperOS For Pad/Fold 完美横屏应用计划》安装/更新完成，重启系统后生效！"
