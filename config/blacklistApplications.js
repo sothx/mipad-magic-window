@@ -43,6 +43,8 @@ const fullScreenList = {
   'com.github.metacubex.clash.meta': true, //Clash Meta for Android
   'com.tencent.pao': true, // 天天酷跑
   'com.estrongs.android.pop': true, // ES文件管理器
+  'com.adobe.reader': true, // Adobe Acrobat
+  'com.microsoft.skydrive': true, // Microsoft OneDrive
 }
 
 /**
