@@ -2,12 +2,15 @@ const { src, dest, parallel, series } = require('gulp');
 const { cleanTemp } = require('./cleanDir');
 const { options } = require('../config/process.env');
 const moduleConfig = require('../config/module.config.json');
-
+const gulpIf = require('gulp-if');
 
 const releaseDir = `release`
 const releaseNetdiskDir = `release/${moduleConfig.version}/netdisk`
 
 
+function isSothxExtBuild() {
+  return options.use_ext && use_ratio === '16:10' && use_platform === 'pad'
+}
 
 
 /**
@@ -62,7 +65,12 @@ function releaseUnInstallMagicWindow() {
     .pipe(dest(`${releaseNetdiskDir}/7.卸载模块/模块/安卓11版本小米平板模块适用`))
 }
 
+function releaseExt(cb) {
+  return isSothxExtBuild() ? src(`${releaseDir}/ext/${moduleConfig.version}/pad-ext-${moduleConfig.version}.zip`)
+    .pipe(dest(`${releaseNetdiskDir}/X.自用版(基于通用版，仅根据我的习惯适配)/模块`)) : cb()
+}
 
 
 
-module.exports = parallel(releasePad,releaseRatioOf3To2Pad,releaseFold,releasePadByMagicWindow,releaseHyperOsForPad5,releasePadByMIUI14Transplant,releaseUnInstallPad,releaseUnInstallFold,releaseUnInstallMagicWindow)
+
+module.exports = parallel(releasePad, releaseRatioOf3To2Pad, releaseFold, releasePadByMagicWindow, releaseHyperOsForPad5, releasePadByMIUI14Transplant, releaseUnInstallPad, releaseUnInstallFold, releaseUnInstallMagicWindow, releaseExt)
