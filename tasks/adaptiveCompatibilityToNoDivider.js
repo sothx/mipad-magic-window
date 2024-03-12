@@ -34,10 +34,10 @@ module.exports = function adaptiveCompatibilityToNoDivider(cb) {
                 elementsWithAttribute[i].setAttribute(attrs[j].name,'0.35')
               }
             }
-            if (!elementsWithAttribute[i].getAttribute('splitLineColor') && !elementsWithAttribute[i].getAttribute('fullRule') && !elementsWithAttribute[i].getAttribute('middleRule')) {
-              // 修改默认分割线的颜色为#E6E6E6
-              elementsWithAttribute[i].setAttribute('splitLineColor','#E6E6E6')
-            }
+            // if (!elementsWithAttribute[i].getAttribute('splitLineColor') && !elementsWithAttribute[i].getAttribute('fullRule') && !elementsWithAttribute[i].getAttribute('middleRule')) {
+            //   // 修改默认分割线的颜色为#E6E6E6
+            //   elementsWithAttribute[i].setAttribute('splitLineColor','#E6E6E6')
+            // }
           }
         }
         return new XMLSerializer().serializeToString(doc);
