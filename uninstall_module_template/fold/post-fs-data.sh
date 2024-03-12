@@ -2,12 +2,10 @@
 # 请不要硬编码 /magisk/modname/... ; 请使用 $MODDIR/...
 # 这将使你的脚本更加兼容，即使Magisk在未来改变了它的挂载点
 MODDIR=${0%/*}
-# 获取安卓版本
-ANDROID_VERSION=$(getprop ro.build.version.release)
 
 
 # 对模块解除写保护
-chattr -i /data/adb/modules/MIUI_MagicWindow+
+chattr -R -i /data/adb/modules/MIUI_MagicWindow+
 
 # For Android 11
 # 直接删除A11配置文件，重启后系统会自动重新生成

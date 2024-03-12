@@ -1,13 +1,9 @@
 # 这个脚本会在删除模块的时候执行
 MODDIR=${0%/*}
 
-# 获取安卓版本
-ANDROID_VERSION=$(getprop ro.build.version.release)
-
-ui_print "- 正在移除《HyperOS For Pad/Fold 完美横屏应用计划》的模块配置"
 
 # 对模块解除写保护
-chattr -i /data/adb/modules/MIUI_MagicWindow+
+chattr -R -i /data/adb/modules/MIUI_MagicWindow+
 
 # For Android 11
 # 直接删除A11配置文件，重启后系统会自动重新生成
@@ -39,5 +35,3 @@ rm /product/etc/fixed_orientation_list.xml
 cp $MODDIR/common/product/etc/fixed_orientation_list_bak /product/etc/fixed_orientation_list.xml
 rm /data/system/cloudFeature_fixed_orientation_list.xml
 cp $MODDIR/common/product/etc/fixed_orientation_list_bak /data/system/cloudFeature_fixed_orientation_list.xml
-
-ui_print "- 《HyperOS For Pad/Fold 完美横屏应用计划》卸载完成，平行视界及信箱模式的配置已恢复到卸载模块提供的备份配置。"
