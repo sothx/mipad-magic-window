@@ -46,6 +46,7 @@ const fullScreenList = {
   'com.adobe.reader': true, // Adobe Acrobat
   'com.microsoft.skydrive': true, // Microsoft OneDrive
   'cn.com.langeasy.LangEasyLexis': true, // 不背单词
+  'cn.ticktick.task': true, // 滴答清单
 }
 
 /**
