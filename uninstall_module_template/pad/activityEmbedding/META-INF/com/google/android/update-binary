@@ -38,8 +38,8 @@ print_modname() {
   ui_print "$pounds"
   ui_print "*******************"
   ui_print " Miui MagicWindow+ "
-  ui_print "  Uninstall Module  "
-  ui_print "  Made by 御坂初琴  "
+  ui_print "  NoDrag Version   "
+  ui_print " Made by 御坂初琴  "
   ui_print " Powered by Magisk "
   ui_print "*******************"
 }
