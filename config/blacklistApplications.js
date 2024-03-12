@@ -50,7 +50,7 @@ const fullScreenList = {
 }
 
 /**
- * 无法适配平行视界，但是对其做了横屏优化的应用
+ * 仅对其做了横屏优化的应用
  */
 
 const fixedOrientationList = {
@@ -66,7 +66,9 @@ const fixedOrientationList = {
   'com.tencent.peng': true, // 天天爱消除
   'com.fy.bzzbc.mi': true, // 搬砖争霸赛
   'com.netease.sz.xxqa': true, // 南国强安
+  'com.hexin.plat.android': true, // 同花顺
 }
+
 
 
 /**
