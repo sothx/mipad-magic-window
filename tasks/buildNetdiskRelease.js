@@ -9,7 +9,7 @@ const releaseNetdiskDir = `release/${moduleConfig.version}/netdisk`
 
 
 function isSothxExtBuild() {
-  return options.use_ext && use_ratio === '16:10' && use_platform === 'pad'
+  return options.netdisk_desc === 'sothx'
 }
 
 
@@ -66,7 +66,7 @@ function releaseUnInstallMagicWindow() {
 }
 
 function releaseExt(cb) {
-  return isSothxExtBuild() ? src(`${releaseDir}/ext/${moduleConfig.version}/pad-ext-${moduleConfig.version}.zip`)
+  return isSothxExtBuild() ? src(`${releaseDir}/${moduleConfig.version}/ext/pad-ext-${moduleConfig.version}.zip`)
     .pipe(dest(`${releaseNetdiskDir}/X.自用版(基于通用版，仅根据我的习惯适配)/模块`)) : cb()
 }
 
