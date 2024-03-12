@@ -45,6 +45,7 @@ const fullScreenList = {
   'com.estrongs.android.pop': true, // ES文件管理器
   'com.adobe.reader': true, // Adobe Acrobat
   'com.microsoft.skydrive': true, // Microsoft OneDrive
+  'cn.com.langeasy.LangEasyLexis': true, // 不背单词
 }
 
 /**
