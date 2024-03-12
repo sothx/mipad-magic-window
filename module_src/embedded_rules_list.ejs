@@ -2085,11 +2085,6 @@
   <!-- ver 1.01 -->
   <package name="com.ylmf.androidclient" scaleMode="1" fullRule="nra:cr:rcr" />
   <package name="com.zentraedi.zspace" scaleMode="1" fullRule="nra:cr:rcr" />
-  <%_ if (['fold'].includes(platform)) { _%>
-  <package name="com.tencent.mobileqq" activityRule="com.tencent.mobileqq.filemanager.fileviewer.FileBrowserActivity,com.tencent.mobileqq.filemanager.fileviewer.TroopFileDetailBrowserActivity,cooperation.qqfav.QfavPluginProxyActivity$SingleTop,cooperation.qqfav.QfavPluginProxyActivity$ImageViewer,com.tencent.mobileqq.activity.shortvideo.ShortVideoPlayActivity,com.tencent.av.ui.AVActivity,com.tencent.av.ui.VideoInviteActivity" splitPairRule="com.tencent.mobileqq.activity.SplashActivity:*" transitionRules="com.tencent.mobileqq.mini.appbrand.ui.AppBrandUI,com.tencent.mobileqq.mini.appbrand.ui.AppBrandUI1,com.tencent.mobileqq.minigame.ui.GameActivity1,com.tencent.mobileqq.minigame.ui.GameActivity2,com.tencent.mobileqq.activity.LoginActivity" />
-  <%_ } else { _%>
-  <package name="com.tencent.mobileqq" scaleMode="1" fullRule="nra:cr:rcr" />
-  <%_ } _%>
   <package name="com.xingin.xhs" fullRule="nra:cr:rcr" />
   <package name="com.smile.gifmaker" scaleMode="1" fullRule="nra:cr:rcr" />
   <package name="com.wei.account" scaleMode="1" fullRule="nra:cr:rcr" />
@@ -6399,7 +6394,8 @@
   <package name="com.itcode.reader" isShowDivider="true" supportFullSize="true" splitRatio="0.3" splitPairRule="com.itcode.reader.MainActivity:*,com.itcode.reader.activity.SearchActivity:*,com.itcode.reader.activity.WorksInfoActivity:*" activityRule="com.itcode.reader.activity.SplashActivity" />
   <package name="com.hysdkj168.zszx.green" isShowDivider="true" supportFullSize="true" splitRatio="0.3" splitPairRule="com.which.narrate.MainActivity:*,com.which.narrate.saivideosearch.SaiSearchActivity:*" activityRule="com.itcode.reader.activity.SplashActivity" />
   <package name="com.feicui.vdhelper" isShowDivider="true" supportFullSize="true" splitRatio="0.3" splitPairRule="com.ys.resemble.ui.MainActivity:*,com.ys.resemble.ui.homecontent.videosearch.SearchContentVideoActivity:*" activityRule="com.ys.resemble.ui.login.splash.SplashActivity" />
-  <%_ if ((platform==='pad' && ['3:2'].includes(ratio)) || (platform==='fold' )) { _%>
+  <%_ if ((platform==='pad' && ['3:2'].includes(ratio)) || (platform==='fold'
+                                              )) { _%>
   <package name="com.twitter.android" relaunch="true" isShowDivider="true" supportFullSize="true" splitPairRule="com.twitter.app.main.MainActivity:*,com.twitter.app.profiles.ProfileActivity:*,com.twitter.android.search.implementation.results.SearchActivity:*,com.twitter.communities.detail.CommunitiesDetailActivity:*,com.twitter.communities.search.CommunitiesSearchActivity:*,com.twitter.channels.details.ChannelsDetailsActivity:*,com.twitter.app.bookmarks.legacy.BookmarkActivity:*,com.twitter.channels.management.manage.UrtListManagementActivity:*,com.twitter.app.settings.search.SettingsSearchResultsActivity:*,com.twitter.app.settings.SettingsRootCompatActivity:*" activityRule="com.twitter.app.main.MainActivity,com.twitter.app.gallery.GalleryActivity,com.twitter.explore.immersivemediaplayer.ui.activity.ImmersiveMediaPlayerActivity,com.twitter.communities.detail.CommunitiesDetailActivity,com.twitter.creator.impl.main.MonetizationActivity,com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity,com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity,com.twitter.app.settings.SettingsRootCompatActivity,com.twitter.app.bookmarks.legacy.BookmarkActivity,com.twitter.channels.management.manage.UrtListManagementActivity,com.twitter.browser.BrowserActivity" transitionRules="com.twitter.app.main.MainActivity,com.twitter.communities.detail.CommunitiesDetailActivity,com.twitter.creator.impl.main.MonetizationActivity,com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity,com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity,com.twitter.app.settings.SettingsRootCompatActivity,com.twitter.app.bookmarks.legacy.BookmarkActivity,com.twitter.channels.management.manage.UrtListManagementActivity" />
   <%_ } else { _%>
   <package name="com.twitter.android" scaleMode="1" supportFullSize="true" splitPairRule="com.twitter.app.main.MainActivity:*,com.twitter.app.profiles.ProfileActivity:*,com.twitter.android.search.implementation.results.SearchActivity:*,com.twitter.communities.detail.CommunitiesDetailActivity:*,com.twitter.communities.search.CommunitiesSearchActivity:*,com.twitter.channels.details.ChannelsDetailsActivity:*,com.twitter.app.bookmarks.legacy.BookmarkActivity:*,com.twitter.channels.management.manage.UrtListManagementActivity:*,com.twitter.app.settings.search.SettingsSearchResultsActivity:*,com.twitter.app.settings.SettingsRootCompatActivity:*" activityRule="com.twitter.app.main.MainActivity,com.twitter.app.gallery.GalleryActivity,com.twitter.explore.immersivemediaplayer.ui.activity.ImmersiveMediaPlayerActivity,com.twitter.communities.detail.CommunitiesDetailActivity,com.twitter.creator.impl.main.MonetizationActivity,com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity,com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity,com.twitter.app.settings.SettingsRootCompatActivity,com.twitter.app.bookmarks.legacy.BookmarkActivity,com.twitter.channels.management.manage.UrtListManagementActivity,com.twitter.app.profiles.ProfileActivity,com.twitter.browser.BrowserActivity" transitionRules="com.twitter.app.main.MainActivity,com.twitter.communities.detail.CommunitiesDetailActivity,com.twitter.creator.impl.main.MonetizationActivity,com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity,com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity,com.twitter.app.settings.SettingsRootCompatActivity,com.twitter.app.bookmarks.legacy.BookmarkActivity,com.twitter.channels.management.manage.UrtListManagementActivity,com.twitter.app.profiles.ProfileActivity" />
@@ -6590,25 +6586,25 @@
   <package name="com.wedobest.fivechess.mi" fullRule="*" />
   <package name="com.outfit7.mytalkingtomfriends.mi" fullRule="*" />
   <package name="org.tinghood.TpsForMobile.mi" fullRule="*" />
-  <package name="com.xcpsp.atmgdjh0.xc" fullRule="*"/>
-  <package name="com.zgylsg.mi" fullRule="*"/>
-  <package name="com.baitian.aqcs.aqcssy.mi" fullRule="*"/>
-  <package name="com.xm4399.hdczjh2.mi" fullRule="*"/>
+  <package name="com.xcpsp.atmgdjh0.xc" fullRule="*" />
+  <package name="com.zgylsg.mi" fullRule="*" />
+  <package name="com.baitian.aqcs.aqcssy.mi" fullRule="*" />
+  <package name="com.xm4399.hdczjh2.mi" fullRule="*" />
   <package name="huaxianduijue.xmjc.mi" fullRule="*" />
   <package name="com.bilibili.snake.mi" fullRule="*" />
-  <package name="com.qx.gamingroom" fullRule="*"/>
-  <package name="idm.internet.download.manager.plus" fullRule="*"/>
-  <package name="pan.qqcool.com" fullRule="*"/>
-  <package name="com.huya.kiwi" fullRule="*"/>
-  <package name="com.xiaoji.gamesirnsemulator" fullRule="*"/>
-  <package name="com.galaxylab.ss" fullRule="*"/>
-  <package name="com.pure.driverbrowser" fullRule="*"/>
-  <package name="com.omarea.vtools" fullRule="*"/>
-  <package name="com.vmos.alhs" fullRule="*"/>
-  <package name="com.edu.wenliang" fullRule="*"/>
-  <package name="com.miui.touchassistant" fullRule="*"/>
-  <package name="com.facebook.katanq" fullRule="*"/>
-  <package name="com.shenghuoquan" isShowDivider="true" scaleMode="1" supportFullSize="true" supportCameraPreview="true"/>
+  <package name="com.qx.gamingroom" fullRule="*" />
+  <package name="idm.internet.download.manager.plus" fullRule="*" />
+  <package name="pan.qqcool.com" fullRule="*" />
+  <package name="com.huya.kiwi" fullRule="*" />
+  <package name="com.xiaoji.gamesirnsemulator" fullRule="*" />
+  <package name="com.galaxylab.ss" fullRule="*" />
+  <package name="com.pure.driverbrowser" fullRule="*" />
+  <package name="com.omarea.vtools" fullRule="*" />
+  <package name="com.vmos.alhs" fullRule="*" />
+  <package name="com.edu.wenliang" fullRule="*" />
+  <package name="com.miui.touchassistant" fullRule="*" />
+  <package name="com.facebook.katanq" fullRule="*" />
+  <package name="com.shenghuoquan" isShowDivider="true" scaleMode="1" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.danlan.xiaolan" fullRule="*" />
   <!-- Adaptive For Sothx 1.09.x -->
   <package name="com.mishangwo" scaleMode="1" fullRule="nra:cr:rcr" />
@@ -6660,6 +6656,11 @@
   <package name="com.web.magicbox" fullRule="nra:cr:rcr:nr" />
   <package name="com.light.shadow" isShowDivider="true" splitPairRule="com.light.shadow.ui.MainActivity:*,com.light.shadow.ui.movies.MovieSearchActivity:*" activityRule="com.light.shadow.ui.MainActivity" transitionRules="com.light.shadow.ui.MainActivity" />
   <package name="com.jingdong.app.mall" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="com.jingdong.app.mall.MainFrameActivity:com.jd.lib.search.view.Activity.SearchActivity" splitPairRule="com.jingdong.app.mall.MainFrameActivity:*,com.jd.lib.search.view.Activity.SearchActivity:*,com.jd.lib.search.view.Activity.ProductListActivity:*,com.jd.lib.jshop.jshop.JshopMainShopActivity:*" flags="reusePreContainer:com.jd.lib.comment.view.activity.CommentsActivity" transitionRules="com.jingdong.app.mall.main.MainActivity" activityRule="com.jd.lib.mylive.view.activity.VideoLiveRoomActivity,com.jingdong.manto.ui.MantoActivitySingleProcess" defaultSettings="true" />
+  <%_ if (['fold'].includes(platform)) { _%>
+  <package name="com.tencent.mobileqq" activityRule="com.tencent.mobileqq.filemanager.fileviewer.FileBrowserActivity,com.tencent.mobileqq.filemanager.fileviewer.TroopFileDetailBrowserActivity,cooperation.qqfav.QfavPluginProxyActivity$SingleTop,cooperation.qqfav.QfavPluginProxyActivity$ImageViewer,com.tencent.mobileqq.activity.shortvideo.ShortVideoPlayActivity,com.tencent.av.ui.AVActivity,com.tencent.av.ui.VideoInviteActivity" splitPairRule="com.tencent.mobileqq.activity.SplashActivity:*" transitionRules="com.tencent.mobileqq.mini.appbrand.ui.AppBrandUI,com.tencent.mobileqq.mini.appbrand.ui.AppBrandUI1,com.tencent.mobileqq.minigame.ui.GameActivity1,com.tencent.mobileqq.minigame.ui.GameActivity2,com.tencent.mobileqq.activity.LoginActivity" />
+  <%_ } else { _%>
+  <package name="com.tencent.mobileqq" fullRule="*" />
+  <%_ } _%>
   <!-- Adaptive For System Fix -->
   <package name="com.zui.browser" fullRule="nra:cr:rcr:nr" />
   <package name="com.android.browser" fullRule="nra:cr:rcr:nr" />
