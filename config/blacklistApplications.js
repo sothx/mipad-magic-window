@@ -47,6 +47,8 @@ const fullScreenList = {
   'com.microsoft.skydrive': true, // Microsoft OneDrive
   'cn.com.langeasy.LangEasyLexis': true, // 不背单词
   'cn.ticktick.task': true, // 滴答清单
+  'com.google.earth': true, //谷歌地图
+  'com.omarea.vtools': true, // Scene
 }
 
 /**
