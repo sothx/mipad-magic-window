@@ -22,7 +22,7 @@ function buildExtEjsTemplate(cb) {
 }
 
 function buildSourceEjsTemplate(cb) {
-  return is_uninstall_package ? cb() : src('module_src/*.ejs')
+  return is_uninstall_package ? cb() : src(['module_src/*.ejs','module_src/template/*.ejs'])
     .pipe(gulpEjs({
       platform: use_platform,
       ratio: use_ratio,
