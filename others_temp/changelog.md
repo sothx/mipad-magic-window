@@ -18,3 +18,4 @@
 - 精适配MOJi阅读(com.mojidict.read)
 - 精适配MOJiTest(com.mojitec.mojitest)
 - 精适配MOJi辞书(com.mojitec.mojidict)
+- 精适配PCR532(com.pcr532.leon)
