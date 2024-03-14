@@ -22,7 +22,7 @@
 
 [小米平板5系列澎湃专版]
 
-版本适用于所有小米没给下放左右滑动条平行视界的应用，例如小米平板5系列的澎湃OS，模块安装包格式为pad-not_supported_show_divider--x.xx.xx.zip。
+版本适用于所有小米没给下放左右滑动条平行视界的应用，例如小米平板5系列的澎湃OS，模块安装包格式为pad-not-dragable--x.xx.xx.zip。
 
 [基于小米平板6 Max 下MIUI 14 For Pad的移植包专版]
 

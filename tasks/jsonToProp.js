@@ -35,7 +35,7 @@ const buildActionIsUnInstallPackage = function () {
 
 const buildActionIsNoShowDivider = function () {
   const use_compatibility = options.use_compatibility
-  if (use_compatibility === 'not_supported_show_divider') {
+  if (use_compatibility === 'not-dragable') {
     return true;
   }
   return false;
