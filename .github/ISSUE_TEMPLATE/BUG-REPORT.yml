@@ -35,7 +35,7 @@ body:
     id: apk
     attributes:
       label: "冷门应用安装包"
-      description: 只要在小米应用商店和酷安没上架的都算冷门应用（请上传到不限速的网盘，否则不排除将直接适配需求）
+      description: 只要在小米应用商店和酷安没上架的都算冷门应用（请上传到Github或者不限速的网盘，否则不排除将直接关闭适配问题报告）
       placeholder: ...
     validations:
       required: false
