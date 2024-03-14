@@ -1,0 +1,75 @@
+name: "🐛 Bug"
+description: 适配问题报告.
+title: "🐛 [BUG] <适配问题标题>"
+labels: [
+  "bug"
+]
+body:
+
+  - type: checkboxes
+    id: check
+    attributes:
+      label: 须知
+      description: |
+        请确认已经遵守所有必选项，否则不排除将直接关闭 Issue
+        提交 Issue 前请确认当前模块版本已经升级至最新，且问题仍然存在。
+      options:
+        - label: 我确认最新版依然存在此问题.
+          required: true
+
+        - label: 我已排查已安装的所有模块的可能性，确认由本模块造成.
+          required: true
+
+        - label: 我已经搜索过Issue Tracker，且并未查询到提交相同问题的 Issue.
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "问题描述"
+      description: 请输入简洁且明确的问题描述。
+      placeholder: 应用名称（包名称）的应用适配出现...异常
+    validations:
+      required: true
+  - type: textarea
+    id: apk
+    attributes:
+      label: "冷门应用安装包"
+      description: 只要在小米应用商店和酷安没上架的都算冷门应用（请上传到不限速的网盘，否则不排除将直接适配需求）
+      placeholder: ...
+    validations:
+      required: false
+  - type: textarea
+    id: repord
+    attributes:
+      label: "复现步骤"
+      description: 输入简明的问题复现步骤。
+      value: |
+        1. 进入 '...'
+        2. 点击 '....'
+
+        ....
+        出现问题
+      render: bash
+    validations:
+      required: false
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "问题截图"
+      description: 添加问题截图以便我们快速定位.
+      value: |
+        ![图片注释](图片链接)
+    validations:
+      required: false
+  - type: textarea
+    id: device
+    attributes:
+      label: "已安装模块的设备信息"
+      description: 请务必提供完整的设备型号、系统版本（如为移植包请提供移植包作者信息及移植包版本），以便诊断问题.
+      value: |
+        设备型号：……
+        系统版本：……
+
+    validations:
+      required: false

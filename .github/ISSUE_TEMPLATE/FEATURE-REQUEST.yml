@@ -1,0 +1,35 @@
+name: "💡 适配需求"
+description: 新应用适配需求
+title: "💡 [适配需求] <标题>"
+labels: [
+  "enhancement"
+]
+body:
+  - type: textarea
+    id: requirement
+    attributes:
+      label: "适配需求内容"
+      description: "简单说明你的适配需求"
+      placeholder: 请添加应用名称(包名)...
+    validations:
+      required: true
+  - type: textarea
+    id: apk
+    attributes:
+      label: "冷门应用安装包"
+      description: 只要在小米应用商店和酷安没上架的都算冷门应用（请上传到不限速的网盘，否则不排除将直接适配需求）
+      placeholder: ...
+    validations:
+      required: false
+  - type: textarea
+    id: desc
+    attributes:
+      label: "额外描述"
+      description: 对待适配应用是否要提供适配好的代码或者希望适配的期望效果
+      value: |
+        我已为应用名称（包名称）做了适配，代码如下，望采纳 '...'
+        我希望应用名称（包名称）的适配效果是这样的 '....'
+        ....
+      render: bash
+    validations:
+      required: false
