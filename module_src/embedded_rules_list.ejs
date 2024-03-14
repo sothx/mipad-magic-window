@@ -1641,7 +1641,6 @@
   <package name="com.cootek.crazyreader" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
   <package name="com.xhey.xcamera" />
   <package name="com.qq.ac.android" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
-  <package name="com.netease.edu.ucmooc" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="com.netease.edu.ucmooc.activity.ActivityMain:com.netease.edu.ucmooc.message.activity.ActivityMessageList" activityRule="com.netease.edu.ucmooc.activity.ActivityWelcome,com.netease.edu.ucmooc.splash.activity.UserInfoCollectActivity,com.netease.edu.ucmooc.activity.ActivityLogin,com.netease.edu.ucmooc.login.activity.ActivityLoginNewUserInfo,com.netease.edu.ucmooc.player.ui.ActivityPlayerRecommend" splitPairRule="" transitionRules="com.netease.edu.ucmooc.activity.ActivityWelcome,com.netease.edu.ucmooc.activity.ActivityMain" />
   <package name="com.eastmoney.android.fund" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
   <package name="com.app.shanghai.metro" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
   <package name="com.baidu.wenku" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="com.baidu.wenku.main.view.activity.MainFragmentActivity:com.baidu.wkcircle.tools.ToolAggregationActivity" splitPairRule="com.baidu.wenku.main.view.activity.MainFragmentActivity:*" activityRule="com.baidu.bdlayout.ui.BDBookActivity,com.baidu.wenku.newscanmodule.main.view.activity.NewScanActivity" />
@@ -6664,6 +6663,11 @@
   <package name="info.zzjdev.musicdownload" fullRule="*" />
   <package name="top.easelink.lcg" fullRule="*" />
   <package name="com.papegames.lysk.cn" fullRule="nra:cr:rcr:nr" />
+  <%_ if (['not_supported_show_divider'].includes(compatibility)) { _%>
+    <package name="com.netease.edu.ucmooc" splitLineColor="#F8F8F8" supportFullSize="true" splitRatio="0.42"  activityRule="com.netease.edu.ucmooc.activity.ActivityWelcome,com.netease.edu.ucmooc.splash.activity.UserInfoCollectActivity,com.netease.edu.ucmooc.activity.ActivityLogin,com.netease.edu.ucmooc.login.activity.ActivityLoginNewUserInfo,com.netease.edu.ucmooc.player.ui.ActivityPlayerRecommend" splitPairRule="com.netease.edu.ucmooc.activity.ActivityMain:*" transitionRules="com.netease.edu.ucmooc.activity.ActivityWelcome" />
+  <%_ } else { _%>
+    <package name="com.netease.edu.ucmooc" isShowDivider="true" supportFullSize="true" splitRatio="0.3" activityRule="com.netease.edu.ucmooc.activity.ActivityWelcome,com.netease.edu.ucmooc.splash.activity.UserInfoCollectActivity,com.netease.edu.ucmooc.activity.ActivityLogin,com.netease.edu.ucmooc.login.activity.ActivityLoginNewUserInfo,com.netease.edu.ucmooc.player.ui.ActivityPlayerRecommend" splitPairRule="com.netease.edu.ucmooc.activity.ActivityMain:*" transitionRules="com.netease.edu.ucmooc.activity.ActivityWelcome" />
+  <%_ } _%>
   <!-- Adaptive For System Fix -->
   <package name="com.zui.browser" fullRule="nra:cr:rcr:nr" />
   <package name="com.android.browser" fullRule="nra:cr:rcr:nr" />
