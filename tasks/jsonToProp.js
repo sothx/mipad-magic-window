@@ -5,6 +5,11 @@ const gulpIf = require('gulp-if');
 const gulpJSONEdit = require('gulp-json-editor');
 const { options } = require('../config/process.env');
 
+const buildActionIsPad = function () {
+  const use_platform = options.use_platform
+  return use_platform === 'pad'
+}
+
 
 const buildActionIsTransplant = function () {
   const is_transplant = options.is_transplant
@@ -14,18 +19,12 @@ const buildActionIsTransplant = function () {
 
 const buildActionIsFold = function () {
   const use_platform = options.use_platform
-  if (use_platform === 'fold') {
-    return true;
-  }
-  return false;
+  return use_platform === 'fold'
 }
 
 const buildActionIsPad6SPro = function () {
   const use_ratio = options.use_ratio
-  if (use_ratio === '3:2') {
-    return true;
-  }
-  return false;
+  return use_ratio === '3:2'
 }
 
 const buildActionIsUnInstallPackage = function () {
@@ -35,10 +34,7 @@ const buildActionIsUnInstallPackage = function () {
 
 const buildActionIsNoShowDivider = function () {
   const use_compatibility = options.use_compatibility
-  if (use_compatibility === 'not-dragable') {
-    return true;
-  }
-  return false;
+  return use_compatibility === 'not-dragable'
 }
 
 
@@ -48,6 +44,12 @@ function transformKeyValue(key, value) {
 
 module.exports = function jsonToProp() {
   return src('config/module.config.json')
+  .pipe(gulpJSONEdit(function (json) {
+    if (!options.is_uninstall_package && !options.use_ext) {
+      json.updateJson = `${options.is_transplant ? 'transplant' : options.use_platform}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}.json`
+    }
+    return json;
+  }))
   .pipe(gulpIf(buildActionIsFold, gulpJSONEdit(function (json) {
     json.description = `适用于HyperOS For Pad/Fold，用于扩展平行视界的支持范围，以及优化平行视界的体验。当前刷入的是[小米折叠屏通用版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(此版本为酷安 @做梦书 自用版，反馈应用适配问题可前往酷安私信或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请使用GitHub上的卸载模块进行卸载，与原作者的卸载模块不通用)`;
     return json;
