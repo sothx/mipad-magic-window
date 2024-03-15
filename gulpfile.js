@@ -3,6 +3,7 @@ const { cleanDist, cleanTemp, cleanOutputTemp } = require('./tasks/cleanDir');
 const buildTemplate = require('./tasks/buildTemplate');
 const integrateConfig = require('./tasks/integrateConfig');
 const buildRelease = require('./tasks/buildRelease');
+const buildUpdateMsg = require('./tasks/buildUpdateMsg');
 const jsonToProp = require('./tasks/jsonToProp');
 const buildEjsTemplate = require('./tasks/buildEjsTemplate');
 const adaptivePlatformToFold = require('./tasks/adaptivePlatformToFold');
@@ -33,7 +34,7 @@ exports.build = buildTasks
 
 exports.release = buildRelease
 
-const packageTasks = series(buildTasks, buildRelease)
+const packageTasks = series(buildTasks, buildRelease,buildUpdateMsg)
 
 exports.package = packageTasks
 
