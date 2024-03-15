@@ -5,12 +5,15 @@ const { options } = require('../config/process.env');
 const gulpJSONEdit = require('gulp-json-editor');
 const gulpRename = require('gulp-rename');
 
-const packageName = `${options.is_transplant ? 'transplant' : options.use_platform}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}`
+const packageName = `${options.is_transplant ? 'transplant' : options.use_platform}${options.use_ext ? `-ext` : ''}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}`
 
 module.exports = function buildUpdateMsg(cb) {
   const unNeedUpdate = () => {
     if (options.is_uninstall_package) {
       return true
+    }
+    if (options.netdisk_desc === 'sothx') {
+      return false;
     }
     if (options.use_ext) {
       return true
