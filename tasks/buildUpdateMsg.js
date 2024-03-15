@@ -8,8 +8,16 @@ const gulpRename = require('gulp-rename');
 const packageName = `${options.is_transplant ? 'transplant' : options.use_platform}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}`
 
 module.exports = function buildUpdateMsg(cb) {
-  const unNeedUpdate = !options.is_uninstall_package && !options.use_ext
-  return unNeedUpdate ? cb() : src('module_src/template/release.json')
+  const unNeedUpdate = () => {
+    if (options.is_uninstall_package) {
+      return true
+    }
+    if (options.use_ext) {
+      return true
+    }
+    return false
+  }
+  return unNeedUpdate() ? cb() : src('module_src/template/release.json')
     .pipe(gulpJSONEdit(function (json) {
       json.version = moduleConfig.version
       json.versionCode = Number(moduleConfig.versionCode)
