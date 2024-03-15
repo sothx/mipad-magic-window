@@ -1,4 +1,10 @@
-# mipad-magic-window
+# 完美横屏应用计划（修改版）
+
+## 模块首页
+
+可通过项目首页快速了解本模块：
+
+<a href="https://hyper-magic-window.sothx.com/" target="_blank">完美横屏应用计划（修改版）</a>
 
 ## 模块版本说明
 
