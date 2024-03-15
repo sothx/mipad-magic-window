@@ -40,7 +40,7 @@ function releasePadByMagicWindow() {
 
 function releaseHyperOsForPad5() {
   return src(`${releaseDir}/${moduleConfig.version}/pad-not-dragable-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/5.小米平板5官方澎湃专版（不支持左右调节）/模块`))
+    .pipe(dest(`${releaseNetdiskDir}/5.小米平板安卓13专版（无滑动调节）/模块`))
 }
 
 
