@@ -21,7 +21,7 @@ dist-ssr
 *.sln
 *.sw?
 
-release
+/release
 .vscode/.debug.env
 temp
 output_config
