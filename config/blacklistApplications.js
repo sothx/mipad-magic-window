@@ -49,6 +49,8 @@ const fullScreenList = {
   'cn.ticktick.task': true, // 滴答清单
   'com.google.earth': true, //谷歌地图
   'com.omarea.vtools': true, // Scene
+  'com.ss.android.ugc.aweme': true, // 抖音
+  'com.ss.android.ugc.aweme.lite': true, // 抖音极速版
 }
 
 /**
