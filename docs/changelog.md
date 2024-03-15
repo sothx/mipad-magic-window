@@ -1,6 +1,6 @@
 ### 更新日志
 
-1.10.51
-- 支持模块在线升级功能
+1.10.52
+- 适配快手直播伴侣
 
-**完整更新日志查看**: https://github.com/sothx/mipad-magic-window/releases
+**完整版本请点击**: [https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
