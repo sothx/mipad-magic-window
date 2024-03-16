@@ -51,6 +51,7 @@ const fullScreenList = {
   'com.omarea.vtools': true, // Scene
   'com.ss.android.ugc.aweme': true, // 抖音
   'com.ss.android.ugc.aweme.lite': true, // 抖音极速版
+  'com.plan.kot32.tomatotime': true, // 番茄Todo
 }
 
 /**
