@@ -6802,7 +6802,11 @@
   <package name="module.config.control" fullRule="*" />
   <package name="com.mxtech.videoplayer.pro" fullRule="*" />
   <package name="com.caij.twiper" splitRatio="0.3" isShowDivider="true" supportFullSize="true" clearTop="true" placeholder="com.caij.twiper.activity.MainActivity:com.caij.twiper.feature.search.SearchRecommendActivity" activityRule="com.caij.twiper.activity.MainActivity,com.caij.image.ImagePrevActivityV3,com.caij.twiper.feature.user.UserImagePrevActivityV3" splitPairRule="com.caij.twiper.activity.MainActivity:*,com.caij.twiper.feature.search.SearchResultActivity:*,com.caij.twiper.feature.user.UserDetailActivity:*,com.caij.twiper.activity.DefaultFragmentActivity:*" transitionRules="com.caij.twiper.activity.EnterTextTaskActivity" />
-  <package name="com.qooapp.qoohelper" splitRatio="0.3" supportFullSize="true" splitPairRule="com.qooapp.qoohelper.activity.HomeActivity:*,com.qooapp.qoohelper.arch.search.v.SearchActivity:*" isShowDivider="true" />
+  <%_ if (['not-dragable'].includes(compatibility)) { _%>
+    <package name="com.qooapp.qoohelper" fullRule="*"  />
+  <%_ } else { _%>
+    <package name="com.qooapp.qoohelper" splitRatio="0.3" supportFullSize="true" splitPairRule="com.qooapp.qoohelper.activity.HomeActivity:*,com.qooapp.qoohelper.arch.search.v.SearchActivity:*" isShowDivider="true" />
+  <%_ } _%>
   <!-- Adaptive For System Fix -->
   <package name="com.zui.browser" fullRule="nra:cr:rcr:nr" />
   <package name="com.android.browser" fullRule="nra:cr:rcr:nr" />
