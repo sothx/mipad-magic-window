@@ -1,5 +1,7 @@
 ## 更新日志
 
+- ~~提高模块的稳定性~~
+- ~~优化模块的流畅度~~
 - 解决QOOAPP(com.qooapp.qoohelper)在Android 13会异常崩溃的问题
 - 新增MX播放器(com.mxtech.videoplayer.ad)的横屏适配
 - 新增纸间书摘(com.merpyzf.xmnote)的横屏适配
