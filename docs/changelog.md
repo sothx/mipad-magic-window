@@ -6,6 +6,7 @@
 - 新增MCC(module.config.control)的适配（A1内存管理模块）
 - 新增MX 播放器专业版(com.mxtech.videoplayer.pro)的适配
 - 新增QOOAPP(com.qooapp.qoohelper)的适配
+- 解决QOOAPP(com.qooapp.qoohelper)在A13会异常崩溃的问题
 
 
 **完整版本请点击**: [https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
