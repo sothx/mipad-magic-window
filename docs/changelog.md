@@ -1,12 +1,13 @@
 ## 更新日志
 
-- ~~提高模块的稳定性~~
-- ~~优化模块的流畅度~~
-- 解决QOOAPP(com.qooapp.qoohelper)在Android 13会异常崩溃的问题
-- 新增MX播放器(com.mxtech.videoplayer.ad)的横屏适配
-- 新增纸间书摘(com.merpyzf.xmnote)的横屏适配
-- 新增雪豹速清(com.idaodan.clean.master)的横屏适配
-- 新增中华历史(org.raphets.history)的横屏适配
+- 提高模块的稳定性
+- 优化模块的流畅度
+- 优化书旗小说的适配体验
+- 优化小雅智能助手的适配体验
+- 优化爱美化的适配体验
+- 优化添可厨房的适配体验
+- 移除咸鱼默认打开的分屏体验,优化闲鱼在信箱模式下的体验（Android 14+，关闭闲鱼的平行视界就能看到效果）
+- 得新冠阳了，没力气更新日志QwQ（摆），大家最近有跟我提的适配应该都有加，各位酷友最近出门还是建议戴口罩，健健康康的，不要生病~
 
 
 **模块首页**:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
