@@ -74,6 +74,7 @@ const fixedOrientationList = {
   'com.hexin.plat.android': true, // 同花顺
   'com.umihome.m': true, // 柚米租房
   'com.farplace.qingzhuo': true, // 清浊
+  'com.xiachufang': true, // 下厨房
 }
 
 
