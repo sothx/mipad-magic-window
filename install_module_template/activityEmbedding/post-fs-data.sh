@@ -16,7 +16,7 @@ fi
 
 if [ -f $DIY_CONFIG_FIXED_ORIENTATION_LIST ]; then
     cp -f $MODDIR/common/product/etc/source/fixed_orientation_list.xml $MODDIR/common/product/etc/fixed_orientation_list.xml
-    packages=$(awk '/<package /{print}' $DIY_CONFIG_EMBEDDED_RULES_LIST)
+    packages=$(awk '/<package /{print}' $DIY_CONFIG_FIXED_ORIENTATION_LIST)
     sed -i "/<\/package_config>/i $packages" $MODDIR/common/product/etc/fixed_orientation_list.xml
 else 
     cp -f $MODDIR/common/product/etc/source/fixed_orientation_list.xml $MODDIR/common/product/etc/fixed_orientation_list.xml
