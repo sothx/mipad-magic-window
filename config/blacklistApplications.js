@@ -84,6 +84,7 @@ const fixedOrientationList = {
 
 const NotNeedAdaptationList = {
   'com.ks.jybh.mi': true, // 解压宝盒
+  'com.hcj.moon': true, // moom 月相
 }
 
 module.exports = {
