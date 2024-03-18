@@ -1,6 +1,0 @@
-<package_config>
-    <package name="com.twitter.android" scaleMode="1" fullRule="nra:cr:rcr" />
-    <package name="com.bilibili.comic" supportFullSize="true" procCompat="true" middleRule="*" />
-    <package name="com.tencent.qqmusic" fullRule="*" />
-    <package name="com.jingdong.app.mall" isShowDivider="true" supportFullSize="true" fullRule="nra:cr:rcr:nr" />
-</package_config>
