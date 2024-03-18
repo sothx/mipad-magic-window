@@ -108,12 +108,12 @@ function copyOriginEmbeddedRuleListToCommon() {
 
 function copyEmbeddedRuleListToCommon(cb) {
   return is_uninstall_package ? cb() : src(`${tempDir}/embedded_rules_list.xml`)
-    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/`)))
+    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/source/`)))
 }
 
 function copyEmbeddedRuleListToSystem(cb) {
   return is_uninstall_package ? cb() : src(`${tempDir}/embedded_rules_list.xml`)
-  .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${systemDist}/product/etc/`)))
+  .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${systemDist}/product/etc/source/`)))
 }
 
 /**

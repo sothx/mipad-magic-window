@@ -1,4 +1,25 @@
 #!/system/bin/sh
+MODDIR=${0%/*}
+DIY_CONFIG_EMBEDDED_RULES_LIST="/data/adb/MIUI_MagicWindow+/Conf/embedded_rules_list.xml"
+DIY_CONFIG_FIXED_ORIENTATION_LIST="/data/adb/MIUI_MagicWindow+/Conf/fixed_orientation_list.xml"
+
+# 支持自定义配置
+if [ -f $DIY_CONFIG_EMBEDDED_RULES_LIST ]; then
+    cp $MODDIR/common/product/etc/source/embedded_rules_list.xml $MODDIR/common/product/etc/embedded_rules_list.xml
+    packages=$(awk '/<package /{print}' $DIY_CONFIG_EMBEDDED_RULES_LIST)
+    sed -i "/<\/package_config>/i $packages" $MODDIR/common/product/etc/embedded_rules_list.xml
+else 
+    cp $MODDIR/common/product/etc/source/embedded_rules_list.xml $MODDIR/common/product/etc/embedded_rules_list.xml
+fi
+
+if [ -f $DIY_CONFIG_FIXED_ORIENTATION_LIST ]; then
+    cp $MODDIR/common/product/etc/source/fixed_orientation_list.xml $MODDIR/common/product/etc/fixed_orientation_list.xml
+    packages=$(awk '/<package /{print}' $DIY_CONFIG_EMBEDDED_RULES_LIST)
+    sed -i "/<\/package_config>/i $packages" $MODDIR/common/product/etc/fixed_orientation_list.xml
+else 
+    cp $MODDIR/common/product/etc/source/fixed_orientation_list.xml $MODDIR/common/product/etc/fixed_orientation_list.xml
+fi
+
 
 # For Android 12+
 
