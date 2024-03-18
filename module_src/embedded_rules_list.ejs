@@ -1138,7 +1138,6 @@
   <package name="com.tool.biqudaogexs" isShowDivider="true" />
   <package name="com.zhihuianxin.xyaxf" isShowDivider="true" />
   <package name="com.dossen.app" isShowDivider="true" />
-  <package name="com.shuqi.controller.lite" isShowDivider="true" />
   <package name="com.cmb.transpal" isShowDivider="true" />
   <package name="com.example.wygxw" isShowDivider="true" transitionRules="com.example.wygxw.ui.account.UmAkeyLoginActivity" />
   <package name="com.mistong.ewt360" isShowDivider="true" />
@@ -6568,11 +6567,6 @@
   <package name="com.youdao.hindict" placeholder="com.youdao.hindict.home600.MainActivity:com.youdao.hindict.activity.SearchActivity" splitPairRule="com.youdao.hindict.home600.MainActivity:*" activityRule="com.youdao.hindict.activity.YoutubeActivity,com.youdao.hindict.activity.YoutubeWebViewActivity,com.youdao.hindict.activity.CameraActivity,com.youdao.hindict.activity.PermissionDialogActivity" supportFullSize="true" supportCameraPreview="true" splitLineColor="#FFFFFF" flags="ignoreActivityBelowWhenJudgeMiddle:com.youdao.hindict.activity.CameraActivity" />
   <package name="com.web.magicbox" fullRule="nra:cr:rcr:nr" />
   <package name="com.light.shadow" isShowDivider="true" splitPairRule="com.light.shadow.ui.MainActivity:*,com.light.shadow.ui.movies.MovieSearchActivity:*" activityRule="com.light.shadow.ui.MainActivity" transitionRules="com.light.shadow.ui.MainActivity" />
-  <%_ if (['fold'].includes(platform)) { _%>
-  <package name="com.tencent.mobileqq" activityRule="com.tencent.mobileqq.filemanager.fileviewer.FileBrowserActivity,com.tencent.mobileqq.filemanager.fileviewer.TroopFileDetailBrowserActivity,cooperation.qqfav.QfavPluginProxyActivity$SingleTop,cooperation.qqfav.QfavPluginProxyActivity$ImageViewer,com.tencent.mobileqq.activity.shortvideo.ShortVideoPlayActivity,com.tencent.av.ui.AVActivity,com.tencent.av.ui.VideoInviteActivity" splitPairRule="com.tencent.mobileqq.activity.SplashActivity:*" transitionRules="com.tencent.mobileqq.mini.appbrand.ui.AppBrandUI,com.tencent.mobileqq.mini.appbrand.ui.AppBrandUI1,com.tencent.mobileqq.minigame.ui.GameActivity1,com.tencent.mobileqq.minigame.ui.GameActivity2,com.tencent.mobileqq.activity.LoginActivity" />
-  <%_ } else { _%>
-  <package name="com.tencent.mobileqq" fullRule="*" />
-  <%_ } _%>
   <package name="com.nikon.snapbridge.cmru" fullRule="*" />
   <package name="com.jingdong.app.mall" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="com.jingdong.app.mall.MainFrameActivity:com.jd.lib.search.view.Activity.SearchActivity" splitPairRule="com.jingdong.app.mall.MainFrameActivity:*,com.jd.lib.search.view.Activity.SearchActivity:*,com.jd.lib.search.view.Activity.ProductListActivity:*,com.jd.lib.jshop.jshop.JshopMainShopActivity:*" flags="reusePreContainer:com.jd.lib.comment.view.activity.CommentsActivity" transitionRules="com.jingdong.app.mall.main.MainActivity" activityRule="com.jd.lib.mylive.view.activity.VideoLiveRoomActivity,com.jingdong.manto.ui.MantoActivitySingleProcess" defaultSettings="true" />
   <package name="com.sjm.baozi.cy" splitLineColor="#FFFFFF" supportFullSize="true" splitPairRule="com.sjm.zhuanzhuan.ui.activity.MainActivity:*,com.sjm.zhuanzhuan.ui.activity.SearchResultActivity:*" />
@@ -6814,6 +6808,10 @@
   <package name="com.ccnu.jx.xiaoya" fullRule="nra:cr:rcr:nr" />
   <package name="com.shuqi.controller" fullRule="nra:cr:rcr:nr" />
   <package name="net.imeihua.anzhuo" fullRule="nra:cr:rcr:nr" />
+  <%_ if (!['fold'].includes(platform)) { _%>
+  <package name="com.tencent.mobileqq" fullRule="*" />
+  <%_ }
+  <package name="com.shuqi.controller.lite" fullRule="nra:cr:rcr:nr" />
   <!-- Adaptive For System Fix -->
   <package name="com.zui.browser" fullRule="nra:cr:rcr:nr" />
   <package name="com.android.browser" fullRule="nra:cr:rcr:nr" />
