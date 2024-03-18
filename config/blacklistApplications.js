@@ -52,6 +52,8 @@ const fullScreenList = {
   'com.ss.android.ugc.aweme': true, // 抖音
   'com.ss.android.ugc.aweme.lite': true, // 抖音极速版
   'com.plan.kot32.tomatotime': true, // 番茄Todo
+  'com.farplace.qingzhuo': true, // 清浊
+  'com.xiachufang': true, // 下厨房
 }
 
 /**
@@ -73,8 +75,6 @@ const fixedOrientationList = {
   'com.netease.sz.xxqa': true, // 南国强安
   'com.hexin.plat.android': true, // 同花顺
   'com.umihome.m': true, // 柚米租房
-  'com.farplace.qingzhuo': true, // 清浊
-  'com.xiachufang': true, // 下厨房
 }
 
 
