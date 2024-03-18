@@ -8,7 +8,9 @@ const DOMParser = require('xmldom').DOMParser;
 const XMLSerializer = require('xmldom').XMLSerializer;
 const fs = require('fs')
 
-let extConfigStack = {}
+let EmbeddedRuleListExtConfigStack = {}
+
+let FixedOrientationListExtConfigStack = {} 
 
 
 const isNeedExtConfig = function() {
@@ -32,9 +34,9 @@ function getEmbeddedRuleListExtConfigData(cb) {
           const attrs = elementsWithAttribute[i].attributes;
           const currentAttrName = elementsWithAttribute[i].getAttribute('name')
           if (currentAttrName) {
-            extConfigStack[currentAttrName] = {}
+            EmbeddedRuleListExtConfigStack[currentAttrName] = {}
             for (var j = attrs.length - 1; j >= 0; j--) {
-              extConfigStack[currentAttrName][attrs[j].name] = attrs[j].value
+              EmbeddedRuleListExtConfigStack[currentAttrName][attrs[j].name] = attrs[j].value
             }
           }
         }
@@ -56,11 +58,11 @@ function mergeEmbeddedRuleListExtConfig(cb) {
         const elementsWithAttribute = doc.getElementsByTagName('package');
         for (let i = 0; i < elementsWithAttribute.length; i++) {
           const currentAttrName = elementsWithAttribute[i].getAttribute('name')
-          if (extConfigStack[currentAttrName]) {
+          if (EmbeddedRuleListExtConfigStack[currentAttrName]) {
             elementsWithAttribute[i].parentNode.removeChild(elementsWithAttribute[i])
           }
         }
-        for (const [key, value] of Object.entries(extConfigStack)) {
+        for (const [key, value] of Object.entries(EmbeddedRuleListExtConfigStack)) {
           // 创建一个新元素  
           const newElement = doc.createElement('package');
           newElement.setAttribute('name',key)
@@ -101,9 +103,9 @@ function getFixedOrientationListExtConfigData(cb) {
           const attrs = elementsWithAttribute[i].attributes;
           const currentAttrName = elementsWithAttribute[i].getAttribute('name')
           if (currentAttrName) {
-            extConfigStack[currentAttrName] = {}
+            FixedOrientationListExtConfigStack[currentAttrName] = {}
             for (var j = attrs.length - 1; j >= 0; j--) {
-              extConfigStack[currentAttrName][attrs[j].name] = attrs[j].value
+              FixedOrientationListExtConfigStack[currentAttrName][attrs[j].name] = attrs[j].value
             }
           }
         }
@@ -125,11 +127,11 @@ function mergeFixedOrientationListExtConfig(cb) {
         const elementsWithAttribute = doc.getElementsByTagName('package');
         for (let i = 0; i < elementsWithAttribute.length; i++) {
           const currentAttrName = elementsWithAttribute[i].getAttribute('name')
-          if (extConfigStack[currentAttrName]) {
+          if (FixedOrientationListExtConfigStack[currentAttrName]) {
             elementsWithAttribute[i].parentNode.removeChild(elementsWithAttribute[i])
           }
         }
-        for (const [key, value] of Object.entries(extConfigStack)) {
+        for (const [key, value] of Object.entries(FixedOrientationListExtConfigStack)) {
           // 创建一个新元素  
           const newElement = doc.createElement('package');
           newElement.setAttribute('name',key)

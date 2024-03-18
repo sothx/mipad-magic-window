@@ -127,7 +127,7 @@ function copyOriginOrientationListToCommon(cb) {
 
 function copyFixedOrientationListToCommon(cb) {
   return is_uninstall_package ? cb() : src(`${tempDir}/fixed_orientation_list.xml`)
-    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/`)))
+    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/source/`)))
 }
 
 function copyFixedOrientationListToSystem(cb) {
