@@ -5,6 +5,10 @@ MODDIR=${0%/*}
 DIY_CONFIG_EMBEDDED_RULES_LIST="/data/adb/MIUI_MagicWindow+/config/embedded_rules_list.xml"
 DIY_CONFIG_FIXED_ORIENTATION_LIST="/data/adb/MIUI_MagicWindow+/config/fixed_orientation_list.xml"
 
+# 对云控文件解除写保护
+chattr -i /data/system/cloudFeature_embedded_rules_list.xml
+chattr -i /data/system/cloudFeature_fixed_orientation_list.xml
+
 # 支持自定义配置
 if [ -f $DIY_CONFIG_EMBEDDED_RULES_LIST ]; then
     cp -f $MODDIR/common/product/etc/source/embedded_rules_list.xml $MODDIR/common/product/etc/embedded_rules_list.xml
