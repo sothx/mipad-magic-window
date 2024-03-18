@@ -8,7 +8,7 @@
 
 模块变化
 
-- Android 12+ 模块新增对自定义配置文件的支持，在/data/adb/MIUI_MagicWindow+/config/(如果路径不存在请手动创建)，中创建embedded_rules_list.xml和fixed_orientation_list.xml,即可自定义覆盖模块中原有的配置。
+- Android 12+ 模块新增对自定义配置文件的支持，具体用法请查看模块首页：[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
 
 酷友提供
