@@ -3,7 +3,10 @@
 - ~~提高模块的稳定性~~
 - ~~优化模块的流畅度~~
 
-1.10.63
+1.10.65
+- 新增对小森灵游戏全屏适配的支持（包括以下包名：com.cokutau.pj3x.fc2，com.cokutau.pj3x.mi，com.cokutau.pj3x.vivo，com.cokutau.pj3x，com.cokutau.pj3x.huawei，com.cokutau.pj3x.vivo，com.cokutau.pj3x.oppo，com.cokutau.pj3x.honor，com.cokutau.pj3x.bilibili，com.cokutau.pj3x.aligames）
+
+1.10.64
 
 小米应用商店
 
