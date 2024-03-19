@@ -43,6 +43,8 @@ chown system /product/etc/fixed_orientation_list.xml
 chmod 440 /data/system/cloudFeature_fixed_orientation_list.xml
 chown system /data/system/cloudFeature_fixed_orientation_list.xml
 ## 对云控文件写保护
+# chattr +i /product/etc/fixed_orientation_list.xml
+# chattr +i /product/etc/embedded_rules_list.xml
 chattr +i /data/system/cloudFeature_embedded_rules_list.xml
 chattr +i /data/system/cloudFeature_fixed_orientation_list.xml
 # 这个脚本将以 post-fs-data 模式执行
