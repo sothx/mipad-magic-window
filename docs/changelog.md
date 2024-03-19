@@ -4,11 +4,11 @@
 
 ## 重要提醒
 
-- 本次模块为跨版本更新，主要是为了增加自定义配置文件的支持，目前大版本还不稳定，可能会有卡米、变砖的风险，可观望久一点再考虑是否升级，如需尝鲜，请自行准备可能出现的风险以及救砖工作(仅自测过没有问题，不保证完全不会有问题)。
+- 本次模块为跨版本更新，主要是为了增加自定义规则配置文件的支持，目前大版本还不稳定，可能会有卡米、变砖的风险，可观望久一点再考虑是否升级，如需尝鲜，请自行准备可能出现的风险以及救砖工作(仅自测过没有问题，不保证完全不会有问题)。
 
 模块变化
 
-- Android 12+ 模块新增对自定义配置文件的支持，具体用法请查看模块首页：[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
+- Android 12+ 模块新增对自定义规则文件的支持，具体用法请查看模块首页：[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
 
 酷友提供
