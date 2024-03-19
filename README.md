@@ -6,12 +6,6 @@
 
 <a href="https://hyper-magic-window.sothx.com/" target="_blank">完美横屏应用计划（修改版）</a>
 
-## 自定义规则(暂时下线)
-
-模块 ~~1.11.03+~~ 版本起(有BUG，修好后再加)，Android 12+ 模块支持自定义规则覆盖模块原有的配置，可通过项目首页的指南快速上手：
-
-<a href="https://hyper-magic-window.sothx.com/custom-config.html" target="_blank">自定义规则</a>
-
 
 ## 模块版本说明
 
