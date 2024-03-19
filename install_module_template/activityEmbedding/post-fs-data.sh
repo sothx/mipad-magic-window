@@ -7,6 +7,7 @@ MODDIR=${0%/*}
 # 设置SELinux安全上下文
 chcon u:object_r:system_file:s0 $MODDIR/common/product/etc/embedded_rules_list.xml
 chcon u:object_r:system_file:s0 $MODDIR/common/product/etc/fixed_orientation_list.xml
+
 # 设置平行视界文件权限
 chmod 666 /product/etc/embedded_rules_list.xml
 chown root:root /product/etc/embedded_rules_list.xml
