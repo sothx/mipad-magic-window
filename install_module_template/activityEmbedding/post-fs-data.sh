@@ -11,11 +11,6 @@ chattr -i /data/system/cloudFeature_embedded_rules_list.xml
 chattr -i /data/system/cloudFeature_fixed_orientation_list.xml
 
 
-# For Android 12+
-# 设置SELinux安全上下文
-chcon u:object_r:system_file:s0 $MODDIR/common/product/etc/embedded_rules_list.xml
-chcon u:object_r:system_file:s0 $MODDIR/common/product/etc/fixed_orientation_list.xml
-
 # 支持自定义配置
 if [ -f $CUSTOM_CONFIG_EMBEDDED_RULES_LIST ]; then
     cp -f $MODDIR/common/product/etc/source/embedded_rules_list.xml $MODDIR/common/product/etc/embedded_rules_list.xml
@@ -32,6 +27,11 @@ if [ -f $CUSTOM_CONFIG_FIXED_ORIENTATION_LIST ]; then
 else 
     cp -f $MODDIR/common/product/etc/source/fixed_orientation_list.xml $MODDIR/common/product/etc/fixed_orientation_list.xml
 fi
+
+# For Android 12+
+# 设置SELinux安全上下文
+chcon u:object_r:system_file:s0 $MODDIR/common/product/etc/embedded_rules_list.xml
+chcon u:object_r:system_file:s0 $MODDIR/common/product/etc/fixed_orientation_list.xml
 
 # 设置平行视界文件权限
 chmod 666 /product/etc/embedded_rules_list.xml
