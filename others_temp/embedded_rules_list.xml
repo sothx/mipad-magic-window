@@ -1,0 +1,5 @@
+<package_config>
+  <package name="com.eg.android.AlipayGphone" fullRule="*" />
+  <package name="tv.danmaku.bili" fullRule="*" />
+  <package name="com.tencent.mm" fullRule="*" />
+</package_config>
