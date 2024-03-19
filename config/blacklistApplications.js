@@ -54,6 +54,7 @@ const fullScreenList = {
   'com.plan.kot32.tomatotime': true, // 番茄Todo
   'com.farplace.qingzhuo': true, // 清浊
   'com.xiachufang': true, // 下厨房
+  'com.happyteam.dubbingshow': true, // 配音秀
 }
 
 /**
