@@ -18,6 +18,13 @@ cp -l $MODDIR/product/etc/embedded_rules_list.xml $MODDIR/common/product/etc/emb
 rm /data/system/cloudFeature_embedded_rules_list.xml
 mv $MODDIR/common/product/etc/embedded_rules_list.xml /data/system/cloudFeature_embedded_rules_list.xml
 cp -l $MODDIR/product/etc/embedded_rules_list.xml $MODDIR/common/product/etc/embedded_rules_list.xml
+# 禁止平行视界配置文件被云控
+chmod 440 /product/etc/embedded_rules_list.xml
+chown system /product/etc/embedded_rules_list.xml
+chmod 440 /data/system/cloudFeature_embedded_rules_list.xml
+chown system /data/system/cloudFeature_embedded_rules_list.xml
+
+
 # 设置信箱模式文件权限
 chmod 666 /product/etc/fixed_orientation_list.xml
 chown root:root /product/etc/fixed_orientation_list.xml
@@ -29,11 +36,6 @@ cp -l $MODDIR/product/etc/fixed_orientation_list.xml $MODDIR/common/product/etc/
 rm /data/system/cloudFeature_fixed_orientation_list.xml
 mv $MODDIR/common/product/etc/fixed_orientation_list.xml /data/system/cloudFeature_fixed_orientation_list.xml
 cp -l $MODDIR/product/etc/fixed_orientation_list.xml $MODDIR/common/product/etc/fixed_orientation_list.xml
-# 禁止平行视界配置文件被云控
-chmod 440 /product/etc/embedded_rules_list.xml
-chown system /product/etc/embedded_rules_list.xml
-chmod 440 /data/system/cloudFeature_embedded_rules_list.xml
-chown system /data/system/cloudFeature_embedded_rules_list.xml
 # 禁止信箱模式配置文件被云控
 chmod 440 /product/etc/fixed_orientation_list.xml
 chown system /product/etc/fixed_orientation_list.xml
