@@ -2,6 +2,43 @@
 # 请不要硬编码 /magisk/modname/... ; 请使用 $MODDIR/...
 # 这将使你的脚本更加兼容，即使Magisk在未来改变了它的挂载点
 MODDIR=${0%/*}
+DIY_CONFIG_EMBEDDED_RULES_LIST="/data/adb/MIUI_MagicWindow+/config/embedded_rules_list.xml"
+DIY_CONFIG_FIXED_ORIENTATION_LIST="/data/adb/MIUI_MagicWindow+/config/fixed_orientation_list.xml"
+
+# 对云控文件解除写保护
+chattr -i /data/system/cloudFeature_embedded_rules_list.xml
+chattr -i /data/system/cloudFeature_fixed_orientation_list.xml
+
+# 支持自定义配置
+if [ -f $DIY_CONFIG_EMBEDDED_RULES_LIST ]; then
+    cp -f $MODDIR/common/product/etc/source/embedded_rules_list.xml $MODDIR/common/product/etc/embedded_rules_list.xml
+
+    xml_content=$(cat $DIY_CONFIG_EMBEDDED_RULES_LIST)
+
+    # 使用sed命令提取package子项
+    package_lines=$(echo "$xml_content" | sed -n '/<package /p')
+
+    # 将提取的子项存储到数组中
+    package_array=()
+    while IFS= read -r line; do
+      package_array+=("$line")
+    done <<<"$package_lines"
+
+    # # 打印数组内容
+    for item in "${package_array[@]}"; do
+        sed -i "/<\/package_config>/ i $item" $MODDIR/common/product/etc/embedded_rules_list.xml
+    done
+else 
+    cp -f $MODDIR/common/product/etc/source/embedded_rules_list.xml $MODDIR/common/product/etc/embedded_rules_list.xml
+fi
+
+if [ -f $DIY_CONFIG_FIXED_ORIENTATION_LIST ]; then
+    cp -f $MODDIR/common/product/etc/source/fixed_orientation_list.xml $MODDIR/common/product/etc/fixed_orientation_list.xml
+    packages=$(awk '/<package /{print}' $DIY_CONFIG_FIXED_ORIENTATION_LIST)
+    sed -i "/<\/package_config>/i $packages" $MODDIR/common/product/etc/fixed_orientation_list.xml
+else 
+    cp -f $MODDIR/common/product/etc/source/fixed_orientation_list.xml $MODDIR/common/product/etc/fixed_orientation_list.xml
+fi
 
 # For Android 12+
 # 设置SELinux安全上下文
