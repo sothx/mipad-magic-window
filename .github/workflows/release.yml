@@ -36,16 +36,16 @@ jobs:
       run: |
          mkdir -p "$GITHUB_WORKSPACE"/GithubRelease
          cd "$GITHUB_WORKSPACE"
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-${version}.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/fold-${version}.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-magicWindow-${version}.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-not-dragable-${version}.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-ratioOf3To2-${version}.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/transplant-${version}.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv release/$VERSION/pad-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv release/$VERSION/fold-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv release/$VERSION/pad-magicWindow-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv release/$VERSION/pad-not-dragable-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv release/$VERSION/pad-ratioOf3To2-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv $GITHUB_WORKSPACE/release/$VERSION/transplant-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/uninstall-fold-0.00.00.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/uninstall-pad-0.00.00.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/uninstall-pad-magicWindow-0.00.00.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/ext/pad-ext-${version}.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv $GITHUB_WORKSPACE/release/$VERSION/ext/pad-ext-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
 
     - name: 3.上传到Github Release
       uses: ncipollo/release-action@main
