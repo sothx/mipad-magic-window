@@ -6836,7 +6836,11 @@
   <package name="com.ss.android.ugc.trill" fullRule="nra:cr:rcr:nr"  />
   <package name="com.example.raccoon.dialogwidget" fullRule="nra:cr:rcr:nr"  />
   <package name="com.kwai.m2u" fullRule="nra:cr:rcr:nr"  />
+  <%_ if (['not-dragable'].includes(compatibility)) { _%>
   <package name="com.One.WoodenLetter" supportFullSize="true" splitRatio="0.7" splitLineColor="#FFFFFF" isShowDivider="true" splitPairRule="com.One.WoodenLetter.MainActivity:*" activityRule="com.One.WoodenLetter.activitys.SplashActivity,com.One.WoodenLetter.MainActivity,com.One.WoodenLetter.activitys.search.SearchActivity:*" transitionRules="com.One.WoodenLetter.activitys.SplashActivity,com.One.WoodenLetter.MainActivity" />
+  <%_ } else { _%>
+  <package name="com.One.WoodenLetter" supportFullSize="true" splitRatio="0.3" splitLineColor="#FFFFFF" isShowDivider="true" splitPairRule="com.One.WoodenLetter.MainActivity:*" activityRule="com.One.WoodenLetter.activitys.SplashActivity,com.One.WoodenLetter.MainActivity,com.One.WoodenLetter.activitys.search.SearchActivity:*" transitionRules="com.One.WoodenLetter.activitys.SplashActivity,com.One.WoodenLetter.MainActivity" />
+  <%_ } _%>
   <!-- Adaptive For System Fix -->
   <package name="com.zui.browser" fullRule="nra:cr:rcr:nr" />
   <package name="com.android.browser" fullRule="nra:cr:rcr:nr" />
