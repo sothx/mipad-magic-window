@@ -1,0 +1,59 @@
+name: NodeJS with Gulp
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Load environment
+      uses: GuillaumeFalourd/convert-json-to-env@v1
+      with:
+        json_file: ./config/module.config.json
+
+    - name: 生成版本代码
+      run: |
+        npm install
+        npm run package-ext:all
+
+    - name: 写入所有模块文件到发布目录
+      run: |
+         mkdir -p "$GITHUB_WORKSPACE"/GithubRelease
+         cd "$GITHUB_WORKSPACE"
+         mv $GITHUB_WORKSPACE/release/$VERSION/pad-${version}.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv $GITHUB_WORKSPACE/release/$VERSION/fold-${version}.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv $GITHUB_WORKSPACE/release/$VERSION/pad-magicWindow-${version}.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv $GITHUB_WORKSPACE/release/$VERSION/pad-not-dragable-${version}.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv $GITHUB_WORKSPACE/release/$VERSION/pad-ratioOf3To2-${version}.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv $GITHUB_WORKSPACE/release/$VERSION/transplant-${version}.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv $GITHUB_WORKSPACE/release/$VERSION/uninstall-fold-0.00.00.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv $GITHUB_WORKSPACE/release/$VERSION/uninstall-pad-0.00.00.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv $GITHUB_WORKSPACE/release/$VERSION/uninstall-pad-magicWindow-0.00.00.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv $GITHUB_WORKSPACE/release/$VERSION/ext/pad-ext-${version}.zip "$GITHUB_WORKSPACE"/GithubRelease
+
+    - name: 3.上传到Github Release
+      uses: ncipollo/release-action@main
+      with:
+        artifacts: ${{ github.workspace }}/GithubRelease/*
+        name: "${{ env.VERSION }}"
+        tag: "${{ env.VERSION }}"
+        bodyFile: "${{ github.workspace }}/docs/changelog.md"
+        allowUpdates: true
+        artifactErrorsFailBuild: true
+        makeLatest: true
