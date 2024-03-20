@@ -31,7 +31,7 @@ jobs:
     - name: 生成版本代码
       run: |
         npm install
-        npm run package-ext:all
+        npm run package-ext:sothx
 
     - name: 写入所有模块文件到发布目录
       run: |
