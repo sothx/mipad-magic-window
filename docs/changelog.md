@@ -2,11 +2,7 @@
 
 酷安
 
-- 优化万象小组件的适配
-
-小米应用商店
-
-- 优化一甜相机的适配
+- 优化一个木函的适配
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
