@@ -2,7 +2,7 @@
 
 酷安
 
-- 优化一个木函的适配
+- 优化一个木函的适配,解决部分功能在Android13/Android12下显示不全的问题
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
