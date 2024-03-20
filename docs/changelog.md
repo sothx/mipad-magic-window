@@ -30,10 +30,10 @@ Play商店
 - 优化数字尾巴的适配规则
 
 
-**模块首页**:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
+[**模块首页**](https://hyper-magic-window.sothx.com/)
 
 
-**完整更新历史请点击**: [https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
+[**完整更新历史请点击**](https://github.com/sothx/mipad-magic-window/releases)
 
 
-**提交适配需求或者缺陷请点击**:[https://github.com/sothx/mipad-magic-window/issues](https://github.com/sothx/mipad-magic-window/issues)
+[**提交适配需求或者缺陷请点击**](https://github.com/sothx/mipad-magic-window/issues)
