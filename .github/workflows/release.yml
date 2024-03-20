@@ -63,7 +63,7 @@ jobs:
       run: |
         git config --global user.email "i@sothx.com"
         git config --global user.name "sothx"
-        git add .
+        git add ./docs/release/*
         if git commit -m "Release $VERSION"; then
               git push
         fi
