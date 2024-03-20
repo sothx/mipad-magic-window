@@ -55,7 +55,7 @@ jobs:
         name: "${{ env.VERSION }}"
         tag: "${{ env.VERSION }}"
         bodyFile: "${{ github.workspace }}/docs/changelog.md"
-        allowUpdates: true
+        allowUpdates: false
         artifactErrorsFailBuild: true
         makeLatest: true
 
