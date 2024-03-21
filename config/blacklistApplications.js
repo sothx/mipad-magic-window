@@ -55,6 +55,8 @@ const fullScreenList = {
   'com.farplace.qingzhuo': true, // 清浊
   'com.xiachufang': true, // 下厨房
   'com.happyteam.dubbingshow': true, // 配音秀
+  'czh.mindnode': true, // 思维导图
+  'com.chrissen.card': true, // 麻雀记
 }
 
 /**
