@@ -2,15 +2,7 @@
 
 应用商店来源: 酷安
 
-- 优化<哆点>的适配
-
-- 优化<思维导图>的适配
-
-- 移除<麻雀记>的适配
-
-- 优化<手机性能排行>的适配
-
-- 移除<思维导图>的适配
+- 优化<快对>的适配体验
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
