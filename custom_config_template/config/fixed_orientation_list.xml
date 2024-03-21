@@ -1,0 +1,4 @@
+<package_config>
+  <!--取消微信的左右滑动条-->
+  <package name="com.tencent.mm" isShowDivider="false" disable="true" />
+</package_config>

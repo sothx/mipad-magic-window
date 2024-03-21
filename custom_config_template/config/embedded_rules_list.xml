@@ -1,0 +1,4 @@
+<package_config>
+  <!--适配推特强制横屏-->
+  <package name="com.twitter.android" fullRule="*" />
+</package_config>
