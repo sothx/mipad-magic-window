@@ -41,6 +41,7 @@ jobs:
          mv $GITHUB_WORKSPACE/release/$VERSION/fold-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-magicWindow-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-not-dragable-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv $GITHUB_WORKSPACE/release/$VERSION/pad-conservative-adapter-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-ratioOf3To2-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/transplant-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/uninstall-fold-0.00.00.zip "$GITHUB_WORKSPACE"/GithubRelease

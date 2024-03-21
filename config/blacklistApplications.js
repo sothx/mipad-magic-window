@@ -57,6 +57,7 @@ const fullScreenList = {
   'com.happyteam.dubbingshow': true, // 配音秀
   'czh.mindnode': true, // 思维导图
   'com.chrissen.card': true, // 麻雀记
+  'top.onepix.timeblock': true, // 块时间
 }
 
 /**

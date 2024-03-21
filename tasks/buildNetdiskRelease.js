@@ -44,11 +44,11 @@ function releaseHyperOsForPad5() {
 }
 
 
-
 function releasePadByMIUI14Transplant() {
   return src(`${releaseDir}/${moduleConfig.version}/transplant-${moduleConfig.version}.zip`)
     .pipe(dest(`${releaseNetdiskDir}/6.基于MIUI14的6 Max移植包专版（仅MIUI14移植可刷）/模块`))
 }
+
 
 function releaseUnInstallPad() {
   return src(`${releaseDir}/${moduleConfig.version}/uninstall-pad-0.00.00.zip`)

@@ -613,6 +613,11 @@
   <package name="com.vpapps.hdwallpaper.xyz" relaunch="false" isScale="true" supportFullSize="true" />
   <package name="com.viva.note" relaunch="false" isScale="true" supportFullSize="true" />
   <!-- Adaptive For Sothx 1.10.x -->
+  <%_ if (['not-dragable'].includes(compatibility)) { _%>
+  <package name="com.tencent.mm" disable="true" isShowDivider="true" />
+  <%_ } else { _%>
+  <package name="com.tencent.mm" disable="true" isShowDivider="true" />
+  <%_ } _%>
   <package name="com.kugou.android" disable="true" />
   <package name="com.example.hikerview" disable="true" supportFullSize="true" />
   <package name="com.hexin.plat.android" supportFullSize="true" />
@@ -623,7 +628,6 @@
   <package name="me.ele" allowEmbInPortrait="false" isShowDivider="true" />
   <package name="com.vk.mail" disable="true" />
   <package name="com.tencent.mobileqqi" disable="true" />
-  <package name="com.tencent.mm" disable="true" isShowDivider="true" />
   <package name="com.xiaomi.shop" disable="true" isShowDivider="true" />
   <package name="cn.com.langeasy.LangEasyLexis" disable="true" />
   <package name="com.taobao.idlefish" relaunch="false" isScale="true" supportFullSize="true" />

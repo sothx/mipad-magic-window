@@ -159,6 +159,28 @@ jobs:
           name: pad-not-dragable-ext-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
+
+    - name: Build Pad Compatibility Use ConservativeAdapter
+      run: |
+          npm run build:pad-compatibility=conservative-adapter
+  
+    - name: Upload Pad Compatibility Use ConservativeAdapter Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+          name: pad-conservative-adapter-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
+
+    - name: Build Ext Pad Compatibility Use ConservativeAdapter
+      run: |
+          npm run build-ext:pad-compatibility=conservative-adapter
+  
+    - name: Upload Ext Pad Compatibility Use ConservativeAdapter Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+          name: pad-conservative-adapter-ext-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
   
     - name: Build UnInstall Pad
       run: |
