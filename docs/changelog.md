@@ -1,9 +1,5 @@
 ## 更新日志
 
-应用商店来源: Google Play Store
-
-- 优化<Pokemon Sleep>的适配
-
 应用商店来源: 酷安
 
 - 优化<时间日志>的适配
