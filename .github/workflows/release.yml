@@ -56,8 +56,9 @@ jobs:
         tag: "${{ env.VERSION }}"
         bodyFile: "${{ github.workspace }}/docs/changelog.md"
         allowUpdates: false
-        artifactErrorsFailBuild: false
+        artifactErrorsFailBuild: true
         makeLatest: true
+        skipIfReleaseExists: true
 
     - name: 更新版本链接
       run: |
