@@ -2442,7 +2442,6 @@
   <package name="com.wuba.bangjob" supportFullSize="true" isShowDivider="true" splitPairRule="com.wuba.bangjob.job.simple.LaunchSimpleActivity:*" />
   <package name="com.pp.assistant" supportFullSize="true" isShowDivider="true" splitPairRule="com.pp.assistant.activity.MainActivity:*" />
   <package name="com.szzc" supportFullSize="true" isShowDivider="true" splitPairRule="com.sz.ucar.rentcar.home.activity.MainActivity:*" />
-  <package name="com.cjtec.uncompress" supportFullSize="true" isShowDivider="true" splitPairRule="com.cjtec.uncompress.ui.activity.FileListActivity:*" />
   <package name="com.ganji.android" supportFullSize="true" isShowDivider="true" splitPairRule="com.wuba.home.activity.HomeActivity:*" />
   <package name="com.jincheng.supercaculator" supportFullSize="true" splitPairRule="com.jincheng.supercaculator.activity.MainActivity:*" scaleMode="1" />
   <package name="com.softbank.mbank.xjnx" supportFullSize="true" isShowDivider="true" splitPairRule="com.softbank.mbank.ui.home.MainActivity:*" />
@@ -2701,7 +2700,6 @@
   <package name="sg.bigo.shrimp" supportFullSize="true" splitPairRule="com.ppx.MainActivity:*" scaleMode="1" />
   <package name="com.tima.carnet.m.main" supportFullSize="true" splitPairRule="com.tima.carnet.m.main.app.main.MainActivity:*" scaleMode="1" />
   <package name="com.ledu.ebrowser" supportFullSize="true" splitPairRule="com.ledu.ebrowser.BrowserActivity:*" scaleMode="1" />
-  <package name="com.android.yzd.habit" supportFullSize="true" splitPairRule="com.android.yzd.habit.ui.activity.HomeActivity:*" scaleMode="1" />
   <package name="com.jm.dflh" supportFullSize="true" splitPairRule="com.jm.dflh.MainActivity:*" scaleMode="1" />
   <package name="com.ifeimo.audiorecord" supportFullSize="true" splitPairRule="com.ifeimo.audiorecord.mvp.ui.activity.MainActivity:*" scaleMode="1" />
   <package name="com.duowan.xunhuan" supportFullSize="true" splitPairRule="com.duowan.makefriends.main.MainActivity:*" scaleMode="1" />
@@ -2901,7 +2899,6 @@
   <package name="com.east2d.everyimage" supportFullSize="true" isShowDivider="true" splitPairRule="com.east2d.haoduo.mvp.main.ActivityMainTabs:*" />
   <package name="seekrtech.sleep" supportFullSize="true" isShowDivider="true" splitPairRule="seekrtech.sleep.activities.main.MainActivity:*" />
   <package name="com.ourydc.yuebaobao" supportFullSize="true" splitPairRule="com.ourydc.yuebaobao.ui.activity.MainActivity:*" scaleMode="1" />
-  <package name="me.zhouzhuo810.zznote" supportFullSize="true" splitPairRule="me.zhouzhuo810.zznote.view.act.MainViewPagerActivity:*" scaleMode="1" />
   <package name="com.littlea.screencorder.finger" supportFullSize="true" splitPairRule="com.qtech.screenrecorder.MainActivity:*" scaleMode="1" />
   <package name="com.youyuan.yhb" supportFullSize="true" isShowDivider="true" splitPairRule="com.yy.leopard.business.main.MainActivity:*" />
   <package name="com.huawei.mw" supportFullSize="true" splitPairRule="com.huawei.mw.activity.HiLinkMainActivity:*" scaleMode="1" />
@@ -4346,7 +4343,6 @@
   <package name="com.liferecord.tanke.liferecord" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.szcx.explorer" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.dada.safe" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
-  <package name="com.superelement.pomodoro" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.dotools.note" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.onlycrm.aly" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.macrovideo.anba" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
@@ -6013,7 +6009,6 @@
   <package name="net.cpwxw.cpfiction" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.meijiale.macyandlarry" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.baidao.silver" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
-  <package name="com.doc360.client" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.lokinfo.android.gamemarket.mmshow" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.superrhino.rarering" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.woqu.attendance" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
@@ -6837,10 +6832,21 @@
   <package name="com.example.raccoon.dialogwidget" fullRule="nra:cr:rcr:nr"  />
   <package name="com.kwai.m2u" fullRule="nra:cr:rcr:nr"  />
   <%_ if (['not-dragable'].includes(compatibility)) { _%>
-  <package name="com.One.WoodenLetter" supportFullSize="true" splitRatio="0.7" splitLineColor="#FFFFFF" isShowDivider="true" splitPairRule="com.One.WoodenLetter.MainActivity:*" activityRule="com.One.WoodenLetter.activitys.SplashActivity,com.One.WoodenLetter.MainActivity,com.One.WoodenLetter.activitys.search.SearchActivity:*" transitionRules="com.One.WoodenLetter.activitys.SplashActivity,com.One.WoodenLetter.MainActivity" />
+  <package name="com.One.WoodenLetter" supportFullSize="true" splitRatio="0.7" splitLineColor="#FFFFFF" isShowDivider="true" splitPairRule="com.One.WoodenLetter.MainActivity:*,com.One.WoodenLetter.activitys.search.SearchActivity:*" activityRule="com.One.WoodenLetter.activitys.SplashActivity,com.One.WoodenLetter.MainActivity" transitionRules="com.One.WoodenLetter.activitys.SplashActivity,com.One.WoodenLetter.MainActivity" />
   <%_ } else { _%>
-  <package name="com.One.WoodenLetter" supportFullSize="true" splitRatio="0.3" splitLineColor="#FFFFFF" isShowDivider="true" splitPairRule="com.One.WoodenLetter.MainActivity:*" activityRule="com.One.WoodenLetter.activitys.SplashActivity,com.One.WoodenLetter.MainActivity,com.One.WoodenLetter.activitys.search.SearchActivity:*" transitionRules="com.One.WoodenLetter.activitys.SplashActivity,com.One.WoodenLetter.MainActivity" />
+  <package name="com.One.WoodenLetter" supportFullSize="true" splitRatio="0.3" splitLineColor="#FFFFFF" isShowDivider="true" splitPairRule="com.One.WoodenLetter.MainActivity:*,com.One.WoodenLetter.activitys.search.SearchActivity:*" activityRule="com.One.WoodenLetter.activitys.SplashActivity,com.One.WoodenLetter.MainActivity" transitionRules="com.One.WoodenLetter.activitys.SplashActivity,com.One.WoodenLetter.MainActivity" />
   <%_ } _%>
+  <package name="me.liujia95.solitude" fullRule="nra:cr:rcr:nr"  />
+  <package name="com.zlfcapp.batterymanager" fullRule="nra:cr:rcr:nr"  />
+  <package name="com.doc360.client" fullRule="nra:cr:rcr:nr" />
+  <package name="com.ktls.fileinfo" fullRule="nra:cr:rcr:nr" />
+  <package name="com.wujiteam.wuji" fullRule="nra:cr:rcr:nr" />
+  <package name="me.zhouzhuo810.zznote" supportFullSize="true" splitRatio="0.3" splitLineColor="#FFFFFF" isShowDivider="true" splitPairRule="me.zhouzhuo810.zznote.view.act.MainViewPagerActivity:*" activityRule="me.zhouzhuo810.zznote.view.act.QiDongActivity,me.zhouzhuo810.zznote.view.act.MainViewPagerActivity,me.zhouzhuo810.zznote.view.act.other.CaptureActivity" transitionRules="me.zhouzhuo810.zznote.view.act.QiDongActivity,me.zhouzhuo810.zznote.view.act.MainViewPagerActivity" />
+  <package name="com.ifreedomer.timenote" fullRule="nra:cr:rcr:nr" />
+  <package name="com.lcw.easydownload" fullRule="nra:cr:rcr:nr" />
+  <package name="com.android.yzd.habit" fullRule="nra:cr:rcr:nr" />
+  <package name="com.cjtec.uncompress" fullRule="nra:cr:rcr:nr" />
+  <package name="com.superelement.pomodoro" fullRule="nra:cr:rcr:nr" />
   <!-- Adaptive For System Fix -->
   <package name="com.zui.browser" fullRule="nra:cr:rcr:nr" />
   <package name="com.android.browser" fullRule="nra:cr:rcr:nr" />
