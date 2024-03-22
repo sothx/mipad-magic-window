@@ -58,6 +58,8 @@ const fullScreenList = {
   'czh.mindnode': true, // 思维导图
   'com.chrissen.card': true, // 麻雀记
   'top.onepix.timeblock': true, // 块时间
+  'www.imxiaoyu.com.musiceditor': true, // 音乐剪辑
+  'com.mmbox.xbrowser': true, // X浏览器
 }
 
 /**
@@ -79,6 +81,7 @@ const fixedOrientationList = {
   'com.netease.sz.xxqa': true, // 南国强安
   'com.hexin.plat.android': true, // 同花顺
   'com.umihome.m': true, // 柚米租房
+  'com.fimo.camera': true, // FIMO
 }
 
 
