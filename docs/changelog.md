@@ -5,19 +5,15 @@
 
 来源:酷安应用商店
 
-- 优化<讯飞文档>的适配体验
+- 优化<时光计划>的适配体验
 
-- 移除<音乐剪辑>的适配规则
+- 优化<洋果扫描王>的适配体验
 
-- 移除<X浏览器>的适配规则
+- 优化<微拾>的适配体验
 
-- 优化<Forest 专注森林>的适配体验
+来源:酷友
 
-- 优化<老板记账>的适配体验
-
-- 仅允许 FIMO 以竖屏方式运行
-
-- 优化<时间记录>的适配体验
+- 优化<可可影视>的适配体验
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
