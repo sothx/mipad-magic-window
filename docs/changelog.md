@@ -15,6 +15,8 @@
 
 - 优化<可可影视>的适配体验
 
+- 优化 Hayo 的适配体验
+
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
