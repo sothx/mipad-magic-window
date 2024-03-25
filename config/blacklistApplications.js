@@ -60,6 +60,7 @@ const fullScreenList = {
   'top.onepix.timeblock': true, // 块时间
   'www.imxiaoyu.com.musiceditor': true, // 音乐剪辑
   'com.mmbox.xbrowser': true, // X浏览器
+  'com.lemon.lv': true, // 剪映
 }
 
 /**
