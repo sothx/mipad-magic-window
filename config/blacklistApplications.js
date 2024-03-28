@@ -61,6 +61,8 @@ const fullScreenList = {
   'www.imxiaoyu.com.musiceditor': true, // 音乐剪辑
   'com.mmbox.xbrowser': true, // X浏览器
   'com.lemon.lv': true, // 剪映
+  'com.flyersoft.moonreader': true, // 静读天下
+  'com.flyersoft.moonreaderp': true, // 静读天下 Pro
 }
 
 /**
