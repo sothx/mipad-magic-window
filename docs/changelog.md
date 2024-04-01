@@ -1,6 +1,6 @@
 ## 更新日志
 
-- 优化学浪的适配规则,解决应用会异常崩溃的问题
+- 优化红果免费短剧的适配规则
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
