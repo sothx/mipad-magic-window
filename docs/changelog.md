@@ -1,7 +1,6 @@
 ## 更新日志
 
-- 优化只二的适配规则
-- 优化孔夫子旧书网的适配规则
+- 解决不背单词在开启强制横屏后存在较为严重的卡顿问题
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
