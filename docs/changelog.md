@@ -1,6 +1,6 @@
 ## 更新日志
 
-- 解决不背单词在开启强制横屏后存在较为严重的卡顿问题
+- 优化QQ音乐的适配，改用折叠屏的播放器组件（只能做到这样了，想要需要更好的体验，大家多催催QQ音乐那边下放折叠屏的适配给平板）
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
