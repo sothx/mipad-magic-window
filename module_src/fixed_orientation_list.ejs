@@ -65,7 +65,6 @@
   <package name="com.ruanmei.ithome" adaptCutout="1" />
   <package name="com.tujia.hotel" adaptCutout="1" />
   <%_ } else { _%>
-  <package name="com.baidu.searchbox" forcePortraitActivity="com.baidu.searchbox/.godeye.CodeScannerActivity" />
   <package name="com.mihoyo.desktopportal" relaunch="false" />
   <package name="com.kkptech.kkpsy" relaunch="false" />
   <package name="com.cubic.autohome" allPortrait="true" />
@@ -613,11 +612,7 @@
   <package name="com.vpapps.hdwallpaper.xyz" relaunch="false" isScale="true" supportFullSize="true" />
   <package name="com.viva.note" relaunch="false" isScale="true" supportFullSize="true" />
   <!-- Adaptive For Sothx 1.10.x -->
-  <%_ if (['not-dragable'].includes(compatibility)) { _%>
   <package name="com.tencent.mm" disable="true" isShowDivider="true" />
-  <%_ } else { _%>
-  <package name="com.tencent.mm" disable="true" isShowDivider="true" />
-  <%_ } _%>
   <package name="com.kugou.android" disable="true" />
   <package name="com.example.hikerview" disable="true" supportFullSize="true" />
   <package name="com.hexin.plat.android" supportFullSize="true" />
@@ -637,5 +632,9 @@
   <package name="com.example.gyf.uaiu" relaunch="false" isScale="true" supportFullSize="true" />
   <package name="com.ss.android.ugc.trill" disable="true" />
   <package name="com.fimo.camera" disable="true" />
+  <package name="com.baidu.searchbox" disable="true" isShowDivider="true" />
+  <package name="com.baidu.searchbox.lite" disable="true" isShowDivider="true" />
+  <package name="com.baidu.searchbox.tomas" disable="true" isShowDivider="true" />
+  <package name="com.baidu.searchbox.senior" disable="true" isShowDivider="true" />
   <%_ } _%>
 </package_config>

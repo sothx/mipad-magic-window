@@ -1,7 +1,9 @@
 ## 更新日志
 
-- 优化华润万家的适配
-- 优化永旺的适配
+- 百度(com.baidu.searchbox)已自适配平行视界，移除模块的适配规则，启用应用自身的适配规则，并为Android 14 +的Hyper OS For Pad启用该应用的左右滑动条。
+- 百度极速版(com.baidu.searchbox.lite)已自适配平行视界，移除模块的适配规则，启用应用自身的适配规则，并为Android 14 +的Hyper OS For Pad启用该应用的左右滑动条。
+- 百度畅听版(com.baidu.searchbox.tomas)已自适配平行视界，移除模块的适配规则，启用应用自身的适配规则，并为Android 14 +的Hyper OS For Pad启用该应用的左右滑动条。
+- 优化百度关怀版(com.baidu.searchbox.senior)的适配规则
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
