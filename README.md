@@ -1,4 +1,4 @@
-# HyperOS For Pad/Fold 完美横屏应用计划 - MIUI MagicWindow+
+# HyperOS For Pad/Fold 完美横屏应用计划
 
 ## 模块首页
 
