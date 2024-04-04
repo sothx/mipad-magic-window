@@ -63,6 +63,7 @@ const fullScreenList = {
   'com.lemon.lv': true, // 剪映
   'com.flyersoft.moonreader': true, // 静读天下
   'com.flyersoft.moonreaderp': true, // 静读天下 Pro
+  'com.yikaobang.yixue': true, // 医考帮
 }
 
 /**
