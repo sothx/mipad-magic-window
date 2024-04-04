@@ -64,6 +64,10 @@ const fullScreenList = {
   'com.flyersoft.moonreader': true, // 静读天下
   'com.flyersoft.moonreaderp': true, // 静读天下 Pro
   'com.yikaobang.yixue': true, // 医考帮
+  'com.kwai.m2u': true, // 一甜相机
+  'com.qiyi.video.pad': true, // 爱奇艺Pad版
+  'com.smile.gifmaker': true, // 快手
+  'com.baidu.baidutranslate': true, // 百度翻译
 }
 
 /**
