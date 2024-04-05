@@ -19,7 +19,7 @@ function isSothxExtBuild() {
 
 function releasePad() {
   return src(`${releaseDir}/${moduleConfig.version}/pad-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/1.小米平板通用版（通用版，推荐）/模块`))
+    .pipe(dest(`${releaseNetdiskDir}/1.小米平板通用版（推荐安卓14+）/模块`))
 }
 
 function releaseRatioOf3To2Pad() {
