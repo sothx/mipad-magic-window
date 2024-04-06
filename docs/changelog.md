@@ -1,6 +1,8 @@
 ## 更新日志
 
-- 进一步优化斗鱼的适配体验，解决部分页面可能出现动画闪屏的问题，优化斗鱼的图片查看体验
+- 修复哔哩哔哩（普通版、国际版，概念版）平行视界下查看图片无法正常浏览评论的问题
+- 修复哔哩哔哩（普通版、国际版，概念版）平行视界下查看图片动画异常的问题
+- 修复QQ音乐普通版无法正常使用直播功能的问题
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
