@@ -21,11 +21,11 @@
 
 适配小米Mix Fold 折叠屏系列，仅推荐折叠屏的机型。
 
-[小米平板安卓13专版(pad-magicWindow-x.xx.xx.zip)]
+[小米平板安卓13专版(pad-not-dragable--x.xx.xx.zip)]
 
 适配Android 13/Android 12(除小米平板6 Max 14 外)不支持平行视界左右滑动条的MIUI For Pad/Hyper OS For Pad，以及各类基于MIUI For Pad的移植包机型，推荐基于Android 13/Android 12底层的均安装此版本，该版本针对Android 13/Android 12下平行视界部分应用显示不全的问题有做单独适配优化。
 
-[小米平板安卓11专版(pad-not-dragable--x.xx.xx.zip)]
+[小米平板安卓11专版(pad-magicWindow-x.xx.xx.zip)]
 
 适配小米平板安卓11下类华为/荣耀体系的老魔窗，仅适配安卓11，安卓11的模块不支持通过系统设置直接关闭某个应用的平行视界适配(重启或者升级模块均会恢复打开状态)，需要使用 MT 管理器打开:
 
