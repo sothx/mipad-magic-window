@@ -37,6 +37,11 @@ const buildActionIsNoShowDivider = function () {
   return use_compatibility === 'not-dragable'
 }
 
+const buildActionIsMagicWindow = function () {
+  const use_mode = option.use_mode
+  return options.use_mode === 'magicWindow'
+}
+
 
 function transformKeyValue(key, value) {
   return `${key}=${value}`;
@@ -67,7 +72,11 @@ module.exports = function jsonToProp() {
       return json;
     })))
     .pipe(gulpIf(buildActionIsNoShowDivider, gulpJSONEdit(function (json) {
-      json.description = `适用于HyperOS For Pad/Fold，用于扩展平行视界的支持范围，以及优化平行视界的体验。当前刷入的是[小米平板5系列官方澎湃专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(此版本为酷安 @做梦书 自用版，反馈应用适配问题可前往酷安私信或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请使用GitHub上的卸载模块进行卸载，与原作者的卸载模块不通用)`;
+      json.description = `适用于HyperOS For Pad/Fold，用于扩展平行视界的支持范围，以及优化平行视界的体验。当前刷入的是[小米平板安卓13专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(此版本为酷安 @做梦书 自用版，反馈应用适配问题可前往酷安私信或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请使用GitHub上的卸载模块进行卸载，与原作者的卸载模块不通用)`;
+      return json;
+    })))
+    .pipe(gulpIf(buildActionIsMagicWindow, gulpJSONEdit(function (json) {
+      json.description = `适用于HyperOS For Pad/Fold，用于扩展平行视界的支持范围，以及优化平行视界的体验。当前刷入的是[小米平板安卓11专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(此版本为酷安 @做梦书 自用版，反馈应用适配问题可前往酷安私信或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请使用GitHub上的卸载模块进行卸载，与原作者的卸载模块不通用)`;
       return json;
     })))
     .pipe(gulpIf(buildActionIsUnInstallPackage, gulpJSONEdit(function (json) {
