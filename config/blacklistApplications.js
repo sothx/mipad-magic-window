@@ -68,6 +68,7 @@ const fullScreenList = {
   'com.qiyi.video.pad': true, // 爱奇艺Pad版
   'com.smile.gifmaker': true, // 快手
   'com.baidu.baidutranslate': true, // 百度翻译
+  'org.zwanoo.android.speedtest': true, // SpeedTest
 }
 
 /**

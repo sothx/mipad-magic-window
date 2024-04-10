@@ -38,7 +38,7 @@ const buildActionIsNoShowDivider = function () {
 }
 
 const buildActionIsMagicWindow = function () {
-  const use_mode = option.use_mode
+  const use_mode = options.use_mode
   return options.use_mode === 'magicWindow'
 }
 
@@ -60,27 +60,27 @@ module.exports = function jsonToProp() {
       return json;
     }))
     .pipe(gulpIf(buildActionIsFold, gulpJSONEdit(function (json) {
-      json.description = `适用于HyperOS For Pad/Fold，用于扩展平行视界的支持范围，以及优化平行视界的体验。当前刷入的是[小米折叠屏通用版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(此版本为酷安 @做梦书 自用版，反馈应用适配问题可前往酷安私信或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请使用GitHub上的卸载模块进行卸载，与原作者的卸载模块不通用)`;
+      json.description = `适用于HyperOS For Pad/Fold，用于扩展平行视界的支持范围，以及优化平行视界的体验。当前刷入的是[小米折叠屏通用版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(反馈应用适配问题可前往酷安私信 @做梦书 或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请使用GitHub上的卸载模块进行卸载)`;
       return json;
     })))
     .pipe(gulpIf(buildActionIsTransplant, gulpJSONEdit(function (json) {
-      json.description = `适用于MIUI 14 For Pad，用于扩展平行视界的支持范围，以及优化平行视界的体验。当前刷入的是[小米平板6Max移植包专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(此版本为酷安 @做梦书 自用版，反馈应用适配问题可前往酷安私信或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请使用GitHub上的卸载模块进行卸载，与原作者的卸载模块不通用)`;
+      json.description = `适用于MIUI 14 For Pad，用于扩展平行视界的支持范围，以及优化平行视界的体验。当前刷入的是[小米平板6Max移植包专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(反馈应用适配问题可前往酷安私信 @做梦书 或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请使用GitHub上的卸载模块进行卸载)`;
       return json;
     })))
     .pipe(gulpIf(buildActionIsPad6SPro, gulpJSONEdit(function (json) {
-      json.description = `适用于HyperOS For Pad/Fold，用于扩展平行视界的支持范围，以及优化平行视界的体验。当前刷入的是[小米平板6S Pro专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(此版本为酷安 @做梦书 自用版，反馈应用适配问题可前往酷安私信或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请使用GitHub上的卸载模块进行卸载，与原作者的卸载模块不通用)`;
+      json.description = `适用于HyperOS For Pad/Fold，用于扩展平行视界的支持范围，以及优化平行视界的体验。当前刷入的是[小米平板6S Pro专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(反馈应用适配问题可前往酷安私信 @做梦书 或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请使用GitHub上的卸载模块进行卸载)`;
       return json;
     })))
     .pipe(gulpIf(buildActionIsNoShowDivider, gulpJSONEdit(function (json) {
-      json.description = `适用于HyperOS For Pad/Fold，用于扩展平行视界的支持范围，以及优化平行视界的体验。当前刷入的是[小米平板安卓13专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(此版本为酷安 @做梦书 自用版，反馈应用适配问题可前往酷安私信或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请使用GitHub上的卸载模块进行卸载，与原作者的卸载模块不通用)`;
+      json.description = `适用于HyperOS For Pad/Fold，用于扩展平行视界的支持范围，以及优化平行视界的体验。当前刷入的是[小米平板安卓13专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(反馈应用适配问题可前往酷安私信 @做梦书 或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请使用GitHub上的卸载模块进行卸载)`;
       return json;
     })))
     .pipe(gulpIf(buildActionIsMagicWindow, gulpJSONEdit(function (json) {
-      json.description = `适用于HyperOS For Pad/Fold，用于扩展平行视界的支持范围，以及优化平行视界的体验。当前刷入的是[小米平板安卓11专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(此版本为酷安 @做梦书 自用版，反馈应用适配问题可前往酷安私信或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请使用GitHub上的卸载模块进行卸载，与原作者的卸载模块不通用)`;
+      json.description = `适用于HyperOS For Pad/Fold，用于扩展平行视界的支持范围，以及优化平行视界的体验。当前刷入的是[小米平板安卓11专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(反馈应用适配问题可前往酷安私信 @做梦书 或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请使用GitHub上的卸载模块进行卸载)`;
       return json;
     })))
     .pipe(gulpIf(buildActionIsUnInstallPackage, gulpJSONEdit(function (json) {
-      json.description = `一键卸载《完美横屏应用计划》模块，安装该模块后重启，然后再卸载该模块，再重启即可。当前卸载包内还原文件版本为${buildActionIsFold() ? `小米 Mix Fold 3 Hyper OS For Fold 1.0.24.2.26.DEV` : `小米平板6S Pro Hyper OS For Pad 1.0.4.0.UNXCNXM`}。(此版本为酷安 @做梦书 自用版，反馈应用适配问题可前往酷安私信或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请使用GitHub上的卸载模块进行卸载，与原作者的卸载模块不通用)`;
+      json.description = `一键卸载《完美横屏应用计划》模块，安装该模块后重启，然后再卸载该模块，再重启即可。当前卸载包内还原文件版本为${buildActionIsFold() ? `小米 Mix Fold 3 Hyper OS For Fold 1.0.24.2.26.DEV` : `小米平板6S Pro Hyper OS For Pad 1.0.4.0.UNXCNXM`}。(反馈应用适配问题可前往酷安私信 @做梦书 或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请使用GitHub上的卸载模块进行卸载)`;
       json.version = '0.00.00'
       json.versionCode = '00000'
       return json;
