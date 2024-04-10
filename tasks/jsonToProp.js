@@ -80,7 +80,7 @@ module.exports = function jsonToProp() {
       return json;
     })))
     .pipe(gulpIf(buildActionIsUnInstallPackage, gulpJSONEdit(function (json) {
-      json.description = `一键卸载《完美横屏应用计划》模块，安装该模块后重启，然后再卸载该模块，再重启即可。当前卸载包内还原文件版本为${buildActionIsFold() ? `小米 Mix Fold 3 Hyper OS For Fold 1.0.24.2.26.DEV` : `小米平板6S Pro Hyper OS For Pad 1.0.4.0.UNXCNXM`}。(反馈应用适配问题可前往酷安私信 @做梦书 或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请使用GitHub上的卸载模块进行卸载)`;
+      json.description = `一键卸载《完美横屏应用计划》模块，安装该模块后重启，然后再卸载该模块，再重启即可。当前卸载包内还原文件版本为${buildActionIsFold() ? `小米 Mix Fold 3 Hyper OS For Fold 1.0.24.2.26.DEV` : `红米平板 Pad Pro Hyper OS For Pad 1.0.3.0.UNSCNXM`}。(反馈应用适配问题可前往酷安私信 @做梦书 或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请使用GitHub上的卸载模块进行卸载)`;
       json.version = '0.00.00'
       json.versionCode = '00000'
       return json;
