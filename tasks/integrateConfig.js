@@ -111,10 +111,10 @@ function copyEmbeddedRuleListToCommon(cb) {
     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/`)))
 }
 
-function copyEmbeddedRuleListToCommonSource(cb) {
-  return is_uninstall_package ? cb() : src(`${tempDir}/embedded_rules_list.xml`)
-    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/source/`)))
-}
+// function copyEmbeddedRuleListToCommonSource(cb) {
+//   return is_uninstall_package ? cb() : src(`${tempDir}/embedded_rules_list.xml`)
+//     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/source/`)))
+// }
 
 function copyEmbeddedRuleListToSystem(cb) {
   return is_uninstall_package ? cb() : src(`${tempDir}/embedded_rules_list.xml`)
@@ -130,10 +130,10 @@ function copyOriginOrientationListToCommon(cb) {
     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/`))) : cb()
 }
 
-function copyFixedOrientationListToCommonSource(cb) {
-  return is_uninstall_package ? cb() : src(`${tempDir}/fixed_orientation_list.xml`)
-    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/source/`)))
-}
+// function copyFixedOrientationListToCommonSource(cb) {
+//   return is_uninstall_package ? cb() : src(`${tempDir}/fixed_orientation_list.xml`)
+//     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/source/`)))
+// }
 
 function copyFixedOrientationListToCommon(cb) {
   return is_uninstall_package ? cb() : src(`${tempDir}/fixed_orientation_list.xml`)
@@ -148,4 +148,4 @@ function copyFixedOrientationListToSystem(cb) {
 
 
 
-module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig), copyOriginEmbeddedRuleListToCommon, copyEmbeddedRuleListToCommon, copyEmbeddedRuleListToCommonSource,copyEmbeddedRuleListToSystem,copyOriginOrientationListToCommon,copyFixedOrientationListToCommonSource,copyFixedOrientationListToCommon,copyFixedOrientationListToSystem), cleanTemp)
+module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig), copyOriginEmbeddedRuleListToCommon, copyEmbeddedRuleListToCommon,copyEmbeddedRuleListToSystem,copyOriginOrientationListToCommon,copyFixedOrientationListToCommon,copyFixedOrientationListToSystem), cleanTemp)
