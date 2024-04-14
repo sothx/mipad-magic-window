@@ -69,6 +69,7 @@ const fullScreenList = {
   'com.smile.gifmaker': true, // 快手
   'com.baidu.baidutranslate': true, // 百度翻译
   'org.zwanoo.android.speedtest': true, // SpeedTest
+  'com.xiwang.zaixian': true, // 希望学
 }
 
 /**
@@ -102,6 +103,7 @@ const fixedOrientationList = {
 const NotNeedAdaptationList = {
   'com.ks.jybh.mi': true, // 解压宝盒
   'com.hcj.moon': true, // moom 月相
+  'com.yangcong345.android.phone': true, // 洋葱学院
 }
 
 module.exports = {
