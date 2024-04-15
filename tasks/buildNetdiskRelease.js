@@ -48,22 +48,6 @@ function releasePadByMIUI14Transplant() {
     .pipe(dest(`${releaseNetdiskDir}/6.基于MIUI14的6 Max移植包专版（仅MIUI14移植可刷）/模块`))
 }
 
-
-function releaseUnInstallPad() {
-  return src(`${releaseDir}/${moduleConfig.version}/uninstall-pad-0.00.00.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/7.卸载模块/模块/安卓12L以上版本小米平板模块适用`))
-}
-
-function releaseUnInstallFold() {
-  return src(`${releaseDir}/${moduleConfig.version}/uninstall-fold-0.00.00.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/7.卸载模块/模块/Mix Fold系列折叠屏适用`))
-}
-
-function releaseUnInstallMagicWindow() {
-  return src(`${releaseDir}/${moduleConfig.version}/uninstall-pad-magicWindow-0.00.00.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/7.卸载模块/模块/安卓11版本小米平板模块适用`))
-}
-
 function releaseExt(cb) {
   return isSothxExtBuild() ? src(`${releaseDir}/${moduleConfig.version}/ext/pad-ext-${moduleConfig.version}.zip`)
     .pipe(dest(`${releaseNetdiskDir}/X.自用版(基于通用版，仅根据我的习惯适配)/模块`)) : cb()
@@ -72,4 +56,4 @@ function releaseExt(cb) {
 
 
 
-module.exports = parallel(releasePad, releaseRatioOf3To2Pad, releaseFold, releasePadByMagicWindow, releaseHyperOsForPad5, releasePadByMIUI14Transplant, releaseUnInstallPad, releaseUnInstallFold, releaseUnInstallMagicWindow, releaseExt)
+module.exports = parallel(releasePad, releaseRatioOf3To2Pad, releaseFold, releasePadByMagicWindow, releaseHyperOsForPad5, releasePadByMIUI14Transplant,releaseExt)

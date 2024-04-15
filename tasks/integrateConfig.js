@@ -104,10 +104,10 @@ function copyMagicWindowSettingConfig(cb) {
 // }
 
 
-// function copyEmbeddedRuleListToCommon(cb) {
-//   return src(`${tempDir}/embedded_rules_list.xml`)
-//     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/`)))
-// }
+function copyEmbeddedRuleListToCommon(cb) {
+  return src(`${tempDir}/embedded_rules_list.xml`)
+    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/`)))
+}
 
 // function copyEmbeddedRuleListToCommonSource(cb) {
 //   return src(`${tempDir}/embedded_rules_list.xml`)
@@ -138,12 +138,12 @@ function copyFixedOrientationListToCommon(cb) {
     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/`)))
 }
 
-function copyFixedOrientationListToSystem(cb) {
-  return src(`${tempDir}/fixed_orientation_list.xml`)
-    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${systemDist}/`)))
-}
+// function copyFixedOrientationListToSystem(cb) {
+//   return src(`${tempDir}/fixed_orientation_list.xml`)
+//     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${systemDist}/`)))
+// }
 
 
 
 
-module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig),copyFixedOrientationListToCommon,copyFixedOrientationListToSystem), cleanTemp)
+module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig),copyEmbeddedRuleListToCommon,copyFixedOrientationListToCommon), cleanTemp)
