@@ -18,13 +18,11 @@ const isNeedExtConfig = function() {
   return use_ext
 }
 
-const is_uninstall_package = options.is_uninstall_package
-
 /**
  * 支持扩展应用规则(Only Android 12+)
  */
 function getEmbeddedRuleListExtConfigData(cb) {
-  return is_uninstall_package ? cb() : src('temp/ext/embedded_rules_list.xml') // 指定XML文件的路径
+  return src('temp/ext/embedded_rules_list.xml') // 指定XML文件的路径
     .pipe(gulpIf(isNeedExtConfig,gulpXML({
       callback: function(result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml');
@@ -49,7 +47,7 @@ function getEmbeddedRuleListExtConfigData(cb) {
 }
 
 function mergeEmbeddedRuleListExtConfig(cb) {
-  return is_uninstall_package ? cb() : src('temp/embedded_rules_list.xml') // 指定XML文件的路径
+  return src('temp/embedded_rules_list.xml') // 指定XML文件的路径
     .pipe(gulpIf(isNeedExtConfig,gulpXML({
       callback: function (result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml')
@@ -93,7 +91,7 @@ function mergeEmbeddedRuleListExtConfig(cb) {
  * 支持扩展固定方向规则(Only Android 12+)
  */
 function getFixedOrientationListExtConfigData(cb) {
-  return is_uninstall_package ? cb() : src('temp/ext/fixed_orientation_list.xml') // 指定XML文件的路径
+  return src('temp/ext/fixed_orientation_list.xml') // 指定XML文件的路径
     .pipe(gulpIf(isNeedExtConfig,gulpXML({
       callback: function(result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml');
@@ -118,7 +116,7 @@ function getFixedOrientationListExtConfigData(cb) {
 }
 
 function mergeFixedOrientationListExtConfig(cb) {
-  return is_uninstall_package ? cb() : src('temp/fixed_orientation_list.xml') // 指定XML文件的路径
+  return src('temp/fixed_orientation_list.xml') // 指定XML文件的路径
     .pipe(gulpIf(isNeedExtConfig,gulpXML({
       callback: function (result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml')

@@ -9,9 +9,6 @@ const packageName = `${options.is_transplant ? 'transplant' : options.use_platfo
 
 module.exports = function buildUpdateMsg(cb) {
   const unNeedUpdate = () => {
-    if (options.is_uninstall_package) {
-      return true
-    }
     if (options.netdisk_desc === 'sothx') {
       return false;
     }
@@ -30,7 +27,4 @@ module.exports = function buildUpdateMsg(cb) {
     }))
     .pipe(gulpRename(`${packageName}.json`))
     .pipe(dest(`docs/release/`))
-  // return src('dist/**')
-  //   .pipe(gulpzip(`${options.is_uninstall_package  ? 'uninstall-' : ''}${options.is_transplant ? 'transplant' : options.use_platform}${options.use_ext ? `-ext` : ''}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}-${options.is_uninstall_package ? '0.00.00' : moduleConfig.version}.zip`))
-  //   .pipe(dest(`release/${moduleConfig.version}${options.use_ext ? '/ext' : ''}`))
 }

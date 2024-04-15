@@ -5,13 +5,12 @@ const { options } = require('../config/process.env');
 const gulpIf = require('gulp-if');
 
 
-const is_uninstall_package = options.is_uninstall_package
 const use_platform = options.use_platform
 const use_ratio = options.use_ratio
 const use_compatibility = options.use_compatibility
 
 function buildExtEjsTemplate(cb) {
-  return is_uninstall_package ? cb() : src('ext_src/*.ejs')
+  return src('ext_src/*.ejs')
     .pipe(gulpEjs({
       platform: use_platform,
       ratio: use_ratio,
@@ -22,7 +21,7 @@ function buildExtEjsTemplate(cb) {
 }
 
 function buildSourceEjsTemplate(cb) {
-  return is_uninstall_package ? cb() : src(['module_src/*.ejs','module_src/template/*.ejs'])
+  return src(['module_src/*.ejs','module_src/template/*.ejs'])
     .pipe(gulpEjs({
       platform: use_platform,
       ratio: use_ratio,

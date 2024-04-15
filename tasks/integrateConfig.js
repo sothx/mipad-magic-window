@@ -7,7 +7,6 @@ const DOMParser = require('xmldom').DOMParser;
 const XMLSerializer = require('xmldom').XMLSerializer;
 const blacklistApplicationsList = require('../config/blacklistApplications');
 
-const is_uninstall_package = options.is_uninstall_package
 
 const buildActionIsMagicWindow = function () {
   const use_mode = options.use_mode
@@ -43,7 +42,7 @@ function copyREADME() {
  */
 
 function copyMagicWindowApplicationList(cb) {
-  return is_uninstall_package ? cb() : src(`${tempDir}/magicWindowFeature_magic_window_application_list.xml`)
+  return src(`${tempDir}/magicWindowFeature_magic_window_application_list.xml`)
     .pipe(gulpIf(buildActionIsMagicWindow,gulpXML({
       callback: function (result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml');
@@ -64,7 +63,7 @@ function copyMagicWindowApplicationList(cb) {
 }
 
 function copyMagicWindowSettingConfig(cb) {
-  return is_uninstall_package ? cb() : src(`${tempDir}/magic_window_setting_config.xml`)
+  return src(`${tempDir}/magic_window_setting_config.xml`)
     .pipe(gulpIf(buildActionIsMagicWindow,gulpXML({
       callback: function (result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml')
@@ -107,17 +106,17 @@ function copyOriginEmbeddedRuleListToCommon() {
 
 
 function copyEmbeddedRuleListToCommon(cb) {
-  return is_uninstall_package ? cb() : src(`${tempDir}/embedded_rules_list.xml`)
+  return src(`${tempDir}/embedded_rules_list.xml`)
     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/`)))
 }
 
 // function copyEmbeddedRuleListToCommonSource(cb) {
-//   return is_uninstall_package ? cb() : src(`${tempDir}/embedded_rules_list.xml`)
+//   return src(`${tempDir}/embedded_rules_list.xml`)
 //     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/source/`)))
 // }
 
 function copyEmbeddedRuleListToSystem(cb) {
-  return is_uninstall_package ? cb() : src(`${tempDir}/embedded_rules_list.xml`)
+  return src(`${tempDir}/embedded_rules_list.xml`)
   .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${systemDist}/product/etc/`)))
 }
 
@@ -131,17 +130,17 @@ function copyOriginOrientationListToCommon(cb) {
 }
 
 // function copyFixedOrientationListToCommonSource(cb) {
-//   return is_uninstall_package ? cb() : src(`${tempDir}/fixed_orientation_list.xml`)
+//   return src(`${tempDir}/fixed_orientation_list.xml`)
 //     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/source/`)))
 // }
 
 function copyFixedOrientationListToCommon(cb) {
-  return is_uninstall_package ? cb() : src(`${tempDir}/fixed_orientation_list.xml`)
+  return src(`${tempDir}/fixed_orientation_list.xml`)
     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/`)))
 }
 
 function copyFixedOrientationListToSystem(cb) {
-  return is_uninstall_package ? cb() : src(`${tempDir}/fixed_orientation_list.xml`)
+  return src(`${tempDir}/fixed_orientation_list.xml`)
     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${systemDist}/product/etc/`)))
 }
 
