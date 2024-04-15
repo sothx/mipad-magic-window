@@ -13,6 +13,6 @@ const buildActionIsTransplant = function () {
 }
 
 module.exports = function buildTemplate() {
-  return src(modeMap[buildActionIsTransplant()])
+  return src(installTemplateMap[buildActionIsTransplant()])
          .pipe(dest('dist'))
 }
