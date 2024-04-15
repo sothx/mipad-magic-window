@@ -5,7 +5,6 @@ const gulpIf = require('gulp-if');
 const gulpXML = require('gulp-xml');
 const DOMParser = require('xmldom').DOMParser;
 const XMLSerializer = require('xmldom').XMLSerializer;
-const blacklistApplicationsList = require('../config/blacklistApplications');
 
 
 const buildActionIsMagicWindow = function () {
@@ -59,7 +58,7 @@ function copyMagicWindowApplicationList(cb) {
         }
       }
     })))
-    .pipe(gulpIf(buildActionIsMagicWindow, dest(`${commonDist}/system/`)))
+    .pipe(gulpIf(buildActionIsMagicWindow, dest(`${commonDist}/`)))
 }
 
 function copyMagicWindowSettingConfig(cb) {
@@ -91,7 +90,7 @@ function copyMagicWindowSettingConfig(cb) {
         return cleanedXml;
       }
     })))
-    .pipe(gulpIf(buildActionIsMagicWindow, dest(`${commonDist}/system/users/0/`)))
+    .pipe(gulpIf(buildActionIsMagicWindow, dest(`${commonDist}/`)))
 }
 
 
@@ -99,35 +98,35 @@ function copyMagicWindowSettingConfig(cb) {
  * 混入Android 12L 起的平行窗口配置
  */
 
-function copyOriginEmbeddedRuleListToCommon() {
-  return src(`${moduleSrc}/backup_config/${options.use_platform}/embedded_rules_list_bak`)
-    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/`)))
-}
+// function copyOriginEmbeddedRuleListToCommon() {
+//   return src(`${moduleSrc}/backup_config/${options.use_platform}/embedded_rules_list_bak`)
+//     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/`)))
+// }
 
 
-function copyEmbeddedRuleListToCommon(cb) {
-  return src(`${tempDir}/embedded_rules_list.xml`)
-    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/`)))
-}
+// function copyEmbeddedRuleListToCommon(cb) {
+//   return src(`${tempDir}/embedded_rules_list.xml`)
+//     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/`)))
+// }
 
 // function copyEmbeddedRuleListToCommonSource(cb) {
 //   return src(`${tempDir}/embedded_rules_list.xml`)
 //     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/source/`)))
 // }
 
-function copyEmbeddedRuleListToSystem(cb) {
-  return src(`${tempDir}/embedded_rules_list.xml`)
-  .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${systemDist}/product/etc/`)))
-}
+// function copyEmbeddedRuleListToSystem(cb) {
+//   return src(`${tempDir}/embedded_rules_list.xml`)
+//   .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${systemDist}/product/etc/`)))
+// }
 
 /**
  * 混入Android 12L 起的修正方向位置的配置
  */
 
-function copyOriginOrientationListToCommon(cb) {
-  return buildActionIsActivityEmbedding() ? src(`${moduleSrc}/backup_config/${options.use_platform}/fixed_orientation_list_bak`)
-    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/`))) : cb()
-}
+// function copyOriginOrientationListToCommon(cb) {
+//   return buildActionIsActivityEmbedding() ? src(`${moduleSrc}/backup_config/${options.use_platform}/fixed_orientation_list_bak`)
+//     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/`))) : cb()
+// }
 
 // function copyFixedOrientationListToCommonSource(cb) {
 //   return src(`${tempDir}/fixed_orientation_list.xml`)
@@ -136,15 +135,15 @@ function copyOriginOrientationListToCommon(cb) {
 
 function copyFixedOrientationListToCommon(cb) {
   return src(`${tempDir}/fixed_orientation_list.xml`)
-    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/`)))
+    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/`)))
 }
 
 function copyFixedOrientationListToSystem(cb) {
   return src(`${tempDir}/fixed_orientation_list.xml`)
-    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${systemDist}/product/etc/`)))
+    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${systemDist}/`)))
 }
 
 
 
 
-module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig), copyOriginEmbeddedRuleListToCommon, copyEmbeddedRuleListToCommon,copyEmbeddedRuleListToSystem,copyOriginOrientationListToCommon,copyFixedOrientationListToCommon,copyFixedOrientationListToSystem), cleanTemp)
+module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig),copyFixedOrientationListToCommon,copyFixedOrientationListToSystem), cleanTemp)

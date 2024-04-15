@@ -9,24 +9,22 @@ const use_platform = options.use_platform
 const use_ratio = options.use_ratio
 const use_compatibility = options.use_compatibility
 
+const ejsParams = {
+  platform: use_platform,
+  ratio: use_ratio,
+  compatibility: use_compatibility
+}
+
 function buildExtEjsTemplate(cb) {
   return src('ext_src/*.ejs')
-    .pipe(gulpEjs({
-      platform: use_platform,
-      ratio: use_ratio,
-      compatibility: use_compatibility
-    }))
+    .pipe(gulpEjs(ejsParams))
     .pipe(gulpRename({ extname: '.xml' }))
     .pipe(dest('temp/ext/'))
 }
 
 function buildSourceEjsTemplate(cb) {
   return src(['module_src/*.ejs','module_src/template/*.ejs'])
-    .pipe(gulpEjs({
-      platform: use_platform,
-      ratio: use_ratio,
-      compatibility: use_compatibility
-    }))
+    .pipe(gulpEjs(ejsParams))
     .pipe(gulpRename({ extname: '.xml' }))
     .pipe(dest('temp'))
 }
