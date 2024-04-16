@@ -159,36 +159,3 @@ jobs:
           name: pad-not-dragable-ext-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
-
-    - name: Build UnInstall Pad
-      run: |
-          npm run build-uninstall:pad
-  
-    - name: Upload UnInstall Pad Release Zip
-      uses: actions/upload-artifact@v4
-      with:
-          name: uninstall-pad-0.00.00
-          path: "dist/**"
-          overwrite: true
-
-    - name: Build UnInstall Fold
-      run: |
-          npm run build-uninstall:fold
-  
-    - name: Upload UnInstall Fold Release Zip
-      uses: actions/upload-artifact@v4
-      with:
-          name: uninstall-fold-0.00.00
-          path: "dist/**"
-          overwrite: true
-
-    - name: Build UnInstall Pad Mode Use MagicWindow
-      run: |
-          npm run build-uninstall:pad-mode=magicWindow
-  
-    - name: Upload UnInstall Pad Mode Use MagicWindow Release Zip
-      uses: actions/upload-artifact@v4
-      with:
-          name: uninstall-pad-magicWindow-0.00.00
-          path: "dist/**"
-          overwrite: true
