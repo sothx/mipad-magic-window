@@ -1,5 +1,7 @@
 ## 更新日志
 
+- 修改Android11下的QQ音乐普通版为强制横屏
+
 - 支持自定义规则功能(Beta)，可以通过本地配置文件覆盖模块的部分规则(如关闭微信的左右滑动调节，或QQ音乐的适配改为强制横屏等)，具体使用指南请参考模块首页：
   
   自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
