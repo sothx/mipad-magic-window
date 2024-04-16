@@ -4,7 +4,7 @@
   
   自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
-  该功能尚处于Beta阶段，随时可能做出大幅度修改，甚至在正式版模块废弃该功能，仅供测试使用。
+  该功能尚处于Beta阶段，随时可能做出大幅度修改或在正式版废弃该功能，仅供测试使用。
 
 
 V13.X模块大幅简化了模块的安装/卸载过程，以及不再需要单独的卸载模块，感谢大佬 @柚稚的孩纸 负责了本次模块代码的所有重构工作，同时模块新增自定义
