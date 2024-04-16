@@ -106,13 +106,8 @@ function copyMagicWindowSettingConfig(cb) {
 
 function copyEmbeddedRuleListToCommon(cb) {
   return src(`${tempDir}/embedded_rules_list.xml`)
-    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/`)))
+    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/source/`)))
 }
-
-// function copyEmbeddedRuleListToCommonSource(cb) {
-//   return src(`${tempDir}/embedded_rules_list.xml`)
-//     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/source/`)))
-// }
 
 // function copyEmbeddedRuleListToSystem(cb) {
 //   return src(`${tempDir}/embedded_rules_list.xml`)
@@ -135,7 +130,7 @@ function copyEmbeddedRuleListToCommon(cb) {
 
 function copyFixedOrientationListToCommon(cb) {
   return src(`${tempDir}/fixed_orientation_list.xml`)
-    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/`)))
+    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/source/`)))
 }
 
 // function copyFixedOrientationListToSystem(cb) {

@@ -9,7 +9,7 @@ const installTemplateMap = {
 const getInstallTemplateType = function () {
   const is_transplant = options.is_transplant
   const is_pad = options.use_platform === 'pad'
-  return (is_transplant && is_pad) ?  'generic' : 'transplant'
+  return (is_transplant && is_pad) ?  'transplant' : 'generic'
 }
 
 module.exports = function buildTemplate() {
