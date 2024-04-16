@@ -1,12 +1,5 @@
 # shellcheck disable=SC2148
 
-# a11
-# /data/system/users/0/magic_window_setting_config.xml
-# /data/system/magicWindowFeature_magic_window_application_list.xml
-# a12+
-# /data/system/cloudFeature_embedded_rules_list.xml
-# /data/system/cloudFeature_fixed_orientation_list.xml
-
 MODDIR=${0%/*}
 API=$(getprop ro.build.version.sdk)
 
