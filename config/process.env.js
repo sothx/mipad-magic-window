@@ -2,7 +2,7 @@ const minimist = require("minimist");
 
 // 配置命令行可以接受的参数以及默认值
 let knownOptions = {
-  string: ['use_platform','use_ratio','use_mode','use_compatibility','netdisk_desc'],
+  string: ['use_platform','use_ratio','use_mode','use_compatibility','netdisk_desc','module_update_version'],
   boolean: ['use_ext', 'is_transplant'],
   default: {
     use_platform: "pad", // 平板则为pad，折叠屏则为fold
@@ -13,6 +13,7 @@ let knownOptions = {
     use_merge_config_brand: 'hw', // 合并平行视界规则时候使用的规则厂商品牌，hw——华为/荣耀平板，oppo——OPPO Pad
     use_compatibility: '', // 特别版本的兼容参数，not-dragable——不支持左右滑动条的机型,conservative-adapter——更保守的兼容版本
     netdisk_desc: '', // 打包网盘提供的额外参数
+    module_update_version: 'V1', // 模块升级服务版本
   },
   alias: {
     p: 'use_platform',
@@ -22,6 +23,7 @@ let knownOptions = {
     m: 'use_mode',
     b: 'use_merge_config_brand',
     pc: 'use_compatibility',
+    v: 'module_update_version'
   }
 };
 

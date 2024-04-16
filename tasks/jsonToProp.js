@@ -5,6 +5,8 @@ const gulpIf = require('gulp-if');
 const gulpJSONEdit = require('gulp-json-editor');
 const { options } = require('../config/process.env');
 
+const moduleUpdateVersion = options.module_update_version
+
 const buildActionIsPad = function () {
   const use_platform = options.use_platform
   return use_platform === 'pad'
@@ -46,7 +48,7 @@ function transformKeyValue(key, value) {
 module.exports = function jsonToProp() {
   return src('config/module.config.json')
     .pipe(gulpJSONEdit(function (json) {
-      const jsonName = `${options.is_transplant ? 'transplant' : options.use_platform}${options.use_ext ? `-ext` : ''}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}.json`
+      const jsonName = `${moduleUpdateVersion}/${options.is_transplant ? 'transplant' : options.use_platform}${options.use_ext ? `-ext` : ''}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}.json`
       if (!options.use_ext) {
         json.updateJson += jsonName
       }
