@@ -58,7 +58,7 @@ function copyMagicWindowApplicationList(cb) {
         }
       }
     })))
-    .pipe(gulpIf(buildActionIsMagicWindow, dest(`${commonDist}/`)))
+    .pipe(gulpIf(buildActionIsMagicWindow, dest(`${commonDist}/source/`)))
 }
 
 function copyMagicWindowSettingConfig(cb) {
@@ -90,7 +90,7 @@ function copyMagicWindowSettingConfig(cb) {
         return cleanedXml;
       }
     })))
-    .pipe(gulpIf(buildActionIsMagicWindow, dest(`${commonDist}/`)))
+    .pipe(gulpIf(buildActionIsMagicWindow, dest(`${commonDist}/source/`)))
 }
 
 
