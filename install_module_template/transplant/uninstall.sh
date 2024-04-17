@@ -16,8 +16,8 @@ elif [[ "$API" -ge 31 ]]; then
   # 对云控文件解除写保护
   chattr -i /data/system/cloudFeature_embedded_rules_list.xml
   chattr -i /data/system/cloudFeature_fixed_orientation_list.xml
-  rm -rf /data/system/cloudFeature_embedded_rules_list.xml    # 移动平行视界相关备份文件
-  rm -rf /data/system/cloudFeature_fixed_orientation_list.xml # 移动信箱模式相关备份文件
+  rm -rf /data/system/cloudFeature_embedded_rules_list.xml    # 删除平行视界模块配置
+  rm -rf /data/system/cloudFeature_fixed_orientation_list.xml # 删除信箱模式模块配置
 fi
 # 删除模块
 rm -rf "$MODDIR"
