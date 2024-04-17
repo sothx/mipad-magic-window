@@ -4,6 +4,7 @@ const buildTemplate = require('./tasks/buildTemplate');
 const integrateConfig = require('./tasks/integrateConfig');
 const buildRelease = require('./tasks/buildRelease');
 const buildUpdateMsg = require('./tasks/buildUpdateMsg');
+const copyChangelog = require('./tasks/copyChangelog');
 const jsonToProp = require('./tasks/jsonToProp');
 const buildEjsTemplate = require('./tasks/buildEjsTemplate');
 const adaptivePlatformToFold = require('./tasks/adaptivePlatformToFold');
@@ -34,7 +35,7 @@ exports.build = buildTasks
 
 exports.release = buildRelease
 
-const packageTasks = series(buildTasks, buildRelease,buildUpdateMsg)
+const packageTasks = series(buildTasks, buildRelease,buildUpdateMsg,copyChangelog)
 
 exports.package = packageTasks
 
