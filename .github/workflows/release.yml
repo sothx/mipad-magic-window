@@ -1,4 +1,4 @@
-name: NodeJS with Gulp
+name: NodeJs with Release
 
 on:
   push:
