@@ -44,7 +44,6 @@ jobs:
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-ratioOf3To2-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/transplant-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/ext/pad-ext-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/ext/pad-ext-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
 
     - name: 上传到Github Release
       uses: ncipollo/release-action@main
@@ -62,7 +61,7 @@ jobs:
       run: |
         git config --global user.email "i@sothx.com"
         git config --global user.name "sothx"
-        git add ./docs/release/
+        git add ./docs/release/*
         if git commit -m "Release $VERSION"; then
               git push
         fi
