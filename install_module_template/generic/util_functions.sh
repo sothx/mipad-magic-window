@@ -1,7 +1,7 @@
 # shellcheck disable=SC2148
 api_level_arch_detect() {
-  API=$(grep_get_prop ro.build.version.sdk)
-  ABI=$(grep_get_prop ro.product.cpu.abi)
+  API=$(getprop ro.build.version.sdk)
+  ABI=$(getprop ro.product.cpu.abi)
   if [ "$ABI" = "x86" ]; then
     ARCH=x86
     ABI32=x86
