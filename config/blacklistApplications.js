@@ -70,6 +70,7 @@ const fullScreenList = {
   'com.baidu.baidutranslate': true, // 百度翻译
   'org.zwanoo.android.speedtest': true, // SpeedTest
   'com.xiwang.zaixian': true, // 希望学
+  'com.yozo.office': true, //鲸鲮office
 }
 
 /**
