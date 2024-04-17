@@ -1,7 +1,8 @@
 # shellcheck disable=SC2148
 MODDIR=${0%/*}
 
-API=$(getprop ro.build.version.sdk)
+. "$MODDIR"/util_functions.sh
+api_level_arch_detect
 
 if [[ "$API" -eq 30 ]]; then
   # For Android 11
@@ -19,5 +20,6 @@ elif [[ "$API" -ge 31 ]]; then
   rm -rf /data/system/cloudFeature_embedded_rules_list.xml    # 删除平行视界模块配置
   rm -rf /data/system/cloudFeature_fixed_orientation_list.xml # 删除信箱模式模块配置
 fi
+
 # 删除模块
 rm -rf "$MODDIR"
