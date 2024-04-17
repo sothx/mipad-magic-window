@@ -1,0 +1,46 @@
+# Auto detect text files and perform LF normalization
+# From https://github.com/alexkaratarakis/gitattributes
+# Powered By https://richienb.github.io/gitattributes-generator
+* text=auto
+
+.gitattributes text eol=lf
+.gitignore text eol=lf
+
+# ejs文件
+*.ejs text eol=lf
+
+# jar文件
+*.jar binary
+
+# js文件
+*.js text eol=lf
+
+# json文件
+*.json text eol=lf
+
+# Markdown文件
+*.md text diff=markdown eol=lf
+
+# 脚本文件
+*.sh text eol=lf
+
+# 文本文件
+*.txt text eol=lf
+
+# xml文件
+*.xml text eol=lf
+
+# GitHub Actions配置文件
+.github/* text eol=lf
+
+# yml文件
+pnpm-lock.yaml text eol=lf
+
+# 模块模板文件
+install_module_template/* text eol=lf
+
+# xml配置生成
+module_src/* text eol=lf
+
+.gitattributes export-ignore
+.gitignore export-ignore
