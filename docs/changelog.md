@@ -10,8 +10,6 @@ V13.X模块大幅简化了模块的安装/卸载过程，以及不再需要单�
 
   自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
-  该功能尚处于Beta阶段，随时可能做出大幅度修改或在正式版废弃该功能，仅供测试使用。
-
 新版本模块测试要点：
 - 安装后模块是否正常工作（老版本模块大多数情况下可以直接覆盖升级）
 - 直接卸载模块，并重启平板后相关配置是否恢复出厂版本
