@@ -71,6 +71,7 @@ const fullScreenList = {
   'org.zwanoo.android.speedtest': true, // SpeedTest
   'com.xiwang.zaixian': true, // 希望学
   'com.yozo.office': true, //鲸鲮office
+  'com.taobao.taobao': true, // 淘宝
 }
 
 /**
