@@ -12,6 +12,9 @@
 # jar文件
 *.jar binary
 
+# sh文件
+*.sh text eol=lf
+
 # js文件
 *.js text eol=lf
 
