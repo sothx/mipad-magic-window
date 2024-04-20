@@ -29,4 +29,7 @@ Tips: 该版本尚处于测试阶段，如遇异常问题可反馈。
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
 
 
+问题合集:[https://hyper-magic-window.sothx.com/FAQ.html](https://hyper-magic-window.sothx.com/FAQ.html)
+
+
 提交适配需求或者缺陷请点击:[https://github.com/sothx/mipad-magic-window/issues](https://github.com/sothx/mipad-magic-window/issues)
