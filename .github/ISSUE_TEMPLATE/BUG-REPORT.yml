@@ -17,6 +17,9 @@ body:
         - label: 我确认最新版依然存在此问题.
           required: true
 
+        - label: 我已阅读过模块首页的问题合集，确认不属于问题合集中提及的问题。
+          required: true
+
         - label: 我已排查已安装的所有模块的可能性，确认由本模块造成.
           required: true
 
