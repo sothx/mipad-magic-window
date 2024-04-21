@@ -94,6 +94,7 @@ const fixedOrientationList = {
   'com.hexin.plat.android': true, // 同花顺
   'com.umihome.m': true, // 柚米租房
   'com.fimo.camera': true, // FIMO
+  'com.midea.vm.washer': true, // U净
 }
 
 
