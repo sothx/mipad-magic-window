@@ -25,7 +25,7 @@ module.exports = function buildUpdateMsg(cb) {
       json.versionCode = Number(moduleConfig.versionCode)
       json.zipUrl = `https://github.com/sothx/mipad-magic-window/releases/download/${moduleConfig.version}/${packageName}-${moduleConfig.version}.zip`
       json.changelog = `https://hyper-magic-window-module-update.sothx.com/release/${moduleUpdateVersion}/changelog.md`
-      return json;
+      return js0
     }))
     .pipe(gulpRename(`${packageName}.json`))
     .pipe(dest(`docs/release/${moduleUpdateVersion}/`))

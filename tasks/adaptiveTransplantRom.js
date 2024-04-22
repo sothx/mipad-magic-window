@@ -15,6 +15,6 @@ const buildActionIsTransplant = function () {
  * 适配小米平板6Max移植包专用版
  */
 module.exports = function adaptiveTransplantRom(cb) {
-  return src(`${moduleSrc}/miui-embedding-window.jar`) // 指定XML文件的路径
+  return src(`${moduleSrc}/miui_embedding_window_service/transplant/miui-embedding-window.jar`) // 指定JAR文件的路径
     .pipe(gulpIf(buildActionIsTransplant, dest(`${systemExtDist}/framework/`)))
 }
