@@ -35,7 +35,7 @@ key_check() {
 
 # 特殊版本模块提醒
 ui_print "*********************************************"
-ui_print "- 是否悉知此模块仅适合基于 Xiaomi Pad 6 Max 的 MIUI14 For Pad 移植包？（刷错会卡米）"
+ui_print "- 是否知悉此模块仅适合基于 Xiaomi Pad 6 Max 的 MIUI14 For Pad 移植包？（刷错会卡米）"
 ui_print "- 是否了解后续如果更换其他移植包ROM，需要先卸载本模块？"
 ui_print "  音量+ ：是"
 ui_print "  音量- ：否"
