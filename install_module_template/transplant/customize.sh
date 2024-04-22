@@ -12,4 +12,38 @@ else
     abort "*********************************************"
   fi
 fi
-ui_print "- 《HyperOS For Pad/Fold 完美横屏应用计划》安装/更新完成，重启系统后生效！"
+
+key_check() {
+  while true; do
+    key_check=$(/system/bin/getevent -qlc 1)
+    key_event=$(echo "$key_check" | awk '{ print $3 }' | grep 'KEY_')
+    key_status=$(echo "$key_check" | awk '{ print $4 }')
+    if [[ "$key_event" == *"KEY_"* && "$key_status" == "DOWN" ]]; then
+      keycheck="$key_event"
+      break
+    fi
+  done
+  while true; do
+    key_check=$(/system/bin/getevent -qlc 1)
+    key_event=$(echo "$key_check" | awk '{ print $3 }' | grep 'KEY_')
+    key_status=$(echo "$key_check" | awk '{ print $4 }')
+    if [[ "$key_event" == *"KEY_"* && "$key_status" == "UP" ]]; then
+      break
+    fi
+  done
+}
+
+# 特殊版本模块提醒
+ui_print "*********************************************"
+ui_print "- 是否悉知此模块仅适用于 Xiaomi Pad 6 Max 的 MIUI14 For Pad 移植包？（刷错会卡米）"
+ui_print "- 是否了解后续如果更换其他移植包ROM，需要先卸载本模块？"
+ui_print "  音量+ ：是"
+ui_print "  音量- ：否"
+ui_print "*********************************************"
+key_check
+if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+  ui_print "- 你选择知悉模块安全警告，即将为你安装模块！"
+  ui_print "- 《HyperOS For Pad/Fold 完美横屏应用计划》安装/更新完成，重启系统后生效！"
+else
+  abort "- 《HyperOS For Pad/Fold 完美横屏应用计划》安装失败，请寻找合适的模块版本！"
+fi
