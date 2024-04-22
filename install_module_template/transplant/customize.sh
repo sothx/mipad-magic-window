@@ -42,8 +42,8 @@ ui_print "  音量- ：否"
 ui_print "*********************************************"
 key_check
 if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
-  ui_print "- 你选择知悉模块安全警告，即将为你安装模块！"
+  ui_print "- 你已确认模块的安全警告，即将为你安装模块！"
   ui_print "- 《HyperOS For Pad/Fold 完美横屏应用计划》安装/更新完成，重启系统后生效！"
 else
-  abort "- 《HyperOS For Pad/Fold 完美横屏应用计划》安装失败，请寻找合适的模块版本！"
+  abort "- 《HyperOS For Pad/Fold 完美横屏应用计划》安装失败，请重新寻找合适的模块版本！"
 fi
