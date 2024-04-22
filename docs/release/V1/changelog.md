@@ -7,6 +7,7 @@
 - 优化虎扑查看大图时的体验
 - 优化直播吧的适配体验
 - 优化懂球帝的适配体验
+- 针对基于6 Max的 MIUI14 For Pad 移植包模块新增安装过程中的安全警告
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
