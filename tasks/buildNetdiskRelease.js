@@ -48,6 +48,11 @@ function releasePadByMIUI14Transplant() {
     .pipe(dest(`${releaseNetdiskDir}/6.基于MIUI14的6 Max移植包专版（仅MIUI14移植可刷）/模块`))
 }
 
+function releasePadByHyperOSBasedOnTiramisu() {
+  return src(`${releaseDir}/${moduleConfig.version}/pad-hyperos-based-on-tiramisu-${moduleConfig.version}.zip`)
+    .pipe(dest(`${releaseNetdiskDir}/7.小米平板5系列安卓13澎湃专版（仅安卓13澎湃可刷）/模块`))
+}
+
 function releaseExt(cb) {
   return isSothxExtBuild() ? src(`${releaseDir}/${moduleConfig.version}/ext/pad-ext-${moduleConfig.version}.zip`)
     .pipe(dest(`${releaseNetdiskDir}/X.自用版(基于通用版，仅根据我的习惯适配)/模块`)) : cb()
@@ -56,4 +61,4 @@ function releaseExt(cb) {
 
 
 
-module.exports = parallel(releasePad, releaseRatioOf3To2Pad, releaseFold, releasePadByMagicWindow, releaseHyperOsForPad5, releasePadByMIUI14Transplant,releaseExt)
+module.exports = parallel(releasePad, releaseRatioOf3To2Pad, releaseFold, releasePadByMagicWindow, releaseHyperOsForPad5, releasePadByMIUI14Transplant,releasePadByHyperOSBasedOnTiramisu,releaseExt)

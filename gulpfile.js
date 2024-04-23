@@ -10,6 +10,7 @@ const buildEjsTemplate = require('./tasks/buildEjsTemplate');
 const adaptivePlatformToFold = require('./tasks/adaptivePlatformToFold');
 const buildExtConfig = require('./tasks/buildExtConfig');
 const adaptiveTransplantRom = require('./tasks/adaptiveTransplantRom');
+const adaptiveHyperOSBasedOnTiramisu = require('./tasks/adaptiveHyperOSBasedOnTiramisu');
 const { mergeActivityEmbeddingConfig, mergeMagicWindowConfig } = require('./tasks/mergeMagicWindowConfig');
 const buildNetdiskRelease = require('./tasks/buildNetdiskRelease');
 const adaptiveCompatibilityToNoDivider = require('./tasks/adaptiveCompatibilityToNoDivider');
@@ -27,6 +28,7 @@ const buildTasks = series(
   buildExtConfig,
   integrateConfig,
   adaptiveTransplantRom,
+  adaptiveHyperOSBasedOnTiramisu,
   jsonToProp
 )
 
