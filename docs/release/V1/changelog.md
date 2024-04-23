@@ -1,6 +1,9 @@
 ## 更新日志
 
-- 修复不背单词页面旋转逻辑异常的问题
+- 修复知乎部分情况下丢失平行视界的问题
+- 修复雪球错误的适配规则
+- 优化中国大学MOOC的适配规则，解决应用的卡顿问题
+
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
