@@ -79,11 +79,11 @@ module.exports = function jsonToProp() {
       return json;
     })))
     .pipe(gulpIf(buildActionIsNoShowDivider, gulpJSONEdit(function (json) {
-      json.description = `适用于HyperOS For Pad/Fold，用于扩展平行视界的支持范围，以及优化平行视界的体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板安卓13专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(反馈应用适配问题可前往酷安私信 @做梦书 或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请移除模块后重启平板)`;
+      json.description = `适用于HyperOS For Pad/Fold，用于扩展平行视界的支持范围，以及优化平行视界的体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板安卓13通用版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(反馈应用适配问题可前往酷安私信 @做梦书 或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请移除模块后重启平板)`;
       return json;
     })))
     .pipe(gulpIf(buildActionIsMagicWindow, gulpJSONEdit(function (json) {
-      json.description = `适用于MIUI 13 For Pad，用于扩展平行视界的支持范围，以及优化平行视界的体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板安卓11专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(反馈应用适配问题可前往酷安私信 @做梦书 或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请移除模块后重启平板)`;
+      json.description = `适用于MIUI 13 For Pad，用于扩展平行视界的支持范围，以及优化平行视界的体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板安卓11通用版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(反馈应用适配问题可前往酷安私信 @做梦书 或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请移除模块后重启平板)`;
       return json;
     })))
     .pipe(through.obj((file, enc, cb) => {

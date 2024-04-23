@@ -29,12 +29,12 @@ function releaseRatioOf3To2Pad() {
 
 function releaseHyperOsForPad5() {
   return src(`${releaseDir}/${moduleConfig.version}/pad-not-dragable-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/3.小米平板安卓13专版（无滑动调节）/模块`))
+    .pipe(dest(`${releaseNetdiskDir}/3.小米平板安卓13通用版（无滑动调节）/模块`))
 }
 
 function releasePadByMagicWindow() {
   return src(`${releaseDir}/${moduleConfig.version}/pad-magicWindow-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/4.小米平板安卓11专版/模块`))
+    .pipe(dest(`${releaseNetdiskDir}/4.小米平板安卓11通用版/模块`))
 }
 
 
