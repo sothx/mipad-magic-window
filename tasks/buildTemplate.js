@@ -2,7 +2,7 @@ const { src, dest } = require('gulp');
 const { options } = require('../config/process.env');
 
 const installTemplateMap = {
-  generic: 'install_module_template/generic/**'
+  generic: 'install_module_template/**'
 }
 
 const getInstallTemplateType = function () {
