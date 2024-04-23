@@ -12,7 +12,7 @@ const buildActionIsHyperOSBasedOnTiramisu = function () {
 }
 
 /**
- * 适配小米平板6Max移植包专用版
+ * 适配小米平板5/小米平板5 Pro/小米平板5 Pro 5G 官方 Hyper OS For Pad
  */
 module.exports = function adaptiveHyperOSBasedOnTiramisu(cb) {
   return src(`${moduleSrc}/miui_embedding_window_service/HyperOSBasedOnTiramisu/miui-embedding-window.jar`) // 指定JAR文件的路径
