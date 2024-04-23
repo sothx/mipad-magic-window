@@ -1,6 +1,7 @@
 ## 更新日志
 
 - 新增对酷狗音乐概念版的应用布局优化
+- 新增对森空岛的横屏适配和应用布局优化
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
