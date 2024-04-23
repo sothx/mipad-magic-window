@@ -98,47 +98,34 @@ function copyMagicWindowSettingConfig(cb) {
  * 混入Android 12L 起的平行窗口配置
  */
 
-// function copyOriginEmbeddedRuleListToCommon() {
-//   return src(`${moduleSrc}/backup_config/${options.use_platform}/embedded_rules_list_bak`)
-//     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/`)))
-// }
-
 
 function copyEmbeddedRuleListToCommon(cb) {
   return src(`${tempDir}/embedded_rules_list.xml`)
     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/source/`)))
 }
 
-// function copyEmbeddedRuleListToSystem(cb) {
-//   return src(`${tempDir}/embedded_rules_list.xml`)
-//   .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${systemDist}/product/etc/`)))
-// }
 
 /**
  * 混入Android 12L 起的修正方向位置的配置
  */
 
-// function copyOriginOrientationListToCommon(cb) {
-//   return buildActionIsActivityEmbedding() ? src(`${moduleSrc}/backup_config/${options.use_platform}/fixed_orientation_list_bak`)
-//     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/`))) : cb()
-// }
-
-// function copyFixedOrientationListToCommonSource(cb) {
-//   return src(`${tempDir}/fixed_orientation_list.xml`)
-//     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/product/etc/source/`)))
-// }
 
 function copyFixedOrientationListToCommon(cb) {
   return src(`${tempDir}/fixed_orientation_list.xml`)
     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/source/`)))
 }
 
-// function copyFixedOrientationListToSystem(cb) {
-//   return src(`${tempDir}/fixed_orientation_list.xml`)
-//     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${systemDist}/`)))
-// }
+/**
+ * 混入Android 12L 起的应用布局优化的配置
+ */
+
+
+function copyAutoUiListToCommon(cb) {
+  return src(`${tempDir}/autoui_list.xml`)
+    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/source/`)))
+}
 
 
 
 
-module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig),copyEmbeddedRuleListToCommon,copyFixedOrientationListToCommon), cleanTemp)
+module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig),copyEmbeddedRuleListToCommon,copyFixedOrientationListToCommon,copyAutoUiListToCommon), cleanTemp)

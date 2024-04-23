@@ -8,6 +8,7 @@ api_level_arch_detect
 # Android 12 +
 CUSTOM_CONFIG_EMBEDDED_RULES_LIST="/data/adb/MIUI_MagicWindow+/config/embedded_rules_list.xml"
 CUSTOM_CONFIG_FIXED_ORIENTATION_LIST="/data/adb/MIUI_MagicWindow+/config/fixed_orientation_list.xml"
+CUSTOM_CONFIG_AUTOUI_LIST="/data/adb/MIUI_MagicWindow+/config/autoui_list.xml"
 # Android 11
 CUSTOM_CONFIG_MAGIC_WINDOW_APPLICATION_LIST="/data/adb/MIUI_MagicWindow+/config/magicWindowFeature_magic_window_application_list.xml"
 CUSTOM_CONFIG_MAGIC_WINDOW_SETTING_CONFIG="/data/adb/MIUI_MagicWindow+/config/magic_window_setting_config.xml"
@@ -48,6 +49,7 @@ elif [[ "$API" -ge 31 ]]; then
   # 对云控文件解除写保护
   chattr -i /data/system/cloudFeature_embedded_rules_list.xml
   chattr -i /data/system/cloudFeature_fixed_orientation_list.xml
+  chattr -i /data/system/cloudFeature_autoui_list.xml
   # 支持平行视界自定义配置文件
   if [[ -f "$CUSTOM_CONFIG_EMBEDDED_RULES_LIST" ]]; then
     cp -f "$MODDIR"/common/source/embedded_rules_list.xml "$MODDIR"/common/embedded_rules_list.xml
@@ -66,6 +68,15 @@ elif [[ "$API" -ge 31 ]]; then
   else
     cp -f "$MODDIR"/common/source/fixed_orientation_list.xml "$MODDIR"/common/fixed_orientation_list.xml
   fi
+  # 支持应用布局优化自定义配置文件
+  if [[ -f "$CUSTOM_CONFIG_AUTOUI_LIST" ]]; then
+    cp -f "$MODDIR"/common/source/autoui_list.xml "$MODDIR"/common/autoui_list.xml
+    sed -i '/<\/packageRules>/d' "$MODDIR"/common/autoui_list.xml
+    cat "$CUSTOM_CONFIG_AUTOUI_LIST" >>"$MODDIR"/common/autoui_list.xml
+    printf "\n</packageRules>\n" >>"$MODDIR"/common/autoui_list.xml
+  else
+    cp -f "$MODDIR"/common/source/autoui_list.xml "$MODDIR"/common/autoui_list.xml
+  fi
   # 平行视界
   set_perm /data/system/cloudFeature_embedded_rules_list.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置平行视界文件权限
   cp -f "$MODDIR"/common/embedded_rules_list.xml /data/system/cloudFeature_embedded_rules_list.xml         # 替换平行视界配置列表
@@ -74,7 +85,12 @@ elif [[ "$API" -ge 31 ]]; then
   set_perm /data/system/cloudFeature_fixed_orientation_list.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置信箱模式文件权限
   cp -f "$MODDIR"/common/fixed_orientation_list.xml /data/system/cloudFeature_fixed_orientation_list.xml      # 替换信箱模式配置列表
   set_perm /data/system/cloudFeature_fixed_orientation_list.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止信箱模式配置文件被云控
+  # 应用布局优化
+  set_perm /data/system/cloudFeature_autoui_list.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置应用布局优化文件权限
+  cp -f "$MODDIR"/common/autoui_list.xml /data/system/cloudFeature_autoui_list.xml      # 替换应用布局优化配置列表
+  set_perm /data/system/cloudFeature_autoui_list.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止应用布局优化配置文件被云控
   # 对云控文件写保护
   chattr +i /data/system/cloudFeature_embedded_rules_list.xml
   chattr +i /data/system/cloudFeature_fixed_orientation_list.xml
+  chattr +i /data/system/cloudFeature_autoui_list.xml
 fi
