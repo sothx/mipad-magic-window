@@ -159,3 +159,25 @@ jobs:
           name: pad-not-dragable-ext-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
+
+    - name: Build Pad Compatibility Use HyperOSBasedOnTiramisu
+      run: |
+          npm run build:pad-compatibility=hyperos-based-on-tiramisu
+  
+    - name: Upload Pad Compatibility Use HyperOSBasedOnTiramisu Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+          name: pad-hyperos-based-on-tiramisu-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
+
+    - name: Build Ext Pad Compatibility Use HyperOSBasedOnTiramisu
+      run: |
+          npm run build-ext:pad-compatibility=hyperos-based-on-tiramisu
+  
+    - name: Upload Ext Pad Compatibility Use HyperOSBasedOnTiramisu Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+          name: pad-hyperos-based-on-tiramisu-ext-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
