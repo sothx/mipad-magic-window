@@ -43,15 +43,16 @@ function releaseFold() {
     .pipe(dest(`${releaseNetdiskDir}/5.小米折叠屏通用版（适配Mix Fold系列）/模块`))
 }
 
-function releasePadByMIUI14Transplant() {
-  return src(`${releaseDir}/${moduleConfig.version}/transplant-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/6.基于MIUI14的6 Max移植包专版（仅MIUI14移植可刷）/模块`))
-}
-
 function releasePadByHyperOSBasedOnTiramisu() {
   return src(`${releaseDir}/${moduleConfig.version}/pad-hyperos-based-on-tiramisu-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/7.小米平板5系列安卓13澎湃专版（仅安卓13澎湃可刷）/模块`))
+    .pipe(dest(`${releaseNetdiskDir}/6.小米平板5系列安卓13澎湃专版（仅安卓13澎湃可刷）/模块`))
 }
+
+function releasePadByMIUI14Transplant() {
+  return src(`${releaseDir}/${moduleConfig.version}/transplant-${moduleConfig.version}.zip`)
+    .pipe(dest(`${releaseNetdiskDir}/7.基于MIUI14的6 Max移植包专版（仅MIUI14移植可刷）/模块`))
+}
+
 
 function releaseExt(cb) {
   return isSothxExtBuild() ? src(`${releaseDir}/${moduleConfig.version}/ext/pad-ext-${moduleConfig.version}.zip`)
