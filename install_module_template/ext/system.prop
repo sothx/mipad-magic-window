@@ -3,3 +3,5 @@
 # ro.sf.lcd_density=320
 # 开启应用布局优化
 persist.miui.auto_ui_enable=true
+# 开启平板优化
+ro.build.characteristics=tablet
