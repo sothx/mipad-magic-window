@@ -1,9 +1,9 @@
 ## 更新日志
-- 新增支持应用布局优化，
-- 修复知乎部分情况下丢失平行视界的问题
-- 修复雪球错误的适配规则
-- 优化中国大学MOOC的适配规则，解决应用的卡顿问题
 
+- 新增支持应用布局优化，可对部分字体和图片布局不合理的应用做一定的优化适配调整(适配所有基于Android 13/Android 14 的 Hyper OS)，其中 Xiaomi Pad 6 Max 和移植包可在平板专区的设置页面手动开关对应的应用布局优化。
+- 新增对酷狗音乐概念版的应用布局优化
+- 新增对森空岛的横屏适配和应用布局优化
+- 新增对FurryBar的强制横屏
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
