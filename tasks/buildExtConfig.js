@@ -156,6 +156,35 @@ function mergeFixedOrientationListExtConfig(cb) {
     .pipe(dest('temp'));
 }
 
+/**
+ * 支持应用布局优化规则(Only Android 12+)
+ */
+
+function getAutoUIListExtConfig(cb) {
+  return src('temp/ext/autoui_list.xml') // 指定XML文件的路径
+    .pipe(gulpIf(isNeedExtConfig,gulpXML({
+      callback: function(result) {
+        const doc = new DOMParser().parseFromString(result, 'text/xml');
+        const elementsWithAttribute = doc.getElementsByTagName('package');
+        // console.log(doc,'doc')
+        for (let i = 0; i < elementsWithAttribute.length; i++) {
+          const attrs = elementsWithAttribute[i].attributes;
+          const currentAttrName = elementsWithAttribute[i].getAttribute('name')
+          if (currentAttrName) {
+            FixedOrientationListExtConfigStack[currentAttrName] = {}
+            for (var j = attrs.length - 1; j >= 0; j--) {
+              FixedOrientationListExtConfigStack[currentAttrName][attrs[j].name] = attrs[j].value
+            }
+          }
+        }
+      }
+    })))
+    .pipe(gulpRename({
+      extname: '.json'
+    }))
+    .pipe(dest('temp/json/'))
+}
+
 function mergeAutoUIListExtConfig(cb) {
   return src('temp/autoui_list.xml') // 指定XML文件的路径
     .pipe(gulpIf(isNeedExtConfig,gulpXML({
@@ -197,4 +226,4 @@ function mergeAutoUIListExtConfig(cb) {
     .pipe(dest('temp'));
 }
 
-module.exports = series(getEmbeddedRuleListExtConfigData,mergeEmbeddedRuleListExtConfig,getFixedOrientationListExtConfigData,mergeFixedOrientationListExtConfig,mergeAutoUIListExtConfig)
+module.exports = series(getEmbeddedRuleListExtConfigData,mergeEmbeddedRuleListExtConfig,getFixedOrientationListExtConfigData,mergeFixedOrientationListExtConfig,getAutoUIListExtConfig,mergeAutoUIListExtConfig)
