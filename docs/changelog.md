@@ -1,11 +1,10 @@
 ## 更新日志
 
-- 新增支持应用布局优化，可对部分字体和图片布局不合理的应用做一定的优化适配调整(适配所有基于Android 13/Android 14 的 Hyper OS)，其中 Xiaomi Pad 6 Max 和移植包可在平板专区的设置页面手动开关对应的应用布局优化。
-- 新增对酷狗音乐概念版的应用布局优化
-- 新增对森空岛的横屏适配和应用布局优化
-- 新增对FurryBar的强制横屏
+- 优化扇贝单词英语版的适配规则
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
+
+V15.X模块新增支持应用布局优化，可对部分字体和图片布局不合理的应用做一定的优化适配调整(适配所有基于Android 13/Android 14 的 Hyper OS)，其中 Xiaomi Pad 6 Max 和移植包可在平板专区的设置页面手动开关对应的应用布局优化。
 
 V14.X模块新增小米平板5系列官方澎湃专版模块，安装后支持平行窗口左右滑动调节，模块仅适用于小米平板5/小米平板5 Pro/小米平板5 Pro 5G的官方Hyper OS For Pad，不适用于小米平板5 Pro 12.4，误刷会卡米，请仔细了解是否符合自己的机型。
 
