@@ -54,15 +54,17 @@
     <package name="com.ecitic.bank.mobile" enable="true" optimizeWebView="true"/>
     <package name="com.mogujie" enable="true" optimizeWebView="true"/>
   <%_ } _%>
+  <%_ if (ext) { _%>
     <!--Adaptive For XiaomiPad 6 Max -->
+    <package name="com.outfit7.talkingtomgoldrun" enable="true" activityRule="*:6" skippedActivityRule=""/>
     <package name="com.outfit7.talkingtomgoldrun.mi" enable="true" activityRule="*:6" skippedActivityRule=""/>
     <package name="com.gh.gamecenter" enable="true" activityRule="*:6" skippedActivityRule="com.gh.gamecenter.SplashScreenActivity"/>
+  <%_ } _%>
     <!-- Adaptive For Sothx 1.15.x -->
     <package name="com.kugou.android.lite" enable="true" activityRule="*:0" />
     <package name="com.hypergrypaxh.skland" enable="true" activityRule="*:0" />
     <package name="com.youdao.note" enable="true" activityRule="*:2:ad_banner-3" />
     <package name="com.tencent.androidqqmail" enable="true" activityRule="*:6:framelayout-10" />
     <package name="cn.com.langeasy.LangEasyLexis" enable="true" activityRule="*:6" skippedActivityRule="cn.com.langeasy.LangEasyLexis.activity.FontSelectActivity"/>
-    <package name="com.shanbay.sentence" enable="true" activityRule="*:6" />
     <package name="com.xbcx.gdwx3" enable="true" activityRule="*:0" />
 </packageRules>
