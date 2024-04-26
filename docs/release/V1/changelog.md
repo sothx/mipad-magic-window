@@ -1,8 +1,7 @@
 ## 更新日志
 
-- 新增对不背单词的应用布局优化
-- 新增对QQ邮箱的应用布局优化
-- 新增对高顿的适配(MIUI下为平行视界，Hyper OS下为应用布局优化)
+- 新增联想个人云的适配规则
+- 优化核桃学园的信箱模式规则
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
