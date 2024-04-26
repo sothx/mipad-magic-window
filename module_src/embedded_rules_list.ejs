@@ -34,7 +34,6 @@
   <package name="com.android.weici.senior.student" isShowDivider="true" />
   <package name="com.zlfcapp.batterymanager" isShowDivider="true" />
   <package name="com.yunmi.water" isShowDivider="true" />
-  <package name="com.xbcx.gdwx3" isShowDivider="true" />
   <package name="com.moliao.main" isShowDivider="true" />
   <package name="cn.runtu.app.android" isShowDivider="true" />
   <package name="com.xmbranch.morestep" isShowDivider="true" />
@@ -6928,6 +6927,11 @@
   <package name="com.furrybar.chat.app" fullRule="nra:cr:rcr:nr" />
   <package name="com.taptap" fullRule="nra:cr:rcr:nr" />
   <package name="com.wanmei.tiger" scaleMode="1" supportFullSize="true" splitPairRule="com.wanmei.plugin.runtime.PluginSingleTask1ProxyActivity:*" activityRule="com.wanmei.plugin.runtime.PluginPictureInPictureProxyActivity" />
+  <%_ if (!['not-dragable'].includes(compatibility)) { _%>
+  <package name="com.xbcx.gdwx3" fullRule="nra:cr:rcr:nr" />
+  <%_ } else  { _%>
+  <package name="com.xbcx.gdwx3" supportFullSize="true" scaleMode="1" splitPairRule="com.xbcx.gdwx3.home.MainV2Activity:*,com.gaodun.gddiscoverymodule.ui.activity.TopicDetailActivity:*,com.gaodun.gddiscoverymodule.ui.activity.CircleDetailsActivity:*,com.gaodun.gddiscoverymodule.ui.activity.PersonalCenterActivity:*,com.xbcx.tk.activity.TkDoQuestionV2Activity:*,com.gaodun.gdhomemodule.course.ui.activity.LiveCourseDetailActivity:*,com.gaodun.gdhomemodule.home.ui.activity.HomeProjectActivity:*" activityRule="com.xbcx.tk.activity.TkDoQuestionV2Activity,com.gaodun.gdwidget.sudoko.preview.ImagePreviewActivity" />
+  <%_ } _%>
   <!-- Adaptive For System Fix -->
   <package name="com.zui.browser" fullRule="nra:cr:rcr:nr" />
   <package name="com.android.browser" fullRule="nra:cr:rcr:nr" />

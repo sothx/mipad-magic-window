@@ -1,8 +1,8 @@
 ## 更新日志
 
-- 新增对酷狗音乐概念版的应用布局优化
-- 新增对森空岛的横屏适配和应用布局优化
-- 新增对FurryBar的强制横屏
+- 新增对不背单词的应用布局优化(官方规则，二次校对)
+- 新增对QQ邮箱的应用布局优化(官方规则，二次校对)
+- 新增对高顿的适配(MIUI14下为平行视界，Hyper OS 为应用布局优化)
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)

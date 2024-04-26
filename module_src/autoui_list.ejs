@@ -1,5 +1,7 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes' ?>
 <packageRules>
+  <%_ if (['fold'].includes(platform) || ext) { _%>
+    <!--Adaptive For XiaomiMixFold3 -->
     <package name="com.sinovatech.unicom.ui" enable="true" activityRule="com.sinovatech.unicom.basic.ui.activity.MainActivity:2:home_card_recycleview-3" />
     <package name="com.hxb.mobile.client" enable="true" activityRule="com.yt.hxmb50.launcher.LauncherActivity:2;com.yt.hxmb50.mainpages.ui.main.MainActivity:2:hot_event_left_iv-17,hot_event_right_top_iv-17,hot_event_right_bottom_iv-17;com.yt.hxmb50.login.LoginActivity:2" />
     <package name="com.galaxy.stock" enable="true" activityRule="*:0" />
@@ -25,7 +27,6 @@
     <package name="com.yitong.xian.mbank" enable="true" activityRule="com.yitong.mbank.app.android.activity.SplashActivity:2;com.yitong.mbank.app.android.activity.New_MainActivity:2:android.support.v7.widget.RecyclerView-2,login_again_fl_tuan_login-3,iv_integration_bg-3;com.yitong.mbank.app.android.activity.searchh.SearchActivityNew:2;com.yitong.mbank.app.android.fragment.fragment.home.HomeFragment:2;com.yitong.mbank.app.android.fragment.fragment.life.NewLifeFragment:2;com.yitong.mbank.app.android.activity.login.LoginActivity:2:login_again_fl_tuan_login-3" />
     <package name="com.cntaiping.tpapp" enable="true" activityRule="com.basicapp.ui.SplashActivity:1;com.basicapp.ui.RootAct:1;com.basicapp.ui.H5Activity:1" />
     <package name="com.plat.swhydyj.android.ShenWanHongYuanSecurity" enable="true" activityRule="com.hexin.plat.android.Hexin:1:textView-16;com.hexin.plat.android.AndroidLogoActivity:1" />
-    <!--Adaptive For Common Config-->
     <package name="cmb.pb" enable="true" optimizeWebView="true"/>
     <package name="com.meitu.meiyancamera" enable="true" optimizeWebView="true"/>
     <package name="com.wuba" enable="true" optimizeWebView="true"/>
@@ -52,9 +53,16 @@
     <package name="com.paem" enable="true" optimizeWebView="true"/>
     <package name="com.ecitic.bank.mobile" enable="true" optimizeWebView="true"/>
     <package name="com.mogujie" enable="true" optimizeWebView="true"/>
+  <%_ } _%>
+    <!--Adaptive For XiaomiPad 6 Max -->
+    <package name="com.outfit7.talkingtomgoldrun.mi" enable="true" activityRule="*:6" skippedActivityRule=""/>
+    <package name="com.gh.gamecenter" enable="true" activityRule="*:6" skippedActivityRule="com.gh.gamecenter.SplashScreenActivity"/>
     <!-- Adaptive For Sothx 1.15.x -->
     <package name="com.kugou.android.lite" enable="true" activityRule="*:0" />
-    <package name="com.hypergryph.skland" enable="true" activityRule="*:0" />
+    <package name="com.hypergrypaxh.skland" enable="true" activityRule="*:0" />
     <package name="com.youdao.note" enable="true" activityRule="*:2:ad_banner-3" />
-    <package name="com.hypergryph.skland" enable="true" activityRule="*:0" />
+    <package name="com.tencent.androidqqmail" enable="true" activityRule="*:6:framelayout-10" />
+    <package name="cn.com.langeasy.LangEasyLexis" enable="true" activityRule="*:6" skippedActivityRule="cn.com.langeasy.LangEasyLexis.activity.FontSelectActivity"/>
+    <package name="com.shanbay.sentence" enable="true" activityRule="*:6" />
+    <package name="com.xbcx.gdwx3" enable="true" activityRule="*:0" />
 </packageRules>
