@@ -1,7 +1,7 @@
 ## 更新日志
 
-- 新增联想个人云的适配规则
-- 优化核桃学园的信箱模式规则
+- 新增酷安动态图片的应用布局优化(主要缩小图片尺寸)
+- 新增微博博文图片的应用布局优化(主要缩小图片尺寸)
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
