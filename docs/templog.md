@@ -1,7 +1,7 @@
 ## 更新日志
 
 - 修复森空岛的应用布局优化失效的问题
-- 优化小米有品的适配体验
+- 小米有品的适配规则调整为小米官方的平板适配
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
