@@ -1,7 +1,6 @@
 ## 更新日志
 
 - 新增完美游戏社区的应用布局优化
-- 小米有品的适配规则调整为小米官方的平板适配
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
