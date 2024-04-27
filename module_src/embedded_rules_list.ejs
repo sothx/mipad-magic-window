@@ -6925,7 +6925,6 @@
   <package name="com.hypergryph.skland" fullRule="nra:cr:rcr:nr" />
   <package name="com.furrybar.chat.app" fullRule="nra:cr:rcr:nr" />
   <package name="com.taptap" fullRule="nra:cr:rcr:nr" />
-  <package name="com.wanmei.tiger" scaleMode="1" supportFullSize="true" splitPairRule="com.wanmei.plugin.runtime.PluginSingleTask1ProxyActivity:*" activityRule="com.wanmei.plugin.runtime.PluginPictureInPictureProxyActivity" />
   <%_ if (!['not-dragable'].includes(compatibility)) { _%>
   <package name="com.xbcx.gdwx3" fullRule="nra:cr:rcr:nr" />
   <%_ } else  { _%>
@@ -6933,6 +6932,11 @@
   <%_ } _%>
   <package name="com.lenovo.smartpan" fullRule="nra:cr:rcr:nr" />
   <package name="com.xiaomi.youpin" fullRule="nra:cr:rcr:nr" />
+  <%_ if (!['not-dragable'].includes(compatibility)) { _%>
+  <package name="com.wanmei.tiger" scaleMode="1" supportFullSize="true" splitPairRule="com.wanmei.plugin.runtime.PluginSingleTask1ProxyActivity:*" activityRule="com.wanmei.plugin.runtime.PluginPictureInPictureProxyActivity,com.wanmei.plugin.runtime.PluginSingleTask1ProxyActivity,com.wanmei.tiger.TigerHostActivity" transitionRules="com.wanmei.plugin.runtime.PluginSingleTask1ProxyActivity,com.wanmei.tiger.TigerHostActivity" />
+  <%_ } else  { _%>
+  <package name="com.wanmei.tiger" scaleMode="1" supportFullSize="true" splitPairRule="com.wanmei.plugin.runtime.PluginSingleTask1ProxyActivity:*" activityRule="com.wanmei.plugin.runtime.PluginPictureInPictureProxyActivity" />
+  <%_ } _%>
   <!-- Adaptive For System Fix -->
   <package name="com.zui.browser" fullRule="nra:cr:rcr:nr" />
   <package name="com.android.browser" fullRule="nra:cr:rcr:nr" />
