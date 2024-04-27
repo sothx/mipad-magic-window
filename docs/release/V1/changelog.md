@@ -1,7 +1,7 @@
 ## 更新日志
 
-- 新增酷安动态图片的应用布局优化(主要缩小图片尺寸)
-- 新增微博博文图片的应用布局优化(主要缩小图片尺寸)
+- 修复森空岛的应用布局优化失效的问题
+- 小米有品的适配规则调整为小米官方的平板适配
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
