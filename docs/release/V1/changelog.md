@@ -1,6 +1,6 @@
 ## 更新日志
 
-- 优化哔哩哔哩普通版/概念版/国际版左侧平行窗口刷新时不会暂停右侧的视频播放
+- 修复哔哩哔哩普通版/概念版/国际版不能正常看评论的问题
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
