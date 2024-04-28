@@ -1,6 +1,8 @@
 ## 更新日志
 
-- 修复大众点评点击定位后，平行视界丢失的问题
+- 新增完美游戏社区的应用布局优化
+- 新增大众点评查看图片全屏化
+- 移除哔哩哔哩普通版/概念版/国际版部分不稳定的适配规则
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
