@@ -12,4 +12,4 @@ else
     abort "*********************************************"
   fi
 fi
-ui_print "- 好诶，《HyperOS For Pad/Fold 完美横屏应用计划》安装/更新完成，重启系统后生效！"
+ui_print "- 好诶w，《HyperOS For Pad/Fold 完美横屏应用计划》安装/更新完成，重启系统后生效！"
