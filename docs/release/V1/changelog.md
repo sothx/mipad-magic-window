@@ -1,8 +1,7 @@
 ## 更新日志
 
-- 新增完美游戏社区的应用布局优化
-- 新增大众点评查看图片全屏化
-- 移除哔哩哔哩普通版/概念版/国际版部分不稳定的适配规则
+- 新增对大众点评的应用布局优化
+- 优化Hyper OS下大众点评的流畅度和适配规则
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
