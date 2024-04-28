@@ -1,7 +1,7 @@
 ## 更新日志
 
-- 修复哔哩哔哩普通版/概念版/国际版不能正常看评论的问题
-- 哔哩哔哩普通版/概念版/国际版优化up主主页的递进逻辑
+- 修复哔哩哔哩普通版/概念版/国际版不能正常看动态的问题
+- 移除部分哔哩哔哩的优化配置（有副作用）
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
