@@ -1,8 +1,7 @@
 ## 更新日志
 
-- 新增对大众点评的应用布局优化
-- 优化Hyper OS下大众点评的流畅度和适配规则
-- 优化测试版模块的版本号展示
+- 优化大众点评平行视界的页面递进逻辑
+- 调整QQ音乐的适配为强制横屏，老适配规则已经放到自定义规则的文档，如果需要老适配可以自取
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
