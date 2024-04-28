@@ -3,4 +3,5 @@
 # ro.sf.lcd_density=320
 # 开启应用布局优化
 persist.miui.auto_ui_enable=true
+# ro.config.miui_screen_ratio=0.56
 persist.sys.miui_autoui_logging=true
