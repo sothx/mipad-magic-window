@@ -1,7 +1,6 @@
 ## 更新日志
 
-- 新增完美游戏社区的应用布局优化
-- 新增大众点评查看图片全屏化
+- 优化大众点评平行视界的页面递进逻辑
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
