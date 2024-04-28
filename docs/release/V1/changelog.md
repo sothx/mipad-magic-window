@@ -2,7 +2,6 @@
 
 - 新增对大众点评的应用布局优化
 - 优化Hyper OS下大众点评的流畅度和适配规则
-- 解决部分第三方面具无法识别分割线的问题
 - 优化测试版模块的版本号展示
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
