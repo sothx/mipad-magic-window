@@ -1,7 +1,6 @@
 ## 更新日志
 
-- 优化大众点评平行视界的页面递进逻辑
-- 调整QQ音乐的适配为强制横屏，老适配规则已经放到自定义规则的文档，如果需要老适配可以自取
+- 优化哔哩哔哩普通版/概念版/国际版左侧平行窗口刷新时不会暂停右侧的视频播放
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
