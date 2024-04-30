@@ -1,6 +1,7 @@
 ## 更新日志
 
-- 新增QQ音乐应用布局优化
+- 修复QQ音乐应用布局优化大多数情况下导致的播放器变形问题
+- 修复酷安应用布局优化会导致发动态异常的问题
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
