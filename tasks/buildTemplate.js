@@ -3,11 +3,18 @@ const { options } = require('../config/process.env');
 
 const installTemplateMap = {
   generic: 'install_module_template/generic/**',
-  ext: 'install_module_template/ext/**'
+  ext: 'install_module_template/ext/**',
+  'not-dragable': 'install_module_template/not-dragable/**'
 }
 
 const getInstallTemplateType = function () {
-  return options.use_ext ? 'ext' :'generic'
+  if (options.use_ext) {
+    return 'ext';
+  }
+  if (options.use_compatibility) {
+    return 'not-dragable'
+  }
+  return 'generic'
 }
 
 module.exports = function buildTemplate() {
