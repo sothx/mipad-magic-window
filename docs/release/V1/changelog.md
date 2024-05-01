@@ -1,9 +1,6 @@
 ## 更新日志
 
-- 修复TapTap丢失平行视界的问题
-- 调整A13下哔哩哔哩普通版/概念版/国际版的适配，去除不稳定的适配以解决在A13下长时间使用应用会出现异常崩溃的问题
-- 适配搜狗输入法小米版，解决部分页面强制横屏的问题
-- 调整哔哩哔哩国际版的适配，解决竖屏视频导致横屏视频渲染异常的问题
+- 移除A13通用版有关应用布局优化的配置，解决部分应用布局优化配置半生效导致的部分BUG。
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
