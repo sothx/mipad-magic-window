@@ -1,6 +1,13 @@
 ## 更新日志
 
-- 新增网易云音乐的应用布局优化，优化部分弹窗在Pad下显示过大的问题
+- 新增无痛单词的适配规则
+- 新增优衣库的适配规则
+- 新增nike的适配规则
+- 新增时代财经的适配规则
+- 新增红星新闻的适配规则
+- 新增参考消息的适配规则
+- 新增新华社的适配规则
+- 新增南方周末的适配规则
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
