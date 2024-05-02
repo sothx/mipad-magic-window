@@ -1,6 +1,6 @@
 ## 更新日志
 
-- 修复A13下哔哩哔哩普通版/概念版/国际版可能出现异常崩溃的问题
+- 修复QQ音乐应用布局优化针对播放器的视频封面会出现拉伸变形的问题
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
