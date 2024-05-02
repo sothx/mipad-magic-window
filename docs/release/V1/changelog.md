@@ -1,6 +1,6 @@
 ## 更新日志
 
-- 新增读库的平行窗口适配
+- 修复A13下哔哩哔哩普通版/概念版/国际版可能出现异常崩溃的问题
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
