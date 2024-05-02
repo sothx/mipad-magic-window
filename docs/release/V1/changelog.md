@@ -1,6 +1,6 @@
 ## 更新日志
 
-- 移除A13通用版有关应用布局优化的配置，解决部分应用布局优化配置半生效导致的部分BUG。
+- 新增读库的平行窗口适配
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
