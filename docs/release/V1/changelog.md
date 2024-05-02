@@ -1,6 +1,6 @@
 ## 更新日志
 
-- 修复QQ音乐应用布局优化针对播放器的视频封面会出现拉伸变形的问题
+- 优化QQ音乐的应用布局优化，修复部分播放器的视频封面会出现拉伸变形的问题
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
