@@ -56,7 +56,7 @@ function releasePadByMIUI14Transplant() {
 
 function releaseExt(cb) {
   return isSothxExtBuild() ? src(`${releaseDir}/${moduleConfig.version}/ext/pad-ext-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/X.自用版(基于通用版，仅根据我的习惯适配)/模块`)) : cb()
+    .pipe(dest(`${releaseNetdiskDir}/X.自用版(个人测试模块，勿装)/模块`)) : cb()
 }
 
 
