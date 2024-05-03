@@ -42,7 +42,14 @@ const buildActionIsHyperOSBasedOnTiramisu = function () {
 
 const buildActionIsMagicWindow = function () {
   const use_mode = options.use_mode
-  return options.use_mode === 'magicWindow'
+  return use_mode === 'magicWindow'
+}
+
+const buildActionIsSothx = function () {
+  const is_pad = options.use_platform === 'pad'
+  const is_sothx = options.netdisk_desc === 'sothx'
+
+  return is_pad && is_sothx
 }
 
 
@@ -85,6 +92,10 @@ module.exports = function jsonToProp() {
     })))
     .pipe(gulpIf(buildActionIsMagicWindow, gulpJSONEdit(function (json) {
       json.description = `适用于MIUI 13 For Pad，用于扩展信箱模式、平行视界和应用布局优化的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板安卓11通用版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(反馈应用适配问题可前往酷安私信 @做梦书 或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请移除模块后重启平板)`;
+      return json;
+    })))
+    .pipe(gulpIf(buildActionIsSothx, gulpJSONEdit(function (json) {
+      json.description = `适用于HyperOS For Pad/Fold，用于扩展信箱模式、平行视界和应用布局优化的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[自用版]，此版本仅供模块作者使用，含有大量测试用途的代码，误装容易造成卡米。(下载正式版可前往酷安动态 @做梦书 或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请移除模块后重启平板)`;
       return json;
     })))
     .pipe(through.obj((file, enc, cb) => {
