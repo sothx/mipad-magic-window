@@ -217,7 +217,6 @@
   <package name="com.neusoft.gopaynt" isShowDivider="true" />
   <package name="com.wukongtv.wkremote.client" isShowDivider="true" />
   <package name="com.cutler.dragonmap" isShowDivider="true" fullRule="nra" />
-  <package name="com.vgjump.jump" isShowDivider="true" />
   <package name="com.tzb.mobilehub" isShowDivider="true" />
   <package name="com.glodon.constructioncalculators" isShowDivider="true" />
   <package name="com.kuaiyin.mj.music" isShowDivider="true" />
@@ -4736,7 +4735,6 @@
   <package name="com.exam8.twojian" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.jxedt.kmy" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.gkid.gkid" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
-  <package name="com.yuzebin.pokemon" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.shangxueba.sxb" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.huashitong.ssydt" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.ellabookhome" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
@@ -6378,7 +6376,7 @@
   <%_ if (['fold'].includes(platform)) { _%>
   <package name="com.max.xiaoheihe" scaleMode="1" fullRule="nra:cr:rcr:nr" />
   <%_ } else { _%>
-  <package name="com.max.xiaoheihe" isShowDivider="true" supportFullSize="true" placeholder="com.max.xiaoheihe.MainActivity:com.max.hbsearch.SearchNewActivity" activityRule="com.max.xiaoheihe.module.bbs.ImageActivity" splitPairRule="com.max.xiaoheihe.MainActivity:*,com.max.hbsearch.SearchNewActivity:*,com.max.xiaoheihe.module.bbs.ChannelsDetailActivity:*,com.max.xiaoheihe.module.bbs.post.ui.activitys.PicturePostPageActivity:*,com.max.xiaoheihe.bean.recommend.RecommendBoardActivity:*" transitionRules="com.max.xiaoheihe.module.account.RegisterOrLoginActivityV2" />
+  <package name="com.max.xiaoheihe" isShowDivider="true" supportFullSize="true" placeholder="com.max.xiaoheihe.MainActivity:com.max.hbsearch.SearchNewActivity" activityRule="com.max.xiaoheihe.module.bbs.ImageActivity" splitPairRule="com.max.xiaoheihe.MainActivity:*,com.max.hbsearch.SearchNewActivity:*,com.max.xiaoheihe.module.bbs.ChannelsDetailActivity:*,com.max.xiaoheihe.module.bbs.post.ui.activitys.PicturePostPageActivity:*,com.max.xiaoheihe.bean.recommend.RecommendBoardActivity:*,com.max.xiaoheihe.module.account.MeHomeActivity:*" transitionRules="com.max.xiaoheihe.module.account.RegisterOrLoginActivityV2" />
   <%_ } _%>
   <package name="com.ss.android.article.search" isShowDivider="true" activityRule="com.bytedance.ugc.ugc.thumb.view.ThumbPreviewActivity" splitRatio="0.3" splitPairRule="com.ss.android.article.news.activity.MainActivity:*,com.android.bytedance.search.SearchActivity:*" />
   <package name="com.wukong.search" fullRule="*" />
@@ -6946,6 +6944,12 @@
   <package name="com.cankaoxiaoxi.app1" fullRule="nra:cr:rcr:nr" />
   <package name="net.xinhuamm.mainclient" supportFullSize="true" splitPairRule="net.xinhuamm.mainclient.mvp.MainActivity:*,net.xinhuamm.mainclient.mvp.ui.search.activity.SearchActivity:*,net.xinhuamm.mainclient.mvp.ui.user.activity.UserHomePageActivity:*,net.xinhuamm.mainclient.mvp.ui.news.activity.SubjectActivity:*,net.xinhuamm.mainclient.mvp.ui.attention.activity.AccountDetailActivity:*" placeholder="net.xinhuamm.mainclient.mvp.MainActivity:net.xinhuamm.mainclient.mvp.ui.search.activity.SearchActivity" scaleMode="1" activityRule="net.xinhuamm.mainclient.mvp.ui.splash.SplashActivity" transitionRules="net.xinhuamm.mainclient.mvp.ui.splash.SplashActivity" />
   <package name="com.infzm.ireader" supportFullSize="true" splitPairRule="com.infzm.ireader.activity.HomeActivity:*,com.infzm.ireader.activity.KeyWordSearchActivity:*,com.infzm.ireader.activity.V8ColumnIndexActivity:*" placeholder="com.infzm.ireader.activity.HomeActivity:com.infzm.ireader.activity.KeyWordSearchActivity" scaleMode="1" activityRule="com.infzm.ireader.activity.SplashActivity" transitionRules="com.infzm.ireader.activity.SplashActivity" />
+  <package name="com.yuzebin.pokemon" isShowDivider="true" splitRatio="0.3" supportFullSize="true" splitPairRule="com.haha.pokemon.activity.MainActivityFragment:*,com.haha.pokemon.activity.TabActivity:*,com.haha.pokemon.activity.PropertyActivity:*,com.haha.pokemon.activity.SkillNewDetailActivity:*,com.haha.pokemon.activity.EggActivity:*,com.haha.pokemon.activity.TeXingActivity:*,com.haha.pokemon.activity.VgcPastesActivity:*,com.haha.pokemon.activity.DiquDexActivity:*,com.haha.pokemon.activity.DonghuaActivity:*,com.haha.pokemon.activity.GiftActivity:*,com.haha.pokemon.activity.MyGiftActivity:*" activityRule="com.haha.pokemon.activity.MainActivityFragment,com.haha.pokemon.activity.MainActivityFragment" transitionRules="com.haha.pokemon.activity.MainActivityFragment,com.haha.pokemon.activity.MainActivityFragment" />
+  <%_ if (!['not-dragable'].includes(compatibility)) { _%>
+  <package name="com.vgjump.jump" scaleMode="1" supportFullSize="true" splitPairRule="com.vgjump.jump.ui.main.MainActivity:*,com.vgjump.jump.ui.my.userpage.UserPageActivity:*,com.vgjump.jump.ui.search.SearchActivity:*" activityRule="com.vgjump.jump.ui.main.MainActivity,cc.shinichi.library.view.ImagePreviewActivity,com.vgjump.jump.ui.main.launch.LaunchActivity" transitionRules="com.vgjump.jump.ui.main.MainActivity,com.vgjump.jump.ui.main.launch.LaunchActivity" />
+  <%_ } else  { _%>
+  <package name="com.vgjump.jump" scaleMode="1" supportFullSize="true" splitPairRule="com.vgjump.jump.ui.main.MainActivity:*,com.vgjump.jump.ui.my.userpage.UserPageActivity:*,com.vgjump.jump.ui.search.SearchActivity:*" activityRule="cc.shinichi.library.view.ImagePreviewActivity" />
+  <%_ } _%>
   <!-- Adaptive For System Fix -->
   <package name="com.zui.browser" fullRule="nra:cr:rcr:nr" />
   <package name="com.android.browser" fullRule="nra:cr:rcr:nr" />

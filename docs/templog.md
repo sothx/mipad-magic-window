@@ -1,6 +1,8 @@
 ## 更新日志
 
-- 修复广发银行错误的平行窗口和应用布局优化适配规则
+- 新增神奇宝贝图鉴的适配规则
+- 新增Jump的平行窗口、信箱模式和应用布局优化的适配规则
+
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
