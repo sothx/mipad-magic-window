@@ -112,8 +112,6 @@ gulp package --use-platform fold
 
 Tips:使用MT管理器可用方便地获取应用的Activity记录
 
-# License
-
 
 
 
