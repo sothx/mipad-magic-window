@@ -54,12 +54,12 @@ function releasePadByMIUI14Transplant() {
 }
 
 
-function releaseExt(cb) {
-  return isSothxExtBuild() ? src(`${releaseDir}/${moduleConfig.version}/ext/pad-ext-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/X.自用版(个人测试模块，勿装)/模块`)) : cb()
-}
+// function releaseExt(cb) {
+//   return isSothxExtBuild() ? src(`${releaseDir}/${moduleConfig.version}/ext/pad-ext-${moduleConfig.version}.zip`)
+//     .pipe(dest(`${releaseNetdiskDir}/X.自用版(个人测试模块，勿装)/模块`)) : cb()
+// }
 
 
 
 
-module.exports = parallel(releasePad, releaseRatioOf3To2Pad, releaseFold, releasePadByMagicWindow, releaseHyperOsForPad5, releasePadByMIUI14Transplant,releasePadByHyperOSBasedOnTiramisu,releaseExt)
+module.exports = parallel(releasePad, releaseRatioOf3To2Pad, releaseFold, releasePadByMagicWindow, releaseHyperOsForPad5, releasePadByMIUI14Transplant,releasePadByHyperOSBasedOnTiramisu)
