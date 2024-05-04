@@ -29,5 +29,4 @@ module.exports = function buildUpdateMsg(cb) {
     }))
     .pipe(gulpRename(`${packageName}.json`))
     .pipe(dest(`docs/release/${moduleUpdateVersion}/`))
-    .pipe(dest(`docs/release/`))
 }
