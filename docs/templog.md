@@ -5,6 +5,7 @@
 - 新增形色的的平行窗口适配和应用布局优化规则
 - 优化饿了么的开屏体验
 - 新增人民日报的应用布局优化规则
+- 修复QQ邮箱丢失平行视界的问题
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
