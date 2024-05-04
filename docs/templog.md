@@ -1,7 +1,7 @@
 ## 更新日志
 
 - 新增应用宝的横屏适配和应用布局优化规则
-
+- 新增形色的的平行窗口适配和应用布局优化规则
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
