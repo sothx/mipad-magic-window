@@ -57,17 +57,23 @@ function transformKeyValue(key, value) {
   return `${key}=${value}`;
 }
 
+const moduleType = `${options.is_transplant ? 'transplant' : options.use_platform}${options.use_ext ? `-ext` : ''}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}`
+
 module.exports = function jsonToProp() {
   return src('config/module.config.json')
     .pipe(gulpJSONEdit(function (json) {
-      const jsonName = `${moduleUpdateVersion}/${options.is_transplant ? 'transplant' : options.use_platform}${options.use_ext ? `-ext` : ''}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}.json`
+      /** 配置更新链接 */
+      const jsonName = `${moduleUpdateVersion}/${moduleType}.json`
       if (!options.use_ext) {
         json.updateJson += jsonName
       }
       if (options.use_ext && options.netdisk_desc === 'sothx') {
-        json.updateJson += `${moduleUpdateVersion}/${options.is_transplant ? 'transplant' : options.use_platform}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}.json`
+        const ignoreExtModuleType = `${options.is_transplant ? 'transplant' : options.use_platform}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}`
+        json.updateJson += `${moduleUpdateVersion}/${ignoreExtModuleType}.json`
         // json.updateJson += jsonName
       }
+      /** 配置版本号 */
+      json.version = `${moduleType}-${json.version}.${options.module_version_interface}`
       return json;
     }))
     .pipe(gulpIf(buildActionIsFold, gulpJSONEdit(function (json) {
