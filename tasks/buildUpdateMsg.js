@@ -7,6 +7,12 @@ const gulpRename = require('gulp-rename');
 
 const moduleUpdateVersion = options.module_update_version
 
+const lastModuleUpdateVersion = options.last_module_update_version
+
+const isNeedBuildLastModuleUpdateVersion = () => {
+  return lastModuleUpdateVersion !== ''
+}
+
 const packageName = `${options.is_transplant ? 'transplant' : options.use_platform}${options.use_ext ? `-ext` : ''}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}`
 
 module.exports = function buildUpdateMsg(cb) {
@@ -28,5 +34,6 @@ module.exports = function buildUpdateMsg(cb) {
       return json
     }))
     .pipe(gulpRename(`${packageName}.json`))
+    .pipe(gulpIf(isNeedBuildLastModuleUpdateVersion,dest(`docs/release/${lastModuleUpdateVersion}/`)))
     .pipe(dest(`docs/release/${moduleUpdateVersion}/`))
 }
