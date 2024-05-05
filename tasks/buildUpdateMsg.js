@@ -11,7 +11,12 @@ const moduleUpdateVersion = options.module_update_version
 const lastModuleUpdateVersion = options.last_module_update_version
 
 const isNeedBuildLastModuleUpdateVersion = () => {
-  return lastModuleUpdateVersion !== ''
+  /** 停止提供V1版本自用版的更新 */
+  const ignoreV1SothxExt = options.use_ext && options.netdisk_desc === 'sothx' && lastModuleUpdateVersion === 'V1'
+  if (ignoreV1SothxExt) {
+    return false;
+  }
+  return lastModuleUpdateVersion !== '' 
 }
 
 const packageName = `${options.is_transplant ? 'transplant' : options.use_platform}${options.use_ext ? `-ext` : ''}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}`

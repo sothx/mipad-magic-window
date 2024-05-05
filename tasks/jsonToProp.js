@@ -68,8 +68,8 @@ module.exports = function jsonToProp() {
         json.updateJson += jsonName
       }
       if (options.use_ext && options.netdisk_desc === 'sothx') {
-        const ignoreExtModuleType = `${options.is_transplant ? 'transplant' : options.use_platform}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}`
-        json.updateJson += `${moduleUpdateVersion}/${ignoreExtModuleType}.json`
+        // const ignoreExtModuleType = `${options.is_transplant ? 'transplant' : options.use_platform}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}`
+        json.updateJson += `${moduleUpdateVersion}/${moduleType}.json`
         // json.updateJson += jsonName
       }
       /** 配置版本号 */
