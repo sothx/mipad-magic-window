@@ -4,6 +4,7 @@ const moduleConfig = require('../config/module.config.json');
 const { options } = require('../config/process.env');
 const gulpJSONEdit = require('gulp-json-editor');
 const gulpRename = require('gulp-rename');
+const gulpIf = require('gulp-if');
 
 const moduleUpdateVersion = options.module_update_version
 
