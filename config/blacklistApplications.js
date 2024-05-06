@@ -72,6 +72,7 @@ const fullScreenList = {
   'com.xiwang.zaixian': true, // 希望学
   'com.yozo.office': true, //鲸鲮office
   'com.taobao.taobao': true, // 淘宝
+  'cn.canva.editor': true, // Canva可画
 }
 
 /**
