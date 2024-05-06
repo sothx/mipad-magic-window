@@ -6959,11 +6959,7 @@
   <package name="com.joyshebao.joy" fullRule="nra:cr:rcr:nr" />
   <package name="com.uzero.baimiao" fullRule="nra:cr:rcr" />
   <package name="com.sina.weibog3" fullRule="nra:cr:rcr:nr" />
-  <%_ if (['hyperos-based-on-tiramisu'].includes(compatibility) || (ext && platform==='pad')) { _%>
-  <package name="com.coolapk.market" splitRatio="0.3" splitPairRule="com.coolapk.market.view.main.MainActivity:*,com.coolapk.market.view.userv9.UserSpaceV9Activity:*,com.coolapk.market.view.node.DynamicNodePageActivity:*,com.coolapk.market.view.search.SuperSearchResultActivity:*,com.coolapk.market.view.base.SimpleAlphaActivity:*" activityRule="com.coolapk.market.view.main.MainActivity,com.coolapk.market.view.photo.PhotoViewActivity,com.coolapk.market.view.wallpaper.coolpic.CoolPicDetailActivity" transitionRules="com.coolapk.market.view.main.MainActivity" isShowDivider="true" supportFullSize="true"  />
-  <%_ } else { _%>
   <package name="com.coolapk.market" fullRule="*" />
-  <%_ } _%>
   <package name="com.dragon.read" fullRule="*" />
   <package name="com.sup.android.superb" fullRule="nra:cr:rcr" />
   <%_ if (['fold'].includes(platform)) { _%>
