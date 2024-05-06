@@ -6376,11 +6376,6 @@
   <package name="com.zhongan.insurance" splitRatio="0.3" isShowDivider="true" splitPairRule="com.zhongan.insurance.ui.activity.MainActivity:*,com.zhongan.insurance.search.ui.SearchSummaryActivity:*" />
   <package name="com.huawei.it.xinsheng" splitRatio="0.3" isShowDivider="true" splitPairRule="com.huawei.it.xinsheng.app.main.MainActivity2:*,com.huawei.it.xinsheng.app.search.activity.SearchMainActivity:*" activityRule="com.huawei.it.xinsheng.app.main.MainActivity2" transitionRules="com.huawei.it.xinsheng.app.main.MainActivity2" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.etrasoft.wefunbbs" splitRatio="0.3" isShowDivider="true" supportFullSize="true" splitPairRule="com.etrasoft.wefunbbs.MainActivity:*,com.etrasoft.wefunbbs.circles.activity.CirclesContentActivity:*,com.etrasoft.wefunbbs.home.activity.AggregateSearchActivity:*,com.etrasoft.wefunbbs.message.activity.UserDetailActivity:*" activityRule="com.etrasoft.wefunbbs.MainActivity" transitionRules="com.etrasoft.wefunbbs.MainActivity" />
-  <%_ if (['fold'].includes(platform)) { _%>
-  <package name="com.sina.weibo" activityRule="com.sina.weibo.story.publisher.activity.StorySendActivity,com.sina.weibo.feed.detail.composer.ComposerActivity,com.sina.weibo.photoalbum.imageviewer.ImageViewer" isShowDivider="true" splitPairRule="com.sina.weibo.VisitorMainTabActivity:com.sina.weibo.MainTabActivity:0:0,com.sina.weibo.MainTabActivity:*,com.sina.weibo.VisitorMainTabActivity:*,com.sina.weibo.page.SearchResultActivity:*" transitionRules="com.sina.weibo.page.SuperPageActivity,com.sina.weibo.composerinde.ComposerDispatchActivity,com.sina.weibo.OpenProductAppActivity,com.sina.weibo.video.recommend.DispatchActivity" />
-  <%_ } else { _%>
-  <package name="com.sina.weibo" fullRule="nra:cr:rcr:nr" supportFullSize="true" />
-  <%_ } _%>
   <!-- Adaptive For Sothx 1.10.x -->
   <package name="com.baijiayun.jinbang" fullRule="nra:cr:rcr:nr" scaleMode="1" />
   <package name="com.baidu.netdisk.xiaomi.appunion" fullRule="nra:cr:rcr:nr" supportFullSize="true" />
@@ -6964,7 +6959,16 @@
   <package name="com.joyshebao.joy" fullRule="nra:cr:rcr:nr" />
   <package name="com.uzero.baimiao" fullRule="nra:cr:rcr" />
   <package name="com.sina.weibog3" fullRule="nra:cr:rcr:nr" />
+  <%_ if (['hyperos-based-on-tiramisu'].includes(compatibility) || (ext && platform==='pad')) { _%>
+  <package name="com.coolapk.market" splitRatio="0.3" splitPairRule="com.coolapk.market.view.main.MainActivity:*,com.coolapk.market.view.userv9.UserSpaceV9Activity:*,com.coolapk.market.view.node.DynamicNodePageActivity:*,com.coolapk.market.view.search.SuperSearchResultActivity:*,com.coolapk.market.view.base.SimpleAlphaActivity:*" activityRule="com.coolapk.market.view.main.MainActivity,com.coolapk.market.view.photo.PhotoViewActivity,com.coolapk.market.view.wallpaper.coolpic.CoolPicDetailActivity" transitionRules="com.coolapk.market.view.main.MainActivity" isShowDivider="true" supportFullSize="true"  />
+  <%_ } else { _%>
   <package name="com.coolapk.market" fullRule="*" />
+  <%_ } _%>
   <package name="com.dragon.read" fullRule="*" />
   <package name="com.sup.android.superb" fullRule="nra:cr:rcr" />
+  <%_ if (['fold'].includes(platform)) { _%>
+  <package name="com.sina.weibo" activityRule="com.sina.weibo.story.publisher.activity.StorySendActivity,com.sina.weibo.feed.detail.composer.ComposerActivity,com.sina.weibo.photoalbum.imageviewer.ImageViewer" isShowDivider="true" splitPairRule="com.sina.weibo.VisitorMainTabActivity:com.sina.weibo.MainTabActivity:0:0,com.sina.weibo.MainTabActivity:*,com.sina.weibo.VisitorMainTabActivity:*,com.sina.weibo.page.SearchResultActivity:*" transitionRules="com.sina.weibo.page.SuperPageActivity,com.sina.weibo.composerinde.ComposerDispatchActivity,com.sina.weibo.OpenProductAppActivity,com.sina.weibo.video.recommend.DispatchActivity" />
+  <%_ } else { _%>
+  <package name="com.sina.weibo" fullRule="nra:cr:rcr:nr" supportFullSize="true" />
+  <%_ } _%>
 </package_config>
