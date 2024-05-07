@@ -14,7 +14,7 @@ const buildActionIsPad = function () {
 
 
 const buildActionIsTransplant = function () {
-  const is_transplant = options.is_transplant
+  const is_transplant = options.use_compatibility === 'transplant-6max'
   const is_pad = options.use_platform === 'pad'
   return is_transplant && is_pad
 }
@@ -57,7 +57,7 @@ function transformKeyValue(key, value) {
   return `${key}=${value}`;
 }
 
-const moduleType = `${options.is_transplant ? 'transplant' : options.use_platform}${options.use_ext ? `-ext` : ''}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}`
+const moduleType = `${options.use_platform}${options.use_ext ? `-ext` : ''}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}`
 
 module.exports = function jsonToProp() {
   return src('config/module.config.json')
@@ -68,7 +68,7 @@ module.exports = function jsonToProp() {
         json.updateJson += jsonName
       }
       if (options.use_ext && options.netdisk_desc === 'sothx') {
-        // const ignoreExtModuleType = `${options.is_transplant ? 'transplant' : options.use_platform}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}`
+        // const ignoreExtModuleType = `${options.use_platform}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}`
         json.updateJson += `${moduleUpdateVersion}/${moduleType}.json`
         // json.updateJson += jsonName
       }

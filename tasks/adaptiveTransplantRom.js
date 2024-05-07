@@ -6,7 +6,7 @@ const systemExtDist = 'dist/system/system_ext'
 const moduleSrc = 'module_src'
 
 const buildActionIsTransplant = function () {
-  const is_transplant = options.is_transplant
+  const is_transplant = options.use_compatibility === 'transplant-6max'
   const is_pad = options.use_platform === 'pad'
   return is_transplant && is_pad
 }
