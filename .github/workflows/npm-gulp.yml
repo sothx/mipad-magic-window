@@ -79,7 +79,7 @@ jobs:
     - name: Upload Transplant6MaxBasedOnTiramisu Pad Release Zip
       uses: actions/upload-artifact@v4
       with:
-          name: transplant-${{ env.VERSION }}
+          name: pad-transplant-6max-based-on-tiramisu-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 
@@ -90,7 +90,7 @@ jobs:
     # - name: Upload Ext Transplant6MaxBasedOnTiramisu Pad Release Zip
     #   uses: actions/upload-artifact@v4
     #   with:
-    #       name: transplant-ext-${{ env.VERSION }}
+    #       name: pad-transplant-6max-based-on-tiramisu-ext-${{ env.VERSION }}
     #       path: "dist/**"
     #       overwrite: true
 
