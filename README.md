@@ -35,7 +35,7 @@
 
 该模块不同于通用版模块，推荐系统更新前先卸载本模块，避免卡米，系统更新后再尝试安装本模块。
 
-[MIUI 14下的6 Max移植包专版(transplant-x.xx.xx.zip)]
+[MIUI 14下的6 Max移植包专版(pad-transplant-6max-based-on-tiramisu-x.xx.xx.zip)]
 
 适配以前小米平板6 Max发布后到Hyper OS For Pad更新前这段时间推出的基于小米平板6 Max的MIUI 14 For Pad移植包(Hyper OS For Pad和非移植包勿刷，刷错会卡米)，该版本存在一定的卡米风险，需要自行救砖，该版本误刷会100%卡米！！！！！！
 
