@@ -106,12 +106,16 @@ gulp package --use-platform fold
 
 
 ## 我该如何扩充适配规则
-可通过Pull Request或者Issue提交应用适配代码或者应用适配需求，如果不了解详细的适配参数，可用阅读下方御板初琴撰写的适配攻略：
 
-<a href="https://ybcq.github.io/2023/02/12/%E3%80%90%E5%8E%9F%E5%88%9B%E6%95%99%E7%A8%8B%E3%80%91MIUI%E5%B9%B3%E8%A1%8C%E8%A7%86%E7%95%8C%E5%85%A8%E6%8E%A2%E7%B4%A2/" target="_blank">【原创教程】MIUI平行视界全探索 —— 御坂初琴软件屋</a>
+可通过Pull Request或者Issue提交应用适配代码或者应用适配需求，如果不了解详细的适配参数，可用阅读下方的自定义规则攻略：
+
+<a href="https://hyper-magic-window.sothx.com/custom-config.html" target="_blank">完美横屏应用计划——自定义规则</a>
 
 Tips:使用MT管理器可用方便地获取应用的Activity记录
 
 
+# 许可协议
+
+《HyperOS For Pad/Fold 完美横屏应用计划》允许个人在有限范围内以非商业用途对项目代码进行复制和修改，考虑到安全因素(恶意模块事件时有发生)，不允许未经授权的代码二次分发，不允许将本项目代码用于商业用途。
 
 
