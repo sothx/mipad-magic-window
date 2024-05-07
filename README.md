@@ -21,7 +21,7 @@
 
 适配小米Mix Fold 折叠屏系列，仅推荐折叠屏的机型。
 
-[小米平板安卓13专版(pad-not-dragable--x.xx.xx.zip)]
+[小米平板安卓13通用版(pad-not-dragable-x.xx.xx.zip)]
 
 适配Android 13下不支持平行视界左右滑动条的MIUI For Pad/Hyper OS For Pad，以及各类基于Android 13 MIUI For Pad的移植包机型，推荐基于Android 13底层安装此版本，该版本针对Android 13下平行视界部分应用显示不全的问题有做单独适配优化。
 
