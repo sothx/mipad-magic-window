@@ -113,5 +113,8 @@ gulp package --use-platform fold
 
 Tips:使用MT管理器可用方便地获取应用的Activity记录
 
+## 许可协议
+
+《HyperOS For Pad/Fold 完美横屏应用计划》允许个人在非盈利用途下的免费使用，禁止用于牟利或者其他商业用途，作为项目的主要维护者和主要软件著作权人，将保留对项目的所有权利。
 
 
