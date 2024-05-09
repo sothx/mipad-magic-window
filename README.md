@@ -111,7 +111,6 @@ gulp package --use-platform fold
 
 <a href="https://hyper-magic-window.sothx.com/custom-config.html" target="_blank">完美横屏应用计划——自定义规则</a>
 
-Tips:使用MT管理器可用方便地获取应用的Activity记录
 
 ## 许可协议
 
