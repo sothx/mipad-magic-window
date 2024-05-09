@@ -4,7 +4,8 @@ const { options } = require('../config/process.env');
 const installTemplateMap = {
   generic: 'install_module_template/generic/**',
   ext: 'install_module_template/ext/**',
-  'not-dragable': 'install_module_template/not-dragable/**'
+  'not-dragable': 'install_module_template/not-dragable/**',
+  'pipa-for-hyperos': 'install_module_template/pipa-for-hyperos/**'
 }
 
 const getInstallTemplateType = function () {
