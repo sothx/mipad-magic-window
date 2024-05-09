@@ -11,8 +11,11 @@ const getInstallTemplateType = function () {
   if (options.use_ext) {
     return 'ext';
   }
-  if (options.use_compatibility) {
+  if (options.use_compatibility === 'not-dragable') {
     return 'not-dragable'
+  }
+  if (options.use_compatibility === 'pipa-for-hyperos') {
+    return 'pipa-for-hyperos'
   }
   return 'generic'
 }

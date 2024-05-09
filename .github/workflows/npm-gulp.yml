@@ -181,3 +181,25 @@ jobs:
     #       name: pad-hyperos-based-on-tiramisu-ext-${{ env.VERSION }}
     #       path: "dist/**"
     #       overwrite: true
+
+    - name: Build Pad Compatibility Use PipaForHyperOS
+      run: |
+          npm run build:pad-compatibility=pipa-for-hyperos
+  
+    - name: Upload Pad Compatibility Use PipaForHyperOS Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+          name: pad-pipa-for-hyperos-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
+
+    # - name: Build Ext Pad Compatibility Use PipaForHyperOS
+    #   run: |
+    #       npm run build-ext:pad-compatibility=pipa-for-hyperos
+  
+    # - name: Upload Ext Pad Compatibility Use PipaForHyperOS Release Zip
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #       name: pad-pipa-for-hyperos-ext-${{ env.VERSION }}
+    #       path: "dist/**"
+    #       overwrite: true
