@@ -43,7 +43,7 @@ function releaseRatioOf3To2Pad() {
 }
 
 function releasPipaForHyperOS() {
-  return src(`${releaseDir}/${moduleConfig.version}/pad-ratioOf3To2-${moduleConfig.version}.zip`)
+  return src(`${releaseDir}/${moduleConfig.version}/pad-pipa-for-hyperos-${moduleConfig.version}.zip`)
     .pipe(dest(`${releaseNetdiskDir}/6.小米平板6(pipa)澎湃专版(仅适配小米平板6)/模块`))
 }
 
