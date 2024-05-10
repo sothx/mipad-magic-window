@@ -6,6 +6,8 @@
 
 链接:  [https://caiyun.139.com/m/i?135Cmm1GIL7MG](https://caiyun.139.com/m/i?135Cmm1GIL7MG)
 
+- 移除部分老版本模块和废弃模块的在线升级功能
+
 反馈Q群：205924955
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
