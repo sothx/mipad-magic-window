@@ -1,8 +1,6 @@
 ## 更新日志
 
-- 适配小米快应用服务框架(com.miui.hybrid)
-- 适配小米小游戏(com.xiaomi.tinygame)
-- 适配小米云游戏(com.cloudgame.plugin.mi)
+- 修复信箱模式下的应用如果弹出权限提醒弹窗，会导致竖屏的问题(com.lbe.security.miui)
 
 反馈Q群：205924955
 
