@@ -1,8 +1,8 @@
 ## 更新日志
 
-- 适配小米快应用中心
-- 适配小米小游戏
-- 适配小米云游戏
+- 适配小米快应用服务框架(com.miui.hybrid)
+- 适配小米小游戏(com.xiaomi.tinygame)
+- 适配小米云游戏(com.cloudgame.plugin.mi)
 
 反馈Q群：205924955
 
