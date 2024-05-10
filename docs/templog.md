@@ -1,7 +1,6 @@
 ## 更新日志
 
-- 优化王者营地的适配体验
-- 优化酷安的适配体验
+- 优化经脉宝的适配体验
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
