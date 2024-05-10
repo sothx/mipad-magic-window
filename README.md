@@ -61,56 +61,6 @@ V13之前的老版本模块需要安装对应的卸载模块，重启后再移�
 
 安装该模块后重启，然后再卸载该模块，再重启即可。
 
-## 快速开发指南
-项目基于Gulp工作流，需要依赖Gulp-Cli，可以通过以下方式进行安装：
-
-Tips:推荐使用Node.js 18+版本。
-
-```base
-# 安装gulp-cli
-pnpm install gulp-cli -g
-# 安装项目依赖
-pnpm install
-```
-
-相关构建命令:
-
-```
-# 安装项目依赖
-pnpm install
-
-# 构建模块文件
-pnpm build
-
-# 将构建的模块文件进行打包成对应版本的zip
-pnpm release
-
-# 将构建和打包同时进行
-pnpm package
-```
-
-使用了ejs作为模块的模板引擎，可以根据不同的设备平台差异化平行窗口的配置。
-在脚本执行时通过--use-platform来指定需要差异化适配的设备类型。
-一般来说：
-平板设备可以使用 pad 作为参数，折叠屏设备可以使用 fold 作为参数。
-
-```bash
-# 构建平板设备的模块包
-gulp package --use-platform pad
-# 构建折叠屏设备的模块包
-gulp package --use-platform fold
-```
-
-在平行窗口的配置文件中可以使用ejs的相关语法来差异化适配不同的设备端：
-```ejs
-    <%_ if (['fold'].includes(platform)) { _%>
-    <package name="com.twitter.android" scaleMode="1" fullRule="nra:cr:rcr" />
-    <%_ } else { _%>
-    <package name="com.twitter.android" scaleMode="1" supportFullSize="true" splitPairRule="com.twitter.app.main.MainActivity:*,com.twitter.app.profiles.ProfileActivity:*,com.twitter.android.search.implementation.results.SearchActivity:*,com.twitter.communities.detail.CommunitiesDetailActivity:*,com.twitter.communities.search.CommunitiesSearchActivity:*,com.twitter.channels.details.ChannelsDetailsActivity:*,com.twitter.app.bookmarks.legacy.BookmarkActivity:*,com.twitter.channels.management.manage.UrtListManagementActivity:*,com.twitter.app.settings.search.SettingsSearchResultsActivity:*,com.twitter.app.settings.SettingsRootCompatActivity:*" activityRule="com.twitter.app.main.MainActivity,com.twitter.app.gallery.GalleryActivity,com.twitter.explore.immersivemediaplayer.ui.activity.ImmersiveMediaPlayerActivity,com.twitter.communities.detail.CommunitiesDetailActivity,com.twitter.creator.impl.main.MonetizationActivity,com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity,com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity,com.twitter.app.settings.SettingsRootCompatActivity,com.twitter.app.bookmarks.legacy.BookmarkActivity,com.twitter.channels.management.manage.UrtListManagementActivity,com.twitter.app.profiles.ProfileActivity,com.twitter.browser.BrowserActivity" transitionRules="com.twitter.app.main.MainActivity,com.twitter.communities.detail.CommunitiesDetailActivity,com.twitter.creator.impl.main.MonetizationActivity,com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity,com.twitter.android.client.web.AuthenticatedTwitterSubdomainWebViewActivity,com.twitter.app.settings.SettingsRootCompatActivity,com.twitter.app.bookmarks.legacy.BookmarkActivity,com.twitter.channels.management.manage.UrtListManagementActivity,com.twitter.app.profiles.ProfileActivity" />
-    <%_ } _%>
-```
-
-
 ## 我该如何扩充适配规则
 
 可通过Pull Request或者Issue提交应用适配代码或者应用适配需求，如果不了解详细的适配参数，可用阅读下方的自定义规则攻略：
