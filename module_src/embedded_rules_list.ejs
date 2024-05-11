@@ -6973,4 +6973,7 @@
   <package name="com.xiaomi.tinygame" fullRule="nra:cr:rcr:nr" />
   <package name="com.cloudgame.plugin.mi" fullRule="nra:cr:rcr:nr" />
   <package name="com.jishan.jmb" fullRule="nra:cr:rcr:nr" />
+  <%_ if (['pad'].includes(platform)) { _%>
+  <package name="com.miui.securitycenter" fullRule="nra:cr:rcr:nr" relaunch="false" />
+  <%_ } _%>
 </package_config>
