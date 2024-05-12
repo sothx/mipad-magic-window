@@ -1,7 +1,11 @@
 ## 更新日志
 
-- 新增网易我的世界(官服/渠道服)的适配
-- 新增有道翻译官的适配
+- 由于新版QQ音乐对播放器页面做了很多奇怪的改动，应用布局优化不再对新版QQ音乐生效，甚至会产生额外的BUG，移除QQ音乐的应用布局优化。
+
+如果需要QQ音乐的应用布局优化，请搭配QQ音乐13.5.0.8的老版本客户端和对应的自定义规则，详细说明可以参考自定义规则页面：
+
+自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
+
 
 反馈Q群：205924955
 
