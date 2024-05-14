@@ -74,6 +74,8 @@ const fullScreenList = {
   'com.taobao.taobao': true, // 淘宝
   'cn.canva.editor': true, // Canva可画
   'com.singularity.tiangong': true, // 天工
+  'com.mubu.app': true, //幕布
+  'chuxin.shimo.shimowendang': true, // 石墨文档
 }
 
 /**
