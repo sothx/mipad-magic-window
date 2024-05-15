@@ -11,7 +11,7 @@ const adaptivePlatformToFold = require('./tasks/adaptivePlatformToFold');
 const buildExtConfig = require('./tasks/buildExtConfig');
 const adaptiveTransplant6MaxBasedOnTiramisu = require('./tasks/adaptiveTransplant6MaxBasedOnTiramisu');
 const adaptiveHyperOSBasedOnTiramisu = require('./tasks/adaptiveHyperOSBasedOnTiramisu');
-const { mergeActivityEmbeddingConfig, mergeMagicWindowConfig } = require('./tasks/mergeMagicWindowConfig');
+const { mergeActivityEmbeddingConfig, mergeMagicWindowConfig, mergeOrientationConfig } = require('./tasks/mergeMagicWindowConfig');
 const buildApplicationCount = require('./tasks/buildApplicationCount');
 const buildNetdiskRelease = require('./tasks/buildNetdiskRelease');
 const adaptiveCompatibilityToNoDivider = require('./tasks/adaptiveCompatibilityToNoDivider');
@@ -47,6 +47,8 @@ exports.package = packageTasks
 exports.mergeActivityEmbeddingConfig = mergeActivityEmbeddingConfig
 
 exports.mergeMagicWindowConfig = mergeMagicWindowConfig
+
+exports.mergeOrientationConfig = mergeOrientationConfig
 
 
 exports.buildNetdiskRelease = buildNetdiskRelease
