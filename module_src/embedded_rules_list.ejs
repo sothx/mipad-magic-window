@@ -6350,9 +6350,7 @@
   <package name="cn.com.langeasy.EasyListen" fullRule="nra:cr:rcr:nr" />
   <package name="cn.com.bookan" fullRule="nra:cr:rcr:nr" />
   <package name="com.oray.sunlogin" fullRule="nra:cr:rcr:nr" />
-  <%_ if (['fold'].includes(platform)) { _%>
-  <package name="com.max.xiaoheihe" scaleMode="1" fullRule="nra:cr:rcr:nr" />
-  <%_ } else { _%>
+  <%_ if (['pad'].includes(platform)) { _%>
   <package name="com.max.xiaoheihe" isShowDivider="true" supportFullSize="true" placeholder="com.max.xiaoheihe.MainActivity:com.max.hbsearch.SearchNewActivity" activityRule="com.max.xiaoheihe.module.bbs.ImageActivity" splitPairRule="com.max.xiaoheihe.MainActivity:*,com.max.hbsearch.SearchNewActivity:*,com.max.xiaoheihe.module.bbs.ChannelsDetailActivity:*,com.max.xiaoheihe.module.bbs.post.ui.activitys.PicturePostPageActivity:*,com.max.xiaoheihe.bean.recommend.RecommendBoardActivity:*,com.max.xiaoheihe.module.account.MeHomeActivity:*" transitionRules="com.max.xiaoheihe.module.account.RegisterOrLoginActivityV2" />
   <%_ } _%>
   <package name="com.ss.android.article.search" isShowDivider="true" activityRule="com.bytedance.ugc.ugc.thumb.view.ThumbPreviewActivity" splitRatio="0.3" splitPairRule="com.ss.android.article.news.activity.MainActivity:*,com.android.bytedance.search.SearchActivity:*" />
