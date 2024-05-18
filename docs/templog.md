@@ -1,6 +1,6 @@
 ## 更新日志
 
-- 优化UC浏览器极速版的适配规则
+- 优化传送门的适配规则
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
