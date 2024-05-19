@@ -1,6 +1,7 @@
 ## 更新日志
 
-- 优化Mi Store的适配规则
+- 修复小爱同学部分情况下会扭转为竖屏的问题
+- 重新加回网易云音乐的应用布局优化，解决弹窗场景影响体验的问题
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
