@@ -18,7 +18,7 @@ fi
 # 基础函数
 add_props() {
   local line="$1"
-  echo "$line" >>"$MODPATH"/system.prop
+  printf "$line" >>"$MODPATH"/system.prop
 }
 
 model="$(getprop ro.product.device)"
@@ -38,7 +38,7 @@ if [[ "$device_soc" == "SM8475" && "$API" -ge 34 ]]; then
   ui_print "- 目前骁龙8+Gen1机型的小米平板存在系统IO调度异常的问题，容易导致系统卡顿或者无响应，模块即将自动为你配置合适的IO调度规则"
   # 开启智能IO调度
   ui_print "- 已开启智能IO调度(Android 14+ 生效)"
-  add_props "# 开启智能IO调度"
+  add_props "\n# 开启智能IO调度\n"
   add_props "persist.sys.stability.smartfocusio=on"
   ui_print "*********************************************"
 fi
