@@ -21,21 +21,14 @@ add_props() {
   printf "$line" >>"$MODPATH"/system.prop
 }
 
-model="$(getprop ro.product.device)"
-device_soc=
-soc_SM8475_pad_list="liuqin yudi zizhan"
-for j in $soc_SM8475_pad_list; do
-  if [[ "$model" == "$j" ]]; then
-    device_soc=SM8475
-    break
-  fi
-done
+device_soc_name="$(getprop ro.vendor.qti.soc_name)"
+device_soc_model="$(getprop ro.vendor.qti.soc_model)"
 
 # 骁龙8+Gen1机型判断
-if [[ "$device_soc" == "SM8475" && "$API" -ge 34 ]]; then
+if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" -ge 34 ]]; then
   ui_print "*********************************************"
   ui_print "- 检测到你的设备处理器属于骁龙8+Gen1"
-  ui_print "- 目前骁龙8+Gen1机型的小米平板存在系统IO调度异常的问题，容易导致系统卡顿或者无响应，模块即将自动为你配置合适的IO调度规则"
+  ui_print "- 目前骁龙8+Gen1机型的小米平板存在系统IO调度异常的问题，容易导致系统卡顿或者无响应，模块将自动为你配置合适的IO调度规则"
   # 开启智能IO调度
   ui_print "- 已开启智能IO调度(Android 14+ 生效)"
   add_props "\n# 开启智能IO调度\n"
