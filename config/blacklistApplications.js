@@ -100,6 +100,7 @@ const fixedOrientationList = {
   'com.fimo.camera': true, // FIMO
   'com.midea.vm.washer': true, // U净
   'com.hetao101.xhtxy': true, // 核桃学园
+  'cn.com.livelab': true, // 纷玩岛
 }
 
 
