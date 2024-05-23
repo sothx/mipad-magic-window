@@ -7,7 +7,7 @@
 
 新版网易云音乐安装包自取：
 （内含视频教程，用了模块的无需rotation）
-链接:  https://caiyun.139.com/m/i?135Ce34152lbA
+链接:  [https://caiyun.139.com/m/i?135Ce34152lbA](https://caiyun.139.com/m/i?135Ce34152lbA)
 
 如果需要QQ音乐的应用布局优化，请搭配QQ音乐13.5.0.8的老版本客户端和对应的自定义规则，详细说明可以参考自定义规则页面：
 
