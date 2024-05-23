@@ -1,6 +1,6 @@
 ## 更新日志
 
-- 优化人工桌面的适配
+- 优化奇点时代的适配
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
