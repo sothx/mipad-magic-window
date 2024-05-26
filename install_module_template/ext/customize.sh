@@ -61,7 +61,7 @@ fi
 
 
 # 修复权限管理服务
-need_fix_auth_manager_pad_list="pipa liuqin yudi"
+need_fix_auth_manager_pad_list="pipa liuqin yudi yunluo xun"
 is_need_fix_auth_manager=0
 for i in $need_fix_auth_manager_pad_list; do
   if [[ "$device_code" == "$i" ]]; then
