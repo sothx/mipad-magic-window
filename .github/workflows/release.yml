@@ -53,7 +53,7 @@ jobs:
         artifacts: ${{ github.workspace }}/GithubRelease/*
         name: "${{ env.VERSION }}"
         tag: "${{ env.VERSION }}"
-        bodyFile: "${{ github.workspace }}/docs/release/V1/changelog.md"
+        bodyFile: "${{ github.workspace }}/docs/changelog.md"
         allowUpdates: false
         artifactErrorsFailBuild: true
         makeLatest: true
