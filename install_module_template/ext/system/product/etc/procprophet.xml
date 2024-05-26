@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MIUI ADD: Performance_ProcessProphet -->
+<contents>
+    <!-- 三方应用 0 ~ 100MB -->
+    <white-emptyproc name="com.qxr.feed" />
+    <white-emptyproc name="me.ele.napos" />
+    <white-emptyproc name="com.miui.fm" />
+    <white-emptyproc name="com.xiaomi.vipaccount" />
+    <white-emptyproc name="com.UCMobile" />
+    <white-emptyproc name="com.tmri.app.main" />
+    <white-emptyproc name="com.qiyi.video.lite" />
+    <white-emptyproc name="com.sohu.newsclient" />
+
+    <!-- 三方应用 100 ~ 200MB -->
+    <white-emptyproc name="com.sankuai.meituan" />
+    <white-emptyproc name="com.xiaomi.smarthome" />
+    <white-emptyproc name="com.baidu.homework" />
+    <white-emptyproc name="com.kugou.android" />
+    <white-emptyproc name="com.snda.wifilocating" />
+    <white-emptyproc name="com.anjuke.android.app" />
+    <white-emptyproc name="com.qiyi.video" />
+    <white-emptyproc name="com.zhihu.android" />
+    <white-emptyproc name="com.sohu.sohuvideo" />
+    <white-emptyproc name="com.tencent.mtt" />
+    <white-emptyproc name="com.chif.weather" />
+    <white-emptyproc name="com.meta.box" />
+    <white-emptyproc name="com.sankuai.meituan.merchant" />
+    <white-emptyproc name="com.tencent.qqmusic" />
+    <white-emptyproc name="com.moji.mjweather" />
+    <white-emptyproc name="com.autonavi.minimap" />
+    <white-emptyproc name="com.tencent.news" />
+    <white-emptyproc name="com.quark.browser" />
+
+    <!-- 三方应用 200 ~ 300MB -->
+    <white-emptyproc name="me.ele" />
+    <white-emptyproc name="com.baidu.searchbox" />
+    <white-emptyproc name="com.tencent.karaoke" />
+    <white-emptyproc name="cn.xuexi.android" />
+    <white-emptyproc name="com.taobao.idlefish" />
+    <white-emptyproc name="com.taobao.live" />
+    <white-emptyproc name="com.ximalaya.ting.android" />
+    <white-emptyproc name="com.taobao.taobao" />
+    <white-emptyproc name="com.baidu.haokan" />
+    <white-emptyproc name="com.sinovatech.unicom.ui" />
+    <white-emptyproc name="com.baidu.searchbox.lite" />
+    <white-emptyproc name="com.sina.weibo" />
+    <white-emptyproc name="com.kwai.videoeditor" />
+    <white-emptyproc name="com.youku.phone" />
+    <white-emptyproc name="com.xs.fm" />
+    <white-emptyproc name="com.eg.android.AlipayGphone" />
+    <white-emptyproc name="com.tencent.wework" />
+    <white-emptyproc name="com.icbc" />
+    <white-emptyproc name="com.baidu.BaiduMap" />
+    <white-emptyproc name="com.ss.android.article.news" />
+    <white-emptyproc name="com.lemon.lv" />
+    <white-emptyproc name="com.taobao.litetao" />
+
+    <!-- 三方应用 300 ~ 400MB -->
+    <white-emptyproc name="com.jingdong.app.mall" />
+    <white-emptyproc name="com.sankuai.meituan.meituanwaimaibusiness" />
+    <white-emptyproc name="tv.danmaku.bili" />
+    <white-emptyproc name="com.ss.android.article.video" />
+    <white-emptyproc name="com.netease.cloudmusic" />
+    <white-emptyproc name="com.tencent.qqlive" />
+    <white-emptyproc name="com.ss.android.article.lite" />
+    <white-emptyproc name="com.xingin.xhs" />
+    <white-emptyproc name="com.dragon.read" />
+    <white-emptyproc name="com.kuaishou.nebula" />
+
+    <!-- 三方应用 400 ~ 434MB -->
+    <white-emptyproc name="com.alibaba.android.rimet" />
+    <white-emptyproc name="com.ss.android.ugc.aweme" />
+
+    <!-- 系统应用 -->
+    <white-emptyproc name="com.miui.miservice" />
+    <white-emptyproc name="com.miui.weather2" />
+    <white-emptyproc name="com.miui.calculator" />
+    <white-emptyproc name="com.miui.compass" />
+    <white-emptyproc name="com.android.fileexplorer" />
+    <white-emptyproc name="com.android.deskclock" />
+    <white-emptyproc name="com.android.contacts" />
+    <white-emptyproc name="com.miui.cleanmaster" />
+    <white-emptyproc name="com.android.calendar" />
+    <white-emptyproc name="com.android.mms" />
+    <white-emptyproc name="com.xiaomi.market" />
+    <white-emptyproc name="com.miui.notes" />
+    <white-emptyproc name="com.android.settings" />
+    <white-emptyproc name="com.mipay.wallet" />
+    <white-emptyproc name="com.miui.video" />
+    <white-emptyproc name="com.miui.player" />
+    <white-emptyproc name="com.xiaomi.gamecenter" />
+    <white-emptyproc name="com.miui.gallery" />
+    <white-emptyproc name="com.mi.health" />
+    <white-emptyproc name="com.android.browser" />
+
+    <!-- 通用场景黑名单 -->
+    <black-launch name="com.miui.home" />
+    <black-launch name="com.mi.android.globallauncher" />
+    <black-launch name="com.android.systemui" />
+    <black-launch name="com.lbe.security.miui" />
+    <black-launch name="com.android.provision" />
+    <black-launch name="com.tencent.mm" />
+    <black-launch name="com.phonetest.application" />
+    <black-launch name="com.miui.securitycenter" />
+    <black-launch name="com.bsp.catchlog" />
+    <black-launch name="com.miui.bugreport" />
+    <black-launch name="com.jtom.userprobation" />
+
+    <!-- 蓝牙场景黑名单 -->
+    <black-bt name="com.android.systemui" />
+    <black-bt name="com.android.deskclock" />
+    <black-bt name="com.tencent.mm" />
+    <black-bt name="com.android.server.telecom" />
+    <black-bt name="com.android.camera" />
+    <black-bt name="com.miui.mediaviewer" />
+    <black-bt name="com.miui.voiceassist" />
+</contents>
+<!-- END Performance_ProcessProphet -->
