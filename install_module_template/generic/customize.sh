@@ -90,12 +90,16 @@ if [[ "$is_need_fix_auth_manager" == 1 && "$API" -eq 34  ]]; then
     if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
       printf "fixAuthManager=on\n" >> "$CUSTOM_CONFIG_MODULE_PROP_PATH"module.prop
       fix_auth_manager $MODPATH
+      ui_print "*********************************************"
       ui_print "- 已修复权限管理服务，后续不会再提醒修复权限管理服务"
       ui_print "- 如需取消修复，请前往/data/adb/MIUI_MagicWindow+/config/module.prop文件下，将fixAuthManager整行删除并重新安装模块会再次提醒。"
+      ui_print "*********************************************"
     else
       printf "fixAuthManager=off\n" >> "$CUSTOM_CONFIG_MODULE_PROP_PATH"module.prop
+      ui_print "*********************************************"
       ui_print "- 你选择不修复权限管理服务，后续不会再提醒修复权限管理服务"
       ui_print "- 如需再次提醒，请前往/data/adb/MIUI_MagicWindow+/config/module.prop文件下，将fixAuthManager整行删除并重新安装模块会再次提醒。"
+      ui_print "*********************************************"
     fi
   fi
   # 已选择修复权限管理服务，自动修复
