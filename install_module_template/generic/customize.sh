@@ -73,6 +73,12 @@ fixAuthManager=$(grep_prop fixAuthManager "$CUSTOM_CONFIG_MODULE_PROP_PATH"modul
 if [[ "$is_need_fix_auth_manager" == 1 && "$API" -eq 34  ]]; then
   # 未配置，提醒修复
   if [[ "$fixAuthManager" == "" ]]; then
+    # 判断自定义module.prop是否存在，不存在则生成
+    if [[ ! -f "$CUSTOM_CONFIG_MODULE_PROP_PATH" ]]; then
+        /bin/mkdir -p $CUSTOM_CONFIG_MODULE_PROP_PATH
+        /bin/touch "$CUSTOM_CONFIG_MODULE_PROP_PATH"module.prop
+        /bin/chmod 777 "$CUSTOM_CONFIG_MODULE_PROP_PATH"module.prop
+    fi
     ui_print "*********************************************"
     ui_print "- 是否修复权限管理服务"
     ui_print "- 可以解决部分机型出现权限请求弹窗会导致横竖屏错乱的问题"
@@ -82,25 +88,26 @@ if [[ "$is_need_fix_auth_manager" == 1 && "$API" -eq 34  ]]; then
     ui_print "*********************************************"
     key_check
     if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
-      confirm_fix_auth_manager $MODPATH
+      printf "fixAuthManager=on\n" >> "$CUSTOM_CONFIG_MODULE_PROP_PATH"module.prop
+      fix_auth_manager $MODPATH
       ui_print "- 已修复权限管理服务，后续不会再提醒修复权限管理服务"
       ui_print "- 如需取消修复，请前往/data/adb/MIUI_MagicWindow+/config/module.prop文件下，将fixAuthManager整行删除并重新安装模块会再次提醒。"
     else
-      cancel_fix_auth_manager $MODPATH
+      printf "fixAuthManager=off\n" >> "$CUSTOM_CONFIG_MODULE_PROP_PATH"module.prop
       ui_print "- 你选择不修复权限管理服务，后续不会再提醒修复权限管理服务"
       ui_print "- 如需再次提醒，请前往/data/adb/MIUI_MagicWindow+/config/module.prop文件下，将fixAuthManager整行删除并重新安装模块会再次提醒。"
     fi
   fi
   # 已选择修复权限管理服务，自动修复
-  if [[ "$fixAuthManager" == "true" ]]; then
-    confirm_fix_auth_manager $MODPATH
+  if [[ "$fixAuthManager" == "on" ]]; then
+    fix_auth_manager $MODPATH
     ui_print "*********************************************"
     ui_print "- 自动修复权限管理服务"
     ui_print "- 如需取消修复，请前往/data/adb/MIUI_MagicWindow+/config/module.prop文件下，将fixAuthManager整行删除并重新安装模块会再次提醒。"
     ui_print "*********************************************"
   fi
   # 已选择不修复权限管理服务，仅提醒
-  if [[ "$fixAuthManager" == "false" ]]; then
+  if [[ "$fixAuthManager" == "off" ]]; then
     ui_print "*********************************************"
     ui_print "- 不修复权限管理服务"
     ui_print "- 如需再次提醒，请前往/data/adb/MIUI_MagicWindow+/config/module.prop文件下，将fixAuthManager整行删除并重新安装模块会再次提醒。"
