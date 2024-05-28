@@ -7,4 +7,4 @@ persist.miui.auto_ui_enable=true
 ro.config.miui_compat_enable=true
 ro.config.miui_appcompat_enable=true
 # 性能建模和预测
-persist.sys.procprophet.enable=true
+# persist.sys.procprophet.enable=true
