@@ -126,6 +126,14 @@ function copyAutoUiListToCommon(cb) {
 }
 
 
+/**
+ * 混入Android 12L 起的Overlay配置
+ */
+
+function copyOverlayToCommon(cb) {
+  return src(`${moduleSrc}/overlay/*`)
+  .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${systemDist}/system/product/overlay`)))
+}
 
 
-module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig),copyEmbeddedRuleListToCommon,copyFixedOrientationListToCommon,copyAutoUiListToCommon), cleanTemp)
+module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig),copyEmbeddedRuleListToCommon,copyFixedOrientationListToCommon,copyAutoUiListToCommon,copyOverlayToCommon), cleanTemp)

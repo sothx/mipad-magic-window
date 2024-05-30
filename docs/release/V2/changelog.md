@@ -1,11 +1,6 @@
 ## 更新日志
 
-- 适配移动云手机
-
-一周的云手机白嫖周卡
-（云手机我是想不到有什么使用场景QwQ？顶多挂游戏方便点？部分地方的移动可以开通云手机副号，实现云手机打电话收短信？）
-[https://cpactiv.buy.139.com/#/GiftPacks?code=QJ07908L96E&fromHelp=true&channelSrc=Q4-help]https://cpactiv.buy.139.com/#/GiftPacks?code=QJ07908L96E&fromHelp=true&channelSrc=Q4-help
-
+- 优化设置内应用显示布局的说明
 
 网易云音乐新版已自适配安卓平板，并且提供全新的Pad UI，模块规则同步为网易云音乐的官方规则，更新到新版后，无论是否开启网易云音乐的平行视界，均为横屏的适配体验。
 
