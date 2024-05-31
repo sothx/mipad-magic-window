@@ -97,7 +97,7 @@ function copyMagicWindowSettingConfig(cb) {
  * 混入Android 11 的自定义规则模板
  */
 
-function copyActivityEmbeddingCustomConfigTemplateToCommon(cb) {
+function copyMagicWindowCustomConfigTemplateToCommon(cb) {
   return src(`${moduleSrc}/template/custom_config/magicWindow/*`)
   .pipe(gulpIf(buildActionIsMagicWindow,dest(`${commonDist}/template/`)))
 }
@@ -155,4 +155,4 @@ function copyActivityEmbeddingCustomConfigTemplateToCommon(cb) {
 }
 
 
-module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig),copyEmbeddedRuleListToCommon,copyFixedOrientationListToCommon,copyAutoUiListToCommon,copyActivityEmbeddingOverlayToCommon,copyActivityEmbeddingCustomConfigTemplateToCommon), cleanTemp)
+module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig,copyMagicWindowCustomConfigTemplateToCommon),copyEmbeddedRuleListToCommon,copyFixedOrientationListToCommon,copyAutoUiListToCommon,copyActivityEmbeddingOverlayToCommon,copyActivityEmbeddingCustomConfigTemplateToCommon), cleanTemp)
