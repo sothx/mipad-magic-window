@@ -38,3 +38,9 @@ set_perm_recursive() {
     set_perm $file $2 $3 $5 $6
   done
 }
+
+
+fix_auth_manager() {
+  # 修复权限管理服务
+  cp -rf "$1"/common/FixAuthManager/** "$1"/
+}

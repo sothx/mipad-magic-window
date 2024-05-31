@@ -39,30 +39,6 @@ set_perm_recursive() {
   done
 }
 
-# 根据路径进行操作的util func
-check_path_exists() {
-    local path=$1
-    local actionKey=$2
-    local actionValue=$3
-    local result=0
-    if [[ ! -f "$1" && $actionKey == 'select' ]]; then
-      result = 1
-      echo $result
-    fi
-    if [[ ! -f "$1" && $actionKey == 'create' ]]; then
-      /bin/touch $1
-      /bin/chmod 777 $1
-      result = 1
-      echo $result
-    fi
-    if [[ ! -f "$1" && $actionKey == 'copy' && $actionValue ]]; then
-      /bin/cp -rf $actionValue $1
-      /bin/chmod 777 $1
-      result = 1
-      echo $result
-    fi
-    echo $result
-}
 
 fix_auth_manager() {
   # 修复权限管理服务

@@ -1,0 +1,3 @@
+<!--[自定义规则]信箱模式-->
+<!--调整QQ音乐信箱模式下的比例为11:10-->
+<!-- <package name="com.tencent.qqmusic" relaunch="false" supportFullSize="true" ratio="1.1" /> -->

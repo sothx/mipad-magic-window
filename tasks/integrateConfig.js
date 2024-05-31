@@ -93,6 +93,16 @@ function copyMagicWindowSettingConfig(cb) {
     .pipe(gulpIf(buildActionIsMagicWindow, dest(`${commonDist}/source/`)))
 }
 
+/**
+ * 混入Android 11 的自定义规则模板
+ */
+
+function copyActivityEmbeddingCustomConfigTemplateToCommon(cb) {
+  return src(`${moduleSrc}/template/custom_config/magicWindow/*`)
+  .pipe(gulpIf(buildActionIsMagicWindow,dest(`${commonDist}/template/`)))
+}
+
+
 
 /**
  * 混入Android 12L 起的平行窗口配置
@@ -130,10 +140,19 @@ function copyAutoUiListToCommon(cb) {
  * 混入Android 12L 起的Overlay配置
  */
 
-function copyOverlayToCommon(cb) {
+function copyActivityEmbeddingOverlayToCommon(cb) {
   return src(`${moduleSrc}/overlay/*`)
   .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${systemDist}/system/product/overlay`)))
 }
 
+/**
+ * 混入Android 12L 起的自定义规则模板
+ */
 
-module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig),copyEmbeddedRuleListToCommon,copyFixedOrientationListToCommon,copyAutoUiListToCommon,copyOverlayToCommon), cleanTemp)
+function copyActivityEmbeddingCustomConfigTemplateToCommon(cb) {
+  return src(`${moduleSrc}/template/custom_config/activityEmbedding/*`)
+  .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/template/`)))
+}
+
+
+module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig),copyEmbeddedRuleListToCommon,copyFixedOrientationListToCommon,copyAutoUiListToCommon,copyActivityEmbeddingOverlayToCommon,copyActivityEmbeddingCustomConfigTemplateToCommon), cleanTemp)
