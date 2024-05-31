@@ -39,7 +39,7 @@ set_perm_recursive() {
   done
 }
 
-# 根据机型列表判断是否需要补全对应机型的功能
+# 根据路径进行操作的util func
 check_path_exists() {
     local path=$1
     local actionKey=$2
