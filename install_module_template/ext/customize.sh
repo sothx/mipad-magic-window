@@ -85,7 +85,7 @@ if [[ $is_need_create_custom_config_template == 1  ]];then
     if [[  !$(grep_prop create_custom_config_template "$MODULE_CUSTOM_CONFIG_PATH"config.prop) ]];then
        printf "create_custom_config_template=0\n" >>"$MODULE_CUSTOM_CONFIG_PATH"config.prop
     fi
-    if [[ ! -f $MODULE_CUSTOM_CONFIG_PATH"config/" ]]; then
+    if [[ ! -d $MODULE_CUSTOM_CONFIG_PATH"config/" ]]; then
       /bin/mkdir -p "$MODULE_CUSTOM_CONFIG_PATH"config/
     fi
     /bin/cp -rf "$MODPATH"/common/template/* "$MODULE_CUSTOM_CONFIG_PATH"config/
