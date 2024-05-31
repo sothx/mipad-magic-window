@@ -39,6 +39,35 @@ set_perm_recursive() {
   done
 }
 
+# 判断是否创建自定义规则模板
+check_is_need_create_custom_config_template() {
+
+}
+
+# 根据机型列表判断是否需要补全对应机型的功能
+check_path_exists() {
+    local path=$1
+    local actionKey=$2
+    local actionValue=$3
+    local result=0
+    if [[ ! -f "$1" && $actionKey == 'select' ]]; then
+      result = 1
+      echo $result
+    fi
+    if [[ ! -f "$1" && $actionKey == 'create' ]]; then
+      /bin/touch $1
+      /bin/chmod 777 $1
+      result = 1
+      echo $result
+    fi
+    if [[ ! -f "$1" && $actionKey == 'copy' && $actionValue ]]; then
+      /bin/cp -rf $actionValue $1
+      /bin/chmod 777 $1
+      result = 1
+      echo $result
+    fi
+    echo $result
+}
 
 fix_auth_manager() {
   # 修复权限管理服务
