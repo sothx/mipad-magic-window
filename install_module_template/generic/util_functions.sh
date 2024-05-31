@@ -39,11 +39,6 @@ set_perm_recursive() {
   done
 }
 
-# 判断是否创建自定义规则模板
-check_is_need_create_custom_config_template() {
-
-}
-
 # 根据机型列表判断是否需要补全对应机型的功能
 check_path_exists() {
     local path=$1
