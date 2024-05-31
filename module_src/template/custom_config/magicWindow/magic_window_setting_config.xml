@@ -1,3 +1,4 @@
 <!--[自定义规则]横屏模式应用列表-->
+<!--Tips:如果是模块已经存在的应用不需要加这个文件，新增应用才需要追加-->
 <!--启用QQ的横屏模式-->
 <!-- <setting name="com.tencent.mobileqq" miuiMagicWinEnabled="true" miuiDialogShown="false" miuiDragMode="0"/> -->
