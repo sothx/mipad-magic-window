@@ -4,7 +4,7 @@ SKIPUNZIP=0
 . "$MODPATH"/util_functions.sh
 magisk_path=/data/adb/modules/
 module_id=$(grep_prop id $MODPATH/module.prop)
-module_versionCode=$(expr (grep_prop versionCode $MODPATH/module.prop) + 0)
+module_versionCode=$(expr $(grep_prop versionCode $MODPATH/module.prop) + 0)
 MODULE_CUSTOM_CONFIG_PATH="/data/adb/MIUI_MagicWindow+/"
 api_level_arch_detect
 if [[ "$KSU" == "true" ]]; then
@@ -60,7 +60,7 @@ device_soc_name="$(getprop ro.vendor.qti.soc_name)"
 device_soc_model="$(getprop ro.vendor.qti.soc_model)"
 
 # 骁龙8+Gen1机型判断
-if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" -ge 34 ]]; then
+if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" -ge 33 ]]; then
   ui_print "*********************************************"
   ui_print "- 检测到你的设备处理器属于骁龙8+Gen1"
   ui_print "- 目前骁龙8+Gen1机型的小米平板存在系统IO调度异常的问题，容易导致系统卡顿或者无响应，模块将自动为你配置合适的IO调度规则"
@@ -71,25 +71,32 @@ if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" 
   ui_print "*********************************************"
 fi
 
-
-# if [[ ! -d $magisk_path$module_id || ( -d "$magisk_path$module_id" && $module_versionCode -ge 119008)   ]];then
-#   ui_print "*********************************************"
-#   ui_print "- 是否嵌入模块说明到设置内的平板专区？"
-#   ui_print "- （可能与部分修改系统组件的模块有冲突，如冲突可卸载模块重新安装取消嵌入）"
-#   ui_print "  音量+ ：是"
-#   ui_print "  音量- ：否"
-#   ui_print "*********************************************"
-#   key_check
-#   if [[ "$keycheck" == "KEY_VOLUMEUP" ]];then
-#     if [[ ! -d $MODPATH"system/product/overlay/" ]]; then
-#       /bin/mkdir -p $MODPATH"system/product/overlay/"
-#     fi
-#     /bin/cp -rf $MODPATH"/common/overlay/*" $MODPATH"system/product/overlay/"
-#     ui_print "*********************************************"
-#     ui_print "- 已嵌入模块说明到设置内的平板专区"
-#     ui_print "- （可能与部分修改系统组件的模块有冲突，如冲突可卸载模块重新安装取消嵌入）"
-#     ui_print "*********************************************"
-# fi
+is_need_settings_overlay=0
+if [[ ! -d "$magisk_path$module_id" ]];then
+is_need_settings_overlay=1
+fi
+if [[ -d "$magisk_path$module_id" && $module_versionCode -le 119010  ]];then
+is_need_settings_overlay=1
+fi
+if [[ $is_need_settings_overlay == "1" && "$API" -ge 34 ]];then
+  ui_print "*********************************************"
+  ui_print "- 是否嵌入模块说明到设置内的平板专区？"
+  ui_print "- （可能与部分修改系统组件的模块有冲突，如冲突可卸载模块重新安装取消嵌入）"
+  ui_print "  音量+ ：是"
+  ui_print "  音量- ：否"
+  ui_print "*********************************************"
+  key_check
+  if [[ "$keycheck" == "KEY_VOLUMEUP" ]];then
+        if [[ ! -d $MODPATH"system/product/overlay/" ]]; then
+            /bin/mkdir -p $MODPATH"system/product/overlay/"
+        fi
+        /bin/cp -rf $MODPATH"/common/overlay/*" $MODPATH"system/product/overlay/"
+        ui_print "*********************************************"
+        ui_print "- 已嵌入模块说明到设置内的平板专区"
+        ui_print "- （可能与部分修改系统组件的模块有冲突，如冲突可卸载模块重新安装取消嵌入）"
+        ui_print "*********************************************"
+  fi
+fi
 
 
 # 生成自定义规则模板
