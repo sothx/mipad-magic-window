@@ -2,6 +2,9 @@
 # shellcheck disable=SC2034
 SKIPUNZIP=0
 . "$MODPATH"/util_functions.sh
+magisk_path=/data/adb/modules/
+module_id=$(grep_prop id $MODPATH/module.prop)
+module_versionCode=$(expr (grep_prop versionCode $MODPATH/module.prop) + 0)
 MODULE_CUSTOM_CONFIG_PATH="/data/adb/MIUI_MagicWindow+/"
 api_level_arch_detect
 if [[ "$KSU" == "true" ]]; then
@@ -67,6 +70,27 @@ if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" 
   add_props "persist.sys.stability.smartfocusio=on"
   ui_print "*********************************************"
 fi
+
+
+# if [[ ! -d $magisk_path$module_id || ( -d "$magisk_path$module_id" && $module_versionCode -ge 119008)   ]];then
+#   ui_print "*********************************************"
+#   ui_print "- 是否嵌入模块说明到设置内的平板专区？"
+#   ui_print "- （可能与部分修改系统组件的模块有冲突，如冲突可卸载模块重新安装取消嵌入）"
+#   ui_print "  音量+ ：是"
+#   ui_print "  音量- ：否"
+#   ui_print "*********************************************"
+#   key_check
+#   if [[ "$keycheck" == "KEY_VOLUMEUP" ]];then
+#     if [[ ! -d $MODPATH"system/product/overlay/" ]]; then
+#       /bin/mkdir -p $MODPATH"system/product/overlay/"
+#     fi
+#     /bin/cp -rf $MODPATH"/common/overlay/*" $MODPATH"system/product/overlay/"
+#     ui_print "*********************************************"
+#     ui_print "- 已嵌入模块说明到设置内的平板专区"
+#     ui_print "- （可能与部分修改系统组件的模块有冲突，如冲突可卸载模块重新安装取消嵌入）"
+#     ui_print "*********************************************"
+# fi
+
 
 # 生成自定义规则模板
 is_need_create_custom_config_template=1
