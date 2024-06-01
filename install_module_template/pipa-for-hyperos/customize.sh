@@ -87,7 +87,7 @@ if [[ "$API" -ge 34 ]];then
       is_need_settings_overlay=1
   fi
   #判断是否已启用overlay
-  if [[ -f $has_been_installed_module_overlay_apk_path && $module_versionCode -ge 119014  ]];then
+  if [[ -f $has_been_installed_module_overlay_apk_path && $has_been_installed_module_versionCode -ge 119014  ]];then
       is_need_settings_overlay=0
       if [[ ! -d $MODPATH"system/product/overlay/" ]]; then
           mkdir -p $MODPATH"/system/product/overlay/"
@@ -95,14 +95,14 @@ if [[ "$API" -ge 34 ]];then
       cp -f $common_overlay_apk_path $module_overlay_apk_path
       ui_print "*********************************************"
       ui_print "- 已自动嵌入模块优化说明到设置内的平板专区"
-      ui_print "- （可能与部分隐藏ROOT的模块有冲突，如冲突可卸载模块重新安装取消嵌入）"
+      ui_print "- （可能与部分隐藏ROOT的模块有冲突导致系统界面异常，如冲突可卸载模块重新安装取消嵌入）"
       ui_print "*********************************************"
   fi
   #展示提示
   if [[ $is_need_settings_overlay == "1" ]];then
     ui_print "*********************************************"
     ui_print "- 是否嵌入模块优化说明到平板专区？"
-    ui_print "- （可能与部分隐藏ROOT的模块有冲突，如冲突可卸载模块重新安装取消嵌入）"
+    ui_print "- （可能与部分隐藏ROOT的模块有冲突导致系统界面异常，如冲突可卸载模块重新安装取消嵌入）"
     ui_print "  音量+ ：是"
     ui_print "  音量- ：否"
     ui_print "*********************************************"
@@ -114,7 +114,7 @@ if [[ "$API" -ge 34 ]];then
           cp -f $common_overlay_apk_path $module_overlay_apk_path
           ui_print "*********************************************"
           ui_print "- 已嵌入模块优化说明到设置内的平板专区"
-          ui_print "- （可能与部分隐藏ROOT的模块有冲突，如冲突可卸载模块重新安装取消嵌入）"
+          ui_print "- （可能与部分隐藏ROOT的模块有冲突导致系统界面异常，如冲突可卸载模块重新安装取消嵌入）"
           ui_print "*********************************************"
     fi
   fi
