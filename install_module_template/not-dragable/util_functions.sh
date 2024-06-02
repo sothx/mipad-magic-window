@@ -39,8 +39,15 @@ set_perm_recursive() {
   done
 }
 
-
 fix_auth_manager() {
   # 修复权限管理服务
   cp -rf "$1"/common/FixAuthManager/** "$1"/
+}
+
+grep_prop() {
+  local REGEX="s/^$1=//p"
+  shift
+  local FILES=$@
+  [ -z "$FILES" ] && FILES='/system/build.prop'
+  cat $FILES 2>/dev/null | dos2unix | sed -n "$REGEX" | head -n 1
 }

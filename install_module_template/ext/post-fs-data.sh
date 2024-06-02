@@ -87,7 +87,7 @@ elif [[ "$API" -ge 31 ]]; then
   set_perm /data/system/cloudFeature_fixed_orientation_list.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止信箱模式配置文件被云控
   # 应用布局优化
   set_perm /data/system/cloudFeature_autoui_list.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置应用布局优化文件权限
-  cp -f "$MODDIR"/common/autoui_list.xml /data/system/cloudFeature_autoui_list.xml      # 替换应用布局优化配置列表
+  cp -f "$MODDIR"/common/autoui_list.xml /data/system/cloudFeature_autoui_list.xml                 # 替换应用布局优化配置列表
   set_perm /data/system/cloudFeature_autoui_list.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止应用布局优化配置文件被云控
   # 对云控文件写保护
   chattr +i /data/system/cloudFeature_embedded_rules_list.xml

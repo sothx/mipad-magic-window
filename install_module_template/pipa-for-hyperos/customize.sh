@@ -48,13 +48,12 @@ key_check() {
 
 # 初始化模块配置目录
 if [[ ! -d "$MODULE_CUSTOM_CONFIG_PATH" ]]; then
-   /bin/mkdir -p $MODULE_CUSTOM_CONFIG_PATH
-   if [[ ! -f "$MODULE_CUSTOM_CONFIG_PATH"config.prop ]];then
+  /bin/mkdir -p $MODULE_CUSTOM_CONFIG_PATH
+  if [[ ! -f "$MODULE_CUSTOM_CONFIG_PATH"config.prop ]]; then
     /bin/touch "$MODULE_CUSTOM_CONFIG_PATH"config.prop
     /bin/chmod 777 "$MODULE_CUSTOM_CONFIG_PATH"config.prop
-   fi
+  fi
 fi
-
 
 device_code="$(getprop ro.product.device)"
 device_soc_name="$(getprop ro.vendor.qti.soc_name)"
@@ -77,29 +76,29 @@ is_need_settings_overlay=0
 common_overlay_apk_path=$MODPATH"/common/overlay/MiPadSettingsSothxOverlay.apk"
 module_overlay_apk_path=$MODPATH"/system/product/overlay/MiPadSettingsSothxOverlay.apk"
 has_been_installed_module_overlay_apk_path=$magisk_path$module_id"/system/product/overlay/MiPadSettingsSothxOverlay.apk"
-if [[ "$API" -ge 34 ]];then
+if [[ "$API" -ge 34 ]]; then
   #判断首次安装
-  if [[ ! -d "$magisk_path$module_id" ]];then
-      is_need_settings_overlay=1
+  if [[ ! -d "$magisk_path$module_id" ]]; then
+    is_need_settings_overlay=1
   fi
   #判断老版本模块
-  if [[ $has_been_installed_module_versionCode -le 119013  ]];then
-      is_need_settings_overlay=1
+  if [[ $has_been_installed_module_versionCode -le 119013 ]]; then
+    is_need_settings_overlay=1
   fi
   #判断是否已启用overlay
-  if [[ -f $has_been_installed_module_overlay_apk_path && $has_been_installed_module_versionCode -ge 119014  ]];then
-      is_need_settings_overlay=0
-      if [[ ! -d $MODPATH"system/product/overlay/" ]]; then
-          mkdir -p $MODPATH"/system/product/overlay/"
-      fi
-      cp -f $common_overlay_apk_path $module_overlay_apk_path
-      ui_print "*********************************************"
-      ui_print "- 已自动嵌入模块优化说明到设置内的平板专区"
-      ui_print "- （可能与部分隐藏ROOT的模块有冲突导致系统界面异常，如冲突可卸载模块重新安装取消嵌入）"
-      ui_print "*********************************************"
+  if [[ -f $has_been_installed_module_overlay_apk_path && $has_been_installed_module_versionCode -ge 119014 ]]; then
+    is_need_settings_overlay=0
+    if [[ ! -d $MODPATH"system/product/overlay/" ]]; then
+      mkdir -p $MODPATH"/system/product/overlay/"
+    fi
+    cp -f $common_overlay_apk_path $module_overlay_apk_path
+    ui_print "*********************************************"
+    ui_print "- 已自动嵌入模块优化说明到设置内的平板专区"
+    ui_print "- （可能与部分隐藏ROOT的模块有冲突导致系统界面异常，如冲突可卸载模块重新安装取消嵌入）"
+    ui_print "*********************************************"
   fi
   #展示提示
-  if [[ $is_need_settings_overlay == "1" ]];then
+  if [[ $is_need_settings_overlay == "1" ]]; then
     ui_print "*********************************************"
     ui_print "- 是否嵌入模块优化说明到平板专区？"
     ui_print "- （可能与部分隐藏ROOT的模块有冲突导致系统界面异常，如冲突可卸载模块重新安装取消嵌入）"
@@ -107,25 +106,24 @@ if [[ "$API" -ge 34 ]];then
     ui_print "  音量- ：否"
     ui_print "*********************************************"
     key_check
-    if [[ "$keycheck" == "KEY_VOLUMEUP" ]];then
-          if [[ ! -d $MODPATH"system/product/overlay/" ]]; then
-              mkdir -p $MODPATH"/system/product/overlay/"
-          fi
-          cp -f $common_overlay_apk_path $module_overlay_apk_path
-          ui_print "*********************************************"
-          ui_print "- 已嵌入模块优化说明到设置内的平板专区"
-          ui_print "- （可能与部分隐藏ROOT的模块有冲突导致系统界面异常，如冲突可卸载模块重新安装取消嵌入）"
-          ui_print "*********************************************"
+    if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+      if [[ ! -d $MODPATH"system/product/overlay/" ]]; then
+        mkdir -p $MODPATH"/system/product/overlay/"
+      fi
+      cp -f $common_overlay_apk_path $module_overlay_apk_path
+      ui_print "*********************************************"
+      ui_print "- 已嵌入模块优化说明到设置内的平板专区"
+      ui_print "- （可能与部分隐藏ROOT的模块有冲突导致系统界面异常，如冲突可卸载模块重新安装取消嵌入）"
+      ui_print "*********************************************"
     fi
   fi
 
-
   # 生成自定义规则模板
   is_need_create_custom_config_template=1
-  if [[ $(grep_prop create_custom_config_template "$MODULE_CUSTOM_CONFIG_PATH"config.prop) == "0" ]];then
+  if [[ $(grep_prop create_custom_config_template "$MODULE_CUSTOM_CONFIG_PATH"config.prop) == "0" ]]; then
     is_need_create_custom_config_template=0
   fi
-  if [[ $is_need_create_custom_config_template == 1  ]];then
+  if [[ $is_need_create_custom_config_template == 1 ]]; then
     ui_print "*********************************************"
     ui_print "- 是否自动生成自定义规则模板？"
     ui_print "- [自定义规则使用文档]: https://hyper-magic-window.sothx.com/custom-config.html"
@@ -133,8 +131,8 @@ if [[ "$API" -ge 34 ]];then
     ui_print "  音量- ：否"
     ui_print "*********************************************"
     key_check
-    if [[ "$keycheck" == "KEY_VOLUMEUP" ]];then
-      if [[  !$(grep_prop create_custom_config_template "$MODULE_CUSTOM_CONFIG_PATH"config.prop) ]];then
+    if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+      if [[ !$(grep_prop create_custom_config_template "$MODULE_CUSTOM_CONFIG_PATH"config.prop) ]]; then
         printf "create_custom_config_template=0\n" >>"$MODULE_CUSTOM_CONFIG_PATH"config.prop
       fi
       if [[ ! -d $MODULE_CUSTOM_CONFIG_PATH"config/" ]]; then
@@ -149,7 +147,7 @@ if [[ "$API" -ge 34 ]];then
       ui_print "- [自定义规则使用文档]: https://hyper-magic-window.sothx.com/custom-config.html"
       ui_print "*********************************************"
     else
-      if [[  !$(grep_prop create_custom_config_template "$MODULE_CUSTOM_CONFIG_PATH"config.prop) ]];then
+      if [[ !$(grep_prop create_custom_config_template "$MODULE_CUSTOM_CONFIG_PATH"config.prop) ]]; then
         printf "create_custom_config_template=0\n" >>"$MODULE_CUSTOM_CONFIG_PATH"config.prop
       fi
       ui_print "*********************************************"
@@ -158,7 +156,6 @@ if [[ "$API" -ge 34 ]];then
     fi
   fi
 fi
-
 
 # # 修复权限管理服务
 # need_fix_auth_manager_pad_list="pipa liuqin yudi yunluo xun"
