@@ -46,6 +46,27 @@ key_check() {
   done
 }
 
+# 兼容V1.13.0之前老版本模块的覆盖更新
+if [[ -d "$magisk_path$module_id" && $has_been_installed_module_versionCode -le 11300 ]]; then
+  ui_print "*********************************************"
+  ui_print "- 您当前的模块版本过旧，无法安装，是否需要模块尝试为你卸载并重新安装？"
+  ui_print "- [重要提醒]:不保证100%兼容原作者模块，如果模块卸载并安装完成后无法正常工作，请尝试寻找原作者的[卸载模块]"。
+  ui_print "  音量+ ：是"
+  ui_print "  音量- ：否"
+  ui_print "*********************************************"
+  key_check
+  if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+    remove_old_verison_modules_config_file
+    ui_print "*********************************************"
+    ui_print "- 已尝试为你卸载旧模块，随后进入新版本模块的安装流程"
+    ui_print "*********************************************"
+  else
+    ui_print "*********************************************"
+    ui_print "- 请自行寻找合适的卸载方法，卸载旧版本模块后再尝试安装"
+    abort "*********************************************"
+  fi
+fi
+
 # 初始化模块配置目录
 if [[ ! -d "$MODULE_CUSTOM_CONFIG_PATH" ]]; then
   /bin/mkdir -p $MODULE_CUSTOM_CONFIG_PATH
@@ -114,7 +135,7 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
       cp -f $common_overlay_apk_path $module_overlay_apk_path
       ui_print "*********************************************"
       ui_print "- 已嵌入模块优化说明到[设置-平板专区]"
-    ui_print "- [重要提醒]:可能与部分隐藏Root、修改界面的模块有冲突导致系统界面异常，如冲突可卸载模块重新安装取消嵌入"
+      ui_print "- [重要提醒]:可能与部分隐藏Root、修改界面的模块有冲突导致系统界面异常，如冲突可卸载模块重新安装取消嵌入"
       ui_print "*********************************************"
     fi
   fi
