@@ -58,6 +58,7 @@ fi
 device_code="$(getprop ro.product.device)"
 device_soc_name="$(getprop ro.vendor.qti.soc_name)"
 device_soc_model="$(getprop ro.vendor.qti.soc_model)"
+device_characteristics="$(getprop ro.build.characteristics)"
 
 # 骁龙8+Gen1机型判断
 if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" -ge 33 ]]; then
@@ -76,7 +77,7 @@ is_need_settings_overlay=0
 common_overlay_apk_path=$MODPATH"/common/overlay/MiPadSettingsSothxOverlay.apk"
 module_overlay_apk_path=$MODPATH"/system/product/overlay/MiPadSettingsSothxOverlay.apk"
 has_been_installed_module_overlay_apk_path=$magisk_path$module_id"/system/product/overlay/MiPadSettingsSothxOverlay.apk"
-if [[ "$API" -ge 34 ]]; then
+if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
   #判断首次安装
   if [[ ! -d "$magisk_path$module_id" ]]; then
     is_need_settings_overlay=1
