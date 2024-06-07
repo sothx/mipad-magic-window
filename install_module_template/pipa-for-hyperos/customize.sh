@@ -46,25 +46,11 @@ key_check() {
   done
 }
 
-# 兼容V1.13.0之前老版本模块的覆盖更新
+# 不允许1.13.x之前的老版本模块覆盖更新
 if [[ -d "$magisk_path$module_id" && $has_been_installed_module_versionCode -le 11300 ]]; then
   ui_print "*********************************************"
-  ui_print "- 您当前的模块版本过旧，无法安装，是否需要模块尝试为你卸载并重新安装？"
-  ui_print "- [重要提醒]:不保证100%兼容原作者模块，如果模块卸载并安装完成后无法正常工作，请尝试寻找原作者的[卸载模块]"。
-  ui_print "  音量+ ：是"
-  ui_print "  音量- ：否"
-  ui_print "*********************************************"
-  key_check
-  if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
-    remove_old_verison_modules_config_file
-    ui_print "*********************************************"
-    ui_print "- 已尝试为你卸载旧模块，随后进入新版本模块的安装流程"
-    ui_print "*********************************************"
-  else
-    ui_print "*********************************************"
-    ui_print "- 请自行寻找合适的卸载方法，卸载旧版本模块后再尝试安装"
-    abort "*********************************************"
-  fi
+  ui_print "- 您当前的模块版本过旧，无法安装，请自行卸载老版本模块再尝试安装！！！"
+  abort "*********************************************"
 fi
 
 # 初始化模块配置目录
@@ -82,7 +68,81 @@ device_soc_model="$(getprop ro.vendor.qti.soc_model)"
 device_characteristics="$(getprop ro.build.characteristics)"
 
 # 骁龙8+Gen1机型判断
+is_need_smartfocusio=1
 if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" -ge 33 ]]; then
+  if [[ $(grep_prop smartfocusio "$MODULE_CUSTOM_CONFIG_PATH"config.prop) ]]; then
+    is_need_smartfocusio=$(grep_prop smartfocusio "$MODULE_CUSTOM_CONFIG_PATH"config.prop)
+  fi
+  if [[ $is_need_smartfocusio == 'on' ]]; then
+    ui_print "*********************************************"
+    ui_print "- 已开启智能IO调度(Android 14+ 生效)"
+    update_system_prop smartfocusio on "$MODULE_CUSTOM_CONFIG_PATH"config.prop
+    add_props "\n# 开启智能IO调度\n"
+    add_props "persist.sys.stability.smartfocusio=on"
+    ui_print "*********************************************"
+  else if [[ $is_need_smartfocusio == 'off' ]]; then
+    ui_print "*********************************************"
+    ui_print "- 已启用系统默认IO调度(Android 14+ 生效)"
+    update_system_prop smartfocusio off "$MODULE_CUSTOM_CONFIG_PATH"config.prop
+    add_props "\n# 开启系统默认IO调度\n"
+    add_props "persist.sys.stability.smartfocusio=off"
+    ui_print "*********************************************"
+  else
+    ui_print "*********************************************"
+    ui_print "- 检测到你的设备处理器属于骁龙8+Gen1"
+    ui_print "- 目前骁龙8+Gen1机型存在IO调度异常的问题，容易导致系统卡顿或者无响应，模块将自动为你配置合适的IO调度规则"
+    ui_print "- 是否启用智能IO调度？"
+    ui_print "  音量+ ：启用智能IO调度"
+    ui_print "  音量- ：启用系统默认IO调度"
+    ui_print "*********************************************"
+    key_check
+    if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+      ui_print "*********************************************"
+      ui_print "- 已开启智能IO调度(Android 14+ 生效)"
+      update_system_prop smartfocusio on "$MODULE_CUSTOM_CONFIG_PATH"config.prop
+      add_props "\n# 开启智能IO调度\n"
+      add_props "persist.sys.stability.smartfocusio=on"
+      ui_print "*********************************************"
+    else
+      ui_print "*********************************************"
+      ui_print "- 已开启智能IO调度(Android 14+ 生效)"
+      update_system_prop smartfocusio off "$MODULE_CUSTOM_CONFIG_PATH"config.prop
+      add_props "\n# 开启系统默认IO调度\n"
+      add_props "persist.sys.stability.smartfocusio=off"
+      ui_print "*********************************************"
+    fi
+  fi
+fi
+  if [[ $is_need_smartfocusio == 1 ]]; then
+    ui_print "*********************************************"
+    ui_print "- 检测到你的设备处理器属于骁龙8+Gen1"
+    ui_print "- 目前骁龙8+Gen1机型存在IO调度异常的问题，容易导致系统卡顿或者无响应，模块将自动为你配置合适的IO调度规则"
+    ui_print "- 是否启用智能IO调度？"
+    ui_print "  音量+ ：是"
+    ui_print "  音量- ：否"
+    ui_print "*********************************************"
+    key_check
+    if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+      update_system_prop smartfocusio 1 "$MODULE_CUSTOM_CONFIG_PATH"config.prop
+      if [[ ! -d $MODULE_CUSTOM_CONFIG_PATH"config/" ]]; then
+        /bin/mkdir -p "$MODULE_CUSTOM_CONFIG_PATH"config/
+      fi
+      /bin/cp -rf "$MODPATH"/common/template/* "$MODULE_CUSTOM_CONFIG_PATH"config/
+      /bin/chmod -R 777 "$MODULE_CUSTOM_CONFIG_PATH"config/
+      ui_print "*********************************************"
+      ui_print "- 已自动生成自定义规则模板"
+      ui_print "- 自定义规则路径位于"$MODULE_CUSTOM_CONFIG_PATH"config/"
+      ui_print "- 详细使用方式请阅读模块文档~"
+      ui_print "- [自定义规则使用文档]: https://hyper-magic-window.sothx.com/custom-config.html"
+      ui_print "*********************************************"
+    else
+      update_system_prop create_custom_config_template 0 "$MODULE_CUSTOM_CONFIG_PATH"config.prop
+      ui_print "*********************************************"
+      ui_print "- 你选择不自动生成自定义规则模板"
+      ui_print "*********************************************"
+    fi
+  fi
+fi
   ui_print "*********************************************"
   ui_print "- 检测到你的设备处理器属于骁龙8+Gen1"
   ui_print "- 目前骁龙8+Gen1机型存在IO调度异常的问题，容易导致系统卡顿或者无响应，模块将自动为你配置合适的IO调度规则"
@@ -154,9 +214,7 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
     ui_print "*********************************************"
     key_check
     if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
-      if [[ !$(grep_prop create_custom_config_template "$MODULE_CUSTOM_CONFIG_PATH"config.prop) ]]; then
-        printf "create_custom_config_template=0\n" >>"$MODULE_CUSTOM_CONFIG_PATH"config.prop
-      fi
+      update_system_prop create_custom_config_template 0 "$MODULE_CUSTOM_CONFIG_PATH"config.prop
       if [[ ! -d $MODULE_CUSTOM_CONFIG_PATH"config/" ]]; then
         /bin/mkdir -p "$MODULE_CUSTOM_CONFIG_PATH"config/
       fi
@@ -169,9 +227,7 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
       ui_print "- [自定义规则使用文档]: https://hyper-magic-window.sothx.com/custom-config.html"
       ui_print "*********************************************"
     else
-      if [[ !$(grep_prop create_custom_config_template "$MODULE_CUSTOM_CONFIG_PATH"config.prop) ]]; then
-        printf "create_custom_config_template=0\n" >>"$MODULE_CUSTOM_CONFIG_PATH"config.prop
-      fi
+      update_system_prop create_custom_config_template 0 "$MODULE_CUSTOM_CONFIG_PATH"config.prop
       ui_print "*********************************************"
       ui_print "- 你选择不自动生成自定义规则模板"
       ui_print "*********************************************"
