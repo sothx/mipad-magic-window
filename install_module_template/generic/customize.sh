@@ -26,7 +26,7 @@ fi
 # 基础函数
 add_props() {
   local line="$1"
-  printf "$line" >> "$MODPATH/system.prop"
+  printf "$line" >>"$MODPATH/system.prop"
 }
 
 key_check() {
@@ -72,49 +72,63 @@ device_characteristics="$(getprop ro.build.characteristics)"
 
 # 骁龙8+Gen1机型判断
 is_need_smartfocusio=1
-if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" -ge 33 ]]; then
+has_been_enabled_smartfocusio=0
+if [[ $(grep_prop persist.sys.stability.smartfocusio $magisk_path"mipad-programmable-completion/system.prop") ]]; then
+  has_been_enabled_smartfocusio=1
+fi
+if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" -ge 33 && $has_been_enabled_smartfocusio == 0 ]]; then
 
   if [[ $(grep_prop smartfocusio "$MODULE_CUSTOM_CONFIG_PATH/config.prop") ]]; then
     is_need_smartfocusio=$(grep_prop smartfocusio "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
   fi
-  
+
   if [[ $is_need_smartfocusio == 'on' ]]; then
     ui_print "*********************************************"
-    ui_print "- 已开启智能IO调度(Android 14+ 生效)"
+    ui_print "- 已开启智能I/O调度(Android 14+ 生效)"
     update_system_prop smartfocusio on "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
-    add_props "\n# 开启智能IO调度\n"
+    add_props "\n# 开启智能I/O调度\n"
     add_props "persist.sys.stability.smartfocusio=on"
     ui_print "*********************************************"
   elif [[ $is_need_smartfocusio == 'off' ]]; then
     ui_print "*********************************************"
-    ui_print "- 已启用系统默认IO调度(Android 14+ 生效)"
+    ui_print "- 已启用系统默认I/O调度(Android 14+ 生效)"
     update_system_prop smartfocusio off "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
-    add_props "\n# 开启系统默认IO调度\n"
+    add_props "\n# 开启系统默认I/O调度\n"
     add_props "persist.sys.stability.smartfocusio=off"
     ui_print "*********************************************"
   else
     ui_print "*********************************************"
     ui_print "- 检测到你的设备处理器属于骁龙8+Gen1"
-    ui_print "- 目前骁龙8+Gen1机型存在IO调度异常的问题，容易导致系统卡顿或者无响应，模块将自动为你配置合适的IO调度规则"
-    ui_print "- 是否启用智能IO调度？"
-    ui_print "  音量+ ：启用智能IO调度"
-    ui_print "  音量- ：启用系统默认IO调度"
+    ui_print "- 目前骁龙8+Gen1机型存在IO调度异常的问题，容易导致系统卡顿或者无响应，模块将自动为你配置合适的I/O调度规则"
+    ui_print "- 是否调整系统I/O调度？"
+    ui_print "  音量+ ：是"
+    ui_print "  音量- ：否"
     ui_print "*********************************************"
     key_check
     if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
       ui_print "*********************************************"
-      ui_print "- 已开启智能IO调度(Android 14+ 生效)"
-      update_system_prop smartfocusio on "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
-      add_props "\n# 开启智能IO调度\n"
-      add_props "persist.sys.stability.smartfocusio=on"
+      ui_print "- 请选择需要使用的系统I/O调度？"
+      ui_print "  音量+ ：启用智能I/O调度"
+      ui_print "  音量- ：启用系统默认I/O调度"
       ui_print "*********************************************"
+      key_check
+      if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+        ui_print "*********************************************"
+        ui_print "- 已开启智能I/O调度(Android 14+ 生效)"
+        update_system_prop smartfocusio on "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
+        add_props "\n# 开启智能I/O调度\n"
+        add_props "persist.sys.stability.smartfocusio=on"
+        ui_print "*********************************************"
+      else
+        ui_print "*********************************************"
+        ui_print "- 已启用系统默认I/O调度(Android 14+ 生效)"
+        update_system_prop smartfocusio off "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
+        add_props "\n# 开启系统默认I/O调度\n"
+        add_props "persist.sys.stability.smartfocusio=off"
+        ui_print "*********************************************"
+      fi
     else
-      ui_print "*********************************************"
-      ui_print "- 已启用系统默认IO调度(Android 14+ 生效)"
-      update_system_prop smartfocusio off "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
-      add_props "\n# 开启系统默认IO调度\n"
-      add_props "persist.sys.stability.smartfocusio=off"
-      ui_print "*********************************************"
+      ui_print "- 你选择不调整系统I/O调度"
     fi
   fi
 fi
@@ -143,14 +157,15 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
     cp -f "$common_overlay_apk_path" "$module_overlay_apk_path"
     ui_print "*********************************************"
     ui_print "- 已自动嵌入模块优化说明到[设置-平板专区]"
-    ui_print "- [重要提醒]:可能与部分隐藏Root、修改界面的模块有冲突导致系统界面异常，如冲突可卸载模块重新安装取消嵌入"
+    ui_print "- [重要提醒]:可能与部分隐藏Root、修改系统界面的模块不兼容导致系统界面异常，如不兼容可卸载模块重新安装取消嵌入"
     ui_print "*********************************************"
   fi
   # 展示提示
   if [[ $is_need_settings_overlay == "1" ]]; then
     ui_print "*********************************************"
     ui_print "- 是否嵌入模块优化说明到[设置-平板专区]？"
-    ui_print "- [重要提醒]:可能与部分隐藏Root、修改界面的模块有冲突导致系统界面异常，如冲突可卸载模块重新安装取消嵌入"
+    ui_print "- [重要提醒]:是否嵌入模块优化说明不会影响模块的实际使用，请自由选择"
+    ui_print "- [重要提醒]:可能与部分隐藏Root、修改系统界面的模块不兼容导致系统界面异常，如不兼容可卸载模块重新安装取消嵌入"
     ui_print "  音量+ ：是"
     ui_print "  音量- ：否"
     ui_print "*********************************************"
@@ -162,7 +177,7 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
       cp -f "$common_overlay_apk_path" "$module_overlay_apk_path"
       ui_print "*********************************************"
       ui_print "- 已嵌入模块优化说明到[设置-平板专区]"
-      ui_print "- [重要提醒]:可能与部分隐藏Root、修改界面的模块有冲突导致系统界面异常，如冲突可卸载模块重新安装取消嵌入"
+      ui_print "- [重要提醒]:可能与部分隐藏Root、修改系统界面的模块不兼容导致系统界面异常，如不兼容可卸载模块重新安装取消嵌入"
       ui_print "*********************************************"
     fi
   fi
