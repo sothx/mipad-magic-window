@@ -178,7 +178,7 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
     ui_print "*********************************************"
     ui_print "- 请选择嵌入模块优化说明到[设置-平板专区]的方式？"
     ui_print "  音量+ ：通过主题Overlay嵌入(推荐，仅默认主题生效)"
-    ui_print "  音量- ：通过系统Overlay嵌入(可能与部分模块不兼容导致系统界面异常)"
+    ui_print "  音量- ：通过应用Overlay嵌入(可能与部分模块不兼容导致系统界面异常)"
     ui_print "*********************************************"
     key_check
     if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
