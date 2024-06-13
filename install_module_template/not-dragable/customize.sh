@@ -148,19 +148,25 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
     is_need_settings_overlay=1
   fi
   # 判断老版本模块
-  if [[ $has_been_installed_module_versionCode -le 119026 ]]; then
+  if [[ $has_been_installed_module_versionCode -le 119028 ]]; then
     is_need_settings_overlay=1
   fi
   # 判断是否已启用overlay
-  if [[ $has_been_installed_module_versionCode -ge 119027 ]]; then
+  if [[ $has_been_installed_module_versionCode -ge 119029 ]]; then
     is_need_settings_overlay=0
     if [[ -f "$has_been_installed_module_overlay_apk_path" ]]; then
+      if [[ ! -d "$MODPATH/system/product/overlay/" ]]; then
+        mkdir -p "$MODPATH/system/product/overlay/"
+      fi
       cp -f "$common_overlay_apk_path" "$module_overlay_apk_path"
       ui_print "*********************************************"
       ui_print "- 已自动嵌入模块优化说明到[设置-平板专区]"
       ui_print "- [重要提醒]:可能与部分隐藏Root、修改系统界面的模块不兼容导致系统界面异常，如不兼容可卸载模块重新安装取消嵌入"
       ui_print "*********************************************"
     elif [[ -f "$has_been_installed_module_theme_overlay_path" ]]; then
+      if [[ ! -d "$MODPATH/system/product/media/theme/default/" ]]; then
+        mkdir -p "$MODPATH/system/product/media/theme/default/"
+      fi
       cp -f "$common_theme_overlay_path" "$module_theme_overlay_path"
       ui_print "*********************************************"
       ui_print "- 已自动嵌入模块优化说明到[设置-平板专区](仅默认主题生效)"
