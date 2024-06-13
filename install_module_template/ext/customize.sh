@@ -154,25 +154,23 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
   # 判断是否已启用overlay
   if [[ $has_been_installed_module_versionCode -ge 119027 ]]; then
     is_need_settings_overlay=0
-    if[[ -f "$has_been_installed_module_overlay_apk_path" ]];then
-        cp -f "$common_overlay_apk_path" "$module_overlay_apk_path"
-        ui_print "*********************************************"
-        ui_print "- 已自动嵌入模块优化说明到[设置-平板专区]"
-        ui_print "- [重要提醒]:可能与部分隐藏Root、修改系统界面的模块不兼容导致系统界面异常，如不兼容可卸载模块重新安装取消嵌入"
-        ui_print "*********************************************"
-    elif[[ -f "$has_been_installed_module_theme_overlay_path" ]];then
-        cp -f "$common_theme_overlay_path" "$module_theme_overlay_path"
-        ui_print "*********************************************"
-        ui_print "- 已自动嵌入模块优化说明到[设置-平板专区](仅默认主题生效)"
-        ui_print "*********************************************"
+    if [[ -f "$has_been_installed_module_overlay_apk_path" ]]; then
+      cp -f "$common_overlay_apk_path" "$module_overlay_apk_path"
+      ui_print "*********************************************"
+      ui_print "- 已自动嵌入模块优化说明到[设置-平板专区]"
+      ui_print "- [重要提醒]:可能与部分隐藏Root、修改系统界面的模块不兼容导致系统界面异常，如不兼容可卸载模块重新安装取消嵌入"
+      ui_print "*********************************************"
+    elif [[ -f "$has_been_installed_module_theme_overlay_path" ]]; then
+      cp -f "$common_theme_overlay_path" "$module_theme_overlay_path"
+      ui_print "*********************************************"
+      ui_print "- 已自动嵌入模块优化说明到[设置-平板专区](仅默认主题生效)"
+      ui_print "*********************************************"
     fi
   fi
   # 展示提示
   if [[ $is_need_settings_overlay == "1" ]]; then
     ui_print "*********************************************"
-    ui_print "- 是否嵌入模块优化说明到[设置-平板专区]？"
-    ui_print "- [重要提醒]:是否嵌入模块优化说明不会影响模块的实际使用，请自由选择"
-    ui_print "- [重要提醒]:可能与部分隐藏Root、修改系统界面的模块不兼容导致系统界面异常，如不兼容可卸载模块重新安装取消嵌入"
+    ui_print "- 请选择嵌入模块优化说明到[设置-平板专区]的方式？"
     ui_print "  音量+ ：通过主题Overlay嵌入(推荐，仅默认主题生效)"
     ui_print "  音量- ：通过系统Overlay嵌入(可能与部分模块不兼容导致系统界面异常)"
     ui_print "*********************************************"
@@ -182,6 +180,7 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
         mkdir -p "$MODPATH/system/product/media/theme/default/"
       fi
       cp -f "$common_theme_overlay_path" "$module_theme_overlay_path"
+      rm -rf
       ui_print "*********************************************"
       ui_print "- 已嵌入模块优化说明到[设置-平板专区](仅默认主题生效)"
       ui_print "*********************************************"
