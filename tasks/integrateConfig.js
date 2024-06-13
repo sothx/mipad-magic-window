@@ -146,6 +146,15 @@ function copyActivityEmbeddingOverlayToCommon(cb) {
 }
 
 /**
+ * 混入Android 12L 起的主题Overlay配置
+ */
+
+function copyActivityEmbeddingThemeOverlayToCommon(cb) {
+  return src(`${moduleSrc}/theme_overlay/*`)
+  .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/theme_overlay`)))
+}
+
+/**
  * 混入Android 12L 起的自定义规则模板
  */
 
@@ -155,4 +164,4 @@ function copyActivityEmbeddingCustomConfigTemplateToCommon(cb) {
 }
 
 
-module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig,copyMagicWindowCustomConfigTemplateToCommon),copyEmbeddedRuleListToCommon,copyFixedOrientationListToCommon,copyAutoUiListToCommon,copyActivityEmbeddingCustomConfigTemplateToCommon,copyActivityEmbeddingOverlayToCommon), cleanTemp)
+module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig,copyMagicWindowCustomConfigTemplateToCommon),copyEmbeddedRuleListToCommon,copyFixedOrientationListToCommon,copyAutoUiListToCommon,copyActivityEmbeddingCustomConfigTemplateToCommon,copyActivityEmbeddingOverlayToCommon,copyActivityEmbeddingThemeOverlayToCommon), cleanTemp)

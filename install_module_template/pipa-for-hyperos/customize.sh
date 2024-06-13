@@ -138,6 +138,9 @@ is_need_settings_overlay=0
 common_overlay_apk_path="$MODPATH/common/overlay/MiPadSettingsSothxOverlay.apk"
 module_overlay_apk_path="$MODPATH/system/product/overlay/MiPadSettingsSothxOverlay.apk"
 has_been_installed_module_overlay_apk_path="$magisk_path$module_id/system/product/overlay/MiPadSettingsSothxOverlay.apk"
+common_theme_overlay_path="$MODPATH/common/theme_overlay/com.android.settings"
+module_theme_overlay_path="$MODPATH/system/product/media/theme/default/com.android.settings"
+has_been_installed_module_theme_overlay_path="$magisk_path$module_id/system/product/media/theme/default/com.android.settings"
 
 if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
   # 判断首次安装
@@ -145,20 +148,24 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
     is_need_settings_overlay=1
   fi
   # 判断老版本模块
-  if [[ $has_been_installed_module_versionCode -le 119013 ]]; then
+  if [[ $has_been_installed_module_versionCode -le 119026 ]]; then
     is_need_settings_overlay=1
   fi
   # 判断是否已启用overlay
-  if [[ -f "$has_been_installed_module_overlay_apk_path" && $has_been_installed_module_versionCode -ge 119014 ]]; then
+  if [[ $has_been_installed_module_versionCode -ge 119027 ]]; then
     is_need_settings_overlay=0
-    if [[ ! -d "$MODPATH/system/product/overlay/" ]]; then
-      mkdir -p "$MODPATH/system/product/overlay/"
+    if[[ -f "$has_been_installed_module_overlay_apk_path" ]];then
+        cp -f "$common_overlay_apk_path" "$module_overlay_apk_path"
+        ui_print "*********************************************"
+        ui_print "- 已自动嵌入模块优化说明到[设置-平板专区]"
+        ui_print "- [重要提醒]:可能与部分隐藏Root、修改系统界面的模块不兼容导致系统界面异常，如不兼容可卸载模块重新安装取消嵌入"
+        ui_print "*********************************************"
+    elif[[ -f "$has_been_installed_module_theme_overlay_path" ]];then
+        cp -f "$common_theme_overlay_path" "$module_theme_overlay_path"
+        ui_print "*********************************************"
+        ui_print "- 已自动嵌入模块优化说明到[设置-平板专区](仅默认主题生效)"
+        ui_print "*********************************************"
     fi
-    cp -f "$common_overlay_apk_path" "$module_overlay_apk_path"
-    ui_print "*********************************************"
-    ui_print "- 已自动嵌入模块优化说明到[设置-平板专区]"
-    ui_print "- [重要提醒]:可能与部分隐藏Root、修改系统界面的模块不兼容导致系统界面异常，如不兼容可卸载模块重新安装取消嵌入"
-    ui_print "*********************************************"
   fi
   # 展示提示
   if [[ $is_need_settings_overlay == "1" ]]; then
@@ -166,11 +173,19 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
     ui_print "- 是否嵌入模块优化说明到[设置-平板专区]？"
     ui_print "- [重要提醒]:是否嵌入模块优化说明不会影响模块的实际使用，请自由选择"
     ui_print "- [重要提醒]:可能与部分隐藏Root、修改系统界面的模块不兼容导致系统界面异常，如不兼容可卸载模块重新安装取消嵌入"
-    ui_print "  音量+ ：是"
-    ui_print "  音量- ：否"
+    ui_print "  音量+ ：通过主题Overlay嵌入(推荐，仅默认主题生效)"
+    ui_print "  音量- ：通过系统Overlay嵌入(可能与部分模块不兼容导致系统界面异常)"
     ui_print "*********************************************"
     key_check
     if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+      if [[ ! -d "$MODPATH/system/product/media/theme/default/" ]]; then
+        mkdir -p "$MODPATH/system/product/media/theme/default/"
+      fi
+      cp -f "$common_theme_overlay_path" "$module_theme_overlay_path"
+      ui_print "*********************************************"
+      ui_print "- 已嵌入模块优化说明到[设置-平板专区](仅默认主题生效)"
+      ui_print "*********************************************"
+    else
       if [[ ! -d "$MODPATH/system/product/overlay/" ]]; then
         mkdir -p "$MODPATH/system/product/overlay/"
       fi
@@ -181,99 +196,40 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
       ui_print "*********************************************"
     fi
   fi
-
-  # 生成自定义规则模板
-  is_need_create_custom_config_template=1
-  if [[ $(grep_prop create_custom_config_template "$MODULE_CUSTOM_CONFIG_PATH/config.prop") == "0" ]]; then
-    is_need_create_custom_config_template=0
-  fi
-  if [[ $is_need_create_custom_config_template == 1 ]]; then
-    ui_print "*********************************************"
-    ui_print "- 是否自动生成自定义规则模板？"
-    ui_print "- [自定义规则使用文档]: https://hyper-magic-window.sothx.com/custom-config.html"
-    ui_print "  音量+ ：是"
-    ui_print "  音量- ：否"
-    ui_print "*********************************************"
-    key_check
-    if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
-      update_system_prop create_custom_config_template 0 "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
-      if [[ ! -d "$MODULE_CUSTOM_CONFIG_PATH/config/" ]]; then
-        /bin/mkdir -p "$MODULE_CUSTOM_CONFIG_PATH/config/"
-      fi
-      /bin/cp -rf "$MODPATH/common/template/"* "$MODULE_CUSTOM_CONFIG_PATH/config/"
-      /bin/chmod -R 777 "$MODULE_CUSTOM_CONFIG_PATH/config/"
-      ui_print "*********************************************"
-      ui_print "- 已自动生成自定义规则模板"
-      ui_print "- 自定义规则路径位于 $MODULE_CUSTOM_CONFIG_PATH/config/"
-      ui_print "- 详细使用方式请阅读模块文档~"
-      ui_print "- [自定义规则使用文档]: https://hyper-magic-window.sothx.com/custom-config.html"
-      ui_print "*********************************************"
-    else
-      update_system_prop create_custom_config_template 0 "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
-      ui_print "*********************************************"
-      ui_print "- 你选择不自动生成自定义规则模板"
-      ui_print "*********************************************"
-    fi
-  fi
 fi
 
-# # 修复权限管理服务
-# need_fix_auth_manager_pad_list="pipa liuqin yudi yunluo xun"
-# is_need_fix_auth_manager=0
-# for i in $need_fix_auth_manager_pad_list; do
-#   if [[ "$device_code" == "$i" ]]; then
-#     is_need_fix_auth_manager=1
-#     break
-#   fi
-# done
-# fixAuthManager=$(grep_prop fixAuthManager "$CUSTOM_CONFIG_MODULE_PROP_PATH/config.prop")
-# if [[ "$is_need_fix_auth_manager" == 1 && "$API" -eq 34  ]]; then
-#   # 未配置，提醒修复
-#   if [[ "$fixAuthManager" == "" ]]; then
-#     # 判断自定义config.prop是否存在，不存在则生成
-#     if [[ ! -f "$CUSTOM_CONFIG_MODULE_PROP_PATH" ]]; then
-#         /bin/mkdir -p "$CUSTOM_CONFIG_MODULE_PROP_PATH"
-#         /bin/touch "$CUSTOM_CONFIG_MODULE_PROP_PATH/config.prop"
-#         /bin/chmod 777 "$CUSTOM_CONFIG_MODULE_PROP_PATH/config.prop"
-#     fi
-#     ui_print "*********************************************"
-#     ui_print "- 是否修复权限管理服务"
-#     ui_print "- 可以解决部分机型出现权限请求弹窗会导致横竖屏错乱的问题"
-#     ui_print "- (Tips:请自备救砖模块，修复后可能存在卡米风险，仅官方ROM需要修复，移植包机型请选择\"否\")"
-#     ui_print "  音量+ ：是"
-#     ui_print "  音量- ：否"
-#     ui_print "*********************************************"
-#     key_check
-#     if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
-#       printf "fixAuthManager=on\n" >> "$CUSTOM_CONFIG_MODULE_PROP_PATH/config.prop"
-#       fix_auth_manager "$MODPATH"
-#       ui_print "*********************************************"
-#       ui_print "- 已修复权限管理服务，后续不会再提醒修复权限管理服务"
-#       ui_print "- 如需取消修复，请前往/data/adb/MIUI_MagicWindow+/config/config.prop文件下，将fixAuthManager整行删除并重新安装模块会再次提醒。"
-#       ui_print "*********************************************"
-#     else
-#       printf "fixAuthManager=off\n" >> "$CUSTOM_CONFIG_MODULE_PROP_PATH/config.prop"
-#       ui_print "*********************************************"
-#       ui_print "- 你选择不修复权限管理服务，后续不会再提醒修复权限管理服务"
-#       ui_print "- 如需再次提醒，请前往/data/adb/MIUI_MagicWindow+/config/config.prop文件下，将fixAuthManager整行删除并重新安装模块会再次提醒。"
-#       ui_print "*********************************************"
-#     fi
-#   fi
-#   # 已选择修复权限管理服务，自动修复
-#   if [[ "$fixAuthManager" == "on" ]]; then
-#     fix_auth_manager "$MODPATH"
-#     ui_print "*********************************************"
-#     ui_print "- 自动修复权限管理服务"
-#     ui_print "- 如需取消修复，请前往/data/adb/MIUI_MagicWindow+/config/config.prop文件下，将fixAuthManager整行删除并重新安装模块会再次提醒。"
-#     ui_print "*********************************************"
-#   fi
-#   # 已选择不修复权限管理服务，仅提醒
-#   if [[ "$fixAuthManager" == "off" ]]; then
-#     ui_print "*********************************************"
-#     ui_print "- 不修复权限管理服务"
-#     ui_print "- 如需再次提醒，请前往/data/adb/MIUI_MagicWindow+/config/config.prop文件下，将fixAuthManager整行删除并重新安装模块会再次提醒。"
-#     ui_print "*********************************************"
-#   fi
-# fi
+# 生成自定义规则模板
+is_need_create_custom_config_template=1
+if [[ $(grep_prop create_custom_config_template "$MODULE_CUSTOM_CONFIG_PATH/config.prop") == "0" ]]; then
+  is_need_create_custom_config_template=0
+fi
+if [[ $is_need_create_custom_config_template == 1 ]]; then
+  ui_print "*********************************************"
+  ui_print "- 是否自动生成自定义规则模板？"
+  ui_print "- [自定义规则使用文档]: https://hyper-magic-window.sothx.com/custom-config.html"
+  ui_print "  音量+ ：是"
+  ui_print "  音量- ：否"
+  ui_print "*********************************************"
+  key_check
+  if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+    update_system_prop create_custom_config_template 0 "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
+    if [[ ! -d "$MODULE_CUSTOM_CONFIG_PATH/config/" ]]; then
+      /bin/mkdir -p "$MODULE_CUSTOM_CONFIG_PATH/config/"
+    fi
+    /bin/cp -rf "$MODPATH/common/template/"* "$MODULE_CUSTOM_CONFIG_PATH/config/"
+    /bin/chmod -R 777 "$MODULE_CUSTOM_CONFIG_PATH/config/"
+    ui_print "*********************************************"
+    ui_print "- 已自动生成自定义规则模板"
+    ui_print "- 自定义规则路径位于 $MODULE_CUSTOM_CONFIG_PATH/config/"
+    ui_print "- 详细使用方式请阅读模块文档~"
+    ui_print "- [自定义规则使用文档]: https://hyper-magic-window.sothx.com/custom-config.html"
+    ui_print "*********************************************"
+  else
+    update_system_prop create_custom_config_template 0 "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
+    ui_print "*********************************************"
+    ui_print "- 你选择不自动生成自定义规则模板"
+    ui_print "*********************************************"
+  fi
+fi
 
 ui_print "- 好诶w，《HyperOS For Pad/Fold 完美横屏应用计划》安装/更新完成，重启系统后生效！"
