@@ -23,6 +23,10 @@ else
   fi
 fi
 
+# 重置缓存
+rm -rf /data/system/package_cache
+rm -rf /data/resource-cache
+
 # 基础函数
 add_props() {
   local line="$1"
