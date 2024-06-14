@@ -1,6 +1,9 @@
 ## 更新日志[测试版(Beta)]
 
-- 修复ROBLOX无法全屏的问题
+- 修复百度网盘预览PDF文件丢失全屏化的问题
+- 修复百度网盘部分情况下卡首屏的问题
+
+反馈Q群：277757185
 
 网易云音乐新版已自适配安卓平板，并且提供全新的Pad UI，模块规则同步为网易云音乐的官方规则，更新到新版后，无论是否开启网易云音乐的平行视界，均为横屏的适配体验。
 
@@ -13,7 +16,6 @@
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
 
-反馈Q群：205924955
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
