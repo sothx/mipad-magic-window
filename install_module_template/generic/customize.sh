@@ -152,35 +152,38 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
     is_need_settings_overlay=1
   fi
   # 判断老版本模块
-  if [[ $has_been_installed_module_versionCode -le 119033 ]]; then
+  if [[ $has_been_installed_module_versionCode -le 119035 ]]; then
     is_need_settings_overlay=1
   fi
   # 判断是否已启用overlay
-  if [[ $has_been_installed_module_versionCode -ge 119034 ]]; then
+  if [[ $has_been_installed_module_versionCode -ge 119036 ]]; then
     is_need_settings_overlay=0
     if [[ -f "$has_been_installed_module_overlay_apk_path" ]]; then
       if [[ ! -d "$MODPATH/system/product/overlay/" ]]; then
         mkdir -p "$MODPATH/system/product/overlay/"
       fi
+      rm -rf "$module_theme_overlay_path"
       cp -f "$common_overlay_apk_path" "$module_overlay_apk_path"
       ui_print "*********************************************"
       ui_print "- 已自动嵌入模块优化说明到[设置-平板专区]"
       ui_print "- [重要提醒]:可能与部分隐藏Root、修改系统界面的模块不兼容导致系统界面异常，如不兼容可卸载模块重新安装取消嵌入"
       ui_print "*********************************************"
-    elif [[ -f "$has_been_installed_module_theme_overlay_path" ]]; then
+    fi
+    if [[ -f "$has_been_installed_module_theme_overlay_path" ]]; then
       if [[ ! -d "$MODPATH/system/product/media/theme/default/" ]]; then
         mkdir -p "$MODPATH/system/product/media/theme/default/"
       fi
+      rm -rf "$module_overlay_apk_path"
       cp -f "$common_theme_overlay_path" "$module_theme_overlay_path"
       ui_print "*********************************************"
       ui_print "- 已自动嵌入模块优化说明到[设置-平板专区](仅默认主题生效)"
       ui_print "*********************************************"
     fi
   fi
-  # 展示提示
   if [[ $is_need_settings_overlay == "1" ]]; then
+    # 展示提示
     ui_print "*********************************************"
-    ui_print "- 是否嵌入模块优化说明到[设置-平板专区]？"
+    ui_print "- 是否嵌入模块优化说明到[设置-平板专区]?"
     ui_print "  音量+ ：是"
     ui_print "  音量- ：否"
     ui_print "*********************************************"
@@ -212,7 +215,9 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
         ui_print "*********************************************"
       fi
     else
-        ui_print "- 你选择不嵌入模块优化说明到[设置-平板专区]"
+      ui_print "*********************************************"
+      ui_print "- 你选择不嵌入模块优化说明到[设置-平板专区]"
+      ui_print "*********************************************"
     fi
   fi
 fi
