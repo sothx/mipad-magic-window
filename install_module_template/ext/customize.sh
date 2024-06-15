@@ -152,33 +152,30 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
     is_need_settings_overlay=1
   fi
   # 判断老版本模块
-  if [[ $has_been_installed_module_versionCode -le 119035 ]]; then
+  if [[ $has_been_installed_module_versionCode -le 119036 ]]; then
     is_need_settings_overlay=1
   fi
-  # 判断是否已启用overlay
-  if [[ $has_been_installed_module_versionCode -ge 119036 ]]; then
-    is_need_settings_overlay=0
-    if [[ -f "$has_been_installed_module_overlay_apk_path" ]]; then
-      if [[ ! -d "$MODPATH/system/product/overlay/" ]]; then
-        mkdir -p "$MODPATH/system/product/overlay/"
-      fi
-      rm -rf "$module_theme_overlay_path"
-      cp -f "$common_overlay_apk_path" "$module_overlay_apk_path"
-      ui_print "*********************************************"
-      ui_print "- 已自动嵌入模块优化说明到[设置-平板专区]"
-      ui_print "- [重要提醒]:可能与部分隐藏Root、修改系统界面的模块不兼容导致系统界面异常，如不兼容可卸载模块重新安装取消嵌入"
-      ui_print "*********************************************"
+  # 判断已启用overlay
+  if [[ -f "$has_been_installed_module_overlay_apk_path" && $is_need_settings_overlay == '0' ]]; then
+    if [[ ! -d "$MODPATH/system/product/overlay/" ]]; then
+      mkdir -p "$MODPATH/system/product/overlay/"
     fi
-    if [[ -f "$has_been_installed_module_theme_overlay_path" ]]; then
-      if [[ ! -d "$MODPATH/system/product/media/theme/default/" ]]; then
-        mkdir -p "$MODPATH/system/product/media/theme/default/"
-      fi
-      rm -rf "$module_overlay_apk_path"
-      cp -f "$common_theme_overlay_path" "$module_theme_overlay_path"
-      ui_print "*********************************************"
-      ui_print "- 已自动嵌入模块优化说明到[设置-平板专区](仅默认主题生效)"
-      ui_print "*********************************************"
+    rm -rf "$module_theme_overlay_path"
+    cp -f "$common_overlay_apk_path" "$module_overlay_apk_path"
+    ui_print "*********************************************"
+    ui_print "- 已自动嵌入模块优化说明到[设置-平板专区]"
+    ui_print "- [重要提醒]:可能与部分隐藏Root、修改系统界面的模块不兼容导致系统界面异常，如不兼容可卸载模块重新安装取消嵌入"
+    ui_print "*********************************************"
+  fi
+  if [[ -f "$has_been_installed_module_theme_overlay_path" && $is_need_settings_overlay == '0' ]]; then
+    if [[ ! -d "$MODPATH/system/product/media/theme/default/" ]]; then
+      mkdir -p "$MODPATH/system/product/media/theme/default/"
     fi
+    rm -rf "$module_overlay_apk_path"
+    cp -f "$common_theme_overlay_path" "$module_theme_overlay_path"
+    ui_print "*********************************************"
+    ui_print "- 已自动嵌入模块优化说明到[设置-平板专区](仅默认主题生效)"
+    ui_print "*********************************************"
   fi
   if [[ $is_need_settings_overlay == "1" ]]; then
     # 展示提示
@@ -220,6 +217,56 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
       ui_print "*********************************************"
     fi
   fi
+fi
+
+has_been_enabled_game_mode=$(grep_prop miui_appcompat_enable "$magisk_path$module_id/module.prop")
+is_need_show_game_mode_select=0
+# 游戏显示布局
+if [[ "$API" -ge 33 ]]; then
+  # 判断首次安装
+  if [[ ! -d "$magisk_path$module_id" ]]; then
+    is_need_show_game_mode_select=1
+  fi
+  # 判断老版本模块
+  if [[ $has_been_installed_module_versionCode -le 119038 ]]; then
+    is_need_show_game_mode_select=1
+  fi
+  # 判断已开启游戏显示布局
+  if [[ $has_been_enabled_game_mode == 'true' ]]; then
+    ui_print "*********************************************"
+    ui_print "- 已开启游戏显示布局(仅游戏加速内的游戏生效)，是否支持以实际机型底层适配为准"
+    ui_print "- 详细使用方式请阅读模块文档~"
+    ui_print "- [游戏显示布局使用文档]: https://hyper-magic-window.sothx.com/game-mode.html"
+    add_props "# 开启游戏显示布局"
+    add_props "ro.config.miui_compat_enable=true"
+    add_props "ro.config.miui_appcompat_enable=true"
+    ui_print "*********************************************"
+  fi
+  # 展示游戏显示布局选择器
+  if [[ $is_need_show_game_mode_select == '1' ]]; then
+    ui_print "*********************************************"
+    ui_print "- 是否开启游戏显示布局(仅游戏加速内的游戏生效)"
+    ui_print "- [游戏显示布局使用文档]: https://hyper-magic-window.sothx.com/game-mode.html"
+    ui_print "  音量+ ：是"
+    ui_print "  音量- ：否"
+    ui_print "*********************************************"
+    key_check
+    if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+      ui_print "*********************************************"
+      ui_print "- 已开启游戏显示布局(仅游戏加速内的游戏生效)，是否支持以实际机型底层适配为准"
+      ui_print "- 详细使用方式请阅读模块文档~"
+      ui_print "- [游戏显示布局使用文档]: https://hyper-magic-window.sothx.com/game-mode.html"
+      add_props "# 开启游戏显示布局"
+      add_props "ro.config.miui_compat_enable=true"
+      add_props "ro.config.miui_appcompat_enable=true"
+      ui_print "*********************************************"
+    else
+      ui_print "*********************************************"
+      ui_print "- 你选择不开启游戏显示布局"
+      ui_print "*********************************************"
+    fi
+  fi
+
 fi
 
 # 生成自定义规则模板
