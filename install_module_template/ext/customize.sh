@@ -30,7 +30,7 @@ rm -rf /data/resource-cache
 # 基础函数
 add_props() {
   local line="$1"
-  echo "$line" >>"$MODPATH"/system.prop
+  printf "\n$line" >>"$MODPATH"/system.prop
 }
 
 key_check() {
@@ -219,7 +219,7 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
   fi
 fi
 
-has_been_enabled_game_mode=$(grep_prop miui_appcompat_enable "$magisk_path$module_id/module.prop")
+has_been_enabled_game_mode=$(grep_prop ro.config.miui_appcompat_enable "$magisk_path$module_id/system.prop")
 is_need_show_game_mode_select=0
 # 游戏显示布局
 if [[ "$API" -ge 33 ]]; then
@@ -228,11 +228,11 @@ if [[ "$API" -ge 33 ]]; then
     is_need_show_game_mode_select=1
   fi
   # 判断老版本模块
-  if [[ $has_been_installed_module_versionCode -le 119038 ]]; then
+  if [[ $has_been_installed_module_versionCode -le 119041 ]]; then
     is_need_show_game_mode_select=1
   fi
   # 判断已开启游戏显示布局
-  if [[ $has_been_enabled_game_mode == 'true' ]]; then
+  if [[ $has_been_enabled_game_mode == 'true' && $is_need_show_game_mode_select == "0" ]]; then
     ui_print "*********************************************"
     ui_print "- 已开启游戏显示布局(仅游戏加速内的游戏生效)，是否支持以实际机型底层适配为准"
     ui_print "- 详细使用方式请阅读模块文档~"

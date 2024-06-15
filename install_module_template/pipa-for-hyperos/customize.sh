@@ -30,7 +30,7 @@ rm -rf /data/resource-cache
 # 基础函数
 add_props() {
   local line="$1"
-  printf "$line" >>"$MODPATH/system.prop"
+  printf "\n$line" >>"$MODPATH"/system.prop
 }
 
 key_check() {
@@ -90,14 +90,14 @@ if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" 
     ui_print "*********************************************"
     ui_print "- 已开启智能I/O调度(Android 14+ 生效)"
     update_system_prop smartfocusio on "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
-    add_props "\n# 开启智能I/O调度\n"
+    add_props "# 开启智能I/O调度"
     add_props "persist.sys.stability.smartfocusio=on"
     ui_print "*********************************************"
   elif [[ $is_need_smartfocusio == 'off' ]]; then
     ui_print "*********************************************"
     ui_print "- 已启用系统默认I/O调度(Android 14+ 生效)"
     update_system_prop smartfocusio off "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
-    add_props "\n# 开启系统默认I/O调度\n"
+    add_props "# 开启系统默认I/O调度"
     add_props "persist.sys.stability.smartfocusio=off"
     ui_print "*********************************************"
   else
@@ -120,14 +120,14 @@ if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" 
         ui_print "*********************************************"
         ui_print "- 已开启智能I/O调度(Android 14+ 生效)"
         update_system_prop smartfocusio on "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
-        add_props "\n# 开启智能I/O调度\n"
+        add_props "# 开启智能I/O调度"
         add_props "persist.sys.stability.smartfocusio=on"
         ui_print "*********************************************"
       else
         ui_print "*********************************************"
         ui_print "- 已启用系统默认I/O调度(Android 14+ 生效)"
         update_system_prop smartfocusio off "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
-        add_props "\n# 开启系统默认I/O调度\n"
+        add_props "# 开启系统默认I/O调度"
         add_props "persist.sys.stability.smartfocusio=off"
         ui_print "*********************************************"
       fi
@@ -219,7 +219,7 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
   fi
 fi
 
-has_been_enabled_game_mode=$(grep_prop miui_appcompat_enable "$magisk_path$module_id/module.prop")
+has_been_enabled_game_mode=$(grep_prop ro.config.miui_appcompat_enable "$magisk_path$module_id/system.prop")
 is_need_show_game_mode_select=0
 # 游戏显示布局
 if [[ "$API" -ge 33 ]]; then
@@ -228,11 +228,11 @@ if [[ "$API" -ge 33 ]]; then
     is_need_show_game_mode_select=1
   fi
   # 判断老版本模块
-  if [[ $has_been_installed_module_versionCode -le 119038 ]]; then
+  if [[ $has_been_installed_module_versionCode -le 119041 ]]; then
     is_need_show_game_mode_select=1
   fi
   # 判断已开启游戏显示布局
-  if [[ $has_been_enabled_game_mode == 'true' ]]; then
+  if [[ $has_been_enabled_game_mode == 'true' && $is_need_show_game_mode_select == "0" ]]; then
     ui_print "*********************************************"
     ui_print "- 已开启游戏显示布局(仅游戏加速内的游戏生效)，是否支持以实际机型底层适配为准"
     ui_print "- 详细使用方式请阅读模块文档~"
