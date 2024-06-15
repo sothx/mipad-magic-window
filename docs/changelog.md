@@ -1,24 +1,15 @@
 ## 更新日志-测试版(Beta)
 
-- 修复部分情况下百度网盘预览PDF文件丢失全屏化的问题
+- 游戏显示布局支持在模块安装时选择是否启用
 
 处于测试版(Beta)的模块存在不稳定性，可能存在异常BUG，如遇问题可反馈，反馈Q群：277757185
-
-网易云音乐新版已自适配安卓平板，并且提供全新的Pad UI，模块规则同步为网易云音乐的官方规则，更新到新版后，无论是否开启网易云音乐的平行视界，均为横屏的适配体验。
-
-新版网易云音乐安装包自取：
-（内含视频教程，用了模块的无需rotation）
-链接:  [https://caiyun.139.com/m/i?135Ce34152lbA](https://caiyun.139.com/m/i?135Ce34152lbA)
-
-如果需要QQ音乐的应用布局优化，请搭配QQ音乐13.5.0.8的老版本客户端和对应的自定义规则，详细说明可以参考自定义规则页面：
-
-自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
-
 
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
+
+游戏显示布局:[https://hyper-magic-window.sothx.com/game-mode.html](https://hyper-magic-window.sothx.com/game-mode.html)
 
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
 
