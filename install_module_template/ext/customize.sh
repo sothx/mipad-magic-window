@@ -30,7 +30,7 @@ rm -rf /data/resource-cache
 # 基础函数
 add_props() {
   local line="$1"
-  printf "$line" >>"$MODPATH/system.prop"
+  echo "$line" >>"$MODPATH"/system.prop
 }
 
 key_check() {
@@ -90,14 +90,14 @@ if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" 
     ui_print "*********************************************"
     ui_print "- 已开启智能I/O调度(Android 14+ 生效)"
     update_system_prop smartfocusio on "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
-    add_props "\n# 开启智能I/O调度\n"
+    add_props "# 开启智能I/O调度"
     add_props "persist.sys.stability.smartfocusio=on"
     ui_print "*********************************************"
   elif [[ $is_need_smartfocusio == 'off' ]]; then
     ui_print "*********************************************"
     ui_print "- 已启用系统默认I/O调度(Android 14+ 生效)"
     update_system_prop smartfocusio off "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
-    add_props "\n# 开启系统默认I/O调度\n"
+    add_props "# 开启系统默认I/O调度"
     add_props "persist.sys.stability.smartfocusio=off"
     ui_print "*********************************************"
   else
@@ -120,14 +120,14 @@ if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" 
         ui_print "*********************************************"
         ui_print "- 已开启智能I/O调度(Android 14+ 生效)"
         update_system_prop smartfocusio on "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
-        add_props "\n# 开启智能I/O调度\n"
+        add_props "# 开启智能I/O调度"
         add_props "persist.sys.stability.smartfocusio=on"
         ui_print "*********************************************"
       else
         ui_print "*********************************************"
         ui_print "- 已启用系统默认I/O调度(Android 14+ 生效)"
         update_system_prop smartfocusio off "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
-        add_props "\n# 开启系统默认I/O调度\n"
+        add_props "# 开启系统默认I/O调度"
         add_props "persist.sys.stability.smartfocusio=off"
         ui_print "*********************************************"
       fi
