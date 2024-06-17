@@ -1,3 +1,5 @@
 # 这个文件将被 resetprop 读取
 # 示例: 改变 dpi
 # ro.sf.lcd_density=320
+# 开启应用布局优化
+persist.miui.auto_ui_enable=true
