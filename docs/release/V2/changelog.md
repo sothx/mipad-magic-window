@@ -1,9 +1,8 @@
-## 更新日志-测试版(Beta)
+## 更新日志-正式版(standard)
 
-- 游戏显示布局支持在模块安装时选择是否启用
+- 将2345浏览器的适配规则调整为强制横屏
 
-处于测试版(Beta)的模块存在不稳定性，可能存在异常BUG，如遇问题可反馈，反馈Q群：277757185
-
+如果是处于测试版(Beta)的模块，可能存在不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
