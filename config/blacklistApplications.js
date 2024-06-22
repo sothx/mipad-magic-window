@@ -77,6 +77,21 @@ const fullScreenList = {
   'com.mubu.app': true, //幕布
   'chuxin.shimo.shimowendang': true, // 石墨文档
   'com.roblox.client': true, // ROBLOX
+  'com.netease.cloudmusic': true, // 网易云音乐
+  'com.netease.mc.mi': true,// 网易我的世界
+  'com.netease.x19': true,// 网易我的世界
+  'com.netease.mc.huawei': true,// 网易我的世界
+  'com.netease.mc.vivo': true,// 网易我的世界
+  'com.netease.mc.oppo': true,// 网易我的世界
+  'com.netease.mc.honor': true,// 网易我的世界
+  'com.netease.mc.bilibili': true,// 网易我的世界
+  'com.netease.mc.nearme.gamecenter': true,// 网易我的世界
+  'com.netease.mc.aligames': true,// 网易我的世界
+  'com.netease.mc.lenovo': true,// 网易我的世界
+  'com.netease.mc.meta': true,// 网易我的世界
+  'com.netease.mc.baidu': true,// 网易我的世界
+  'com.netease.mc': true// 网易我的世界
+
 }
 
 /**
