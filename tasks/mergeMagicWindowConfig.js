@@ -68,7 +68,7 @@ function getOPPOMagicWindowConfigData() {
     .pipe(gulpIf(isUseOPPOConfig, gulpXML({
       callback: function (result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml');
-        const elementsWithAttribute = doc.getElementsByTagName('a');
+        const elementsWithAttribute = doc.getElementsByTagName('c');
         for (let i = 0; i < elementsWithAttribute.length; i++) {
           const attrs = elementsWithAttribute[i].attributes;
           const currentAttrName = elementsWithAttribute[i].getAttribute('package_name')
@@ -270,9 +270,10 @@ function mergeToActivityEmbeddingConfig() {
           // 1001: 平行视界
           if (value.window_mode === '1' || value.window_mode === '2') {
             // 左右滑动条
-            if (value.is_dragable === 'true') {
-              newElement.setAttribute('isShowDivider', 'true')
-            }
+            // if (value.is_dragable === 'true') {
+            //   newElement.setAttribute('isShowDivider', 'true')
+            // }
+            newElement.setAttribute('isShowDivider', 'true')
             // 缩放
             if (value.is_scaled === 'true') {
               newElement.setAttribute('scaleMode', '1')
