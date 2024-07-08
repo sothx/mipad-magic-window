@@ -90,8 +90,7 @@ const fullScreenList = {
   'com.netease.mc.lenovo': true,// 网易我的世界
   'com.netease.mc.meta': true,// 网易我的世界
   'com.netease.mc.baidu': true,// 网易我的世界
-  'com.netease.mc': true// 网易我的世界
-
+  'com.netease.mc': true,// 网易我的世界
 }
 
 /**

@@ -8,6 +8,8 @@ const DOMParser = require('xmldom').DOMParser;
 const XMLSerializer = require('xmldom').XMLSerializer;
 const fs = require('fs');
 const blacklistApplicationsList = require('../config/blacklistApplications');
+const through = require('through2');
+const _ = require('lodash')
 
 let hwConfigStack = {}
 
@@ -64,37 +66,30 @@ function getHwMagicWindowConfigData() {
  * 获取OPPO的平行视界规则
  */
 function getOPPOMagicWindowConfigData() {
-  return src('input_merge_config/oppo_magicwindow_config/sys_fantasy_window_managed.xml') // 指定XML文件的路径
-    .pipe(gulpIf(isUseOPPOConfig, gulpXML({
-      callback: function (result) {
-        const doc = new DOMParser().parseFromString(result, 'text/xml');
-        const elementsWithAttribute = doc.getElementsByTagName('c');
-        for (let i = 0; i < elementsWithAttribute.length; i++) {
-          const attrs = elementsWithAttribute[i].attributes;
-          const currentAttrName = elementsWithAttribute[i].getAttribute('package_name')
-          if (currentAttrName && !blacklistApplicationsList[currentAttrName]) {
-            OPPOConfigStack[currentAttrName] = {}
-            for (var j = attrs.length - 1; j >= 0; j--) {
-              if (attrs[j].name === 'custom_config_body') {
-                const currentConfigBody = attrs[j].value.replace(/\\/g, '').replace(/\^/g, '"')
-                try {
-                  const parseCurrentConfigBody = JSON.parse(currentConfigBody)
-                  for (const [cbKey, cbValue] of Object.entries(parseCurrentConfigBody)) {
-                    OPPOConfigStack[currentAttrName][cbKey] = cbValue
-                  }
-                } catch (e) {
-                  console.warn(`${currentAttrName}发生JSON错误，请检查！`)
-                  OPPOConfigStack[currentAttrName]['custom_config_body'] = currentConfigBody
-                }
-              } else {
-                OPPOConfigStack[currentAttrName][attrs[j].name] = attrs[j].value
-              }
-            }
-          }
+  return src('input_merge_config/oppo_magicwindow_config/t_config.json') // 指定XML文件的路径
+  .pipe(through.obj((file, enc, cb) => {
+    const json = JSON.parse(file.contents.toString());
+    const filterMagicWindowData = json.map((item) => {
+      if(item.custom_config_body && Object.keys(item.custom_config_body).length) {
+        for (const [customConfigKey, customConfigValue] of Object.entries(item.custom_config_body)) {
+          item[customConfigKey] = customConfigValue
         }
-        return JSON.stringify(OPPOConfigStack)
+        delete item.custom_config_body
       }
-    })))
+      if(item.config && Object.keys(item.config).length) {
+        for (const [configKey, configValue] of Object.entries(item.config)) {
+          item[configKey] = configValue
+        }
+        delete item.config
+      }
+      return item;
+    }).filter((item) => {
+      return item.use_function === 'magicwindow' && !blacklistApplicationsList[item.package_name]
+    })
+    OPPOConfigStack = _.keyBy(filterMagicWindowData,'package_name')
+    file.contents = Buffer.from(JSON.stringify(OPPOConfigStack));
+    cb(null, file);
+  }))
     .pipe(gulpIf(isUseOPPOConfig, gulpRename('oppo_magicwindow_config.json')))
     .pipe(gulpIf(isUseOPPOConfig, dest('output_temp/json/')))
 }
@@ -103,37 +98,30 @@ function getOPPOMagicWindowConfigData() {
  * 获取OPPO的信箱模式规则
  */
 function getOPPOCompactWindowConfigData() {
-  return src('input_merge_config/oppo_magicwindow_config/sys_compact_window_managed.xml') // 指定XML文件的路径
-    .pipe(gulpIf(isUseOPPOConfig, gulpXML({
-      callback: function (result) {
-        const doc = new DOMParser().parseFromString(result, 'text/xml');
-        const elementsWithAttribute = doc.getElementsByTagName('c');
-        for (let i = 0; i < elementsWithAttribute.length; i++) {
-          const attrs = elementsWithAttribute[i].attributes;
-          const currentAttrName = elementsWithAttribute[i].getAttribute('package_name')
-          if (currentAttrName && !blacklistApplicationsList[currentAttrName]) {
-            OPPOConfigStack[currentAttrName] = {}
-            for (var j = attrs.length - 1; j >= 0; j--) {
-              if (attrs[j].name === 'custom_config_body') {
-                const currentConfigBody = attrs[j].value.replace(/\\/g, '').replace(/\^/g, '"')
-                try {
-                  const parseCurrentConfigBody = JSON.parse(currentConfigBody)
-                  for (const [cbKey, cbValue] of Object.entries(parseCurrentConfigBody)) {
-                    OPPOConfigStack[currentAttrName][cbKey] = cbValue
-                  }
-                } catch (e) {
-                  console.warn(`${currentAttrName}发生JSON错误，请检查！`)
-                  OPPOConfigStack[currentAttrName]['custom_config_body'] = currentConfigBody
-                }
-              } else {
-                OPPOConfigStack[currentAttrName][attrs[j].name] = attrs[j].value
-              }
-            }
-          }
+  return src('input_merge_config/oppo_magicwindow_config/t_config.json') // 指定XML文件的路径
+  .pipe(through.obj((file, enc, cb) => {
+    const json = JSON.parse(file.contents.toString());
+    const filterMagicWindowData = json.map((item) => {
+      if(item.custom_config_body && Object.keys(item.custom_config_body).length) {
+        for (const [customConfigKey, customConfigValue] of Object.entries(item.custom_config_body)) {
+          item[customConfigKey] = customConfigValue
         }
-        return JSON.stringify(OPPOConfigStack)
+        delete item.custom_config_body
       }
-    })))
+      if(item.config && Object.keys(item.config).length) {
+        for (const [configKey, configValue] of Object.entries(item.config)) {
+          item[configKey] = configValue
+        }
+        delete item.config
+      }
+      return item;
+    }).filter((item) => {
+      return item.use_function === 'compactwindow' && !blacklistApplicationsList[item.package_name]
+    })
+    OPPOConfigStack = _.keyBy(filterMagicWindowData,'package_name')
+    file.contents = Buffer.from(JSON.stringify(OPPOConfigStack));
+    cb(null, file);
+  }))
     .pipe(gulpIf(isUseOPPOConfig, gulpRename('oppo_compact_window_config.json')))
     .pipe(gulpIf(isUseOPPOConfig, dest('output_temp/json/')))
 }
