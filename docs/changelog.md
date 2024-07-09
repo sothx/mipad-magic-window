@@ -1,4 +1,4 @@
-## 更新日志-测试版(Beta)
+## 更新日志-正式版(standard)
 
 - 华图在线适配为强制横屏
 - 地铁跑酷适配为强制横屏(com.kiloo.subwaysurf/com.kiloo.subwaysurf.gw)
