@@ -139,9 +139,9 @@ fi
 
 # 嵌入模块优化说明
 is_need_settings_overlay=0
-common_overlay_apk_path="$MODPATH/common/overlay/MiPadSettingsSothxOverlay.apk"
-module_overlay_apk_path="$MODPATH/system/product/overlay/MiPadSettingsSothxOverlay.apk"
-has_been_installed_module_overlay_apk_path="$magisk_path$module_id/system/product/overlay/MiPadSettingsSothxOverlay.apk"
+# common_overlay_apk_path="$MODPATH/common/overlay/MiPadSettingsSothxOverlay.apk"
+# module_overlay_apk_path="$MODPATH/system/product/overlay/MiPadSettingsSothxOverlay.apk"
+# has_been_installed_module_overlay_apk_path="$magisk_path$module_id/system/product/overlay/MiPadSettingsSothxOverlay.apk"
 common_theme_overlay_path="$MODPATH/common/theme_overlay/com.android.settings"
 module_theme_overlay_path="$MODPATH/system/product/media/theme/default/com.android.settings"
 has_been_installed_module_theme_overlay_path="$magisk_path$module_id/system/product/media/theme/default/com.android.settings"
@@ -156,17 +156,6 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
     is_need_settings_overlay=1
   fi
   # 判断已启用overlay
-  if [[ -f "$has_been_installed_module_overlay_apk_path" && $is_need_settings_overlay == '0' ]]; then
-    if [[ ! -d "$MODPATH/system/product/overlay/" ]]; then
-      mkdir -p "$MODPATH/system/product/overlay/"
-    fi
-    rm -rf "$module_theme_overlay_path"
-    cp -f "$common_overlay_apk_path" "$module_overlay_apk_path"
-    ui_print "*********************************************"
-    ui_print "- 已自动嵌入模块优化说明到[设置-平板专区]"
-    ui_print "- [重要提醒]:可能与部分隐藏Root、修改系统界面的模块不兼容导致系统界面异常，如不兼容可卸载模块重新安装取消嵌入"
-    ui_print "*********************************************"
-  fi
   if [[ -f "$has_been_installed_module_theme_overlay_path" && $is_need_settings_overlay == '0' ]]; then
     if [[ ! -d "$MODPATH/system/product/media/theme/default/" ]]; then
       mkdir -p "$MODPATH/system/product/media/theme/default/"
@@ -186,13 +175,6 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
     ui_print "*********************************************"
     key_check
     if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
-      ui_print "*********************************************"
-      ui_print "- 请选择嵌入模块优化说明到[设置-平板专区]的方式？"
-      ui_print "  音量+ ：通过主题Overlay嵌入(推荐，仅默认主题生效)"
-      ui_print "  音量- ：通过应用Overlay嵌入(可能与部分模块不兼容导致系统界面异常)"
-      ui_print "*********************************************"
-      key_check
-      if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
         if [[ ! -d "$MODPATH/system/product/media/theme/default/" ]]; then
           mkdir -p "$MODPATH/system/product/media/theme/default/"
         fi
@@ -201,16 +183,6 @@ if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
         ui_print "*********************************************"
         ui_print "- 已嵌入模块优化说明到[设置-平板专区](仅默认主题生效)"
         ui_print "*********************************************"
-      else
-        if [[ ! -d "$MODPATH/system/product/overlay/" ]]; then
-          mkdir -p "$MODPATH/system/product/overlay/"
-        fi
-        cp -f "$common_overlay_apk_path" "$module_overlay_apk_path"
-        ui_print "*********************************************"
-        ui_print "- 已嵌入模块优化说明到[设置-平板专区]"
-        ui_print "- [重要提醒]:可能与部分隐藏Root、修改系统界面的模块不兼容导致系统界面异常，如不兼容可卸载模块重新安装取消嵌入"
-        ui_print "*********************************************"
-      fi
     else
       ui_print "*********************************************"
       ui_print "- 你选择不嵌入模块优化说明到[设置-平板专区]"

@@ -49,8 +49,6 @@ const fullScreenList = {
   'cn.ticktick.task': true, // 滴答清单
   'com.google.earth': true, //谷歌地图
   'com.omarea.vtools': true, // Scene
-  'com.ss.android.ugc.aweme': true, // 抖音
-  'com.ss.android.ugc.aweme.lite': true, // 抖音极速版
   'com.plan.kot32.tomatotime': true, // 番茄Todo
   'com.farplace.qingzhuo': true, // 清浊
   'com.xiachufang': true, // 下厨房
