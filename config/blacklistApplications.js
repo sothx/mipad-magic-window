@@ -30,6 +30,7 @@ const fullScreenList = {
   'com.huajiao': true, // 花椒直播
   'com.youku.phone': true, // 优酷视频
   'com.tencent.qqlive': true, // 腾讯视频
+  'com.xiaomi.gamecenter':true, // 小米游戏中心
   'com.kugou.android': true, // 酷狗音乐
   'com.ss.android.ugc.aweme': true, // 抖音
   'com.ss.android.ugc.live': true, // 抖音火山版
