@@ -5,7 +5,7 @@ let knownOptions = {
   string: ['use_platform','use_ratio','use_mode','use_compatibility','netdisk_desc','module_update_version','last_module_update_version','module_version_interface'],
   boolean: ['use_ext'],
   default: {
-    use_platform: "pad", // 平板则为pad，折叠屏则为fold
+    use_platform: "pad", // 平板则为pad，大折叠屏则为fold，小折叠屏为flip
     use_ext: false,// true为混入扩展配置，false则不混入扩展配置
     use_ratio: '16:10', // 模块适配比例，6pro及以下是16:10, 6s pro以上是3:2
     use_mode: 'activityEmbedding', // 使用的平行视界模式，支持安卓11时代的magicWindow和安装12L起的activityEmbedding
