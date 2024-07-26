@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes' ?>
 <packageRules>
-  <%_ if (['fold'].includes(platform) || ext) { _%>
   <!--Adaptive For XiaomiMixFold3 -->
   <package name="cmb.pb" enable="true" optimizeWebView="true"/>
   <package name="com.meitu.meiyancamera" enable="true" optimizeWebView="true"/>
@@ -28,7 +27,7 @@
   <package name="com.paem" enable="true" optimizeWebView="true"/>
   <package name="com.ecitic.bank.mobile" enable="true" optimizeWebView="true"/>
   <package name="com.mogujie" enable="true" optimizeWebView="true"/>
-  <%_ } _%>
+  <!--Adaptive For XiaomiMixFold4 -->
   <package name="com.sinovatech.unicom.ui" enable="true" activityRule="com.sinovatech.unicom.basic.ui.activity.MainActivity:2:home_card_recycleview-3" />
   <package name="com.hxb.mobile.client" enable="true" activityRule="com.yt.hxmb50.launcher.LauncherActivity:2;com.yt.hxmb50.mainpages.ui.main.MainActivity:2:hot_event_left_iv-17,hot_event_right_top_iv-17,hot_event_right_bottom_iv-17;com.yt.hxmb50.login.LoginActivity:2" />
   <package name="com.galaxy.stock" enable="true" activityRule="*:0" />
@@ -97,4 +96,5 @@
   <package name="com.cijianlink.cjlk" enable="true" activityRule="*:0" optimizeWebView="true" />
   <package name="com.ubisoft.dance.justdance2015companion" enable="true" activityRule="*:0" optimizeWebView="true" />
   <package name="com.ubisoft.dance.justdancecontroller2023" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.wzf.fan" enable="true" activityRule="*:0" optimizeWebView="true" />
 </packageRules>
