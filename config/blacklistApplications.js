@@ -116,6 +116,7 @@ const fixedOrientationList = {
   'com.hetao101.xhtxy': true, // 核桃学园
   'cn.com.livelab': true, // 纷玩岛
   'com.hujiang.cctalk': true, // CCTalk
+  'com.ifreetalk.ftalk': true, // 派派
 }
 
 
