@@ -119,6 +119,8 @@ const fixedOrientationList = {
   'com.ifreetalk.ftalk': true, // 派派
   'com.cijianlink.cjlk': true, // 幸识
   'com.fenzotech.jimu': true, // 积木
+  'com.ubisoft.dance.justdance2015companion': true, // JD Controller
+  'com.ubisoft.dance.justdancecontroller2023': true, // Just Dance Controller
 }
 
 
