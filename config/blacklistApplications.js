@@ -117,6 +117,8 @@ const fixedOrientationList = {
   'cn.com.livelab': true, // 纷玩岛
   'com.hujiang.cctalk': true, // CCTalk
   'com.ifreetalk.ftalk': true, // 派派
+  'com.cijianlink.cjlk': true, // 幸识
+  'com.fenzotech.jimu': true, // 积木
 }
 
 
