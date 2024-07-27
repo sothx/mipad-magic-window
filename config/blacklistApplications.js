@@ -134,6 +134,7 @@ const NotNeedAdaptationList = {
   'com.ks.jybh.mi': true, // 解压宝盒
   'com.hcj.moon': true, // moom 月相
   'com.yangcong345.android.phone': true, // 洋葱学院
+  'com.tencent.tmgp.cf': true, // CF手游
 }
 
 module.exports = {
