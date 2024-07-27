@@ -4,9 +4,15 @@
 
 - 修复部分失效的适配规则
 
-- 新增谁是卧底(com.moguplan.main)的强制横屏和应用布局优化
+- 新增谁是卧底(com.moguplan.main)的强制横屏
 
 - 新增狼人杀(com.c2vl.kgamebox)的强制横屏和应用布局优化
+
+- 新增阿瓦隆(cn.myhug.avalon)的强制横屏和应用布局优化
+
+- 新增百变大侦探(com.mszmapp.detective)的强制横屏和应用布局优化
+
+- 优化猎游(com.feiteng.lieyou)的平行窗口适配体验
 
 
 如果是处于测试版(Beta)的模块，可能存在不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
