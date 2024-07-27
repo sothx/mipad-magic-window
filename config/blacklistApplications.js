@@ -121,6 +121,7 @@ const fixedOrientationList = {
   'com.fenzotech.jimu': true, // 积木
   'com.ubisoft.dance.justdance2015companion': true, // JD Controller
   'com.ubisoft.dance.justdancecontroller2023': true, // Just Dance Controller
+  'com.sdbean.werewolf': true, // 天天狼人
 }
 
 
