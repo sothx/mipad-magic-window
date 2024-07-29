@@ -122,6 +122,7 @@ const fixedOrientationList = {
   'com.ubisoft.dance.justdance2015companion': true, // JD Controller
   'com.ubisoft.dance.justdancecontroller2023': true, // Just Dance Controller
   'com.sdbean.werewolf': true, // 天天狼人
+  'com.fdg.flashplay.farsee': true, // 飞智游戏厅
 }
 
 
