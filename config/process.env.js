@@ -14,7 +14,7 @@ let knownOptions = {
     netdisk_desc: '', // 打包网盘提供的额外参数
     last_module_update_version: 'V2', // 上个需要维护的升级服务版本
     module_update_version: 'V3', // 模块升级服务版本
-    module_version_interface: 'standard' // 模块版本，standard 正式版，beta 测试版
+    module_version_interface: 'beta' // 模块版本，standard 正式版，beta 测试版
   },
   alias: {
     p: 'use_platform',
