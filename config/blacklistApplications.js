@@ -123,6 +123,8 @@ const fixedOrientationList = {
   'com.ubisoft.dance.justdancecontroller2023': true, // Just Dance Controller
   'com.sdbean.werewolf': true, // 天天狼人
   'com.fdg.flashplay.farsee': true, // 飞智游戏厅
+  'com.cg.driver.exam.ydqnt': true, // 驾考一点全能通
+  'com.jxedt': true, // 驾校一点通
 }
 
 
