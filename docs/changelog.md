@@ -20,7 +20,7 @@
 
 - 新增YOUMORE(cn.shaunwill.umemore)的平行窗口适配规则
 
-- 调整Android13下百度网盘(com.baidu.netdisk)的平行窗口默认分屏比例为0.5
+- 调整Android13下百度网盘(com.baidu.netdisk)的平行窗口默认分屏比例为0.5,以解决百度网盘视频全屏化后无法正常退出的问题
 
 - 新增名人朋友圈(com.sencent.mm)的平行窗口适配规则
 
