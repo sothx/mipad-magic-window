@@ -20,6 +20,8 @@
 
 - 新增YOUMORE(cn.shaunwill.umemore)的平行窗口适配规则
 
+- 调整Android13下百度网盘(com.baidu.netdisk)的平行窗口默认分屏比例为0.5
+
  [信箱模式]
 
  - 优化驾考一点全能通(com.cg.driver.exam.ydqnt)在信箱模式下的比例体验
@@ -28,11 +30,13 @@
 
 - 新增小回音的强制横屏(com.saiti.echo)和信箱模式下的比例体验优化
 
- - 优化驾校一点通(com.jxedt)在信箱模式下的适配规则
+- 优化驾校一点通(com.jxedt)在信箱模式下的适配规则
 
  [全屏]
 
  - 新增360浏览器(com.qihoo.browser)的强制横屏适配规则
+
+ - 新增Pokemon Sleep(jp.pokemon.pokemonsleep)的强制横屏适配规则
 
  [其他]
 
