@@ -22,9 +22,11 @@
 
 - 调整Android13下百度网盘(com.baidu.netdisk)的平行窗口默认分屏比例为0.5
 
+- 新增名人朋友圈(com.sencent.mm)的平行窗口适配规则
+
  [信箱模式]
 
- - 优化驾考一点全能通(com.cg.driver.exam.ydqnt)在信箱模式下的比例体验
+- 优化驾考一点全能通(com.cg.driver.exam.ydqnt)在信箱模式下的比例体验
 
 - 优化驾考科目一点通(com.shengmitech.driver)在信箱模式下的比例体验
 
