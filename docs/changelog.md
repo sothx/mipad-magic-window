@@ -24,7 +24,7 @@
 
  [信箱模式]
 
- - 优化驾考一点全能通(com.cg.driver.exam.ydqnt)在信箱模式下的比例体验
+- 优化驾考一点全能通(com.cg.driver.exam.ydqnt)在信箱模式下的比例体验
 
 - 优化驾考科目一点通(com.shengmitech.driver)在信箱模式下的比例体验
 
