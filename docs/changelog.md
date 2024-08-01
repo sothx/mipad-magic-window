@@ -18,6 +18,8 @@
 
 - 新增火花Chat(com.huohua.android)的平行窗口适配规则
 
+- 新增YOUMORE(cn.shaunwill.umemore)的平行窗口适配规则
+
  [信箱模式]
 
  - 优化驾考一点全能通(com.cg.driver.exam.ydqnt)在信箱模式下的比例体验
