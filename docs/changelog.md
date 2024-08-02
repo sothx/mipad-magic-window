@@ -34,6 +34,8 @@
 
 - 调整中国大学MOOC(com.netease.edu.ucmooc)的平行窗口适配规则，取消首页全屏化和首页默认分屏的逻辑，以解决应用运行频繁卡顿的问题
 
+- 优化中国移动云盘(com.chinamobile.mcloud)的平行窗口适配规则，使更多页面支持递进
+
  [信箱模式]
 
 - 优化驾考一点全能通(com.cg.driver.exam.ydqnt)在信箱模式下的比例体验
