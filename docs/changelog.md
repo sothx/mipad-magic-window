@@ -28,6 +28,8 @@
 
 - 新增名人朋友圈(com.sencent.mm)的平行窗口适配规则
 
+- 调整中国大学MOOC(com.netease.edu.ucmooc)的平行窗口适配规则，取消首页全屏化和首页默认分屏的逻辑，以解决应用运行频繁卡顿的问题
+
  [信箱模式]
 
 - 优化驾考一点全能通(com.cg.driver.exam.ydqnt)在信箱模式下的比例体验
@@ -48,7 +50,7 @@
 
 - 统一所有Android 13的适配规则调整
 
-- 升级Android 13版本的Hyper OS系统组件jar包
+- 升级Android 13版本的Hyper OS系统组件jar包,解决Android13下的Hyper OS竖屏卡顿的问题
 
 
 如果是处于测试版(Beta)的模块，可能存在不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185

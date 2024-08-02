@@ -16,6 +16,10 @@
 
 - 优化Android13版本无左右滑动调节下QQ音乐的平行窗口分割线沉浸体验
 
+- 修复Android13版本下，QQ音乐无法正常全屏的问题
+
+- 优化QQ音乐的平行窗口适配规则，使其可以左右滑动调节拉伸到全屏
+
 - 新增火花Chat(com.huohua.android)的平行窗口适配规则
 
 - 新增YOUMORE(cn.shaunwill.umemore)的平行窗口适配规则
@@ -23,6 +27,8 @@
 - 调整Android13下百度网盘(com.baidu.netdisk)的平行窗口默认分屏比例为0.5,以解决百度网盘视频全屏化后无法正常退出的问题
 
 - 新增名人朋友圈(com.sencent.mm)的平行窗口适配规则
+
+- 调整中国大学MOOC(com.netease.edu.ucmooc)的平行窗口适配规则，以解决应用运行频繁卡顿的问题
 
  [信箱模式]
 
@@ -42,7 +48,9 @@
 
  [其他]
 
-(暂无)
+- 统一所有Android 13的适配规则调整
+
+- 升级Android 13版本的Hyper OS系统组件jar包,解决Android13下的Hyper OS竖屏卡顿的问题
 
 
 如果是处于测试版(Beta)的模块，可能存在不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
