@@ -16,6 +16,10 @@
 
 - 优化Android13版本无左右滑动调节下QQ音乐的平行窗口分割线沉浸体验
 
+- 修复Android13版本下，QQ音乐无法正常全屏的问题
+
+- 优化QQ音乐的平行窗口适配规则，使其可以左右滑动调节拉伸到全屏
+
 - 新增火花Chat(com.huohua.android)的平行窗口适配规则
 
 - 新增YOUMORE(cn.shaunwill.umemore)的平行窗口适配规则
