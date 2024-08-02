@@ -28,7 +28,11 @@
 
 - 新增名人朋友圈(com.sencent.mm)的平行窗口适配规则
 
-- 调整中国大学MOOC(com.netease.edu.ucmooc)的平行窗口适配规则，以解决应用运行频繁卡顿的问题
+- 优化中国大学MOOC(com.netease.edu.ucmooc)的平行窗口适配规则，使更多页面支持递进
+
+- 优化中国大学MOOC(com.netease.edu.ucmooc)的平行窗口适配规则，视频播放页不再默认全屏化，使视频播放页可以正常沉浸状态栏
+
+- 调整中国大学MOOC(com.netease.edu.ucmooc)的平行窗口适配规则，取消首页全屏化和首页默认分屏的逻辑，以解决应用运行频繁卡顿的问题
 
  [信箱模式]
 
