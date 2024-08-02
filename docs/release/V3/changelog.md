@@ -36,6 +36,7 @@
 
 - 优化中国移动云盘(com.chinamobile.mcloud)的平行窗口适配规则，使更多页面支持递进
 
+
  [信箱模式]
 
 - 优化驾考一点全能通(com.cg.driver.exam.ydqnt)在信箱模式下的比例体验
