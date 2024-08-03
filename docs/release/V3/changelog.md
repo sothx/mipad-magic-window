@@ -8,7 +8,11 @@
 
 [平行窗口]
 
+- 优化Android13下中国移动云盘(com.chinamobile.mcloud)的平行窗口适配规则
 
+- 新增小爱音箱(com.xiaomi.mico)的平行窗口适配规则
+
+- 新增单词块(com.xiangdui.dancikuai.blockword)的平行窗口适配规则
 
 
  [信箱模式]
