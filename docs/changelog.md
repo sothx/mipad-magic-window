@@ -27,6 +27,16 @@
 
 - 新增荣耀运动健康(com.hihonor.health)的强制横屏适配规则
 
+- 新增乐播投屏(com.hpplay.happycast)的强制横屏适配规则
+
+- 新增我的汤姆猫(com.outfit7.mytalkingtomfree.nearme.gamecenter)的强制横屏适配规则
+
+- 新增我的汤姆猫2(com.outfit7.mytalkingtom2.nearme.gamecenter)的强制横屏适配规则
+
+- 新增汤姆猫的摩托艇(com.outfit7.talkingtomjetski.nearme.gamecenter)的强制横屏适配规则
+
+- 新增汤姆猫英雄跑酷(com.outfit7.herodash.nearme.gamecenter)的强制横屏适配规则
+
 
 
  [其他]
