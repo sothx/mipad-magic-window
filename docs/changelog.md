@@ -16,12 +16,16 @@
 
 - 新增问小白(com.yuanshi.wenxiaobai)的平行窗口适配规则
 
+- 移除冗余的花瓣浏览器(com.hicloud.browser)的平行窗口适配规则
+
 
  [信箱模式]
 
 
 
  [全屏]
+
+- 新增荣耀运动健康(com.hihonor.health)的强制横屏适配规则
 
 
 
