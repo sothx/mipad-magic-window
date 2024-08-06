@@ -8,43 +8,18 @@
 
 [平行窗口]
 
-- 新增小爱音箱(com.xiaomi.mico)的平行窗口适配规则
-
-- 新增单词块(com.xiangdui.dancikuai.blockword)的平行窗口适配规则
-
-- 修复百度贴吧(com.baidu.tieba)在竖屏下也触发平行窗口的问题
-
-- 新增问小白(com.yuanshi.wenxiaobai)的平行窗口适配规则
-
-- 移除冗余的花瓣浏览器(com.hicloud.browser)的平行窗口适配规则
-
-- 修复启航教育(com.yizhilu.qh)在Android 13下无法正常视频全屏的问题
-
+- 优化央视频(com.cctv.yangshipin.app.androidp)的平行窗口适配规则
 
 
  [信箱模式]
 
-- 优化升学e网通(com.mistong.ewt360)在信箱模式下的展示比例
-
+- 优化央视频(com.cctv.yangshipin.app.androidp)在信箱模式下的使用体验
 
  [全屏]
-
-- 新增荣耀运动健康(com.hihonor.health)的强制横屏适配规则
-
-- 新增乐播投屏(com.hpplay.happycast)的强制横屏适配规则
-
-- 新增我的汤姆猫(com.outfit7.mytalkingtomfree.nearme.gamecenter)的强制横屏适配规则
-
-- 新增我的汤姆猫2(com.outfit7.mytalkingtom2.nearme.gamecenter)的强制横屏适配规则
-
-- 新增汤姆猫的摩托艇(com.outfit7.talkingtomjetski.nearme.gamecenter)的强制横屏适配规则
-
-- 新增汤姆猫英雄跑酷(com.outfit7.herodash.nearme.gamecenter)的强制横屏适配规则
 
 
 
  [其他]
-
 
 
 如果是处于测试版(Beta)的模块，可能存在不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
