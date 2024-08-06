@@ -18,9 +18,13 @@
 
 - 移除冗余的花瓣浏览器(com.hicloud.browser)的平行窗口适配规则
 
+- 修复启航教育(com.yizhilu.qh)在Android 13下无法正常视频全屏的问题
+
+
 
  [信箱模式]
 
+- 优化升学e网通(com.mistong.ewt360)在信箱模式下的展示比例
 
 
  [全屏]
