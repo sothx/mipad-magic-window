@@ -10,6 +10,8 @@
 
 - 优化央视频(com.cctv.yangshipin.app.androidp)的平行窗口适配规则
 
+- 修复百度贴吧(com.baidu.tieba)在Android13适配左右滑动调节的机型丢失左右滑动条的问题
+
 
  [信箱模式]
 
