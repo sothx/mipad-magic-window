@@ -1,27 +1,14 @@
-## 更新日志-正式版(standard)
-
-鉴于很多人认为模块更新过于频繁，试行新发版机制一个月，截止8月底之前，github不再推送日更新，这一个月所有小版本更新将只在网盘发布，如有需要请自行前往网盘下载，后续看实际效果确定要不要长期执行。（恼）
-
-链接: https://caiyun.139.com/m/i?135Cm8seYhgLQ
-提取码: LJWj
-
+## 更新日志-测试版(beta)
 
 [平行窗口]
 
-- 优化央视频(com.cctv.yangshipin.app.androidp)的平行窗口适配规则
+- 优化TT语音(com.yiyou.ga)在平行窗口下的适配体验
 
-- 修复百度贴吧(com.baidu.tieba)在Android13适配左右滑动调节的机型丢失左右滑动条的问题
-
-
- [信箱模式]
-
-- 优化央视频(com.cctv.yangshipin.app.androidp)在信箱模式下的使用体验
+- 尝试修复Android13下启航教育(com.yizhilu.qh)视频无法正常全屏的问题
 
  [全屏]
 
-
-
- [其他]
+- 新增小米健康研究(com.mi.healthresearch)的强制横屏
 
 
 如果是处于测试版(Beta)的模块，可能存在不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
