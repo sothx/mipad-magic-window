@@ -4,6 +4,8 @@
 
 - 优化TT语音(com.yiyou.ga)在平行窗口下的适配体验
 
+- 尝试修复Android13下启航教育(com.yizhilu.qh)视频无法正常全屏的问题
+
  [全屏]
 
 - 新增小米健康研究(com.mi.healthresearch)的强制横屏
