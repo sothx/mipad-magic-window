@@ -4,6 +4,11 @@
 
 - 修复哔哩哔哩/哔哩哔哩概念版/哔哩哔哩国际版搜索页面递进逻辑异常的问题
 
+ [应用布局优化]
+
+- 新增启航教育(com.yizhilu.qh)的应用布局优化
+
+
 如果是处于测试版(Beta)的模块，可能存在不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
