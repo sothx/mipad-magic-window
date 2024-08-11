@@ -13,7 +13,7 @@ const buildActionIsFold = function () {
 }
 
 /**
- * 折叠屏设备不适配splitRatio参数，统一去除
+ * 折叠屏设备适配优化
  */
 module.exports = function adaptivePlatformToFold(cb) {
   return src('temp/embedded_rules_list.xml') // 指定XML文件的路径
