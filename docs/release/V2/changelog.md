@@ -6,6 +6,10 @@
 
 [问题合集（FAQ）：为什么抖音不能全屏了？](https://hyper-magic-window.sothx.com/FAQ.html#_2-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%8A%96%E9%9F%B3%E4%B8%8D%E8%83%BD%E5%85%A8%E5%B1%8F%E4%BA%86)
 
+ [应用布局优化]
+
+- 新增启航教育(com.yizhilu.qh)的应用布局优化
+
 
 如果是处于测试版(Beta)的模块，可能存在不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 
