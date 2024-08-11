@@ -8,11 +8,8 @@ const DOMParser = require('xmldom').DOMParser;
 const XMLSerializer = require('xmldom').XMLSerializer;
 
 const buildActionIsFold = function () {
-  const use_platform = options.use_platform
-  if (use_platform === 'fold') {
-    return true;
-  }
-  return false;
+  const use_platform = options.use_platform;
+  return use_platform === 'fold';
 }
 
 /**
@@ -20,18 +17,34 @@ const buildActionIsFold = function () {
  */
 module.exports = function adaptivePlatformToFold(cb) {
   return src('temp/embedded_rules_list.xml') // 指定XML文件的路径
-    .pipe(gulpIf(buildActionIsFold,gulpXML({
+    .pipe(gulpIf(buildActionIsFold, gulpXML({
       callback: function (result) {
-        const doc = new DOMParser().parseFromString(result, 'text/xml')
+        const doc = new DOMParser().parseFromString(result, 'text/xml');
+        
         const elementsWithAttribute = doc.getElementsByTagName('package');
-        for (let i = 0; i < elementsWithAttribute.length; i++) {
-          const attrs = elementsWithAttribute[i].attributes;
-          for (var j = attrs.length - 1; j >= 0; j--) {
+        for (let i = elementsWithAttribute.length - 1; i >= 0; i--) {
+          const packageElement = elementsWithAttribute[i];
+
+          // 如果节点包含fullRule属性，删除该节点
+          if (packageElement.getAttribute('fullRule')) {
+            packageElement.parentNode.removeChild(packageElement);
+            continue; // 跳过已删除的节点，继续下一个循环
+          }
+
+          // 设置defaultSettings属性
+          if (!packageElement.getAttribute('defaultSettings')) {
+            packageElement.setAttribute('defaultSettings', 'true');
+          }
+
+          // 删除splitRatio属性
+          const attrs = packageElement.attributes;
+          for (let j = attrs.length - 1; j >= 0; j--) {
             if (attrs[j].name === 'splitRatio') {
-                elementsWithAttribute[i].removeAttribute(attrs[j].name);
+              packageElement.removeAttribute(attrs[j].name);
             }
           }
         }
+
         return new XMLSerializer().serializeToString(doc);
       }
     })))
