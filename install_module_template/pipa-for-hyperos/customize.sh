@@ -207,6 +207,7 @@ if [[ "$API" -ge 33 ]]; then
   if [[ $has_been_enabled_game_mode == 'true' && $is_need_show_game_mode_select == "0" ]]; then
     ui_print "*********************************************"
     ui_print "- 已开启游戏显示布局(仅游戏加速内的游戏生效)，是否支持以实际机型底层适配为准"
+    ui_print "- （Tips: 开启后王者荣耀、CF手游默认会以更宽的视野进行显示）"
     ui_print "- 详细使用方式请阅读模块文档~"
     ui_print "- [游戏显示布局使用文档]: https://hyper-magic-window.sothx.com/game-mode.html"
     add_props "# 开启游戏显示布局"
@@ -218,6 +219,7 @@ if [[ "$API" -ge 33 ]]; then
   if [[ $is_need_show_game_mode_select == '1' ]]; then
     ui_print "*********************************************"
     ui_print "- 是否开启游戏显示布局(仅游戏加速内的游戏生效)"
+    ui_print "- （Tips: 开启后王者荣耀、CF手游默认会以更宽的视野进行显示）"
     ui_print "- [游戏显示布局使用文档]: https://hyper-magic-window.sothx.com/game-mode.html"
     ui_print "  音量+ ：是"
     ui_print "  音量- ：否"
@@ -226,6 +228,7 @@ if [[ "$API" -ge 33 ]]; then
     if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
       ui_print "*********************************************"
       ui_print "- 已开启游戏显示布局(仅游戏加速内的游戏生效)，是否支持以实际机型底层适配为准"
+          ui_print "- （Tips: 开启后王者荣耀、CF手游默认会以更宽的视野进行显示）"
       ui_print "- 详细使用方式请阅读模块文档~"
       ui_print "- [游戏显示布局使用文档]: https://hyper-magic-window.sothx.com/game-mode.html"
       add_props "# 开启游戏显示布局"
