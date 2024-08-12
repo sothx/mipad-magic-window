@@ -92,6 +92,7 @@ const fullScreenList = {
   'com.netease.mc': true,// 网易我的世界
   'com.hicloud.browser': true, // 花瓣浏览器
   'com.hihonor.health': true, // 荣耀运动健康
+  'com.ss.android.ugc.livelite': true, // 抖音商城
 }
 
 /**

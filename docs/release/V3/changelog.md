@@ -1,8 +1,8 @@
 ## 更新日志-测试版(beta)
 
-[其他]
+[全屏]
 
-- 同步Redmi Pad Pro OS1.0.14.0.UNSCNXM 最新云控适配规则
+- 新增Eddict Player(com.shanling.eddictplayer)的强制横屏
 
 
 
