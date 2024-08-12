@@ -14,6 +14,10 @@
 
 - 新增抖音精选(com.ss.android.yumme.video)的应用布局优化
 
+[其他]
+
+- 同步Redmi Pad Pro OS1.0.14.0.UNSCNXM 最新云控适配规则
+
 
 
 
