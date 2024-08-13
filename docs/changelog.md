@@ -4,7 +4,11 @@
 
 - 优化疯狂刷题(com.yaerxing.fkst)的平行窗口适配规则
 
+- 优化51Talk无忧英语(com.talk51.kid)的平行窗口适配规则
 
+[信箱模式]
+
+- 优化星光手账(com.starhands.xsy)在信箱模式下的显示比例
 
 
 
