@@ -2,21 +2,8 @@
 
 [全屏]
 
-- 新增Eddict Player(com.shanling.eddictplayer)的强制横屏
+- 允许哔哩哔哩HD(tv.danmaku.bilibilihd)可以在竖屏下使用，默认为关闭状态，需手动在[设置-平板专区(应用显示布局)]中打开哔哩哔哩HD的开关。
 
-- 新增像塑(com.ss.android.ies.ugc.cam)的强制横屏
-
-- 新增抖音直播伴侣(com.ss.android.ugc.livepro)的强制横屏
-
-- 新增抖音盒子(com.ss.android.jumanji)的强制横屏
-
-[应用布局优化]
-
-- 新增抖音精选(com.ss.android.yumme.video)的应用布局优化
-
-[其他]
-
-- 同步Redmi Pad Pro OS1.0.14.0.UNSCNXM 最新云控适配规则
 
 
 
