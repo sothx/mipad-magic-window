@@ -8,7 +8,6 @@
 
 
 
-
 如果是处于测试版(Beta)的模块，可能存在不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
