@@ -12,7 +12,7 @@
 
 - 新增GameViewer(com.netease.uuremote)的强制横屏适配规则
 
-- 新增蓝奏云优享版()的强制横屏适配规则
+- 新增蓝奏云优享版(com.ilanzou.app.disk)的强制横屏适配规则
 
 [应用布局优化]
 
