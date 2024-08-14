@@ -2,11 +2,10 @@
 
 [全屏]
 
-- 优化快影(com.kwai.videoeditor)的强制横屏适配规则
+- 新增彩云天气(com.nowcasting.activity)的强制横屏适配规则
 
-[信箱模式]
+- 统一我的世界强制横屏适配规则
 
-- 优化快影(com.kwai.videoeditor)在信箱模式下的使用体验
 
 
 
