@@ -4,6 +4,20 @@
 
 - 优化疯狂刷题(com.yaerxing.fkst)的平行窗口适配规则
 
+[全屏]
+
+- 新增口袋写作(com.hmz.koudaiwriting)的强制横屏适配规则
+
+- 新增Hypic(com.xt.retouchoversea)的强制横屏适配规则
+
+- 新增GameViewer(com.netease.uuremote)的强制横屏适配规则
+
+- 新增蓝奏云优享版()的强制横屏适配规则
+
+[应用布局优化]
+
+- 新增Hypic(com.xt.retouchoversea)的应用布局优化适配规则
+
 [信箱模式]
 
 - 优化星光手账(com.starhands.xsy)在信箱模式下的显示比例
