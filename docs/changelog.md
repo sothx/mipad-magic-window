@@ -2,9 +2,7 @@
 
 [全屏]
 
-- 新增彩云天气(com.nowcasting.activity)的强制横屏适配规则
-
-- 统一我的世界强制横屏适配规则
+- 新增迷雾大陆(com.hortor.mwdl)的强制横屏适配规则
 
 
 
