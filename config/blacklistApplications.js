@@ -93,6 +93,7 @@ const fullScreenList = {
   'com.hicloud.browser': true, // 花瓣浏览器
   'com.hihonor.health': true, // 荣耀运动健康
   'com.ss.android.ugc.livelite': true, // 抖音商城
+  'com.oray.sunlogin': true, // 向日葵
 }
 
 /**

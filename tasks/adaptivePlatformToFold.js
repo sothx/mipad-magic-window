@@ -26,10 +26,10 @@ module.exports = function adaptivePlatformToFold(cb) {
           const packageElement = elementsWithAttribute[i];
 
           // 如果节点包含fullRule属性，删除该节点
-          // if (packageElement.getAttribute('fullRule')) {
-          //   packageElement.parentNode.removeChild(packageElement);
-          //   continue; // 跳过已删除的节点，继续下一个循环
-          // }
+          if (packageElement.getAttribute('fullRule')) {
+            packageElement.parentNode.removeChild(packageElement);
+            continue; // 跳过已删除的节点，继续下一个循环
+          }
 
           // 设置defaultSettings属性
           if (!packageElement.getAttribute('defaultSettings')) {
