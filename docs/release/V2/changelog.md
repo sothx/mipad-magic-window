@@ -4,7 +4,7 @@
 
 - 新增迷雾大陆(com.hortor.mwdl)的强制横屏适配规则
 
-
+- 新增剑与远征：启程(com.lilithgame.igame.android.cn)的强制横屏适配规则
 
 
 如果是处于测试版(Beta)的模块，可能存在不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
