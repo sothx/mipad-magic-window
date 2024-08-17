@@ -95,6 +95,8 @@ const fullScreenList = {
   'com.hihonor.health': true, // 荣耀运动健康
   'com.ss.android.ugc.livelite': true, // 抖音商城
   'com.oray.sunlogin': true, // 向日葵
+  'com.microsoft.todos': true, // 微软todo
+  'com.jdjdc.jdfastjdc': true, // 奶酪单词
 }
 
 /**

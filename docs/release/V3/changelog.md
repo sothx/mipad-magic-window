@@ -1,8 +1,10 @@
 ## 更新日志-测试版(beta)
 
-[平行窗口]
+[其他]
 
-- 修复中国移动云盘(com.chinamobile.mcloud)视频播放无法正常全屏的问题。
+- 修复微软todo(com.microsoft.todos)无法正常触发平板适配的问题
+
+- 修复奶酪单词(com.jdjdc.jdfastjdc)无法触发平板适配的问题
 
 
 如果是处于测试版(Beta)的模块，可能存在不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
