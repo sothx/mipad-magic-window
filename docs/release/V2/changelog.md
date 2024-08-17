@@ -1,11 +1,12 @@
 ## 更新日志-测试版(beta)
 
-[其他]
+[全屏]
 
-- 修复微软todo(com.microsoft.todos)无法正常触发平板适配的问题
+- 新增必剪(com.bilibili.studio)的强制横屏
 
-- 修复奶酪单词(com.jdjdc.jdfastjdc)无法触发平板适配的问题
+[应用布局优化]
 
+- 新增必剪(com.bilibili.studio)的应用布局优化
 
 如果是处于测试版(Beta)的模块，可能存在不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 
