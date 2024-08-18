@@ -2,7 +2,19 @@
 
 [平行窗口]
 
-- 新增熊猫绘画(net.pandapaint.draw)的平行窗口适配规则
+- 新增pixiv(jp.pxv.android)的平行窗口适配规则
+
+[信箱模式]
+
+- 优化涂鸦王国(com.gracg.react_app)在信箱模式下的显示比例
+
+[全屏]
+
+- 新增涂鸦王国(com.gracg.react_app)的强制横屏适配规则
+
+[应用布局优化]
+
+- 新增涂鸦王国(com.gracg.react_app)的应用布局优化适配规则
 
 如果是处于测试版(Beta)的模块，可能存在不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 
