@@ -1,10 +1,16 @@
 ## 更新日志-测试版(beta)
 
+[平行窗口]
+
+- 新增易次元(com.netease.a13.avg)的平行窗口适配规则
+
 [全屏]
 
 - 新增快剪辑(com.qihoo.qeditor)的强制横屏
 
 - 新增爱剪辑(com.shineyie.aijianji)的强制横屏
+
+- 新增熊猫绘画(net.pandapaint.draw)的强制横屏
 
 [应用布局优化]
 
