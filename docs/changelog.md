@@ -4,6 +4,8 @@
 
 - 新增pixiv(jp.pxv.android)的平行窗口适配规则
 
+- 优化熊猫绘画(jp.pxv.android)的平行窗口适配规则
+
 [信箱模式]
 
 - 优化涂鸦王国(com.gracg.react_app)在信箱模式下的显示比例
