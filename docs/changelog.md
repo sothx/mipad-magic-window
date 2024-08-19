@@ -8,7 +8,7 @@
 
 [全屏]
 
-- 新增腾讯适配(com.tencent.qqlive)的强制横屏适配规则，解决部分使用改机型模块后，无法正常触发腾讯视频(com.tencent.qqlive)的平板适配问题
+- 新增腾讯视频(com.tencent.qqlive)的强制横屏适配规则，解决部分使用改机型模块后，无法正常触发腾讯视频(com.tencent.qqlive)的平板适配问题
 
 - 新增作家助手(com.yuewen.authorapp)的强制横屏适配规则
 
