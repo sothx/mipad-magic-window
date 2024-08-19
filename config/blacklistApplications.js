@@ -97,6 +97,7 @@ const fullScreenList = {
   'com.oray.sunlogin': true, // 向日葵
   'com.microsoft.todos': true, // 微软todo
   'com.jdjdc.jdfastjdc': true, // 奶酪单词
+  'com.google.android.apps.translate': true, // google翻译
 }
 
 /**
