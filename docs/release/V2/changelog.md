@@ -1,24 +1,12 @@
 ## 更新日志-测试版(beta)
 
-[平行窗口]
 
-- 优化熊猫绘画(jp.pxv.android)的平行窗口适配规则
-
-- 优化疯狂刷题(com.yaerxing.fkst)的平行窗口适配规则
 
 [全屏]
 
-- 新增腾讯适配(com.tencent.qqlive)的强制横屏适配规则，解决部分使用改机型模块后，无法正常触发腾讯视频(com.tencent.qqlive)的平板适配问题
+- 新增Audiomack(com.audiomack)的强制横屏适配规则
 
-- 新增作家助手(com.yuewen.authorapp)的强制横屏适配规则
-
-[应用布局优化]
-
-- 新增作家助手(com.yuewen.authorapp)的应用布局优化适配规则
-
-[其他]
-
-- 修复谷歌翻译(com.google.android.apps.translate)无法正常触发平板适配的问题
+- 新增Creators(com.audiomack.creators)的强制横屏适配规则
 
 
 如果是处于测试版(Beta)的模块，可能存在不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
