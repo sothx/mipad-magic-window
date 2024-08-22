@@ -1,12 +1,18 @@
 ## 更新日志-测试版(beta)
 
+[平行窗口]
+
+- 优化中国天气(com.hf)的平行窗口适配规则
 
 
 [全屏]
 
-- 新增Audiomack(com.audiomack)的强制横屏适配规则
+- 优化西瓜视频(com.ss.android.article.video)的强制横屏适配规则
 
-- 新增Creators(com.audiomack.creators)的强制横屏适配规则
+
+[其他]
+
+- 新增模块对应Android版本适配说明文本
 
 
 如果是处于测试版(Beta)的模块，可能存在不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
