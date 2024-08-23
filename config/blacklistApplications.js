@@ -98,6 +98,8 @@ const fullScreenList = {
   'com.microsoft.todos': true, // 微软todo
   'com.jdjdc.jdfastjdc': true, // 奶酪单词
   'com.google.android.apps.translate': true, // google翻译
+  'com.adsk.sketchbook': true, // Sketchbook
+  'com.pick.sketchbook': true, // Sketchbook
 }
 
 /**
