@@ -394,7 +394,7 @@ function mergeToMagicWindowApplicationListConfig() {
           // 是否需要重载
           newElement.setAttribute('need_relaunch', value?.noRelaunchOnResize === 'false' ? 'true' : 'false')
           // 默认设置
-          newElement.setAttribute('default_setting', '')
+          newElement.setAttribute('default_setting', 'true')
           newElement.setAttribute('name', key)
           // 创建一个包含两个空格的文本节点  
           const spaceTextNode = doc.createTextNode('  '); // 两个空格  
