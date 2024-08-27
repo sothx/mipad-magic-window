@@ -3,7 +3,11 @@
 
 [全屏]
 
-- 新增华为开发者联盟(com.huawei.allianceapp)的强制横屏适配规则
+- 新增Wow(com.meituan.like.android)的强制横屏适配规则
+
+[平行窗口]
+
+- 新增蓝鲸直播(com.lanjingty.sports)的平行窗口适配规则
 
 
 
