@@ -1,9 +1,8 @@
 ## 更新日志-正式版(standard)
 
+[全屏]
 
-[应用布局优化]
-
-- 新增布丁扫描(com.wibo.bigbang.ocr)的应用布局优化适配规则
+- 新增扫描全能王(com.intsig.camscanner)的强制横屏适配规则
 
 [其他]
 

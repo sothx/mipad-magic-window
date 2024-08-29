@@ -1,5 +1,8 @@
 ## 更新日志-正式版(standard)
 
+[全屏]
+
+- 新增扫描全能王(com.intsig.camscanner)的强制横屏适配规则
 
 [其他]
 
