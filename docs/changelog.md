@@ -13,8 +13,6 @@
 
 - 新增夸克扫描王(com.quark.scanking)的强制横屏适配规则
 
-- 新增城通网盘(com.ctfile)的强制横屏适配规则
-
 - 新增管用(com.foundingaz.user)的强制横屏适配规则
 
 - 新增猫箱(com.parallel.odyssey)的强制横屏适配规则
