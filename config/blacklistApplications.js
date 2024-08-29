@@ -100,6 +100,9 @@ const fullScreenList = {
   'com.google.android.apps.translate': true, // google翻译
   'com.adsk.sketchbook': true, // Sketchbook
   'com.pick.sketchbook': true, // Sketchbook
+  'com.ihuman.recite': true, // 万词王
+  'com.ctfile': true, // 城通网盘
+  'com.quark.scanking': true, // 夸克扫描王
 }
 
 /**

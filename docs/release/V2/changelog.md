@@ -1,18 +1,45 @@
-## 更新日志-测试版(beta)
+## 更新日志-正式版(standard)
+
+[平行窗口]
+
+- 优化韩小圈(com.babycloud.hanju)的平行窗口适配规则
+
+- 优化星野(com.xingye.app)的平行窗口适配规则
 
 
 [全屏]
 
-- 新增哔咔影视(com.qianrun.music)的强制横屏适配规则
+- 万词王(com.ihuman.recite)已自适配平板，调整应用的适配规则为强制横屏
 
-- 新增芯查查(com.iceasy.chip)的强制横屏适配规则，默认关闭，需要手动前往[设置-平行窗口]中开启。
+- 新增夸克扫描王(com.quark.scanking)的强制横屏适配规则
+
+- 新增城通网盘(com.ctfile)的强制横屏适配规则
+
+- 新增管用(com.foundingaz.user)的强制横屏适配规则
+
+- 新增猫箱(com.parallel.odyssey)的强制横屏适配规则
+
+[应用布局优化]
+
+- 新增管用(com.foundingaz.user)的应用布局优化适配规则
+
+- 新增夸克扫描王(com.quark.scanking)的应用布局优化适配规则
+
+- 新增猫箱(com.parallel.odyssey)的应用布局优化适配规则
+
 
 [信箱模式]
 
-- 优化哔咔影视(com.qianrun.music)在信箱模式下的显示比例
+- 优化猫箱(com.parallel.odyssey)在信箱模式下的显示比例
 
-- 优化芯查查(com.iceasy.chip)在信箱模式下的显示比例
+- 优化星野(com.xingye.app)在信箱模式下的显示比例
 
+
+[其他]
+
+- 修复城通网盘(com.ctfile)无法正常触发平板适配的问题
+
+- 修复夸克扫描王(com.quark.scanking)摄像头横竖屏颠倒的问题
 
 
 
