@@ -27,6 +27,8 @@
 
 - 新增猫箱(com.parallel.odyssey)的应用布局优化适配规则
 
+- 移除必剪(com.bilibili.studio)的应用布局优化适配规则，解决导致视频时间轴异常的问题
+
 
 [信箱模式]
 
