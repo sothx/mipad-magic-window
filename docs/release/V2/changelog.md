@@ -1,16 +1,9 @@
 ## 更新日志-正式版(standard)
 
-[全屏]
-
-- 新增扫描全能王(com.intsig.camscanner)的强制横屏适配规则
-
 [应用布局优化]
 
-- 尝试新增必剪(com.bilibili.studio)首页的应用布局优化适配规则，优化首页的布局体验(如出现影响视频剪辑的BUG，请反馈)
+- 移除必剪(com.bilibili.studio)首页的应用布局优化适配规则
 
-[其他]
-
-- 修复布丁扫描(com.wibo.bigbang.ocr)摄像头横竖屏颠倒的问题
 
 
 
