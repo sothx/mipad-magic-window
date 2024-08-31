@@ -103,6 +103,7 @@ const fullScreenList = {
   'com.ihuman.recite': true, // 万词王
   'com.ctfile': true, // 城通网盘
   'com.quark.scanking': true, // 夸克扫描王
+  'com.hunantv.imgo.activity': true, // 芒果TV
 }
 
 /**

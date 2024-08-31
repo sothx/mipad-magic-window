@@ -589,7 +589,6 @@
   <package name="com.tencent.tmgp.cf" supportFullSize="true" supportCameraPreview="true" ratio="1.5"/>
   <package name="com.meitu.meiyancamera" supportFullSize="true" supportCameraPreview="true"/>
   <package name="com.kwai.videoeditor" supportFullSize="true" supportCameraPreview="true"/>
-  <package name="com.hunantv.imgo.activity" supportFullSize="true" supportCameraPreview="true"/>
   <package name="com.tencent.android.qqdownloader" supportFullSize="true" supportCameraPreview="true"/>
   <package name="com.xunlei.downloadprovider" supportFullSize="true" supportCameraPreview="true"/>
   <package name="com.qihoo360.mobilesafe" supportFullSize="true" supportCameraPreview="true"/>

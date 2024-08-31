@@ -3565,7 +3565,7 @@
   <package name="com.FillGreat" supportFullSize="true" procCompat="true" middleRule="*" />
   <package name="com.fdg.flashplay.farsee" splitRatio="0.3" isShowDivider="true" activityRule="com.game.motionelf.activity.ActivityStart" transitionRules="com.game.motionelf.activity.ActivityStart" splitPairRule="com.game.motionelf.activity.ActivityStart:*" />
   <package name="com.epet.zjm" supportFullSize="true" procCompat="true" middleRule="*" />
-  <package name="com.hunantv.imgo.activity" activityRule="com.mg.ec.main.viper.view.LivePlayActivity" transitionRules="com.tencent.connect.common.AssistActivity,com.mgtv.ui.personalhomepage.PersonalHomePageActivity,com.tencent.connect.common.AssistActivity,com.mgtv.ui.login.CaptureActivity" flags="ignoreActivityBelowWhenJudgeMiddle:com.mgtv.ui.login.CaptureActivity;reusePreContainer:com.mgtv.ui.channel.selected.ChannelManageActivity" />
+  <package name="com.hunantv.imgo.activity" fullRule="nra:cr:rcr:nr" />
   <package name="com.bytedance.ep.android" splitRatio="0.3" relaunch="true" isShowDivider="true" supportFullSize="true" splitLineColor="#FFFFFF:#000000" splitPairRule="com.bytedance.ep.host.newhome.HomeActivity:*" />
   <package name="com.aliyun.tongyi" isShowDivider="true" supportFullSize="true" splitLineColor="#FFFFFF:#000000" activityRule="com.aliyun.tongyi.ConversationActivity,com.aliyun.tongyi.MainActivity" transitionRules="com.aliyun.tongyi.ConversationActivity,com.aliyun.tongyi.MainActivity" splitPairRule="com.aliyun.tongyi.ConversationActivity:*" />
   <package name="com.phoenix.read" fullRule="nra:cr:rcr:nr" />
