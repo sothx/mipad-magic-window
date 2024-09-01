@@ -1054,4 +1054,5 @@
   <package name="com.android.daoway" />
   <package name="com.calculator.hideu" isScale="true" />
   <package name="com.baidu.homework" disable="true" isShowDivider="true" />
+  <package name="com.ugreen.pro" isShowDivider="true" disable="true" />
 </package_config>
