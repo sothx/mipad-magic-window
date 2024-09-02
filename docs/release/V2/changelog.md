@@ -18,6 +18,8 @@
 
 - 新增搜狐资讯(com.sohu.infonews)的强制横屏适配
 
+- 新增摸鱼kik(com.sohu.supermarie)的强制横屏适配
+
 [其他]
 
 - 修复搜狐视频(com.sohu.sohuvideo)丢失平板适配的问题
