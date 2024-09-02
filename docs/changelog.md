@@ -2,18 +2,8 @@
 
 [平行窗口]
 
-- 优化有柿(com.ss.android.article.search)的平行窗口适配
+- 修复乐视视频(com.letv.android.client)运行崩溃的问题，优化平行窗口适配体验
 
-- 优化今日头条(com.ss.android.article.news)的平行窗口适配
-
-- 优化今日头条极速版(com.ss.android.article.lite)的平行窗口适配
-
-- 新增星芽免费短剧(com.jz.xydj)的平行窗口适配
-
-
-[其他]
-
-- 米画师(com.qixin.mihuas)支持拉伸至全屏
 
 
 如果是处于测试版(Beta)的模块，可能存在不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
