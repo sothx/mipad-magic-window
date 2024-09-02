@@ -8,6 +8,8 @@
 
 - 优化搜狐新闻(com.sohu.newsclient)的平行窗口适配
 
+- 新增狐友(com.sohu.sohuhy)的平行窗口适配
+
 [强制横屏]
 
 - 新增学音标(com.csliyu.englishyinbiao)的强制横屏适配
