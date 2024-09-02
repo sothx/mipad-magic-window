@@ -104,6 +104,7 @@ const fullScreenList = {
   'com.ctfile': true, // 城通网盘
   'com.quark.scanking': true, // 夸克扫描王
   'com.hunantv.imgo.activity': true, // 芒果TV
+  'com.sohu.sohuvideo': true, // 搜狐视频
 }
 
 /**

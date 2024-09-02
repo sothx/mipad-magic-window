@@ -2,9 +2,23 @@
 
 [平行窗口]
 
-- 修复乐视视频(com.letv.android.client)运行崩溃的问题，优化平行窗口适配体验
+- 修复乐视视频(com.letv.android.client)运行崩溃的问题，优化平行窗口适配体验(推荐用乐视适配 HD)
 
-- 新增学音标(com.csliyu.englishyinbiao)的平行窗口适配
+- 修复搜狐网(com.sohu.mobile)平行窗口概率性崩溃的问题
+
+- 优化搜狐新闻(com.sohu.newsclient)的平行窗口适配
+
+[强制横屏]
+
+- 新增学音标(com.csliyu.englishyinbiao)的强制横屏适配
+
+- 新增焦点好房(com.sohu.focus.live)的强制横屏适配
+
+- 新增搜狐资讯(com.sohu.infonews)的强制横屏适配
+
+[其他]
+
+- 修复搜狐视频(com.sohu.sohuvideo)丢失平板适配的问题
 
 
 
