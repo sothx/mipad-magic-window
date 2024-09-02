@@ -1,9 +1,64 @@
 ## 更新日志-正式版(standard)
 
+[平行窗口]
+
+- 优化芒果TV(com.hunantv.imgo.activity)的平行窗口适配
+
+- 修复熊猫绘画(net.pandapaint.draw)在竖屏也会触发平行窗口
+
+[强制横屏]
+
+- 新增飞牛私有云(com.trim.app)的强制横屏适配
+
+- 新增醒图(com.xt.retouch)的强制横屏适配
+
+[应用兼容比例]
+
+- 优化飞牛私有云(com.trim.app)在关闭平行窗口的情况下使用15:10的手机端显示比例
+
+[应用布局优化]
+
+- 新增飞牛私有云(com.trim.app)的应用布局优化，缩放页面元素布局
+
+- 新增醒图(com.xt.retouch)的应用布局优化，缩放页面元素布局
+
 [其他]
 
-- 优化三星浏览器和三星浏览器Beta版对PWA应用的兼容性
+- 迅雷浏览器(com.xunlei.browser)已自适应平板，默认关闭迅雷浏览器的强制横屏适配
 
+- 爱奇艺小说(com.qiyi.video.reader)补充平行窗口左右滑动条适配支持,并支持拉伸至全屏
+
+- 绿联云(com.ugreen.pro)平行窗口支持拉伸至全屏
+
+- 豆瓣(com.douban.frodo)平行窗口支持拉伸至全屏
+
+- 兼容Android13下支持左右滑动条的系统版本，酷安(com.coolapk.market)平行窗口支持拉伸至全屏
+
+- 微信(com.tencent.mm)平行窗口支持拉伸至全屏
+
+- 小米商城(com.tencent.mm)平行窗口支持拉伸至全屏
+
+- 下厨房(com.xiachufang)平行窗口支持拉伸至全屏
+
+- 百度(com.baidu.searchbox)平行窗口支持拉伸至全屏
+
+- 百度极速版(com.baidu.searchbox.lite)平行窗口支持拉伸至全屏
+
+- 百度畅听版(com.baidu.searchbox.tomas)平行窗口支持拉伸至全屏
+
+- 百度关怀版(com.baidu.searchbox.senior)平行窗口支持拉伸至全屏
+
+- 百度浏览器(com.baidu.browser.apps)平行窗口支持拉伸至全屏
+
+- 12306(com.MobileTicket)平行窗口支持拉伸至全屏
+
+- 新浪新闻(com.sina.news)平行窗口支持拉伸至全屏
+
+- 京东(com.jingdong.app.mall)平行窗口支持拉伸至全屏
+
+- 中国移动(com.greenpoint.android.mc10086.activity)平行窗口支持拉伸至全屏
+
+- 饿了么(me.ele)平行窗口支持拉伸至全屏
 
 
 
