@@ -69,6 +69,12 @@
 
 - 新增Arc Player(com.videoplayer.arcplayer)的强制横屏适配规则
 
+- 新增努比亚应用商店(cn.nubia.neostore)的强制横屏适配规则
+
+- 新增vivo应用商店(com.bbk.appstore)的强制横屏适配规则
+
+- 新增海信应用商店(com.hisense.hiphone.appstore)的强制横屏适配规则
+
 
 
 如果是处于测试版(Beta)的模块，可能存在不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
