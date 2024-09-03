@@ -21,6 +21,10 @@
 
 - 新增小黑盒(com.max.xiaoheihe)的应用布局优化，缩放页面元素
 
+[应用显示比例]
+
+- 优化JUMP(com.vgjump.jump)在未开启平行窗口的情况下，以手机端的比例进行显示
+
 [强制横屏]
 
 - 新增SteamPy(com.steampy.app)的强制横屏适配规则
