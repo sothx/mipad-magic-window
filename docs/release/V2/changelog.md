@@ -5,6 +5,8 @@
 
 - 优化微博轻享版/微博极速版的平行窗口适配规则
 
+- 优化小米商城的平行窗口适配规则，在Pad端默认分屏比例为0.5
+
 [强制横屏]
 
 - 新增Vivo浏览器(com.vivo.browser)的强制横屏适配规则
@@ -64,6 +66,16 @@
 - 新增极速通浏览器(com.szcx.explorer)的强制横屏适配规则
 
 - 新增风云格式工厂(net.windcloud.explorer)的强制横屏适配规则
+
+- 新增完美视频播放器(com.kk.xx.newplayer)的强制横屏适配规则
+
+- 新增Arc Player(com.videoplayer.arcplayer)的强制横屏适配规则
+
+- 新增努比亚应用商店(cn.nubia.neostore)的强制横屏适配规则
+
+- 新增vivo应用商店(com.bbk.appstore)的强制横屏适配规则
+
+- 新增海信应用商店(com.hisense.hiphone.appstore)的强制横屏适配规则
 
 
 

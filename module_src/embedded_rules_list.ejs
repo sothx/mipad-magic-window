@@ -7590,4 +7590,7 @@
   <package name="com.bbk.appstore" fullRule="nra:cr:rcr:nr"  />
   <package name="cn.nubia.neostore" fullRule="nra:cr:rcr:nr"  />
   <package name="com.hisense.hiphone.appstore" fullRule="nra:cr:rcr:nr"  />
+  <%_ if (['pad'].includes(platform)) { _%>
+  <package name="com.xiaomi.shop" splitLineColor="#FFFFFF" supportFullSize="true" isShowDivider="true" placeholder="com.xiaomi.shop.activity.NavigationActivity:com.xiaomi.shop2.activity.MainActivity" splitPairRule="com.xiaomi.shop.activity.NavigationActivity:*" activityRule="com.xiaomi.shop.activity.MainTabActivity" transitionRules="com.xiaomi.shop.activity.MainTabActivity" />
+  <%_ } _%>
 </package_config>
