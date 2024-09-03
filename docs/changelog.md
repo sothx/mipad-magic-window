@@ -13,6 +13,14 @@
 
 - 优化JUMP(com.vgjump.jump)的平行窗口适配规则
 
+- 新增DoDo(com.dodolive.app)的平行窗口适配规则
+
+- 优化小黑盒加速器(com.max.maxaccelerator)的平行窗口适配规则
+
+- 优化雷神加速器(com.nn.accelerator.box)的平行窗口适配规则
+
+- 新增二柄(com.diershoubing.erbing)的平行窗口适配规则
+
 [应用布局优化]
 
 - 新增SteamPy(com.steampy.app)的应用布局优化，缩放页面元素
@@ -21,11 +29,21 @@
 
 - 新增小黑盒(com.max.xiaoheihe)的应用布局优化，缩放页面元素
 
+- 新增灵缇游戏加速器(com.lingti.android.ns)的应用布局优化，缩放页面元素
+
+- 新增SwitchBuddy(cz.gemsi.switchbuddy)的应用布局优化，缩放页面元素
+
+- 新增小霸王(xyz.ymyapp.xbw.nearme.gamecenter)的应用布局优化，缩放页面元素
+
 [应用显示比例]
 
 - 优化JUMP(com.vgjump.jump)在未开启平行窗口的情况下，以手机端的比例进行显示
 
 [强制横屏]
+
+- 新增小霸王(xyz.ymyapp.xbw.nearme.gamecenter)的强制横屏适配规则
+
+- 新增SwitchBuddy(cz.gemsi.switchbuddy)的强制横屏适配规则
 
 - 新增SteamPy(com.steampy.app)的强制横屏适配规则
 
