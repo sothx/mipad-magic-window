@@ -3,11 +3,68 @@
 
 [平行窗口]
 
-- 新增快看漫画(com.kuaikan.comic)的平行窗口适配规则
+- 优化微博轻享版/微博极速版的平行窗口适配规则
 
-- 优化微博轻享版/微博极速版的平行窗口适配规则，增加超话社区、关注列表等更多页面的递进逻辑优化,优化默认分屏比例为0.4
+[强制横屏]
 
-- 修复Android11模块微博轻享版/微博极速版平行窗口适配规则错误的问题
+- 新增Vivo浏览器(com.vivo.browser)的强制横屏适配规则
+
+- 新增久久浏览器(com.forever.browser)的强制横屏适配规则
+
+- 新增微米浏览器(com.ume.browser)的强制横屏适配规则
+
+- 新增傲游浏览器(com.mx.browser)的强制横屏适配规则
+
+- 新增米侠浏览器(mixiaba.com.Browser)的强制横屏适配规则
+
+- 新增秘密浏览器(com.first.browser)的强制横屏适配规则
+
+- 新增UA浏览器(com.sljh.uabrowser)的强制横屏适配规则
+
+- 新增Top浏览器(com.pocket.topbrowser)的强制横屏适配规则
+
+- 新增多域浏览器(com.puyi.browser)的强制横屏适配规则
+
+- 新增葡萄浏览器(com.qwh.grapebrowser)的强制横屏适配规则
+
+- 新增宙斯浏览器(com.allzeus.browser/com.tc.browser)的强制横屏适配规则
+
+- 新增千橙浏览器(com.thousand.browser)的强制横屏适配规则
+
+- 新增极鹰浏览器(com.szcx.browser)的强制横屏适配规则
+
+- 新增MotionPro(net.arraynetworks.mobilenow.browser)的强制横屏适配规则
+
+- 新增先锋浏览器(com.charlie.a07073.thunderbirdsbrowser)的强制横屏适配规则
+
+- 新增鲨鱼浏览器(com.zhijianzhuoyue.sharkbrowser)的强制横屏适配规则
+
+- 新增西瓜浏览器(com.duocai.webBrowser)的强制横屏适配规则
+
+- 新增极速浏览器(com.jx.minibrowser)的强制横屏适配规则
+
+- 新增360浏览器极速版(com.qihoo.expressbrowser)的强制横屏适配规则
+
+- 新增360AI云盘(com.qihoo.cloudisk)的强制横屏适配规则
+
+- 新增亿方云(com.egeio.fangcloud)的强制横屏适配规则
+
+- 新增360AI搜索(com.qihoo.aiso)的强制横屏适配规则
+
+- 新增360AI浏览器(com.qihoo.aibrowser)的强制横屏适配规则
+
+- 新增搜狗浏览器(sogou.mobile.explorer)的强制横屏适配规则
+
+- 新增搜狗浏览器极速版(sogou.mobile.explorer.online)的强制横屏适配规则
+
+- 新增UC大字版(com.ucmobile.elder)的强制横屏适配规则
+
+- 新增播放器OPlayer(com.olimsoft.android.oplayer)的强制横屏适配规则
+
+- 新增极速通浏览器(com.szcx.explorer)的强制横屏适配规则
+
+- 新增风云格式工厂(net.windcloud.explorer)的强制横屏适配规则
+
 
 
 如果是处于测试版(Beta)的模块，可能存在不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
