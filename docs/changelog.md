@@ -9,9 +9,17 @@
 
 - 优化杉果(com.sonkwoapp)的平行窗口适配规则
 
+- 优化小黑盒(com.max.xiaoheihe)的平行窗口适配规则
+
+- 优化JUMP(com.vgjump.jump)的平行窗口适配规则
+
 [应用布局优化]
 
 - 新增SteamPy(com.steampy.app)的应用布局优化，缩放页面元素
+
+- 新增JUMP(com.vgjump.jump)的应用布局优化，缩放页面元素
+
+- 新增小黑盒(com.max.xiaoheihe)的应用布局优化，缩放页面元素
 
 [强制横屏]
 
@@ -84,6 +92,10 @@
 - 新增vivo应用商店(com.bbk.appstore)的强制横屏适配规则
 
 - 新增海信应用商店(com.hisense.hiphone.appstore)的强制横屏适配规则
+
+[其他]
+
+- 在折叠屏机型上小黑盒(com.max.xiaoheihe)的平行窗口适配默认为非启用状态
 
 
 
