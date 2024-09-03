@@ -21,6 +21,8 @@
 
 - 新增二柄(com.diershoubing.erbing)的平行窗口适配规则
 
+- 新增掌上无畏契约(com.tencent.apps.valorant)的平行窗口适配规则
+
 [应用布局优化]
 
 - 新增SteamPy(com.steampy.app)的应用布局优化，缩放页面元素
