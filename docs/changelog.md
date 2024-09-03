@@ -7,7 +7,15 @@
 
 - 优化小米商城的平行窗口适配规则，在Pad端默认分屏比例为0.5
 
+- 优化杉果(com.sonkwoapp)的平行窗口适配规则
+
+[应用布局优化]
+
+- 新增SteamPy(com.steampy.app)的应用布局优化，缩放页面元素
+
 [强制横屏]
+
+- 新增SteamPy(com.steampy.app)的强制横屏适配规则
 
 - 新增Vivo浏览器(com.vivo.browser)的强制横屏适配规则
 
