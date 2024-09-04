@@ -106,6 +106,8 @@ const fullScreenList = {
   'com.hunantv.imgo.activity': true, // 芒果TV
   'com.sohu.sohuvideo': true, // 搜狐视频
   'com.wuba.town.client': true, //58同城
+  'com.yhqx.player': true, // 光子播放器
+  'com.lixiangdong.mediaplayer': true, // 万能电影播放器
 }
 
 /**

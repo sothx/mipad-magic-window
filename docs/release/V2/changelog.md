@@ -1,9 +1,27 @@
 ## 更新日志-正式版(standard)
 
+[平行窗口]
+
+- 优化华数TV(com.wasu.wasuvideoplayer)的平行窗口适配规则
+
+[强制横屏]
+
+- 新增Y2002电音(com.blueocean.musicplayer)的强制横屏
+
+- 新增快码万能播放器(com.kmsoft.fvplayer)的强制横屏
+
+[应用布局优化]
+
+- 新增Y2002电音(com.blueocean.musicplayer)的应用布局优化，缩放界面元素
+
+
+[应用显示比例]
+
+- 优化新大师兄影视默认显示折叠屏尺寸的界面
 
 [其他]
 
-- 修复小米商城(com.xiaomi.shop)退出时secondary container不能正常finish的问题
+- 优化模块的描述文本
 
 
 
