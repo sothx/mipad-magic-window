@@ -1,9 +1,9 @@
 ## 更新日志-正式版(standard)
 
 
-[其他]
+[应用显示比例]
 
-- 修复小米商城(com.xiaomi.shop)退出时secondary container不能正常finish的问题
+- 优化新大师兄影视默认显示折叠屏尺寸的界面
 
 
 
