@@ -2,9 +2,13 @@
 
 [平行窗口]
 
-- 修复WakeUp课程表(com.suda.yzune.wakeupschedule)编辑小部件样式显示不全的问题
+- 新增爱奇艺遍知(com.iqiyi.knowledge)的适配
 
-- 新增 CCTalk 的平行窗口适配规则(默认关闭，需要手动前往[设置-平行窗口]开启)
+- 调整爱奇艺极速版(com.qiyi.video.lite)的默认分屏比例为0.5，解决部分界面显示不全的问题
+
+- 修复WakeUp课程表(com.suda.yzune.wakeupschedule)课程闹钟界面异常的问题
+
+- 优化 CCTalk 的平行窗口适配规则，支持更多页面的递进逻辑(规则默认关闭，需要手动前往[设置-平行窗口]开启)
 
 需要搭配修改版CCTalk安装包(无签名，需搭配核心破解食用，也可以使用HyperCeiler内置的核心破解)
 
