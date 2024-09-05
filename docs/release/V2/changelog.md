@@ -2,19 +2,13 @@
 
 [平行窗口]
 
-- 新增爱奇艺遍知(com.iqiyi.knowledge)的适配
+[强制横屏]
 
-- 调整爱奇艺极速版(com.qiyi.video.lite)的默认分屏比例为0.5，解决部分界面显示不全的问题
+- 新增绿联储能(com.lulian.ydcn)的适配
 
-- 修复WakeUp课程表(com.suda.yzune.wakeupschedule)课程闹钟界面异常的问题
+[应用显示比例]
 
-- 优化 CCTalk 的平行窗口适配规则，支持更多页面的递进逻辑(规则默认关闭，需要手动前往[设置-平行窗口]开启)
-
-需要搭配修改版CCTalk安装包(无签名，需搭配核心破解食用，也可以使用HyperCeiler内置的核心破解)
-
-(Tips: 修改版客户端可能有被CCTalk封号的风险，不肯定，自行斟酌)
-
-修改版CCTalk下载链接:  https://caiyun.139.com/m/i?135Cm8YnuNKOg
+- 新增绿联(com.ugreen.iot)显示手机端3:2的比例
 
 
 
