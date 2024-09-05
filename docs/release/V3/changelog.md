@@ -2,66 +2,13 @@
 
 [平行窗口]
 
-- 优化快音(com.kuaiyin.player)的适配
+- 新增 CCTalk 的平行窗口适配规则(默认关闭，需要手动前往[设置-平行窗口]开启)
 
-- 优化手机公积金(com.shineyue.sjgjj)的适配
+需要搭配修改版CCTalk安装包(无签名，需搭配核心破解食用，也可以使用HyperCeiler内置的核心破解)
 
-- 优化1药网(com.yiwang)的适配
+(Tips: 修改版客户端可能有被CCTalk封号的风险，不肯定，自行斟酌)
 
-- 新增今日快闻大字版(com.smart.app.zhangzhong.todayInfoBiggerCharacter)的适配
-
-- 优化英语趣配音(com.ishowedu.peiyin)的适配
-
-- 新增省心英语(com.ouitvwg.beidanci)的适配
-
-- 优化凤凰新闻(com.ifeng.news2)的适配
-
-- 新增橙光阅读器(com.avgorange.dating)的适配
-
-- 新增橙光(com.avgorange.mailiang)的适配
-
-[强制横屏]
-
-- 新增黑盒语音(com.max.heyboxchat)的强制横屏
-
-- 新增讯飞公文写作(com.iflytek.sparkdoc)的强制横屏
-
-- 新增疯狂背单词(com.shark.crazyword)的强制横屏
-
-- 新增叽里呱啦(com.jiliguala.niuwa)的强制横屏
-
-- 新增搜狐邮箱(com.sohu.mail.client.cordova)的强制横屏
-
-- 新增钢琴巴士(com.aimanthor.pianobus)的强制横屏
-
-- 新增酷玩乐队(com.yinda.kuwanband)的强制横屏
-
-- 新增唱响音符(com.meta.boom)的强制横屏
-
-- 新增爱奇艺VR(com.iqiyi.ivrcinema.cb)的强制横屏
-
-- 新增自乐班(com.robkoo.jamkoo)的强制横屏
-
-- 新增古筝世界(com.rhythm.dance.gz)的强制横屏
-
-- 新增人音学琴(com.rymusic.art)的强制横屏
-
-
-[应用布局优化]
-
-- 新增唱响音符(com.meta.boom)的界面缩放
-
-
-
-[应用显示比例]
-
-- 新增古筝世界(com.rhythm.dance.gz)显示手机端的屏幕比例
-
-- 爱奇艺VR(com.iqiyi.ivrcinema.cb)调整为仅支持竖屏使用
-
-
-[其他]
-
+下载链接:  https://caiyun.139.com/m/i?135Cm8YnuNKOg
 
 
 

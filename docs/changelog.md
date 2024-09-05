@@ -6,6 +6,8 @@
 
 需要搭配修改版CCTalk安装包(无签名，需搭配核心破解食用，也可以使用HyperCeiler内置的核心破解)
 
+(Tips: 修改版客户端可能有被CCTalk封号的风险，不肯定，自行斟酌)
+
 下载链接:  https://caiyun.139.com/m/i?135Cm8YnuNKOg
 
 
