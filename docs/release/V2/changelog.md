@@ -2,13 +2,7 @@
 
 [平行窗口]
 
-- 新增 CCTalk 的平行窗口适配规则(默认关闭，需要手动前往[设置-平行窗口]开启)
-
-需要搭配修改版CCTalk安装包(无签名，需搭配核心破解食用，也可以使用HyperCeiler内置的核心破解)
-
-(Tips: 修改版客户端可能有被CCTalk封号的风险，不肯定，自行斟酌)
-
-下载链接:  https://caiyun.139.com/m/i?135Cm8YnuNKOg
+- 修复WakeUp课程表(com.suda.yzune.wakeupschedule)编辑小部件样式显示不全的问题
 
 
 
