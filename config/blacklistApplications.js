@@ -108,6 +108,7 @@ const fullScreenList = {
   'com.wuba.town.client': true, //58同城
   'com.yhqx.player': true, // 光子播放器
   'com.lixiangdong.mediaplayer': true, // 万能电影播放器
+  'cn.ylkj.zmjh': true, // 朝暮计划
 }
 
 /**
