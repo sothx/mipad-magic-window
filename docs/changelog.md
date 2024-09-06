@@ -1,5 +1,13 @@
 ## 更新日志-正式版(standard)
 
+[平行窗口]
+
+- 优化ACFun(tv.acfundanmaku.video)的页面递进逻辑
+
+- 优化爱企查(com.baidu.xin.aiqicha)的页面递进逻辑
+
+- 新增网飞猫马甲包的适配
+
 [强制横屏]
 
 - 新增绿联储能(com.lulian.ydcn)的适配
@@ -11,6 +19,8 @@
 - 新增时光序(com.duorong.smarttool)的适配
 
 - 新增逸记(com.angding.smartnote)的适配
+
+- 新增启信宝(com.bertadata.qxb)的适配
 
 [应用布局优化]
 
