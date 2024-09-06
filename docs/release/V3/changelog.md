@@ -7,11 +7,16 @@
 [强制横屏]
 
 - 新增天眼查(com.tianyancha.skyeye)的适配
+
 - 新增商商查(net.wz.ssc)的适配
 
 [应用布局优化]
 
 - 新增商商查(net.wz.ssc)的界面元素缩放
+
+[其他]
+
+- 修复ACFun(tv.acfundanmaku.video)视频无法正常全屏的问题
 
 
 [最近更新补充说明]
