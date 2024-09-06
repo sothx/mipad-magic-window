@@ -110,6 +110,7 @@ const fullScreenList = {
   'com.lixiangdong.mediaplayer': true, // 万能电影播放器
   'cn.ylkj.zmjh': true, // 朝暮计划
   'com.yixinli.muse': true, // 冥想星球
+  'com.antutu.ABenchMark': true, // 安兔兔评测
 }
 
 /**

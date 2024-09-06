@@ -2,29 +2,13 @@
 
 [平行窗口]
 
-- 优化139邮箱(cn.cj.pe)的适配
-- 优化和生活(com.whty.wicity.china)的适配
+
 
 [强制横屏]
 
-- 新增美图秀秀(com.mt.mtxx.mtxx)的适配
-- 新增美图实验室(com.meitu.poster)的适配
-- 新增开拍(com.meitu.action)的适配
-- 新增美颜相机(com.meitu.meiyancamera)的适配
-- 新增Wink(com.meitu.wink)的适配
-- 新增蛋啵(com.meitu.mtbaby)的适配
-- 新增潮自拍(com.meitu.wheecam)的适配
-- 新增美团证件照(com.meitu.mtzjz)的适配
-- 新增和多号(com.cmic.heduohao)的适配
-- 新增中移移动办公(com.cmri.ercs.yqx)的适配
-- 新增企业工作号(com.cmic.worknumber)的适配
-- 新增和通讯录(com.chinamobile.contacts.im)的适配
+- 新增安兔兔评测(com.antutu.ABenchMark)的适配
 
 [应用布局优化]
-
-- 新增美图秀秀(com.mt.mtxx.mtxx)的元素缩放
-- 新增美图实验室(com.meitu.poster)的元素缩放
-- 新增美团证件照(com.meitu.mtzjz)的元素缩放
 
 [最近更新补充说明]
 
