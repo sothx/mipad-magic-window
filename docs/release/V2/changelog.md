@@ -26,15 +26,21 @@
 
 - 新增超级课程表(com.xtuone.android.syllabus)的界面元素缩放
 
-[应用显示比例]
-
-- 新增绿联(com.ugreen.iot)显示手机端3:2的比例
-
 [其他]
 
 - 禁止绿联(com.ugreen.iot)强制竖屏显示
 
 - 补充一批原生适配平行视界的应用在Mix Fold 系列上的左右滑动调节
+
+[最近更新补充说明]
+
+近期版本CCTalk 的平行窗口适配规则(规则默认关闭，需要手动前往[设置-平行窗口]开启)
+
+需要搭配修改版CCTalk安装包(无签名，需搭配核心破解食用，也可以使用HyperCeiler内置的核心破解)
+
+(Tips: 修改版客户端可能有被CCTalk封号的风险，不肯定，自行斟酌)
+
+修改版CCTalk下载链接:  https://caiyun.139.com/m/i?135Cm8YnuNKOg
 
 
 
