@@ -2,22 +2,9 @@
 
 [平行窗口]
 
-- 优化ACFun(tv.acfundanmaku.video)的页面递进逻辑
+- 同步大量华为MatePad Air上的平行窗口适配应用(感谢米板群的酷友Sirius提供的配置列表)
 
-[强制横屏]
-
-- 新增天眼查(com.tianyancha.skyeye)的适配
-
-- 新增商商查(net.wz.ssc)的适配
-
-[应用布局优化]
-
-- 新增商商查(net.wz.ssc)的界面元素缩放
-
-[其他]
-
-- 修复ACFun(tv.acfundanmaku.video)视频无法正常全屏的问题
-
+- 新增企知道(com.qizhidao.clientapp)的适配
 
 [最近更新补充说明]
 
