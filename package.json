@@ -68,8 +68,10 @@
     "netdisk": "cross-env gulp buildNetdiskRelease",
     "netdisk:sothx": "cross-env gulp buildNetdiskRelease --netdisk_desc sothx",
     "activityEmbedding:hw": "cross-env gulp mergeActivityEmbeddingConfig --use_merge_config_brand hw",
+    "activityEmbedding:honor": "cross-env gulp mergeActivityEmbeddingConfig --use_merge_config_brand honor",
     "activityEmbedding:oppo": "cross-env gulp mergeActivityEmbeddingConfig --use_merge_config_brand oppo",
     "magicWindow:hw": "cross-env gulp mergeMagicWindowConfig --use_merge_config_brand hw",
+    "magicWindow:honor": "cross-env gulp mergeMagicWindowConfig --use_merge_config_brand honor",
     "magicWindow:oppo": "cross-env gulp mergeMagicWindowConfig --use_merge_config_brand oppo",
     "orientationConfig:oppo": "cross-env gulp mergeOrientationConfig --use_merge_config_brand oppo",
     "publish": "crosee-env gulp publish"

@@ -109,6 +109,7 @@ const fullScreenList = {
   'com.yhqx.player': true, // 光子播放器
   'com.lixiangdong.mediaplayer': true, // 万能电影播放器
   'cn.ylkj.zmjh': true, // 朝暮计划
+  'com.yixinli.muse': true, // 冥想星球
 }
 
 /**
