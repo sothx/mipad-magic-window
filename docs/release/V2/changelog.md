@@ -1,14 +1,14 @@
 ## 更新日志-正式版(standard)
 
-[平行窗口]
-
-
-
 [强制横屏]
 
 - 新增安兔兔评测(com.antutu.ABenchMark)的适配
 
+- 新增像素习惯(studio.fountainhead.habicat)的适配
+
 [应用布局优化]
+
+- 新增像素习惯(studio.fountainhead.habicat)的元素缩放
 
 [最近更新补充说明]
 
