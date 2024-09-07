@@ -1,14 +1,10 @@
 ## 更新日志-正式版(standard)
 
-[平行窗口]
-
-- 优化139邮箱(cn.cj.pe)的适配
-
-- 优化和生活(com.whty.wicity.china)的适配
-
 [强制横屏]
 
 - 新增安兔兔评测(com.antutu.ABenchMark)的适配
+
+- 新增像素习惯(studio.fountainhead.habicat)的适配
 
 [应用布局优化]
 
