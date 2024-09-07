@@ -2,19 +2,7 @@
 
 [平行窗口]
 
-- 优化139邮箱(cn.cj.pe)的适配
-
-- 优化和生活(com.whty.wicity.china)的适配
-
-[强制横屏]
-
-- 新增安兔兔评测(com.antutu.ABenchMark)的适配
-
-- 新增像素习惯(studio.fountainhead.habicat)的适配
-
-[应用布局优化]
-
-- 新增像素习惯(studio.fountainhead.habicat)的元素缩放
+- 修复中国移动云盘(com.chinamobile.mcloud)部分视频没办法正常全屏的问题
 
 [最近更新补充说明]
 
