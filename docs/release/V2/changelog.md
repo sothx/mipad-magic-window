@@ -1,8 +1,15 @@
 ## 更新日志-正式版(standard)
 
+[平行窗口]
+
+- 优化半月谈(com.bytxmt.banyuetan)的适配规则
+
+- 优化可可英语(com.kekeclient_)的适配规则
+
 [其他]
 
 - 兼容FGO(com.bilibili.fatego)横竖屏切换时会触发循环重载的问题
+
 
 [最近更新补充说明]
 
