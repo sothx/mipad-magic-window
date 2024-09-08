@@ -2,9 +2,19 @@
 
 [平行窗口]
 
-- 优化半月谈(com.bytxmt.banyuetan)的适配规则
+- 新增半月谈(com.bytxmt.banyuetan)的适配规则
 
-- 优化可可英语(com.kekeclient_)的适配规则
+- 新增可可英语(com.kekeclient_)的适配规则
+
+- 新增可可宝贝(com.kekenet.baby)的适配规则
+
+- 新增牛客(com.nowcoder.app.florida)的适配规则
+
+[强制横屏]
+
+- 新增LeetCode(com.lingkou.leetcode)的强制横屏
+
+- 新增当当云阅读(com.dangdang.reader)的强制横屏
 
 [其他]
 
