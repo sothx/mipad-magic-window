@@ -38,6 +38,8 @@
 
 - 新增多多指南针(com.ltt.compass)的强制横屏
 
+- 新增花瓣测速(com.huawei.genexcloud.speedtest)的强制横屏
+
 [应用兼容比例]
 
 - 微店(com.koudai.weidian.buyer)默认显示为折叠屏的尺寸比例
@@ -49,8 +51,6 @@
 [其他]
 
 - 修复花瓣剪辑(com.huawei.videoeditor)不能正常触发pad适配的问题
-
-- 修复花瓣测速(com.huawei.genexcloud.speedtest)不能正常触发pad适配的问题
 
 - 修复华为智能体脂秤(com.huawei.ch18)不能正常触发pad适配的问题
 
