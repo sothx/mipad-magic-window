@@ -4,7 +4,7 @@
 
 - 优化手机天猫(com.tmall.wireless)的适配规则,适配更多页面的递进
 
-- 优化蘑菇街(com.mogujie)的适配规则,适配更多页面的递进
+- 优化蘑菇街(com.mogujie)查看评价大图时的体验
 
 - 优化返还网(com.fanhuan)的适配规则,适配开屏沉浸
 
@@ -13,6 +13,8 @@
 - 优化苏宁易购(com.suning.mobile.ebuy)的适配规则,适配更多页面的递进
 
 - 优化豌豆公主(com.wonderfull.mobileshop)的适配规则,适配更多页面的递进
+
+- 新增豆果美食(com.douguo.recipe)的适配规则,适配更多页面的递进
 
 [其他]
 
