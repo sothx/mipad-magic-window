@@ -113,6 +113,8 @@ const fullScreenList = {
   'com.antutu.ABenchMark': true, // 安兔兔评测
   'cn.honor.qinxuan': true, // 荣耀亲选
   'com.fenbi.android.zenglish.hd': true, // 斑马AI学
+  'com.huawei.videoeditor': true, // 花瓣剪辑
+  'com.huawei.genexcloud.speedtest': true, // 花瓣测速
 }
 
 /**
