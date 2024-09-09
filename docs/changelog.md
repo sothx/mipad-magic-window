@@ -14,9 +14,13 @@
 
 - 优化工银融e联(com.icbc.im)的适配规则
 
+- 优化国美(com.gome.eshopnew)的适配规则
+
 [强制横屏]
 
 - 新增微店(com.koudai.weidian.buyer)的强制横屏，效果不佳，默认关闭，可以前往[设置-平行窗口]手动开启。
+
+- 新增多多指南针(com.ltt.compass)的强制横屏
 
 [应用兼容比例]
 
