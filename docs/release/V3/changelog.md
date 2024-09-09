@@ -2,25 +2,30 @@
 
 [平行窗口]
 
-- 优化手机天猫(com.tmall.wireless)的适配规则,适配更多页面的递进
+- 优化豆果美食(com.douguo.recipe)的适配规则,适配美食制作步骤的全屏体验
 
-- 优化蘑菇街(com.mogujie)查看评价大图时的体验
+- 优化全球购骑士特权(com.black.unique)的适配规则,开启默认分屏
 
-- 优化返还网(com.fanhuan)的适配规则,适配开屏沉浸
+- 优化高佣联盟(com.shangfang.gylm)的适配规则,开启默认分屏
 
-- 优化返利网(com.fanli.android.apps)的适配规则,适配开屏沉浸
+- 优化国铁吉讯(com.crgt.ilife)的适配规则,开启默认分屏
 
-- 优化苏宁易购(com.suning.mobile.ebuy)的适配规则,适配更多页面的递进
+- 新增支小宝(com.antgroup.zhixiaobao.android)的适配规则
 
-- 优化豌豆公主(com.wonderfull.mobileshop)的适配规则,适配更多页面的递进
+[强制横屏]
 
-- 新增豆果美食(com.douguo.recipe)的适配规则,适配更多页面的递进
+- 新增交易猫(com.jym.gcmall)的强制横屏适配，效果不佳，默认关闭，可以前往[设置-平行窗口]手动开启
+
+
+[应用显示比例]
+
+- 新增交易猫(com.jym.gcmall)的默认显示为折叠屏的样式
 
 [其他]
 
-- 修复荣耀亲选(cn.honor.qinxuan)不能正常触发Pad适配的问题
+- 蜜芽宝贝(com.mia.miababy)App已经停止运营，移除相关适配规则
 
-- 百度糯米(com.nuomi)已经停止运营，移除相关适配内容
+- 交易猫(com.jym.mall)旧版App已经停止运营，移除相关适配规则
 
 [最近更新补充说明]
 

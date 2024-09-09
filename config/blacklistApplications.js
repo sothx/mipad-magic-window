@@ -161,7 +161,9 @@ const NotNeedAdaptationList = {
   'com.yangcong345.android.phone': true, // 洋葱学院
   'com.tencent.tmgp.cf': true, // CF手游
   'com.iqiyi.ivrcinema.cb': true, // 爱奇艺VR
-  'com.nuomi': true, // 百度糯米
+  'com.nuomi': true, // 百度糯米(已停运)
+  'com.jym.mall': true, // 交易猫旧版(已废弃)
+  'com.mia.miababy': true, // 蜜芽宝贝(已停运)
 }
 
 module.exports = {
