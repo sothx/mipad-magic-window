@@ -2,46 +2,31 @@
 
 [平行窗口]
 
-- 优化豆果美食(com.douguo.recipe)的适配规则,适配美食制作步骤的全屏体验
+- 优化斑马AI学的适配规则(更推荐斑马AI学HD)
 
-- 优化全球购骑士特权(com.black.unique)的适配规则,开启默认分屏
+- 优化粉象生活(com.n_add.android)的适配规则
 
-- 优化高佣联盟(com.shangfang.gylm)的适配规则,开启默认分屏
+- 优化途家公寓(com.tujia.hotel)的适配规则
 
-- 优化国铁吉讯(com.crgt.ilife)的适配规则,开启默认分屏
+- 优化微店店长版(com.koudai.weishop)的适配规则
 
-- 新增支小宝(com.antgroup.zhixiaobao.android)的适配规则
+- 优化中国工商银行(com.icbc.im)的适配规则
+
+- 优化工银融e联(com.icbc.im)的适配规则
 
 [强制横屏]
 
-- 新增交易猫(com.jym.gcmall)的强制横屏适配，效果不佳，默认关闭，可以前往[设置-平行窗口]手动开启
+- 新增微店(com.koudai.weidian.buyer)的强制横屏，效果不佳，默认关闭，可以前往[设置-平行窗口]手动开启。
+
+[应用兼容比例]
+
+- 微店(com.koudai.weidian.buyer)默认显示为折叠屏的尺寸比例
 
 
-[应用显示比例]
-
-- 新增交易猫(com.jym.gcmall)的默认显示为折叠屏的样式
-
-[其他]
-
-- 蜜芽宝贝(com.mia.miababy)App已经停止运营，移除相关适配规则
-
-- 交易猫(com.jym.mall)旧版App已经停止运营，移除相关适配规则
-
-[最近更新补充说明]
-
-近期版本新增CCTalk 的平行窗口适配规则(规则默认关闭，需要手动前往[设置-平行窗口]开启)
-
-需要搭配修改版CCTalk安装包(无签名，需搭配核心破解食用，也可以使用HyperCeiler内置的核心破解)
-
-(Tips: 修改版客户端可能有被CCTalk封号的风险，不肯定，自行斟酌)
-
-修改版CCTalk下载链接:  https://caiyun.139.com/m/i?135Cm8YnuNKOg
-
-
-
-如果是处于测试版(Beta)的模块，可能存在不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
+
+如果是处于测试版(Beta)的模块，可能存在不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 

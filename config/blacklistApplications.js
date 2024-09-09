@@ -112,6 +112,7 @@ const fullScreenList = {
   'com.yixinli.muse': true, // 冥想星球
   'com.antutu.ABenchMark': true, // 安兔兔评测
   'cn.honor.qinxuan': true, // 荣耀亲选
+  'com.fenbi.android.zenglish.hd': true, // 斑马AI学
 }
 
 /**
