@@ -46,6 +46,12 @@
 
 - 美食杰(com.jesson.meishi)默认显示为折叠屏的尺寸比例
 
+[其他]
+
+- 修复花瓣剪辑(com.huawei.videoeditor)不能正常触发pad适配的问题
+
+- 修复花瓣测速(com.huawei.genexcloud.speedtest)不能正常触发pad适配的问题
+
 
 
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)

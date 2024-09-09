@@ -115,6 +115,8 @@ const fullScreenList = {
   'com.fenbi.android.zenglish.hd': true, // 斑马AI学
   'com.huawei.videoeditor': true, // 花瓣剪辑
   'com.huawei.genexcloud.speedtest': true, // 花瓣测速
+  'com.huawei.smarthome': true, // 华为智慧生活
+  'com.huawei.ch18': true, // 华为智能体脂秤
 }
 
 /**

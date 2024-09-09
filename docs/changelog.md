@@ -52,6 +52,8 @@
 
 - 修复花瓣测速(com.huawei.genexcloud.speedtest)不能正常触发pad适配的问题
 
+- 修复华为智能体脂秤(com.huawei.ch18)不能正常触发pad适配的问题
+
 
 
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
