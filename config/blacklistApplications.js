@@ -111,6 +111,7 @@ const fullScreenList = {
   'cn.ylkj.zmjh': true, // 朝暮计划
   'com.yixinli.muse': true, // 冥想星球
   'com.antutu.ABenchMark': true, // 安兔兔评测
+  'cn.honor.qinxuan': true, // 荣耀亲选
 }
 
 /**
@@ -160,6 +161,7 @@ const NotNeedAdaptationList = {
   'com.yangcong345.android.phone': true, // 洋葱学院
   'com.tencent.tmgp.cf': true, // CF手游
   'com.iqiyi.ivrcinema.cb': true, // 爱奇艺VR
+  'com.nuomi': true, // 百度糯米
 }
 
 module.exports = {

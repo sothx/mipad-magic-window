@@ -1,9 +1,24 @@
 ## 更新日志-正式版(standard)
 
+[平行窗口]
+
+- 优化手机天猫(com.tmall.wireless)的适配规则,适配更多页面的递进
+
+- 优化蘑菇街(com.mogujie)的适配规则,适配更多页面的递进
+
+- 优化返还网(com.fanhuan)的适配规则,适配开屏沉浸
+
+- 优化返利网(com.fanli.android.apps)的适配规则,适配开屏沉浸
+
+- 优化苏宁易购(com.suning.mobile.ebuy)的适配规则,适配更多页面的递进
+
+- 优化豌豆公主(com.wonderfull.mobileshop)的适配规则,适配更多页面的递进
+
 [其他]
 
-- 移除小米商城的模块修改，避免小米商城异常崩溃的问题
+- 修复荣耀亲选(cn.honor.qinxuan)不能正常触发Pad适配的问题
 
+- 百度糯米(com.nuomi)已经停止运营，移除相关适配内容
 
 [最近更新补充说明]
 
