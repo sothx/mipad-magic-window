@@ -8,15 +8,45 @@
 
 - 优化途家公寓(com.tujia.hotel)的适配规则
 
-- 优化微店(com.koudai.weidian.buyer)的适配规则
-
 - 优化微店店长版(com.koudai.weishop)的适配规则
 
 - 优化中国工商银行(com.icbc.im)的适配规则
 
 - 优化工银融e联(com.icbc.im)的适配规则
 
-[]
+- 优化国美(com.gome.eshopnew)的适配规则
+
+- 优化可乐优品商城(com.hsb.colaproduct)的适配规则
+
+- 优化天虹(cn.rainbow.westore)的适配规则
+
+- 优化婚礼纪(me.suncloud.marrymemo)的适配规则
+
+- 优化云集(com.imaginer.yunji)的适配规则
+
+- 优化闪送(cn.ishansong)的适配规则
+
+- 优化工银e生活(com.icbc.elife)的适配规则
+
+- 优化缤客(com.booking)的适配规则
+
+- 优化小象优品(com.basestonedata.instalment)的适配规则
+
+[强制横屏]
+
+- 新增微店(com.koudai.weidian.buyer)的强制横屏，效果不佳，默认关闭，可以前往[设置-平行窗口]手动开启
+
+- 新增多多指南针(com.ltt.compass)的强制横屏
+
+[应用兼容比例]
+
+- 微店(com.koudai.weidian.buyer)默认显示为折叠屏的尺寸比例
+
+- 顺丰速运(com.sf.activity)默认显示为折叠屏的尺寸比例
+
+- 美食杰(com.jesson.meishi)默认显示为折叠屏的尺寸比例
+
+
 
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
 

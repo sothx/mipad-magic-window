@@ -148,6 +148,8 @@ const fixedOrientationList = {
   'com.fdg.flashplay.farsee': true, // 飞智游戏厅
   'com.cg.driver.exam.ydqnt': true, // 驾考一点全能通
   'com.jxedt': true, // 驾校一点通
+  'com.sf.activity': true, // 顺丰速运
+  'com.jesson.meishi': true, // 美食杰
 }
 
 
