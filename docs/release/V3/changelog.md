@@ -16,6 +16,12 @@
 
 - 优化方舟健客网上药店(com.jiankecom.jiankemall)的适配体验
 
+- 新增阿里云(com.alibaba.aliyun)的适配体验
+
+- 新增企业文件管理(com.aliyun.pds)的适配体验
+
+- 新增企业微信私有部署版(com.tencent.weworkenterprise)的适配体验
+
 
 [强制横屏]
 
@@ -30,6 +36,14 @@
 - 新增EV全能播放器(cn.ieway.evsuperplayer)的强制横屏
 
 - 新增EV直播助手(cn.ieway.liveassistant)的强制横屏
+
+- 新增COSBrowser-腾讯云对象存储(com.qcloud.cos.client)的强制横屏
+
+- 新增华为云会议(com.huawei.CloudLink)的强制横屏
+
+[应用布局优化]
+
+- 新增悦跑圈(co.runner.app)的元素缩放
 
 
 [应用兼容比例]

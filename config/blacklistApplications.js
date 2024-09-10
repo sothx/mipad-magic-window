@@ -125,6 +125,8 @@ const fullScreenList = {
   'cn.ieway.evcapture': true, // EV录屏
   'cn.ieway.evplayer2': true, // EVPlayer2
   'com.eusoft.ting.en': true, // 每日英语听力
+  'com.aliyun.wuying.enterprise': true, // 无影云电脑
+  'com.jingdong.app.reader.campus': true, // 京东读书专业版
 }
 
 /**
@@ -164,6 +166,7 @@ const fixedOrientationList = {
   'com.jesson.meishi': true, // 美食杰
   'com.standby.idream': true, // StandBy US
   'com.ieway.evcam': true, // EV虚拟摄像头
+  'com.jd.jdlogistic': true, // 京东快递
 }
 
 
