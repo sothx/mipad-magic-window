@@ -107,6 +107,8 @@
 
 - 修复华为智能体脂秤(com.huawei.ch18)不能正常触发pad适配的问题
 
+- 去除哔哩哔哩/哔哩哔哩概念版/哔哩哔哩国际版有关传感器的禁用，允许竖屏使用
+
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
