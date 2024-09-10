@@ -122,6 +122,7 @@ const fullScreenList = {
   'com.hihonor.vmall': true, // 荣耀商城
   'com.hihonor.magichome': true, // 荣耀智慧空间
   'com.hihonor.heartstudy': true, // 荣耀心脏健康研究
+  'cn.ieway.evcapture': true, // EV录屏
 }
 
 /**
