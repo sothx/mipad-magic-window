@@ -117,6 +117,11 @@ const fullScreenList = {
   'com.huawei.genexcloud.speedtest': true, // 花瓣测速
   'com.huawei.smarthome': true, // 华为智慧生活
   'com.huawei.ch18': true, // 华为智能体脂秤
+  'com.hihonor.dz.reader': true, // 荣耀阅读
+  'com.hihonor.health': true, // 荣耀运动健康
+  'com.hihonor.vmall': true, // 荣耀商城
+  'com.hihonor.magichome': true, // 荣耀智慧空间
+  'com.hihonor.heartstudy': true, // 荣耀心脏健康研究
 }
 
 /**
@@ -154,6 +159,7 @@ const fixedOrientationList = {
   'com.jxedt': true, // 驾校一点通
   'com.sf.activity': true, // 顺丰速运
   'com.jesson.meishi': true, // 美食杰
+  'com.standby.idream': true, // StandBy US
 }
 
 
@@ -171,6 +177,7 @@ const NotNeedAdaptationList = {
   'com.nuomi': true, // 百度糯米(已停运)
   'com.jym.mall': true, // 交易猫旧版(已废弃)
   'com.mia.miababy': true, // 蜜芽宝贝(已停运)
+  'com.ikoalabear.x5.huawei': true, // 炫舞浪漫爱(本来就适配)
 }
 
 module.exports = {
