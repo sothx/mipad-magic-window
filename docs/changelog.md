@@ -31,6 +31,8 @@
 
 - 新增EV直播助手(cn.ieway.liveassistant)的强制横屏
 
+- 新增COSBrowser-腾讯云对象存储(com.qcloud.cos.client)的强制横屏
+
 [应用布局优化]
 
 - 新增悦跑圈(co.runner.app)的元素缩放
