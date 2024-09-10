@@ -123,6 +123,7 @@ const fullScreenList = {
   'com.hihonor.magichome': true, // 荣耀智慧空间
   'com.hihonor.heartstudy': true, // 荣耀心脏健康研究
   'cn.ieway.evcapture': true, // EV录屏
+  'cn.ieway.evplayer2': true, // EVPlayer2
 }
 
 /**
@@ -161,6 +162,7 @@ const fixedOrientationList = {
   'com.sf.activity': true, // 顺丰速运
   'com.jesson.meishi': true, // 美食杰
   'com.standby.idream': true, // StandBy US
+  'com.ieway.evcam': true, // EV虚拟摄像头
 }
 
 
