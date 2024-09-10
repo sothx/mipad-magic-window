@@ -13,8 +13,6 @@
 
 - 新增EV扩展屏(com.ieway.virtualscreen)的强制横屏
 
-- 新增EV投屏(cn.ieway.evmirror)的强制横屏
-
 - 新增EV远程协助(com.ieway.evremote)的强制横屏
 
 - 新增EV屏幕共享(cn.ieway.screenshare)的强制横屏
@@ -26,12 +24,11 @@
 - 新增EV直播助手(cn.ieway.liveassistant)的强制横屏
 
 
-[应用布局优化]
-
-- 新增EV远程协助(com.ieway.evremote)的元素缩放
-
-
 [应用兼容比例]
+
+- 优化EV虚拟摄像头(com.ieway.evcam)的显示比例为手机端的尺寸
+
+- 优化EV投屏(cn.ieway.evmirror)的显示比例为手机端的尺寸
 
 
 [其他]
