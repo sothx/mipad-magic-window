@@ -124,6 +124,7 @@ const fullScreenList = {
   'com.hihonor.heartstudy': true, // 荣耀心脏健康研究
   'cn.ieway.evcapture': true, // EV录屏
   'cn.ieway.evplayer2': true, // EVPlayer2
+  'com.eusoft.ting.en': true, // 每日英语听力
 }
 
 /**
