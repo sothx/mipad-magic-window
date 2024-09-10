@@ -8,6 +8,14 @@
 
 [平行窗口]
 
+- 优化好游快爆(com.xmcy.hykb)的开屏页沉浸体验
+
+- 优化医学教育网(com.cdel.medmobile)的适配体验
+
+- 优化悦跑圈(co.runner.app)的适配体验
+
+- 优化方舟健客网上药店(com.jiankecom.jiankemall)的适配体验
+
 
 [强制横屏]
 
@@ -22,6 +30,10 @@
 - 新增EV全能播放器(cn.ieway.evsuperplayer)的强制横屏
 
 - 新增EV直播助手(cn.ieway.liveassistant)的强制横屏
+
+[应用布局优化]
+
+- 新增悦跑圈(co.runner.app)的元素缩放
 
 
 [应用兼容比例]
