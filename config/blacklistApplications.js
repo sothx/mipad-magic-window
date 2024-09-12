@@ -124,7 +124,6 @@ const fullScreenList = {
   'com.hihonor.heartstudy': true, // 荣耀心脏健康研究
   'cn.ieway.evcapture': true, // EV录屏
   'cn.ieway.evplayer2': true, // EVPlayer2
-  'com.eusoft.ting.en': true, // 每日英语听力
   'com.aliyun.wuying.enterprise': true, // 无影云电脑
   'com.jingdong.app.reader.campus': true, // 京东读书专业版
 }
@@ -185,6 +184,7 @@ const NotNeedAdaptationList = {
   'com.jym.mall': true, // 交易猫旧版(已废弃)
   'com.mia.miababy': true, // 蜜芽宝贝(已停运)
   'com.ikoalabear.x5.huawei': true, // 炫舞浪漫爱(本来就适配)
+  'com.yek.android.kfc.activitys': true, // 肯德基
 }
 
 module.exports = {
