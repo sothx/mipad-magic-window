@@ -126,6 +126,8 @@ const fullScreenList = {
   'cn.ieway.evplayer2': true, // EVPlayer2
   'com.aliyun.wuying.enterprise': true, // 无影云电脑
   'com.jingdong.app.reader.campus': true, // 京东读书专业版
+  'com.UCMobile': true, // UC浏览器
+  'com.quark.browser': true, // 夸克浏览器
 }
 
 /**
