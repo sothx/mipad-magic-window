@@ -7,9 +7,19 @@
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
 
-[中国大学MOOC(com.netease.edu.ucmooc)]
+[腾讯动漫(com.netease.edu.ucmooc)]
 
-- 修复部分情况下打开页面会导致分屏页面崩溃的问题
+- 优化平行窗口适配规则
+
+- 适配小说阅读界面全屏化
+
+[QQ输入法]
+
+- 适配强制横屏
+
+[一笑而过(com.xiaoguo101.yixiaoerguo)]
+
+- 优化平行窗口适配规则
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
