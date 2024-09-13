@@ -1,21 +1,45 @@
 ## 更新日志-测试版(beta)
 
-[平行窗口]
+[轻颜(com.gorgeous.lite)]
 
-(暂无)
+- 优化平行窗口的适配体验
 
-[信箱模式]
+- 新增应用布局优化元素缩放
 
-(暂无)
+[黄油相机(com.by.butter.camera)]
 
-[全屏]
+- 新增强制横屏
 
-(暂无)
+- 新增应用布局优化元素缩放
 
-[应用布局优化]
+[B612咔叽(com.campmobile.snowcamera)]
 
-(暂无)
+- 新增强制横屏
 
-[其他]
+- 新增应用布局优化元素缩放
 
-- 优化
+[公考雷达(com.maidu.gkld)]
+
+- 优化平行窗口的适配体验
+
+- 新增应用布局优化元素缩放
+
+[华为云商店(com.huawei.marketplace.cloudstore)]
+
+- 新增强制横屏
+
+[华为时习知(com.huawei.android.klt)]
+
+- 优化平行窗口的适配体验
+
+[千牛(com.taobao.qianniu)]
+
+- 新增平行窗口的适配体验
+
+- 新增应用布局优化元素缩放
+
+[全能扫描王免费版(com.scanner.discount)]
+
+- 新增强制横屏
+
+- 新增应用布局优化元素缩放

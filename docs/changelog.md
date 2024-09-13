@@ -7,49 +7,9 @@
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
 
-[轻颜(com.gorgeous.lite)]
+[中国大学MOOC(com.netease.edu.ucmooc)]
 
-- 优化平行窗口的适配体验
-
-- 新增应用布局优化元素缩放
-
-[黄油相机(com.by.butter.camera)]
-
-- 新增强制横屏
-
-- 新增应用布局优化元素缩放
-
-[B612咔叽(com.campmobile.snowcamera)]
-
-- 新增强制横屏
-
-- 新增应用布局优化元素缩放
-
-[公考雷达(com.maidu.gkld)]
-
-- 优化平行窗口的适配体验
-
-- 新增应用布局优化元素缩放
-
-[华为云商店(com.huawei.marketplace.cloudstore)]
-
-- 新增强制横屏
-
-[华为时习知(com.huawei.android.klt)]
-
-- 优化平行窗口的适配体验
-
-[千牛(com.taobao.qianniu)]
-
-- 新增平行窗口的适配体验
-
-- 新增应用布局优化元素缩放
-
-[全能扫描王免费版(com.scanner.discount)]
-
-- 新增强制横屏
-
-- 新增应用布局优化元素缩放
+- 修复部分情况下打开页面会导致分屏页面崩溃的问题
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
