@@ -168,6 +168,7 @@ const fixedOrientationList = {
   'com.standby.idream': true, // StandBy US
   'com.ieway.evcam': true, // EV虚拟摄像头
   'com.jd.jdlogistic': true, // 京东快递
+  'com.accordion.analogcam.cn': true, // OldRoll复古胶片相机
 }
 
 

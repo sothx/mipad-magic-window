@@ -7,19 +7,9 @@
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
 
-[腾讯动漫(com.netease.edu.ucmooc)]
+[其他]
 
-- 优化平行窗口适配规则
-
-- 适配小说阅读界面全屏化
-
-[QQ输入法]
-
-- 适配强制横屏
-
-[一笑而过(com.xiaoguo101.yixiaoerguo)]
-
-- 优化平行窗口适配规则
+- 合并OnePlus Pad部分平行窗口优化配置到小米平板，优化部分应用的强制横屏体验
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
