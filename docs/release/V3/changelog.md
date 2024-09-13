@@ -9,7 +9,10 @@
 
 [强制横屏]
 
-- 新增Notion 日历的强制横屏
+- 适配手机版主题壁纸(com.android.thememanager)的强制横屏，方便安装修改版主题壁纸
+
+- 新增搜狗翻译(com.sogou.translator)的强制横屏
+
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
