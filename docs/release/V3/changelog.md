@@ -7,12 +7,49 @@
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
 
-[强制横屏]
+[轻颜(com.gorgeous.lite)]
 
-- 适配手机版主题壁纸(com.android.thememanager)的强制横屏，方便安装修改版主题壁纸
+- 优化平行窗口的适配体验
 
-- 新增搜狗翻译(com.sogou.translator)的强制横屏
+- 新增应用布局优化元素缩放
 
+[黄油相机(com.by.butter.camera)]
+
+- 新增强制横屏
+
+- 新增应用布局优化元素缩放
+
+[B612咔叽(com.campmobile.snowcamera)]
+
+- 新增强制横屏
+
+- 新增应用布局优化元素缩放
+
+[公考雷达(com.maidu.gkld)]
+
+- 优化平行窗口的适配体验
+
+- 新增应用布局优化元素缩放
+
+[华为云商店(com.huawei.marketplace.cloudstore)]
+
+- 新增强制横屏
+
+[华为时习知(com.huawei.android.klt)]
+
+- 优化平行窗口的适配体验
+
+[千牛(com.taobao.qianniu)]
+
+- 新增平行窗口的适配体验
+
+- 新增应用布局优化元素缩放
+
+[全能扫描王免费版(com.scanner.discount)]
+
+- 新增强制横屏
+
+- 新增应用布局优化元素缩放
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
