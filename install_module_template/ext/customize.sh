@@ -146,50 +146,50 @@ common_theme_overlay_path="$MODPATH/common/theme_overlay/com.android.settings"
 module_theme_overlay_path="$MODPATH/system/product/media/theme/default/com.android.settings"
 has_been_installed_module_theme_overlay_path="$magisk_path$module_id/system/product/media/theme/default/com.android.settings"
 
-if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
-  # 判断首次安装
-  if [[ ! -d "$magisk_path$module_id" ]]; then
-    is_need_settings_overlay=1
-  fi
-  # 判断老版本模块
-  if [[ $has_been_installed_module_versionCode -le 119036 ]]; then
-    is_need_settings_overlay=1
-  fi
-  # 判断已启用overlay
-  if [[ -f "$has_been_installed_module_theme_overlay_path" && $is_need_settings_overlay == '0' ]]; then
-    if [[ ! -d "$MODPATH/system/product/media/theme/default/" ]]; then
-      mkdir -p "$MODPATH/system/product/media/theme/default/"
-    fi
-    rm -rf "$module_overlay_apk_path"
-    cp -f "$common_theme_overlay_path" "$module_theme_overlay_path"
-    ui_print "*********************************************"
-    ui_print "- 已自动嵌入模块优化说明到[设置-平板专区](仅默认主题生效)"
-    ui_print "*********************************************"
-  fi
-  if [[ $is_need_settings_overlay == "1" ]]; then
-    # 展示提示
-    ui_print "*********************************************"
-    ui_print "- 是否嵌入模块优化说明到[设置-平板专区]?"
-    ui_print "  音量+ ：是"
-    ui_print "  音量- ：否"
-    ui_print "*********************************************"
-    key_check
-    if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
-        if [[ ! -d "$MODPATH/system/product/media/theme/default/" ]]; then
-          mkdir -p "$MODPATH/system/product/media/theme/default/"
-        fi
-        cp -f "$common_theme_overlay_path" "$module_theme_overlay_path"
-        rm -rf
-        ui_print "*********************************************"
-        ui_print "- 已嵌入模块优化说明到[设置-平板专区](仅默认主题生效)"
-        ui_print "*********************************************"
-    else
-      ui_print "*********************************************"
-      ui_print "- 你选择不嵌入模块优化说明到[设置-平板专区]"
-      ui_print "*********************************************"
-    fi
-  fi
-fi
+# if [[ "$API" -ge 34 && "$device_characteristics" == 'tablet' ]]; then
+#   # 判断首次安装
+#   if [[ ! -d "$magisk_path$module_id" ]]; then
+#     is_need_settings_overlay=1
+#   fi
+#   # 判断老版本模块
+#   if [[ $has_been_installed_module_versionCode -le 119036 ]]; then
+#     is_need_settings_overlay=1
+#   fi
+#   # 判断已启用overlay
+#   if [[ -f "$has_been_installed_module_theme_overlay_path" && $is_need_settings_overlay == '0' ]]; then
+#     if [[ ! -d "$MODPATH/system/product/media/theme/default/" ]]; then
+#       mkdir -p "$MODPATH/system/product/media/theme/default/"
+#     fi
+#     rm -rf "$module_overlay_apk_path"
+#     cp -f "$common_theme_overlay_path" "$module_theme_overlay_path"
+#     ui_print "*********************************************"
+#     ui_print "- 已自动嵌入模块优化说明到[设置-平板专区](仅默认主题生效)"
+#     ui_print "*********************************************"
+#   fi
+#   if [[ $is_need_settings_overlay == "1" ]]; then
+#     # 展示提示
+#     ui_print "*********************************************"
+#     ui_print "- 是否嵌入模块优化说明到[设置-平板专区]?"
+#     ui_print "  音量+ ：是"
+#     ui_print "  音量- ：否"
+#     ui_print "*********************************************"
+#     key_check
+#     if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+#         if [[ ! -d "$MODPATH/system/product/media/theme/default/" ]]; then
+#           mkdir -p "$MODPATH/system/product/media/theme/default/"
+#         fi
+#         cp -f "$common_theme_overlay_path" "$module_theme_overlay_path"
+#         rm -rf
+#         ui_print "*********************************************"
+#         ui_print "- 已嵌入模块优化说明到[设置-平板专区](仅默认主题生效)"
+#         ui_print "*********************************************"
+#     else
+#       ui_print "*********************************************"
+#       ui_print "- 你选择不嵌入模块优化说明到[设置-平板专区]"
+#       ui_print "*********************************************"
+#     fi
+#   fi
+# fi
 
 has_been_enabled_game_mode=$(grep_prop ro.config.miui_appcompat_enable "$magisk_path$module_id/system.prop")
 is_need_show_game_mode_select=0

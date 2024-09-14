@@ -7,53 +7,17 @@
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
 
-[联想]
+[美的美居]
 
-- 优化平行窗口的适配体验
+- 适配调整为强制横屏
 
-[京东小家]
-
-- 新增强制横屏
-
-[京东健康]
-
-- 优化平行窗口的适配体验
-
-[京东工品优选]
-
-- 新增强制横屏
-
-[京药采]
-
-- 优化平行窗口的适配体验
-
-[京东股票]
-
-- 优化平行窗口的适配体验
-
-[京东企业购]
-
-- 优化平行窗口的适配体验
-
-[京东方医院]
-
-- 新增强制横屏
-
-- 新增应用布局优化强制元素放大
-
-[Moo日记]
-
-- 新增强制横屏
-
-- 新增应用布局优化强制元素缩放
 
 [其他]
 
-- 修复OnePlus Pad Pro同步的部分配置导致界面异常的问题
+- 由于Overlay嵌入会导致部分系统应用异常，移除嵌入模块优化说明，如果出现系统桌面动画、旋转异常等问题，可以卸载模块重新安装，即可解决
 
-- 新增部分冷门应用的平行窗口粗适配
 
-- 新增部分冷门应用的强制横屏
+
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
