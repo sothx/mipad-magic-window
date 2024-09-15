@@ -6,10 +6,9 @@
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
+[其他]
 
-[滴答清单]
-
-- 修复滴答清单部分界面无法正常横屏的问题
+- 修复Tiktok视频异常的问题
 
 
 
