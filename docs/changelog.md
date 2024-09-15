@@ -7,19 +7,9 @@
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
 
-[美的美居]
+[滴答清单]
 
-- 调整强制横屏为平行窗口
-- 移除美的美居的应用布局优化
-
-[MyPhonak]
-
-- 默认显示折叠屏尺寸的大小
-
-
-[其他]
-
-- 由于Overlay嵌入会导致部分系统应用异常，移除嵌入模块优化说明，如果出现系统桌面动画、旋转异常等问题，可以卸载模块重新安装，即可解决
+- 修复滴答清单部分界面无法正常横屏的问题
 
 
 
