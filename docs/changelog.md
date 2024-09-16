@@ -6,11 +6,9 @@
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
-[其他]
+[平行窗口]
 
-- 修复Tiktok视频异常的问题
-
-- 修复飞猪旅行的适配规则异常的问题
+- 优化携程旅行开屏时的全屏体验
 
 
 
