@@ -36,10 +36,14 @@ module.exports = function adaptivePlatformToFold(cb) {
             packageElement.setAttribute('defaultSettings', 'true');
           }
 
-          // 删除splitRatio属性
           const attrs = packageElement.attributes;
           for (let j = attrs.length - 1; j >= 0; j--) {
+            // 删除splitRatio属性
             if (attrs[j].name === 'splitRatio') {
+              packageElement.removeAttribute(attrs[j].name);
+            }
+            // 删除splitMinWidth属性
+            if (attrs[j].name === 'splitMinWidth') {
               packageElement.removeAttribute(attrs[j].name);
             }
           }

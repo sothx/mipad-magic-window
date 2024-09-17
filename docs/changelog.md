@@ -6,13 +6,14 @@
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
-[平行窗口]
+[中国农业银行]
 
-- 继续优化携程旅行开屏时的全屏体验、平行窗口的适配体验
+- 修复部分情况下导致应用平行窗口崩溃的问题
+
 
 [其他]
 
-- 强制开Pad下携程旅行对折叠屏的适配体验
+- 修复折叠屏无法触发部分应用平行窗口适配规则的问题
 
 
 
