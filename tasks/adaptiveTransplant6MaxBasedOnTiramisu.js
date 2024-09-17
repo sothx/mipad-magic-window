@@ -15,6 +15,6 @@ const buildActionIsTransplant6MaxBasedOnTiramisu = function () {
  * 适配MIUI14小米平板6Max移植包专用版
  */
 module.exports = function adaptiveTransplant6MaxBasedOnTiramisu(cb) {
-  return src(`${moduleSrc}/miui_embedding_window_service/transplant/miui-embedding-window.jar`) // 指定JAR文件的路径
+  return src(`${moduleSrc}/miui_embedding_window_service/Transplant6MaxBasedOnTiramisu/miui-embedding-window.jar`) // 指定JAR文件的路径
     .pipe(gulpIf(buildActionIsTransplant6MaxBasedOnTiramisu, dest(`${systemExtDist}/framework/`)))
 }

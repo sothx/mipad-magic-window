@@ -42,19 +42,24 @@ function releaseRatioOf3To2Pad() {
     .pipe(dest(`${releaseNetdiskDir}/5.小米平板6S Pro澎湃专版(适配3比2比例)/模块`))
 }
 
+function releasLiuqinForHyperOS() {
+  return src(`${releaseDir}/${moduleConfig.version}/pad-liuqin-for-hyperos-${moduleConfig.version}.zip`)
+    .pipe(dest(`${releaseNetdiskDir}/6.小米平板6 Pro(liuqin)澎湃专版(仅适配小米平板6 Pro)/模块`))
+}
+
 function releasPipaForHyperOS() {
   return src(`${releaseDir}/${moduleConfig.version}/pad-pipa-for-hyperos-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/6.小米平板6(pipa)澎湃专版(仅适配小米平板6)/模块`))
+    .pipe(dest(`${releaseNetdiskDir}/7.小米平板6(pipa)澎湃专版(仅适配小米平板6)/模块`))
 }
 
 function releasePadByHyperOSBasedOnTiramisu() {
   return src(`${releaseDir}/${moduleConfig.version}/pad-hyperos-based-on-tiramisu-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/7.小米平板5系列安卓13澎湃专版（仅安卓13澎湃可刷）/模块`))
+    .pipe(dest(`${releaseNetdiskDir}/8.小米平板5系列安卓13澎湃专版（仅安卓13澎湃可刷）/模块`))
 }
 
 function releasePadByTransplant6MaxBasedOnTiramisu() {
   return src(`${releaseDir}/${moduleConfig.version}/pad-transplant-6max-based-on-tiramisu-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/8.基于MIUI14的6 Max移植包专版（仅MIUI14移植可刷）/模块`))
+    .pipe(dest(`${releaseNetdiskDir}/9.基于MIUI14的6 Max移植包专版（仅MIUI14移植可刷）/模块`))
 }
 
 
@@ -66,4 +71,4 @@ function releasePadByTransplant6MaxBasedOnTiramisu() {
 
 
 
-module.exports = parallel(releasePad, releaseRatioOf3To2Pad,releasPipaForHyperOS, releaseFold, releasePadByMagicWindow, releaseHyperOsForTiramisu, releasePadByTransplant6MaxBasedOnTiramisu,releasePadByHyperOSBasedOnTiramisu)
+module.exports = parallel(releasePad,releaseRatioOf3To2Pad,releasPipaForHyperOS,releasLiuqinForHyperOS,releaseFold, releasePadByMagicWindow, releaseHyperOsForTiramisu, releasePadByTransplant6MaxBasedOnTiramisu,releasePadByHyperOSBasedOnTiramisu)

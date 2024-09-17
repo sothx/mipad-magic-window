@@ -45,6 +45,7 @@ jobs:
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-transplant-6max-based-on-tiramisu-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-hyperos-based-on-tiramisu-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-pipa-for-hyperos-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv $GITHUB_WORKSPACE/release/$VERSION/pad-liuqin-for-hyperos-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/ext/pad-ext-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
 
     - name: 上传到Github Release

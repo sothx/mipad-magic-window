@@ -6,10 +6,13 @@
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
+[平行窗口]
+
+- 新增微博的精适配(仅小米平板6 Pro 澎湃专版)
 
 [其他]
 
-- 移除折叠屏对中国农业银行的适配规则
+- 新增小米平板6 Pro 澎湃专版，强制给自适配平行窗口的应用走反向适配，首批新增微博。
 
 
 
