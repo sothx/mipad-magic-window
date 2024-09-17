@@ -7,8 +7,8 @@ const moduleSrc = 'module_src'
 
 const buildActionIsLiuqinForHyperOS = function () {
   const use_compatibility = options.use_compatibility
-  const is_HyperOSBasedOnTiramisu = use_compatibility === 'hyperos-based-on-tiramisu'
-  return is_HyperOSBasedOnTiramisu
+  const is_LiuqinForHyperOS = use_compatibility === 'liuqin-for-hyperos'
+  return is_LiuqinForHyperOS
 }
 
 /**
