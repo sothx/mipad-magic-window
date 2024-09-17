@@ -6,14 +6,10 @@
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
-[中国农业银行]
-
-- 修复部分情况下导致应用平行窗口崩溃的问题
-
 
 [其他]
 
-- 修复折叠屏无法触发部分应用平行窗口适配规则的问题
+- 移除折叠屏对中国农业银行的适配规则
 
 
 
