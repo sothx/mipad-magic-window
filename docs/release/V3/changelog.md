@@ -8,19 +8,12 @@
 
 [平行窗口]
 
-- 新增微博的精适配(仅小米平板6 Pro 澎湃专版)
-
-- 新增CCTalk的精适配(仅小米平板6 Pro 澎湃专版)
-
-- 新增西瓜视频的精适配(仅小米平板6 Pro 澎湃专版)
-
-[其他]
-
-- 新增小米平板6 Pro 澎湃专版，强制给自适配平行窗口的应用走反向适配，首批新增微博、CCTalk、西瓜视频。
+- 优化微博的精适配(仅小米平板6 Pro 澎湃专版)
 
 
+[近期动态]
 
-
+- 新增小米平板6 Pro 澎湃专版，强制禁用小米平板专有的禁止系统反向适配的规则，首批精适配应用新增微博、CCTalk、西瓜视频。
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
