@@ -41,7 +41,7 @@ jobs:
          mv $GITHUB_WORKSPACE/release/$VERSION/fold-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-magicWindow-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-not-dragable-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-ratioOf3To2-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv $GITHUB_WORKSPACE/release/$VERSION/pad-sheng-for-hyperos-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-transplant-6max-based-on-tiramisu-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-hyperos-based-on-tiramisu-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-pipa-for-hyperos-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
