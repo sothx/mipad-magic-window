@@ -19,7 +19,7 @@
 
 [近期动态]
 
-- 新增小米平板6 Pro 澎湃专版和小米平板6S Pro 澎湃专版，强制禁用小米平板专有的禁止系统反向适配的规则，首批精适配应用新增微博、CCTalk、西瓜视频。
+-小米平板6 Pro 澎湃专版/小米平板6S Pro 澎湃专版/小米平板5系列 澎湃专版，新增强制禁用小米平板专有的禁止系统反向适配的规则，首批精适配应用新增微博、CCTalk、西瓜视频。
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
