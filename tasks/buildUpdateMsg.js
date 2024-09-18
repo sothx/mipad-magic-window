@@ -19,7 +19,7 @@ const isNeedBuildLastModuleUpdateVersion = () => {
   return lastModuleUpdateVersion !== '' 
 }
 
-const packageName = `${options.use_platform}${options.use_ext ? `-ext` : ''}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}`
+const packageName = `${options.use_platform}${options.use_ext ? `-ext` : ''}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}`
 
 module.exports = function buildUpdateMsg(cb) {
   const unNeedUpdate = () => {

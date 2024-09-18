@@ -5,7 +5,7 @@ const { options } = require('../config/process.env');
 
 module.exports = function buildRelease(cb) {
   return src('dist/**')
-    .pipe(gulpzip(`${options.use_platform}${options.use_ext ? `-ext` : ''}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_ratio === '3:2' ? '-ratioOf3To2' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}-${moduleConfig.version}.zip`))
+    .pipe(gulpzip(`${options.use_platform}${options.use_ext ? `-ext` : ''}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}-${moduleConfig.version}.zip`))
     .pipe(dest(`release/${moduleConfig.version}${options.use_ext ? '/ext' : ''}`))
   
 }

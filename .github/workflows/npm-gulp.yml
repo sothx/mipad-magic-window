@@ -94,14 +94,25 @@ jobs:
     #       path: "dist/**"
     #       overwrite: true
 
-    - name: Build Pad Ratio Of 3 To 2
-      run: |
-          npm run build:pad-ratio=3:2
+    # - name: Build Pad Ratio Of 3 To 2
+    #   run: |
+    #       npm run build:pad-ratio=3:2
   
-    - name: Upload Pad Ratio Of 3 To 2 Release Zip
+    # - name: Upload Pad Ratio Of 3 To 2 Release Zip
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #       name: pad-ratioOf3To2-${{ env.VERSION }}
+    #       path: "dist/**"
+    #       overwrite: true
+
+    - name: Build Pad Compatibility Use ShengForHyperOS
+      run: |
+          npm run build:pad-compatibility=sheng-for-hyperos
+  
+    - name: Upload Pad Compatibility Use ShengForHyperOS Release Zip
       uses: actions/upload-artifact@v4
       with:
-          name: pad-ratioOf3To2-${{ env.VERSION }}
+          name: pad-sheng-for-hyperos-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 

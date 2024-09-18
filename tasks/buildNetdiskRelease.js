@@ -37,9 +37,9 @@ function releaseFold() {
     .pipe(dest(`${releaseNetdiskDir}/4.小米折叠屏通用版（适配Mix Fold系列）/模块`))
 }
 
-function releaseRatioOf3To2Pad() {
-  return src(`${releaseDir}/${moduleConfig.version}/pad-ratioOf3To2-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/5.小米平板6S Pro澎湃专版(适配3比2比例)/模块`))
+function releasShengForHyperOS() {
+  return src(`${releaseDir}/${moduleConfig.version}/pad-sheng-for-hyperos-${moduleConfig.version}.zip`)
+    .pipe(dest(`${releaseNetdiskDir}/5.小米平板6S Pro澎湃专版(仅适配小米平板6S Pro)/模块`))
 }
 
 function releasLiuqinForHyperOS() {
@@ -71,4 +71,4 @@ function releasePadByTransplant6MaxBasedOnTiramisu() {
 
 
 
-module.exports = parallel(releasePad,releaseRatioOf3To2Pad,releasPipaForHyperOS,releasLiuqinForHyperOS,releaseFold, releasePadByMagicWindow, releaseHyperOsForTiramisu, releasePadByTransplant6MaxBasedOnTiramisu,releasePadByHyperOSBasedOnTiramisu)
+module.exports = parallel(releasePad,releasShengForHyperOS,releasPipaForHyperOS,releasLiuqinForHyperOS,releaseFold, releasePadByMagicWindow, releaseHyperOsForTiramisu, releasePadByTransplant6MaxBasedOnTiramisu,releasePadByHyperOSBasedOnTiramisu)
