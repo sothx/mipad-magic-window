@@ -7,9 +7,11 @@
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
 
-[其他]
+[平行窗口]
 
-- 重构小米平板5系列澎湃专版，新增模块特性强制禁用小米平板专有的禁止系统反向适配的规则
+- 优化携程旅行的平行窗口适配体验
+
+- 优化猫眼的平行窗口适配体验
 
 
 [近期动态]
