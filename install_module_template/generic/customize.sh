@@ -69,6 +69,13 @@ if [[ ! -d "$MODULE_CUSTOM_CONFIG_PATH" ]]; then
   fi
 fi
 
+# 生成重载规则脚本脚本
+if [[ ! -d "$MODULE_CUSTOM_CONFIG_PATH/config/" ]]; then
+  /bin/mkdir -p "$MODULE_CUSTOM_CONFIG_PATH/config/"
+fi
+/bin/cp -rf "$MODPATH/common/source/update_rule/"* "$MODULE_CUSTOM_CONFIG_PATH/config/"
+/bin/chmod -R 777 "$MODULE_CUSTOM_CONFIG_PATH/config/"
+
 device_code="$(getprop ro.product.device)"
 device_soc_name="$(getprop ro.vendor.qti.soc_name)"
 device_soc_model="$(getprop ro.vendor.qti.soc_model)"
