@@ -8,7 +8,7 @@
 
 [其他]
 
-- 新增无需重启直接重载模块规则的脚本，默认写入/data/adb/MIUI_MagicWindow+/config/update_rule.sh，执行时请勾选使用系统环境和ROOT权限
+- 修复飞书摄像头方向不正常的问题
 
 
 [近期动态]
