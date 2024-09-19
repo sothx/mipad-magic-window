@@ -17,4 +17,4 @@ wait_login
 chmod -R 0777 "$MODDIR"
 chmod -R 0777 "$MODULE_CUSTOM_CONFIG_PATH"
 
-set_miui_embedding_window
+set_reload_rule

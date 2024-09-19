@@ -44,6 +44,9 @@ if [[ "$API" -eq 30 ]]; then
   # 对云控文件写保护
   chattr +i /data/system/users/0/magic_window_setting_config.xml
   chattr +i /data/system/magicWindowFeature_magic_window_application_list.xml
+
+  echo '模块配置重载脚本暂不兼容Android 11 QwQ，请重启平板以使规则生效'
+
 elif [[ "$API" -ge 31 ]]; then
   # 对云控文件解除写保护
   chattr -i /data/system/cloudFeature_embedded_rules_list.xml
@@ -92,6 +95,9 @@ elif [[ "$API" -ge 31 ]]; then
   chattr +i /data/system/cloudFeature_embedded_rules_list.xml
   chattr +i /data/system/cloudFeature_fixed_orientation_list.xml
   chattr +i /data/system/cloudFeature_autoui_list.xml
-fi
 
-cmd miui_embedding_window update-rule update-rule
+  cmd miui_embedding_window update-rule update-rule
+  cmd miui_auto_ui reload-rule
+
+  echo '模块已重新载入规则，更新成功了ww'
+fi
