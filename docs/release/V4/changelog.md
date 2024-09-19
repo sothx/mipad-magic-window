@@ -6,16 +6,9 @@
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
-
-[平行窗口]
-
-- 优化携程旅行的平行窗口适配体验
-
-- 优化猫眼的平行窗口适配体验
-
 [其他]
 
-- 修复禁止系统反向适配的规则概率性丢失的问题
+- 新增无需重启直接重载模块规则的脚本，默认写入/data/adb/MIUI_MagicWindow+/config/update_rule.sh，执行时请勾选使用系统环境和ROOT权限
 
 
 [近期动态]
