@@ -6,25 +6,9 @@
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
-[赫兹(com.immomo.vchat)]
-
-- 适配强制横屏
-
-- 适配应用布局优化元素缩放
-
-[彩云小译(com.caiyuninterpreter.activity)]
-
-- 适配强制横屏
-
 [其他]
 
-- 修复猫眼平行窗口适配异常的问题
-
-- 修复彩云小译无法正常全屏的问题
-
-- 修复应用布局优化配置无法正常重载的问题
-
-- 补充重载脚本成功或者失败时的文字提示语
+- 修复部分已适配横屏应用不能正常横屏的问题
 
 
 [近期动态]
