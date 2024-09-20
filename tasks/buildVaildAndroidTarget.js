@@ -16,7 +16,7 @@ const buildVaildAndroidTargetType = function () {
     if (['hyperos-based-on-tiramisu'].includes(options.use_compatibility)) {
         return 'LEToTiramisu'
     }
-    if (['sheng-for-pad', 'yudi-for-pad', 'pipa-for-pad', 'liuqin-for-pad'].includes(options.use_compatibility)) {
+    if (['sheng-for-pad','pipa-for-pad', 'liuqin-for-pad'].includes(options.use_compatibility)) {
         return 'LEToUpsideDownCake'
     }
     return false;
