@@ -10,6 +10,7 @@ const buildEjsTemplate = require('./tasks/buildEjsTemplate');
 const adaptivePlatformToFold = require('./tasks/adaptivePlatformToFold');
 const buildExtConfig = require('./tasks/buildExtConfig');
 const buildCompatibilityExtends = require('./tasks/buildCompatibilityExtends')
+const buildVaildAndroidTarget = require('./tasks/buildVaildAndroidTarget')
 const { mergeActivityEmbeddingConfig, mergeMagicWindowConfig, mergeOrientationConfig } = require('./tasks/mergeMagicWindowConfig');
 const buildApplicationCount = require('./tasks/buildApplicationCount');
 const buildNetdiskRelease = require('./tasks/buildNetdiskRelease');
@@ -29,6 +30,7 @@ const buildTasks = series(
   buildApplicationCount,
   integrateConfig,
   buildCompatibilityExtends,
+  buildVaildAndroidTarget,
   jsonToProp
 )
 
