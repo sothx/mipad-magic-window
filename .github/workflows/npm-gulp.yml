@@ -60,50 +60,17 @@ jobs:
         name: pad-ext-${{ env.VERSION }}
         path: "dist/**"
         overwrite: true
-
-    # - name: Build Ext Fold
-    #   run: |
-    #     npm run build-ext:fold
-
-    # - name: Upload Ext fold Release Zip
-    #   uses: actions/upload-artifact@v4
-    #   with:
-    #     name: fold-ext-${{ env.VERSION }}
-    #     path: "dist/**"
-    #     overwrite: true
         
-    - name: Build Transplant6MaxBasedOnTiramisu Pad
+    - name: Build Pad Compatibility Use YudiForHyperOS
       run: |
-          npm run build:transplant-6max-based-on-tiramisu
+          npm run build:pad-compatibility=yudi-for-hyperos
   
-    - name: Upload Transplant6MaxBasedOnTiramisu Pad Release Zip
+    - name: Upload Pad Compatibility Use YudiForHyperOS Release Zip
       uses: actions/upload-artifact@v4
       with:
-          name: pad-transplant-6max-based-on-tiramisu-${{ env.VERSION }}
+          name: pad-yudi-for-hyperos-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
-
-    # - name: Build Ext Transplant6MaxBasedOnTiramisu Pad
-    #   run: |
-    #       npm run build-ext:transplant-6max-based-on-tiramisu
-  
-    # - name: Upload Ext Transplant6MaxBasedOnTiramisu Pad Release Zip
-    #   uses: actions/upload-artifact@v4
-    #   with:
-    #       name: pad-transplant-6max-based-on-tiramisu-ext-${{ env.VERSION }}
-    #       path: "dist/**"
-    #       overwrite: true
-
-    # - name: Build Pad Ratio Of 3 To 2
-    #   run: |
-    #       npm run build:pad-ratio=3:2
-  
-    # - name: Upload Pad Ratio Of 3 To 2 Release Zip
-    #   uses: actions/upload-artifact@v4
-    #   with:
-    #       name: pad-ratioOf3To2-${{ env.VERSION }}
-    #       path: "dist/**"
-    #       overwrite: true
 
     - name: Build Pad Compatibility Use ShengForHyperOS
       run: |
@@ -116,17 +83,6 @@ jobs:
           path: "dist/**"
           overwrite: true
 
-    # - name: Build Ext Pad Ratio Of 3 To 2
-    #   run: |
-    #       npm run build-ext:pad-ratio=3:2
-  
-    # - name: Upload Ext Pad Ratio Of 3 To 2 Release Zip
-    #   uses: actions/upload-artifact@v4
-    #   with:
-    #       name: pad-ext-ratioOf3To2-${{ env.VERSION }}
-    #       path: "dist/**"
-    #       overwrite: true
-
     - name: Build Pad Mode Use MagicWindow
       run: |
           npm run build:pad-mode=magicWindow
@@ -137,39 +93,17 @@ jobs:
           name: pad-magicWindow-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
-
-    # - name: Build Ext Pad Mode Use MagicWindow
-    #   run: |
-    #       npm run build-ext:pad-mode=magicWindow
   
-    # - name: Upload Ext Pad Mode Use MagicWindow Release Zip
-    #   uses: actions/upload-artifact@v4
-    #   with:
-    #       name: pad-ext-magicWindow-${{ env.VERSION }}
-    #       path: "dist/**"
-    #       overwrite: true
-  
-    - name: Build Pad Compatibility Use NotSupportedShowDivider
+    - name: Build Pad Compatibility Use padTiramisu
       run: |
-          npm run build:pad-compatibility=not-dragable
+          npm run build:pad-compatibility=pad-tiramisu
   
-    - name: Upload Pad Compatibility Use NotSupportedShowDivider Release Zip
+    - name: Upload Pad Compatibility Use padTiramisu Release Zip
       uses: actions/upload-artifact@v4
       with:
-          name: pad-not-dragable-${{ env.VERSION }}
+          name: pad-tiramisu-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
-
-    # - name: Build Ext Pad Compatibility Use NotSupportedShowDivider
-    #   run: |
-    #       npm run build-ext:pad-compatibility=not-dragable
-  
-    # - name: Upload Ext Pad Compatibility Use NotSupportedShowDivider Release Zip
-    #   uses: actions/upload-artifact@v4
-    #   with:
-    #       name: pad-not-dragable-ext-${{ env.VERSION }}
-    #       path: "dist/**"
-    #       overwrite: true
 
     - name: Build Pad Compatibility Use HyperOSBasedOnTiramisu
       run: |
@@ -182,46 +116,24 @@ jobs:
           path: "dist/**"
           overwrite: true
 
-    # - name: Build Ext Pad Compatibility Use HyperOSBasedOnTiramisu
-    #   run: |
-    #       npm run build-ext:pad-compatibility=hyperos-based-on-tiramisu
-  
-    # - name: Upload Ext Pad Compatibility Use HyperOSBasedOnTiramisu Release Zip
-    #   uses: actions/upload-artifact@v4
-    #   with:
-    #       name: pad-hyperos-based-on-tiramisu-ext-${{ env.VERSION }}
-    #       path: "dist/**"
-    #       overwrite: true
-
-    - name: Build Pad Compatibility Use PipaForHyperOS
+    - name: Build Pad Compatibility Use PipaForPad
       run: |
-          npm run build:pad-compatibility=pipa-for-hyperos
+          npm run build:pad-compatibility=pipa-for-pad
   
     - name: Upload Pad Compatibility Use PipaForHyperOS Release Zip
       uses: actions/upload-artifact@v4
       with:
-          name: pad-pipa-for-hyperos-${{ env.VERSION }}
+          name: pad-pipa-for-pad-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 
-    - name: Build Pad Compatibility Use LiuqinForHyperOS
+    - name: Build Pad Compatibility Use LiuqinForPad
       run: |
-          npm run build:pad-compatibility=liuqin-for-hyperos
+          npm run build:pad-compatibility=liuqin-for-pad
   
-    - name: Upload Pad Compatibility Use LiuqinForHyperOS Release Zip
+    - name: Upload Pad Compatibility Use LiuqinForPad Release Zip
       uses: actions/upload-artifact@v4
       with:
-          name: pad-liuqin-for-hyperos-${{ env.VERSION }}
+          name: pad-liuqin-for-pad-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
-
-    # - name: Build Ext Pad Compatibility Use PipaForHyperOS
-    #   run: |
-    #       npm run build-ext:pad-compatibility=pipa-for-hyperos
-  
-    # - name: Upload Ext Pad Compatibility Use PipaForHyperOS Release Zip
-    #   uses: actions/upload-artifact@v4
-    #   with:
-    #       name: pad-pipa-for-hyperos-ext-${{ env.VERSION }}
-    #       path: "dist/**"
-    #       overwrite: true

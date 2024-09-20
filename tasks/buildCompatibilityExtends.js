@@ -21,7 +21,7 @@ module.exports = function buildCompatibilityExtends(cb) {
             return src(`${path}/**/*`) // 指定路径
             .pipe(dest(`${distDir}`))
         }
-    } catch {
+    } catch (err) {
         cb()
     }
 }
