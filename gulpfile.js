@@ -9,10 +9,7 @@ const jsonToProp = require('./tasks/jsonToProp');
 const buildEjsTemplate = require('./tasks/buildEjsTemplate');
 const adaptivePlatformToFold = require('./tasks/adaptivePlatformToFold');
 const buildExtConfig = require('./tasks/buildExtConfig');
-const adaptiveTransplant6MaxBasedOnTiramisu = require('./tasks/adaptiveTransplant6MaxBasedOnTiramisu');
-const adaptiveHyperOSBasedOnTiramisu = require('./tasks/adaptiveHyperOSBasedOnTiramisu');
-const adaptiveLiuqinForHyperOS = require('./tasks/adaptiveLiuqinForHyperOS');
-const adaptiveShengForHyperOS = require('./tasks/adaptiveShengForHyperOS');
+const buildCompatibilityExtends = require('./tasks/buildCompatibilityExtends')
 const { mergeActivityEmbeddingConfig, mergeMagicWindowConfig, mergeOrientationConfig } = require('./tasks/mergeMagicWindowConfig');
 const buildApplicationCount = require('./tasks/buildApplicationCount');
 const buildNetdiskRelease = require('./tasks/buildNetdiskRelease');
@@ -31,10 +28,7 @@ const buildTasks = series(
   buildExtConfig,
   buildApplicationCount,
   integrateConfig,
-  adaptiveTransplant6MaxBasedOnTiramisu,
-  adaptiveHyperOSBasedOnTiramisu,
-  adaptiveLiuqinForHyperOS,
-  adaptiveShengForHyperOS,
+  buildCompatibilityExtends,
   jsonToProp
 )
 
