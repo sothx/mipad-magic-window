@@ -14,10 +14,12 @@ const getCompatibilityAction = function () {
 const path = `${moduleSrc}/module_compatibility_extends/${getCompatibilityAction()}`
 
 
-module.exports = function buildCompatibilityExtends(cb) {
+module.exports = async function buildCompatibilityExtends(cb) {
+
+    const use_compatibility = getCompatibilityAction()
     try {
         const pathNotEmpty = fs.readdirSync(path)
-        if (pathNotEmpty) {
+        if (pathNotEmpty && use_compatibility) {
             return src(`${path}/**/*`) // 指定路径
             .pipe(dest(`${distDir}`))
         }

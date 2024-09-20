@@ -81,6 +81,28 @@ device_soc_name="$(getprop ro.vendor.qti.soc_name)"
 device_soc_model="$(getprop ro.vendor.qti.soc_model)"
 device_characteristics="$(getprop ro.build.characteristics)"
 
+# 导入MIUI Embedded Activity Window 服务
+if [[ -d "$MODPATH/common/source/miui_embedding_window_service/$API/" ]];then
+  # 目录不存在则创建目录
+  if [[ ! -d "$MODPATH/system/system_ext/framework" ]]; then
+  /bin/mkdir -p "$MODPATH/system/system_ext/framework"
+  fi
+  # 复制文件并写入权限
+  /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/$API/"* "$MODPATH/system/system_ext/framework/"
+  /bin/chmod -R 777 "$MODPATH/system/system_ext/framework/"
+fi
+
+## 导入MIUI Auoto UI 服务
+if [[ -d "$MODPATH/common/source/miui_autoui_service/$API/" ]];then
+  # 目录不存在则创建目录
+  if [[ ! -d "$MODPATH/system/system_ext/framework" ]]; then
+  /bin/mkdir -p "$MODPATH/system/system_ext/framework"
+  fi
+  # 复制文件并写入权限
+  /bin/cp -rf "$MODPATH/common/source/miui_autoui_service/$API/"* "$MODPATH/system/system_ext/framework/"
+  /bin/chmod -R 777 "$MODPATH/system/system_ext/framework/"
+fi
+
 # 骁龙8+Gen1机型判断
 is_need_smartfocusio=1
 has_been_enabled_smartfocusio=0

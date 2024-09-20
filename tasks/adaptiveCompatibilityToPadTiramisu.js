@@ -18,7 +18,7 @@ const buildActionIspadTiramisu = function () {
 /**
  * 不支持左右滑动条的设备，默认分屏比例从0.3统一改为0.35(强迫症？)
  */
-module.exports = function adaptiveCompatibilityTopadTiramisu(cb) {
+module.exports = function adaptiveCompatibilityToPadTiramisu(cb) {
   return src('temp/embedded_rules_list.xml') // 指定XML文件的路径
     .pipe(gulpIf(buildActionIspadTiramisu,gulpXML({
       callback: function (result) {
