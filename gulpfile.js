@@ -13,7 +13,7 @@ const buildCompatibilityExtends = require('./tasks/buildCompatibilityExtends')
 const { mergeActivityEmbeddingConfig, mergeMagicWindowConfig, mergeOrientationConfig } = require('./tasks/mergeMagicWindowConfig');
 const buildApplicationCount = require('./tasks/buildApplicationCount');
 const buildNetdiskRelease = require('./tasks/buildNetdiskRelease');
-const adaptiveCompatibilityToNoDivider = require('./tasks/adaptiveCompatibilityToNoDivider');
+const adaptiveCompatibilityToPadBasedOnTiramisu = require('./tasks/adaptiveCompatibilityToPadBasedOnTiramisu');
 const { options } = require('./config/process.env');
 const gulpIf = require('gulp-if');
 
@@ -24,7 +24,7 @@ const buildTasks = series(
   buildTemplate,
   buildEjsTemplate,
   adaptivePlatformToFold,
-  adaptiveCompatibilityToNoDivider,
+  adaptiveCompatibilityToPadBasedOnTiramisu,
   buildExtConfig,
   buildApplicationCount,
   integrateConfig,
