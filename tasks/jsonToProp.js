@@ -32,7 +32,7 @@ const buildActionIsShengForPad = function () {
 
 const buildActionIspadTiramisu = function () {
   const use_compatibility = options.use_compatibility
-  return use_compatibility === 'pad-tiramisu'
+  return use_compatibility === 'general-tiramisu'
 }
 
 const buildActionIsHyperOSBasedOnTiramisu = function () {

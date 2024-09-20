@@ -96,12 +96,12 @@ jobs:
   
     - name: Build Pad Compatibility Use padTiramisu
       run: |
-          npm run build:pad-compatibility=pad-tiramisu
+          npm run build:pad-compatibility=general-tiramisu
   
     - name: Upload Pad Compatibility Use padTiramisu Release Zip
       uses: actions/upload-artifact@v4
       with:
-          name: pad-tiramisu-${{ env.VERSION }}
+          name: general-tiramisu-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 

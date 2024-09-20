@@ -7,9 +7,9 @@ const gulpIf = require('gulp-if');
 const DOMParser = require('xmldom').DOMParser;
 const XMLSerializer = require('xmldom').XMLSerializer;
 
-const buildActionIspadTiramisu = function () {
+const buildActionIsGeneralTiramisu = function () {
   const use_compatibility = options.use_compatibility
-  if (use_compatibility === 'pad-tiramisu') {
+  if (use_compatibility === 'general-tiramisu') {
     return true;
   }
   return false;
@@ -18,9 +18,9 @@ const buildActionIspadTiramisu = function () {
 /**
  * 不支持左右滑动条的设备，默认分屏比例从0.3统一改为0.35(强迫症？)
  */
-module.exports = function adaptiveCompatibilityToPadTiramisu(cb) {
+module.exports = function adaptiveCompatibilityToGeneralTiramisu(cb) {
   return src('temp/embedded_rules_list.xml') // 指定XML文件的路径
-    .pipe(gulpIf(buildActionIspadTiramisu,gulpXML({
+    .pipe(gulpIf(buildActionIsGeneralTiramisu,gulpXML({
       callback: function (result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml')
         const elementsWithAttribute = doc.getElementsByTagName('package');
@@ -41,5 +41,5 @@ module.exports = function adaptiveCompatibilityToPadTiramisu(cb) {
         return new XMLSerializer().serializeToString(doc);
       }
     })))
-    .pipe(gulpIf(buildActionIspadTiramisu,dest('temp')));
+    .pipe(gulpIf(buildActionIsGeneralTiramisu,dest('temp')));
 }
