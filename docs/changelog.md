@@ -6,6 +6,10 @@
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
+[重要提醒]
+
+由于本次模块重构了大部分的项目代码，为保障大多数人的稳定性，暂时不开放老版本模块升级到1.25.0新版测试模块的功能，如需体验测试版模块请手动升级到最新版本。
+
 [平行窗口]
 
 - 优化微博的精适配规则(仅部分机型专版支持)
