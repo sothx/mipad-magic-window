@@ -18,7 +18,7 @@ module.exports = function buildCompatibilityExtends(cb) {
     try {
         const pathNotEmpty = fs.readdirSync(path)
         if (pathNotEmpty) {
-            return src(`${path}/**/*`) // 指定JAR文件的路径
+            return src(`${path}/**/*`) // 指定路径
             .pipe(dest(`${distDir}`))
         }
     } catch {
