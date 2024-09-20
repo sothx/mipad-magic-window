@@ -61,22 +61,22 @@ jobs:
         path: "dist/**"
         overwrite: true
         
-    - name: Build Pad Compatibility Use YudiForHyperOS
+    - name: Build Pad Compatibility Use YudiForPad
       run: |
-          npm run build:pad-compatibility=yudi-for-hyperos
+          npm run build:pad-compatibility=yudi-for-pad
   
-    - name: Upload Pad Compatibility Use YudiForHyperOS Release Zip
+    - name: Upload Pad Compatibility Use YudiForPad Release Zip
       uses: actions/upload-artifact@v4
       with:
-          name: pad-yudi-for-hyperos-${{ env.VERSION }}
+          name: pad-yudi-for-pad-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 
-    - name: Build Pad Compatibility Use ShengForHyperOS
+    - name: Build Pad Compatibility Use ShengForPad
       run: |
           npm run build:pad-compatibility=sheng-for-hyperos
   
-    - name: Upload Pad Compatibility Use ShengForHyperOS Release Zip
+    - name: Upload Pad Compatibility Use ShengForPad Release Zip
       uses: actions/upload-artifact@v4
       with:
           name: pad-sheng-for-hyperos-${{ env.VERSION }}
@@ -94,11 +94,11 @@ jobs:
           path: "dist/**"
           overwrite: true
   
-    - name: Build Pad Compatibility Use padTiramisu
+    - name: Build Pad Compatibility Use GeneralTiramisu
       run: |
           npm run build:pad-compatibility=general-tiramisu
   
-    - name: Upload Pad Compatibility Use padTiramisu Release Zip
+    - name: Upload Pad Compatibility Use GeneralTiramisu Release Zip
       uses: actions/upload-artifact@v4
       with:
           name: general-tiramisu-${{ env.VERSION }}
