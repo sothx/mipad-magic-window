@@ -38,7 +38,7 @@
 
 ### 小米平板6S Pro澎湃专版(仅适配小米平板6S Pro，不适用于6/6 Pro/6 Max)
 
-模块安装包名称：pad-sheng-for-pad-x.xx.xx.zip
+模块安装包名称：pad-sheng-device-code-x.xx.xx.zip
 
 模块简介：适配小米平板6S Pro，强制禁用所有小米平板专有的阻止系统反向适配平行窗口的属性(Google Embedded Activity规范除外)，因此可以额外对很多应用进行精适配，该版本存在一定的卡米风险，需要自行救砖，该版本误装会100%卡米！！！
 
@@ -46,7 +46,7 @@
 
 ### 小米平板6 Pro澎湃专版(仅适配小米平板6 Pro，不适用于6/6 Max/6S Pro)
 
-模块安装包名称：pad-liuqin-for-pad-x.xx.xx.zip
+模块安装包名称：pad-liuqin-device-code-x.xx.xx.zip
 
 模块简介：适配小米平板6 Pro，强制禁用所有小米平板专有的阻止系统反向适配平行窗口的属性(Google Embedded Activity规范除外)，因此可以额外对很多应用进行精适配，该版本存在一定的卡米风险，需要自行救砖，该版本误装会100%卡米！！！
 
@@ -55,7 +55,7 @@
 
 ### 小米平板6(pipa)澎湃专版(仅适配小米平板6，不适用于6 Pro/6 Max/6S Pro)
 
-模块安装包名称：pad-pipa-for-pad-x.xx.xx.zip
+模块安装包名称：pad-pipa-device-code-x.xx.xx.zip
 
 模块简介：
 
@@ -75,7 +75,7 @@
 
 ### 小米平板6 Max(yudi)专版(仅适配小米平板6 Max，不适用于6/6 Pro/6S Pro)
 
-模块安装包名称：pad-yudi-for-pad-x.xx.xx.zip
+模块安装包名称：pad-yudi-device-code-x.xx.xx.zip
 
 模块简介：
 

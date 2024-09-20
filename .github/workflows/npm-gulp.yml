@@ -61,25 +61,25 @@ jobs:
         path: "dist/**"
         overwrite: true
         
-    - name: Build Pad Compatibility Use YudiForPad
+    - name: Build Pad Compatibility Use YudiDeviceCode
       run: |
-          npm run build:pad-compatibility=yudi-for-pad
+          npm run build:pad-compatibility=yudi-device-code
   
-    - name: Upload Pad Compatibility Use YudiForPad Release Zip
+    - name: Upload Pad Compatibility Use YudiDeviceCode Release Zip
       uses: actions/upload-artifact@v4
       with:
-          name: pad-yudi-for-pad-${{ env.VERSION }}
+          name: pad-yudi-device-code-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 
-    - name: Build Pad Compatibility Use ShengForPad
+    - name: Build Pad Compatibility Use ShengDeviceCode
       run: |
-          npm run build:pad-compatibility=sheng-for-hyperos
+          npm run build:pad-compatibility=sheng-device-code
   
-    - name: Upload Pad Compatibility Use ShengForPad Release Zip
+    - name: Upload Pad Compatibility Use ShengDeviceCode Release Zip
       uses: actions/upload-artifact@v4
       with:
-          name: pad-sheng-for-hyperos-${{ env.VERSION }}
+          name: pad-sheng-device-code-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 
@@ -116,24 +116,24 @@ jobs:
           path: "dist/**"
           overwrite: true
 
-    - name: Build Pad Compatibility Use PipaForPad
+    - name: Build Pad Compatibility Use PipaDeviceCode
       run: |
-          npm run build:pad-compatibility=pipa-for-pad
+          npm run build:pad-compatibility=pipa-device-code
   
     - name: Upload Pad Compatibility Use PipaForHyperOS Release Zip
       uses: actions/upload-artifact@v4
       with:
-          name: pad-pipa-for-pad-${{ env.VERSION }}
+          name: pad-pipa-device-code-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 
-    - name: Build Pad Compatibility Use LiuqinForPad
+    - name: Build Pad Compatibility Use LiuqinDeviceCode
       run: |
-          npm run build:pad-compatibility=liuqin-for-pad
+          npm run build:pad-compatibility=liuqin-device-code
   
-    - name: Upload Pad Compatibility Use LiuqinForPad Release Zip
+    - name: Upload Pad Compatibility Use LiuqinDeviceCode Release Zip
       uses: actions/upload-artifact@v4
       with:
-          name: pad-liuqin-for-pad-${{ env.VERSION }}
+          name: pad-liuqin-device-code-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true

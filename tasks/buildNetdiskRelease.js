@@ -37,18 +37,18 @@ function releaseFold() {
     .pipe(dest(`${releaseNetdiskDir}/4.小米折叠屏通用版（适配Mix Fold系列）`))
 }
 
-function releasShengForPad() {
-  return src(`${releaseDir}/${moduleConfig.version}/pad-sheng-for-pad-${moduleConfig.version}.zip`)
+function releasShengDeviceCode() {
+  return src(`${releaseDir}/${moduleConfig.version}/pad-sheng-device-code-${moduleConfig.version}.zip`)
     .pipe(dest(`${releaseNetdiskDir}/5.小米平板6S Pro专版(仅适配小米平板6S Pro)`))
 }
 
-function releasLiuqinForPad() {
-  return src(`${releaseDir}/${moduleConfig.version}/pad-liuqin-for-pad-${moduleConfig.version}.zip`)
+function releasLiuqinDeviceCode() {
+  return src(`${releaseDir}/${moduleConfig.version}/pad-liuqin-device-code-${moduleConfig.version}.zip`)
     .pipe(dest(`${releaseNetdiskDir}/6.小米平板6 Pro(liuqin)专版(仅适配小米平板6 Pro)`))
 }
 
-function releasPipaForPad() {
-  return src(`${releaseDir}/${moduleConfig.version}/pad-pipa-for-pad-${moduleConfig.version}.zip`)
+function releasPipaDeviceCode() {
+  return src(`${releaseDir}/${moduleConfig.version}/pad-pipa-device-code-${moduleConfig.version}.zip`)
     .pipe(dest(`${releaseNetdiskDir}/7.小米平板6(pipa)专版(仅适配小米平板6)`))
 }
 
@@ -57,8 +57,8 @@ function releasePadByHyperOSBasedOnTiramisu() {
     .pipe(dest(`${releaseNetdiskDir}/8.小米平板5系列安卓13专版（仅安卓13澎湃可刷）`))
 }
 
-function releaseYudiForPad() {
-  return src(`${releaseDir}/${moduleConfig.version}/pad-yudi-for-pad-${moduleConfig.version}.zip`)
+function releaseYudiDeviceCode() {
+  return src(`${releaseDir}/${moduleConfig.version}/pad-yudi-device-code-${moduleConfig.version}.zip`)
     .pipe(dest(`${releaseNetdiskDir}/9.小米平板6 Max(yudi)专版(仅适配小米平板6 Max)`))
 }
 
@@ -71,4 +71,4 @@ function releaseYudiForPad() {
 
 
 
-module.exports = parallel(releasePad,releasShengForPad,releasPipaForPad,releasLiuqinForPad,releaseFold, releasePadByMagicWindow, releaseGeneralTiramisu, releaseYudiForPad,releasePadByHyperOSBasedOnTiramisu)
+module.exports = parallel(releasePad,releasShengDeviceCode,releasPipaDeviceCode,releasLiuqinDeviceCode,releaseFold, releasePadByMagicWindow, releaseGeneralTiramisu, releaseYudiDeviceCode,releasePadByHyperOSBasedOnTiramisu)

@@ -16,7 +16,7 @@ const getInstallTemplateType = function () {
   if (['hyperos-based-on-tiramisu'].includes(options.use_compatibility)) {
     return 'LEToTiramisu'
   }
-  if (['sheng-for-pad','yudi-for-pad','pipa-for-pad','liuqin-for-pad'].includes(options.use_compatibility)) {
+  if (['sheng-device-code','yudi-device-code','pipa-device-code','liuqin-device-code'].includes(options.use_compatibility)) {
     return 'LEToUpsideDownCake'
   }
   return 'generic'

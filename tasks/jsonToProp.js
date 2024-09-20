@@ -13,8 +13,8 @@ const buildActionIsPad = function () {
 }
 
 
-const buildActionIsYudiForPad = function () {
-  const is_transplant = options.use_compatibility === 'yudi-for-pad'
+const buildActionIsYudiDeviceCode = function () {
+  const is_transplant = options.use_compatibility === 'yudi-device-code'
   const is_pad = options.use_platform === 'pad'
   return is_transplant && is_pad
 }
@@ -24,9 +24,9 @@ const buildActionIsFold = function () {
   return use_platform === 'fold'
 }
 
-const buildActionIsShengForPad = function () {
+const buildActionIsShengDeviceCode = function () {
   const use_compatibility = options.use_compatibility
-  return use_compatibility === 'sheng-for-pad'
+  return use_compatibility === 'sheng-device-code'
 }
 
 
@@ -40,14 +40,14 @@ const buildActionIsHyperOSBasedOnTiramisu = function () {
   return use_compatibility === 'hyperos-based-on-tiramisu'
 }
 
-const buildActionIsPipaForPad = function () {
+const buildActionIsPipaDeviceCode = function () {
   const use_compatibility = options.use_compatibility
-  return use_compatibility === 'pipa-for-pad'
+  return use_compatibility === 'pipa-device-code'
 }
 
-const buildActionIsLiuqinForPad = function () {
+const buildActionIsLiuqinDeviceCode = function () {
   const use_compatibility = options.use_compatibility
-  return use_compatibility === 'liuqin-for-pad'
+  return use_compatibility === 'liuqin-device-code'
 }
 
 const buildActionIsMagicWindow = function () {
@@ -94,7 +94,7 @@ module.exports = function jsonToProp() {
       json.description = `${global.applicationRuleCount ? `[★适配应用总数:${global.applicationRuleCount}]` : ''} 适用于HyperOS For Fold，用于扩展平行窗口、强制横屏、应用显示比例、应用布局优化和游戏显示布局的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米折叠屏通用版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(反馈应用适配问题可前往酷安私信 @做梦书 ，模块首页:https://hyper-magic-window.sothx.com，GitHub仓库:https://github.com/sothx/mipad-magic-window，模块Q群:277757185，如需卸载模块请移除模块后重启平板)`;
       return json;
     })))
-    .pipe(gulpIf(buildActionIsYudiForPad, gulpJSONEdit(function (json) {
+    .pipe(gulpIf(buildActionIsYudiDeviceCode, gulpJSONEdit(function (json) {
       json.description = `${global.applicationRuleCount ? `[★适配应用总数:${global.applicationRuleCount}，仅兼容Android 13]` : ''} 适用于MIUI 14 For Pad，用于扩展平行窗口、强制横屏、应用显示比例、应用布局优化和游戏显示布局的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板6Max(yudi)专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(反馈应用适配问题可前往酷安私信 @做梦书 ，模块首页:https://hyper-magic-window.sothx.com，GitHub仓库:https://github.com/sothx/mipad-magic-window，模块Q群:277757185，本模块仅适用于基于MIUI14 For Pad的 6 Max 移植包，移植包升级Hyper OS For Pad之前，请先卸载本模块，如需卸载模块请移除模块后重启平板)`;
       return json;
     })))
@@ -102,15 +102,15 @@ module.exports = function jsonToProp() {
       json.description = `${global.applicationRuleCount ? `[★适配应用总数:${global.applicationRuleCount}，仅兼容Android 13]` : ''} 适用于HyperOS For Pad，用于扩展平行窗口、强制横屏、应用显示比例、应用布局优化和游戏显示布局的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板5系列安卓13澎湃专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(反馈应用适配问题可前往酷安私信 @做梦书 ，模块首页:https://hyper-magic-window.sothx.com，GitHub仓库:https://github.com/sothx/mipad-magic-window，模块Q群:277757185，本模块仅适用于小米平板5、小米平板5 Pro和小米平板5 Pro 5G 的小米官方 Hyper OS For Pad，升级系统前请先卸载本模块，避免卡米，如需卸载模块请移除模块后重启平板)`;
       return json;
     })))
-    .pipe(gulpIf(buildActionIsPipaForPad, gulpJSONEdit(function (json) {
+    .pipe(gulpIf(buildActionIsPipaDeviceCode, gulpJSONEdit(function (json) {
       json.description = `${global.applicationRuleCount ? `[★适配应用总数:${global.applicationRuleCount}，仅兼容Android 14+]` : ''} 适用于HyperOS For Pad，用于扩展平行窗口、强制横屏、应用显示比例、应用布局优化和游戏显示布局的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板6(pipa)专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(反馈应用适配问题可前往酷安私信 @做梦书 ，模块首页:https://hyper-magic-window.sothx.com，GitHub仓库:https://github.com/sothx/mipad-magic-window，模块Q群:277757185，本模块仅适用于小米平板6(pipa) 的小米官方 Hyper OS For Pad，升级系统前请先卸载本模块，避免卡米，如需卸载模块请移除模块后重启平板)`;
       return json;
     })))
-    .pipe(gulpIf(buildActionIsLiuqinForPad, gulpJSONEdit(function (json) {
+    .pipe(gulpIf(buildActionIsLiuqinDeviceCode, gulpJSONEdit(function (json) {
       json.description = `${global.applicationRuleCount ? `[★适配应用总数:${global.applicationRuleCount}，仅兼容Android 14,未兼容Android 15]` : ''} 适用于HyperOS For Pad，用于扩展平行窗口、强制横屏、应用显示比例、应用布局优化和游戏显示布局的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板6 Pro(liuqin)专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(反馈应用适配问题可前往酷安私信 @做梦书 ，模块首页:https://hyper-magic-window.sothx.com，GitHub仓库:https://github.com/sothx/mipad-magic-window，模块Q群:277757185，本模块仅适用于小米平板6 Pro(liuqin) 的小米官方 Hyper OS For Pad，升级系统前请先卸载本模块，避免卡米，如需卸载模块请移除模块后重启平板)`;
       return json;
     })))
-    .pipe(gulpIf(buildActionIsShengForPad, gulpJSONEdit(function (json) {
+    .pipe(gulpIf(buildActionIsShengDeviceCode, gulpJSONEdit(function (json) {
       json.description = `${global.applicationRuleCount ? `[★适配应用总数:${global.applicationRuleCount}，仅兼容Android 14,未兼容Android 15]` : ''} 适用于HyperOS For Pad，用于扩展平行窗口、强制横屏、应用显示比例、应用布局优化和游戏显示布局的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板6S Pro(sheng)专版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(反馈应用适配问题可前往酷安私信 @做梦书 ，模块首页:https://hyper-magic-window.sothx.com，GitHub仓库:https://github.com/sothx/mipad-magic-window，模块Q群:277757185，本模块仅适用于小米平板6S Pro(sheng) 的小米官方 Hyper OS For Pad，升级系统前请先卸载本模块，避免卡米，如需卸载模块请移除模块后重启平板)`;
       return json;
     })))
