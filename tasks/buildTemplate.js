@@ -13,10 +13,10 @@ const getInstallTemplateType = function () {
   if (options.use_ext) {
     return 'ext';
   }
-  if ([].includes(options.use_compatibility)) {
+  if (['hyperos-based-on-tiramisu'].includes(options.use_compatibility)) {
     return 'LEToTiramisu'
   }
-  if ([].includes(options.use_compatibility)) {
+  if (['sheng-for-pad','yudi-for-pad','pipa-for-pad','liuqin-for-pad'].includes(options.use_compatibility)) {
     return 'LEToUpsideDownCake'
   }
   return 'generic'
