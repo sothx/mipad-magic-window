@@ -1,4 +1,5 @@
 # 声明变量
+MODULE_CUSTOM_CONFIG_PATH="/data/adb/MIUI_MagicWindow+"
 MODDIR="/data/adb/modules/MIUI_MagicWindow+"
 . "$MODDIR"/util_functions.sh
 api_level_arch_detect
@@ -10,7 +11,6 @@ CUSTOM_CONFIG_AUTOUI_LIST="/data/adb/MIUI_MagicWindow+/config/autoui_list.xml"
 # Android 11
 CUSTOM_CONFIG_MAGIC_WINDOW_APPLICATION_LIST="/data/adb/MIUI_MagicWindow+/config/magicWindowFeature_magic_window_application_list.xml"
 CUSTOM_CONFIG_MAGIC_WINDOW_SETTING_CONFIG="/data/adb/MIUI_MagicWindow+/config/magic_window_setting_config.xml"
-
 
 if [[ "$API" -eq 30 ]]; then
   # 对云控文件解除写保护
@@ -98,6 +98,16 @@ elif [[ "$API" -ge 31 ]]; then
 
   cmd miui_embedding_window update-rule
   cmd miui_auto_ui reload-rule
+
+  if [ -f "$MODULE_CUSTOM_CONFIG_PATH"/config/service_shell.sh ]; then
+
+    . "$MODULE_CUSTOM_CONFIG_PATH"/config/service_shell.sh
+
+    if type set_reload_rule &>/dev/null; then
+      set_reload_rule
+    fi
+
+  fi
 
   echo '模块已重新载入规则，更新成功了ww'
 fi

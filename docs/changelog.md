@@ -10,11 +10,9 @@
 
 由于本次模块重构了大部分的项目代码，为保障大多数人的稳定性，暂时不开放老版本模块升级到1.25.0新版测试模块的功能，如需体验测试版模块请手动升级到最新版本。
 
-[平行窗口]
+[模块]
 
-- 优化美团的默认分屏比例为0.3
-
-- 修复雨课堂的平板适配
+- 补充可以微调部分模块配置的脚本，并且增加非阻塞执行逻辑
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)

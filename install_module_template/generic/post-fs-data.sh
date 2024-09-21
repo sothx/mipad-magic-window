@@ -1,6 +1,7 @@
 # shellcheck disable=SC2148
 
 MODDIR=${0%/*}
+MODULE_CUSTOM_CONFIG_PATH="/data/adb/MIUI_MagicWindow+"
 . "$MODDIR"/util_functions.sh
 api_level_arch_detect
 
@@ -93,4 +94,5 @@ elif [[ "$API" -ge 31 ]]; then
   chattr +i /data/system/cloudFeature_embedded_rules_list.xml
   chattr +i /data/system/cloudFeature_fixed_orientation_list.xml
   chattr +i /data/system/cloudFeature_autoui_list.xml
+
 fi
