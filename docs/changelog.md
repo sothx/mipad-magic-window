@@ -12,21 +12,9 @@
 
 [平行窗口]
 
-- 优化微博的精适配规则(仅部分机型专版支持)
+- 优化美团的默认分屏比例为0.3
 
-[项目]
-
-- 特殊版本增加Android版本校验逻辑
-
-- 重构所有模块版本的版本描述
-
-- 模块升级版本号提高到V5
-
-- 重构CI/CD逻辑
-
-- 修复错误的重载配置脚本
-
-
+- 修复雨课堂的平板适配
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)

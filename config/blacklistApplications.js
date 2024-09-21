@@ -128,6 +128,7 @@ const fullScreenList = {
   'com.jingdong.app.reader.campus': true, // 京东读书专业版
   'com.UCMobile': true, // UC浏览器
   'com.quark.browser': true, // 夸克浏览器
+  'com.xuetangx.ykt': true, // 雨课题
 }
 
 /**
