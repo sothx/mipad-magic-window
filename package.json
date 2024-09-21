@@ -88,6 +88,7 @@
   "devDependencies": {
     "cross-env": "^7.0.3",
     "gulp": "^4.0.2",
+    "gulp-copy": "^5.0.0",
     "gulp-ejs": "^5.1.0",
     "gulp-file": "^0.4.0",
     "gulp-if": "^3.0.0",

@@ -2,6 +2,7 @@ const { src, dest } = require('gulp');
 const { options } = require('../config/process.env');
 const gulpIf = require('gulp-if');
 const fs = require('fs')
+const gulpCopy = require('gulp-copy')
 
 const distDir = 'dist'
 const moduleSrc = 'module_src'
@@ -20,8 +21,9 @@ module.exports = async function buildCompatibilityExtends(cb) {
     try {
         const pathNotEmpty = fs.readdirSync(path)
         if (pathNotEmpty && use_compatibility) {
-            return src(`${path}/**/*`) // 指定路径
-            .pipe(dest(`${distDir}`))
+            console.log(path,'path')
+            return src(`${path}/**`, { dot: true }) // 指定路径
+            .pipe(dest(dist))
         }
     } catch (err) {
         cb()

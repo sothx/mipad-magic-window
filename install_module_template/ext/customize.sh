@@ -3,7 +3,9 @@
 
 SKIPUNZIP=0
 . "$MODPATH"/util_functions.sh
-. "$MODPATH"/valid_target.sh
+if [ -f "$MODPATH"/verify_funcrtion.sh ];then
+. "$MODPATH"/verify_funcrtion.sh
+fi
 magisk_path=/data/adb/modules/
 module_id=$(grep_prop id "$MODPATH/module.prop")
 module_versionCode=$(expr "$(grep_prop versionCode "$MODPATH/module.prop")" + 0)
@@ -12,7 +14,9 @@ MODULE_CUSTOM_CONFIG_PATH="/data/adb/"$module_id
 
 api_level_arch_detect
 
-valid_current_android_target_pass $API
+if type verify_android_api_has_pass &>/dev/null; then
+  verify_android_api_has_pass $API
+fi
 
 if [[ "$KSU" == "true" ]]; then
   ui_print "- KernelSU 用户空间当前的版本号: $KSU_VER_CODE"
