@@ -14,6 +14,8 @@
 
 - 补充可以微调部分模块配置的脚本，并且增加非阻塞执行逻辑
 
+- 针对模块重载脚本，增加Magisk 27008的Action.sh支持
+
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
