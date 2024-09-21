@@ -12,7 +12,7 @@
 
 [模块]
 
-- 补充对MIUI14专版模块的支持
+- 补充对不同Android版本的专版模块兼容性
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
