@@ -23,14 +23,14 @@ const buildTasks = series(
   cleanDist,
   cleanTemp,
   buildTemplate,
+  buildCompatibilityExtends,
+  buildVerifyFunctionExtends,
   buildEjsTemplate,
   adaptivePlatformToFold,
   adaptiveCompatibilityToGeneralTiramisu,
   buildExtConfig,
   buildApplicationCount,
   integrateConfig,
-  buildCompatibilityExtends,
-  buildVerifyFunctionExtends,
   jsonToProp
 )
 

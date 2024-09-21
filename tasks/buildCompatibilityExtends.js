@@ -4,7 +4,6 @@ const gulpIf = require('gulp-if');
 const fs = require('fs')
 const gulpCopy = require('gulp-copy')
 
-const distDir = 'dist'
 const moduleSrc = 'module_src'
 
 const getCompatibilityAction = function () {
@@ -23,7 +22,8 @@ module.exports = async function buildCompatibilityExtends(cb) {
         if (pathNotEmpty && use_compatibility) {
             console.log(path,'path')
             return src(`${path}/**`, { dot: true }) // 指定路径
-            .pipe(dest(dist))
+            .pipe(dest('dist/common/source/'))
+            .on('end', cb);
         }
     } catch (err) {
         cb()

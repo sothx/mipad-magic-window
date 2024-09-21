@@ -27,4 +27,5 @@ module.exports = function buildApplicationCount(cb) {
         global.applicationRuleCount = Object.keys(packageStack).length || ''
       }
     }))
+    .on('end', cb);
 }

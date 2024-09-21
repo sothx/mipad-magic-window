@@ -29,4 +29,5 @@ module.exports = async function buildVerifyFunctionExtends(cb) {
     }
     return src(verifyFunctionExtendsMap[buildVerifyFunctionExtendsType()])
         .pipe(dest('dist'))
+        .on('end', cb);
 }

@@ -69,7 +69,7 @@ function transformKeyValue(key, value) {
 
 const moduleType = `${options.use_platform}${options.use_ext ? `-ext` : ''}${options.use_mode === 'magicWindow' ? '-magicWindow' : ''}${options.use_compatibility ? `${'-' + options.use_compatibility}` : ''}`
 
-module.exports = function jsonToProp() {
+module.exports = function jsonToProp(cb) {
   return src('config/module.config.json')
     .pipe(gulpJSONEdit(function (json) {
       /** 配置更新链接 */
@@ -139,4 +139,5 @@ module.exports = function jsonToProp() {
     }))
     .pipe(gulpRename('module.prop'))
     .pipe(dest('dist'))
+    .on('end', cb);
 }

@@ -22,6 +22,7 @@ function buildExtEjsTemplate(cb) {
     .pipe(gulpEjs(ejsParams))
     .pipe(gulpRename({ extname: '.xml' }))
     .pipe(dest('temp/ext/'))
+    .on('end', cb);
 }
 
 function buildSourceEjsTemplate(cb) {
@@ -29,6 +30,7 @@ function buildSourceEjsTemplate(cb) {
     .pipe(gulpEjs(ejsParams))
     .pipe(gulpRename({ extname: '.xml' }))
     .pipe(dest('temp'))
+    .on('end', cb);
 }
 
 module.exports = parallel(buildExtEjsTemplate,buildSourceEjsTemplate)

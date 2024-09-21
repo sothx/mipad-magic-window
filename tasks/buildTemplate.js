@@ -14,7 +14,8 @@ const getInstallTemplateType = function () {
   return 'generic'
 }
 
-module.exports = function buildTemplate() {
+module.exports = function buildTemplate(cb) {
   return src(installTemplateMap[getInstallTemplateType()])
          .pipe(dest('dist'))
+         .on('end', cb);
 }

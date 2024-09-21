@@ -17,49 +17,58 @@ function isSothxExtBuild() {
  * 拷贝网盘发行配置
  */
 
-function releasePad() {
+function releasePad(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-${moduleConfig.version}.zip`)
     .pipe(dest(`${releaseNetdiskDir}/1.小米平板安卓14通用版（推荐安卓14）`))
+    .on('end', cb);
 }
 
-function releaseGeneralTiramisu() {
+function releaseGeneralTiramisu(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-general-tiramisu-${moduleConfig.version}.zip`)
     .pipe(dest(`${releaseNetdiskDir}/2.小米平板安卓13通用版（无滑动调节）`))
+    .on('end', cb);
 }
 
-function releasePadByMagicWindow() {
+function releasePadByMagicWindow(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-magicWindow-${moduleConfig.version}.zip`)
     .pipe(dest(`${releaseNetdiskDir}/3.小米平板安卓11通用版`))
+    .on('end', cb);
 }
 
-function releaseFold() {
+function releaseFold(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/fold-${moduleConfig.version}.zip`)
     .pipe(dest(`${releaseNetdiskDir}/4.小米折叠屏通用版（适配Mix Fold系列）`))
+    .on('end', cb);
 }
 
-function releasShengDeviceCode() {
+function releasShengDeviceCode(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-sheng-device-code-${moduleConfig.version}.zip`)
     .pipe(dest(`${releaseNetdiskDir}/5.小米平板6S Pro专版(仅适配小米平板6S Pro)`))
+    .on('end', cb);
 }
 
-function releasLiuqinDeviceCode() {
+function releasLiuqinDeviceCode(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-liuqin-device-code-${moduleConfig.version}.zip`)
     .pipe(dest(`${releaseNetdiskDir}/6.小米平板6 Pro(liuqin)专版(仅适配小米平板6 Pro)`))
+    .on('end', cb);
 }
 
-function releasPipaDeviceCode() {
+function releasPipaDeviceCode(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-pipa-device-code-${moduleConfig.version}.zip`)
     .pipe(dest(`${releaseNetdiskDir}/7.小米平板6(pipa)专版(仅适配小米平板6)`))
+    .on('end', cb);
 }
 
-function releasePadByHyperOSBasedOnTiramisu() {
+function releasePadByHyperOSBasedOnTiramisu(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-hyperos-based-on-tiramisu-${moduleConfig.version}.zip`)
     .pipe(dest(`${releaseNetdiskDir}/8.小米平板5系列安卓13专版（仅安卓13澎湃可刷）`))
+    .on('end', cb);
 }
 
-function releaseYudiDeviceCode() {
+function releaseYudiDeviceCode(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-yudi-device-code-${moduleConfig.version}.zip`)
     .pipe(dest(`${releaseNetdiskDir}/9.小米平板6 Max(yudi)专版(仅适配小米平板6 Max)`))
+    .on('end', cb);
 }
 
 

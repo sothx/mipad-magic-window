@@ -223,7 +223,8 @@ function mergeAutoUIListExtConfig(cb) {
         const cleanedXml = serializedXml.replace(/^\s*[\r\n]|[\r\n]+\s*$/gm, ''); 
         return cleanedXml;
       }})))
-    .pipe(dest('temp'));
+    .pipe(dest('temp'))
+    .on('end', cb);
 }
 
 module.exports = series(getEmbeddedRuleListExtConfigData,mergeEmbeddedRuleListExtConfig,getFixedOrientationListExtConfigData,mergeFixedOrientationListExtConfig,getAutoUIListExtConfig,mergeAutoUIListExtConfig)

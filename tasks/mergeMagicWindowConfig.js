@@ -45,7 +45,7 @@ const isUseActivityEmbedding = function () {
 /**
  * 获取荣耀的平行视界规则
  */
-function getHonorMagicWindowConfigData() {
+function getHonorMagicWindowConfigData(cb) {
   return src('input_merge_config/honor_magicwindow_config/magic_window_application_list.xml') // 指定XML文件的路径
     .pipe(gulpIf(isUseHonorConfig, gulpXML({
       callback: function (result) {
@@ -66,12 +66,13 @@ function getHonorMagicWindowConfigData() {
     })))
     .pipe(gulpIf(isUseHonorConfig, gulpRename('honor_magicwindow_config.json')))
     .pipe(gulpIf(isUseHonorConfig, dest('output_temp/json/')))
+    .on('end', cb);
 }
 
 /**
  * 获取华为的平行视界规则
  */
-function getHwMagicWindowConfigData() {
+function getHwMagicWindowConfigData(cb) {
   return src('input_merge_config/hw_magicwindow_config/magic_window_application_list.xml') // 指定XML文件的路径
     .pipe(gulpIf(isUseHwConfig, gulpXML({
       callback: function (result) {
@@ -92,12 +93,13 @@ function getHwMagicWindowConfigData() {
     })))
     .pipe(gulpIf(isUseHwConfig, gulpRename('hw_magicwindow_config.json')))
     .pipe(gulpIf(isUseHwConfig, dest('output_temp/json/')))
+    .on('end', cb);
 }
 
 /**
  * 获取OPPO的平行视界规则
  */
-function getOPPOMagicWindowConfigData() {
+function getOPPOMagicWindowConfigData(cb) {
   return src('input_merge_config/oppo_magicwindow_config/t_config.json') // 指定XML文件的路径
     .pipe(through.obj((file, enc, cb) => {
       const json = JSON.parse(file.contents.toString());
@@ -124,12 +126,13 @@ function getOPPOMagicWindowConfigData() {
     }))
     .pipe(gulpIf(isUseOPPOConfig, gulpRename('oppo_magicwindow_config.json')))
     .pipe(gulpIf(isUseOPPOConfig, dest('output_temp/json/')))
+    .on('end', cb);
 }
 
 /**
  * 获取OPPO的信箱模式规则
  */
-function getOPPOCompactWindowConfigData() {
+function getOPPOCompactWindowConfigData(cb) {
   return src('input_merge_config/oppo_magicwindow_config/t_config.json') // 指定XML文件的路径
     .pipe(through.obj((file, enc, cb) => {
       const json = JSON.parse(file.contents.toString());
@@ -156,10 +159,11 @@ function getOPPOCompactWindowConfigData() {
     }))
     .pipe(gulpIf(isUseOPPOConfig, gulpRename('oppo_compact_window_config.json')))
     .pipe(gulpIf(isUseOPPOConfig, dest('output_temp/json/')))
+    .on('end', cb);
 }
 
 
-function mergeToActivityEmbeddingConfig() {
+function mergeToActivityEmbeddingConfig(cb) {
   return src('input_merge_config/mi_magicwindow_config/embedded_rules_list.xml') // 指定XML文件的路径
     .pipe(gulpIf(isUseOPPOConfig, gulpXML({
       callback: function (result) {
@@ -435,10 +439,11 @@ function mergeToActivityEmbeddingConfig() {
         return cleanedXml;
       }
     })))
-    .pipe(dest('output_config'));
+    .pipe(dest('output_config'))
+    .on('end', cb);
 }
 
-function mergeToMagicWindowApplicationListConfig() {
+function mergeToMagicWindowApplicationListConfig(cb) {
   return src('input_merge_config/mi_magicwindow_config/magicWindowFeature_magic_window_application_list.xml') // 指定XML文件的路径
     .pipe(gulpIf(isUseHonorConfig, gulpXML({
       callback: function (result) {
@@ -597,10 +602,11 @@ function mergeToMagicWindowApplicationListConfig() {
         return cleanedXml;
       }
     })))
-    .pipe(dest('output_config'));
+    .pipe(dest('output_config'))
+    .on('end', cb);
 }
 
-function mergeToOrientationConfig() {
+function mergeToOrientationConfig(cb) {
   return src('input_merge_config/mi_magicwindow_config/fixed_orientation_list.xml') // 指定XML文件的路径
     .pipe(gulpIf(isUseOPPOConfig, gulpXML({
       callback: function (result) {
@@ -667,7 +673,8 @@ function mergeToOrientationConfig() {
         return cleanedXml;
       }
     })))
-    .pipe(dest('output_config'));
+    .pipe(dest('output_config'))
+    .on('end', cb);
 }
 
 

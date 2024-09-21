@@ -30,9 +30,10 @@ let magicWindowApplicationListStack = {}
  * 混入公共配置
  */
 
-function copyREADME() {
+function copyREADME(cb) {
   return src(`README.md`)
     .pipe(dest(`${systemDist}/`))
+    .on('end', cb);
 }
 
 
@@ -59,6 +60,7 @@ function copyMagicWindowApplicationList(cb) {
       }
     })))
     .pipe(gulpIf(buildActionIsMagicWindow, dest(`${commonDist}/source/`)))
+    .on('end', cb);
 }
 
 function copyMagicWindowSettingConfig(cb) {
@@ -91,6 +93,7 @@ function copyMagicWindowSettingConfig(cb) {
       }
     })))
     .pipe(gulpIf(buildActionIsMagicWindow, dest(`${commonDist}/source/`)))
+    .on('end', cb);
 }
 
 /**
@@ -100,6 +103,7 @@ function copyMagicWindowSettingConfig(cb) {
 function copyMagicWindowCustomConfigTemplateToCommon(cb) {
   return src(`${moduleSrc}/template/custom_config/magicWindow/*`)
   .pipe(gulpIf(buildActionIsMagicWindow,dest(`${commonDist}/template/`)))
+  .on('end', cb);
 }
 
 
@@ -112,6 +116,7 @@ function copyMagicWindowCustomConfigTemplateToCommon(cb) {
 function copyEmbeddedRuleListToCommon(cb) {
   return src(`${tempDir}/embedded_rules_list.xml`)
     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/source/`)))
+    .on('end', cb);
 }
 
 
@@ -123,6 +128,7 @@ function copyEmbeddedRuleListToCommon(cb) {
 function copyFixedOrientationListToCommon(cb) {
   return src(`${tempDir}/fixed_orientation_list.xml`)
     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/source/`)))
+    .on('end', cb);
 }
 
 /**
@@ -133,6 +139,7 @@ function copyFixedOrientationListToCommon(cb) {
 function copyAutoUiListToCommon(cb) {
   return src(`${tempDir}/autoui_list.xml`)
     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/source/`)))
+    .on('end', cb);
 }
 
 
@@ -152,6 +159,7 @@ function copyAutoUiListToCommon(cb) {
 function copyActivityEmbeddingThemeOverlayToCommon(cb) {
   return src(`${moduleSrc}/theme_overlay/*`)
   .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/theme_overlay`)))
+  .on('end', cb);
 }
 
 /**
@@ -161,6 +169,7 @@ function copyActivityEmbeddingThemeOverlayToCommon(cb) {
 function copyActivityEmbeddingCustomConfigTemplateToCommon(cb) {
   return src(`${moduleSrc}/template/custom_config/activityEmbedding/*`)
   .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/template/`)))
+  .on('end', cb);
 }
 
 

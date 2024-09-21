@@ -41,5 +41,6 @@ module.exports = function adaptiveCompatibilityToGeneralTiramisu(cb) {
         return new XMLSerializer().serializeToString(doc);
       }
     })))
-    .pipe(gulpIf(buildActionIsGeneralTiramisu,dest('temp')));
+    .pipe(gulpIf(buildActionIsGeneralTiramisu,dest('temp')))
+    .on('end', cb);
 }

@@ -15,4 +15,5 @@ module.exports = function copyChangelog(cb) {
   return src(`docs/changelog.md`)
   .pipe(gulpIf(isNeedBuildLastModuleUpdateVersion,dest(`docs/release/${lastModuleUpdateVersion}/`)))
   .pipe(dest(`docs/release/${moduleUpdateVersion}/`))
+  .on('end', cb);
 }

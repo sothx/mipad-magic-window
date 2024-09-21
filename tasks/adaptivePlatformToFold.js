@@ -52,5 +52,6 @@ module.exports = function adaptivePlatformToFold(cb) {
         return new XMLSerializer().serializeToString(doc);
       }
     })))
-    .pipe(dest('temp'));
+    .pipe(dest('temp'))
+    .on('end', cb);
 }
