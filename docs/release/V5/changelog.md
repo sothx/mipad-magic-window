@@ -12,7 +12,7 @@
 
 [其他]
 
-- 修复MIUI14专版模块描述有误的问题
+- 修复部分模块描述有误的问题
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
