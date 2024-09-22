@@ -65,16 +65,22 @@ function releaseYudiDeviceCode(cb) {
     .on('end', cb);
 }
 
+function releasDaguDeviceCode(cb) {
+  return src(`${releaseDir}/${moduleConfig.version}/pad-dagu-device-code-${moduleConfig.version}.zip`)
+    .pipe(dest(`${releaseNetdiskDir}/9.小米平板5 Pro 12.4澎湃专版(仅适配小米平板5 Pro 12.4)`))
+    .on('end', cb);
+}
+
 
 function releasePadByHyperOSBasedOnTiramisu(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-hyperos-based-on-tiramisu-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/9.小米平板5系列安卓13澎湃专版（仅安卓13澎湃可刷）`))
+    .pipe(dest(`${releaseNetdiskDir}/10.小米平板5系列安卓13澎湃专版（仅安卓13澎湃可刷）`))
     .on('end', cb);
 }
 
 function releasePadByMIUIBasedOnTiramisu(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-miui-based-on-tiramisu-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/10.小米平板6系列MIUI14专版（仅MIUI14可刷）`))
+    .pipe(dest(`${releaseNetdiskDir}/11.小米平板6系列MIUI14专版（仅MIUI14可刷）`))
     .on('end', cb);
 }
 
@@ -87,4 +93,4 @@ function releasePadByMIUIBasedOnTiramisu(cb) {
 
 
 
-module.exports = parallel(releasePad,releasShengDeviceCode,releasPipaDeviceCode,releasLiuqinDeviceCode,releaseFold, releasePadByMagicWindow, releaseGeneralTiramisu, releaseYudiDeviceCode,releasePadByHyperOSBasedOnTiramisu,releasePadByMIUIBasedOnTiramisu)
+module.exports = parallel(releasePad,releasShengDeviceCode,releasPipaDeviceCode,releasLiuqinDeviceCode,releasDaguDeviceCode,releaseFold, releasePadByMagicWindow, releaseGeneralTiramisu, releaseYudiDeviceCode,releasePadByHyperOSBasedOnTiramisu,releasePadByMIUIBasedOnTiramisu)

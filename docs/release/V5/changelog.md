@@ -12,7 +12,9 @@
 
 [强制横屏]
 
-- 新增导游证雷大大的强制横屏
+- 新增5 Pro 12.4 澎湃专版
+
+- MIUI14专版兼容MIUI 14 5 Pro 12.4
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 

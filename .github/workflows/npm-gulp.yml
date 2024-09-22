@@ -148,3 +148,14 @@ jobs:
           name: pad-liuqin-device-code-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
+
+    - name: Build Pad Compatibility Use DaguDeviceCode
+      run: |
+          npm run build:pad-compatibility=dagu-device-code
+  
+    - name: Upload Pad Compatibility Use DaguDeviceCode Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+          name: pad-dagu-device-code-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true

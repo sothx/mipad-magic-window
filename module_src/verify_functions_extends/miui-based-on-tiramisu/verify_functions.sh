@@ -57,8 +57,23 @@ verify_special_rule_pass() {
                     /bin/chmod -R 777 "$MODPATH/system/system_ext/framework/"
                 else
                     ui_print "*********************************************"
-                    ui_print "- 全部机型都选择了否，安装失败了QwQ！！！"
-                    abort "*********************************************"
+                    ui_print "- 请选择符合你当前系统的机型代号(移植包请以移植包的机型为准)"
+                    ui_print "- 是否为小米平板5 Pro 12.4(dagu)？"
+                    ui_print "  音量+ ：是"
+                    ui_print "  音量- ：否"
+                    ui_print "*********************************************"
+                    key_check
+                    if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+                        ui_print "- 正在为你写入小米平板5 Pro 12.4(dagu)的模块配置文件"
+                        add_props "\n# 模块机型:小米平板5 Pro 12.4(dagu)\n"
+                        add_props "ro.config.sothx_miui_device_code=dagu"
+                        /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/dagu/"* "$MODPATH/system/system_ext/framework/"
+                        /bin/chmod -R 777 "$MODPATH/system/system_ext/framework/"
+                    else
+                        ui_print "*********************************************"
+                        ui_print "- 全部机型都选择了否，安装失败了QwQ！！！"
+                        abort "*********************************************"
+                    fi
                 fi
             fi
         fi
