@@ -21,7 +21,7 @@ const buildVerifyFunctionsExtendsType = function () {
 
         return 'magicWindow'
     }
-    if (options.use_compatibility === 'pad' && !options.use_compatibility) {
+    if (options.use_platform === 'pad' && options.use_compatibility === '') {
         return 'general-vanillaIceCream'
     }
     if (['general-tiramisu','general-upsideDownCake','hyperos-based-on-tiramisu','liuqin-device-code','yudi-device-code','sheng-device-code','pipa-device-code','miui-based-on-tiramisu','dagu-device-code'].includes(options.use_compatibility)) {
