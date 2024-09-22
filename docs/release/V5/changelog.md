@@ -10,9 +10,9 @@
 
 由于本次模块重构了大部分的项目代码，为保障大多数人的稳定性，暂时不开放老版本模块升级到1.25.0新版测试模块的功能，如需体验测试版模块请手动升级到最新版本。
 
-[其他]
+[强制横屏]
 
-- 修复模块校验函数命名错误的问题
+- 新增导游证雷大大的强制横屏
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
