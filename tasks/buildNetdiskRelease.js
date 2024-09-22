@@ -73,7 +73,7 @@ function releasePadByHyperOSBasedOnTiramisu(cb) {
 }
 
 function releasePadByMIUIBasedOnTiramisu(cb) {
-  return src(`${releaseDir}/${moduleConfig.version}/pad-hyperos-based-on-tiramisu-${moduleConfig.version}.zip`)
+  return src(`${releaseDir}/${moduleConfig.version}/pad-miui-based-on-tiramisu-${moduleConfig.version}.zip`)
     .pipe(dest(`${releaseNetdiskDir}/10.小米平板6系列MIUI14专版（仅MIUI14可刷）`))
     .on('end', cb);
 }
