@@ -116,11 +116,22 @@ jobs:
           path: "dist/**"
           overwrite: true
 
+    - name: Build Pad Compatibility Use MIUI14BasedOnTiramisu
+      run: |
+          npm run build:pad-compatibility=miui-based-on-tiramisu
+  
+    - name: Upload Pad Compatibility Use MIUI14BasedOnTiramisu Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+          name: pad-miui-based-on-tiramisu-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
+
     - name: Build Pad Compatibility Use PipaDeviceCode
       run: |
           npm run build:pad-compatibility=pipa-device-code
   
-    - name: Upload Pad Compatibility Use PipaForHyperOS Release Zip
+    - name: Upload Pad Compatibility Use PipaDeviceCode Release Zip
       uses: actions/upload-artifact@v4
       with:
           name: pad-pipa-device-code-${{ env.VERSION }}

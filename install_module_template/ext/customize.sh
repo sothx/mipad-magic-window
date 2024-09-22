@@ -31,8 +31,8 @@ else
 fi
 
 # 重置缓存
-# rm -rf /data/system/package_cache
-# rm -rf /data/resource-cache
+rm -rf /data/system/package_cache
+rm -rf /data/resource-cache
 
 # 基础函数
 add_props() {
@@ -85,6 +85,10 @@ fi
 # 生成定向重载规则脚本
 if [[ ! -f "$MODULE_CUSTOM_CONFIG_PATH/config/service_shell.sh" ]];then
 /bin/cp -rf "$MODPATH/common/source/service_shell/"* "$MODULE_CUSTOM_CONFIG_PATH/config/"
+fi
+# 判断MIUI14专版
+if [[ type verify_miui_based_on_tiramisu_pass &>/dev/null; ]] then
+  verify_miui_based_on_tiramisu_pass
 fi
 # 文件夹赋权
 /bin/chmod -R 777 "$MODULE_CUSTOM_CONFIG_PATH/config/"

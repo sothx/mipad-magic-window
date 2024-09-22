@@ -9,7 +9,8 @@ const verifyFunctionExtendsMap = {
     'liuqin-device-code': 'module_src/verify_function_extends/liuqin-device-code/**',
     'yudi-device-code': 'module_src/verify_function_extends/yudi-device-code/**',
     'sheng-device-code': 'module_src/verify_function_extends/sheng-device-code/**',
-    'pipa-device-code': 'module_src/verify_function_extends/pipa-device-code/**'
+    'pipa-device-code': 'module_src/verify_function_extends/pipa-device-code/**',
+    'miui-based-on-tiramisu': 'module_src/verify_function_extends/miui-based-on-tiramisu/**'
 }
 
 const buildVerifyFunctionExtendsType = function () {
@@ -17,7 +18,7 @@ const buildVerifyFunctionExtendsType = function () {
 
         return 'magicWindow'
     }
-    if (['general-tiramisu','hyperos-based-on-tiramisu','liuqin-device-code','yudi-device-code','sheng-device-code','pipa-device-code'].includes(options.use_compatibility)) {
+    if (['general-tiramisu','hyperos-based-on-tiramisu','liuqin-device-code','yudi-device-code','sheng-device-code','pipa-device-code','miui-based-on-tiramisu'].includes(options.use_compatibility)) {
         return options.use_compatibility
     }
     return false;
