@@ -3,8 +3,8 @@
 
 SKIPUNZIP=0
 . "$MODPATH"/util_functions.sh
-if [ -f "$MODPATH"/verify_funcrtion.sh ];then
-. "$MODPATH"/verify_funcrtion.sh
+if [ -f "$MODPATH"/verify_functions.sh ];then
+. "$MODPATH"/verify_functions.sh
 fi
 magisk_path=/data/adb/modules/
 module_id=$(grep_prop id "$MODPATH/module.prop")

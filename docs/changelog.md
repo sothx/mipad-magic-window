@@ -12,7 +12,7 @@
 
 [其他]
 
-- 修复部分模块描述有误的问题
+- 修复模块校验函数命名错误的问题
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 

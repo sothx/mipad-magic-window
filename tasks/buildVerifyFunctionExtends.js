@@ -2,18 +2,18 @@ const { src, dest } = require('gulp');
 const { options } = require('../config/process.env');
 const { includes } = require('lodash');
 
-const verifyFunctionExtendsMap = {
-    magicWindow: 'module_src/verify_function_extends/magicWindow/**',
-    'general-tiramisu': 'module_src/verify_function_extends/general-tiramisu/**',
-    'hyperos-based-on-tiramisu': 'module_src/verify_function_extends/hyperos-based-on-tiramisu/**',
-    'liuqin-device-code': 'module_src/verify_function_extends/liuqin-device-code/**',
-    'yudi-device-code': 'module_src/verify_function_extends/yudi-device-code/**',
-    'sheng-device-code': 'module_src/verify_function_extends/sheng-device-code/**',
-    'pipa-device-code': 'module_src/verify_function_extends/pipa-device-code/**',
-    'miui-based-on-tiramisu': 'module_src/verify_function_extends/miui-based-on-tiramisu/**'
+const verifyFunctionsExtendsMap = {
+    magicWindow: 'module_src/verify_functions_extends/magicWindow/**',
+    'general-tiramisu': 'module_src/verify_functions_extends/general-tiramisu/**',
+    'hyperos-based-on-tiramisu': 'module_src/verify_functions_extends/hyperos-based-on-tiramisu/**',
+    'liuqin-device-code': 'module_src/verify_functions_extends/liuqin-device-code/**',
+    'yudi-device-code': 'module_src/verify_functions_extends/yudi-device-code/**',
+    'sheng-device-code': 'module_src/verify_functions_extends/sheng-device-code/**',
+    'pipa-device-code': 'module_src/verify_functions_extends/pipa-device-code/**',
+    'miui-based-on-tiramisu': 'module_src/verify_functions_extends/miui-based-on-tiramisu/**'
 }
 
-const buildVerifyFunctionExtendsType = function () {
+const buildVerifyFunctionsExtendsType = function () {
     if (['magicWindow'].includes(options.use_mode)) {
 
         return 'magicWindow'
@@ -24,11 +24,11 @@ const buildVerifyFunctionExtendsType = function () {
     return false;
 }
 
-module.exports = async function buildVerifyFunctionExtends(cb) {
-    if (!buildVerifyFunctionExtendsType()) {
+module.exports = async function buildVerifyFunctionsExtends(cb) {
+    if (!buildVerifyFunctionsExtendsType()) {
         cb()
     }
-    return src(verifyFunctionExtendsMap[buildVerifyFunctionExtendsType()])
+    return src(verifyFunctionsExtendsMap[buildVerifyFunctionsExtendsType()])
         .pipe(dest('dist'))
         .on('end', cb);
 }
