@@ -36,7 +36,7 @@
 
 模块简介：适配小米Mix Fold 折叠屏系列，针对MIUI For Fold/Hyper OS For Fold有独立的适配优化。
 
-### 小米平板6S Pro(sheng)专版(仅适配小米平板6S Pro，不适用于6/6 Pro/6 Max)
+### 小米平板6S Pro(sheng)澎湃专版(仅适配小米平板6S Pro，不适用于6/6 Pro/6 Max)
 
 模块安装包名称：pad-sheng-device-code-x.xx.xx.zip
 
@@ -46,13 +46,13 @@
 
 该模块尚未兼容Android 15，如需参与Beta版测试请用通用版模块。
 
-### 小米平板6 Pro(liuqin)专版(仅适配小米平板6 Pro，不适用于6/6 Max/6S Pro)
+### 小米平板6 Pro(liuqin)澎湃专版(仅适配小米平板6 Pro，不适用于6/6 Max/6S Pro)
 
 块安装包名称：pad-liuqin-device-code-x.xx.xx.zip
 
 模块简介：
 
-适用于小米平板6 Pro(liuqin) 的小米官方 MIUI14 / Hyper OS For Pad，该模块会强制禁用所有小米平板专有的阻止系统反向适配平行窗口的属性(Google Embedded Activity规范除外)，因此可以额外对很多应用进行精适配。
+适用于小米平板6 Pro(liuqin) 的小米官方 Hyper OS For Pad，该模块会强制禁用所有小米平板专有的阻止系统反向适配平行窗口的属性(Google Embedded Activity规范除外)，因此可以额外对很多应用进行精适配。
 
 该版本存在一定的卡米风险，需要自行救砖，该版本误装会100%卡米！！！
 
@@ -67,13 +67,21 @@ MIUI14 For Pad升级到Hyper OS For Pad之前，务必先卸载本模块，升�
 
 模块简介：
 
-适用于小米平板6(pipa) 的小米官方 MIUI14 / Hyper OS For Pad，该模块会在Hyper OS For Pad下补全小米平板6缺失的应用布局优化，并且无论MIUI14/Hyper OS均会强制禁用所有小米平板专有的阻止系统反向适配平行窗口的属性(Google Embedded Activity规范除外)，因此可以额外对很多应用进行精适配。
+适用于小米平板6(pipa) 的小米官方 Hyper OS For Pad，该模块会在Hyper OS For Pad下补全小米平板6缺失的应用布局优化，并且会强制禁用所有小米平板专有的阻止系统反向适配平行窗口的属性(Google Embedded Activity规范除外)，因此可以额外对很多应用进行精适配。
 
 该版本存在一定的卡米风险，需要自行救砖，该版本误装会100%卡米！！！
 
 该模块不同于通用版模块，推荐系统更新前先卸载本模块，避免卡米，系统更新后再尝试安装本模块。
 
-MIUI14 For Pad升级到Hyper OS For Pad之前，务必先卸载本模块，升级完成后再进行安装，否则将会导致100%卡米。
+### 小米平板6 Max(yudi)专版(仅适配小米平板6 Max，不适用于6/6 Pro/6S Pro)
+
+模块安装包名称：pad-yudi-device-code-x.xx.xx.zip
+
+模块简介：
+
+适配小米平板6 Max的Hyper OS For Pad，并且会强制禁用所有小米平板专有的阻止系统反向适配平行窗口的属性(Google Embedded Activity规范除外)，因此可以额外对很多应用进行精适配。
+
+该版本存在一定的卡米风险，需要自行救砖，该版本误刷会100%卡米！！！！！！
 
 ### 小米平板5系列安卓13澎湃专版
 
@@ -85,15 +93,15 @@ MIUI14 For Pad升级到Hyper OS For Pad之前，务必先卸载本模块，升�
 
 该模块不同于通用版模块，推荐系统更新前先卸载本模块，避免卡米，系统更新后再尝试安装本模块。
 
-### 小米平板6 Max(yudi)专版(仅适配小米平板6 Max，不适用于6/6 Pro/6S Pro)
+### 小米平板6系列MIUI14专版
 
-模块安装包名称：pad-yudi-device-code-x.xx.xx.zip
+模块安装包名称：pad-miui-based-on-tiramisu-x.xx.xx.zip
 
 模块简介：
 
-适配小米平板6 Max的MIUI 14 For Pad/Hyper OS For Pad，该模块在MIUI14 For Pad下将解锁小米平板6系列全机型小米平行窗口的滑动条(需搭配MIUI14的小米平板6 Max移植包)，并且无论MIUI14/Hyper OS均会强制禁用所有小米平板专有的阻止系统反向适配平行窗口的属性(Google Embedded Activity规范除外)，因此可以额外对很多应用进行精适配。
+适配小米平板6/小米平板6 Pro/小米平板6 Max 的MIUI 14 For Pad，该模块在MIUI14 For Pad下将解锁小米平板6系列全机型小米平行窗口的滑动条(需搭配MIUI14的小米平板6 Max移植包)，该模块会解锁小米平行窗口的滑动条并且会强制禁用所有小米平板专有的阻止系统反向适配平行窗口的属性(Google Embedded Activity规范除外)，因此可以额外对很多应用进行精适配，该版本存在一定的卡米风险，需要自行救砖，该版本误装会100%卡米！！！
 
-该版本存在一定的卡米风险，需要自行救砖，该版本误刷会100%卡米！！！！！！
+该模块不同于通用版模块，推荐系统更新前先卸载本模块，避免卡米，系统更新后再尝试安装本模块。
 
 MIUI14 For Pad的小米平板6 Max移植包可以自行在酷安搜索，不属于完美横屏应用计划模块所负责的内容，不做过多赘述。
 

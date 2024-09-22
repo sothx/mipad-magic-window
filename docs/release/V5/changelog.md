@@ -14,6 +14,8 @@
 
 - 补充对不同Android版本的专版模块兼容性
 
+- 新增小米平板6系列MIUI14专版
+
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
 问题合集:[https://hyper-magic-window.sothx.com/FAQ.html](https://hyper-magic-window.sothx.com/FAQ.html)
