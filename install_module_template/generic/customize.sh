@@ -89,7 +89,7 @@ fi
 
 # 判断MIUI14专版
 if type verify_miui_based_on_tiramisu_pass &>/dev/null; then
-  verify_miui_based_on_tiramisu_pass $API
+  verify_miui_based_on_tiramisu_pass
 fi
 
 # 文件夹赋权
