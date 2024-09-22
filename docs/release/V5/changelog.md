@@ -12,13 +12,13 @@
 
 升级模块版本后，不符合模块Android版本要求会被阻止安装，需要手动前往网盘获取最新的模块，否则将无法正常安装：
 
-链接: https://caiyun.139.com/m/i?135CmUWDgnbAM
+链接: [https://caiyun.139.com/m/i?135CmUWDgnbAM](https://caiyun.139.com/m/i?135CmUWDgnbAM)
 
 请自备救砖模块再进行测试版本模块的升级，否则可能导致卡米。
 
-[强制横屏]
+[其他]
 
-- 新增金山词霸的强制横屏
+- 新增Android 15
 
 
 

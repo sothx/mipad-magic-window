@@ -4,6 +4,7 @@ const { includes } = require('lodash');
 
 const verifyFunctionsExtendsMap = {
     magicWindow: 'module_src/verify_functions_extends/magicWindow/**',
+    'general-vanillaIceCream': 'module_src/verify_functions_extends/general-vanillaIceCream/**',
     'general-tiramisu': 'module_src/verify_functions_extends/general-tiramisu/**',
     'general-upsideDownCake': 'module_src/verify_functions_extends/general-upsideDownCake/**',
     'hyperos-based-on-tiramisu': 'module_src/verify_functions_extends/hyperos-based-on-tiramisu/**',
@@ -19,6 +20,9 @@ const buildVerifyFunctionsExtendsType = function () {
     if (['magicWindow'].includes(options.use_mode)) {
 
         return 'magicWindow'
+    }
+    if (options.use_compatibility === 'pad' && !options.use_compatibility) {
+        return 'general-vanillaIceCream'
     }
     if (['general-tiramisu','general-upsideDownCake','hyperos-based-on-tiramisu','liuqin-device-code','yudi-device-code','sheng-device-code','pipa-device-code','miui-based-on-tiramisu','dagu-device-code'].includes(options.use_compatibility)) {
         return options.use_compatibility

@@ -17,76 +17,76 @@ function isSothxExtBuild() {
  * 拷贝网盘发行配置
  */
 
-// function releasePad(cb) {
-//   return src(`${releaseDir}/${moduleConfig.version}/pad-${moduleConfig.version}.zip`)
-//     .pipe(dest(`${releaseNetdiskDir}/1.小米平板安卓15通用版（推荐安卓15）`))
-//     .on('end', cb);
-// }
+function releasePad(cb) {
+  return src(`${releaseDir}/${moduleConfig.version}/pad-${moduleConfig.version}.zip`)
+    .pipe(dest(`${releaseNetdiskDir}/1.小米平板安卓15测试(Beta)版（推荐安卓15）`))
+    .on('end', cb);
+}
 
 function releaseGeneralUpsideDownCake(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-general-upsideDownCake-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/1.小米平板安卓14通用版（推荐安卓14）`))
+    .pipe(dest(`${releaseNetdiskDir}/2.小米平板安卓14通用版（推荐安卓14）`))
     .on('end', cb);
 }
 
 function releaseGeneralTiramisu(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-general-tiramisu-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/2.小米平板安卓13通用版（无滑动调节）`))
+    .pipe(dest(`${releaseNetdiskDir}/3.小米平板安卓13通用版（无滑动调节）`))
     .on('end', cb);
 }
 
 function releasePadByMagicWindow(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-magicWindow-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/3.小米平板安卓11通用版`))
+    .pipe(dest(`${releaseNetdiskDir}/4.小米平板安卓11通用版`))
     .on('end', cb);
 }
 
 function releaseFold(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/fold-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/4.小米折叠屏通用版（适配Mix Fold系列）`))
+    .pipe(dest(`${releaseNetdiskDir}/5.小米折叠屏通用版（适配Mix Fold系列）`))
     .on('end', cb);
 }
 
 function releasShengDeviceCode(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-sheng-device-code-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/5.小米平板6S Pro澎湃专版(仅适配小米平板6S Pro)`))
+    .pipe(dest(`${releaseNetdiskDir}/6.小米平板6S Pro澎湃专版(仅适配小米平板6S Pro)`))
     .on('end', cb);
 }
 
 function releasLiuqinDeviceCode(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-liuqin-device-code-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/6.小米平板6 Pro澎湃专版(仅适配小米平板6 Pro)`))
+    .pipe(dest(`${releaseNetdiskDir}/7.小米平板6 Pro澎湃专版(仅适配小米平板6 Pro)`))
     .on('end', cb);
 }
 
 function releasPipaDeviceCode(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-pipa-device-code-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/7.小米平板6澎湃专版(仅适配小米平板6)`))
+    .pipe(dest(`${releaseNetdiskDir}/8.小米平板6澎湃专版(仅适配小米平板6)`))
     .on('end', cb);
 }
 
 function releaseYudiDeviceCode(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-yudi-device-code-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/8.小米平板6 Max澎湃专版(仅适配小米平板6 Max)`))
+    .pipe(dest(`${releaseNetdiskDir}/9.小米平板6 Max澎湃专版(仅适配小米平板6 Max)`))
     .on('end', cb);
 }
 
 function releasDaguDeviceCode(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-dagu-device-code-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/9.小米平板5 Pro 12.4澎湃专版(仅适配小米平板5 Pro 12.4)`))
+    .pipe(dest(`${releaseNetdiskDir}/10.小米平板5 Pro 12.4澎湃专版(仅适配小米平板5 Pro 12.4)`))
     .on('end', cb);
 }
 
 
 function releasePadByHyperOSBasedOnTiramisu(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-hyperos-based-on-tiramisu-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/10.小米平板5系列安卓13澎湃专版（仅安卓13澎湃可刷）`))
+    .pipe(dest(`${releaseNetdiskDir}/11.小米平板5系列安卓13澎湃专版（仅安卓13澎湃可刷）`))
     .on('end', cb);
 }
 
 function releasePadByMIUIBasedOnTiramisu(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-miui-based-on-tiramisu-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/11.小米平板6系列MIUI14专版（仅MIUI14可刷）`))
+    .pipe(dest(`${releaseNetdiskDir}/12.小米平板6系列MIUI14专版（仅MIUI14可刷）`))
     .on('end', cb);
 }
 
@@ -99,4 +99,4 @@ function releasePadByMIUIBasedOnTiramisu(cb) {
 
 
 
-module.exports = parallel(releasShengDeviceCode,releasPipaDeviceCode,releasLiuqinDeviceCode,releasDaguDeviceCode,releaseFold, releasePadByMagicWindow, releaseGeneralUpsideDownCake,releaseGeneralTiramisu,releaseYudiDeviceCode,releasePadByHyperOSBasedOnTiramisu,releasePadByMIUIBasedOnTiramisu)
+module.exports = parallel(releasePad,releasShengDeviceCode,releasPipaDeviceCode,releasLiuqinDeviceCode,releasDaguDeviceCode,releaseFold, releasePadByMagicWindow, releaseGeneralUpsideDownCake,releaseGeneralTiramisu,releaseYudiDeviceCode,releasePadByHyperOSBasedOnTiramisu,releasePadByMIUIBasedOnTiramisu)

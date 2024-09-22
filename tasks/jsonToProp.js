@@ -30,6 +30,12 @@ const buildActionIsShengDeviceCode = function () {
 }
 
 
+const buildActionIsGeneralUpsideDownCake = function () {
+  const use_compatibility = options.use_compatibility
+  return use_compatibility === 'general-upsideDownCake'
+}
+
+
 const buildActionIsGeneralTiramisu = function () {
   const use_compatibility = options.use_compatibility
   return use_compatibility === 'general-tiramisu'
@@ -97,7 +103,11 @@ module.exports = function jsonToProp(cb) {
       return json;
     }))
     .pipe(gulpIf(buildActionIsPad, gulpJSONEdit(function (json) {
-      json.description = `${global.applicationRuleCount ? `[★适配应用总数:${global.applicationRuleCount}，仅兼容Android 14+]` : ''} 适用于HyperOS For Pad，用于扩展平行窗口、强制横屏、应用显示比例、应用布局优化和游戏显示布局的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板安卓14通用版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(反馈应用适配问题可前往酷安私信 @做梦书 ，模块首页:https://hyper-magic-window.sothx.com，GitHub仓库:https://github.com/sothx/mipad-magic-window，模块Q群:277757185，如需卸载模块请移除模块后重启平板)`;
+      json.description = `${global.applicationRuleCount ? `[★适配应用总数:${global.applicationRuleCount}，仅兼容Android 15+]` : ''} 适用于HyperOS For Pad，用于扩展平行窗口、强制横屏、应用显示比例、应用布局优化和游戏显示布局的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板安卓15测试(Beta)版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(反馈应用适配问题可前往酷安私信 @做梦书 ，模块首页:https://hyper-magic-window.sothx.com，GitHub仓库:https://github.com/sothx/mipad-magic-window，模块Q群:277757185，如需卸载模块请移除模块后重启平板)`;
+      return json;
+    })))
+    .pipe(gulpIf(buildActionIsGeneralUpsideDownCake, gulpJSONEdit(function (json) {
+      json.description = `${global.applicationRuleCount ? `[★适配应用总数:${global.applicationRuleCount}，仅兼容Android 14]` : ''} 适用于HyperOS For Pad，用于扩展平行窗口、强制横屏、应用显示比例、应用布局优化和游戏显示布局的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板安卓14通用版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(反馈应用适配问题可前往酷安私信 @做梦书 ，模块首页:https://hyper-magic-window.sothx.com，GitHub仓库:https://github.com/sothx/mipad-magic-window，模块Q群:277757185，如需卸载模块请移除模块后重启平板)`;
       return json;
     })))
     .pipe(gulpIf(buildActionIsFold, gulpJSONEdit(function (json) {
