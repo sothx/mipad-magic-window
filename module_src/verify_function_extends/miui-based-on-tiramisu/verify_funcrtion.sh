@@ -72,7 +72,7 @@ verify_miui_based_on_tiramisu_pass() {
             abort "*********************************************"
         fi
     else
-        /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/$API/"* "$MODPATH/system/system_ext/framework/"
+        /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/$sothx_miui_device_code/"* "$MODPATH/system/system_ext/framework/"
         /bin/chmod -R 777 "$MODPATH/system/system_ext/framework/"
     fi
 }
