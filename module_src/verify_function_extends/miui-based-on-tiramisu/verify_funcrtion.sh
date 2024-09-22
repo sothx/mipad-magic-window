@@ -1,6 +1,6 @@
 # shellcheck disable=SC2148
 verify_android_api_has_pass() {
-    if [[ "$1" -ne 33 ]]; then
+    if [[ "$1" -ne 34 ]]; then
         ui_print "*********************************************"
         ui_print "- 模块仅支持Android 13，请重新选择正确版本的模块QwQ！！！"
         abort "*********************************************"
@@ -8,12 +8,7 @@ verify_android_api_has_pass() {
 }
 
 verify_miui_based_on_tiramisu_pass() {
-    local sothx_miui_device_code=$(grep_prop sothx_miui_device_code "$MODPATH/system.prop")
-    if [[ "$1" -ne 33 ]]; then
-        ui_print "*********************************************"
-        ui_print "- 模块仅支持Android 13，请重新选择正确版本的模块QwQ！！！"
-        abort "*********************************************"
-    fi
+    local sothx_miui_device_code=$(grep_prop sothx_miui_device_code "$magisk_path$module_id/system.prop")
     # 目录不存在则创建目录
     if [[ ! -d "$MODPATH/system/system_ext/framework" ]]; then
         /bin/mkdir -p "$MODPATH/system/system_ext/framework"

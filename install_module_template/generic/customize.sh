@@ -86,10 +86,12 @@ fi
 if [[ ! -f "$MODULE_CUSTOM_CONFIG_PATH/config/service_shell.sh" ]];then
 /bin/cp -rf "$MODPATH/common/source/service_shell/"* "$MODULE_CUSTOM_CONFIG_PATH/config/"
 fi
+
 # 判断MIUI14专版
-if [[ type verify_miui_based_on_tiramisu_pass &>/dev/null; ]] then
-  verify_miui_based_on_tiramisu_pass
+if type verify_miui_based_on_tiramisu_pass &>/dev/null; then
+  verify_miui_based_on_tiramisu_pass $API
 fi
+
 # 文件夹赋权
 /bin/chmod -R 777 "$MODULE_CUSTOM_CONFIG_PATH/config/"
 
