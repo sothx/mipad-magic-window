@@ -11,9 +11,9 @@
 
 ### 小米平板安卓14通用版(仅适配Android 14+)
 
-模块安装包名称：pad-x.xx.xx.zip
+模块安装包名称：pad-general-upsideDownCake-x.xx.xx.zip
 
-模块简介：适配基于Android 14 + 的Hyper OS for Pad，以及各类基于Android 14+的Hyper OS For Pad第三方移植包的机型
+模块简介：适配基于Android 14的Hyper OS for Pad，以及各类基于Android 14的Hyper OS For Pad第三方移植包的机型
 
 
 ### 小米平板安卓13通用版(无左右滑动调节)
