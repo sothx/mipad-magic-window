@@ -12,7 +12,7 @@
 
 [其他]
 
-- 修复MIUI14专版部分应用无法正常全屏的问题
+- 修复MIUI14专版模块描述有误的问题
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
