@@ -6,15 +6,21 @@
 
 历史更新日志请点击:[https://github.com/sothx/mipad-magic-window/releases](https://github.com/sothx/mipad-magic-window/releases)
 
-[重要提醒]
+[重要更新]
 
-由于本次模块重构了大部分的项目代码，为保障大多数人的稳定性，暂时不开放老版本模块升级到1.25.0新版测试模块的功能，如需体验测试版模块请手动升级到最新版本。
+本次为模块大版本更新，可能导致许多意料之外的问题，如有疑惑可以前往反馈Q群：277757185进行反馈。
+
+升级模块版本后，不符合模块Android版本要求需要手动前往网盘获取最新的模块，否则无法顺利安装：
+
+链接: https://caiyun.139.com/m/i?135CmUWDgnbAM
+
+请自备救砖模块再进行测试版本模块的升级，否则可能导致卡米。
 
 [强制横屏]
 
-- 新增5 Pro 12.4 澎湃专版
+- 新增金山词霸的强制横屏
 
-- MIUI14专版兼容MIUI 14 5 Pro 12.4
+
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
