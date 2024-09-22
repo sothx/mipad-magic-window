@@ -10,11 +10,9 @@
 
 由于本次模块重构了大部分的项目代码，为保障大多数人的稳定性，暂时不开放老版本模块升级到1.25.0新版测试模块的功能，如需体验测试版模块请手动升级到最新版本。
 
-[模块]
+[其他]
 
-- 补充对不同Android版本的专版模块兼容性
-
-- 新增小米平板6系列MIUI14专版
+- 修复MIUI14专版酷安适配异常的问题
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
