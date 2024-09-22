@@ -93,6 +93,17 @@ jobs:
           name: pad-magicWindow-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
+
+    - name: Build Pad Compatibility Use GeneralUpsideDownCake
+      run: |
+          npm run build:pad-compatibility=general-upsideDownCake
+  
+    - name: Upload Pad Compatibility Use GeneralUpsideDownCake Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+          name: general-upsideDownCake-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
   
     - name: Build Pad Compatibility Use GeneralTiramisu
       run: |

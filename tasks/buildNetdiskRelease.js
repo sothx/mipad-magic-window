@@ -19,6 +19,12 @@ function isSothxExtBuild() {
 
 function releasePad(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-${moduleConfig.version}.zip`)
+    .pipe(dest(`${releaseNetdiskDir}/1.小米平板安卓15通用版（推荐安卓15）`))
+    .on('end', cb);
+}
+
+function releaseGeneralUpsideDownCake(cb) {
+  return src(`${releaseDir}/${moduleConfig.version}/pad-general-upsideDownCake-${moduleConfig.version}.zip`)
     .pipe(dest(`${releaseNetdiskDir}/1.小米平板安卓14通用版（推荐安卓14）`))
     .on('end', cb);
 }
@@ -93,4 +99,4 @@ function releasePadByMIUIBasedOnTiramisu(cb) {
 
 
 
-module.exports = parallel(releasePad,releasShengDeviceCode,releasPipaDeviceCode,releasLiuqinDeviceCode,releasDaguDeviceCode,releaseFold, releasePadByMagicWindow, releaseGeneralTiramisu, releaseYudiDeviceCode,releasePadByHyperOSBasedOnTiramisu,releasePadByMIUIBasedOnTiramisu)
+module.exports = parallel(releasePad,releasShengDeviceCode,releasPipaDeviceCode,releasLiuqinDeviceCode,releasDaguDeviceCode,releaseFold, releasePadByMagicWindow, releaseGeneralUpsideDownCake,releaseGeneralTiramisu,releaseYudiDeviceCode,releasePadByHyperOSBasedOnTiramisu,releasePadByMIUIBasedOnTiramisu)
