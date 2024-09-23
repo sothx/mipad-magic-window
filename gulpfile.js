@@ -16,7 +16,7 @@ const { mergeActivityEmbeddingConfig, mergeMagicWindowConfig, mergeOrientationCo
 const buildApplicationCount = require('./tasks/buildApplicationCount');
 const buildNetdiskRelease = require('./tasks/buildNetdiskRelease');
 const adaptiveCompatibilityToGeneralTiramisu = require('./tasks/adaptiveCompatibilityToGeneralTiramisu');
-const { getTargetEmbeddedRulesListConfig,getTargetFixedOrientationListConfig } = require('./tasks/mergeMiConfig')
+const { getEmbeddedRulesListConfig,getFixedOrientationListConfig, mergeMiConfigJsonFiles } = require('./tasks/mergeMiConfig')
 const { options } = require('./config/process.env');
 const gulpIf = require('gulp-if');
 
@@ -59,6 +59,8 @@ exports.buildNetdiskRelease = buildNetdiskRelease
 
 /**test */
 
-exports.getTargetEmbeddedRulesListConfig = getTargetEmbeddedRulesListConfig
+exports.getEmbeddedRulesListConfig = getEmbeddedRulesListConfig
 
-exports.getTargetFixedOrientationListConfig = getTargetFixedOrientationListConfig
+exports.getFixedOrientationListConfig = getFixedOrientationListConfig
+
+exports.mergeMiConfigJsonFiles = mergeMiConfigJsonFiles

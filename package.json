@@ -119,6 +119,8 @@
     "lodash": "^4.17.21",
     "minimist": "^1.2.8",
     "through2": "^4.0.2",
+    "xml2js": "^0.6.2",
+    "xmlbuilder": "^15.1.1",
     "xmldom": "^0.6.0"
   },
   "dependencies": {
