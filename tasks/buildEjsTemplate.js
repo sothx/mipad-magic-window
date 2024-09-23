@@ -9,12 +9,14 @@ const use_platform = options.use_platform
 const use_ratio = options.use_ratio
 const use_compatibility = options.use_compatibility
 const use_ext = options.use_ext
+const mi_os_version = options.mi_os_version
 
 const ejsParams = {
   platform: use_platform,
   ratio: use_ratio,
   compatibility: use_compatibility,
-  ext: use_ext
+  ext: use_ext,
+  mi_os_version:mi_os_version
 }
 
 function buildExtEjsTemplate(cb) {

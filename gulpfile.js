@@ -7,6 +7,7 @@ const buildUpdateMsg = require('./tasks/buildUpdateMsg');
 const copyChangelog = require('./tasks/copyChangelog');
 const jsonToProp = require('./tasks/jsonToProp');
 const buildEjsTemplate = require('./tasks/buildEjsTemplate');
+const adaptiveSupportModes = require('./tasks/adaptiveSupportModes');
 const adaptivePlatformToFold = require('./tasks/adaptivePlatformToFold');
 const buildExtConfig = require('./tasks/buildExtConfig');
 const buildCompatibilityExtends = require('./tasks/buildCompatibilityExtends')
@@ -26,6 +27,7 @@ const buildTasks = series(
   buildCompatibilityExtends,
   buildVerifyFunctionExtends,
   buildEjsTemplate,
+  adaptiveSupportModes,
   adaptivePlatformToFold,
   adaptiveCompatibilityToGeneralTiramisu,
   buildExtConfig,

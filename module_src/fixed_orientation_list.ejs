@@ -136,19 +136,27 @@
   <package name="windinfo.android" isShowDivider="true" />
   <%_ } else { _%>
   <package name="com.mihoyo.desktopportal" relaunch="false" />
-  <package name="com.kkptech.kkpsy" relaunch="false" />
+  <package name="com.kkptech.kkpsy" relaunch="false" supportModes="full,fo" />
+  <%_ if (mi_os_version >= 2) { _%>
+  <package name="com.cubic.autohome" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" />
+  <%_ } else { _%>
   <package name="com.cubic.autohome" allPortrait="true" />
-  <package name="com.xt.retouch" allPortrait="true" skipCompatMode="true" />
-  <package name="com.lofter.android" relaunch="false" />
+  <%_ } _%>
+  <package name="com.xt.retouch" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" skipCompatMode="true" />
+  <package name="com.lofter.android" relaunch="false" forcePortraitActivity="com.lofter.android/.module_publish.video.MCamera,com.lofter.android/.module_publish.video.CamcorderActivity" />
   <package name="com.wisedu.cpdaily" relaunch="false" />
   <package name="com.kuaiduizuoye.scan" relaunch="false" />
   <package name="com.fy.cjyxlm.mi" isScale="true" />
-  <package name="com.tencent.gamehelper.smoba" relaunch="false" />
+  <package name="com.tencent.gamehelper.smoba" relaunch="false" supportCameraPreview="false" />
   <package name="com.cootek.crazyreader" relaunch="false" />
   <package name="com.ishowedu.peiyin" relaunch="false" />
   <package name="com.android.camera" disable="true" />
   <package name="com.kwai.m2u" disable="true" skipCompatMode="true" />
-  <package name="com.fenbi.android.solar" skipCompatMode="true" />
+  <%_ if (mi_os_version >= 2) { _%>
+  <package name="com.cubic.autohome" skipCompatMode="true" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" />
+  <%_ } else { _%>
+  <package name="com.fenbi.android.solar" skipCompatMode="true" allPortrait="true" />
+  <%_ } _%>
   <package name="com.outfit7.mytalkingtom2.mi" skipCompatMode="true" />
   <package name="zwzt.fangqiu.edu.com.zwzt" skipCompatMode="true" />
   <package name="com.wedobest.HD1010.one.mi" skipCompatMode="true" />
@@ -245,7 +253,11 @@
   <package name="com.tencent.qqlive" disable="true" />
   <package name="com.fenbi.android.servant" disable="true" />
   <package name="cn.com.chsi.chsiapp" skipCompatMode="true" />
-  <package name="com.dongqiudi.news" allPortrait="true" />
+  <%_ if (mi_os_version >= 2) { _%>
+  <package name="com.dongqiudi.news" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" />
+  <%_ } else { _%>
+  <package name="com.dongqiudi.news" s allPortrait="true" />
+  <%_ } _%>
   <package name="com.campmobile.snowcamera" isScale="true" />
   <package name="com.pfu.xxxxl.mi" disable="true" />
   <package name="cn.wps.moffice_eng" disable="true" />
@@ -368,7 +380,7 @@
   <package name="com.gzbank.mbank.externalpk" relaunch="false" />
   <package name="com.mszmapp.detective" supportCameraPreview="false" />
   <package name="com.brianbaek.popstar" />
-  <package name="com.gorgeous.lite" isScale="true" supportCameraPreview="false" forcePortraitActivity="com.gorgeous.lite/com.light.beauty.publisher.PublisherActivity" />
+  <package name="com.gorgeous.lite" isScale="true" compatChange="FORCE_RESIZE_APP" supportCameraPreview="false" forcePortraitActivity="com.gorgeous.lite/com.light.beauty.publisher.PublisherActivity" />
   <package name="com.boohee.one" relaunch="false" supportCameraPreview="false" forcePortraitActivity="com.boohee.one/.app.tools.food.ui.activity.CameraCommonActivity" />
   <package name="com.yiruike.sodacn.android" disable="true" />
   <package name="com.yunxiao.haofenshu" relaunch="false" />
@@ -467,7 +479,11 @@
   <package name="com.microsoft.office.officehub" disable="true" />
   <package name="com.microsoft.office.onenote" disable="true" />
   <package name="com.tuniu.app.ui" disable="true" />
+  <%_ if (mi_os_version >= 2) { _%>
+  <package name="com.shangfang.gylm" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" />
+  <%_ } else { _%>
   <package name="com.shangfang.gylm" allPortrait="true" />
+  <%_ } _%>
   <package name="com.bank" disable="true" />
   <package name="cn.com.cmbc.newmbank" disable="true" />
   <package name="com.ydtx.camera" disable="true" />
@@ -489,10 +505,18 @@
   <package name="com.yzxx.bttp2.mi" disable="true" />
   <package name="com.alicloud.databox" disable="true" />
   <package name="com.chinamworld.bocmbci" />
+  <%_ if (mi_os_version >= 2) { _%>
+  <package name="com.qiyi.video" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" />
+  <%_ } else { _%>
   <package name="com.qiyi.video" allPortrait="true" />
+  <%_ } _%>
   <package name="com.hypergryph.arknights" disable="true" />
   <package name="com.microsoft.emmx" disable="true" />
+  <%_ if (mi_os_version >= 2) { _%>
+  <package name="com.pingan.carowner" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" />
+  <%_ } else { _%>
   <package name="com.pingan.carowner" allPortrait="true" />
+  <%_ } _%>
   <package name="com.baijia.live" disable="true" />
   <package name="com.elite.upgraded" disable="true" />
   <package name="com.miui.notes" disable="true" />
@@ -574,7 +598,11 @@
   <package name="com.miui.calculator" disable="true" />
   <package name="com.baidu.input_mi" skipCompatMode="true" forcePortraitActivity="com.baidu.input_mi/com.baidu.input_mi.ImeUserExperienceActivity,com.baidu.input_mi/com.baidu.input.ImeSubConfigActivity" />
   <package name="com.outfit7.talkingtomgoldrun.mi" disable="true" />
+  <%_ if (mi_os_version >= 2) { _%>
+  <package name="com.picsart.studio" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" />
+  <%_ } else { _%>
   <package name="com.picsart.studio" allPortrait="true" />
+  <%_ } _%>
   <package name="com.myntra.android" skipCompatMode="true" />
   <package name="com.sina.weibo" allowEmbInPortrait="false" disable="true" isShowDivider="true" supportFullSize="true" />
   <package name="com.dw.xprqj.mi" disable="true" />
@@ -617,6 +645,7 @@
   <package name="com.vnision.inch" relaunch="false" />
   <package name="cn.cntvnews" isScale="true" />
   <package name="com.tencent.peng" compatChange="OVERRIDE_MIN_ASPECT_RATIO,OVERRIDE_MIN_ASPECT_RATIO_LARGE" />
+  <package name="com.mt.mtxx.mtxx" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" isScale="true" skipCompatMode="true" supportModes="full,fo" />
   <package name="com.pplive.androidphone" relaunch="false" />
   <package name="com.zmzx.college.search" relaunch="false" isScale="true" />
   <package name="com.cqwx.tyt.mi" isScale="true" />
@@ -656,7 +685,7 @@
   <package name="com.lemon.lvoverseas" disable="true" />
   <package name="com.instagram.android" relaunch="false" supportCameraPreview="false" />
   <package name="com.ls.tyt.mi" isScale="true" />
-  <package name="com.coolapk.market" isShowDivider="true" disable="true" supportFullSize="true"  />
+  <package name="com.coolapk.market" isShowDivider="true" disable="true" supportFullSize="true" />
   <package name="com.microsoft.office.outlook" disable="true" />
   <package name="com.alibaba.aliexpresshd" isScale="true" />
   <package name="com.maimemo.android.momo" disable="true" />
@@ -681,7 +710,7 @@
   <package name="com.zuoyebang.airclass" disable="true" />
   <package name="com.fenbi.android.leo" isShowDivider="true" supportFullSize="true" disable="true" />
   <package name="com.mwkj.zgxqfyzz.mi" relaunch="false" />
-  <package name="com.taobao.etao" skipCompatMode="true" isScale="true" forcePortraitActivity="com.taobao.etao/com.taobao.sns.app.scan.NewScanActivity" supportCameraPreview="false" />
+  <package name="com.taobao.etao" skipCompatMode="true" isScale="true" skipCompatMode="true" forcePortraitActivity="com.taobao.etao/com.taobao.sns.app.scan.NewScanActivity" supportCameraPreview="false" />
   <package name="com.sohu.sohuvideo" disable="true" />
   <package name="com.ribencun.JapanVillage" relaunch="false" />
   <package name="cn.luyiyuntech.daka" relaunch="false" />
@@ -733,7 +762,7 @@
   <package name="com.starmakerinteractive.starmaker" />
   <package name="com.alibaba.intl.android.apps.poseidon" />
   <package name="in.mohalla.video" supportCameraPreview="false" forcePortraitActivity="in.mohalla.video/in.mohalla.camera.snap.SnapCameraV2Activity" />
-  <package name="com.rj.syslearning" skipCompatMode="true" />
+  <package name="com.rj.syslearning" skipCompatMode="true" skipSelfAdaptive="true" supportModes="full,fo" />
   <package name="com.wordscon.axe" disable="true" />
   <package name="com.tsingzone.questionbank" relaunch="false" />
   <package name="com.mfp.jelly.xiaomi" isScale="true" />
@@ -743,7 +772,7 @@
   <package name="com.cainiao.wireless" supportCameraPreview="false" forcePortraitActivity="com.cainiao.wireless/.ggscancode.capture.alipay.ui.SimpleScannerActivity" />
   <package name="com.jiankecom.jiankemall" />
   <package name="com.hxzk.android.hxzksyjg_xj" isScale="true" />
-  <package name="com.tencent.mtt" relaunch="false" />
+  <package name="com.tencent.mtt" relaunch="false" isScale="true" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" />
   <package name="com.qihe.zzj" relaunch="false" />
   <package name="com.sanmao.newstudypstwo.appunion" relaunch="false" />
   <package name="com.duyao.poisonnovelgirl" relaunch="false" />
@@ -1102,9 +1131,14 @@
   <package name="com.baidu.tieba" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.hupu.shihuo" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.taobao.live" supportFullSize="true" supportCameraPreview="true" relaunch="false" isScale="true" />
-  <package name="com.xunmeng.pinduoduo" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
+  <%_ if (mi_os_version >= 2) { _%>
+  <package name="com.xunmeng.pinduoduo" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
+  <%_ } else { _%>
+  <package name="com.xunmeng.pinduoduo" allPortrait="true" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
+  <%_ } _%>
   <package name="com.tencent.qt.sns" supportFullSize="true" supportCameraPreview="true" relaunch="false" isScale="true" />
   <!-- Adaptive For Sothx 1.09.x -->
+  <package name="com.zhihu.android" supportModes="full,fo" supportCameraPreview="*:false" />
   <package name="com.facebook.katana" relaunch="false" isScale="true" supportFullSize="true" />
   <package name="com.santi.sinology" relaunch="false" isScale="true" supportFullSize="true" />
   <package name="com.vpapps.hdwallpaper.xyz" relaunch="false" isScale="true" supportFullSize="true" />
@@ -1120,7 +1154,7 @@
   <package name="com.xiaomi.shop" disable="true" isShowDivider="true" supportFullSize="true" />
   <package name="com.tencent.mymedinfo" relaunch="false" isScale="true" supportFullSize="true" />
   <package name="com.umihome.m" relaunch="false" isScale="true" supportFullSize="true" />
-  <package name="com.xiachufang" disable="true" isShowDivider="true" supportFullSize="true" />
+  <package name="com.xiachufang" disable="true" isShowDivider="true" supportFullSize="true" supportModes="full,fo" skipSelfAdaptive="true" />
   <package name="com.example.gyf.uaiu" relaunch="false" isScale="true" supportFullSize="true" />
   <package name="com.fimo.camera" disable="true" />
   <package name="com.baidu.searchbox" disable="true" isShowDivider="true" supportFullSize="true" forcePortraitActivity="com.baidu.searchbox/com.baidu.searchbox.godeye.CodeScannerActivity" />
@@ -1160,7 +1194,11 @@
   <package name="io.wallpaperengine.weclient" disable="true" relaunch="false" />
   <package name="com.hlg.daydaytobusiness" isScale="true" supportFullSize="true" />
   <package name="com.singularity.tiangong" relaunch="false" supportFullSize="true" ratio="1.5" />
+  <%_ if (mi_os_version >= 2) { _%>
+  <package name="com.ucmobile.lite" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" skipCompatMode="true" forcePortraitActivity="com.ucmobile.lite/com.uc.aloha.activity.ALHCameraRecordActivity" supportCameraPreview="false" />
+  <%_ } else { _%>
   <package name="com.ucmobile.lite" allPortrait="true" skipCompatMode="true" forcePortraitActivity="com.ucmobile.lite/com.uc.aloha.activity.ALHCameraRecordActivity" supportCameraPreview="false" />
+  <%_ } _%>
   <package name="com.miui.contentextension" relaunch="false" />
   <package name="com.miui.misound" relaunch="false" />
   <package name="com.android.quicksearchbox" relaunch="false" />
@@ -1191,7 +1229,7 @@
   <package name="in.startv.hotstar" disable="true" />
   <package name="com.android.daoway" />
   <package name="com.calculator.hideu" isScale="true" />
-  <package name="com.baidu.homework" disable="true" isShowDivider="true" supportFullSize="true" />
+  <package name="com.baidu.homework" disable="true" isShowDivider="true" supportFullSize="true" skipSelfAdaptive="true" />
   <!--OnePlus Pad-->
   <package name="com.cctv4g.cctvmobiletv" supportFullSize="true" supportCameraPreview="true" relaunch="false" ratio="1.5" />
   <package name="com.tbc.android.defaults" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
@@ -1335,7 +1373,7 @@
   <package name="com.alibaba.taurus.zhejiang" supportFullSize="true" supportCameraPreview="true" relaunch="false" ratio="1.5" />
   <package name="com.antfortune.wealth" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.topsports.app" supportFullSize="true" supportCameraPreview="true" relaunch="false" ratio="1.5" />
-  <package name="com.seewo.en" supportFullSize="true" supportCameraPreview="true" relaunch="false" ratio="1.5" />
+  <package name="com.seewo.en" skipSelfAdaptive="true" supportFullSize="true" supportCameraPreview="true" relaunch="false" ratio="1.5" />
   <package name="com.hanyun.onlineproject" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.cmbc.cc.mbank" supportFullSize="true" supportCameraPreview="true" relaunch="false" ratio="1.5" />
   <package name="com.huankaifa.tpjwz" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
@@ -1376,7 +1414,7 @@
   <package name="com.xiaoyu.rightone" relaunch="false" supportFullSize="true" ratio="1.5" />
   <package name="com.superrhino.rarering" relaunch="false" supportFullSize="true" ratio="1.5" />
   <package name="com.ifreetalk.ftalk" relaunch="false" supportFullSize="true" ratio="1.5" />
-  <package name="com.peopledailychina.activity" disable="true" skipCompatMode="true" />
+  <package name="com.peopledailychina.activity" disable="true" skipCompatMode="true" skipSelfAdaptive="true" />
   <package name="cn.neoclub.uki" relaunch="false" supportFullSize="true" ratio="1.5" />
   <package name="com.xifeng.fun" relaunch="false" ratio="1.01" supportFullSize="true" />
   <package name="com.cijianlink.cjlk" relaunch="false" ratio="1.5" supportFullSize="true" />
@@ -1398,15 +1436,15 @@
   <package name="com.cg.driver.exam.ydqnt" relaunch="false" ratio="1.5" supportFullSize="true" />
   <package name="com.shengmitech.driver" relaunch="false" ratio="1.5" supportFullSize="true" />
   <package name="com.saiti.echo" relaunch="false" ratio="1.1" supportFullSize="true" />
-  <package name="com.jxedt" relaunch="false" ratio="1.1" supportFullSize="true" />
-  <package name="com.mistong.ewt360" relaunch="false" ratio="1.1" supportFullSize="true" />
+  <package name="com.jxedt" relaunch="false" ratio="1.1" supportFullSize="true" skipSelfAdaptive="true" />
+  <package name="com.mistong.ewt360" relaunch="false" supportModes="full,fo" skipSelfAdaptive="true" ratio="1.1" supportFullSize="true" />
   <package name="com.cctv.yangshipin.app.androidp" relaunch="false" ratio="1.1" supportFullSize="true" />
   <package name="com.viva.note" relaunch="false" ratio="1.1" supportFullSize="true" />
   <package name="com.ss.android.article.news" />
   <package name="com.xiwang.zaixian" disable="true" />
   <package name="com.wedobest.puzzlebubble.one.mi" isScale="true" />
   <package name="com.wedobest.xiangqi.mi" isScale="true" />
-  <package name="com.hicorenational.antifraud" />
+  <package name="com.hicorenational.antifraud" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" />
   <package name="com.tencent.tmgp.cf" disable="true" />
   <package name="com.wemesh.android" disable="true" />
   <package name="com.xt.xxhj.mi" relaunch="false" />
@@ -1415,7 +1453,11 @@
   <package name="com.xg.czndox.mi" isScale="true" />
   <package name="net.xrcloud" isScale="true" />
   <package name="tech.xiangzi.painless" disable="true" />
-  <package name="com.zq.hand_drawn" allPortrait="true" />
+  <%_ if (mi_os_version >= 2) { _%>
+  <package name="com.zq.hand_drawn" skipCompatMode="true" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" />
+  <%_ } else { _%>
+  <package name="com.zq.hand_drawn" skipCompatMode="true" allPortrait="true" />
+  <%_ } _%>
   <package name="com.lietou.mishu" />
   <package name="com.want.hotkidclub.ceo" />
   <package name="com.europosit.pixelcoloring" relaunch="false" skipCompatMode="true" supportCameraPreview="false" />
@@ -1479,11 +1521,23 @@
   <package name="com.taobao.idlefish" ratio="1.5" supportFullSize="true" relaunch="false" />
   <package name="windinfo.android" disable="true" isShowDivider="true" supportFullSize="true" />
   <package name="com.android.thememanager" relaunch="false" />
-  <package name="com.accordion.analogcam.cn" disable="true" relaunch="false"  supportFullSize="true" />
+  <package name="com.accordion.analogcam.cn" disable="true" relaunch="false" supportFullSize="true" />
   <package name="com.taobao.trip" disable="true" supportFullSize="true" />
   <package name="com.dxh.management" disable="true" supportFullSize="true" />
   <package name="com.pinterest" disable="true" supportFullSize="true" />
   <package name="com.ss.android.ugc.livelite" relaunch="true" ratio="1.1" supportFullSize="true" />
   <package name="com.meitu.dreamavatar" relaunch="false" ratio="1.5" supportFullSize="true" />
+  <package name="com.shanbay.news" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" supportModes="full,fo" />
+  <package name="cn.com.zjol" compatChange="FORCE_RESIZE_APP" supportModes="full,fo" />
+  <package name="com.eg.android.AlipayGphone" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" supportModes="full,fo" forcePortraitActivity="com.eg.android.AlipayGphone/com.ant.phone.ocr.api.activity.OCRActivity" />
+  <package name="com.baidu.netdisk" forcePortraitActivity="com.baidu.netdisk/.ocr.OCRTakePhotoActivity" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" supportModes="full,fo" />
+  <package name="com.yh.bbnwx.mi" compatChange="FORCE_RESIZE_APP" />
+  <package name="com.yh.tcsdj.mi" compatChange="FORCE_RESIZE_APP" />
+  <package name="com.tan8" skipSelfAdaptive="true" supportModes="full,fo" />
+  <package name="com.baidu.haokan" skipSelfAdaptive="true" supportModes="full,fo" />
+  <package name="com.sinyee.babybus.recommendapp" skipSelfAdaptive="true" skipCompatMode="true" supportModes="full,fo" />
+  <package name="com.qunhe.designer" skipSelfAdaptive="true" supportModes="full,fo" />
+  <package name="com.rockets.chang" skipSelfAdaptive="true" supportModes="full,fo" />
+  <package name="com.yueme.itv" supportModes="full,fo" />
   <%_ } _%>
 </package_config>

@@ -2,8 +2,9 @@ const minimist = require("minimist");
 
 // 配置命令行可以接受的参数以及默认值
 let knownOptions = {
-  string: ['use_platform','use_ratio','use_mode','use_compatibility','netdisk_desc','module_update_version','last_module_update_version','module_version_interface'],
+  string: ['use_platform','use_ratio','use_mode','use_compatibility','netdisk_desc','module_update_version','last_module_update_version','module_version_interface','mi_os_version'],
   boolean: ['use_ext'],
+  number: ['mi_os_version'],
   default: {
     use_platform: "pad", // 平板则为pad，大折叠屏则为fold，小折叠屏为flip
     use_ext: false,// true为混入扩展配置，false则不混入扩展配置
@@ -14,7 +15,8 @@ let knownOptions = {
     netdisk_desc: '', // 打包网盘提供的额外参数
     last_module_update_version: '', // 上个需要维护的升级服务版本
     module_update_version: 'V5', // 模块升级服务版本
-    module_version_interface: 'beta' // 模块版本，standard 正式版，beta 测试版
+    module_version_interface: 'beta', // 模块版本，standard 正式版，beta 测试版
+    mi_os_version: 1 // Hyper OS的版本号
   },
   alias: {
     p: 'use_platform',
