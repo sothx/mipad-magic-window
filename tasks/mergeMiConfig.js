@@ -12,6 +12,22 @@ let SourceFixedOrientationList= {}
 
 let TargetFixedOrientationList= {}
 
+function getSourceEmbeddedRulesListConfig(cb) {
+  OPPOConfigStack = {}
+  return src(`input_merge_config/mi_magicwindow_config/embedded_rules_list.json`)
+    .pipe(through.obj((file, enc, cb) => {
+      let data = JSON.parse(file.contents.toString());
+      let json = _.mapValues(_.keyBy(data, 'name'), (value) => _.omit(value, 'name'));
+      TargetEmbeddedRulesList = json
+      console.log('总适配应用总数',Object.keys(json).length)
+      file.contents = Buffer.from(JSON.stringify(json, null, 2));
+      cb(null, file);
+    }))
+    .pipe(gulpRename('target_embedded_rules_list.json'))
+    .pipe(dest('output_temp/json/'))
+    .on('end', cb);
+}
+
 function getTargetEmbeddedRulesListConfig(cb) {
     OPPOConfigStack = {}
     return src(`input_merge_config/mi_magicwindow_config/embedded_rules_list.json`)

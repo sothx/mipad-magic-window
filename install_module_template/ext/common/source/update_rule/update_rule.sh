@@ -52,8 +52,10 @@ elif [[ "$API" -ge 31 ]]; then
   chattr -i /data/system/cloudFeature_embedded_rules_list.xml
   chattr -i /data/system/cloudFeature_fixed_orientation_list.xml
   chattr -i /data/system/cloudFeature_autoui_list.xml
+  if [[ "$API" -ge 35 ]]; then
   chattr -i /data/system/cloudFeature_embedded_rules_list_projection.xml
   chattr -i /data/system/cloudFeature_fixed_orientation_list_projection.xml
+  fi
   # 支持平行视界自定义配置文件
   if [[ -f "$CUSTOM_CONFIG_EMBEDDED_RULES_LIST" ]]; then
     cp -f "$MODDIR"/common/source/embedded_rules_list.xml "$MODDIR"/common/embedded_rules_list.xml
@@ -97,8 +99,10 @@ elif [[ "$API" -ge 31 ]]; then
   chattr +i /data/system/cloudFeature_embedded_rules_list.xml
   chattr +i /data/system/cloudFeature_fixed_orientation_list.xml
   chattr +i /data/system/cloudFeature_autoui_list.xml
+  if [[ "$API" -ge 35 ]]; then
   chattr +i /data/system/cloudFeature_embedded_rules_list_projection.xml
   chattr +i /data/system/cloudFeature_fixed_orientation_list_projection.xml
+  fi
 
   cmd miui_embedding_window update-rule
   cmd miui_auto_ui reload-rule
