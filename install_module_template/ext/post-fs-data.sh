@@ -95,4 +95,7 @@ elif [[ "$API" -ge 31 ]]; then
   chattr +i /data/system/cloudFeature_fixed_orientation_list.xml
   chattr +i /data/system/cloudFeature_autoui_list.xml
 
+  cmd miui_embedding_window update-rule
+  cmd miui_auto_ui reload-rule
+
 fi
