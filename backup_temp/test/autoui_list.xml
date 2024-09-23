@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<packageRules>
+  <!--Adaptive For XiaomiMixFold3 -->
+  <package name="cmb.pb" enable="true" optimizeWebView="true"/>
+  <package name="com.meitu.meiyancamera" enable="true" optimizeWebView="true"/>
+  <package name="com.wuba" enable="true" optimizeWebView="true"/>
+  <package name="ctrip.android.view" enable="true" optimizeWebView="true"/>
+  <package name="com.xunlei.downloadprovider" enable="true" optimizeWebView="true"/>
+  <package name="com.ct.client" enable="true" optimizeWebView="true"/>
+  <package name="com.pingan.paces.ccms" enable="true" optimizeWebView="true"/>
+  <package name="com.hundsun.winner.pazq" enable="true" optimizeWebView="true"/>
+  <package name="com.guotai.dazhihui" enable="true" optimizeWebView="true"/>
+  <package name="com.renrendai.haohuan" enable="true" optimizeWebView="true"/>
+  <package name="com.qiyi.video" enable="true" optimizeWebView="true"/>
+  <package name="tv.danmaku.bili" enable="true" optimizeWebView="true"/>
+  <package name="net.evecom.android.mztapp" enable="true" optimizeWebView="true"/>
+  <package name="com.bankcomm.maidanba" enable="true" optimizeWebView="true"/>
+  <package name="com.xiachufang" enable="true" optimizeWebView="true"/>
+  <package name="com.mymoney" enable="true" optimizeWebView="true"/>
+  <package name="com.koudai.weidian.buyer" enable="true" optimizeWebView="true"/>
+  <package name="com.autohome.usedcar" enable="true" optimizeWebView="true"/>
+  <package name="com.kuaiduizuoye.scan" enable="true" optimizeWebView="true"/>
+  <package name="com.hipu.yidian" enable="true" optimizeWebView="true"/>
+  <package name="com.ophone.reader.ui" enable="true" optimizeWebView="true"/>
+  <package name="com.hcc.app" enable="true" optimizeWebView="true"/>
+  <package name="com.mengtuiapp.mall" enable="true" optimizeWebView="true"/>
+  <package name="com.paem" enable="true" optimizeWebView="true"/>
+  <package name="com.ecitic.bank.mobile" enable="true" optimizeWebView="true"/>
+  <package name="com.mogujie" enable="true" optimizeWebView="true"/>
+  <!--Adaptive For XiaomiMixFold4 -->
+  <package name="com.sinovatech.unicom.ui" enable="true" activityRule="com.sinovatech.unicom.basic.ui.activity.MainActivity:2:home_card_recycleview-3" />
+  <package name="com.hxb.mobile.client" enable="true" activityRule="com.yt.hxmb50.launcher.LauncherActivity:2;com.yt.hxmb50.mainpages.ui.main.MainActivity:2:hot_event_left_iv-17,hot_event_right_top_iv-17,hot_event_right_bottom_iv-17;com.yt.hxmb50.login.LoginActivity:2" />
+  <package name="com.galaxy.stock" enable="true" activityRule="*:0" />
+  <package name="com.youdao.note" enable="true" activityRule="*:2:ad_banner-3" />
+  <package name="com.forms" enable="true" activityRule="com.forms.motionlife.indexX910.activity.IndexActivityX910New:2"/>
+  <package name="com.bankcomm.Bankcomm" enable="true" activityRule="com.bankcomm.module.biz.home.MainActivity:1;com.bankcomm.module.biz.home.container.CommonPageActivity:1" />
+  <package name="com.cgbchina.xpt" enable="true" activityRule="com.cgb.mobilebank.sit.launcher.module.main.activity.IndexActivity_:1:mine_assets_background-3,mine_background-3,mine_credit_default-3,mine_loan_two_pic-3,iv_image-3,image_bg-3,iv_floor_pic_one-3,iv_floor_pic_two-3,iv_floor_pic_three-3,floor_view-18;com.cgb.mobilebank.android.login.module.login.activity.LoginActivity_:1" />
+  <package name="com.magicpoint.mobile.bank" enable="true" activityRule="com.cqrcb.mainbundle.page.MainActivity:1" />
+  <package name="com.hsbank.mobilebank" enable="true" activityRule="com.csii.iap.ui.HomeActivity:1;com.csii.iap.ui.InfoActivity:2" />
+  <package name="com.jxnxs.mobile.bank" enable="true" activityRule="com.hundsun.mobile.hsbrowser.JxBrowser:2" />
+  <package name="com.zaxd.loan" enable="true" activityRule="com.zaxd.loan.MainTabActivity:1:img_about_us-14,iv_image-17" />
+  <package name="com.qdccb.bank" enable="true" activityRule="com.qdccb.bank.ui.MainActivity:2:cbi_rv_life-2;com.qdccb.bank.ui.StartPageActivity:2;com.alipay.mobile.quinox.LauncherActivity:2;com.belink.ynet.bundle.login.activity.LoginActivity:2;com.qdccb.qdbank.SplashActivity:2" />
+  <package name="com.glyh.mbank.pro" enable="true" activityRule="com.glyh.mbank.ui.main.MainActivity:1" />
+  <package name="com.jdd.motorfans" enable="true" activityRule="com.jdd.motorfans.modules.mall.self.detail.SelfGoodDetailActivity:2" />
+  <package name="com.yitong.zjrc.mfs.android" enable="true" activityRule="com.yitong.mbank.app.android.activity.MainActivity:1" />
+  <package name="cn.jsb.china" enable="true" activityRule="com.yitong.mobile.biz.launcher.app.main.MainActivityJsbank:2:iv_top_fragment_mine-3" />
+  <package name="csii.com.qny" enable="true" activityRule="csii.com.qny.ui.activity.QNYActivity:1" />
+  <package name="com.zl.fqbao" enable="true" activityRule="com.mucfc.muapp.ui.welcome.activity.WelcomeActivity:1;com.mucfc.main.MainActivity:1;com.mucfc.muapp.ui.base.activity.H5PlusActivity:1" />
+  <package name="com.sxnxs.mbank" enable="true" activityRule="com.yitong.mbank.app.android.activity.MainActivity:2" />
+  <package name="com.icbc.wapc" enable="true" activityRule="com.icbc.main.MainActivity:1" />
+  <package name="com.danlan.xiaolan" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="cn.com.hzb.mobilebank.per" enable="true" activityRule="*:1" />
+  <package name="com.soft.blued" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.zzbank.pibp" enable="true" activityRule="com.mobile.mbank.launcher.activity.IndexActivity_:2:iv_top_bg-3,iv_zixun_head-3,iv_skin-3,iv_welcome_img-3;com.mobile.mbank.launcher.activity.JJIndexActivity_:2;com.mobile.mbank.launcher.activity.HNIndexActivity_:2;com.mobile.mbank.launcher.activity.ShopIndexActivity_:2;com.mobile.mbank.login.register.RegisterActivity_:2:content-3;com.mobile.mbank.login.firstlogin.AccountLoginActivity_:2:content-3;com.mobile.mbank.login.firstlogin.LoginActivity_:2:content-3;com.mobile.mbank.login.LoginActivity_:2:content-3;com.mobile.mbank.login.register.SettingPwdActivity_:2" />
+  <package name="com.yitong.xian.mbank" enable="true" activityRule="com.yitong.mbank.app.android.activity.SplashActivity:2;com.yitong.mbank.app.android.activity.New_MainActivity:2:android.support.v7.widget.RecyclerView-2,login_again_fl_tuan_login-3,iv_integration_bg-3;com.yitong.mbank.app.android.activity.searchh.SearchActivityNew:2;com.yitong.mbank.app.android.fragment.fragment.home.HomeFragment:2;com.yitong.mbank.app.android.fragment.fragment.life.NewLifeFragment:2;com.yitong.mbank.app.android.activity.login.LoginActivity:2:login_again_fl_tuan_login-3" />
+  <package name="com.cntaiping.tpapp" enable="true" activityRule="com.basicapp.ui.SplashActivity:1;com.basicapp.ui.RootAct:1;com.basicapp.ui.H5Activity:1" />
+  <package name="com.plat.swhydyj.android.ShenWanHongYuanSecurity" enable="true" activityRule="com.hexin.plat.android.Hexin:1:textView-16;com.hexin.plat.android.AndroidLogoActivity:1" />
+  <!-- Adaptive For Sothx 1.15.x -->
+  <package name="com.kugou.android.lite" enable="true" activityRule="*:0" />
+  <package name="com.xbcx.gdwx3" enable="true" activityRule="*:0" />
+  <package name="com.tencent.androidqqmail" enable="true" activityRule="*:6:framelayout-10" skippedActivityRule="com.tencent.qqmail.activity.compose.ComposeMailActivity;com.tencent.qqmail.xmailnote.XMailNoteActivity;com.tencent.qqmail.activity.readmail.ReadMailInlineImageActivity;" />
+  <package name="com.sina.weibo" enable="true" activityRule="*:0" />
+  <package name="com.wanmei.tiger" enable="true" activityRule="*:0" />
+  <package name="com.gh.gamecenter" enable="true" activityRule="*:6" skippedActivityRule="com.gh.gamecenter.SplashScreenActivity" />
+  <package name="com.vgjump.jump" enable="true" activityRule="*:0" />
+  <package name="com.hypergryph.skland" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.tencent.android.qqdownloader" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="cn.danatech.xingseapp" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.peopledailychina.activity" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.ruguoapp.jike" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.baidu.tieba" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.mihoyo.hyperion" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.dongqiudi.news" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.douban.frodo" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.hlg.daydaytobusiness"  enable="true" activityRule="*:2" optimizeWebView="true" />
+  <package name="com.alibaba.wireless" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <!--Adaptive For XiaomiMixFold4 -->
+  <package name="com.citiccard.mobilebank" enable="true" activityRule="com.citiccard.mobilebankapp.HomeActivity:1:iv_image-17" />
+  <package name="com.starbucks.cn" enable="true" activityRule="com.starbucks.cn.home.revamp.RevampMainActivity:1:logOutLayout-19,rv_bean-19,account_background-3,bg_top-19,branchBackground-19,member_reward_bg-19" />
+  <package name="com.iflyrec.tingshuo" enable="true" activityRule="*:2:RCRelativeLayout-15,FrameLayout-15,iv_header_bg_activity-3" />
+  <!-- Adaptive For Sothx 1.21.x -->
+  <package name="com.tencent.karaoke" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="org.telegram.group" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.lvka.mars" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.byet.guigul" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.qingqi.dianbo" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.huanyou.haituan" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.xiaoyu.rightone" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.superrhino.rarering" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="cn.neoclub.uki" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.cijianlink.cjlk" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.ubisoft.dance.justdance2015companion" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.ubisoft.dance.justdancecontroller2023" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.wzf.fan" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.yuwan.tmshipin" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.c2vl.kgamebox" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="cn.myhug.avalon" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.mszmapp.detective" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.alicloud.databox" enable="false" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.quanmai.findu" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="im.yixin" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.simu.yxpw" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.wemomo.matchmaker" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <package name="com.cctv.cctv5ultimate" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.answer.reader" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.totwoo.totwoo" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.yizhilu.qh" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.kwai.videoeditor" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.ss.android.yumme.video" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.mianmian.liao" enable="true" activityRule="*:6" optimizeWebView="true"  />
+  <package name="com.xt.retouchoversea" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="dji.mimo" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.qihoo.qeditor" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="net.pandapaint.draw" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.yuewen.authorapp" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.parallel.odyssey" enable="true" activityRule="*:6" optimizeWebView="true"  />
+  <package name="com.quark.scanking" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.foundingaz.user" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.trim.app" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.xt.retouch" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.sohu.sohuhy" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.sohu.supermarie" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.netease.lotterynews" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.xiaomi.superhexa" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.steampy.app" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.vgjump.jump" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.max.xiaoheihe" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.lingti.android.ns" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="cz.gemsi.switchbuddy" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.blueocean.musicplayer" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.shark.crazyword" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.meta.boom" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.xtuone.android.syllabus" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="net.wz.ssc" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.mt.mtxx.mtxx" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.meitu.poster" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.meitu.mtzjz" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="studio.fountainhead.habicat" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="cn.kuwo.player" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.mapp" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="co.runner.app" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="cn.jthj.turbobunny" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.gorgeous.lite" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.by.butter.camera" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.campmobile.snowcamera" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.maidu.gkld" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.taobao.qianniu" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.scanner.discount" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="cc.lianzainovel" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.mfxsssq.search" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.jd.jdhealth" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.boe.ohealth" enable="true" activityRule="*:1" optimizeWebView="true"  />
+  <package name="com.sx.xiaoai" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.sabac.hy" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="ctrip.android.view" enable="true" activityRule="*:0" optimizeWebView="true"  />
+  <package name="com.immomo.vchat" enable="true" activityRule="*:0" optimizeWebView="true"  />
+</packageRules>
