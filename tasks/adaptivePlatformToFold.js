@@ -9,7 +9,8 @@ const XMLSerializer = require('xmldom').XMLSerializer;
 
 const buildActionIsFold = function () {
   const use_platform = options.use_platform;
-  return use_platform === 'fold';
+  const use_mode = options.use_mode;
+  return use_platform === 'fold' && use_mode === 'activityEmbedding';
 }
 
 /**
