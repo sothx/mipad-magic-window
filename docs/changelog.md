@@ -20,6 +20,8 @@
 
 - 自定义规则模板增加对Hyper OS 2.0的写法说明
 
+- 统一Twitter的适配规则
+
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
