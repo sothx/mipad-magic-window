@@ -54,14 +54,14 @@
   <package name="com.tujia.hotel" isShowDivider="true" adaptCutout="1" />
   <package name="com.ss.android.lark" isShowDivider="true" adaptCutout="1" />
   <package name="com.sina.weibo" isShowDivider="true" />
-  <package name="com.qidian.QDReader" isShowDivider="true" />
+  <package name="com.qidian.QDReader" isShowDivider="true" adaptCutout="1" />
   <package name="com.android.dazhihui" isShowDivider="true" />
   <package name="com.tencent.mm" adaptCutout="1" isShowDivider="true" />
   <package name="com.Qunar" adaptCutout="1" isShowDivider="true" />
   <package name="me.ele" adaptCutout="1" isShowDivider="true" />
   <package name="com.MobileTicket" isShowDivider="true" />
   <package name="com.sina.news" isShowDivider="true" />
-  <package name="com.douban.frodo" isShowDivider="true" />
+  <package name="com.douban.frodo" adaptCutout="1" isShowDivider="true" />
   <package name="com.coolapk.market" isShowDivider="true" />
   <package name="com.android.bankabc" adaptCutout="1" />
   <!-- Adaptive For Sothx 1.11.x -->
@@ -151,7 +151,11 @@
   <package name="com.cootek.crazyreader" relaunch="false" />
   <package name="com.ishowedu.peiyin" relaunch="false" />
   <package name="com.android.camera" disable="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.kwai.m2u" supportModes="full,fo" defaultSettings="full" skipCompatMode="true" />
+  <%_ } else { _%>
   <package name="com.kwai.m2u" disable="true" skipCompatMode="true" />
+  <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
   <package name="com.fenbi.android.solar" skipCompatMode="true" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" />
   <%_ } else { _%>
@@ -175,10 +179,22 @@
   <package name="com.happyelements.AndroidClover.mob" isScale="true" />
   <package name="cn.jj" isScale="true" supportCameraPreview="false" />
   <package name="com.estrongs.android.pop" disable="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.ugc.aweme.lite" supportModes="full,fo" defaultSettings="full" relaunch="false" />
+  <%_ } else { _%>
   <package name="com.ss.android.ugc.aweme.lite" disable="true" relaunch="false" />
+  <%_ } _%>
   <package name="com.qiyi.video.pad" disable="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.smile.gifmaker" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.smile.gifmaker" disable="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.kuaishou.nebula" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.kuaishou.nebula" disable="true" />
+  <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
   <package name="com.tencent.mobileqq" supportModes="full,fo" defaultSettings="full" />
   <%_ } else { _%>
@@ -186,17 +202,29 @@
   <%_ } _%>
   <package name="com.minitech.miniaixue" disable="true" />
   <package name="com.wedobest.shudu" isScale="true" minSupportVersion="1:20230522" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.baidu.baidutranslate" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.baidu.baidutranslate" disable="true" />
+  <%_ } _%>
   <package name="com.lemon.lv" disable="true" />
   <package name="com.dw.jrccc.mi" relaunch="false" />
   <package name="com.ks.jjwbh.mi" relaunch="false" />
   <package name="air.tv.douyu.android" relaunch="false" forcePortraitActivity="air.tv.douyu.android/.loader.a.ActivityN1NRNTS4" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ximalaya.ting.android" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.ximalaya.ting.android" disable="true" />
+  <%_ } _%>
   <package name="com.opera.browser" disable="true" />
   <package name="com.yandex.browser" disable="true" />
   <package name="com.ywhy.zjxjy.mi" relaunch="false" />
   <package name="com.fy.jrxfd.mi" relaunch="false" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.alibaba.android.rimet" supportModes="full,fo" defaultSettings="full" supportFullSize="true" isShowDivider="true" />
+  <%_ } else { _%>
   <package name="com.alibaba.android.rimet" disable="true" supportFullSize="true" isShowDivider="true" />
+  <%_ } _%>
   <package name="com.fy.xdyqc.mi" relaunch="false" />
   <package name="com.fy.fcds.mi" relaunch="false" />
   <package name="com.dw.xydg.net.mi" relaunch="false" />
@@ -226,7 +254,11 @@
   <package name="com.tuya.paintpro" relaunch="false" />
   <package name="com.bj.palyer.kkkddd" relaunch="false" />
   <package name="com.zf.jldj.mi" relaunch="false" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.wander.android.wallpaper" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.wander.android.wallpaper" disable="true" />
+  <%_ } _%>
   <package name="com.benqu.wuta" isScale="true" forcePortraitActivity="com.benqu.wuta/.activities.preview.PreviewActivity" />
   <package name="com.mallestudio.gugu.app" relaunch="false" />
   <package name="com.fy.tjxd.mi" relaunch="false" />
@@ -251,10 +283,18 @@
   <package name="com.by.butter.camera" isScale="true" />
   <package name="com.tencent.tmgp.qjnn" isScale="true" />
   <package name="com.offcn.mini.teacher" relaunch="false" isScale="true" supportCameraPreview="*:false" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.ugc.aweme" supportModes="full,fo" defaultSettings="full" relaunch="false" />
+  <%_ } else { _%>
   <package name="com.ss.android.ugc.aweme" disable="true" relaunch="false" />
+  <%_ } _%>
   <package name="com.stemu.psp.atmgdjh" disable="true" />
   <package name="com.miui.gallery" disable="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.tencent.qqlive" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.tencent.qqlive" disable="true" />
+  <%_ } _%>
   <package name="com.fenbi.android.servant" disable="true" />
   <package name="cn.com.chsi.chsiapp" skipCompatMode="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
@@ -262,7 +302,11 @@
   <%_ } else { _%>
   <package name="com.dongqiudi.news" allPortrait="true" />
   <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.campmobile.snowcamera" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.campmobile.snowcamera" disable="true" />
+  <%_ } _%>
   <package name="com.pfu.xxxxl.mi" disable="true" />
   <package name="cn.wps.moffice_eng" disable="true" />
   <package name="com.ylmf.androidclient" skipCompatMode="true" />
@@ -343,7 +387,11 @@
   <package name="com.woobest.sgwg.mi" disable="true" />
   <package name="com.f1player" skipCompatMode="true" />
   <package name="com.jeejen.family" disable="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.telecom.video" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.telecom.video" disable="true" />
+  <%_ } _%>
   <package name="com.yzxx.jsxsdbz.mi" disable="true" />
   <package name="com.dreamgame.fruitbubble.mi" disable="true" />
   <package name="com.gamejoy.game.onetfruit" />
@@ -469,7 +517,11 @@
   <package name="cn.bevol.p" relaunch="false" />
   <package name="com.tencent.gamehelper.dnf" relaunch="false" />
   <package name="com.yzxx.fkzgz.mi" relaunch="false" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.imangi.templerun2" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.imangi.templerun2" disable="true" />
+  <%_ } _%>
   <package name="com.hnzh.dldlwhjx.mi" disable="true" />
   <package name="com.cmplay.tiles2_cn_new.mi" disable="true" />
   <package name="com.cubic.choosecar" relaunch="false" />
@@ -507,7 +559,11 @@
   <package name="com.tsingzone.questionban" relaunch="false" />
   <package name="com.soufun.app" relaunch="false" />
   <package name="com.yzxx.bttp2.mi" disable="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.alicloud.databox" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.alicloud.databox" disable="true" />
+  <%_ } _%>
   <package name="com.chinamworld.bocmbci" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
   <package name="com.qiyi.video" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" supportCameraPreview="full:false" />
@@ -515,7 +571,11 @@
   <package name="com.qiyi.video" allPortrait="true" />
   <%_ } _%>
   <package name="com.hypergryph.arknights" disable="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.microsoft.emmx" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.microsoft.emmx" disable="true" />
+  <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
   <package name="com.pingan.carowner" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" />
   <%_ } else { _%>
@@ -543,54 +603,242 @@
   <package name="com.miui.mediaviewer" disable="true" />
   <package name="com.tencent.jkchess" disable="true" />
   <package name="com.ikongjian.decoration" skipCompatMode="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="tv.danmaku.bilibilihd" supportModes="full,fo" defaultSettings="full" relaunch="false" />
+  <%_ } else { _%>
   <package name="tv.danmaku.bilibilihd" disable="true" relaunch="false" />
+  <%_ } _%>
   <package name="com.jingyao.easybike" relaunch="false" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.debug" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.debug" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.larksuite.suite" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.larksuite.suite" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.kami" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.kami" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.kastandard" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.kastandard" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.ljht" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.ljht" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.saastest" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.saastest" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.saaspoc" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.saaspoc" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.kadev" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.kadev" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.kausts" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.kausts" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.htone" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.htone" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.greentown" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.greentown" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.md_zht" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.md_zht" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.ka31" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.ka31" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.kadevcicd" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.kadevcicd" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.kacrc" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.kacrc" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.kazdtq" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.kazdtq" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.kahd" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.kahd" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.shlx" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.shlx" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.jinhui" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.jinhui" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.kastd401" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.kastd401" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.kazdupg" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.kazdupg" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.ka502p1" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.ka502p1" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.ka502s1" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.ka502s1" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.kaupg" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.kaupg" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.kadbupg" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.kadbupg" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.kastd407r1" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.kastd407r1" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.ka410s1" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.ka410s1" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.xhjt" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.xhjt" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.transsion" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.transsion" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.ihaier" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.ihaier" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.rongchuang" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.rongchuang" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.cjy" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.cjy" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.yumchina" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.yumchina" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.catl" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.catl" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.seazen" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.seazen" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.fjdz" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.fjdz" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.hxjk" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.hxjk" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.ka410p1" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.ka410p1" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.ka410p2" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.ka410p2" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.kapoc3" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.kapoc3" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.kaxhs" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.kaxhs" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.cmi" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.cmi" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.taikang" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.taikang" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.cxmt" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.cxmt" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.lark.llzf" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ss.android.lark.llzf" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
   <package name="cn.myhug.tiaoyin" disable="true" />
   <package name="com.zhugezhaofang" skipCompatMode="true" />
   <package name="com.cn21.ecloud" skipCompatMode="true" supportCameraPreview="false" />
@@ -600,8 +848,16 @@
   <package name="com.skype.raider" disable="true" />
   <package name="com.microsoft.office.officehubrow" disable="true" />
   <package name="com.miui.calculator" disable="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.baidu.input_mi" supportModes="full,fo" defaultSettings="full" skipCompatMode="true" forcePortraitActivity="com.baidu.input_mi/com.baidu.input_mi.ImeUserExperienceActivity,com.baidu.input_mi/com.baidu.input.ImeSubConfigActivity" />
+  <%_ } else { _%>
   <package name="com.baidu.input_mi" disable="true" skipCompatMode="true" forcePortraitActivity="com.baidu.input_mi/com.baidu.input_mi.ImeUserExperienceActivity,com.baidu.input_mi/com.baidu.input.ImeSubConfigActivity" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.outfit7.talkingtomgoldrun.mi" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.outfit7.talkingtomgoldrun.mi" disable="true" />
+  <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
   <package name="com.picsart.studio" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" />
   <%_ } else { _%>
@@ -610,17 +866,37 @@
   <package name="com.myntra.android" skipCompatMode="true" />
   <package name="com.sina.weibo" allowEmbInPortrait="false" disable="true" isShowDivider="true" supportFullSize="true" />
   <package name="com.dw.xprqj.mi" disable="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.mxtech.videoplayer.ad" supportModes="full,fo" defaultSettings="full" relaunch="false" />
+  <%_ } else { _%>
   <package name="com.mxtech.videoplayer.ad" disable="true" relaunch="false" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.mxtech.videoplayer.pro" supportModes="full,fo" defaultSettings="full" relaunch="false" />
+  <%_ } else { _%>
   <package name="com.mxtech.videoplayer.pro" disable="true" relaunch="false" />
+  <%_ } _%>
   <package name="com.xiaomi.gamecenter" disable="true" />
   <package name="ru.mail.mailapp" relaunch="false" />
   <package name="com.playgame.havefun.mi" relaunch="false" />
   <package name="com.playgame.havefun" relaunch="false" />
   <package name="com.dw.wxpk.mi" relaunch="false" />
   <package name="com.fy.wdxd.mi" relaunch="false" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ruanmei.ithome" supportModes="full,fo" defaultSettings="full" allowEmbInPortrait="false" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.ruanmei.ithome" allowEmbInPortrait="false" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.douban.frodo" supportModes="full,fo" defaultSettings="full" allowEmbInPortrait="false" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.douban.frodo" allowEmbInPortrait="false" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.qidian.QDReader" supportModes="full,fo" defaultSettings="full" allowEmbInPortrait="false" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.qidian.QDReader" allowEmbInPortrait="false" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
   <package name="ru.ritmmedia.yappy" relaunch="false" />
   <package name="com.ishowedu.child.peiyin" disable="true" />
   <package name="com.chinamworld.main" isScale="true" />
@@ -639,9 +915,21 @@
   <package name="com.ruozhuo.jqb" relaunch="false" />
   <package name="com.knowbox.rc.student.pk" isScale="true" />
   <package name="com.facebook.lite" isScale="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.tencent.weread" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.tencent.weread" disable="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.xingin.xhs" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.xingin.xhs" disable="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.miui.fm" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.miui.fm" disable="true" />
+  <%_ } _%>
   <package name="com.jqz.media" relaunch="false" />
   <package name="com.ks.jyzxs.mi" isScale="true" />
   <package name="com.jdd.motorfans" relaunch="false" supportCameraPreview="false" />
@@ -668,7 +956,11 @@
   <package name="com.tencent.zebra" disable="true" />
   <package name="com.huawei.health" relaunch="false" supportCameraPreview="full:false" />
   <package name="com.ultron.crimaster" isScale="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.duwo.reading" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.duwo.reading" disable="true" />
+  <%_ } _%>
   <package name="com.unionpay" relaunch="false" supportCameraPreview="false" forcePortraitActivity="com.unionpay/.activity.payment.UPActivityScan" />
   <package name="com.sinovatech.unicom.ui" relaunch="false" />
   <package name="com.popcap.pvz2cthdxm" disable="true" />
@@ -683,16 +975,36 @@
   <package name="com.jyhy.dakaxiu" relaunch="false" />
   <package name="com.giant.newconcept" relaunch="false" />
   <package name="com.shuwei.sscm" relaunch="false" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.ugc.live" supportModes="full,fo" defaultSettings="full" relaunch="false" />
+  <%_ } else { _%>
   <package name="com.ss.android.ugc.live" disable="true" relaunch="false" />
+  <%_ } _%>
   <package name="vStudio.Android.Camera360" disable="true" />
   <package name="org.telegram.messenger" disable="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.lemon.lvoverseas" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.lemon.lvoverseas" disable="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.instagram.android" supportModes="full,fo" relaunch="false" supportCameraPreview="false" />
+  <%_ } else { _%>
   <package name="com.instagram.android" relaunch="false" supportCameraPreview="false" disable="true" />
+  <%_ } _%>
   <package name="com.ls.tyt.mi" isScale="true" />
   <package name="com.coolapk.market" isShowDivider="true" disable="true" supportFullSize="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.microsoft.office.outlook" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.microsoft.office.outlook" disable="true" />
+  <%_ } _%>
   <package name="com.alibaba.aliexpresshd" isScale="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.maimemo.android.momo" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.maimemo.android.momo" disable="true" />
+  <%_ } _%>
   <package name="com.ouna.app.client" isScale="true" relaunch="false" />
   <package name="com.qqgame.hlddz" disable="true" />
   <package name="com.qqgame.happymj" disable="true" />
@@ -708,11 +1020,23 @@
   <package name="com.youloft.icloser" relaunch="false" supportCameraPreview="false" />
   <package name="me.yoopu.app.songbook" relaunch="false" />
   <package name="com.zhumaonline.exercise" disable="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.yinxiang" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.yinxiang" disable="true" />
+  <%_ } _%>
   <package name="com.huabenapp" isScale="true" relaunch="false" />
   <package name="cn.qiaolatech.huihua" relaunch="false" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.zuoyebang.airclass" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.zuoyebang.airclass" disable="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.fenbi.android.leo" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.fenbi.android.leo" isShowDivider="true" supportFullSize="true" disable="true" />
+  <%_ } _%>
   <package name="com.mwkj.zgxqfyzz.mi" relaunch="false" />
   <package name="com.taobao.etao" skipCompatMode="true" isScale="true" skipSelfAdaptive="true" forcePortraitActivity="com.taobao.etao/com.taobao.sns.app.scan.NewScanActivity" supportCameraPreview="false" />
   <package name="com.sohu.sohuvideo" disable="true" />
@@ -735,22 +1059,42 @@
   <package name="com.wudaokou.hippo" />
   <package name="com.sandboxol.blockymods" relaunch="false" />
   <package name="com.dewmobile.kuaiya.play" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.UCMobile.intl" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.UCMobile.intl" disable="true" />
+  <%_ } _%>
   <package name="com.yandex.searchapp" />
   <package name="com.officedocument.word.docx.document.viewer" skipCompatMode="true" />
   <package name="com.freevpnplanet" isScale="true" />
   <package name="com.booking" relaunch="false" />
   <package name="com.viber.voip" disable="true" />
   <package name="ru.yandex.yandexmaps" disable="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.zhiliaoapp.musically.go" supportModes="full,fo" defaultSettings="full" forcePortraitActivity="com.zhiliaoapp.musically.go/com.ss.android.ugc.aweme.creativetool.CreationActivity" />
+  <%_ } else { _%>
   <package name="com.zhiliaoapp.musically.go" disable="true" forcePortraitActivity="com.zhiliaoapp.musically.go/com.ss.android.ugc.aweme.creativetool.CreationActivity" />
+  <%_ } _%>
   <package name="com.spotify.music" disable="true" />
   <package name="ru.ok.android" disable="true" />
   <package name="com.vkontakte.android" disable="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ss.android.ugc.trill" supportModes="full,fo" defaultSettings="full" forcePortraitActivity="com.ss.android.ugc.trill/com.ss.android.ugc.aweme.adaptation.saa.SAAActivity,         com.ss.android.ugc.trill/com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity" supportCameraPreview="false" />
+  <%_ } else { _%>
   <package name="com.ss.android.ugc.trill" disable="true" forcePortraitActivity="com.ss.android.ugc.trill/com.ss.android.ugc.aweme.adaptation.saa.SAAActivity,         com.ss.android.ugc.trill/com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity" supportCameraPreview="false" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.zhiliaoapp.musically" supportModes="full,fo" forcePortraitActivity="com.zhiliaoapp.musically/com.ss.android.ugc.aweme.qrcode.view.ScanQRCodeActivityV2,com.zhiliaoapp.musically/com.ss.android.ugc.aweme.adaptation.saa.SAAActivity,com.zhiliaoapp.musically/com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity" />
+  <%_ } else { _%>
   <package name="com.zhiliaoapp.musically" disable="true" forcePortraitActivity="com.zhiliaoapp.musically/com.ss.android.ugc.aweme.qrcode.view.ScanQRCodeActivityV2,com.zhiliaoapp.musically/com.ss.android.ugc.aweme.adaptation.saa.SAAActivity,com.zhiliaoapp.musically/com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity" />
+  <%_ } _%>
   <package name="tv.pps.mobile" supportCameraPreview="false" forcePortraitActivity="tv.pps.mobile/com.qiyi.shortvideo.videocap.capture.ShortVideoCapActivity,tv.pps.mobile/com.iqiyi.android.ar.activity.CameraAdvertiseActivity" />
   <package name="com.tdx.AndroidNew" supportCameraPreview="true" relaunch="full:false" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.huatu.handheld_huatu" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.huatu.handheld_huatu" disable="true" />
+  <%_ } _%>
   <package name="com.tianyancha.skyeye" supportCameraPreview="true" />
   <package name="com.outfit7.talkingtom" isScale="true" />
   <package name="jyfb.yehk.vget" supportCameraPreview="false" forcePortraitActivity="jyfb.yehk.vget/flc.ast.activity.ShotActivity" />
@@ -783,14 +1127,18 @@
   <package name="com.rubbbby.threememo" relaunch="false" />
   <package name="com.cbnweekly" relaunch="false" />
   <package name="com.wibo.bigbang.ocr" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.kugou.android" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.kugou.android" disable="true" />
+  <%_ } _%>
   <package name="com.cmri.universalapp" supportCameraPreview="true" />
   <package name="com.cq.government" supportCameraPreview="true" />
   <package name="org.telegram.messenger.web" disable="true" />
   <package name="com.glyh.mbank.pro" supportCameraPreview="false" forcePortraitActivity="com.glyh.mbank.pro/com.glyh.mbank.thirdparty.custom.CustomScanActivity" />
   <!--Adaptive For Pad 2 20230320-->
   <package name="com.youcash.ZYWallet" supportCameraPreview="true" supportFullSize="true" forcePortraitActivity="com.youcash.ZYWallet/com.youcash.ZYWallet.com.kernal.passportreader.sdk.CardsCameraActivity" />
-  <package name="com.meitu.meiyancamera" supportFullSize="true" supportCameraPreview="true"  />
+  <package name="com.meitu.meiyancamera" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.tencent.android.qqdownloader" supportFullSize="true" supportCameraPreview="true" relaunch="false" isScale="true" />
   <package name="com.xunlei.downloadprovider" supportFullSize="true" supportCameraPreview="true" forcePortraitActivity="com.xunlei.downloadprovider/.loader.a.ActivityN1STNTS1" />
   <package name="com.qihoo360.mobilesafe" supportFullSize="true" supportCameraPreview="true" />
@@ -864,7 +1212,11 @@
   <package name="com.shensz.student" supportFullSize="true" supportCameraPreview="true" ratio="1.5" />
   <package name="com.shoujiduoduo.wpplugin" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.hp.android.printservice" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.baidu.input" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.baidu.input" disable="true" />
+  <%_ } _%>
   <package name="com.dofun.zhw.pro" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.taou.maimai" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.cpic.sxbxxe" supportFullSize="true" supportCameraPreview="true" />
@@ -1147,44 +1499,120 @@
   <package name="com.santi.sinology" relaunch="false" isScale="true" supportFullSize="true" />
   <package name="com.vpapps.hdwallpaper.xyz" relaunch="false" isScale="true" supportFullSize="true" />
   <!-- Adaptive For Sothx 1.11.x -->
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.tencent.mm" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.tencent.mm" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.example.hikerview" supportModes="full,fo" defaultSettings="full" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.example.hikerview" disable="true" supportFullSize="true" />
+  <%_ } _%>
   <package name="com.sjm.mmeys.nf" relaunch="false" isScale="true" supportFullSize="true" />
   <package name="com.copymanga.app" relaunch="false" isScale="true" supportFullSize="true" />
   <package name="com.viva.todo_list" relaunch="false" isScale="true" supportFullSize="true" />
   <package name="com.papegames.lysk.cn" disable="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.vk.mail" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.vk.mail" disable="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.tencent.mobileqqi" supportModes="full,fo" />
+  <%_ } else { _%>
   <package name="com.tencent.mobileqqi" disable="true" />
+  <%_ } _%>
   <package name="com.xiaomi.shop" disable="true" isShowDivider="true" supportFullSize="true" />
   <package name="com.tencent.mymedinfo" relaunch="false" isScale="true" supportFullSize="true" />
   <package name="com.umihome.m" relaunch="false" isScale="true" supportFullSize="true" />
-  <package name="com.xiachufang" disable="true" isShowDivider="true" supportFullSize="true" supportModes="full,fo" skipSelfAdaptive="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.xiachufang" supportModes="full,fo" isShowDivider="true" supportFullSize="true" skipSelfAdaptive="true" />
+  <%_ } else { _%>
+  <package name="com.xiachufang" disable="true" isShowDivider="true" supportFullSize="true" skipSelfAdaptive="true" />
+  <%_ } _%>
   <package name="com.example.gyf.uaiu" relaunch="false" isScale="true" supportFullSize="true" />
   <package name="com.fimo.camera" disable="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.baidu.searchbox" supportModes="full,fo" isShowDivider="true" supportFullSize="true" forcePortraitActivity="com.baidu.searchbox/com.baidu.searchbox.godeye.CodeScannerActivity" />
+  <%_ } else { _%>
   <package name="com.baidu.searchbox" disable="true" isShowDivider="true" supportFullSize="true" forcePortraitActivity="com.baidu.searchbox/com.baidu.searchbox.godeye.CodeScannerActivity" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.baidu.searchbox.lite" supportModes="full,fo" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" forcePortraitActivity="com.baidu.searchbox.lite/com.baidu.searchbox.godeye.CodeScannerActivity" />
+  <%_ } else { _%>
   <package name="com.baidu.searchbox.lite" disable="true" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" forcePortraitActivity="com.baidu.searchbox.lite/com.baidu.searchbox.godeye.CodeScannerActivity" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.baidu.searchbox.tomas" supportModes="full,fo" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" forcePortraitActivity="com.baidu.searchbox.tomas/com.baidu.searchbox.godeye.CodeScannerActivity" />
+  <%_ } else { _%>
   <package name="com.baidu.searchbox.tomas" disable="true" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" forcePortraitActivity="com.baidu.searchbox.tomas/com.baidu.searchbox.godeye.CodeScannerActivity" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.baidu.searchbox.senior" supportModes="full,fo" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" forcePortraitActivity="com.baidu.searchbox.senior/com.baidu.searchbox.godeye.CodeScannerActivity" />
+  <%_ } else { _%>
   <package name="com.baidu.searchbox.senior" disable="true" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" forcePortraitActivity="com.baidu.searchbox.senior/com.baidu.searchbox.godeye.CodeScannerActivity" />
+  <%_ } _%>
   <package name="com.example.podclassic" isScale="true" />
   <package name="com.next.transfer" isScale="true" />
   <package name="com.etalien.booster" isScale="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.baidu.browser.apps" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.baidu.browser.apps" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.sina.news" supportModes="full,fo" defaultSettings="full" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.sina.news" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
   <package name="com.MobileTicket" isShowDivider="true" allowEmbInPortrait="false" supportFullSize="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.Qunar" supportModes="full,fo" isShowDivider="true" supportFullSize="true" allowEmbInPortrait="false" />
+  <%_ } else { _%>
   <package name="com.Qunar" disable="true" isShowDivider="true" supportFullSize="true" allowEmbInPortrait="false" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.android.dazhihui" supportModes="full,fo" defaultSettings="full" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.android.dazhihui" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.tencent.wework" supportModes="full,fo" defaultSettings="full" supportFullSize="true" supportCameraPreview="false" isShowDivider="true" allowEmbInPortrait="false" />
+  <%_ } else { _%>
   <package name="com.tencent.wework" disable="true" supportFullSize="true" supportCameraPreview="false" isShowDivider="true" allowEmbInPortrait="false" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.tencent.weworkenterprise" supportModes="full,fo" defaultSettings="full" supportFullSize="true" supportCameraPreview="false" isShowDivider="true" allowEmbInPortrait="false" />
+  <%_ } else { _%>
   <package name="com.tencent.weworkenterprise" disable="true" supportFullSize="true" supportCameraPreview="false" isShowDivider="true" allowEmbInPortrait="false" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.jingdong.app.mall" supportModes="full,fo" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
+  <%_ } else { _%>
   <package name="com.jingdong.app.mall" isShowDivider="true" disable="true" supportFullSize="true" supportCameraPreview="true" />
+  <%_ } _%>
   <package name="com.hexin.plat.android" supportFullSize="true" isShowDivider="true" />
   <package name="com.wanmei.tiger" supportCameraPreview="true" supportFullSize="true" relaunch="false" isScale="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.yikaobang.yixue" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.yikaobang.yixue" disable="true" />
+  <%_ } _%>
   <package name="com.midea.vm.washer" supportCameraPreview="true" supportFullSize="true" relaunch="false" isScale="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.greenpoint.android.mc10086.activity" supportModes="full,fo" defaultSettings="full" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.greenpoint.android.mc10086.activity" isShowDivider="true" disable="true" supportFullSize="true" />
+  <%_ } _%>
   <package name="com.hetao101.xhtxy" supportCameraPreview="true" supportFullSize="true" relaunch="false" isScale="true" />
   <package name="com.xiaomi.youpin" disable="true" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.furrybar.chat.app" relaunch="false" supportFullSize="true" ratio="1.5" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="me.ele" supportModes="full,fo" defaultSettings="full" allowEmbInPortrait="false" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="me.ele" allowEmbInPortrait="false" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
   <package name="com.bilibili.comic" relaunch="false" supportFullSize="true" ratio="1.01" />
   <package name="com.tencent.qqmusic" relaunch="false" supportFullSize="true" ratio="1.1" supportCameraPreview="false" />
   <!--Adaptive For Sothx 1.17.x-->
@@ -1233,7 +1661,11 @@
   <package name="in.startv.hotstar" disable="true" />
   <package name="com.android.daoway" />
   <package name="com.calculator.hideu" isScale="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.baidu.homework" supportModes="full,fo" defaultSettings="full" isShowDivider="true" supportFullSize="true" skipSelfAdaptive="true" />
+  <%_ } else { _%>
   <package name="com.baidu.homework" disable="true" isShowDivider="true" supportFullSize="true" skipSelfAdaptive="true" />
+  <%_ } _%>
   <!--OnePlus Pad-->
   <package name="com.cctv4g.cctvmobiletv" supportFullSize="true" supportCameraPreview="true" relaunch="false" ratio="1.5" />
   <package name="com.tbc.android.defaults" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
@@ -1418,7 +1850,11 @@
   <package name="com.xiaoyu.rightone" relaunch="false" supportFullSize="true" ratio="1.5" />
   <package name="com.superrhino.rarering" relaunch="false" supportFullSize="true" ratio="1.5" />
   <package name="com.ifreetalk.ftalk" relaunch="false" supportFullSize="true" ratio="1.5" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.peopledailychina.activity" supportModes="full,fo" defaultSettings="full" skipCompatMode="true" skipSelfAdaptive="true" />
+  <%_ } else { _%>
   <package name="com.peopledailychina.activity" disable="true" skipCompatMode="true" skipSelfAdaptive="true" />
+  <%_ } _%>
   <package name="cn.neoclub.uki" relaunch="false" supportFullSize="true" ratio="1.5" />
   <package name="com.xifeng.fun" relaunch="false" ratio="1.01" supportFullSize="true" />
   <package name="com.cijianlink.cjlk" relaunch="false" ratio="1.5" supportFullSize="true" />
@@ -1445,7 +1881,11 @@
   <package name="com.cctv.yangshipin.app.androidp" relaunch="false" ratio="1.1" supportFullSize="true" />
   <package name="com.viva.note" relaunch="false" ratio="1.1" supportFullSize="true" />
   <package name="com.ss.android.article.news" supportCameraPreview="*:false" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.xiwang.zaixian" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.xiwang.zaixian" disable="true" />
+  <%_ } _%>
   <package name="com.wedobest.puzzlebubble.one.mi" isScale="true" />
   <package name="com.wedobest.xiangqi.mi" isScale="true" />
   <package name="com.hicorenational.antifraud" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" />
@@ -1456,7 +1896,11 @@
   <package name="com.xg.czndox" isScale="true" />
   <package name="com.xg.czndox.mi" isScale="true" />
   <package name="net.xrcloud" isScale="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="tech.xiangzi.painless" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="tech.xiangzi.painless" disable="true" />
+  <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
   <package name="com.zq.hand_drawn" skipCompatMode="true" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" />
   <%_ } else { _%>
@@ -1497,9 +1941,17 @@
   <package name="com.ucar.app" relaunch="false" ratio="1.5" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.wanmeizhensuo.zhensuo" relaunch="false" ratio="1.5" supportFullSize="true" />
   <package name="com.cxzapp.yidianling" relaunch="false" ratio="1.5" supportFullSize="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.ugreen.pro" supportModes="full,fo" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
+  <%_ } else { _%>
   <package name="com.ugreen.pro" disable="true" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
+  <%_ } _%>
   <package name="com.trim.app" relaunch="false" ratio="1.5" supportFullSize="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.qiyi.video.reader" supportModes="full,fo" defaultSettings="full" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
+  <%_ } else { _%>
   <package name="com.qiyi.video.reader" disable="true" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
+  <%_ } _%>
   <package name="com.sohu.supermarie" relaunch="false" ratio="1.1" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.kele.shortplay" relaunch="false" ratio="1.5" supportFullSize="true" />
   <package name="com.xiaomi.superhexa" relaunch="false" ratio="1.5" supportFullSize="true" />
@@ -1516,19 +1968,35 @@
   <package name="com.sf.activity" relaunch="true" ratio="1.1" supportFullSize="true" />
   <package name="com.jesson.meishi" relaunch="true" ratio="1.1" supportFullSize="true" />
   <package name="com.sonova.phonak.dsapp.cn" relaunch="true" ratio="1.1" supportFullSize="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.huawei.hwid" supportModes="full,fo" defaultSettings="full" relaunch="false" />
+  <%_ } else { _%>
   <package name="com.huawei.hwid" disable="true" relaunch="false" />
+  <%_ } _%>
   <package name="com.standby.idream" relaunch="false" ratio="1.8" supportFullSize="true" />
   <package name="com.ieway.evcam" relaunch="false" ratio="1.5" supportFullSize="true" />
   <package name="cn.ieway.evmirror" relaunch="false" ratio="1.5" supportFullSize="true" />
   <package name="com.jd.jdlogistic" relaunch="true" ratio="1.1" supportFullSize="true" />
   <package name="com.yek.android.kfc.activitys" relaunch="true" ratio="1.5" supportFullSize="true" />
   <package name="com.taobao.idlefish" ratio="1.5" supportFullSize="true" relaunch="false" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="windinfo.android" supportModes="full,fo" defaultSettings="full" isShowDivider="true" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="windinfo.android" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
   <package name="com.android.thememanager" relaunch="false" />
   <package name="com.accordion.analogcam.cn" disable="true" relaunch="false" supportFullSize="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.taobao.trip" supportModes="full,fo" defaultSettings="full" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.taobao.trip" disable="true" supportFullSize="true" />
+  <%_ } _%>
   <package name="com.dxh.management" disable="true" supportFullSize="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.pinterest" supportModes="full,fo" defaultSettings="full" supportFullSize="true" />
+  <%_ } else { _%>
   <package name="com.pinterest" disable="true" supportFullSize="true" />
+  <%_ } _%>
   <package name="com.ss.android.ugc.livelite" relaunch="true" ratio="1.1" supportFullSize="true" />
   <package name="com.meitu.dreamavatar" relaunch="false" ratio="1.5" supportFullSize="true" />
   <package name="com.shanbay.news" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" supportModes="full,fo" />
@@ -1543,19 +2011,27 @@
   <package name="com.qunhe.designer" skipSelfAdaptive="true" supportModes="full,fo" />
   <package name="com.rockets.chang" skipSelfAdaptive="true" supportModes="full,fo" />
   <package name="com.yueme.itv" supportModes="full,fo" />
-  <package name="com.netease.mc.mi" forcePortraitActivity="com.netease.mc.mi/com.netease.ntunisdk.zxing.client.android.CaptureActivity" isScale="true" supportCameraPreview="false"/>
-  <package name="com.lbe.security.miui" disable="true"/>
-  <package name="com.outfit7.talkingtomgoldrun" disable="true"/>
-  <package name="com.JindoBlu.TwoPlayerGamesChallenge" forcePortraitActivity="com.JindoBlu.TwoPlayerGamesChallenge/com.unity3d.player.UnityPlayerActivity"/>
-  <package name="com.roblox.client" disable="true"/>
+  <package name="com.netease.mc.mi" forcePortraitActivity="com.netease.mc.mi/com.netease.ntunisdk.zxing.client.android.CaptureActivity" isScale="true" supportCameraPreview="false" />
+  <package name="com.lbe.security.miui" disable="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.outfit7.talkingtomgoldrun" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
+  <package name="com.outfit7.talkingtomgoldrun" disable="true" />
+  <%_ } _%>
+  <package name="com.JindoBlu.TwoPlayerGamesChallenge" forcePortraitActivity="com.JindoBlu.TwoPlayerGamesChallenge/com.unity3d.player.UnityPlayerActivity" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.roblox.client" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
+  <package name="com.roblox.client" disable="true" />
+  <%_ } _%>
   <package name="com.sohu.newsclient" supportModes="full,fo" />
   <package name="com.excean.masaid" supportModes="full,fo" />
   <package name="com.lhzqnahj.agedm" supportModes="full,fo" />
   <package name="com.m4399.gamecenter" supportModes="full,fo" />
   <package name="com.upgadata.up7723" supportModes="full,fo" />
-  <package name="com.wepie.weplay" supportModes="full,fo" isScale="true"/>
+  <package name="com.wepie.weplay" supportModes="full,fo" isScale="true" />
   <package name="cn.emagsoftware.gamehall" supportModes="full,fo" />
-  <package name="tv.danmaku.bili"/>
+  <package name="tv.danmaku.bili" />
   <package name="com.A17zuoye.mobile.homework" supportModes="full,fo" />
   <package name="com.ss.android.auto" supportModes="full,fo" />
   <package name="com.suning.mobile.ebuy" supportModes="full,fo" />
@@ -1599,7 +2075,7 @@
   <package name="com.f100.android" supportModes="full,fo" />
   <package name="com.earth.bdspace" supportModes="full,fo" />
   <package name="com.geek.weathergj365" supportModes="full,fo" />
-  <package name="com.example.examda" supportModes="full,fo" supportCameraPreview="full:false"/>
+  <package name="com.example.examda" supportModes="full,fo" supportCameraPreview="full:false" />
   <package name="com.kuaiyin.player" supportModes="full,fo" />
   <package name="com.kanlixiang.android" supportModes="full,fo" />
   <package name="com.tencent.weishi" supportModes="full,fo" />
@@ -2007,7 +2483,7 @@
   <package name="com.meitu.makeup" supportModes="full,fo" />
   <package name="com.ibplus.client" supportModes="full,fo" />
   <package name="com.example.servyouappzhuhai" supportModes="full,fo" />
-  <package name="com.uxin.kilaaudio" supportModes="full,fo" supportCameraPreview="false"/>
+  <package name="com.uxin.kilaaudio" supportModes="full,fo" supportCameraPreview="false" />
   <package name="com.nasoft.socmark" supportModes="full,fo" />
   <package name="com.bytedance.ep.android" supportModes="full,fo" />
   <package name="com.color.by.number.paint.ly.pixel.art.cn" supportModes="full,fo" />
@@ -2076,7 +2552,7 @@
   <package name="com.hudun.videoedit" supportModes="full,fo" />
   <package name="com.zxscnew" supportModes="full,fo" />
   <package name="com.wangyin.payment" supportModes="full,fo" />
-  <package name="com.foxit.mobile.pdf.lite" supportModes="full,fo" supportCameraPreview="false"/>
+  <package name="com.foxit.mobile.pdf.lite" supportModes="full,fo" supportCameraPreview="false" />
   <package name="com.wuba.huoyun" supportModes="full,fo" />
   <package name="com.bwton.msx.czb" supportModes="full,fo" />
   <package name="cn.youth.school" supportModes="full,fo" />
@@ -2222,7 +2698,7 @@
   <package name="com.yiche.autoeasy" supportModes="full,fo" />
   <package name="com.cyqxx.puzzle.idiom.cn" supportModes="full,fo" />
   <package name="com.neusoft.ihrss.shandong.linyi" supportModes="full,fo" />
-  <package name="com.tal.imonkey.chinese" supportModes="full,fo" isScale="true"/>
+  <package name="com.tal.imonkey.chinese" supportModes="full,fo" isScale="true" />
   <package name="com.liuzhou.apps.android.lcsmy" supportModes="full,fo" />
   <package name="com.yc.hayloufit" supportModes="full,fo" />
   <package name="com.enqualcomm.kids.cyp" supportModes="full,fo" />
@@ -2295,7 +2771,7 @@
   <package name="com.nd.hy.android.edu.study.commune" supportModes="full,fo" />
   <package name="com.nngdjt.app" supportModes="full,fo" />
   <package name="com.duia.cet4" supportModes="full,fo" />
-  <package name="com.chaozh.iReader.dj"/>
+  <package name="com.chaozh.iReader.dj" />
   <package name="com.adnonstop.mancamera2017" supportModes="full,fo" />
   <package name="com.bikann.dzsk" supportModes="full,fo" />
   <package name="com.doc88.reader" supportModes="full,fo" />
@@ -2324,7 +2800,7 @@
   <package name="com.firebear.androil" supportModes="full,fo" />
   <package name="com.offcn.zhibo" supportModes="full,fo" />
   <package name="com.hengchang.client" supportModes="full,fo" />
-  <package name="com.guzhen.xiucai" supportModes="full,fo" skipCompatMode="true"/>
+  <package name="com.guzhen.xiucai" supportModes="full,fo" skipCompatMode="true" />
   <package name="com.gzqs.dscjyxld.mi" supportModes="full,fo" />
   <package name="com.ks.sfybzzl.mi" supportModes="full,fo" />
   <package name="com.maidu.gkld" supportModes="full,fo" />
@@ -2581,7 +3057,7 @@
   <package name="com.zhangkongapp.joke.bamenshenqi" supportModes="full,fo" />
   <package name="cn.com.hzb.mobilebank.per" supportModes="full,fo" />
   <package name="com.netease.lotterynews" supportModes="full,fo" />
-  <package name="com.anjuke.android.app" supportModes="full,fo" isScale="true"/>
+  <package name="com.anjuke.android.app" supportModes="full,fo" isScale="true" />
   <package name="com.yiding.jianhuo" supportModes="full,fo" />
   <package name="com.game.escape3d.mi" supportModes="full,fo" />
   <package name="com.xiaoniu.master.cleanking" supportModes="full,fo" />
@@ -2626,7 +3102,7 @@
   <package name="com.duowan.groundhog.mctools" supportModes="full,fo" />
   <package name="com.jinxin.namibox" supportModes="full,fo" />
   <package name="com.zaaap.app" supportModes="full,fo" />
-  <package name="com.bytxmt.banyuetan" supportModes="full,fo" supportCameraPreview="full:false"/>
+  <package name="com.bytxmt.banyuetan" supportModes="full,fo" supportCameraPreview="full:false" />
   <package name="com.yhmobilebank" supportModes="full,fo" />
   <package name="com.macrovideo.v380pro" supportModes="full,fo" />
   <package name="com.lstt.wifilocating" supportModes="full,fo" />
@@ -2721,7 +3197,7 @@
   <package name="com.example.wygxw" supportModes="full,fo" />
   <package name="tv.xiaoka.live" supportModes="full,fo" />
   <package name="com.xm.csee" supportModes="full,fo" />
-  <package name="com.martian.ttbook" supportModes="full,fo" relaunch="false"/>
+  <package name="com.martian.ttbook" supportModes="full,fo" relaunch="false" />
   <package name="com.msyc.onion" supportModes="full,fo" />
   <package name="com.jm.android.jumei" supportModes="full,fo" />
   <package name="com.drcuiyutao.babyhealth" supportModes="full,fo" />
@@ -2767,7 +3243,7 @@
   <package name="com.cygnus.scanner" supportModes="full,fo" />
   <package name="com.nxy.mobilebank.shanxi" supportModes="full,fo" />
   <package name="com.kuangxiangciweimao.novel" supportModes="full,fo" />
-  <package name="com.hpbr.bosszhipin" supportModes="full,fo" supportCameraPreview="full:false"/>
+  <package name="com.hpbr.bosszhipin" supportModes="full,fo" supportCameraPreview="full:false" />
   <package name="com.sina.heimao" supportModes="full,fo" />
   <package name="com.lchr.diaoyu" supportModes="full,fo" />
   <package name="com.mg.ec" supportModes="full,fo" />
@@ -2968,13 +3444,17 @@
   <package name="com.ygkj.chelaile.standard" supportModes="full,fo" />
   <package name="com.baidu.autocar" supportModes="full,fo" />
   <package name="com.suning.mobile.microshop" supportModes="full,fo" />
-  <package name="com.iflytek.inputmethod" supportModes="full,fo" supportCameraPreview="false"/>
+  <package name="com.iflytek.inputmethod" supportModes="full,fo" supportCameraPreview="false" />
   <package name="com.television.ysjj" supportModes="full,fo" />
   <package name="com.hualongxiang" supportModes="full,fo" />
   <package name="com.saicmotor.tocapp" supportModes="full,fo" />
   <package name="com.baidu.dict" supportModes="full,fo" />
   <package name="com.zhl.jjyy.aphone" supportModes="full,fo" />
-  <package name="com.dragon.read" disable="true"/>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.dragon.read" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
+  <package name="com.dragon.read" disable="true" />
+  <%_ } _%>
   <package name="com.xiaolian.prometheus" supportModes="full,fo" />
   <package name="com.shyz.toutiao" supportModes="full,fo" />
   <package name="com.jm.video" supportModes="full,fo" />
@@ -3121,7 +3601,7 @@
   <package name="com.biquge.book.noverls" supportModes="full,fo" />
   <package name="com.jd.game.bubblezuma.mi" supportModes="full,fo" />
   <package name="com.cutv.shakeshakestglt" supportModes="full,fo" />
-  <package name="cn.missevan"/>
+  <package name="cn.missevan" />
   <package name="com.codemao.lunarb2c" supportModes="full,fo" />
   <package name="com.vehicles.activities" supportModes="full,fo" />
   <package name="com.gzsd.mhttt.mi" supportModes="full,fo" />
@@ -3138,16 +3618,16 @@
   <package name="com.shopee.th" supportModes="full,fo" />
   <package name="com.shopee.vn" supportModes="full,fo" />
   <package name="com.shopee.tw" supportModes="full,fo" />
-  <package name="com.hunantv.imgo.activity" disable="true"/>
-  <package name="com.sup.android.superb" supportModes="full,fo" isScale="true"/>
-  <package name="com.sankuai.meituan" supportModes="full,fo" supportCameraPreview="full:false"/>
+  <package name="com.hunantv.imgo.activity" disable="true" />
+  <package name="com.sup.android.superb" supportModes="full,fo" isScale="true" />
+  <package name="com.sankuai.meituan" supportModes="full,fo" supportCameraPreview="full:false" />
   <package name="com.sankuai.meituan.takeoutnew" supportModes="full,fo" />
   <package name="com.achievo.vipshop" supportModes="full,fo" />
   <package name="com.duowan.mobile" supportModes="full,fo" />
   <package name="com.intsig.camscanner" supportModes="full,fo" />
   <package name="com.homelink.android" supportModes="full,fo" />
   <package name="com.tencent.djcity" supportModes="full,fo" />
-  <package name="com.wuba" supportModes="full,fo" supportCameraPreview="false"/>
+  <package name="com.wuba" supportModes="full,fo" supportCameraPreview="false" />
   <package name="com.zhaopin.social" supportModes="full,fo" />
   <package name="com.taobao.litetao" supportModes="full,fo" />
   <package name="com.qq.ac.android" supportModes="full,fo" />
@@ -3180,13 +3660,13 @@
   <package name="com.snda.wifilocating" supportModes="full,fo" />
   <package name="com.chaoxing.mobile" supportModes="full,fo" />
   <package name="com.cmcc.cmvideo" supportModes="full,fo" />
-  <package name="com.gkid.crazyrope" supportModes="full,fo" supportCameraPreview="full:false"/>
+  <package name="com.gkid.crazyrope" supportModes="full,fo" supportCameraPreview="full:false" />
   <package name="com.nineton.shouzhang" supportModes="full,fo" />
   <package name="com.gh.gamecenter" supportModes="full,fo" />
-  <package name="cn.cntv" supportModes="full,fo" supportCameraPreview="*:false"/>
+  <package name="cn.cntv" supportModes="full,fo" supportCameraPreview="*:false" />
   <package name="com.mampod.ergedd" supportModes="full,fo" />
   <package name="com.netease.edu.ucmooc" supportModes="full,fo" />
-  <package name="cn.eeo.classin" supportModes="full,fo" forcePortraitActivity="cn.eeo.classin/cn.eeo.account.QrScannerActivity"/>
+  <package name="cn.eeo.classin" supportModes="full,fo" forcePortraitActivity="cn.eeo.classin/cn.eeo.account.QrScannerActivity" />
   <package name="com.miui.player" isShowDivider="true" supportFullSize="true" />
   <package name="net.huanci.hsj" supportModes="full,fo" />
   <package name="com.tencent.androidqqmail" supportModes="full,fo" />
@@ -3214,102 +3694,599 @@
   <package name="com.zlketang.mm" supportModes="full,fo" />
   <package name="com.excean.splay" supportModes="full,fo" />
   <package name="com.weico.international" supportModes="full,fo" />
-  <package name="net.csdn.csdnplus" supportModes="full,fo" relaunch="full:false"/>
+  <package name="net.csdn.csdnplus" supportModes="full,fo" relaunch="full:false" />
   <package name="com.eykid.android.ey" supportModes="full,fo" />
   <package name="com.letv.android.client" supportModes="full,fo" />
   <package name="com.i61.dengta" supportModes="full,fo" />
   <package name="com.mengdie.xuanfeng" supportModes="full,fo" />
   <package name="com.mfw.roadbook" supportModes="full,fo" />
-  <package name="com.huodao.hdphone"/>
+  <package name="com.huodao.hdphone" />
   <package name="com.cmcm.cfwallpaper" supportModes="full,fo" />
   <package name="cn.wenyu.bodian" supportModes="full,fo" />
-  <package name="com.meetstudio.app.Zither"/>
+  <package name="com.meetstudio.app.Zither" />
   <package name="org.xinkb.blackboard.android" supportModes="full,fo" />
   <package name="com.liubowang.drawingboard" supportModes="full,fo" />
   <package name="com.naiyoubz.main" supportModes="full,fo" />
   <package name="com.agefans.sp3" supportModes="full,fo" />
   <package name="com.dongao.kaoqian.phone" supportModes="full,fo" />
   <package name="com.qihoo.contents" supportModes="full,fo" />
-  <package name="com.vivo.easyshare" disable="true"/>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.vivo.easyshare" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
+  <package name="com.vivo.easyshare" disable="true" />
+  <%_ } _%>
   <package name="com.gamestar.pianoperfect" supportModes="full,fo" />
   <package name="com.sygd.gdpaintfive" supportModes="full,fo" />
   <package name="com.benben.blackboard" supportModes="full,fo" />
-  <package name="com.kiloo.subwaysurf" disable="true"/>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.kiloo.subwaysurf" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
+  <package name="com.kiloo.subwaysurf" disable="true" />
+  <%_ } _%>
   <package name="com.ttule.picture" supportModes="full,fo" />
   <package name="com.qudiandu.diandu" supportModes="full,fo" />
   <package name="com.zeekrlife.mobile" supportModes="full,fo" />
-  <package name="android.zhibo8" supportModes="full,fo" supportCameraPreview="full:false"/>
+  <package name="android.zhibo8" supportModes="full,fo" supportCameraPreview="full:false" />
   <package name="com.yingyinng.np" supportModes="full,fo" />
-  <package name="com.yangcong345.android.phone"/>
+  <package name="com.yangcong345.android.phone" />
   <package name="com.qq.reader" supportModes="full,fo" />
   <package name="com.ukids.client.phone" supportModes="full,fo" />
   <package name="com.theone.aipeilian" supportModes="full,fo" />
   <package name="com.baidu.netdisk.xiaomi.appunion" supportModes="full,fo" />
-  <package name="com.zybang.parent"/>
-  <package name="com.yusi.chongchong" supportModes="full,fo" supportCameraPreview="*:false"/>
+  <package name="com.zybang.parent" />
+  <package name="com.yusi.chongchong" supportModes="full,fo" supportCameraPreview="*:false" />
   <package name="com.csd.newyunketang" supportModes="full,fo" />
   <package name="com.bzt.szstudentmobile" supportModes="full,fo" />
-  <package name="com.cnki.client" supportModes="full,fo" supportCameraPreview="false"/>
+  <package name="com.cnki.client" supportModes="full,fo" supportCameraPreview="false" />
   <package name="com.kugou.android.ktvapp" supportModes="full,fo" />
   <package name="com.qzone" supportModes="full,fo" />
-  <package name="cmb.pb" supportModes="full,fo" forcePortraitActivity="cmb.pb/com.cmb.rbs.livedetect.yitu.YituLivenessActivity,cmb.pb/com.finogeeks.lib.applet.scancode.ui.activity.ScanCaptureActivity" supportCameraPreview="*:false"/>
+  <package name="cmb.pb" supportModes="full,fo" forcePortraitActivity="cmb.pb/com.cmb.rbs.livedetect.yitu.YituLivenessActivity,cmb.pb/com.finogeeks.lib.applet.scancode.ui.activity.ScanCaptureActivity" supportCameraPreview="*:false" />
   <package name="com.lphtsccft" supportModes="full,fo" />
   <package name="com.midea.ai.appliances" supportModes="full,fo" />
   <package name="com.wondertek.miguaikan" supportModes="full,fo" />
   <package name="com.ekwing.students" supportModes="full,fo" />
-  <package name="com.xiaomi.kidspace" disable="true"/>
-  <package name="com.papegames.nn4.mi" isScale="true"/>
-  <package name="com.eduyun.app.factory.ykt" disable="true"/>
-  <package name="cn.jthj.turbobunny" relaunch="false"/>
-  <package name="com.hnsy.zgxqfygzz.mi" relaunch="false"/>
-  <package name="com.zy.game.painter.mi" relaunch="false"/>
-  <package name="com.hortor.juliancysj"/>
-  <package name="mobi.htjsq.accelerator" relaunch="false"/>
-  <package name="com.shizhuang.duapp" disable="true"/>
-  <package name="com.lew.game.hgxxx" relaunch="false"/>
-  <package name="com.lew.game.hgxxx.aligames" relaunch="false"/>
-  <package name="com.lew.game.hgxxx.mi" relaunch="false"/>
+  <package name="com.xiaomi.kidspace" disable="true" />
+  <package name="com.papegames.nn4.mi" isScale="true" />
+  <package name="com.eduyun.app.factory.ykt" disable="true" />
+  <package name="cn.jthj.turbobunny" relaunch="false" />
+  <package name="com.hnsy.zgxqfygzz.mi" relaunch="false" />
+  <package name="com.zy.game.painter.mi" relaunch="false" />
+  <package name="com.hortor.juliancysj" />
+  <package name="mobi.htjsq.accelerator" relaunch="false" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.shizhuang.duapp" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
+  <package name="com.shizhuang.duapp" disable="true" />
+  <%_ } _%>
+  <package name="com.lew.game.hgxxx" relaunch="false" />
+  <package name="com.lew.game.hgxxx.aligames" relaunch="false" />
+  <package name="com.lew.game.hgxxx.mi" relaunch="false" />
   <package name="com.lew.game.hgxxx.oppo" relaunch="false" />
   <package name="com.lew.game.hgxxx.vivo" relaunch="false" />
   <package name="com.lew.game.hgxxx.huawei" relaunch="false" />
   <package name="com.lew.game.hgxxx.honor" relaunch="false" />
   <package name="com.lew.game.hgxxx.bilibili" relaunch="false" />
-  <package name="com.jd.game.srjysq"/>
-  <package name="com.jd.game.srjysq.mi"/>
-  <package name="com.jd.game.srjysq.oppo"/>
-  <package name="com.jd.game.srjysq.vivo"/>
-  <package name="com.jd.game.srjysq.huawei"/>
-  <package name="com.jd.game.srjysq.honor"/>
-  <package name="com.jd.game.srjysq.bilibili"/>
-  <package name="com.jd.game.srjysq.aligames"/>
-  <package name="com.hx.game.watercol"/>
-  <package name="com.hx.game.watercol.mi"/>
-  <package name="com.hx.game.watercol.oppo"/>
-  <package name="com.hx.game.watercol.vivo"/>
-  <package name="com.hx.game.watercol.huawei"/>
-  <package name="com.hx.game.watercol.honor"/>
-  <package name="com.hx.game.watercol.bilibili"/>
-  <package name="com.hx.game.watercol.aligames"/>
-  <package name="com.kn.hlwzzc.mi"/>
-  <package name="com.aligames.sgzzlb.mi" forcePortraitActivity="com.aligames.sgzzlb.mi/com.ejoy.ejoysdk.scan.qrcode.core.android.CaptureActivity" supportCameraPreview="false"/>
-  <package name="com.aligames.sgzzlb" forcePortraitActivity="com.aligames.sgzzlb.mi/com.ejoy.ejoysdk.scan.qrcode.core.android.CaptureActivity" supportCameraPreview="false"/>
-  <package name="com.aligames.sgzzlb.aligames" forcePortraitActivity="com.aligames.sgzzlb.mi/com.ejoy.ejoysdk.scan.qrcode.core.android.CaptureActivity" supportCameraPreview="false"/>
-  <package name="com.aligames.sgzzlb.oppo" forcePortraitActivity="com.aligames.sgzzlb.mi/com.ejoy.ejoysdk.scan.qrcode.core.android.CaptureActivity" supportCameraPreview="false"/>
-  <package name="com.aligames.sgzzlb.vivo" forcePortraitActivity="com.aligames.sgzzlb.mi/com.ejoy.ejoysdk.scan.qrcode.core.android.CaptureActivity" supportCameraPreview="false"/>
-  <package name="com.aligames.sgzzlb.huawei" forcePortraitActivity="com.aligames.sgzzlb.mi/com.ejoy.ejoysdk.scan.qrcode.core.android.CaptureActivity" supportCameraPreview="false"/>
-  <package name="com.aligames.sgzzlb.bilibili" forcePortraitActivity="com.aligames.sgzzlb.mi/com.ejoy.ejoysdk.scan.qrcode.core.android.CaptureActivity" supportCameraPreview="false"/>
-  <package name="com.shengmaai.app" isScale="true"/>
-  <package name="com.funnyjoy.snysw.an"/>
-  <package name="com.budgestudios.googleplay.BarbieDreamhouse"/>
-  <package name="com.tocaboca.tocahairsalon4" skipCompatMode="true"/>
-  <package name="com.pdragon.new2048.mi" skipCompatMode="true"/>
-  <package name="com.ustwo.monumentvalleyzz" skipCompatMode="true"/>
-  <package name="com.quark.browser"/>
-  <package name="com.xnhd.apkzpjldz.mi"/>
-  <package name="com.snda.lantern.wifilocating"/>
-  <package name="com.yg.mini.games" disable="true"/>
+  <package name="com.jd.game.srjysq" />
+  <package name="com.jd.game.srjysq.mi" />
+  <package name="com.jd.game.srjysq.oppo" />
+  <package name="com.jd.game.srjysq.vivo" />
+  <package name="com.jd.game.srjysq.huawei" />
+  <package name="com.jd.game.srjysq.honor" />
+  <package name="com.jd.game.srjysq.bilibili" />
+  <package name="com.jd.game.srjysq.aligames" />
+  <package name="com.hx.game.watercol" />
+  <package name="com.hx.game.watercol.mi" />
+  <package name="com.hx.game.watercol.oppo" />
+  <package name="com.hx.game.watercol.vivo" />
+  <package name="com.hx.game.watercol.huawei" />
+  <package name="com.hx.game.watercol.honor" />
+  <package name="com.hx.game.watercol.bilibili" />
+  <package name="com.hx.game.watercol.aligames" />
+  <package name="com.kn.hlwzzc.mi" />
+  <package name="com.aligames.sgzzlb.mi" forcePortraitActivity="com.aligames.sgzzlb.mi/com.ejoy.ejoysdk.scan.qrcode.core.android.CaptureActivity" supportCameraPreview="false" />
+  <package name="com.aligames.sgzzlb" forcePortraitActivity="com.aligames.sgzzlb.mi/com.ejoy.ejoysdk.scan.qrcode.core.android.CaptureActivity" supportCameraPreview="false" />
+  <package name="com.aligames.sgzzlb.aligames" forcePortraitActivity="com.aligames.sgzzlb.mi/com.ejoy.ejoysdk.scan.qrcode.core.android.CaptureActivity" supportCameraPreview="false" />
+  <package name="com.aligames.sgzzlb.oppo" forcePortraitActivity="com.aligames.sgzzlb.mi/com.ejoy.ejoysdk.scan.qrcode.core.android.CaptureActivity" supportCameraPreview="false" />
+  <package name="com.aligames.sgzzlb.vivo" forcePortraitActivity="com.aligames.sgzzlb.mi/com.ejoy.ejoysdk.scan.qrcode.core.android.CaptureActivity" supportCameraPreview="false" />
+  <package name="com.aligames.sgzzlb.huawei" forcePortraitActivity="com.aligames.sgzzlb.mi/com.ejoy.ejoysdk.scan.qrcode.core.android.CaptureActivity" supportCameraPreview="false" />
+  <package name="com.aligames.sgzzlb.bilibili" forcePortraitActivity="com.aligames.sgzzlb.mi/com.ejoy.ejoysdk.scan.qrcode.core.android.CaptureActivity" supportCameraPreview="false" />
+  <package name="com.shengmaai.app" isScale="true" />
+  <package name="com.funnyjoy.snysw.an" />
+  <package name="com.budgestudios.googleplay.BarbieDreamhouse" />
+  <package name="com.tocaboca.tocahairsalon4" skipCompatMode="true" />
+  <package name="com.pdragon.new2048.mi" skipCompatMode="true" />
+  <package name="com.ustwo.monumentvalleyzz" skipCompatMode="true" />
+  <package name="com.quark.browser" />
+  <package name="com.xnhd.apkzpjldz.mi" />
+  <package name="com.snda.lantern.wifilocating" />
+  <package name="com.yg.mini.games" disable="true" />
   <package name="io.github.huskydg.magisk" supportModes="full,fo" defaultSettings="full" />
   <package name="io.github.vvb2060.magisk" supportModes="full,fo" defaultSettings="full" />
   <package name="com.sevtinge.hyperceiler" supportModes="full,fo" defaultSettings="full" />
+  <!--pkMiConfig FullRule Start-->
+  <package name="com.tencent.map" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.baidu.BaiduMap" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.escape.zjy.mi" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.autonavi.minimap" supportModes="full,fo" defaultSettings="full" />
+  <package name="cn.wps.yun" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.listendown.Music" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.meishu.SmartCommunity" supportModes="full,fo" defaultSettings="full" />
+  <package name="cn.ninegame.gamemanager" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.huawei.genexcloud.speedtest" supportModes="full,fo" defaultSettings="full" />
+  <package name="cc.oogm" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.wn.app.np" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.bjchuhai" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.luna.music" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.shineisheji.app" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.uniontech.uos.assistant" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.chuyiapp.cy" supportModes="full,fo" defaultSettings="full" />
+  <package name="tc.everphoto" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.UCMobile" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.huawei.hms.ml.mediacreative" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.wei.account" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.guoshi.httpcanary.premium" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.mfashiongallery.emag" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.qihoo360.unifymobile" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.example.raylink_flutter" supportModes="full,fo" defaultSettings="full" />
+  <package name="cn.kaiheila" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.yeagle.orc" supportModes="full,fo" defaultSettings="full" />
+  <package name="yitu.tv.laobai.www" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.lucinhu.bili_you" supportModes="full,fo" defaultSettings="full" />
+  <package name="rocket.service.super" supportModes="full,fo" defaultSettings="full" />
+  <package name="net.lab.flying" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.nawang.bigbear" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.aiwu.citra" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.youdao.note" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.jyysxzkeyikeyikeyi" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.novel.du" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.gptbot" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.aiyu.kaipanla" supportModes="full,fo" defaultSettings="full" />
+  <package name="world.letsgo.booster.android.pro" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.btows.photo" supportModes="full,fo" defaultSettings="full" />
+  <package name="e.cofco.com" supportModes="full,fo" defaultSettings="full" />
+  <package name="me.tshine.easymarm" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.hihonor.appmarket" supportModes="full,fo" defaultSettings="full" />
+  <package name="one.hh.oneclient" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.jhyan.yan" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.sspai.sspaiandroid" supportModes="full,fo" defaultSettings="full" />
+  <package name="me.tangke.gamecores" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.mi.health" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.c114.c114__android" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.zhangyue.read.iReader" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.netease.ccliveaudio" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.xiaomi.router" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.jiandanxinli.smileback" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.netease.uurouter" supportModes="full,fo" defaultSettings="full" />
+  <package name="cn.nineton.dailycheck" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.nnsz.diy" supportModes="full,fo" defaultSettings="full" />
+  <package name="app.huawei.auto" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.music.moment" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.atom.live" supportModes="full,fo" defaultSettings="full" />
+  <package name="cellmate.qiui.com" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.mi.earphone" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.vivo.vivotws" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.huawei.audiogenesis" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.tencent.wetype" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.baidu.newapp" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.nintendo.znca" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.nintendo.znma" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.nintendo.zara" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.nintendo.zaka" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.nineton.todolist" supportModes="full,fo" defaultSettings="full" />
+  <package name="app.bookey" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.newsweekly.livepi" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.kingagroot.kingdraw" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.asus.aihome" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.mi.global.bbs" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.mi.global.pocobbs" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.mi.android.globalFileexplorer" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.hidea.cat" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.clover.idaily" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.xiaofeiji.app.disk" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.papegames.nn4.cn" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.tencent.podoteng" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.tencent.omapp" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.meizu.media.music" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.gewara" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.easygame2022.sheepmatchcn" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ophone.reader.ui" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.zhipuai.qingyan" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.likelylabs.hkradio" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.hk01.news_app" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.sun.quickpay" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.huawei.wear.guard" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.jinke.sonicboom" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.apkpure.aegon" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.xiaomi.hm.health" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ifengyu.intercom" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.kmvpn.net" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.wangc.bill" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.tencent.calendar.app" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.tencent.cofile" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.tencent.qidian" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.tencent.easyearn" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.tencent.phoenix" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.uanmi.miaojiaccount" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.luyun.simpleaccout" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.jaemobird.mutongji" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.julangling.xsgjz" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.cxincx.xxjz" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.aokj.moneykeeper" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.wihaohao.account" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.outfit7.mytalkingtomfriends.mi" supportModes="full,fo" defaultSettings="full" />
+  <package name="org.tinghood.TpsForMobile.mi" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.xcpsp.atmgdjh0.xc" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.zgylsg.mi" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.baitian.aqcs.aqcssy.mi" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.xm4399.hdczjh2.mi" supportModes="full,fo" defaultSettings="full" />
+  <package name="huaxianduijue.xmjc.mi" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.bilibili.snake.mi" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.qx.gamingroom" supportModes="full,fo" defaultSettings="full" />
+  <package name="idm.internet.download.manager.plus" supportModes="full,fo" defaultSettings="full" />
+  <package name="pan.qqcool.com" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.xiaoji.gamesirnsemulator" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.galaxylab.ss" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.pure.driverbrowser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.vmos.alhs" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.edu.wenliang" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.miui.touchassistant" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.facebook.katanq" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.danlan.xiaolan" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.mishangwo" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.mujirenben.liangchenbufu" supportModes="full,fo" defaultSettings="full" />
+  <package name="jp.ne.ibis.ibispaintx.app.hms" supportModes="full,fo" defaultSettings="full" />
+  <package name="jp.ne.ibis.ibispaint.app.hms" supportModes="full,fo" defaultSettings="full" />
+  <package name="cn.com.langeasy.EasyListen" supportModes="full,fo" defaultSettings="full" />
+  <package name="cn.com.bookan" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.wukong.search" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.baijiayun.jinbang" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.baidu.netdisk.samsung" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.wujie.connect" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.larus.nova" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.hengye.share" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.web.magicbox" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.nikon.snapbridge.cmru" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.pcr532.leon" supportModes="full,fo" defaultSettings="full" />
+  <package name="io.git.zjoker.gj_diary" supportModes="full,fo" defaultSettings="full" />
+  <package name="info.zzjdev.musicdownload" supportModes="full,fo" defaultSettings="full" />
+  <package name="top.easelink.lcg" supportModes="full,fo" defaultSettings="full" />
+  <package name="module.config.control" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.idaodan.clean.master" supportModes="full,fo" defaultSettings="full" />
+  <package name="ru.zdevs.zarchiver" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ccnu.jx.xiaoya" supportModes="full,fo" defaultSettings="full" />
+  <package name="net.imeihua.anzhuo" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.hxgongyu.smart" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.huixiangjia.smart" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.c2vl.peace" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.caniculab.musical" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.wscreativity.toxx" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.cokutau.pj3x.fc2" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.cokutau.pj3x.mi" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.cokutau.pj3x" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.cokutau.pj3x.huawei" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.cokutau.pj3x.vivo" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.cokutau.pj3x.oppo" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.cokutau.pj3x.honor" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.cokutau.pj3x.bilibili" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.cokutau.pj3x.aligames" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.zhiyin.qingdan.dashixiong" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.microsoft.copilot" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.futuremark.dmandroid.application" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.example.raccoon.dialogwidget" supportModes="full,fo" defaultSettings="full" />
+  <package name="me.liujia95.solitude" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.wujiteam.wuji" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ifreedomer.timenote" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.lcw.easydownload" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.android.yzd.habit" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.cjtec.uncompress" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.superelement.pomodoro" supportModes="full,fo" defaultSettings="full" />
+  <package name="xyz.hanks.note" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.alensw.PicFolder" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.imoblife.now" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.iflytek.docs" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.xuebinduan.tomatotimetracker" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.liweistarwalker.timeplan" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.mn.ai" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.pleasure.trace_wechat" supportModes="full,fo" defaultSettings="full" />
+  <package name="xxx.pornhub.fuck" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.hayo.client" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.trainnote.rn" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.linsen.itime" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.onemore.life" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.jujie.xbreader" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.moonshot.kimichat" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.liferecord.tanke.liferecord" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.phoenix.read" supportModes="full,fo" defaultSettings="full" />
+  <package name="cn.dlapp.xnm" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.android.superli.btremote" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.jm.qsy" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.huber.hubersoundx" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.chen.screenantitouch" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.example.robortx.clousx6F" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ponyemu.main" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.douzhuanduokai.m" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.tplink.tool" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.sf.check_phone" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.longine.actinograph" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ascendik.eyeshieldpro" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.miui.whitenoise" supportModes="full,fo" defaultSettings="full" />
+  <package name="snapedit.app.remove" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.nawensoft.nsptt" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.tuxin.outerhelper.outerhelper" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.abcd.reading" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.einnovation.temu" supportModes="full,fo" defaultSettings="full" />
+  <package name="videoeditor.videorecorder.screenrecorder" supportModes="full,fo" defaultSettings="full" />
+  <package name="ru.ozon.app.android" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.facebook.orca" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.shanxiang.wangxiao" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.caij.see" supportModes="full,fo" defaultSettings="full" />
+  <package name="xzr.hkf" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.huanqiu.news" supportModes="full,fo" defaultSettings="full" />
+  <package name="cn.com.langeasy.LangEasyLexis" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.hypergryph.skland" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.lenovo.smartpan" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.sohu.inputmethod.sogou.xiaomi" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.timeweekly.timefinance" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.cankaoxiaoxi.app1" supportModes="full,fo" defaultSettings="full" />
+  <package name="pmbattle.superyyl.com.pmbattleandroid" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.qeeyou.apps.android.onlinetreasure" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.zui.browser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.android.browser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.microsoft.emmx.canary" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.microsoft.emmx.beta" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.microsoft.emmx.dev" supportModes="full,fo" defaultSettings="full" />
+  <package name="org.mozilla.firefox" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.uzero.baimiao" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.sina.weibog3" supportModes="full,fo" defaultSettings="full" />
+  <package name="photo.editor.polarr" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.xiaomi.tinygame" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.cloudgame.plugin.mi" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.jishan.jmb" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.miui.securitycenter" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ids.templerun01" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.zhandoushaonv.android" supportModes="full,fo" defaultSettings="full" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.outfit7.talkingtomgoldrun.bd" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
+  <package name="com.outfit7.talkingtomgoldrun.bd" disable="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.outfit7.talkingtomgoldrun.huawei" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
+  <package name="com.outfit7.talkingtomgoldrun.huawei" disable="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.outfit7.talkingtomgoldrun.vivo" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
+  <package name="com.outfit7.talkingtomgoldrun.vivo" disable="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.outfit7.talkingtomgoldrun.oppo" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
+  <package name="com.outfit7.talkingtomgoldrun.oppo" disable="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.outfit7.talkingtomgoldrun.honor" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
+  <package name="com.outfit7.talkingtomgoldrun.honor" disable="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.outfit7.talkingtomgoldrun.bilibili" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
+  <package name="com.outfit7.talkingtomgoldrun.bilibili" disable="true" />
+  <%_ } _%>
+  <package name="com.youdao.translator" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.miui.compass" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.topjohnwu.magisk" supportModes="full,fo" defaultSettings="full" />
+  <package name="network.loki.messenger" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.netease.cloudmusic.lite" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.vk.im" supportModes="full,fo" defaultSettings="full" />
+  <package name="us.zoom.videomeetings" supportModes="full,fo" defaultSettings="full" />
+  <package name="cn.huohua.tobstudent" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.easybrain.jigsaw.puzzles" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.auto.airtouch" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.migu.miguplay" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.tencent.qqlivei18n.us" supportModes="full,fo" defaultSettings="full" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.kiloo.subwaysurf.gw" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
+  <package name="com.kiloo.subwaysurf.gw" disable="true" />
+  <%_ } _%>
+  <package name="com.tencent.hunyuan.app.chat" supportModes="full,fo" defaultSettings="full" />
+  <package name="org.kde.kdeconnect_tp" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ludashi.ainas" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.baidu.searchcraft" supportModes="full,fo" defaultSettings="full" />
+  <package name="org.telegram.group" supportModes="full,fo" defaultSettings="full" />
+  <package name="cn.jagat.main" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.qiyiapp.cloud" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.tencent.weread.eink" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.redwolfama.peonylespark" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.quanmai.findu" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.wemomo.matchmaker" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.tm.hawyiy" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.edrawsoft.edrawmax" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.answer.reader" supportModes="full,fo" defaultSettings="full" />
+  <package name="jp.pokemon.pokemonsleep" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.totwoo.totwoo" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.hihonor.health" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.hpplay.happycast" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ustwo.monumentvalleyzz.uc" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.outfit7.mytalkingtomfree.nearme.gamecenter" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.outfit7.talkingtom2free.nearme.gamecenter" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.outfit7.mytalkingtom2.nearme.gamecenter" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.outfit7.talkingtomgoldrun.nearme.gamecenter" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.outfit7.talkingtomjetski.nearme.gamecenter" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.outfit7.herodash.nearme.gamecenter" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.outfit7.mytalkingangelafree.nearme.gamecenter" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.outfit7.talkingtom.nearme.gamecenter" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.mi.healthresearch" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.dazn" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.litchi.live" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.dxdxapp.ting" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.block.jigsaw.puzzle.gallery" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.newnormalgames.phonecasediy" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.nhn.android.search" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.livescore" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.coccoc.trinhduyet" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.shanling.eddictplayer" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ss.android.yumme.video" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ss.android.ies.ugc.cam" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ss.android.ugc.livepro" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ss.android.jumanji" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.mianmian.liao" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.hmz.koudaiwriting" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.xt.retouchoversea" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.netease.uuremote" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ilanzou.app.disk" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.oray.sunlogin" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.netease.x19" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.netease.mc.huawei" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.netease.mc.vivo" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.netease.mc.oppo" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.netease.mc.honor" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.netease.mc.bilibili" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.netease.mc.nearme.gamecenter" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.netease.mc.aligames" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.netease.mc.lenovo" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.netease.mc.meta" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.netease.mc.baidu" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.netease.mc" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.netease.mctest" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.hortor.mwdl" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.icesimba.android.vampire" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.cahx.sy" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.lilithgame.igame.android.cn" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ballistiq.artstation" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.netease.cloudmusic" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.yuewen.authorapp" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.audiomack" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.audiomack.creators" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.huawei.allianceapp" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.meituan.like.android" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.maopaoya.mpyapp" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ihuman.recite" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.quark.scanking" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ctfile" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.foundingaz.user" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ahlh.sgzhd.huawei" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ahlh.sgzhd.mi" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ahlh.sgzhd" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ahlh.sgzhd.vivo" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ahlh.sgzhd.oppo" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ahlh.sgzhd.honor" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ahlh.sgzhd.bilibili" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ahlh.sgzhd.aligames" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.sec.android.app.sbrowser.beta" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.sec.android.app.sbrowser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.xunlei.browser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.kakapogame.lootrush0" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.csliyu.englishyinbiao" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.sohu.focus.live" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.gzyunke.lianlian" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.eggflower.read" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ume.browser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.mx.browser" supportModes="full,fo" defaultSettings="full" />
+  <package name="mixiaba.com.Browser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.first.browser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.sljh.uabrowser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.vivo.browser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.pocket.topbrowser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.puyi.browser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.qwh.grapebrowser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.allzeus.browser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.thousand.browser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.szcx.browser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.charlie.a07073.thunderbirdsbrowser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.zhijianzhuoyue.sharkbrowser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.duocai.webBrowser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.qihoo.expressbrowser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.egeio.fangcloud" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.qihoo.aiso" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.qihoo.aibrowser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.tc.browser" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.olimsoft.android.oplayer" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.szcx.explorer" supportModes="full,fo" defaultSettings="full" />
+  <package name="net.windcloud.explorer" supportModes="full,fo" defaultSettings="full" />
+  <package name="sogou.mobile.explorer.online" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.videoplayer.arcplayer" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.bbk.appstore" supportModes="full,fo" defaultSettings="full" />
+  <package name="cn.nubia.neostore" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.hisense.hiphone.appstore" supportModes="full,fo" defaultSettings="full" />
+  <package name="cz.gemsi.switchbuddy" supportModes="full,fo" defaultSettings="full" />
+  <package name="xyz.ymyapp.xbw.nearme.gamecenter" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.dywx.larkplayer" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.kmsoft.fvplayer" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.max.heyboxchat" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.iflytek.sparkdoc" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.shark.crazyword" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.sohu.mail.client.cordova" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.aimanthor.pianobus" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.yinda.kuwanband" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.meta.boom" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.robkoo.jamkoo" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.rymusic.art" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.lulian.ydcn" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.yiye.paikebao" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.angding.smartnote" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.bertadata.qxb" supportModes="full,fo" defaultSettings="full" />
+  <package name="net.wz.ssc" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.yiqicha.apk" supportModes="full,fo" defaultSettings="full" />
+  <package name="jp.ne.ibis.ibispaintx.app" supportModes="full,fo" defaultSettings="full" />
+  <package name="jp.ne.ibis.ibispaint.app" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.huawei.videoeditor" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.meitu.wink" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.meitu.poster" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.meitu.action" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.meitu.mtbaby" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.meitu.wheecam" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.meitu.mtzjz" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.meitu.chic" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.cmic.heduohao" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.cmri.ercs.yqx" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.cmic.worknumber" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.chinamobile.contacts.im" supportModes="full,fo" defaultSettings="full" />
+  <package name="studio.fountainhead.habicat" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.lingkou.leetcode" supportModes="full,fo" defaultSettings="full" />
+  <package name="cn.honor.qinxuan" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ltt.compass" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.huawei.ch18" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.xlh.retro" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.hihonor.heartstudy" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.mapp" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.iflyrec.iflywriter" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.iflyrec.tjcloudmeeting" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.iflyrec.film" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.audiotools.audioeditor" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.color365.catchat.huawei" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.color365.catchat" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.cis.cathospital.huawei" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.cis.cathospital" supportModes="full,fo" defaultSettings="full" />
+  <package name="cn.ieway.evplayer" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ieway.virtualscreen" supportModes="full,fo" defaultSettings="full" />
+  <package name="cn.ieway.screenshare" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ieway.evremote" supportModes="full,fo" defaultSettings="full" />
+  <package name="cn.ieway.idphoto" supportModes="full,fo" defaultSettings="full" />
+  <package name="cn.ieway.liveassistant" supportModes="full,fo" defaultSettings="full" />
+  <package name="cn.ieway.evsuperplayer" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.qcloud.cos.client" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.huawei.CloudLink" supportModes="full,fo" defaultSettings="full" />
+  <package name="lyi.linyi.posemon" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.cron.calendar" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.sogou.translatorpen" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.huawei.marketplace.cloudstore" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.lechuan.mdxs" supportModes="full,fo" defaultSettings="full" />
+  <package name="cc.lianzainovel" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.mfxsssq.search" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.jd.iots" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.vipmro.emro" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.boe.ohealth" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.qiyi.game.live" supportModes="full,fo" defaultSettings="full" />
+  <package name="cn.ticktick.task" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.orz12.PiliPalaX" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.huawei.smarthome" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.tencent.transfer" supportModes="full,fo" defaultSettings="full" />
+  <package name="cn.ixunke.woniu101" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.meitu.whee" supportModes="full,fo" defaultSettings="full" />
+  <!--pkMiConfig FullRule End-->
   <%_ } _%>
 </package_config>

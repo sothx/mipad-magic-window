@@ -114,6 +114,7 @@
     "gulp-jsontoxml": "^1.0.3",
     "gulp-rename": "^2.0.0",
     "gulp-xml": "^1.0.5",
+    "gulp-xml2js": "^0.1.1",
     "gulp-xml2json": "^0.1.5",
     "gulp-zip": "^5.1.0",
     "lodash": "^4.17.21",

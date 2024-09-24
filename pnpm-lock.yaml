@@ -51,6 +51,9 @@ importers:
       gulp-xml:
         specifier: ^1.0.5
         version: 1.0.5
+      gulp-xml2js:
+        specifier: ^0.1.1
+        version: 0.1.1
       gulp-xml2json:
         specifier: ^0.1.5
         version: 0.1.5
@@ -798,6 +801,11 @@ packages:
     engines: {node: '>= 0.9'}
     deprecated: gulp-util is deprecated - replace it, following the guidelines at https://medium.com/gulpjs/gulp-util-ca3b1f9f9ac5
 
+  gulp-xml2js@0.1.1:
+    resolution: {integrity: sha512-DrmuAXTLcIrRLmIIUYNzSbjYbTtcie88/XukJ7ZYExVUF83AnMMIOt26DQ4UE41BUxY6GtA8mUUN0D4Wq8fgsg==}
+    engines: {node: '>= 0.9.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+
   gulp-xml2json@0.1.5:
     resolution: {integrity: sha512-NQk+bFGyPz+VELAXBxoFnejkXF3OZYuTL1/VlPMw5WGcNscN3r8n1i7UOlgiNTMQTzGCt5LGLgYeV4cdOW64Og==}
 
@@ -1182,6 +1190,9 @@ packages:
   map-stream@0.0.7:
     resolution: {integrity: sha512-C0X0KQmGm3N2ftbTGBhSyuydQ+vV1LC3f3zPvT3RXHXNZrvfPZcoXp/N5DOa8vedX/rTMm2CjTtivFg2STJMRQ==}
 
+  map-stream@0.1.0:
+    resolution: {integrity: sha512-CkYQrPYZfWnu/DAmVCpTSX/xHpKZ80eKh2lAkyA6AJTef6bW+6JpbQZN5rofum7da+SyN1bi5ctTm+lTfcCW3g==}
+
   map-visit@1.0.0:
     resolution: {integrity: sha512-4y7uGv8bd2WdM9vpQsiQNo41Ln1NvhvDRuVt0k2JZQ+ezN2uaQes7lZeZ+QQUHOLQAtDaBJ+7wCbi+ab/KFs+w==}
     engines: {node: '>=0.10.0'}
@@ -1509,6 +1520,10 @@ packages:
   repeating@2.0.1:
     resolution: {integrity: sha512-ZqtSMuVybkISo2OWvqvm7iHSWngvdaW3IpsT9/uP8v4gMi591LY6h35wdOfvQdWCKFWZWm2Y1Opp4kV7vQKT6A==}
     engines: {node: '>=0.10.0'}
+
+  replace-ext@0.0.1:
+    resolution: {integrity: sha512-AFBWBy9EVRTa/LhEcG8QDP3FvpwZqmvN2QFDuJswFeaVhWnZMp8q3E6Zd90SR04PlIwfGdyVjNyLPyen/ek5CQ==}
+    engines: {node: '>= 0.4'}
 
   replace-ext@1.0.1:
     resolution: {integrity: sha512-yD5BHCe7quCgBph4rMQ+0KkIRKwWCrHDOX1p1Gp6HwjPM5kVoCdKGNhN7ydqqsX6lJEnQDKZ/tFMiEdQ1dvPEw==}
@@ -2892,6 +2907,12 @@ snapshots:
       through2: 0.5.1
       vinyl: 0.2.3
 
+  gulp-xml2js@0.1.1:
+    dependencies:
+      map-stream: 0.1.0
+      replace-ext: 0.0.1
+      xml2js: 0.4.23
+
   gulp-xml2json@0.1.5:
     dependencies:
       filesize: 2.0.4
@@ -3269,6 +3290,8 @@ snapshots:
 
   map-stream@0.0.7: {}
 
+  map-stream@0.1.0: {}
+
   map-visit@1.0.0:
     dependencies:
       object-visit: 1.0.1
@@ -3644,6 +3667,8 @@ snapshots:
   repeating@2.0.1:
     dependencies:
       is-finite: 1.1.0
+
+  replace-ext@0.0.1: {}
 
   replace-ext@1.0.1: {}
 
