@@ -1,3 +1,10 @@
 MODDIR=${0%/*}
+echo "*********************************************"
+echo "正在重新载入"自定义规则"的配置ww"
+echo "*********************************************"
 
-sh "$MODDIR"/common/source/update_rule/update_rule.sh
+sh "$MODDIR"/common/source/update_rule/update_rule.sh || true
+
+echo "*********************************************"
+echo "模块已重新载入"自定义规则"，更新成功了ww"
+echo "*********************************************"
