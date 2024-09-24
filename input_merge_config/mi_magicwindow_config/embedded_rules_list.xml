@@ -1447,7 +1447,7 @@
   <package name="com.dianzhong.hmxs" fullRule="*" minSupportVersion="1:20230510" />
   <package name="tv.hanju.lite" minSupportVersion="1:20230510" />
   <package name="com.gh.gamecenter" fullRule="*" minSupportVersion="1:20230510" />
-  <package name="com.miui.player" autoUiRule="com.miui.player.ui.MusicBrowserActivity:-1;com.miui.player.ui.MusicActivity:-1;com.miui.player.ui.PrivacyPolicyActivity:-1" version="9999" />
+  <package name="com.miui.player" autoUiRule="com.miui.player.ui.MusicBrowserActivity:-1;com.miui.player.ui.MusicActivity:-1;com.miui.player.ui.PrivacyPolicyActivity:-1" fullRule="*" />
   <package name="com.ruanmei.ithome" supportFullSize="true" fullRule="*" />
   <package name="com.qiudashi.qiudashitiyu" scaleMode="1" relaunch="false" />
   <package name="draw.dkqoir.qiao" splitPairRule="draw.dkqoir.qiao.activity.MainActivity:*" activityRule="draw.dkqoir.qiao.activity.SketchpadActivity,draw.dkqoir.qiao.activity.function.FunctionWebActivity,draw.dkqoir.qiao.activity.CalculatorActivity" />

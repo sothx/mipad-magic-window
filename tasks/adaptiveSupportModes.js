@@ -27,7 +27,7 @@ module.exports = function adaptiveSupportModes(cb) {
           const packageElement = elementsWithAttribute[i];
           // 设置supportModes属性
           if (!packageElement.getAttribute('supportModes')) {
-            packageElement.setAttribute('supportModes', 'full,fo,ratio_16_9,ratio_4_3,fullscreen');
+            packageElement.setAttribute('supportModes', 'full,fo');
           }
         }
 
