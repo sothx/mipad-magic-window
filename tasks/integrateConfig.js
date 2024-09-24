@@ -172,5 +172,16 @@ function copyActivityEmbeddingCustomConfigTemplateToCommon(cb) {
   .on('end', cb);
 }
 
+/**
+ * 混入 Hyper OS 2.0起的通用规则
+ * 
+ */
 
-module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig,copyMagicWindowCustomConfigTemplateToCommon),copyEmbeddedRuleListToCommon,copyFixedOrientationListToCommon,copyAutoUiListToCommon,copyActivityEmbeddingCustomConfigTemplateToCommon,copyActivityEmbeddingThemeOverlayToCommon), cleanTemp)
+function copyGenericRulesToCommon(cb) {
+  return src(`${tempDir}/generic_rules_list.xml`)
+    .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/source/`)))
+    .on('end', cb);
+}
+
+
+module.exports = series(parallel(copyREADME, series(copyMagicWindowApplicationList, copyMagicWindowSettingConfig,copyMagicWindowCustomConfigTemplateToCommon),copyEmbeddedRuleListToCommon,copyFixedOrientationListToCommon,copyAutoUiListToCommon,copyActivityEmbeddingCustomConfigTemplateToCommon,copyGenericRulesToCommon,copyActivityEmbeddingThemeOverlayToCommon), cleanTemp)

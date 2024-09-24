@@ -8,6 +8,7 @@ api_level_arch_detect
 CUSTOM_CONFIG_EMBEDDED_RULES_LIST="/data/adb/MIUI_MagicWindow+/config/embedded_rules_list.xml"
 CUSTOM_CONFIG_FIXED_ORIENTATION_LIST="/data/adb/MIUI_MagicWindow+/config/fixed_orientation_list.xml"
 CUSTOM_CONFIG_AUTOUI_LIST="/data/adb/MIUI_MagicWindow+/config/autoui_list.xml"
+CUSTOM_CONFIG_GENERIC_RULES_LIST="/data/adb/MIUI_MagicWindow+/config/generic_rules_list.xml"
 # Android 11
 CUSTOM_CONFIG_MAGIC_WINDOW_APPLICATION_LIST="/data/adb/MIUI_MagicWindow+/config/magicWindowFeature_magic_window_application_list.xml"
 CUSTOM_CONFIG_MAGIC_WINDOW_SETTING_CONFIG="/data/adb/MIUI_MagicWindow+/config/magic_window_setting_config.xml"
@@ -52,6 +53,7 @@ elif [[ "$API" -ge 31 ]]; then
   chattr -i /data/system/cloudFeature_embedded_rules_list.xml
   chattr -i /data/system/cloudFeature_fixed_orientation_list.xml
   chattr -i /data/system/cloudFeature_autoui_list.xml
+  chattr -i /data/system/cloudFeature_generic_rules_list.xml
   if [[ "$API" -ge 35 ]]; then
     chattr -i /data/system/cloudFeature_embedded_rules_list_projection.xml
     chattr -i /data/system/cloudFeature_fixed_orientation_list_projection.xml
@@ -83,6 +85,15 @@ elif [[ "$API" -ge 31 ]]; then
   else
     cp -f "$MODDIR"/common/source/autoui_list.xml "$MODDIR"/common/autoui_list.xml
   fi
+  # 支持通用规则自定义配置文件
+  if [[ -f "$CUSTOM_CONFIG_GENERIC_RULES_LIST" ]]; then
+    cp -f "$MODDIR"/common/source/generic_rules_list.xml "$MODDIR"/common/generic_rules_list.xml
+    sed -i '/<\/genericRules>/d' "$MODDIR"/common/generic_rules_list.xml
+    cat "$CUSTOM_CONFIG_GENERIC_RULES_LIST" >>"$MODDIR"/common/generic_rules_list.xml
+    printf "\n</genericRules>\n" >>"$MODDIR"/common/generic_rules_list.xml
+  else
+    cp -f "$MODDIR"/common/source/generic_rules_list.xml "$MODDIR"/common/generic_rules_list.xml
+  fi
   # 平行视界
   set_perm /data/system/cloudFeature_embedded_rules_list.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置平行视界文件权限
   cp -f "$MODDIR"/common/embedded_rules_list.xml /data/system/cloudFeature_embedded_rules_list.xml         # 替换平行视界配置列表
@@ -107,10 +118,15 @@ elif [[ "$API" -ge 31 ]]; then
   set_perm /data/system/cloudFeature_autoui_list.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置应用布局优化文件权限
   cp -f "$MODDIR"/common/autoui_list.xml /data/system/cloudFeature_autoui_list.xml                 # 替换应用布局优化配置列表
   set_perm /data/system/cloudFeature_autoui_list.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止应用布局优化配置文件被云控
+  # 通用配置
+  set_perm /data/system/cloudFeature_generic_rules_list.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置通用配置文件权限
+  cp -f "$MODDIR"/common/generic_rules_list.xml /data/system/cloudFeature_generic_rules_list.xml          # 替换通用配置列表
+  set_perm /data/system/cloudFeature_generic_rules_list.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止通用配置文件被云控
   # 对云控文件写保护
   chattr +i /data/system/cloudFeature_embedded_rules_list.xml
   chattr +i /data/system/cloudFeature_fixed_orientation_list.xml
   chattr +i /data/system/cloudFeature_autoui_list.xml
+  chattr +i /data/system/cloudFeature_generic_rules_list.xml
   # if [[ "$API" -ge 35 ]]; then
   #   chattr +i /data/system/cloudFeature_embedded_rules_list_projection.xml
   #   chattr +i /data/system/cloudFeature_fixed_orientation_list_projection.xml

@@ -26,17 +26,17 @@ elif [[ "$API" -ge 31 ]]; then
   chattr -i /data/system/cloudFeature_embedded_rules_list_projection.xml
   chattr -i /data/system/cloudFeature_fixed_orientation_list_projection.xml
   fi
-  rm -rf /data/system/cloudFeature_embedded_rules_list.xml    # 删除平行视界模块配置
+  rm -rf /data/system/cloudFeature_embedded_rules_list.xml    # 删除平行窗口模块配置
   rm -rf /data/system/cloudFeature_fixed_orientation_list.xml # 删除信箱模式模块配置
   rm -rf /data/system/cloudFeature_autoui_list.xml            # 删除应用布局优化模块配置
   if [[ "$API" -ge 35 ]]; then
-  rm -rf /data/system/cloudFeature_embedded_rules_list_projection.xml # 删除Android 15 +平行视界模块配置
+  rm -rf /data/system/cloudFeature_embedded_rules_list_projection.xml # 删除Android 15 +平行窗口模块配置
   rm -rf /data/system/cloudFeature_fixed_orientation_list_projection.xml # 删除Android 15 +信箱模式模块配置
   fi
-  rm -rf /data/system/users/0/embedded_setting_config.xml     # 重置平行视界默认配置文件
+  rm -rf /data/system/users/0/embedded_setting_config.xml     # 重置平行窗口默认配置文件
   rm -rf /data/system/users/0/autoui_setting_config.xml       # 重置应用布局优化默认配置文件
   if [[ "$API" -ge 35 ]]; then
-  rm -rf /data/system/users/0/projection_embedded_setting_config.xml     # 重置Android 15+平行视界默认配置文件
+  rm -rf /data/system/users/0/projection_embedded_setting_config.xml     # 重置Android 15+平行窗口默认配置文件
   fi
 fi
 
