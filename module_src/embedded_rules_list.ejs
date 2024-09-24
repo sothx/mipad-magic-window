@@ -1447,7 +1447,7 @@
   <package name="com.dianzhong.hmxs" fullRule="*" minSupportVersion="1:20230510" />
   <package name="tv.hanju.lite" minSupportVersion="1:20230510" isShowDivider="true" />
   <package name="com.gh.gamecenter" fullRule="*" minSupportVersion="1:20230510" />
-  <package name="com.miui.player" isShowDivider="true" autoUiRule="com.miui.player.ui.MusicBrowserActivity:-1;com.miui.player.ui.MusicActivity:-1;com.miui.player.ui.PrivacyPolicyActivity:-1" version="9999" />
+  <package name="com.miui.player" isShowDivider="true" autoUiRule="com.miui.player.ui.MusicBrowserActivity:-1;com.miui.player.ui.MusicActivity:-1;com.miui.player.ui.PrivacyPolicyActivity:-1" />
   <package name="com.ruanmei.ithome" supportFullSize="true" fullRule="*" />
   <package name="com.qiudashi.qiudashitiyu" scaleMode="1" relaunch="false" />
   <package name="draw.dkqoir.qiao" splitPairRule="draw.dkqoir.qiao.activity.MainActivity:*" activityRule="draw.dkqoir.qiao.activity.SketchpadActivity,draw.dkqoir.qiao.activity.function.FunctionWebActivity,draw.dkqoir.qiao.activity.CalculatorActivity" />
@@ -3500,8 +3500,12 @@
   <package name="com.zol.android" placeholder="com.zol.android.renew.ui.MainActivity:com.zol.android.searchnew.ui.ContentSearchActivity" splitLineColor="#FFFFFF" supportFullSize="true" supportCameraPreview="true" splitPairRule="com.zol.android.renew.ui.MainActivity:*,com.zol.android.searchnew.ui.SearchResultActivity:*,com.zol.android.checkprice.ui.ProductMainListActivityV2:*,com.zol.android.personal.personalmain.NewPersonalHomeActivity:*,com.zol.android.webviewdetail.CommunitySubjectDetailActivity:*" activityRule="com.zol.android.ui.pictour.PicturShowActi,com.zol.android.ui.LaunchActivity,com.zol.android.ui.FirstActivity" transitionRules="com.zol.android.renew.ui.MainActivity,com.zol.android.ui.LaunchActivity,com.zol.android.ui.FirstActivity" />
   <package name="com.zaaap.app" placeholder="com.zaaap.login.MainActivity:com.zaaap.home.search.ui.AllSearchActivity" splitLineColor="#FFFFFF:#000000" supportFullSize="true" supportCameraPreview="true" splitPairRule="com.zaaap.login.MainActivity:*,com.zaaap.home.search.ui.AllSearchActivity:*,com.zaaap.my.activity.UserHomeActivity:*,com.zaaap.shop.activity.TopicDetailsActivity:*,com.zaaap.shop.activity.ShopDetailActivity:*" activityRule="com.zaaap.preview.view.ImagePreviewActivity,com.zaaap.app.activity.SplashActivity" transitionRules="com.zaaap.login.MainActivity,com.zaaap.app.activity.SplashActivity" />
   <package name="com.ifanr.activitys" splitRatio="0.3" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" splitPairRule="com.ifanr.activitys.core.ui.index.IndexActivity:*,com.ifanr.activitys.core.ui.search.SearchActivity:*,com.ifanr.activitys.core.ui.tag.TagActivity:*,com.ifanr.activitys.core.ui.column.ColumnActivity:*" activityRule="com.ifanr.activitys.core.ui.index.IndexActivity,com.ifanr.activitys.core.ui.gallery.GalleryActivity,com.ifanr.activitys.core.ui.launch.LaunchActivity" transitionRules="com.ifanr.activitys.core.ui.index.IndexActivity,com.ifanr.activitys.core.ui.launch.LaunchActivity" />
-  <package name="com.kugou.android.lite" fullRule="nra:cr:rcr:nr" autoUiRule="*:-1" />
-  <package name="com.greenpoint.android.mc10086.activity" fullRule="nra:cr:rcr:nr" />
+  <%_ if (Number(mi_os_version) === 2) { _%>
+  <package name="com.kugou.android.lite" autoUiRule="*:2;" activityRule="com.kugou.android.app.splash.SplashActivity,com.kugou.android.app.MediaActivity" transitionRules="com.kugou.android.app.splash.SplashActivity,com.kugou.android.app.MediaActivity" />
+  <%_ } else  { _%>
+  <package name="com.kugou.android.lite" fullRule="nra:cr:rcr:nr" />
+  <%_ } _%>
+  <package name="com.greenpoint.android.mc10086.activity" fullRule="nra:cr:rcr:nr" skipSelfAdaptive="true" />
   <package name="cn.com.langeasy.LangEasyLexis" fullRule="*" />
   <package name="com.xueqiu.android" supportFullSize="true" scaleMode="1" supportFullSize="true" splitPairRule="com.xueqiu.android.mainnesting.view.MainNestingActivity:*,com.xueqiu.android.community.UserProfileActivity:*,com.xueqiu.android.stockmodule.stockdetail.RipplingStockDetailActivity:*,com.xueqiu.fund.quoation.detail.xueqiu.RNFundDetailPage:*,com.xueqiu.android.stock.privatedetail.PrivateDetailActivity:*,com.xueqiu.android.community.topic.TopicWordActivity:*,com.xueqiu.android.cube.main.CubeMainActivity:*" placeholder="com.xueqiu.android.mainnesting.view.MainNestingActivity:com.xueqiu.android.common.search.USearchActivity" />
   <package name="com.hypergryph.skland" fullRule="nra:cr:rcr:nr" />

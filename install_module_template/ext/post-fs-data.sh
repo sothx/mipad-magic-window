@@ -87,21 +87,21 @@ elif [[ "$API" -ge 31 ]]; then
   cp -f "$MODDIR"/common/embedded_rules_list.xml /data/system/cloudFeature_embedded_rules_list.xml         # 替换平行视界配置列表
   set_perm /data/system/cloudFeature_embedded_rules_list.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止平行视界配置文件被云控
   # Android 15
-  if [[ "$API" -ge 35 ]]; then
-    set_perm /data/system/cloudFeature_embedded_rules_list_projection.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置平行视界文件权限
-    cp -f "$MODDIR"/common/embedded_rules_list.xml /data/system/cloudFeature_embedded_rules_list_projection.xml         # 替换平行视界配置列表
-    set_perm /data/system/cloudFeature_embedded_rules_list_projection.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止平行视界配置文件被云控
-  fi
+  # if [[ "$API" -ge 35 ]]; then
+  #   set_perm /data/system/cloudFeature_embedded_rules_list_projection.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置平行视界文件权限
+  #   cp -f "$MODDIR"/common/embedded_rules_list.xml /data/system/cloudFeature_embedded_rules_list_projection.xml         # 替换平行视界配置列表
+  #   set_perm /data/system/cloudFeature_embedded_rules_list_projection.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止平行视界配置文件被云控
+  # fi
   # 信箱模式
   set_perm /data/system/cloudFeature_fixed_orientation_list.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置信箱模式文件权限
   cp -f "$MODDIR"/common/fixed_orientation_list.xml /data/system/cloudFeature_fixed_orientation_list.xml      # 替换信箱模式配置列表
   set_perm /data/system/cloudFeature_fixed_orientation_list.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止信箱模式配置文件被云控
   # Android 15
-  if [[ "$API" -ge 35 ]]; then
-    set_perm /data/system/cloudFeature_fixed_orientation_list_projection.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置信箱模式文件权限
-    cp -f "$MODDIR"/common/fixed_orientation_list.xml /data/system/cloudFeature_fixed_orientation_list_projection.xml      # 替换信箱模式配置列表
-    set_perm /data/system/cloudFeature_fixed_orientation_list_projection.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止信箱模式配置文件被云控
-  fi
+  # if [[ "$API" -ge 35 ]]; then
+  #   set_perm /data/system/cloudFeature_fixed_orientation_list_projection.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置信箱模式文件权限
+  #   cp -f "$MODDIR"/common/fixed_orientation_list.xml /data/system/cloudFeature_fixed_orientation_list_projection.xml      # 替换信箱模式配置列表
+  #   set_perm /data/system/cloudFeature_fixed_orientation_list_projection.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止信箱模式配置文件被云控
+  # fi
   # 应用布局优化
   set_perm /data/system/cloudFeature_autoui_list.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置应用布局优化文件权限
   cp -f "$MODDIR"/common/autoui_list.xml /data/system/cloudFeature_autoui_list.xml                 # 替换应用布局优化配置列表
@@ -110,10 +110,10 @@ elif [[ "$API" -ge 31 ]]; then
   chattr +i /data/system/cloudFeature_embedded_rules_list.xml
   chattr +i /data/system/cloudFeature_fixed_orientation_list.xml
   chattr +i /data/system/cloudFeature_autoui_list.xml
-  if [[ "$API" -ge 35 ]]; then
-    chattr +i /data/system/cloudFeature_embedded_rules_list_projection.xml
-    chattr +i /data/system/cloudFeature_fixed_orientation_list_projection.xml
-  fi
+  # if [[ "$API" -ge 35 ]]; then
+  #   chattr +i /data/system/cloudFeature_embedded_rules_list_projection.xml
+  #   chattr +i /data/system/cloudFeature_fixed_orientation_list_projection.xml
+  # fi
 
   cmd miui_embedding_window update-rule
   cmd miui_auto_ui reload-rule
