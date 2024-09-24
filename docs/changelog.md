@@ -18,7 +18,7 @@
 
 [全局]
 
-- 完善Android 15 Action逻辑的问题
+- 合并最新Beta版配置
 
 
 
