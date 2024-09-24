@@ -179,7 +179,11 @@
   <package name="com.qiyi.video.pad" disable="true" />
   <package name="com.smile.gifmaker" disable="true" />
   <package name="com.kuaishou.nebula" disable="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.tencent.mobileqq" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
   <package name="com.tencent.mobileqq" disable="true" />
+  <%_ } _%>
   <package name="com.minitech.miniaixue" disable="true" />
   <package name="com.wedobest.shudu" isScale="true" minSupportVersion="1:20230522" />
   <package name="com.baidu.baidutranslate" disable="true" />

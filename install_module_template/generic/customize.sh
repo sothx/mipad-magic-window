@@ -3,20 +3,12 @@
 
 SKIPUNZIP=0
 . "$MODPATH"/util_functions.sh
-if [ -f "$MODPATH"/verify_functions.sh ];then
-. "$MODPATH"/verify_functions.sh
-fi
+api_level_arch_detect
 magisk_path=/data/adb/modules/
 module_id=$(grep_prop id "$MODPATH/module.prop")
 module_versionCode=$(expr "$(grep_prop versionCode "$MODPATH/module.prop")" + 0)
 has_been_installed_module_versionCode=$(expr "$(grep_prop versionCode "$magisk_path$module_id/module.prop")" + 0)
 MODULE_CUSTOM_CONFIG_PATH="/data/adb/"$module_id
-
-api_level_arch_detect
-
-if type verify_android_api_has_pass &>/dev/null; then
-  verify_android_api_has_pass $API
-fi
 
 if [[ "$KSU" == "true" ]]; then
   ui_print "- KernelSU 用户空间当前的版本号: $KSU_VER_CODE"
@@ -83,13 +75,19 @@ fi
 # 生成重载规则脚本
 /bin/cp -rf "$MODPATH/common/source/update_rule/"* "$MODULE_CUSTOM_CONFIG_PATH/config/"
 # 生成定向重载规则脚本
-if [[ ! -f "$MODULE_CUSTOM_CONFIG_PATH/config/service_shell.sh" ]];then
-/bin/cp -rf "$MODPATH/common/source/service_shell/"* "$MODULE_CUSTOM_CONFIG_PATH/config/"
+if [[ ! -f "$MODULE_CUSTOM_CONFIG_PATH/config/service_shell.sh" ]]; then
+  /bin/cp -rf "$MODPATH/common/source/service_shell/"* "$MODULE_CUSTOM_CONFIG_PATH/config/"
 fi
 
-# 专版模块判断逻辑
-if type verify_special_rule_pass &>/dev/null; then
-  verify_special_rule_pass
+if [ -f "$MODPATH"/verify_functions.sh ]; then
+  . "$MODPATH"/verify_functions.sh
+  if type verify_android_api_has_pass &>/dev/null; then
+    verify_android_api_has_pass $API
+  fi
+  # 专版模块判断逻辑
+  if type verify_special_rule_pass &>/dev/null; then
+    verify_special_rule_pass
+  fi
 fi
 
 # 文件夹赋权
@@ -101,10 +99,10 @@ device_soc_model="$(getprop ro.vendor.qti.soc_model)"
 device_characteristics="$(getprop ro.build.characteristics)"
 
 # 导入MIUI Embedded Activity Window 服务
-if [[ -d "$MODPATH/common/source/miui_embedding_window_service/$API/" ]];then
+if [[ -d "$MODPATH/common/source/miui_embedding_window_service/$API/" ]]; then
   # 目录不存在则创建目录
   if [[ ! -d "$MODPATH/system/system_ext/framework" ]]; then
-  /bin/mkdir -p "$MODPATH/system/system_ext/framework"
+    /bin/mkdir -p "$MODPATH/system/system_ext/framework"
   fi
   # 复制文件并写入权限
   /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/$API/"* "$MODPATH/system/system_ext/framework/"
@@ -112,10 +110,10 @@ if [[ -d "$MODPATH/common/source/miui_embedding_window_service/$API/" ]];then
 fi
 
 ## 导入MIUI Auoto UI 服务
-if [[ -d "$MODPATH/common/source/miui_autoui_service/$API/" ]];then
+if [[ -d "$MODPATH/common/source/miui_autoui_service/$API/" ]]; then
   # 目录不存在则创建目录
   if [[ ! -d "$MODPATH/system/system_ext/framework" ]]; then
-  /bin/mkdir -p "$MODPATH/system/system_ext/framework"
+    /bin/mkdir -p "$MODPATH/system/system_ext/framework"
   fi
   # 复制文件并写入权限
   /bin/cp -rf "$MODPATH/common/source/miui_autoui_service/$API/"* "$MODPATH/system/system_ext/framework/"
