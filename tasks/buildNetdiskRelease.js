@@ -55,7 +55,7 @@ function releaseFold(cb) {
 
 function releasHyperOS1BasedOnUpsideDownCake(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-hyperos1-based-on-upsideDownCake-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/7.小米平板安卓14澎湃1.0专版(仅安卓14澎湃可刷，不支持红米平板)`))
+    .pipe(dest(`${releaseNetdiskDir}/6.小米平板安卓14澎湃1.0专版(仅安卓14澎湃可刷，不支持红米平板)`))
     .on('end', cb);
 }
 
@@ -80,13 +80,13 @@ function releasHyperOS1BasedOnUpsideDownCake(cb) {
 
 function releasePadByHyperOSBasedOnTiramisu(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-hyperos-based-on-tiramisu-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/11.小米平板5系列安卓13澎湃专版（仅安卓13澎湃可刷）`))
+    .pipe(dest(`${releaseNetdiskDir}/7.小米平板5系列安卓13澎湃专版（仅安卓13澎湃可刷）`))
     .on('end', cb);
 }
 
 function releasePadByMIUIBasedOnTiramisu(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-miui-based-on-tiramisu-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/12.小米平板6系列MIUI14专版（仅MIUI14可刷）`))
+    .pipe(dest(`${releaseNetdiskDir}/8.小米平板6系列MIUI14专版（仅MIUI14可刷）`))
     .on('end', cb);
 }
 
