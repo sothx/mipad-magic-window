@@ -1524,9 +1524,9 @@
   <package name="com.tencent.mobileqqi" disable="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-    <package name="com.xiaomi.shop" isShowDivider="true" supportFullSize="true" supportModes="full,fo" />
+  <package name="com.xiaomi.shop" isShowDivider="true" supportFullSize="true" supportModes="full,fo" />
   <%_ } else { _%>
-    <package name="com.xiaomi.shop" disable="true" isShowDivider="true" supportFullSize="true" />
+  <package name="com.xiaomi.shop" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <package name="com.tencent.mymedinfo" relaunch="false" isScale="true" supportFullSize="true" />
   <package name="com.umihome.m" relaunch="false" isScale="true" supportFullSize="true" />
@@ -2016,7 +2016,9 @@
   <package name="com.rockets.chang" skipSelfAdaptive="true" supportModes="full,fo" />
   <package name="com.yueme.itv" supportModes="full,fo" />
   <package name="com.netease.mc.mi" forcePortraitActivity="com.netease.mc.mi/com.netease.ntunisdk.zxing.client.android.CaptureActivity" isScale="true" supportCameraPreview="false" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
   <package name="com.lbe.security.miui" disable="true" />
+  <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
   <package name="com.outfit7.talkingtomgoldrun" supportModes="full,fo" defaultSettings="full" />
   <%_ } else { _%>
@@ -3815,9 +3817,6 @@
   <package name="com.yg.mini.games" disable="true" />
   <!--pkMiConfig FullRule Start-->
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.sevtinge.hyperceiler" supportModes="full,fo" defaultSettings="full" />
-  <package name="io.github.vvb2060.magisk" supportModes="full,fo" defaultSettings="full" />
-  <package name="io.github.huskydg.magisk" supportModes="full,fo" defaultSettings="full" />
   <package name="com.tencent.map" supportModes="full,fo" defaultSettings="full" />
   <package name="com.baidu.BaiduMap" supportModes="full,fo" defaultSettings="full" />
   <package name="com.escape.zjy.mi" supportModes="full,fo" defaultSettings="full" />
@@ -4308,5 +4307,9 @@
   <package name="com.kiloo.subwaysurf.gw" disable="true" />
   <%_ } _%>
   <!--pkMiConfig Disable End-->
+  <package name="com.sevtinge.hyperceiler" supportModes="full,fo" defaultSettings="full" />
+  <package name="io.github.vvb2060.magisk" supportModes="full,fo" defaultSettings="full" />
+  <package name="io.github.huskydg.magisk" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.sqsp.movie" supportModes="full,fo" defaultSettings="full" />
   <%_ } _%>
 </package_config>
