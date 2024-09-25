@@ -2,7 +2,7 @@ const minimist = require("minimist");
 
 // 配置命令行可以接受的参数以及默认值
 let knownOptions = {
-  string: ['use_platform','use_ratio','use_mode','use_compatibility','netdisk_desc','module_update_version','last_module_update_version','module_version_interface','mi_os_version'],
+  string: ['use_platform','use_ratio','use_mode','use_compatibility','netdisk_desc','module_update_version','last_module_update_version','module_version_interface'],
   boolean: ['use_ext'],
   number: ['mi_os_version'],
   default: {
