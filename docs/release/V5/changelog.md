@@ -16,16 +16,9 @@
 
 请自备救砖模块再进行测试版本模块的升级，否则可能导致卡米。
 
-[优化内容]
+[优化]
 
-- 修复网易云音乐丢失Pad适配的问题
-
-- 修复同程旅行丢失平行窗口的问题
-
-- 修复Android 15 下淘宝没有默认强制横屏的问题
-
-- 修复Android 15 下部分应用适配选项异常的问题
-
+- 统一部分应用在Android 14/15下的适配体验
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
