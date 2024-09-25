@@ -55,7 +55,7 @@ function releaseFold(cb) {
 
 function releasHyperOS1BasedOnUpsideDownCake(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-hyperos1-based-on-upsideDownCake-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/7.小米平板安卓14澎湃专版(仅安卓14澎湃可刷，不支持红米平板)`))
+    .pipe(dest(`${releaseNetdiskDir}/7.小米平板安卓14澎湃1.0专版(仅安卓14澎湃可刷，不支持红米平板)`))
     .on('end', cb);
 }
 
