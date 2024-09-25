@@ -47,35 +47,35 @@ function releaseFold(cb) {
     .on('end', cb);
 }
 
-function releasShengDeviceCode(cb) {
-  return src(`${releaseDir}/${moduleConfig.version}/pad-sheng-device-code-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/6.小米平板6S Pro澎湃专版(仅适配小米平板6S Pro)`))
+// function releasShengDeviceCode(cb) {
+//   return src(`${releaseDir}/${moduleConfig.version}/pad-sheng-device-code-${moduleConfig.version}.zip`)
+//     .pipe(dest(`${releaseNetdiskDir}/6.小米平板6S Pro澎湃专版(仅适配小米平板6S Pro)`))
+//     .on('end', cb);
+// }
+
+function releasHyperOS1BasedOnUpsideDownCake(cb) {
+  return src(`${releaseDir}/${moduleConfig.version}/pad-hyperos1-based-on-upsideDownCake-${moduleConfig.version}.zip`)
+    .pipe(dest(`${releaseNetdiskDir}/7.小米平板安卓14澎湃专版(仅安卓14澎湃可刷，不支持红米平板)`))
     .on('end', cb);
 }
 
-function releasLiuqinDeviceCode(cb) {
-  return src(`${releaseDir}/${moduleConfig.version}/pad-liuqin-device-code-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/7.小米平板6 Pro澎湃专版(仅适配小米平板6 Pro)`))
-    .on('end', cb);
-}
+// function releasPipaDeviceCode(cb) {
+//   return src(`${releaseDir}/${moduleConfig.version}/pad-pipa-device-code-${moduleConfig.version}.zip`)
+//     .pipe(dest(`${releaseNetdiskDir}/8.小米平板6澎湃专版(仅适配小米平板6)`))
+//     .on('end', cb);
+// }
 
-function releasPipaDeviceCode(cb) {
-  return src(`${releaseDir}/${moduleConfig.version}/pad-pipa-device-code-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/8.小米平板6澎湃专版(仅适配小米平板6)`))
-    .on('end', cb);
-}
+// function releaseYudiDeviceCode(cb) {
+//   return src(`${releaseDir}/${moduleConfig.version}/pad-yudi-device-code-${moduleConfig.version}.zip`)
+//     .pipe(dest(`${releaseNetdiskDir}/9.小米平板6 Max澎湃专版(仅适配小米平板6 Max)`))
+//     .on('end', cb);
+// }
 
-function releaseYudiDeviceCode(cb) {
-  return src(`${releaseDir}/${moduleConfig.version}/pad-yudi-device-code-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/9.小米平板6 Max澎湃专版(仅适配小米平板6 Max)`))
-    .on('end', cb);
-}
-
-function releasDaguDeviceCode(cb) {
-  return src(`${releaseDir}/${moduleConfig.version}/pad-dagu-device-code-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/10.小米平板5 Pro 12.4澎湃专版(仅适配小米平板5 Pro 12.4)`))
-    .on('end', cb);
-}
+// function releasDaguDeviceCode(cb) {
+//   return src(`${releaseDir}/${moduleConfig.version}/pad-dagu-device-code-${moduleConfig.version}.zip`)
+//     .pipe(dest(`${releaseNetdiskDir}/10.小米平板5 Pro 12.4澎湃专版(仅适配小米平板5 Pro 12.4)`))
+//     .on('end', cb);
+// }
 
 
 function releasePadByHyperOSBasedOnTiramisu(cb) {
@@ -99,4 +99,4 @@ function releasePadByMIUIBasedOnTiramisu(cb) {
 
 
 
-module.exports = parallel(releasePad,releasShengDeviceCode,releasPipaDeviceCode,releasLiuqinDeviceCode,releasDaguDeviceCode,releaseFold, releasePadByMagicWindow, releaseGeneralUpsideDownCake,releaseGeneralTiramisu,releaseYudiDeviceCode,releasePadByHyperOSBasedOnTiramisu,releasePadByMIUIBasedOnTiramisu)
+module.exports = parallel(releasePad,releasHyperOS1BasedOnUpsideDownCake,releaseFold, releasePadByMagicWindow, releaseGeneralUpsideDownCake,releaseGeneralTiramisu,releasePadByHyperOSBasedOnTiramisu,releasePadByMIUIBasedOnTiramisu)

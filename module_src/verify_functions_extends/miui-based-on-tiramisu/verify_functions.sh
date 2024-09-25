@@ -5,7 +5,7 @@ verify_android_api_has_pass() {
         ui_print "*********************************************"
         ui_print "- 模块当前仅支持Android13，请重新选择正确版本的模块QwQ！！！"
         ui_print "- 您可以选择强制安装Android版本不受支持的模块，但可能导致系统出现各种异常，是否继续？"
-        ui_print "  音量+ ：是，我要强制安装"
+        ui_print "  音量+ ：哼，我偏要装(强制安装)"
         ui_print "  音量- ：否"
         ui_print "*********************************************"
         key_check
@@ -92,7 +92,11 @@ verify_special_rule_pass() {
             fi
         fi
     else
-        /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/$sothx_miui_device_code/"* "$MODPATH/system/system_ext/framework/"
-        /bin/chmod -R 777 "$MODPATH/system/system_ext/framework/"
+        if [ -d "$MODPATH/common/source//miui_embedding_window_service/$sothx_miui_device_code/" ]; then
+            ui_print "*********************************************"
+            ui_print "正在为你修补"应用横屏布局"有关的系统文件"
+            ui_print "*********************************************"
+            /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/$sothx_miui_device_code/"* "$MODPATH/system/system_ext/framework/"
+        fi
     fi
 }

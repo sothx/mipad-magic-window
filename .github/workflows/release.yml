@@ -42,13 +42,9 @@ jobs:
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-magicWindow-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-general-tiramisu-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-general-upsideDownCake-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-sheng-device-code-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-yudi-device-code-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-hyperos-based-on-tiramisu-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-miui-based-on-tiramisu-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-pipa-device-code-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-liuqin-device-code-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-dagu-device-code-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv $GITHUB_WORKSPACE/release/$VERSION/pad-hyperos1-based-on-upsideDownCake-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/ext/pad-ext-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
 
     - name: 上传到Github Release

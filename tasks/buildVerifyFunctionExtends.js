@@ -8,7 +8,7 @@ const verifyFunctionsExtendsMap = {
     'general-tiramisu': 'module_src/verify_functions_extends/general-tiramisu/**',
     'general-upsideDownCake': 'module_src/verify_functions_extends/general-upsideDownCake/**',
     'hyperos-based-on-tiramisu': 'module_src/verify_functions_extends/hyperos-based-on-tiramisu/**',
-    'liuqin-device-code': 'module_src/verify_functions_extends/liuqin-device-code/**',
+    'hyperos1-based-on-upsideDownCake': 'module_src/verify_functions_extends/hyperos1-based-on-upsideDownCake/**',
     'dagu-device-code': 'module_src/verify_functions_extends/dagu-device-code/**',
     'yudi-device-code': 'module_src/verify_functions_extends/yudi-device-code/**',
     'sheng-device-code': 'module_src/verify_functions_extends/sheng-device-code/**',
@@ -24,7 +24,7 @@ const buildVerifyFunctionsExtendsType = function () {
     if (options.use_platform === 'pad' && options.use_compatibility === '' && !options.use_ext) {
         return 'general-vanillaIceCream'
     }
-    if (['general-tiramisu','general-upsideDownCake','hyperos-based-on-tiramisu','liuqin-device-code','yudi-device-code','sheng-device-code','pipa-device-code','miui-based-on-tiramisu','dagu-device-code'].includes(options.use_compatibility)) {
+    if (['general-tiramisu','general-upsideDownCake','hyperos-based-on-tiramisu','hyperos1-based-on-upsideDownCake','yudi-device-code','sheng-device-code','pipa-device-code','miui-based-on-tiramisu','dagu-device-code'].includes(options.use_compatibility)) {
         return options.use_compatibility
     }
     return false;

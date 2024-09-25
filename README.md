@@ -54,7 +54,7 @@
 
 ### 小米平板6 Pro(liuqin)澎湃专版(仅适配小米平板6 Pro，不适用于6/6 Max/6S Pro)
 
-块安装包名称：pad-liuqin-device-code-x.xx.xx.zip
+块安装包名称：pad-hyperos1-based-on-upsideDownCake-x.xx.xx.zip
 
 模块简介：
 
