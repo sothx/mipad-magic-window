@@ -10,7 +10,8 @@ const XMLSerializer = require('xmldom').XMLSerializer;
 const buildActionIsPad = function () {
   const use_platform = options.use_platform;
   const use_mode = options.use_mode;
-  return use_platform === 'pad' && use_mode === 'activityEmbedding';
+  const mi_os_version = options.mi_os_version;
+  return use_platform === 'pad' && use_mode === 'activityEmbedding' && mi_os_version >= 2;
 }
 
 /**
@@ -31,7 +32,7 @@ module.exports = function adaptiveSupportModes(cb) {
           }
         }
 
-        return new XMLSerializer().serializeToString(doc);
+        return new XMLSerializer().serializeToString(doc).replace(/\/>/g, ' />');
       }
     })))
     .pipe(dest('temp'))
