@@ -26,7 +26,7 @@ module.exports = function adaptiveSupportModes(cb) {
         for (let i = elementsWithAttribute.length - 1; i >= 0; i--) {
           const packageElement = elementsWithAttribute[i];
           // 设置supportModes属性
-          if (!packageElement.getAttribute('supportModes')) {
+          if (!packageElement.getAttribute('supportModes') && (!packageElement.getAttribute('disable') || packageElement.getAttribute('disable'))) {
             packageElement.setAttribute('supportModes', 'full,fo');
           }
         }
