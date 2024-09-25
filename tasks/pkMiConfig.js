@@ -124,6 +124,42 @@ function pkDisableConfig(cb) {
     });
 }
 
+function pkEmbeddedConfig(cb) {
+    const embeddedRulesFile = 'input_pk_config/embedded_rules_list.xml';
+    const fixedOrientationFile = 'input_pk_config/fixed_orientation_list.xml';
+    const outputFile = 'output_temp/json/pkEmbeddedConfig.xml';
+  
+    Promise.all([
+      fs.promises.readFile(embeddedRulesFile),
+      fs.promises.readFile(fixedOrientationFile)
+    ])
+      .then(([embeddedData, fixedData]) => {
+        const parser = new xml2js.Parser();
+  
+        return Promise.all([
+          parser.parseStringPromise(embeddedData),
+          parser.parseStringPromise(fixedData)
+        ]).then(([embeddedJson, fixedJson]) => {
+          const fixedNames = new Set(fixedJson.package_config.package.map(pkg => pkg.$.name));
+          const missingPackages = embeddedJson.package_config.package.filter(pkg => !fixedNames.has(pkg.$.name));
+  
+          // 手动构建输出的 XML 字符串
+          let xmlOutput = '<package_config>\n';
+          missingPackages.forEach(pkg => {
+            xmlOutput += `  <package name="${pkg.$.name}" supportModes="full,fo" />\n`;
+          });
+          xmlOutput += '</package_config>';
+  
+          return fs.promises.writeFile(outputFile, xmlOutput);
+        });
+      })
+      .then(() => cb())
+      .catch(err => {
+        console.error(err);
+        cb(err);
+      });
+}
+
 // 生成动态属性
 function generateAttributes(pkg, excludeKeys = []) {
     return Object.entries(pkg)
@@ -135,5 +171,6 @@ function generateAttributes(pkg, excludeKeys = []) {
 
 module.exports = {
     pkFullRuleConfig,
-    pkDisableConfig
+    pkDisableConfig,
+    pkEmbeddedConfig
   }

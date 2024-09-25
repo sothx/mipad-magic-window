@@ -17,7 +17,7 @@ const buildApplicationCount = require('./tasks/buildApplicationCount');
 const buildNetdiskRelease = require('./tasks/buildNetdiskRelease');
 const adaptiveCompatibilityToGeneralTiramisu = require('./tasks/adaptiveCompatibilityToGeneralTiramisu');
 const { getEmbeddedRulesListConfig,getFixedOrientationListConfig, mergeMiConfigJsonFiles } = require('./tasks/mergeMiConfig')
-const { pkFullRuleConfig, pkDisableConfig } = require('./tasks/pkMiConfig')
+const { pkFullRuleConfig, pkDisableConfig, pkEmbeddedConfig } = require('./tasks/pkMiConfig')
 const { options } = require('./config/process.env');
 const gulpIf = require('gulp-if');
 
@@ -69,3 +69,5 @@ exports.mergeMiConfigJsonFiles = mergeMiConfigJsonFiles
 exports.pkFullRuleConfig = pkFullRuleConfig
 
 exports.pkDisableConfig = pkDisableConfig
+
+exports.pkEmbeddedConfig = pkEmbeddedConfig
