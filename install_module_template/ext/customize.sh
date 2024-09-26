@@ -7,6 +7,10 @@ api_level_arch_detect
 magisk_path=/data/adb/modules/
 module_id=$(grep_prop id "$MODPATH/module.prop")
 module_versionCode=$(expr "$(grep_prop versionCode "$MODPATH/module.prop")" + 0)
+device_code="$(getprop ro.product.device)"
+device_soc_name="$(getprop ro.vendor.qti.soc_name)"
+device_soc_model="$(getprop ro.vendor.qti.soc_model)"
+device_characteristics="$(getprop ro.build.characteristics)"
 has_been_installed_module_versionCode=$(expr "$(grep_prop versionCode "$magisk_path$module_id/module.prop")" + 0)
 MODULE_CUSTOM_CONFIG_PATH="/data/adb/"$module_id
 
@@ -25,6 +29,9 @@ fi
 # 重置缓存
 # rm -rf /data/system/package_cache
 # rm -rf /data/resource-cache
+
+# 赋予文件夹权限
+/bin/chmod -R 777 "$MODPATH"
 
 # 基础函数
 add_props() {
@@ -92,11 +99,6 @@ fi
 
 # 文件夹赋权
 /bin/chmod -R 777 "$MODULE_CUSTOM_CONFIG_PATH/config/"
-
-device_code="$(getprop ro.product.device)"
-device_soc_name="$(getprop ro.vendor.qti.soc_name)"
-device_soc_model="$(getprop ro.vendor.qti.soc_model)"
-device_characteristics="$(getprop ro.build.characteristics)"
 
 # 导入MIUI Embedded Activity Window 服务
 if [[ -d "$MODPATH/common/source/miui_embedding_window_service/$API/" ]]; then
@@ -236,8 +238,22 @@ has_been_installed_module_theme_overlay_path="$magisk_path$module_id/system/prod
 #     fi
 #   fi
 # fi
+# 赋值平行窗口相关属性
+if [[ "$API" -ge 35 && "$device_characteristics" == 'tablet' ]]; then
+  ui_print "*********************************************"
+  ui_print "- 检测到你的设备搭载的是 Hyper OS For Pad 2.0 以上的版本"
+  ui_print "- 已为[应用显示布局]提供更多的选项配置"
+  add_props "ro.config.miui_embedded_compat_enable=true"
+  ui_print "*********************************************"
+fi
 
-has_been_enabled_game_mode=$(grep_prop ro.config.miui_appcompat_enable "$magisk_path$module_id/system.prop")
+has_been_miui_appcompat_enable="false"
+has_been_miui_compat_enable="false"
+# 如果存在配置文件则赋值
+if [ -f "$magisk_path$module_id"/system.prop ]; then
+  has_been_miui_appcompat_enable=$(grep_prop ro.config.miui_appcompat_enable "$magisk_path$module_id"/system.prop)
+  has_been_miui_compat_enable=$(grep_prop ro.config.miui_appcompat_enable "$magisk_path$module_id"/system.prop)
+fi
 is_need_show_game_mode_select=0
 # 游戏显示布局
 if [[ "$API" -ge 33 ]]; then
@@ -245,20 +261,24 @@ if [[ "$API" -ge 33 ]]; then
   if [[ ! -d "$magisk_path$module_id" ]]; then
     is_need_show_game_mode_select=1
   fi
-  # 判断老版本模块
-  if [[ $has_been_installed_module_versionCode -le 119041 ]]; then
-    is_need_show_game_mode_select=1
-  fi
-  # 判断已开启游戏显示布局
-  if [[ $has_been_enabled_game_mode == 'true' && $is_need_show_game_mode_select == "0" ]]; then
+  # 判断已配置游戏显示布局
+  if [ -f "$magisk_path$module_id/system.prop" ] &&
+    [ "$has_been_miui_appcompat_enable" = 'true' ] &&
+    [ "$has_been_miui_compat_enable" = 'true' ] &&
+    [ "$is_need_show_game_mode_select" = '0' ]; then
     ui_print "*********************************************"
     ui_print "- 已开启游戏显示布局(仅游戏加速内的游戏生效)，是否支持以实际机型底层适配为准"
     ui_print "- （Tips: 开启后王者荣耀、CF手游默认会以更宽的视野进行显示）"
     ui_print "- 详细使用方式请阅读模块文档~"
+    ui_print "- Android 15+需要额外安装修改版手机/平板管家才会生效~"
     ui_print "- [游戏显示布局使用文档]: https://hyper-magic-window.sothx.com/game-mode.html"
     add_props "# 开启游戏显示布局"
     add_props "ro.config.miui_compat_enable=true"
     add_props "ro.config.miui_appcompat_enable=true"
+    ui_print "*********************************************"
+  else
+    ui_print "*********************************************"
+    ui_print "- 条件未满足，跳过游戏显示布局设置。"
     ui_print "*********************************************"
   fi
   # 展示游戏显示布局选择器
@@ -266,6 +286,7 @@ if [[ "$API" -ge 33 ]]; then
     ui_print "*********************************************"
     ui_print "- 是否开启游戏显示布局(仅游戏加速内的游戏生效)"
     ui_print "- （Tips: 开启后王者荣耀、CF手游默认会以更宽的视野进行显示）"
+    ui_print "- Android 15+需要额外安装修改版手机/平板管家才会生效~"
     ui_print "- [游戏显示布局使用文档]: https://hyper-magic-window.sothx.com/game-mode.html"
     ui_print "  音量+ ：是"
     ui_print "  音量- ：否"
@@ -276,6 +297,7 @@ if [[ "$API" -ge 33 ]]; then
       ui_print "- 已开启游戏显示布局(仅游戏加速内的游戏生效)，是否支持以实际机型底层适配为准"
       ui_print "- （Tips: 开启后王者荣耀、CF手游默认会以更宽的视野进行显示）"
       ui_print "- 详细使用方式请阅读模块文档~"
+      ui_print "- Android 15+需要额外安装修改版手机/平板管家才会生效~"
       ui_print "- [游戏显示布局使用文档]: https://hyper-magic-window.sothx.com/game-mode.html"
       add_props "# 开启游戏显示布局"
       add_props "ro.config.miui_compat_enable=true"
