@@ -139,6 +139,7 @@ const fixedOrientationList = {
   'com.santi.sinology': true, // 国学启蒙古诗词典
   'com.xifeng.fun': true, // OmoFun
   'com.viva.note': true, // 囧次元
+  'com.llmm.huiyuanuxiang': true, // 囧次元
   'com.mxbc.mxsa': true, // 蜜雪冰城
   'com.ingka.ikea.app.cn.prod': true, // 宜家家居
   'com.vpapps.hdwallpaper.xyz': true, // 小柚子
