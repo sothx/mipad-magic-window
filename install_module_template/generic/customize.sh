@@ -239,13 +239,13 @@ has_been_installed_module_theme_overlay_path="$magisk_path$module_id/system/prod
 #   fi
 # fi
 # 赋值平行窗口相关属性
-if [[ "$API" -ge 35 && "$device_characteristics" == 'tablet' ]]; then
-  ui_print "*********************************************"
-  ui_print "- 检测到你的设备搭载的是 Hyper OS For Pad 2.0 以上的版本"
-  ui_print "- 已为[应用显示布局]提供更多的选项配置"
-  add_props "ro.config.miui_embedded_compat_enable=true"
-  ui_print "*********************************************"
-fi
+# if [[ "$API" -ge 35 && "$device_characteristics" == 'tablet' ]]; then
+#   ui_print "*********************************************"
+#   ui_print "- 检测到你的设备搭载的是 Hyper OS For Pad 2.0 以上的版本"
+#   ui_print "- 已为[应用显示布局]提供更多的选项配置"
+#   add_props "ro.config.miui_embedded_compat_enable=true"
+#   ui_print "*********************************************"
+# fi
 
 has_been_miui_appcompat_enable="false"
 has_been_miui_compat_enable="false"
