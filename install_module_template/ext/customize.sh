@@ -346,4 +346,42 @@ if [[ $is_need_create_custom_config_template == 1 ]]; then
   fi
 fi
 
+# KSU Web UI
+is_need_install_ksu_web_ui=1
+if [[ "$KSU" == "true" ]]; then
+  is_need_install_ksu_web_ui=0
+fi
+if [[ $(grep_prop is_need_install_ksu_web_ui "$MODULE_CUSTOM_CONFIG_PATH/config.prop") == "0" ]]; then
+  is_need_install_ksu_web_ui=0
+fi
+if [[ $is_need_install_ksu_web_ui == 1 ]]; then
+  ui_print "*********************************************"
+  ui_print "- 是否安装KsuWebUI？"
+  ui_print "- [重要提醒]: 安装并赋予Root权限可以可视化管理模块提供的部分功能"
+  ui_print "- [重要提醒]: 模块的Web UI正在开发中，未正式上线，请耐心等待后续动态~"
+  ui_print "  音量+ ：是"
+  ui_print "  音量- ：否"
+  ui_print "*********************************************"
+  key_check
+  if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+    update_system_prop is_need_install_ksu_web_ui 0 "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
+    ui_print "- 正在为你安装KSU Web UI，请稍等~"
+    unzip -jo "$ZIPFILE" 'common/apks/KsuWebUI.apk' -d /data/local/tmp/ &>/dev/null
+    pm install -r /data/local/tmp/KsuWebUI.apk &>/dev/null
+    rm -rf /data/local/tmp/KsuWebUI.apk
+    rm -rf "$MODPATH"/common/apks/KsuWebUI.apk
+    HAS_BEEN_INSTALLED_KsuWebUI_APK=$(pm list packages | grep io.github.a13e300.ksuwebui)
+    if [[ $HAS_BEEN_INSTALLED_KsuWebUI_APK == *"package:io.github.a13e300.ksuwebui"* ]]; then
+      ui_print "- 好诶，KSUWebUI安装完成！"
+    else
+      abort "- 坏诶，KSUWebUI安装失败，请尝试重新安装！"
+    fi
+  else
+    update_system_prop is_need_install_ksu_web_ui 0 "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
+    ui_print "*********************************************"
+    ui_print "- 你选择不安装KsuWebUI"
+    ui_print "*********************************************"
+  fi
+fi
+
 ui_print "- 好诶w，《HyperOS For Pad/Fold 完美横屏应用计划》安装/更新完成，重启系统后生效！"
