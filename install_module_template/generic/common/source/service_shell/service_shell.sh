@@ -9,7 +9,7 @@ set_reload_rule() {
     # 【强制横屏】
 
     # 配置QQ音乐的适配规则为强制横屏(需开启该应用在[设置-平行窗口]的开关)
-    # cmd miui_embedding_window update-rule com.tencent.qqmusic fullRule::nra:cr:rcr:nr
+    # /bin/cmd miui_embedding_window update-rule com.tencent.qqmusic fullRule::nra:cr:rcr:nr
 
     # 【类折叠屏信箱模式】
 
