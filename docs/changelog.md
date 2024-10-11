@@ -16,16 +16,16 @@
 
 请自备救砖模块再进行测试版本模块的升级，否则可能导致卡米。
 
-
 [应用横屏布局]
 
-- 启航教育(com.yizhilu.qh)已自适配平板，改为应用自适配横屏
+- 修复insta360(com.arashivision.insta360akiko)适配规则异常的问题
 
-- 新增Insta360(com.arashivision.insta360akiko)的全屏适配
 
-[Web UI]
+[应用布局优化]
 
-- 更新模块 Web UI 管理界面，未正式上线，功能暂不可用，请等待后续更新
+- 合并Xiaomi Mix Fold 4 最新配置，支持新版哔哩哔哩的应用布局优化，请更新系统版本和模块版本到最新(仅小米Mix Fold 4 生效)
+
+
 
 
 
