@@ -50,14 +50,23 @@ if [[ "$API" -eq 30 ]]; then
 
 elif [[ "$API" -ge 31 ]]; then
   # 对云控文件解除写保护
-  chattr -i /data/system/cloudFeature_embedded_rules_list.xml
-  chattr -i /data/system/cloudFeature_fixed_orientation_list.xml
-  chattr -i /data/system/cloudFeature_autoui_list.xml
-  chattr -i /data/system/cloudFeature_generic_rules_list.xml
-  if [[ "$API" -ge 35 ]]; then
-    chattr -i /data/system/cloudFeature_embedded_rules_list_projection.xml
-    chattr -i /data/system/cloudFeature_fixed_orientation_list_projection.xml
+  # 检查 /data/system/cloudFeature_embedded_rules_list.xml 是否存在
+  if [ -f /data/system/cloudFeature_embedded_rules_list.xml ]; then
+    chattr -i /data/system/cloudFeature_embedded_rules_list.xml
   fi
+  # 检查 /data/system/cloudFeature_fixed_orientation_list.xml 是否存在
+  if [ -f /data/system/cloudFeature_fixed_orientation_list.xml ]; then
+    chattr -i /data/system/cloudFeature_fixed_orientation_list.xml
+  fi
+  # 检查 /data/system/cloudFeature_autoui_list.xml 是否存在
+  if [ -f /data/system/cloudFeature_autoui_list.xml ]; then
+    chattr -i /data/system/cloudFeature_autoui_list.xml
+  fi
+  # chattr -i /data/system/cloudFeature_generic_rules_list.xml
+  # if [[ "$API" -ge 35 ]]; then
+  #   chattr -i /data/system/cloudFeature_embedded_rules_list_projection.xml
+  #   chattr -i /data/system/cloudFeature_fixed_orientation_list_projection.xml
+  # fi
   # 支持平行视界自定义配置文件
   if [[ -f "$CUSTOM_CONFIG_EMBEDDED_RULES_LIST" ]]; then
     cp -f "$MODDIR"/common/source/embedded_rules_list.xml "$MODDIR"/common/embedded_rules_list.xml
@@ -123,9 +132,18 @@ elif [[ "$API" -ge 31 ]]; then
   # cp -f "$MODDIR"/common/generic_rules_list.xml /data/system/cloudFeature_generic_rules_list.xml          # 替换通用配置列表
   # set_perm /data/system/cloudFeature_generic_rules_list.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止通用配置文件被云控
   # 对云控文件写保护
-  chattr +i /data/system/cloudFeature_embedded_rules_list.xml
-  chattr +i /data/system/cloudFeature_fixed_orientation_list.xml
-  chattr +i /data/system/cloudFeature_autoui_list.xml
+  # 检查 /data/system/cloudFeature_embedded_rules_list.xml 是否存在
+  if [ -f /data/system/cloudFeature_embedded_rules_list.xml ]; then
+    chattr +i /data/system/cloudFeature_embedded_rules_list.xml
+  fi
+  # 检查 /data/system/cloudFeature_fixed_orientation_list.xml 是否存在
+  if [ -f /data/system/cloudFeature_fixed_orientation_list.xml ]; then
+    chattr +i /data/system/cloudFeature_fixed_orientation_list.xml
+  fi
+  # 检查 /data/system/cloudFeature_autoui_list.xml 是否存在
+  if [ -f /data/system/cloudFeature_autoui_list.xml ]; then
+    chattr +i /data/system/cloudFeature_autoui_list.xml
+  fi
   # chattr +i /data/system/cloudFeature_generic_rules_list.xml
   # if [[ "$API" -ge 35 ]]; then
   #   chattr +i /data/system/cloudFeature_embedded_rules_list_projection.xml
