@@ -40,17 +40,7 @@
 
 - 修复针对某个应用反复修改同一个配置会失效的问题
 
-- 针对应用横屏开关配置不存在时，增加容错，不再强校验
-
 - 优化添加应用时的判断逻辑，新增对已有重复应用包名的判断
-
-- 优化对已有平行窗口应用切换到全屏规则的使用提醒
-
-- 优化部分代码判断逻辑，提升可读性
-
-- 新增应用横屏设置对折叠屏机型的屏蔽处理(暂不兼容折叠屏设备)
-
-- 应用横屏设置发布1.0版本，支持Android13 - Android 14 的 Xiaomi / Redmi Pad
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
