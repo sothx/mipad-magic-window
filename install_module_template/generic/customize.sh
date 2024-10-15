@@ -24,7 +24,7 @@ MODULE_CUSTOM_CONFIG_PATH="/data/adb/"$module_id
 # 基础函数
 add_props() {
   local line="$1"
-  printf "\n$line" >>"$MODPATH"/system.prop
+  printf "\n$line" >> "$MODPATH"/system.prop
 }
 
 key_check() {
