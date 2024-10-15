@@ -22,7 +22,13 @@
 
 [Web UI]
 
-- (新增)移除错误的Web UI 引导入口
+- (新增)优化组件loading状态的呈现体验
+
+- (新增)修复居中布局选择11:10不能正常生效的问题
+
+- (新增)修复居中布局无法选择默认布局的问题
+
+- 移除错误的Web UI 引导入口
 
 - 修复应用横屏配置开关会丢失的BUG
 
@@ -45,8 +51,6 @@
 - 新增应用横屏设置对折叠屏机型的屏蔽处理(暂不兼容折叠屏设备)
 
 - 应用横屏设置发布1.0版本，支持Android13 - Android 14 的 Xiaomi / Redmi Pad
-
-
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
