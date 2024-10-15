@@ -19,6 +19,8 @@
 
 [Web UI]
 
+- 新增应用横屏设置对折叠屏机型的屏蔽处理(暂不兼容折叠屏设备)
+
 - 应用横屏设置发布1.0版本，支持Android13 - Android 14 的 Xiaomi / Redmi Pad
 
 
