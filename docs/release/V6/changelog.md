@@ -16,11 +16,9 @@
 
 请自备救砖模块再进行测试版本模块的升级，否则可能导致卡米。
 
-[Web UI]
+[应用横屏布局]
 
-- 优化列表默认排序体验，配置了自定义规则的应用排在最前面
-
-- 优化居中布局部分的UI体验
+- 优化雨课堂的强制横屏适配体验
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
