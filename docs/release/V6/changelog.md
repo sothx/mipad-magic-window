@@ -18,17 +18,10 @@
 
 [Web UI]
 
-- 优化搜索应用包名时的体验，点击确定自动回缩搜索栏
+- 优化列表默认排序体验，配置了自定义规则的应用排在最前面
 
-- 优化全屏规则的展示体验
+- 优化居中布局部分的UI体验
 
-[应用横屏布局]
-
-- 优化SnapBridge(com.nikon.snapbridge.cmru)的全屏规则
-
-[其他]
-
-- 优化模块名称，增加对不同magisk管理器的兼容性
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
