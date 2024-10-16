@@ -20,6 +20,10 @@
 
 - 优化雨课堂的强制横屏适配体验
 
+[Web UI]
+
+- 修复部分情况下居中布局无法生效的问题
+
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
