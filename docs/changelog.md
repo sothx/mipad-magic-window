@@ -22,25 +22,9 @@
 
 [Web UI]
 
-- 新增开发路线图，展示一些功能需求和开发进度
+- (新增)修复新增应用编辑再开启跳过应用自适配声明会loading的问题
 
-- 优化组件loading状态的呈现体验
-
-- 修复居中布局选择11:10不能正常生效的问题
-
-- 修复居中布局无法选择默认布局的问题
-
-- 移除错误的Web UI 引导入口
-
-- 修复应用横屏配置开关会丢失的BUG
-
-- 修复自定义规则会覆盖模块自带规则的BUG
-
-- 修复XML会生成重复name的BUG
-
-- 修复清理自定义规则不会热重载的BUG
-
-- 修复针对某个应用反复修改同一个配置会失效的问题
+- (新增)修复开发路线图UI异常的问题
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
