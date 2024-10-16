@@ -16,15 +16,9 @@
 
 请自备救砖模块再进行测试版本模块的升级，否则可能导致卡米。
 
-[应用横屏布局]
+[其他]
 
-- 修复小米平板6使用OS1专版丢失左右滑动条的问题
-
-[Web UI]
-
-- (新增)修复新增应用编辑再开启跳过应用自适配声明会loading的问题
-
-- (新增)修复开发路线图UI异常的问题
+- 优化模块名称，增加对不同magisk管理器的兼容性
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
