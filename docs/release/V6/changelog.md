@@ -16,15 +16,9 @@
 
 请自备救砖模块再进行测试版本模块的升级，否则可能导致卡米。
 
-[应用横屏布局]
+[其他]
 
-- 优化雨课堂的强制横屏适配体验
-
-- 修复KsuWebUI(io.github.a13e300.ksuwebui)频繁重载的问题
-
-[Web UI]
-
-- 修复部分情况下居中布局无法生效的问题
+- 由于模块大量重构导致的不稳定性，根据现有酷友反馈，阻止老版本模块直接升级新版测试版模块
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
