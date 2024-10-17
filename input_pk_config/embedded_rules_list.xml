@@ -4247,7 +4247,7 @@
   <package name="com.tiandy.easylive" supportFullSize="true" isShowDivider="true" splitPairRule="com.homemodule.main.HMHomeActivity:*" />
   <package name="com.rx.rongxingnaozhong" supportFullSize="true" isShowDivider="true" splitPairRule="cn.wenzhuo.main.page.main.MainActivity:*" />
   <package name="com.sjm.luobo" supportFullSize="true" isShowDivider="true" splitPairRule="com.sjm.luobo.MainActivity:*" />
-  <package name="=com.gameley.kqw" supportFullSize="true" isShowDivider="true" splitPairRule="com.gameley.youzi.activity.MainActivity:*" />
+  <package name="com.gameley.kqw" supportFullSize="true" isShowDivider="true" splitPairRule="com.gameley.youzi.activity.MainActivity:*" />
   <package name="com.customscopecommunity.crosshairpro" supportFullSize="true" isShowDivider="true" splitPairRule="com.customscopecommunity.crosshairpro.MainActivity:*" />
   <package name=" com.tactile.cgbz" supportFullSize="true" isShowDivider="true" splitPairRule="com.zfxm.pipi.wallpaper.main.MainActivity:*" />
   <package name="me.ele.napos" supportFullSize="true" isShowDivider="true" splitPairRule="me.ele.napos.browser.NeedleWebActivity:*" />

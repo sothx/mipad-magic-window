@@ -40048,7 +40048,7 @@
     "installed": 1
   },
   {
-    "package_name": "=com.gameley.kqw",
+    "package_name": "com.gameley.kqw",
     "use_function": "magicwindow",
     "config": "",
     "data_sources": 1,

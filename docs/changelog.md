@@ -20,6 +20,12 @@
 
 - 新增船员易考通的应用布局优化
 
+[Web UI]
+
+- 新增应用时，应用包名允许出现下划线
+
+- 搜索应用时，增加对包名格式的校验
+
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
