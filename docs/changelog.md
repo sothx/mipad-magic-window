@@ -18,14 +18,11 @@
 
 [应用布局优化]
 
-- 新增船员易考通的应用布局优化
+- 修复企业微信丢失左右滑动条的问题
 
 [Web UI]
 
-- 新增应用时，应用包名允许出现下划线
-
-- 搜索应用时，增加对包名格式的校验
-
+- 优化搜索应用时的搜索体验
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
