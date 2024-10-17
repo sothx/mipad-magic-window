@@ -19,7 +19,7 @@ MODULE_CUSTOM_CONFIG_PATH="/data/adb/"$module_id
 # rm -rf /data/resource-cache
 
 # 赋予文件夹权限
-/bin/chmod -R 777 "$MODPATH"
+# /bin/chmod -R 777 "$MODPATH"
 
 # 基础函数
 add_props() {
