@@ -20,6 +20,10 @@
 
 - 禁用棕色尘埃2的系统反向适配，仅竖屏使用
 
+[Web UI]
+
+ - 优化部分界面的引导体验
+
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
 问题合集:[https://hyper-magic-window.sothx.com/FAQ.html](https://hyper-magic-window.sothx.com/FAQ.html)
