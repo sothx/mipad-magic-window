@@ -18,7 +18,7 @@
 
 [Web UI]
 
-- 新增游戏显示布局
+- 新增传送门快捷入口，(/system/product/priv-app/MIUIContentExtension/MIUIContentExtension.apk)存在时则显示快捷入口
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
