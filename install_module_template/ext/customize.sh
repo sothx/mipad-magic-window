@@ -76,7 +76,7 @@ fi
 # 不允许1.25.x之前的老版本模块覆盖更新
 if [[ -d "$magisk_path$module_id" && $has_been_installed_module_versionCode -le 125135 ]]; then
   ui_print "*********************************************"
-  ui_print "- 新测试版模块重构了大量的代码逻辑，老版本无法直接在线升级"
+  ui_print "- 新版模块重构了大量的代码逻辑，老版本无法直接在线升级"
   ui_print "- 请直接卸载模块并且重启后再尝试安装QwQ~"
   ui_print "- (可以直接卸载，无需任何额外的卸载专用模块)"
   ui_print "- 模块下载地址:"
