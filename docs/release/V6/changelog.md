@@ -18,7 +18,7 @@
 
 [Web UI]
 
-- 新增日志记录
+- 新增游戏显示布局
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
