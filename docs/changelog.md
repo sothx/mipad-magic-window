@@ -16,9 +16,9 @@
 
 请自备救砖模块再进行测试版本模块的升级，否则可能导致卡米。
 
-[Web UI]
+[应用横屏布局]
 
-- 新增传送门快捷入口，(/system/product/priv-app/MIUIContentExtension/MIUIContentExtension.apk)存在时则显示快捷入口
+- 禁用棕色尘埃2的系统反向适配，仅竖屏使用
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
