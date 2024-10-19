@@ -18,9 +18,9 @@
 
 [Web UI]
 
-- 新增应用布局优化可视化管理界面
+- 应用布局优化自定义规则增加安全内容区和平滑滚动，避免内容被输入法遮挡
 
-- 优化Magisk下的Action键为触发安装KsuWebUI或者直接打开Web UI
+- 优化应用布局优化是否生效的说明规则
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
