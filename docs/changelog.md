@@ -18,11 +18,9 @@
 
 [Web UI]
 
-- 修复即使没开启游戏显示布局也弹出弹窗的问题
+- 新增应用布局优化可视化管理界面
 
-- 针对Android 11 隐藏游戏显示布局的侧边栏
-
-- 新增游戏显示布局相关的模块设置，可以直接开启/关闭该功能
+- 优化Magisk下的Action键为触发安装KsuWebUI或者直接打开Web UI
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
