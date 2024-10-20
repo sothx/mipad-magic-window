@@ -16,9 +16,11 @@
 
 请自备救砖模块再进行测试版本模块的升级，否则可能导致卡米。
 
-[模块主体]
+[Web UI]
 
-- 修复模块获取ROOT管理器环境参数异常的问题
+- 修复应用布局优化抽屉卡loading的问题
+
+- 修复获取的应用类型识别错误的问题
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
