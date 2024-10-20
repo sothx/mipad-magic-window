@@ -122,6 +122,10 @@ fi
 if [[ ! -d "$MODULE_CUSTOM_CONFIG_PATH/config/" ]]; then
   /bin/mkdir -p "$MODULE_CUSTOM_CONFIG_PATH/config/"
 fi
+# 初始化定制模式配置目录
+if [[ ! -d "$MODULE_CUSTOM_CONFIG_PATH/patch_rule/" ]]; then
+  /bin/mkdir -p "$MODULE_CUSTOM_CONFIG_PATH/patch_rule/"
+fi
 # 生成重载规则脚本
 /bin/cp -rf "$MODPATH/common/source/update_rule/"* "$MODULE_CUSTOM_CONFIG_PATH/config/"
 # 生成定向重载规则脚本

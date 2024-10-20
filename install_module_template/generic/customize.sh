@@ -19,7 +19,7 @@ MODULE_CUSTOM_CONFIG_PATH="/data/adb/"$module_id
 # rm -rf /data/resource-cache
 
 # 赋予文件夹权限
-# /bin/chmod -R 777 "$MODPATH"
+/bin/chmod -R 777 "$MODPATH"
 
 set_perm_recursive "$MODPATH"/common/utils 0 0 0755 0777 u:object_r:system_file:s0
 
@@ -122,6 +122,10 @@ fi
 if [[ ! -d "$MODULE_CUSTOM_CONFIG_PATH/config/" ]]; then
   /bin/mkdir -p "$MODULE_CUSTOM_CONFIG_PATH/config/"
 fi
+# 初始化定制模式配置目录
+if [[ ! -d "$MODULE_CUSTOM_CONFIG_PATH/patch_rule/" ]]; then
+  /bin/mkdir -p "$MODULE_CUSTOM_CONFIG_PATH/patch_rule/"
+fi
 # 生成重载规则脚本
 /bin/cp -rf "$MODPATH/common/source/update_rule/"* "$MODULE_CUSTOM_CONFIG_PATH/config/"
 # 生成定向重载规则脚本
@@ -140,18 +144,21 @@ if [ -f "$MODPATH"/verify_functions.sh ]; then
   fi
 fi
 
-
-
 if [[ ! -d "$MODPATH/common/temp" ]]; then
   /bin/mkdir -p "$MODPATH/common/temp"
 fi
-
 # 获取ROOT管理器信息并写入
 
 echo "$KSU,$KSU_VER,$KSU_VER_CODE,$KSU_KERNEL_VER_CODE,$APATCH,$APATCH_VER_CODE,$APATCH_VER,$MAGISK_VER,$MAGISK_VER_CODE" > "$MODPATH/common/temp/root_manager_info.txt"
 
 # 文件夹赋权
 /bin/chmod -R 777 "$MODULE_CUSTOM_CONFIG_PATH/config/"
+
+# 补丁模式初始化
+is_patch_mode=$(grep_prop is_patch_mode "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+if [ -z "$is_patch_mode" ]; then
+  update_system_prop is_patch_mode false "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
+fi
 
 # 导入MIUI Embedded Activity Window 服务
 if [[ -d "$MODPATH/common/source/miui_embedding_window_service/$API/" ]]; then
