@@ -150,6 +150,12 @@ echo "$KSU,$KSU_VER,$KSU_VER_CODE,$KSU_KERNEL_VER_CODE,$APATCH,$APATCH_VER_CODE,
 # 文件夹赋权
 /bin/chmod -R 777 "$MODULE_CUSTOM_CONFIG_PATH/config/"
 
+# 补丁模式初始化
+is_patch_mode=$(grep_prop is_patch_mode "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+if [ -z "$is_patch_mode" ]; then
+  update_system_prop is_patch_mode false "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
+fi
+
 # 导入MIUI Embedded Activity Window 服务
 if [[ -d "$MODPATH/common/source/miui_embedding_window_service/$API/" ]]; then
   # 目录不存在则创建目录

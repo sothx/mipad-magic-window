@@ -18,9 +18,7 @@
 
 [Web UI]
 
-- 修复应用布局优化抽屉卡loading的问题
-
-- 修复获取的应用类型识别错误的问题
+- 修复应用布局优化自定义规则无法正常输入的问题
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
