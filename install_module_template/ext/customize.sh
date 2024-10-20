@@ -52,6 +52,21 @@ key_check() {
 if [[ "$KSU" == "true" ]]; then
   ui_print "- KernelSU 用户空间当前的版本号: $KSU_VER_CODE"
   ui_print "- KernelSU 内核空间当前的版本号: $KSU_KERNEL_VER_CODE"
+  if [ "$KSU_VER_CODE" -lt 11551 ]; then
+    ui_print "*********************************************"
+    ui_print "- 请更新 KernelSU 到 v0.8.0+ ！"
+    abort "*********************************************"
+  fi
+elif [[ "$APATCH" == "true" ]]; then
+  ui_print "- APatch 当前的版本号: $APATCH_VER_CODE"
+  ui_print "- APatch 当前的版本名: $APATCH_VER"
+  ui_print "- KernelPatch 用户空间当前的版本号: $KERNELPATCH_VERSION"
+  ui_print "- KernelPatch 内核空间当前的版本号: $KERNEL_VERSION"
+  if [ "$APATCH_VER_CODE" -lt 10568 ]; then
+    ui_print "*********************************************"
+    ui_print "- 请更新 APatch 到 10568+ ！"
+    abort "*********************************************"
+  fi
 else
   ui_print "- Magisk 版本: $MAGISK_VER_CODE"
   if [ "$MAGISK_VER_CODE" -lt 26000 ]; then
@@ -86,8 +101,6 @@ if [[ -d "$magisk_path$module_id" && $has_been_installed_module_versionCode -le 
   ui_print "- 同时欢迎体验全新的模块Web UI(已适配Android 13-14)"
   abort "*********************************************"
 fi
-
-
 
 # 不允许1.13.x之前的老版本模块覆盖更新
 if [[ -d "$magisk_path$module_id" && $has_been_installed_module_versionCode -le 11300 ]]; then
@@ -378,7 +391,7 @@ fi
 
 # KSU Web UI
 is_need_install_ksu_web_ui=1
-if [[ "$KSU" == "true" ]]; then
+if [[ "$KSU" == "true" || "$APATCH" == "true" ]]; then
   is_need_install_ksu_web_ui=0
 fi
 if [[ $(grep_prop is_need_install_ksu_web_ui "$MODULE_CUSTOM_CONFIG_PATH/config.prop") == "0" ]]; then

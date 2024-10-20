@@ -5,6 +5,10 @@ MODULE_CUSTOM_CONFIG_PATH="/data/adb/MIUI_MagicWindow+"
 . "$MODDIR"/util_functions.sh
 api_level_arch_detect
 
+# 获取ROOT管理器信息并写入
+
+echo "$KSU,$KSU_VER,$KSU_VER_CODE,$KSU_KERNEL_VER_CODE,$APATCH,$APATCH_VER_CODE,$APATCH_VER,$MAGISK_VER,$MAGISK_VER_CODE" > "$MODDIR/common/temp/root_manager_info.txt"
+
 # 自定义配置文件
 # Android 12 +
 CUSTOM_CONFIG_EMBEDDED_RULES_LIST="/data/adb/MIUI_MagicWindow+/config/embedded_rules_list.xml"

@@ -10,6 +10,13 @@ wait_login() {
   while [ ! -d "/sdcard/Android" ]; do
     sleep 1
   done
+
+  if [ -e "$MODPATH/service.sh.lock" ]; then
+    echo "service.sh script is already running!"
+    exit 1
+  fi
+  touch "$MODPATH/service.sh.lock"
+  trap 'rm -rf "$MODPATH/service.sh.lock"' EXIT
 }
 
 wait_login
