@@ -18,25 +18,7 @@
 
 [模块主体]
 
-- 模块安装过程增加对APatch版本信息的打印
-
-- APatch引导过程不再推荐安装Web UI
-
-- 阻止APatch低于10568版本安装模块，因低于该版本不支持Web UI
-
-- 阻止KernelSU低于v0.8.0版本安装模块，因低于该版本不支持Web UI
-
-- 新增service.sh.lcok 锁逻辑，避免service.sh被重复执行 @柚稚的孩纸
-
-- 新增开机后aapt2读取应用已安装应用信息的service.sh逻辑 @柚稚的孩纸
-
-
-[Web UI]
-
-- "平行窗口滑动条比例"更名为"平行窗口默认分屏比例",降低理解成本
-
-- 模块设置增加对 Root 管理器信息的输出
-
+- 修复模块获取ROOT管理器环境参数异常的问题
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)

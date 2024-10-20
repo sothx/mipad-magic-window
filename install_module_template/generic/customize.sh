@@ -26,7 +26,7 @@ set_perm_recursive "$MODPATH"/common/utils 0 0 0755 0777 u:object_r:system_file:
 # 基础函数
 add_props() {
   local line="$1"
-  printf "\n$line" >> "$MODPATH"/system.prop
+  printf "\n$line" >>"$MODPATH"/system.prop
 }
 
 key_check() {
@@ -102,7 +102,6 @@ if [[ -d "$magisk_path$module_id" && $has_been_installed_module_versionCode -le 
   abort "*********************************************"
 fi
 
-
 # 不允许1.13.x之前的老版本模块覆盖更新
 if [[ -d "$magisk_path$module_id" && $has_been_installed_module_versionCode -le 11300 ]]; then
   ui_print "*********************************************"
@@ -140,6 +139,16 @@ if [ -f "$MODPATH"/verify_functions.sh ]; then
     verify_special_rule_pass
   fi
 fi
+
+
+
+if [[ ! -d "$MODPATH/common/temp" ]]; then
+  /bin/mkdir -p "$MODPATH/common/temp"
+fi
+
+# 获取ROOT管理器信息并写入
+
+echo "$KSU,$KSU_VER,$KSU_VER_CODE,$KSU_KERNEL_VER_CODE,$APATCH,$APATCH_VER_CODE,$APATCH_VER,$MAGISK_VER,$MAGISK_VER_CODE" > "$MODPATH/common/temp/root_manager_info.txt"
 
 # 文件夹赋权
 /bin/chmod -R 777 "$MODULE_CUSTOM_CONFIG_PATH/config/"
