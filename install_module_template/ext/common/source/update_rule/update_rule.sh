@@ -153,15 +153,5 @@ elif [[ "$API" -ge 31 ]]; then
   /bin/cmd miui_embedding_window update-rule
   /bin/cmd miui_auto_ui reload-rule
 
-  if [ -f "$MODULE_CUSTOM_CONFIG_PATH"/config/service_shell.sh ]; then
-
-    . "$MODULE_CUSTOM_CONFIG_PATH"/config/service_shell.sh
-
-    if type set_reload_rule &>/dev/null; then
-      set_reload_rule
-    fi
-
-  fi
-
   echo '模块已重新载入规则，更新成功了ww'
 fi
