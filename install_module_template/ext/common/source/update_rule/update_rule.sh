@@ -3,6 +3,14 @@ MODULE_CUSTOM_CONFIG_PATH="/data/adb/MIUI_MagicWindow+"
 MODDIR="/data/adb/modules/MIUI_MagicWindow+"
 . "$MODDIR"/util_functions.sh
 api_level_arch_detect
+
+is_patch_mode=$(grep_prop is_patch_mode "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+
+# 补丁模式配置文件
+# Android 12 +
+PATCH_MODE_CONFIG_EMBEDDED_RULES_LIST="/data/adb/MIUI_MagicWindow+/patch_rule/embedded_rules_list.xml"
+PATCH_MODE_CONFIG_FIXED_ORIENTATION_LIST="/data/adb/MIUI_MagicWindow+/patch_rule/fixed_orientation_list.xml"
+
 # 自定义配置文件
 # Android 12 +
 CUSTOM_CONFIG_EMBEDDED_RULES_LIST="/data/adb/MIUI_MagicWindow+/config/embedded_rules_list.xml"
@@ -67,9 +75,14 @@ elif [[ "$API" -ge 31 ]]; then
   #   chattr -i /data/system/cloudFeature_embedded_rules_list_projection.xml
   #   chattr -i /data/system/cloudFeature_fixed_orientation_list_projection.xml
   # fi
-  # 支持平行视界自定义配置文件
-  if [[ -f "$CUSTOM_CONFIG_EMBEDDED_RULES_LIST" ]]; then
+  # 支持平行窗口自定义配置文件
+  if [[ -f "$CUSTOM_CONFIG_EMBEDDED_RULES_LIST" ]] && ([ -z "$is_patch_mode" ] || [ "$is_patch_mode" = "false" ]); then
     cp -f "$MODDIR"/common/source/embedded_rules_list.xml "$MODDIR"/common/embedded_rules_list.xml
+    sed -i '/<\/package_config>/d' "$MODDIR"/common/embedded_rules_list.xml
+    cat "$CUSTOM_CONFIG_EMBEDDED_RULES_LIST" >>"$MODDIR"/common/embedded_rules_list.xml
+    printf "\n</package_config>\n" >>"$MODDIR"/common/embedded_rules_list.xml
+  elif [[ -f "$PATCH_MODE_CONFIG_EMBEDDED_RULES_LIST" ]] && [ "$is_patch_mode" = "true" ]; then
+    cp -f "$PATCH_MODE_CONFIG_EMBEDDED_RULES_LIST" "$MODDIR"/common/embedded_rules_list.xml
     sed -i '/<\/package_config>/d' "$MODDIR"/common/embedded_rules_list.xml
     cat "$CUSTOM_CONFIG_EMBEDDED_RULES_LIST" >>"$MODDIR"/common/embedded_rules_list.xml
     printf "\n</package_config>\n" >>"$MODDIR"/common/embedded_rules_list.xml
@@ -77,8 +90,13 @@ elif [[ "$API" -ge 31 ]]; then
     cp -f "$MODDIR"/common/source/embedded_rules_list.xml "$MODDIR"/common/embedded_rules_list.xml
   fi
   # 支持信箱模式自定义配置文件
-  if [[ -f "$CUSTOM_CONFIG_FIXED_ORIENTATION_LIST" ]]; then
+  if [[ -f "$CUSTOM_CONFIG_FIXED_ORIENTATION_LIST" ]] && ([ -z "$is_patch_mode" ] || [ "$is_patch_mode" = "false" ]); then
     cp -f "$MODDIR"/common/source/fixed_orientation_list.xml "$MODDIR"/common/fixed_orientation_list.xml
+    sed -i '/<\/package_config>/d' "$MODDIR"/common/fixed_orientation_list.xml
+    cat "$CUSTOM_CONFIG_FIXED_ORIENTATION_LIST" >>"$MODDIR"/common/fixed_orientation_list.xml
+    printf "\n</package_config>\n" >>"$MODDIR"/common/fixed_orientation_list.xml
+  elif [[ -f "$PATCH_MODE_CONFIG_FIXED_ORIENTATION_LIST" ]] && [ "$is_patch_mode" = "true" ]; then
+    cp -f "$PATCH_MODE_CONFIG_FIXED_ORIENTATION_LIST" "$MODDIR"/common/fixed_orientation_list.xml
     sed -i '/<\/package_config>/d' "$MODDIR"/common/fixed_orientation_list.xml
     cat "$CUSTOM_CONFIG_FIXED_ORIENTATION_LIST" >>"$MODDIR"/common/fixed_orientation_list.xml
     printf "\n</package_config>\n" >>"$MODDIR"/common/fixed_orientation_list.xml
