@@ -16,11 +16,9 @@
 
 请自备救砖模块再进行测试版本模块的升级，否则可能导致卡米。
 
-[模块主体]
+[Web UI]
 
-- 修复Android 15 启用定制模式后获取数据异常的问题
-
-- 应用横屏配置在定制模式下新增[生成定制应用数据]功能按键，每次操作后会以您设备的整体应用情况修剪模块应用适配列表，每次更新模块或者安装新的应用后均需要操作。
+- 新增分享口令相关功能，支持应用横屏配置和应用布局优化。
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
