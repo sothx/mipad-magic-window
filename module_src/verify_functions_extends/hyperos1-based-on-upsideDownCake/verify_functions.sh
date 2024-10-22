@@ -23,7 +23,7 @@ verify_android_api_has_pass() {
 }
 
 verify_special_rule_pass() {
-    local sothx_miui_device_code=$(getprop ro.config.sothx_miui_device_code)
+    local sothx_miui_device_code=$(grep_prop ro.config.sothx_miui_device_code "$magisk_path$module_id/system.prop")
     # 目录不存在则创建目录
     if [[ ! -d "$MODPATH/system/system_ext/framework" ]]; then
         /bin/mkdir -p "$MODPATH/system/system_ext/framework"
@@ -38,7 +38,6 @@ verify_special_rule_pass() {
         key_check
         if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
             ui_print "- 正在为你写入小米平板6S Pro(sheng)的模块配置文件"
-            add_props "\n# 模块机型:小米平板6S Pro(sheng)\n"
             add_props "ro.config.sothx_miui_device_code=sheng"
             /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/sheng/$API/"* "$MODPATH/system/system_ext/framework/"
             /bin/chmod -R 777 "$MODPATH/system/system_ext/framework/"
@@ -52,7 +51,6 @@ verify_special_rule_pass() {
             key_check
             if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
                 ui_print "- 正在为你写入小米平板6 Max(yudi)的模块配置文件"
-                add_props "\n# 模块机型:小米平板6 Max(yudi)\n"
                 add_props "ro.config.sothx_miui_device_code=yudi"
                 /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/yudi/$API/"* "$MODPATH/system/system_ext/framework/"
                 /bin/chmod -R 777 "$MODPATH/system/system_ext/framework/"
@@ -66,7 +64,6 @@ verify_special_rule_pass() {
                 key_check
                 if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
                     ui_print "- 正在为你写入小米平板6 Pro(liuqin)的模块配置文件"
-                    add_props "\n# 模块机型:小米平板6 Pro(liuqin)\n"
                     add_props "ro.config.sothx_miui_device_code=liuqin"
                     /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/liuqin/$API/"* "$MODPATH/system/system_ext/framework/"
                     /bin/chmod -R 777 "$MODPATH/system/system_ext/framework/"
@@ -80,7 +77,6 @@ verify_special_rule_pass() {
                     key_check
                     if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
                         ui_print "- 正在为你写入小米平板6(pipa)的模块配置文件"
-                        add_props "\n# 模块机型:小米平板6(pipa)\n"
                         add_props "ro.config.sothx_miui_device_code=pipa"
                         /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/pipa/$API/"* "$MODPATH/system/system_ext/framework/"
                         /bin/cp -rf "$MODPATH/common/source/miui_autoui_service/pipa/$API/"* "$MODPATH/system/system_ext/framework/"
@@ -95,7 +91,6 @@ verify_special_rule_pass() {
                         key_check
                         if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
                             ui_print "- 正在为你写入小米平板5 Pro 12.4(dagu)的模块配置文件"
-                            add_props "\n# 模块机型:小米平板5 Pro 12.4(dagu)\n"
                             add_props "ro.config.sothx_miui_device_code=dagu"
                             /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/dagu/$API/"* "$MODPATH/system/system_ext/framework/"
                             /bin/chmod -R 777 "$MODPATH/system/system_ext/framework/"
@@ -121,6 +116,7 @@ verify_special_rule_pass() {
             ui_print "*********************************************"
             /bin/cp -rf "$MODPATH/common/source/miui_autoui_service/$sothx_miui_device_code/$API/"* "$MODPATH/system/system_ext/framework/"
         fi
+        add_props "ro.config.sothx_miui_device_code=$sothx_miui_device_code"
         /bin/chmod -R 777 "$MODPATH/system/system_ext/framework/"
     fi
 }
