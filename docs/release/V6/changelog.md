@@ -18,15 +18,7 @@
 
 [Web UI]
 
-- [应用横屏配置]应用名称增加热门应用名称显示，支持搜索包名或者热门应用名称
-
-- [应用布局优化]应用名称增加热门应用名称显示，支持搜索包名或者热门应用名称
-
-- [模块设置]新增旋转建议提示按钮的开关
-
-- [模块设置]新增显示当前设备名称
-
-- [模块设置]新增显示当前系统版本和上次的系统版本(如无则不显示)
+- 
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
