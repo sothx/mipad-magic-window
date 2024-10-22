@@ -16,9 +16,11 @@
 
 请自备救砖模块再进行测试版本模块的升级，否则可能导致卡米。
 
-[模块主体]
+[Web UI]
 
-- 修复Hyper OS 1.0专版和安卓13澎湃专版多次安装重复弹出机型选择的问题
+- Web UI字体修改为MiSans
+
+- 修复 Web UI 卡 Loading加载的问题
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
