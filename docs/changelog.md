@@ -18,9 +18,11 @@
 
 [Web UI]
 
-- 修复获取定制应用列表卡loading1的问题
+- [模块设置]新增旋转建议提示按钮的开关
 
-- 修复错误的分享口令使用引导描述
+- [模块设置]新增显示当前设备名称
+
+- [模块设置]新增显示当前系统版本和上次的系统版本(如无则不显示)
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
