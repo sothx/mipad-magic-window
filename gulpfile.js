@@ -12,6 +12,7 @@ const adaptiveSkipSelfAdaptive = require('./tasks/adaptiveSkipSelfAdaptive');
 const adaptivePlatformToFold = require('./tasks/adaptivePlatformToFold');
 const buildExtConfig = require('./tasks/buildExtConfig');
 const buildCompatibilityExtends = require('./tasks/buildCompatibilityExtends')
+const buildWebUI = require('./tasks/buildWebUI')
 const buildVerifyFunctionExtends = require('./tasks/buildVerifyFunctionExtends')
 const { mergeActivityEmbeddingConfig, mergeMagicWindowConfig, mergeOrientationConfig } = require('./tasks/mergeMagicWindowConfig');
 const buildApplicationCount = require('./tasks/buildApplicationCount');
@@ -27,6 +28,7 @@ const buildTasks = series(
   cleanDist,
   cleanTemp,
   buildTemplate,
+  buildWebUI,
   buildCompatibilityExtends,
   buildVerifyFunctionExtends,
   buildEjsTemplate,
