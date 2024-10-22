@@ -28,7 +28,7 @@ verify_special_rule_pass() {
     if [[ ! -d "$MODPATH/system/system_ext/framework" ]]; then
         /bin/mkdir -p "$MODPATH/system/system_ext/framework"
     fi
-    if [ -z "$sothx_miui_device_code" ]; then
+    if [[ -z "$sothx_miui_device_code" ]]; then
         ui_print "*********************************************"
         ui_print "- 请选择符合你当前系统的机型代号(移植包请以移植包的机型为准)"
         ui_print "- 是否为小米平板6S Pro(sheng)？"

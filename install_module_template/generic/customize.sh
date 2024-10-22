@@ -128,10 +128,6 @@ if [[ ! -d "$MODULE_CUSTOM_CONFIG_PATH/patch_rule/" ]]; then
 fi
 # 生成重载规则脚本
 /bin/cp -rf "$MODPATH/common/source/update_rule/"* "$MODULE_CUSTOM_CONFIG_PATH/config/"
-# 生成定向重载规则脚本
-if [[ ! -f "$MODULE_CUSTOM_CONFIG_PATH/config/service_shell.sh" ]]; then
-  /bin/cp -rf "$MODPATH/common/source/service_shell/"* "$MODULE_CUSTOM_CONFIG_PATH/config/"
-fi
 
 if [ -f "$MODPATH"/verify_functions.sh ]; then
   . "$MODPATH"/verify_functions.sh

@@ -18,7 +18,11 @@
 
 [主体]
 
-- 修复MIUI14专版小米平板6会卡米的问题
+- 移除错误的安装脚本命令
+
+[Web UI]
+
+- 修复定制模式数据跟实际对不上的问题
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
