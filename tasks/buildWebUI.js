@@ -6,7 +6,7 @@ const gulpCopy = require('gulp-copy')
 
 const moduleSrc = 'module_src'
 
-const path = `${moduleSrc}/wwwroot/`
+const path = `${moduleSrc}/webroot/`
 
 
 module.exports = async function buildWebUI(cb) {
@@ -15,7 +15,7 @@ module.exports = async function buildWebUI(cb) {
         const pathNotEmpty = fs.readdirSync(path)
         if (pathNotEmpty) {
             return src(`${path}/**`, { dot: true }) // 指定路径
-            .pipe(dest('dist/wwwroot/'))
+            .pipe(dest('dist/wwebroot/'))
             .on('end', cb);
         }
     } catch (err) {
