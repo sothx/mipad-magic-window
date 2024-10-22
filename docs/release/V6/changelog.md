@@ -18,7 +18,9 @@
 
 [Web UI]
 
-- 新增分享口令相关功能，支持应用横屏配置和应用布局优化。
+- 修复获取定制应用列表卡loading1的问题
+
+- 修复错误的分享口令使用引导描述
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
