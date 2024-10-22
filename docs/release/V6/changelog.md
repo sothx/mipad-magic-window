@@ -16,11 +16,9 @@
 
 请自备救砖模块再进行测试版本模块的升级，否则可能导致卡米。
 
-[Web UI]
+[主体]
 
-- Web UI字体修改为MiSans
-
-- 修复 Web UI 卡 Loading加载的问题
+- 修复MIUI14专版小米平板6会卡米的问题
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
