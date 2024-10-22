@@ -22,7 +22,7 @@ verify_android_api_has_pass() {
 }
 
 verify_special_rule_pass() {
-    local sothx_miui_device_code=$(grep_prop ro.config.sothx_miui_device_code "$magisk_path$module_id/system.prop")
+    local sothx_miui_device_code=$(getprop ro.config.sothx_miui_device_code "$magisk_path$module_id/system.prop")
     # 目录不存在则创建目录
     if [[ ! -d "$MODPATH/system/system_ext/framework" ]]; then
         /bin/mkdir -p "$MODPATH/system/system_ext/framework"
