@@ -24,6 +24,8 @@
 
 - 修复APatch Action 触发 Web UI安装引导的问题
 
+- 修复机型专版多次提醒选机型的BUG
+
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
 问题合集:[https://hyper-magic-window.sothx.com/FAQ.html](https://hyper-magic-window.sothx.com/FAQ.html)
