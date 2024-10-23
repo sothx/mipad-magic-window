@@ -18,11 +18,11 @@
 
 [主体]
 
-- 移除错误的安装脚本命令
+- 修复konabess崩溃的问题
 
-[Web UI]
+- 修复拼多多的适配异常
 
-- 修复定制模式数据跟实际对不上的问题
+- 修复APatch Action 触发 Web UI安装引导的问题
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 

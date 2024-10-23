@@ -2005,7 +2005,7 @@
   <package name="com.excean.masaid" fullRule="*" />
   <package name="com.lhzqnahj.agedm" fullRule="*" />
   <package name="com.quark.browser" fullRule="nra:nr" />
-  <package name="com.xunmeng.pinduoduo" supportFullSize="true" activityRule="com.xunmeng.pinduoduo.login.LoginActivity,com.xunmeng.pinduoduo.activity.NewPageFoldActivity,com.xunmeng.pinduoduo.ui.activity.HomeActivity" clearTop="false" relaunch="false" defaultSettings="true" adaptCutout="1" isShowDivider="true" splitRatio="0.3" autoUiRule="com.xunmeng.pinduoduo.ui.activity.HomeActivity:-1" splitPairRule="com.xunmeng.pinduoduo.activity.NewPageFoldActivity:*,com.xunmeng.pinduoduo.ui.activity.HomeActivity:*" transitionRules="com.xunmeng.pinduoduo.activity.NewPageMaskActivity,com.xunmeng.pinduoduo.login.PhoneLoginActivity,com.xunmeng.pinduoduo.ui.activity.MainFrameActivity,com.xunmeng.pinduoduo.permission.request.PermissionRequestActivityV2,com.xunmeng.pinduoduo.ui.activity.HomeActivity,com.xunmeng.pinduoduo.login.LoginActivity" />
+  <package name="com.xunmeng.pinduoduo" supportFullSize="true" activityRule="com.xunmeng.pinduoduo.login.LoginActivity,com.xunmeng.pinduoduo.activity.NewPageFoldActivity,com.xunmeng.pinduoduo.ui.activity.HomeActivity,com.xunmeng.pinduoduo.ui.activity.MainFrameActivity" clearTop="false" relaunch="false" defaultSettings="true" adaptCutout="1" isShowDivider="true" splitRatio="0.3" autoUiRule="com.xunmeng.pinduoduo.ui.activity.HomeActivity:-1" splitPairRule="com.xunmeng.pinduoduo.activity.NewPageFoldActivity:*,com.xunmeng.pinduoduo.ui.activity.HomeActivity:*,com.xunmeng.pinduoduo.ui.activity.MainFrameActivity:*" transitionRules="com.xunmeng.pinduoduo.activity.NewPageMaskActivity,com.xunmeng.pinduoduo.login.PhoneLoginActivity,com.xunmeng.pinduoduo.ui.activity.MainFrameActivity,com.xunmeng.pinduoduo.permission.request.PermissionRequestActivityV2,com.xunmeng.pinduoduo.ui.activity.HomeActivity,com.xunmeng.pinduoduo.login.LoginActivity" />
   <package name="com.dalongtech.cloud" isShowDivider="true" supportFullSize="true" splitPairRule="com.dalongtech.cloud.app.home.newhomepage.HomePageActivityNew:*" />
   <package name="com.earth.bdspace" isShowDivider="true" supportFullSize="true" forcePortraitActivity="com.earth.bdspace/.ui.activity.ScanActivity" transitionRules="com.earth.bdspace.ui.activity.compass.CompassListActivity" supportCameraPreview="false" />
   <package name="com.seewo.en" fullRule="*" />
@@ -3225,11 +3225,6 @@
   <package name="com.flash.download" placeholder="com.example.dwd.myapplication.activity.MainActivity:com.example.dwd.myapplication.activity.PlayHistoryListActivity" activityRule="com.ghost.videoview.VideoPlayActivity" isShowDivider="true" supportFullSize="true" splitRatio="0.42" />
   <%_ } else { _%>
   <package name="com.flash.download" placeholder="com.example.dwd.myapplication.activity.MainActivity:com.example.dwd.myapplication.activity.PlayHistoryListActivity" activityRule="com.ghost.videoview.VideoPlayActivity" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
-  <%_ } _%>
-  <%_ if (['general-tiramisu','miui-based-on-tiramisu','hyperos-based-on-tiramisu'].includes(compatibility)) { _%>
-  <package name="xzr.konabess" placeholder="" activityRule="xzr.konabess.MainActivity" transitionRules="xzr.konabess.MainActivity" splitPairRule="" isShowDivider="true" supportFullSize="true" splitRatio="0.42" />
-  <%_ } else { _%>
-  <package name="xzr.konabess" placeholder="" activityRule="xzr.konabess.MainActivity" transitionRules="xzr.konabess.MainActivity" splitPairRule="" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
   <%_ } _%>
   <%_ if (['general-tiramisu','miui-based-on-tiramisu','hyperos-based-on-tiramisu'].includes(compatibility)) { _%>
   <package name="com.zhibo.edu" activityRule="com.zhibo.edu.MainActivity" transitionRules="com.zhibo.edu.MainActivity" isShowDivider="true" supportFullSize="true" splitRatio="0.42" />
@@ -8179,4 +8174,5 @@
 	<package name="io.github.a13e300.ksuwebui" fullRule="nra:cr:rcr:nr" />
 	<package name="me.weishu.kernelsu" fullRule="nra:cr:rcr:nr" />
 	<package name="me.bmax.apatch" fullRule="nra:cr:rcr:nr" />
+  <package name="xzr.konabess" fullRule="nra:cr:rcr:nr" />
 </package_config>
