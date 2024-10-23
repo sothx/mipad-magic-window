@@ -20,6 +20,8 @@
 
 - 修复 Web UI在Mix Fold 2下触发报错的问题
 
+- [Web UI] 优化获取部分非关键设备信息时的性能，异步执行非关键设备信息的获取
+
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
 问题合集:[https://hyper-magic-window.sothx.com/FAQ.html](https://hyper-magic-window.sothx.com/FAQ.html)
