@@ -16,15 +16,13 @@
 
 请自备救砖模块再进行测试版本模块的升级，否则可能导致卡米。
 
-[主体]
+[更新说明]
 
-- 修复konabess崩溃的问题
+- 修复 Web UI在Mix Fold 2下触发报错的问题
 
-- 修复拼多多的适配异常
+- [Web UI] 优化获取部分非关键设备信息时的性能，异步执行非关键设备信息的获取
 
-- 修复APatch Action 触发 Web UI安装引导的问题
-
-- 修复机型专版多次提醒选机型的BUG
+- [Web UI] 新增全部应用和部分应用下的筛选项
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 

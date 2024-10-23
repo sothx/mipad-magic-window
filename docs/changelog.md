@@ -22,6 +22,8 @@
 
 - [Web UI] 优化获取部分非关键设备信息时的性能，异步执行非关键设备信息的获取
 
+- [Web UI] 新增全部应用和部分应用下的筛选项
+
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
 问题合集:[https://hyper-magic-window.sothx.com/FAQ.html](https://hyper-magic-window.sothx.com/FAQ.html)
