@@ -22,6 +22,8 @@
 
 - 统一优化不同模式下的按钮体验
 
+- 新增字体切换
+
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
 问题合集:[https://hyper-magic-window.sothx.com/FAQ.html](https://hyper-magic-window.sothx.com/FAQ.html)
