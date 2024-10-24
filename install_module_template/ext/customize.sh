@@ -424,7 +424,6 @@ if [[ $is_need_install_ksu_web_ui == 1 ]]; then
     unzip -jo "$ZIPFILE" 'common/apks/KsuWebUI.apk' -d /data/local/tmp/ &>/dev/null
     pm install -r /data/local/tmp/KsuWebUI.apk &>/dev/null
     rm -rf /data/local/tmp/KsuWebUI.apk
-    rm -rf "$MODPATH"/common/apks/KsuWebUI.apk
     HAS_BEEN_INSTALLED_KsuWebUI_APK=$(pm list packages | grep io.github.a13e300.ksuwebui)
     if [[ $HAS_BEEN_INSTALLED_KsuWebUI_APK == *"package:io.github.a13e300.ksuwebui"* ]]; then
       ui_print "- 好诶，KSUWebUI安装完成！"

@@ -24,6 +24,8 @@
 
 - 新增字体切换
 
+- 修复Action.sh有关KsuWebUI的安装包路径访问错误的问题
+
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
 问题合集:[https://hyper-magic-window.sothx.com/FAQ.html](https://hyper-magic-window.sothx.com/FAQ.html)

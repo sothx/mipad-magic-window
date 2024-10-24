@@ -16,13 +16,17 @@
 
 请自备救砖模块再进行测试版本模块的升级，否则可能导致卡米。
 
-[更新说明]
+[Web UI]
+
+- 优化了Web UI的代码仓库结构，感谢@锐冰｜SharpIce
 
 - 新增深色模式
 
 - 统一优化不同模式下的按钮体验
 
 - 新增字体切换
+
+- 修复Action.sh有关KsuWebUI的安装包路径访问错误的问题
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
