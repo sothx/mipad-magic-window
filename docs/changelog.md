@@ -32,9 +32,17 @@
 
 - 新增居中模式和原始模式应用比例变化时是否重启应用
 
+- 阻止Android 11访问Web UI
+
+- 修复开发路线图无法打开的问题
+
+- 修复应用布局优化精确适配无法输入*的问题
+
 [主体]
 
 - 修复Action.sh有关KsuWebUI的安装包路径访问错误的问题
+
+- 不再提供游戏显示布局的安装引导(很多人都不看引导然后反馈BUG)，需要可以自行前往Web UI开启。
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 

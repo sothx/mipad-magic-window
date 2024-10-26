@@ -338,33 +338,33 @@ if [[ "$API" -ge 33 ]]; then
     ui_print "*********************************************"
   fi
   # 展示游戏显示布局选择器
-  if [[ $is_need_show_game_mode_select == '1' ]]; then
-    ui_print "*********************************************"
-    ui_print "- 是否开启游戏显示布局(仅游戏加速内的游戏生效)"
-    ui_print "- （Tips: 开启后王者荣耀、CF手游默认会以更宽的视野进行显示）"
-    ui_print "- Android 15+需要额外安装修改版手机/平板管家才会生效~"
-    ui_print "- [游戏显示布局使用文档]: https://hyper-magic-window.sothx.com/game-mode.html"
-    ui_print "  音量+ ：是"
-    ui_print "  音量- ：否"
-    ui_print "*********************************************"
-    key_check
-    if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
-      ui_print "*********************************************"
-      ui_print "- 已开启游戏显示布局(仅游戏加速内的游戏生效)，是否支持以实际机型底层适配为准"
-      ui_print "- （Tips: 开启后王者荣耀、CF手游默认会以更宽的视野进行显示）"
-      ui_print "- 详细使用方式请阅读模块文档~"
-      ui_print "- Android 15+需要额外安装修改版手机/平板管家才会生效~"
-      ui_print "- [游戏显示布局使用文档]: https://hyper-magic-window.sothx.com/game-mode.html"
-      add_props "# 开启游戏显示布局"
-      add_props "ro.config.miui_compat_enable=true"
-      add_props "ro.config.miui_appcompat_enable=true"
-      ui_print "*********************************************"
-    else
-      ui_print "*********************************************"
-      ui_print "- 你选择不开启游戏显示布局"
-      ui_print "*********************************************"
-    fi
-  fi
+  # if [[ $is_need_show_game_mode_select == '1' ]]; then
+  #   ui_print "*********************************************"
+  #   ui_print "- 是否开启游戏显示布局(仅游戏加速内的游戏生效)"
+  #   ui_print "- （Tips: 开启后王者荣耀、CF手游默认会以更宽的视野进行显示）"
+  #   ui_print "- Android 15+需要额外安装修改版手机/平板管家才会生效~"
+  #   ui_print "- [游戏显示布局使用文档]: https://hyper-magic-window.sothx.com/game-mode.html"
+  #   ui_print "  音量+ ：是"
+  #   ui_print "  音量- ：否"
+  #   ui_print "*********************************************"
+  #   key_check
+  #   if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+  #     ui_print "*********************************************"
+  #     ui_print "- 已开启游戏显示布局(仅游戏加速内的游戏生效)，是否支持以实际机型底层适配为准"
+  #     ui_print "- （Tips: 开启后王者荣耀、CF手游默认会以更宽的视野进行显示）"
+  #     ui_print "- 详细使用方式请阅读模块文档~"
+  #     ui_print "- Android 15+需要额外安装修改版手机/平板管家才会生效~"
+  #     ui_print "- [游戏显示布局使用文档]: https://hyper-magic-window.sothx.com/game-mode.html"
+  #     add_props "# 开启游戏显示布局"
+  #     add_props "ro.config.miui_compat_enable=true"
+  #     add_props "ro.config.miui_appcompat_enable=true"
+  #     ui_print "*********************************************"
+  #   else
+  #     ui_print "*********************************************"
+  #     ui_print "- 你选择不开启游戏显示布局"
+  #     ui_print "*********************************************"
+  #   fi
+  # fi
 
 fi
 
