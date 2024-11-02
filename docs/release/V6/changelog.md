@@ -44,6 +44,14 @@
 
 - 不再提供游戏显示布局的安装引导(很多人都不看引导然后反馈BUG)，需要可以自行前往Web UI开启。
 
+[应用横屏布局]
+
+- 新增红宝书词汇(com.hongbaoshuapp)的强制横屏
+
+[应用布局优化]
+
+- 新增网易云音乐(com.netease.cloudmusic)的应用布局优化，默认关闭，需要手动启用
+
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
 问题合集:[https://hyper-magic-window.sothx.com/FAQ.html](https://hyper-magic-window.sothx.com/FAQ.html)

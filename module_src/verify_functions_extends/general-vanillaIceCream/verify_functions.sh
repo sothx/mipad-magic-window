@@ -37,7 +37,28 @@ verify_special_rule_pass() {
         ui_print "- 请了解Beta版的不稳定性，并非所有问题都由模块产生，如果是由Beta版产生，请跟小米反馈~"
         ui_print "- 模块反馈Q群：277757185"
         ui_print "- (Tips:请随意选择，不影响模块安装过程~)"
-        ui_print "  音量+ ：我已了解当前Android 15的模块为测试版"
+        ui_print "  音量+ ：已了解当前Android 15的模块为测试版"
+        ui_print "  音量- ：已读不回.jpg"
+        ui_print "*********************************************"
+        key_check
+        if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+            ui_print "*********************************************"
+            ui_print "- 正在进入模块安装流程~"
+            ui_print "*********************************************"
+        else
+            ui_print "*********************************************"
+            ui_print "- 正在进入模块安装流程~"
+            ui_print "*********************************************"
+        fi
+    fi
+
+    if [[ -z "$mi_os_version_name" && "$mi_os_version_name" == 'OS2' ]]; then
+        ui_print "*********************************************"
+        ui_print "- 请了解目前本模块在Android 15下并未做充分的适配，如有遇到任何模块问题欢迎反馈给我~"
+        ui_print "- 目前Android 15的模块并未完全适配Web UI，部分功能在Web UI下无法使用，请期待后续更新~"
+        ui_print "- 模块反馈Q群：277757185"
+        ui_print "- (Tips:请随意选择，不影响模块安装过程~)"
+        ui_print "  音量+ ：已了解当前Android 15的模块为测试版"
         ui_print "  音量- ：已读不回.jpg"
         ui_print "*********************************************"
         key_check
