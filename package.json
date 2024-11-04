@@ -16,7 +16,7 @@
     "release-ext:pad": "cross-env gulp release --use_platform pad --use_ext true --mi_os_version 2",
     "package:pad": "cross-env gulp package --use_platform pad --mi_os_version 2",
     "package-ext:pad": "cross-env gulp package --use_platform pad --use_ext true --mi_os_version 2",
-    "package-ext:pad:sothx": "cross-env gulp package --use_platform pad --use_ext true --netdisk_desc sothx",
+    "package-ext:pad:sothx": "cross-env gulp package --use_platform pad --use_ext true --netdisk_desc sothx --mi_os_version 2",
     "build:fold": "cross-env gulp build --use_platform fold",
     "build-ext:fold": "cross-env gulp build --use_platform fold --use_ext true",
     "release:fold": "cross-env gulp release --use_platform fold",

@@ -10,14 +10,11 @@
 
 链接: [https://caiyun.139.com/m/i?135CmUWDgnbAM](https://caiyun.139.com/m/i?135CmUWDgnbAM)
 
-[Web UI]
+[应用横屏布局]
 
-- 补充更多定制模式下的白名单应用
+- 修复Maigsk相关应用在Hyper OS 2.0概率丢失强制横屏适配的问题
 
-
-[主体]
-
-- 修复错误的游戏显示布局引导
+- 修复QQ在Hyper OS 2.0概率丢失强制横屏适配的问题
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
