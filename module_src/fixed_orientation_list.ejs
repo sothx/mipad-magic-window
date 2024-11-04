@@ -123,13 +123,13 @@
   <package name="com.greenpoint.android.mc10086.activity" adaptCutout="1" isShowDivider="true" />
   <package name="com.hexin.plat.android" adaptCutout="1" isShowDivider="true" />
   <package name="com.jingdong.app.mall" adaptCutout="1" isShowDivider="true" />
-  <package name="com.tencent.wework" isShowDivider="true" supportModes="full,fo" />
+  <package name="com.tencent.wework" isShowDivider="true" supportFullSize="true" />
   <package name="com.tencent.weworkenterprise" isShowDivider="true" />
   <package name="com.baidu.browser.apps" isShowDivider="true" />
-  <package name="com.baidu.searchbox.senior" isShowDivider="true" />
-  <package name="com.baidu.searchbox.tomas" isShowDivider="true" />
-  <package name="com.baidu.searchbox.lite" isShowDivider="true" />
-  <package name="com.baidu.searchbox" isShowDivider="true" />
+  <package name="com.baidu.searchbox.senior" isShowDivider="true" supportFullSize="true" />
+  <package name="com.baidu.searchbox.tomas" isShowDivider="true" supportFullSize="true" />
+  <package name="com.baidu.searchbox.lite" isShowDivider="true" supportFullSize="true" />
+  <package name="com.baidu.searchbox" isShowDivider="true" supportFullSize="true" />
   <package name="com.xiachufang" isShowDivider="true" />
   <package name="com.xiaomi.shop" isShowDivider="true" />
   <package name="com.alibaba.android.rimet" isShowDivider="true" />
@@ -179,30 +179,30 @@
   <package name="cn.jj" isScale="true" supportCameraPreview="false" />
   <package name="com.estrongs.android.pop" disable="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.ugc.aweme.lite" supportModes="full,fo" defaultSettings="full" relaunch="false" />
+  <package name="com.ss.android.ugc.aweme.lite" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" relaunch="false" />
   <%_ } else { _%>
   <package name="com.ss.android.ugc.aweme.lite" disable="true" relaunch="false" />
   <%_ } _%>
   <package name="com.qiyi.video.pad" disable="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.smile.gifmaker" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.smile.gifmaker" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.smile.gifmaker" disable="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.kuaishou.nebula" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.kuaishou.nebula" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.kuaishou.nebula" disable="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.tencent.mobileqq" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.tencent.mobileqq" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.tencent.mobileqq" disable="true" />
   <%_ } _%>
   <package name="com.minitech.miniaixue" disable="true" />
   <package name="com.wedobest.shudu" isScale="true" minSupportVersion="1:20230522" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.baidu.baidutranslate" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.baidu.baidutranslate" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.baidu.baidutranslate" disable="true" />
   <%_ } _%>
@@ -211,7 +211,7 @@
   <package name="com.ks.jjwbh.mi" relaunch="false" />
   <package name="air.tv.douyu.android" relaunch="false" supportModes="fo" forcePortraitActivity="air.tv.douyu.android/.loader.a.ActivityN1NRNTS4" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ximalaya.ting.android" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.ximalaya.ting.android" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.ximalaya.ting.android" disable="true" />
   <%_ } _%>
@@ -220,7 +220,7 @@
   <package name="com.ywhy.zjxjy.mi" relaunch="false" />
   <package name="com.fy.jrxfd.mi" relaunch="false" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.alibaba.android.rimet" supportModes="full,fo" defaultSettings="full" supportFullSize="true" isShowDivider="true" />
+  <package name="com.alibaba.android.rimet" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" supportFullSize="true" isShowDivider="true" />
   <%_ } else { _%>
   <package name="com.alibaba.android.rimet" disable="true" supportFullSize="true" isShowDivider="true" />
   <%_ } _%>
@@ -254,7 +254,7 @@
   <package name="com.bj.palyer.kkkddd" relaunch="false" />
   <package name="com.zf.jldj.mi" relaunch="false" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.wander.android.wallpaper" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.wander.android.wallpaper" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.wander.android.wallpaper" disable="true" />
   <%_ } _%>
@@ -264,7 +264,7 @@
   <package name="cn.knowbox.androidaiclass" relaunch="false" />
   <package name="com.fy.dmmdzz.mi" />
   <package name="com.lywx.wzqgs.mi" relaunch="false" />
-  <package name="com.yizhilu.qh" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.yizhilu.qh" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <package name="com.dw.ttdezbj.mi" relaunch="false" />
   <package name="com.dw.dytxj.mi" relaunch="false" />
   <package name="com.dw.zynq.mi" relaunch="false" />
@@ -283,14 +283,14 @@
   <package name="com.tencent.tmgp.qjnn" isScale="true" />
   <package name="com.offcn.mini.teacher" relaunch="false" isScale="true" supportCameraPreview="*:false" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.ugc.aweme" supportModes="full,fo" defaultSettings="full" relaunch="false" />
+  <package name="com.ss.android.ugc.aweme" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" relaunch="false" />
   <%_ } else { _%>
   <package name="com.ss.android.ugc.aweme" disable="true" relaunch="false" />
   <%_ } _%>
   <package name="com.stemu.psp.atmgdjh" disable="true" />
   <package name="com.miui.gallery" disable="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.tencent.qqlive" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.tencent.qqlive" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.tencent.qqlive" disable="true" />
   <%_ } _%>
@@ -302,7 +302,7 @@
   <package name="com.dongqiudi.news" allPortrait="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.campmobile.snowcamera" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.campmobile.snowcamera" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.campmobile.snowcamera" disable="true" />
   <%_ } _%>
@@ -387,7 +387,7 @@
   <package name="com.f1player" skipCompatMode="true" />
   <package name="com.jeejen.family" disable="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.telecom.video" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.telecom.video" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.telecom.video" disable="true" />
   <%_ } _%>
@@ -517,7 +517,7 @@
   <package name="com.tencent.gamehelper.dnf" relaunch="false" />
   <package name="com.yzxx.fkzgz.mi" relaunch="false" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.imangi.templerun2" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.imangi.templerun2" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.imangi.templerun2" disable="true" />
   <%_ } _%>
@@ -559,7 +559,7 @@
   <package name="com.soufun.app" relaunch="false" />
   <package name="com.yzxx.bttp2.mi" disable="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.alicloud.databox" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.alicloud.databox" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.alicloud.databox" disable="true" />
   <%_ } _%>
@@ -571,7 +571,7 @@
   <%_ } _%>
   <package name="com.hypergryph.arknights" disable="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.microsoft.emmx" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.microsoft.emmx" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.microsoft.emmx" disable="true" />
   <%_ } _%>
@@ -603,238 +603,238 @@
   <package name="com.tencent.jkchess" disable="true" />
   <package name="com.ikongjian.decoration" skipCompatMode="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="tv.danmaku.bilibilihd" supportModes="full,fo" defaultSettings="full" relaunch="false" />
+  <package name="tv.danmaku.bilibilihd" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" relaunch="false" />
   <%_ } else { _%>
   <package name="tv.danmaku.bilibilihd" disable="true" relaunch="false" />
   <%_ } _%>
   <package name="com.jingyao.easybike" relaunch="false" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.debug" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.debug" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.debug" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.larksuite.suite" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.larksuite.suite" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.larksuite.suite" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.kami" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.kami" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.kami" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.kastandard" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.kastandard" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.kastandard" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.ljht" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.ljht" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.ljht" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.saastest" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.saastest" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.saastest" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.saaspoc" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.saaspoc" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.saaspoc" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.kadev" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.kadev" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.kadev" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.kausts" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.kausts" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.kausts" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.htone" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.htone" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.htone" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.greentown" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.greentown" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.greentown" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.md_zht" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.md_zht" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.md_zht" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.ka31" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.ka31" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.ka31" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.kadevcicd" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.kadevcicd" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.kadevcicd" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.kacrc" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.kacrc" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.kacrc" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.kazdtq" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.kazdtq" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.kazdtq" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.kahd" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.kahd" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.kahd" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.shlx" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.shlx" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.shlx" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.jinhui" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.jinhui" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.jinhui" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.kastd401" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.kastd401" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.kastd401" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.kazdupg" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.kazdupg" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.kazdupg" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.ka502p1" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.ka502p1" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.ka502p1" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.ka502s1" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.ka502s1" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.ka502s1" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.kaupg" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.kaupg" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.kaupg" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.kadbupg" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.kadbupg" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.kadbupg" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.kastd407r1" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.kastd407r1" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.kastd407r1" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.ka410s1" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.ka410s1" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.ka410s1" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.xhjt" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.xhjt" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.xhjt" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.transsion" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.transsion" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.transsion" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.ihaier" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.ihaier" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.ihaier" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.rongchuang" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.rongchuang" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.rongchuang" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.cjy" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.cjy" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.cjy" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.yumchina" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.yumchina" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.yumchina" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.catl" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.catl" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.catl" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.seazen" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.seazen" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.seazen" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.fjdz" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.fjdz" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.fjdz" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.hxjk" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.hxjk" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.hxjk" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.ka410p1" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.ka410p1" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.ka410p1" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.ka410p2" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.ka410p2" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.ka410p2" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.kapoc3" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.kapoc3" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.kapoc3" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.kaxhs" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.kaxhs" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.kaxhs" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.cmi" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.cmi" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.cmi" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.taikang" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.taikang" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.taikang" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.cxmt" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.cxmt" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.cxmt" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.lark.llzf" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ss.android.lark.llzf" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ss.android.lark.llzf" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
@@ -848,12 +848,12 @@
   <package name="com.microsoft.office.officehubrow" disable="true" />
   <package name="com.miui.calculator" disable="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.baidu.input_mi" supportModes="full" defaultSettings="full" skipCompatMode="true" forcePortraitActivity="com.baidu.input_mi/com.baidu.input_mi.ImeUserExperienceActivity,com.baidu.input_mi/com.baidu.input.ImeSubConfigActivity" />
+  <package name="com.baidu.input_mi" supportModes="full" defaultSettings="full" skipSelfAdaptive="true" skipCompatMode="true" forcePortraitActivity="com.baidu.input_mi/com.baidu.input_mi.ImeUserExperienceActivity,com.baidu.input_mi/com.baidu.input.ImeSubConfigActivity" />
   <%_ } else { _%>
   <package name="com.baidu.input_mi" disable="true" skipCompatMode="true" forcePortraitActivity="com.baidu.input_mi/com.baidu.input_mi.ImeUserExperienceActivity,com.baidu.input_mi/com.baidu.input.ImeSubConfigActivity" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.outfit7.talkingtomgoldrun.mi" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.outfit7.talkingtomgoldrun.mi" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.outfit7.talkingtomgoldrun.mi" disable="true" />
   <%_ } _%>
@@ -870,12 +870,12 @@
   <%_ } _%>
   <package name="com.dw.xprqj.mi" disable="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.mxtech.videoplayer.ad" supportModes="full,fo" defaultSettings="full" relaunch="false" />
+  <package name="com.mxtech.videoplayer.ad" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" relaunch="false" />
   <%_ } else { _%>
   <package name="com.mxtech.videoplayer.ad" disable="true" relaunch="false" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.mxtech.videoplayer.pro" supportModes="full,fo" defaultSettings="full" relaunch="false" />
+  <package name="com.mxtech.videoplayer.pro" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" relaunch="false" />
   <%_ } else { _%>
   <package name="com.mxtech.videoplayer.pro" disable="true" relaunch="false" />
   <%_ } _%>
@@ -886,17 +886,17 @@
   <package name="com.dw.wxpk.mi" relaunch="false" />
   <package name="com.fy.wdxd.mi" relaunch="false" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ruanmei.ithome" supportModes="full,fo" defaultSettings="full" allowEmbInPortrait="false" isShowDivider="true" supportFullSize="true" />
+  <package name="com.ruanmei.ithome" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" allowEmbInPortrait="false" isShowDivider="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.ruanmei.ithome" allowEmbInPortrait="false" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.douban.frodo" supportModes="full,fo" defaultSettings="full" allowEmbInPortrait="false" isShowDivider="true" supportFullSize="true" />
+  <package name="com.douban.frodo" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" allowEmbInPortrait="false" isShowDivider="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.douban.frodo" allowEmbInPortrait="false" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.qidian.QDReader" supportModes="full,fo" defaultSettings="full" allowEmbInPortrait="false" isShowDivider="true" supportFullSize="true" />
+  <package name="com.qidian.QDReader" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" allowEmbInPortrait="false" isShowDivider="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.qidian.QDReader" allowEmbInPortrait="false" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
@@ -919,17 +919,17 @@
   <package name="com.knowbox.rc.student.pk" isScale="true" />
   <package name="com.facebook.lite" isScale="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.tencent.weread" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.tencent.weread" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.tencent.weread" disable="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.xingin.xhs" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.xingin.xhs" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.xingin.xhs" disable="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.miui.fm" supportModes="full" defaultSettings="full" />
+  <package name="com.miui.fm" supportModes="full" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.miui.fm" disable="true" />
   <%_ } _%>
@@ -960,7 +960,7 @@
   <package name="com.huawei.health" relaunch="false" supportCameraPreview="full:false" />
   <package name="com.ultron.crimaster" isScale="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.duwo.reading" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.duwo.reading" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.duwo.reading" disable="true" />
   <%_ } _%>
@@ -979,14 +979,14 @@
   <package name="com.giant.newconcept" relaunch="false" />
   <package name="com.shuwei.sscm" relaunch="false" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.ugc.live" supportModes="full,fo" defaultSettings="full" relaunch="false" />
+  <package name="com.ss.android.ugc.live" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" relaunch="false" />
   <%_ } else { _%>
   <package name="com.ss.android.ugc.live" disable="true" relaunch="false" />
   <%_ } _%>
   <package name="vStudio.Android.Camera360" disable="true" />
   <package name="org.telegram.messenger" disable="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.lemon.lvoverseas" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.lemon.lvoverseas" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.lemon.lvoverseas" disable="true" />
   <%_ } _%>
@@ -996,15 +996,15 @@
   <package name="com.instagram.android" relaunch="false" supportCameraPreview="false" disable="true" />
   <%_ } _%>
   <package name="com.ls.tyt.mi" isScale="true" />
-  <package name="com.coolapk.market" isShowDivider="true" disable="true" supportFullSize="true" />
+  <package name="com.coolapk.market" isShowDivider="true"  disable="true" supportFullSize="true" skipSelfAdaptive="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.microsoft.office.outlook" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.microsoft.office.outlook" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.microsoft.office.outlook" disable="true" />
   <%_ } _%>
   <package name="com.alibaba.aliexpresshd" isScale="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.maimemo.android.momo" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.maimemo.android.momo" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.maimemo.android.momo" disable="true" />
   <%_ } _%>
@@ -1024,19 +1024,19 @@
   <package name="me.yoopu.app.songbook" relaunch="false" />
   <package name="com.zhumaonline.exercise" disable="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.yinxiang" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.yinxiang" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.yinxiang" disable="true" />
   <%_ } _%>
   <package name="com.huabenapp" isScale="true" relaunch="false" />
   <package name="cn.qiaolatech.huihua" relaunch="false" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.zuoyebang.airclass" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.zuoyebang.airclass" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.zuoyebang.airclass" disable="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.fenbi.android.leo" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.fenbi.android.leo" supportModes="full,fo" skipSelfAdaptive="true" isShowDivider="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.fenbi.android.leo" isShowDivider="true" supportFullSize="true" disable="true" />
   <%_ } _%>
@@ -1063,7 +1063,7 @@
   <package name="com.sandboxol.blockymods" relaunch="false" />
   <package name="com.dewmobile.kuaiya.play" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.UCMobile.intl" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.UCMobile.intl" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.UCMobile.intl" disable="true" />
   <%_ } _%>
@@ -1074,7 +1074,7 @@
   <package name="com.viber.voip" disable="true" />
   <package name="ru.yandex.yandexmaps" disable="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.zhiliaoapp.musically.go" supportModes="full,fo" defaultSettings="full" forcePortraitActivity="com.zhiliaoapp.musically.go/com.ss.android.ugc.aweme.creativetool.CreationActivity" />
+  <package name="com.zhiliaoapp.musically.go" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" forcePortraitActivity="com.zhiliaoapp.musically.go/com.ss.android.ugc.aweme.creativetool.CreationActivity" />
   <%_ } else { _%>
   <package name="com.zhiliaoapp.musically.go" disable="true" forcePortraitActivity="com.zhiliaoapp.musically.go/com.ss.android.ugc.aweme.creativetool.CreationActivity" />
   <%_ } _%>
@@ -1082,7 +1082,7 @@
   <package name="ru.ok.android" disable="true" />
   <package name="com.vkontakte.android" disable="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ss.android.ugc.trill" supportModes="full,fo" defaultSettings="full" forcePortraitActivity="com.ss.android.ugc.trill/com.ss.android.ugc.aweme.adaptation.saa.SAAActivity,com.ss.android.ugc.trill/com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity" supportCameraPreview="false" />
+  <package name="com.ss.android.ugc.trill" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" forcePortraitActivity="com.ss.android.ugc.trill/com.ss.android.ugc.aweme.adaptation.saa.SAAActivity,com.ss.android.ugc.trill/com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity" supportCameraPreview="false" />
   <%_ } else { _%>
   <package name="com.ss.android.ugc.trill" disable="true" forcePortraitActivity="com.ss.android.ugc.trill/com.ss.android.ugc.aweme.adaptation.saa.SAAActivity,com.ss.android.ugc.trill/com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity" supportCameraPreview="false" />
   <%_ } _%>
@@ -1094,7 +1094,7 @@
   <package name="tv.pps.mobile" supportCameraPreview="false" forcePortraitActivity="tv.pps.mobile/com.qiyi.shortvideo.videocap.capture.ShortVideoCapActivity,tv.pps.mobile/com.iqiyi.android.ar.activity.CameraAdvertiseActivity" />
   <package name="com.tdx.AndroidNew" supportCameraPreview="true" relaunch="full:false" fullForcePortraitActivity="com.tdx.AndroidNew/com.karics.library.zxing.android.CaptureActivity" supportModes="full,fo" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.huatu.handheld_huatu" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.huatu.handheld_huatu" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.huatu.handheld_huatu" disable="true" />
   <%_ } _%>
@@ -1131,7 +1131,7 @@
   <package name="com.cbnweekly" relaunch="false" />
   <package name="com.wibo.bigbang.ocr" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.kugou.android" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.kugou.android" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.kugou.android" disable="true" />
   <%_ } _%>
@@ -1143,7 +1143,7 @@
   <package name="com.youcash.ZYWallet" supportCameraPreview="true" supportFullSize="true" forcePortraitActivity="com.youcash.ZYWallet/com.youcash.ZYWallet.com.kernal.passportreader.sdk.CardsCameraActivity" />
   <package name="com.meitu.meiyancamera" compatChange="FORCE_RESIZE_APP" supportModes="full,fo" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.tencent.android.qqdownloader" supportFullSize="true" supportCameraPreview="true" relaunch="false" isScale="true" />
-  <package name="com.xunlei.downloadprovider" supportFullSize="true" supportCameraPreview="true" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.xunlei.downloadprovider" supportFullSize="true" supportCameraPreview="true" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <package name="com.qihoo360.mobilesafe" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.youloft.calendar" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.icoolme.android.weather" supportFullSize="true" supportCameraPreview="true" />
@@ -1157,7 +1157,7 @@
   <package name="com.wm.dmall" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.tencent.wifimanager" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.wlqq" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
-  <package name="com.sf.activity" supportModes="full,fo" defaultSettings="fo" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
+  <package name="com.sf.activity" supportModes="full,fo" defaultSettings="fo" skipSelfAdaptive="true" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.kongming.android.h.parent" forcePortraitActivity="com.kongming.android.h.parent/com.kongming.parent.module.babycenter.activity.ScanDeviceQRActivity" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.ss.android.homed" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.gd.siapp" supportFullSize="true" supportCameraPreview="true" />
@@ -1216,7 +1216,7 @@
   <package name="com.shoujiduoduo.wpplugin" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.hp.android.printservice" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.baidu.input" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.baidu.input" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.baidu.input" disable="true" />
   <%_ } _%>
@@ -1360,7 +1360,7 @@
   <package name="com.shenmo.yunxuetangapp" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.netease.urs.android.accountmanager" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.welove520.qqsweet" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
-  <package name="com.kugou.android.lite" supportFullSize="true" supportCameraPreview="true" autoUi="com.kugou.android.app.splash.SplashActivity:2;com.kugou.android.app.MediaActivity:2;" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.kugou.android.lite" supportFullSize="true" supportCameraPreview="true" autoUi="com.kugou.android.app.splash.SplashActivity:2;com.kugou.android.app.MediaActivity:2;" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <package name="com.ichinait.gbdriver" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.traveloka.android" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.zalora.android" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
@@ -1503,12 +1503,12 @@
   <package name="com.vpapps.hdwallpaper.xyz" relaunch="false" isScale="true" supportFullSize="true" />
   <!-- Adaptive For Sothx 1.11.x -->
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.tencent.mm" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.tencent.mm" supportModes="full,fo" isShowDivider="true" defaultSettings="full" supportFullSize="true" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.tencent.mm" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.example.hikerview" isShowDivider="true" supportFullSize="true" supportModes="full,fo" defaultSettings="full" supportFullSize="true" />
+  <package name="com.example.hikerview" isShowDivider="true" supportFullSize="true" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.example.hikerview" isShowDivider="true" supportFullSize="true" disable="true" supportFullSize="true" />
   <%_ } _%>
@@ -1517,7 +1517,7 @@
   <package name="com.viva.todo_list" relaunch="false" isScale="true" supportFullSize="true" />
   <package name="com.papegames.lysk.cn" disable="false" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.vk.mail" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.vk.mail" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.vk.mail" disable="true" />
   <%_ } _%>
@@ -1527,36 +1527,36 @@
   <package name="com.tencent.mobileqqi" disable="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.xiaomi.shop" isShowDivider="true" supportFullSize="true" supportModes="full,fo" />
+  <package name="com.xiaomi.shop" isShowDivider="true" supportFullSize="true" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.xiaomi.shop" disable="true" />
   <%_ } _%>
   <package name="com.tencent.mymedinfo" relaunch="false" isScale="true" supportFullSize="true" />
   <package name="com.umihome.m" relaunch="false" isScale="true" supportFullSize="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.xiachufang" supportModes="full,fo" isShowDivider="true" supportFullSize="true" skipSelfAdaptive="true" />
+  <package name="com.xiachufang" supportModes="full,fo" isShowDivider="true" defaultSettings="full" supportFullSize="true" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.xiachufang" disable="true" isShowDivider="true" supportFullSize="true" skipSelfAdaptive="true" />
   <%_ } _%>
   <package name="com.example.gyf.uaiu" relaunch="false" isScale="true" supportFullSize="true" />
   <package name="com.fimo.camera" disable="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.baidu.searchbox" supportModes="full,fo" isShowDivider="true" supportFullSize="true" forcePortraitActivity="com.baidu.searchbox/com.baidu.searchbox.godeye.CodeScannerActivity" />
+  <package name="com.baidu.searchbox" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" isShowDivider="true" supportFullSize="true" forcePortraitActivity="com.baidu.searchbox/com.baidu.searchbox.godeye.CodeScannerActivity" />
   <%_ } else { _%>
   <package name="com.baidu.searchbox" disable="true" isShowDivider="true" supportFullSize="true" forcePortraitActivity="com.baidu.searchbox/com.baidu.searchbox.godeye.CodeScannerActivity" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.baidu.searchbox.lite" supportModes="full,fo" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" forcePortraitActivity="com.baidu.searchbox.lite/com.baidu.searchbox.godeye.CodeScannerActivity" />
+  <package name="com.baidu.searchbox.lite" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" forcePortraitActivity="com.baidu.searchbox.lite/com.baidu.searchbox.godeye.CodeScannerActivity" />
   <%_ } else { _%>
   <package name="com.baidu.searchbox.lite" disable="true" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" forcePortraitActivity="com.baidu.searchbox.lite/com.baidu.searchbox.godeye.CodeScannerActivity" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.baidu.searchbox.tomas" supportModes="full,fo" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" forcePortraitActivity="com.baidu.searchbox.tomas/com.baidu.searchbox.godeye.CodeScannerActivity" />
+  <package name="com.baidu.searchbox.tomas" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" forcePortraitActivity="com.baidu.searchbox.tomas/com.baidu.searchbox.godeye.CodeScannerActivity" />
   <%_ } else { _%>
   <package name="com.baidu.searchbox.tomas" disable="true" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" forcePortraitActivity="com.baidu.searchbox.tomas/com.baidu.searchbox.godeye.CodeScannerActivity" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.baidu.searchbox.senior" supportModes="full,fo" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" forcePortraitActivity="com.baidu.searchbox.senior/com.baidu.searchbox.godeye.CodeScannerActivity" />
+  <package name="com.baidu.searchbox.senior" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" forcePortraitActivity="com.baidu.searchbox.senior/com.baidu.searchbox.godeye.CodeScannerActivity" />
   <%_ } else { _%>
   <package name="com.baidu.searchbox.senior" disable="true" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" forcePortraitActivity="com.baidu.searchbox.senior/com.baidu.searchbox.godeye.CodeScannerActivity" />
   <%_ } _%>
@@ -1564,47 +1564,47 @@
   <package name="com.next.transfer" isScale="true" />
   <package name="com.etalien.booster" isScale="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.baidu.browser.apps" supportModes="full,fo" isShowDivider="true" supportFullSize="true" />
+  <package name="com.baidu.browser.apps" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" isShowDivider="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.baidu.browser.apps" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.sina.news" supportModes="full,fo" defaultSettings="full" isShowDivider="true" supportFullSize="true" />
+  <package name="com.sina.news" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" isShowDivider="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.sina.news" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
-  <package name="com.MobileTicket" isShowDivider="true" allowEmbInPortrait="false" supportFullSize="true" />
+  <package name="com.MobileTicket" supportModes="full,fo" defaultSettings="fo" isShowDivider="true" skipSelfAdaptive="true" allowEmbInPortrait="false" supportFullSize="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.Qunar" supportModes="full,fo" isShowDivider="true" supportFullSize="true" allowEmbInPortrait="false" />
+  <package name="com.Qunar" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" isShowDivider="true" supportFullSize="true" allowEmbInPortrait="false" />
   <%_ } else { _%>
   <package name="com.Qunar" disable="true" isShowDivider="true" supportFullSize="true" allowEmbInPortrait="false" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.android.dazhihui" supportModes="full,fo" defaultSettings="full" isShowDivider="true" supportFullSize="true" />
+  <package name="com.android.dazhihui" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" isShowDivider="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.android.dazhihui" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <package name="com.tencent.wework" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.tencent.weworkenterprise" supportModes="full,fo" defaultSettings="full" supportFullSize="true" supportCameraPreview="false" isShowDivider="true" allowEmbInPortrait="false" />
+  <package name="com.tencent.weworkenterprise" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" supportFullSize="true" supportCameraPreview="false" isShowDivider="true" allowEmbInPortrait="false" />
   <%_ } else { _%>
   <package name="com.tencent.weworkenterprise" disable="true" supportFullSize="true" supportCameraPreview="false" isShowDivider="true" allowEmbInPortrait="false" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.jingdong.app.mall" supportModes="full,fo" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
+  <package name="com.jingdong.app.mall" supportModes="full,fo" skipSelfAdaptive="true" defaultSettings="full" skipSelfAdaptive="true" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <%_ } else { _%>
   <package name="com.jingdong.app.mall" isShowDivider="true" disable="true" supportFullSize="true" supportCameraPreview="true" />
   <%_ } _%>
-  <package name="com.hexin.plat.android" supportFullSize="true" isShowDivider="true" />
+  <package name="com.hexin.plat.android" supportFullSize="true" isShowDivider="true" skipSelfAdaptive="true" supportModes="full,fo" defaultSettings="full" />
   <package name="com.wanmei.tiger" supportCameraPreview="true" supportFullSize="true" relaunch="false" isScale="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.yikaobang.yixue" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.yikaobang.yixue" supportModes="full,fo" skipSelfAdaptive="true"  defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.yikaobang.yixue" disable="true" />
   <%_ } _%>
   <package name="com.midea.vm.washer" supportCameraPreview="true" supportFullSize="true" relaunch="false" isScale="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.greenpoint.android.mc10086.activity" supportModes="full,fo" defaultSettings="full" isShowDivider="true" supportFullSize="true" />
+  <package name="com.greenpoint.android.mc10086.activity" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" isShowDivider="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.greenpoint.android.mc10086.activity" isShowDivider="true" disable="true" supportFullSize="true" />
   <%_ } _%>
@@ -1612,7 +1612,7 @@
   <package name="com.xiaomi.youpin" disable="true" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.furrybar.chat.app" relaunch="false" supportFullSize="true" ratio="1.5" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="me.ele" supportModes="full,fo" defaultSettings="full" allowEmbInPortrait="false" isShowDivider="true" supportFullSize="true" />
+  <package name="me.ele" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" allowEmbInPortrait="false" isShowDivider="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="me.ele" allowEmbInPortrait="false" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
@@ -1635,14 +1635,14 @@
   <package name="com.ucmobile.lite" allPortrait="true" skipCompatMode="true" forcePortraitActivity="com.ucmobile.lite/com.uc.aloha.activity.ALHCameraRecordActivity" supportCameraPreview="false" />
   <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.miui.contentextension" relaunch="false" supportModes="full" defaultSettings="full" />
+  <package name="com.miui.contentextension" relaunch="false" supportModes="full" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.miui.contentextension" relaunch="false" />
   <%_ } _%>
-  <package name="com.miui.misound" relaunch="false" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.miui.misound" relaunch="false" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <package name="com.android.quicksearchbox" relaunch="false" disable="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.miui.voiceassist" relaunch="false" supportModes="full" defaultSettings="full" />
+  <package name="com.miui.voiceassist" relaunch="false" supportModes="full" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.miui.voiceassist" relaunch="false" />
   <%_ } _%>
@@ -1673,7 +1673,7 @@
   <package name="com.android.daoway" />
   <package name="com.calculator.hideu" isScale="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.baidu.homework" supportModes="full,fo" defaultSettings="full" isShowDivider="true" supportFullSize="true" skipSelfAdaptive="true" />
+  <package name="com.baidu.homework" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" isShowDivider="true" supportFullSize="true" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.baidu.homework" disable="true" isShowDivider="true" supportFullSize="true" skipSelfAdaptive="true" />
   <%_ } _%>
@@ -1862,7 +1862,7 @@
   <package name="com.superrhino.rarering" relaunch="false" supportFullSize="true" ratio="1.5" />
   <package name="com.ifreetalk.ftalk" supportModes="full,fo" relaunch="false" supportFullSize="true" ratio="1.5" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.peopledailychina.activity" supportModes="full,fo" defaultSettings="full" skipCompatMode="true" skipSelfAdaptive="true" />
+  <package name="com.peopledailychina.activity" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" skipCompatMode="true" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.peopledailychina.activity" disable="true" skipCompatMode="true" skipSelfAdaptive="true" />
   <%_ } _%>
@@ -1894,7 +1894,7 @@
   <package name="com.llmm.huiyuanuxiang" relaunch="false" ratio="1.1" supportFullSize="true" />
   <package name="com.ss.android.article.news" supportCameraPreview="*:false" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.xiwang.zaixian" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.xiwang.zaixian" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="com.xiwang.zaixian" disable="true" />
   <%_ } _%>
@@ -1909,7 +1909,7 @@
   <package name="com.xg.czndox.mi" isScale="true" />
   <package name="net.xrcloud" isScale="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="tech.xiangzi.painless" supportModes="full,fo" defaultSettings="full" />
+  <package name="tech.xiangzi.painless" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
   <package name="tech.xiangzi.painless" disable="true" />
   <%_ } _%>
@@ -1945,7 +1945,7 @@
   <package name="com.kwai.videoeditor" relaunch="false" ratio="1.1" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.gracg.react_app" relaunch="false" ratio="1.1" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.qianrun.music" relaunch="false" ratio="1.1" supportFullSize="true" supportCameraPreview="true" />
-  <package name="com.iceasy.chip" supportModes="full,fo" defaultSettings="fo" relaunch="false" ratio="1.1" supportFullSize="true" supportCameraPreview="true" />
+  <package name="com.iceasy.chip" supportModes="full,fo" defaultSettings="fo" skipSelfAdaptive="true" relaunch="false" ratio="1.1" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.parallel.odyssey" relaunch="false" ratio="1.5" supportFullSize="true" />
   <package name="com.xingye.app" relaunch="false" ratio="1.5" supportFullSize="true" />
   <package name="com.guazi.android.sellcar" relaunch="false" ratio="1.5" supportFullSize="true" />
@@ -1954,13 +1954,13 @@
   <package name="com.wanmeizhensuo.zhensuo" relaunch="false" ratio="1.5" supportFullSize="true" />
   <package name="com.cxzapp.yidianling" relaunch="false" ratio="1.5" supportFullSize="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.ugreen.pro" supportModes="full,fo" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
+  <package name="com.ugreen.pro" supportModes="full,fo" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" supportCameraPreview="true" />
   <%_ } else { _%>
   <package name="com.ugreen.pro" disable="true" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <%_ } _%>
   <package name="com.trim.app" relaunch="false" ratio="1.5" supportFullSize="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.qiyi.video.reader" supportModes="full,fo" defaultSettings="full" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
+  <package name="com.qiyi.video.reader" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <%_ } else { _%>
   <package name="com.qiyi.video.reader" disable="true" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <%_ } _%>
@@ -1971,10 +1971,10 @@
   <package name="com.zhiyin.qingdan.dsx" relaunch="false" ratio="1.1" supportFullSize="true" />
   <package name="com.rhythm.dance.gz" relaunch="false" ratio="1.5" supportFullSize="true" />
   <package name="com.iqiyi.ivrcinema.cb" disable="true" />
-  <package name="com.xtuone.android.syllabus" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
+  <package name="com.xtuone.android.syllabus" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.bilibili.fatego" disable="true" relaunch="false" />
   <package name="com.jym.gcmall" supportModes="full,fo" defaultSettings="fo" relaunch="false" ratio="1.1" supportFullSize="true" />
-  <package name="com.tujia.hotel" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
+  <package name="com.tujia.hotel" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" supportCameraPreview="true" />
   <package name="com.nike.snkrs" relaunch="false" ratio="1.1" supportFullSize="true" />
   <package name="com.koudai.weidian.buyer" supportModes="full,fo" defaultSettings="full" relaunch="true" ratio="1.1" supportFullSize="true" />
   <package name="com.sf.activity" relaunch="true" ratio="1.1" supportFullSize="true" />
@@ -1992,7 +1992,7 @@
   <package name="com.yek.android.kfc.activitys" supportModes="full,fo" defaultSettings="fo" relaunch="true" ratio="1.5" supportFullSize="true" />
   <package name="com.taobao.idlefish" ratio="1.5" supportModes="full,fo" defaultSettings="fo" supportFullSize="true" relaunch="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="windinfo.android" supportModes="full,fo" defaultSettings="full" isShowDivider="true" supportFullSize="true" />
+  <package name="windinfo.android" supportModes="full,fo" defaultSettings="full" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="windinfo.android" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
@@ -2066,7 +2066,7 @@
   <package name="com.gkid.crazyrope" supportModes="full,fo" supportCameraPreview="full:false" />
   <package name="cn.cntv" supportModes="full,fo" supportCameraPreview="*:false" />
   <package name="cn.eeo.classin" supportModes="full,fo" forcePortraitActivity="cn.eeo.classin/cn.eeo.account.QrScannerActivity" />
-  <package name="com.miui.player" isShowDivider="true" supportFullSize="true" />
+  <package name="com.miui.player" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <package name="net.csdn.csdnplus" supportModes="full,fo" relaunch="full:false" />
   <package name="com.huodao.hdphone" />
   <package name="com.meetstudio.app.Zither" />
@@ -4318,9 +4318,9 @@
   <!--pkMiConfig Disable End-->
   <package name="com.sevtinge.hyperceiler" supportModes="full,fo" defaultSettings="full" />
   <package name="io.github.vvb2060.magisk" supportModes="full,fo" defaultSettings="full"  />
-  <package name="io.github.huskydg.magisk" supportModes="full,fo"  defaultSettings="full" />
+  <package name="io.github.huskydg.magisk" supportModes="full,fo"  defaultSettings="full" skipSelfAdaptive="true" />
   <package name="com.sqsp.movie" supportModes="full,fo" defaultSettings="full" />
-  <package name="com.topjohnwu.magisk" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.topjohnwu.magisk" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <package name="com.supermedia.mediaplayer" supportModes="full,fo" defaultSettings="full" />
   <package name="com.android.tiku.economist" supportModes="full,fo" defaultSettings="full" />
   <package name="com.mgshuzhi.shanhai" supportModes="full,fo" defaultSettings="full" />
