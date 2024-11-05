@@ -174,7 +174,4 @@ elif [[ "$API" -ge 31 ]]; then
   #   chattr +i /data/system/cloudFeature_fixed_orientation_list_projection.xml
   # fi
 
-  /bin/cmd miui_embedding_window update-rule
-  /bin/cmd miui_auto_ui reload-rule
-
 fi
