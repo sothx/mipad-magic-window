@@ -12,13 +12,7 @@
 
 [应用横屏布局]
 
-- 修复Hyper OS 2.0腾讯地图丢失全屏布局的问题
-
-- 修复Hyper OS 2.0百度丢失全屏布局的问题
-
-- 修复Hyper OS 2.0京东丢失全屏布局的问题
-
-- 修复Hyper OS 2.0去哪儿旅行丢失全屏布局的问题
+- 修复部分应用在Hyper OS 2.0适配异常的问题
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
