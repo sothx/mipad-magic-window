@@ -12,11 +12,7 @@
 
 [应用横屏布局]
 
-- 新增斗球体育的平行窗口适配规则
-
-- 修复TIM在首次启动没有全屏的问题
-
-- 修复部分应用全屏不生效的问题
+- 哔哩哔哩的布局在Hyper OS 2.0采用折叠屏相同的应用布局优化适配
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
