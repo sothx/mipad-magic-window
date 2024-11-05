@@ -12,7 +12,8 @@
 
 [应用横屏布局]
 
-- 哔哩哔哩的布局在Hyper OS 2.0采用折叠屏相同的应用布局优化适配
+- 由于哔哩哔哩的应用布局优化在平板存在比较严重的内存泄露问题，因此移除相关平板端的适配。
+
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
