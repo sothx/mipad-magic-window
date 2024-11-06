@@ -12,7 +12,9 @@
 
 [应用横屏布局]
 
-- 由于哔哩哔哩的应用布局优化在平板存在比较严重的内存泄露问题，因此移除相关平板端的适配。
+- 修复腾讯地图在Hyper OS 2.0上丢失全屏适配的问题
+
+- 
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
