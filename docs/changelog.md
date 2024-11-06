@@ -12,7 +12,7 @@
 
 [Web UI]
 
-- 补充部分新功能的操作区(部分新功能尚未开发，暂不可用)
+- 操作区按钮兼容不同尺寸下的响应式换行
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
