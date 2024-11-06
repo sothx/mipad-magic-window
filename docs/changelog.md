@@ -10,11 +10,9 @@
 
 链接: [https://caiyun.139.com/m/i?135CmUWDgnbAM](https://caiyun.139.com/m/i?135CmUWDgnbAM)
 
-[应用横屏布局]
+[Web UI]
 
-- 修复腾讯地图在Hyper OS 2.0上丢失全屏适配的问题
-
-- 
+- 补充部分新功能的操作区(部分新功能尚未开发，暂不可用)
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
