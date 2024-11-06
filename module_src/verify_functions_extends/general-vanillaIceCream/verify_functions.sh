@@ -55,7 +55,9 @@ verify_special_rule_pass() {
     if [[ -z "$mi_os_version_name" && "$mi_os_version_name" == 'OS2.0' ]]; then
         ui_print "*********************************************"
         ui_print "- 请了解目前本模块在Android 15下并未做充分的适配，如有遇到任何模块问题欢迎反馈~"
-        ui_print "- 目前Android 15的模块并未完全适配Web UI，部分功能在Web UI下无法使用，请期待后续更新~"
+        ui_print "- 目前Android 15的模块并未完全适配Web UI，部分功能在Web UI下无法使用或者存在异常，请期待后续更新~"
+        ui_print "- 由于小米工程师埋的坑，请勿使用热重载脚本，会导致大量应用的横竖屏适配异常~"
+        ui_print "- 如需使用自定义规则，请手动重启平板以便让自定义规则正常生效且不产生额外BUG~"
         ui_print "- 模块反馈Q群：277757185"
         ui_print "- (Tips:请随意选择，不影响模块安装过程~)"
         ui_print "  音量+ ：已了解(选哪个都行)"
