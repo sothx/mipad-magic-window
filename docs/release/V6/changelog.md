@@ -10,9 +10,9 @@
 
 链接: [https://caiyun.139.com/m/i?135CmUWDgnbAM](https://caiyun.139.com/m/i?135CmUWDgnbAM)
 
-[Web UI]
+[应用横屏布局]
 
-- 操作区按钮兼容不同尺寸下的响应式换行
+- Hyper OS 2.0针对西瓜视频新增全屏和居中布局选项
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
