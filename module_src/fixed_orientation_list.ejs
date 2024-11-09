@@ -1386,7 +1386,7 @@
   <package name="com.sogou.upd.x1" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="ee.mtakso.client" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.anghami" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
-  <package name="com.duokan.phone.remotecontroller" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
+  <package name="com.duokan.phone.remotecontroller" supportFullSize="true" supportCameraPreview="true" relaunch="false" defaultSettings="full" supportModes="full,fo" />
   <package name="com.payment.kay.aaa" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="fm.qian.michael" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.coomix.app.all" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
@@ -1593,6 +1593,11 @@
   <package name="com.android.dazhihui" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" isShowDivider="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.android.dazhihui" disable="true" isShowDivider="true" supportFullSize="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.tencent.wework" isShowDivider="true" supportFullSize="true" defaultSettings="full" supportModes="full,fo" />
+  <%_ } else { _%>
+  <package name="com.tencent.wework" disable="true" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <package name="com.tencent.wework" disable="true" isShowDivider="true" supportFullSize="true" defaultSettings="full" supportModes="full,fo" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
@@ -2299,7 +2304,7 @@
   <package name="com.lew.game.lock.mi" supportModes="full,fo" defaultSettings="full" />
   <package name="com.mobile.kadian" supportModes="full,fo" defaultSettings="full" />
   <package name="cn.cty.hbzw" supportModes="full,fo" defaultSettings="full" />
-  <package name="com.efund.jqb" supportModes="full,fo" />
+  <package name="com.efund.jqb" supportModes="full,fo" defaultSettings="full" />
   <package name="com.ksxxzk.edu" supportModes="full,fo" defaultSettings="full" />
   <package name="com.mengjun.DanNovel" supportModes="full,fo" defaultSettings="full" />
   <package name="com.pwrd.steam.esports" supportModes="full,fo" />
@@ -2309,7 +2314,7 @@
   <package name="cn.org.gzjjzd.gzjjzd" supportModes="full,fo" defaultSettings="full" />
   <package name="cn.suanya.zhixing" supportModes="full,fo" defaultSettings="full" />
   <package name="com.intbull.pano3d" supportModes="full,fo" defaultSettings="full" />
-  <package name="beiq.daoh.sdit" supportModes="full,fo" />
+  <package name="beiq.daoh.sdit" supportModes="full,fo" defaultSettings="full" />
   <package name="com.edifier.edifierconnect" supportModes="full,fo" defaultSettings="full" />
   <package name="com.heishi.android.app" supportModes="full,fo" defaultSettings="full" />
   <package name="com.qujianpan.duoduo" supportModes="full,fo" defaultSettings="full" />
