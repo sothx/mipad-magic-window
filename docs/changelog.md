@@ -12,7 +12,7 @@
 
 [应用横屏布局]
 
-- Hyper OS 2.0针对西瓜视频新增全屏和居中布局选项
+- 针对Hyper OS 2.0修复200多个应用无法正常全屏显示的问题
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
