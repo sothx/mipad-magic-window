@@ -12,7 +12,7 @@
 
 [应用横屏布局]
 
-- 针对Hyper OS 2.0修复200多个应用无法正常全屏显示的问题
+- 针对Hyper OS 2.0修复300多个应用无法正常全屏显示的问题
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
