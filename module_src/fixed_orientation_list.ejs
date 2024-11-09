@@ -4323,7 +4323,11 @@
   <%_ } else { _%>
   <package name="com.kiloo.subwaysurf.gw" disable="true" />
   <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.vphonegaga.titan" supportModes="full,fo" defaultSettings="full" relaunch="false" />
+  <%_ } else { _%>
   <package name="com.vphonegaga.titan" disable="true" relaunch="false" />
+  <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
   <package name="com.vmos.pro" supportModes="full,fo" defaultSettings="full" skipCompatMode="true" relaunch="false" />
   <%_ } else { _%>
