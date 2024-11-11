@@ -114,7 +114,7 @@ function copyMagicWindowCustomConfigTemplateToCommon(cb) {
 
 
 function copyEmbeddedRuleListToCommon(cb) {
-  return src(`${tempDir}/embedded_rules_list.xml`)
+  return src([`${tempDir}/embedded_rules_list.xml`,`${tempDir}/embedded_rules_list_projection.xml`])
     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/source/`)))
     .on('end', cb);
 }
@@ -126,7 +126,7 @@ function copyEmbeddedRuleListToCommon(cb) {
 
 
 function copyFixedOrientationListToCommon(cb) {
-  return src(`${tempDir}/fixed_orientation_list.xml`)
+  return src([`${tempDir}/fixed_orientation_list.xml`,`${tempDir}/fixed_orientation_list_projection.xml`])
     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/source/`)))
     .on('end', cb);
 }
@@ -178,7 +178,7 @@ function copyActivityEmbeddingCustomConfigTemplateToCommon(cb) {
  */
 
 function copyGenericRulesToCommon(cb) {
-  return src(`${tempDir}/generic_rules_list.xml`)
+  return src([`${tempDir}/generic_rules_list.xml`,`${tempDir}/generic_rules_list_projection.xml`])
     .pipe(gulpIf(buildActionIsActivityEmbedding,dest(`${commonDist}/source/`)))
     .on('end', cb);
 }

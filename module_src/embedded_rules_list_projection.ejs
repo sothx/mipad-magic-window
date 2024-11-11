@@ -2,21 +2,15 @@
   <package
     name="com.tencent.qqmusic"
     defaultSettings="true"
-    activityRule="com.tencent.qqmusic.activity.YoungModeActivity,com.tencent.qqmusic.activity.PortMVPlayerActivity,com.tencent.qqmusic.activity.AppStarterActivity"
-    splitPairRule="com.tencent.qqmusic.activity.AppStarterActivity:*"
-    transitionRules="com.tencent.qqmusic.activity.baseactivity.StartUpPrivacyPolicyActivity,com.tencent.qqmusic.activity.baseactivity.StartConfigActivity,com.tme.mlive.framework.ui.LivePagerActivity"
+    autoUiRule="com.tencent.qqmusic.activity.AppStarterActivity:-1"
+    isShowDivider="true"
+    supportFullSize="true"
+    splitLineColor="#F1F5F8:#0D0D0D"
     flags="ignoreActivityBelowWhenJudgeMiddle:com.tme.mlive.framework.ui.LivePagerActivity"
-  />
-  <package
-    name="com.netease.cloudmusic"
-    defaultSettings="true"
-    skipSelfAdaptive="true"
-    flags="reusePreContainer:com.netease.cloudmusic.dsl.activity.DslLayoutProducePicActivity,com.netease.cloudmusic.share.framework.ShareTransferActivity,com.netease.cloudmusic.previewlive.texture.PreDelegateActivity,com.netease.play.livepage.LiveViewerActivity"
-    activityRule="com.netease.cloudmusic.module.login.LoginActivity"
-    autoUiRule="com.netease.cloudmusic.activity.MainActivity:-1;com.netease.cloudmusic.activity.IconChangeDefaultAlias:-1;com.netease.cloudmusic.module.login.LoginActivity:-1"
-    splitPairRule="com.netease.cloudmusic.activity.MainActivity:*,com.netease.cloudmusic.activity.IconChangeDefaultAlias:*"
-    relaunchRule="ProjectionDisplaySwitch:*:false:com.netease.cloudmusic/.module.dailyrecomm.DailyRecommendMusicActivity"
-    transitionRules="com.netease.cloudmusic.activity.RedirectActivity,com.netease.cloudmusic.activity.LoadingActivity,com.netease.cloudmusic.activity.LockScreenActivity"
+    supportCameraPreview="true"
+    splitPairRule="com.tencent.qqmusic.activity.AppStarterActivity:*"
+    activityRule="com.tme.qqmusic.knative.kuikly.container.KuiklyRenderActivity,com.tencent.qqmusic.activity.YoungModeActivity,com.tencent.qqmusic.activity.AppStarterActivity,com.tencent.qqmusic.share.sharedialog.ShareSongDialogActivity,com.tencent.qqmusic.com.cocos.lib.nolib.MusicWorldActivity,com.tencent.qqmusic.activity.CommentInputActivity,com.tencent.qqmusic.activity.baseactivity.StartUpPrivacyPolicyActivity,com.tencent.qqmusic.activity.welcome.WelcomeActivity,com.tencent.qqmusic.activity.LoginActivity,com.tencent.qqmusic.activity.PortMVPlayerActivity,com.tencent.qqmusic.activity.ShareFeedActivity,com.tencent.qqmusic.activity.baseactivity.StartConfigActivity,com.tencent.qqmusic.activity.EditFolderDetailActivity,com.tencent.qqmusic.fragment.folderalbum.diyfolder.EditFolderTemplateActivity,com.tencent.qqmusic.activity.EditFolderCoverActivity,com.tencent.qqmusic.fragment.folderalbum.diyfolder.EditFolderDynamicBgActivity,com.tencent.qqmusic.fragment.folderalbum.diyfolder.EditFolderDynamicHeadActivity,com.tencent.picker.activity.PictureSelectorActivity,com.tencent.qqmusic.activity.VideoCommentDialogActivity,com.tencent.qqmusic.activity.WebViewActivity,com.tencent.qqmusic.fragment.mv.resolution.MvResolutionActionSheet,com.tencent.qqmusic.activity.DanmuCommentActivity,com.tencent.qqmusic.activity.SharePortVideoActivity,com.tencent.qqmusic.activity.PostMomentActivity,com.tencent.qqmusic.activity.FragmentActivityWithBottomAnim,com.tencent.qqmusic.activity.LoginSecureVerificationWebViewActivity,com.tencent.qqmusic.business.privacypolicy.litemode.PrivacyBaseModeActivity,com.tencent.qqmusic.share.sharedialog.ShareScreenShotDialogActivity"
+    transitionRules="com.tencent.qqmusic.activity.AppStarterActivity,com.tencent.qqmusic.activity.baseactivity.StartUpPrivacyPolicyActivity,com.tencent.qqmusic.activity.welcome.WelcomeActivity,com.tencent.qqmusic.activity.LoginActivity,com.tencent.qqmusic.activity.PortMVPlayerActivity,com.tencent.qqmusic.activity.ShareFeedActivity,com.tencent.qqmusic.activity.baseactivity.StartConfigActivity,com.tencent.qqmusic.activity.baseactivity.StartConfigActivity,com.tencent.qqmusic.activity.EditFolderDetailActivity,com.tencent.qqmusic.fragment.folderalbum.diyfolder.EditFolderTemplateActivity,com.tencent.qqmusic.activity.EditFolderCoverActivity,com.tencent.qqmusic.fragment.folderalbum.diyfolder.EditFolderDynamicBgActivity,com.tencent.qqmusic.fragment.folderalbum.diyfolder.EditFolderDynamicHeadActivity,com.tencent.picker.activity.PictureSelectorActivity,com.tencent.qqmusic.activity.VideoCommentDialogActivity,com.tencent.qqmusic.activity.WebViewActivity,com.tencent.qqmusic.fragment.mv.resolution.MvResolutionActionSheet,com.tencent.qqmusic.activity.DanmuCommentActivity,com.tencent.qqmusic.activity.SharePortVideoActivity,com.tencent.qqmusic.activity.PostMomentActivity,com.tencent.qqmusic.activity.FragmentActivityWithBottomAnim,com.tencent.qqmusic.activity.LoginSecureVerificationWebViewActivity,com.tencent.qqmusic.business.privacypolicy.litemode.PrivacyBaseModeActivity,com.tme.mlive.framework.ui.LivePagerActivity,com.tencent.qqmusic.share.sharedialog.ShareScreenShotDialogActivity"
   />
   <package
     name="cmccwm.mobilemusic"
@@ -45,7 +39,7 @@
   <package
     name="com.tencent.news"
     defaultSettings="true"
-    transitionRules="com.tencent.news.startup.InitAppActivity, com.tencent.news.ui.visitmode.VisitModeNewsDetailActivity,com.tencent.news.activity.SplashActivity,com.tencent.news.visitor.home.VisitorModeHomeActivity"
+    transitionRules="com.tencent.news.startup.InitAppActivity,com.tencent.news.ui.visitmode.VisitModeNewsDetailActivity,com.tencent.news.activity.SplashActivity,com.tencent.news.visitor.home.VisitorModeHomeActivity"
   />
   <package
     name="com.qiyi.video"
@@ -59,11 +53,44 @@
   <package
     name="tv.danmaku.bili"
     defaultSettings="true"
-    activityRule="BiliShareDelegateActivity,QQAssistActivity,AssistActivity,ArchiveTempActivity"
-    splitPairRule="MainActivityV2:*"
-    flags="reusePreContainer:TeenagersModeDialogActivity"
-    transitionRules="SmsLoginDialogActivityV2,TeenagersModeDialogActivity,AnswerDialogTransferActivity,BlinkModResourceLoadingActivity,BlinkRoomActivityV2,SADispatcherActivity,GameContainerActivity0"
-    disableSensor="true"
+    splitRatio="0.4"
+    isShowDivider="true"
+    forceKillWhenSwitch="true"
+    supportFullSize="true"
+    placeholder="tv.danmaku.bili.MainActivityV2:com.bilibili.search.main.BiliMainSearchActivity"
+    splitPairRule="tv.danmaku.bili.MainActivityV2:*,com.bilibili.search.main.BiliMainSearchActivity:*,com.bilibili.bplus.followinglist.quick.consume.QuickConsumeActivity:*,tv.danmaku.bili.ui.videodownload.VideoDownloadListActivity:*,com.bilibili.lib.ui.GeneralActivity:*,tv.danmaku.bili.ui.favorite.FavoriteBoxActivity:*,tv.danmaku.bili.ui.main2.WatchLaterActivity:*,com.bilibili.lib.ui.GeneralActivity:*,com.bilibili.app.preferences.BiliPreferencesActivity:*,com.bilibili.app.authorspace.ui.AuthorSpaceActivity:*,com.bilibili.search2.main.BiliMainSearchActivity:*"
+    activityRule="com.bilibili.column.ui.detail.image.ColumnImageViewerActivity,com.bilibili.studio.centerplus.ui.CenterPlusMainActivity,com.bilibili.lib.imageviewer.MediaViewerActivity,com.bilibili.socialize.share.core.ui.BiliShareDelegateActivity,com.bilibili.socialize.share.core.ui.QQAssistActivity,com.tencent.connect.common.AssistActivity,com.bilibili.upper.module.archive.activity.ArchiveTempActivity"
+    transitionRules="tv.danmaku.bili.sms.SmsLoginDialogActivityV2,com.bilibili.teenagersmode.ui.TeenagersModeDialogActivity,tv.danmaku.bili.ui.answer.AnswerDialogTransferActivity,com.bilibili.bilibililive.ui.room.modresource.BlinkModResourceLoadingActivity,com.bilibili.bilibililive.ui.room.BlinkRoomActivityV2,com.bilibili.lib.fasthybrid.blrouter.SADispatcherActivity,com.bilibili.lib.fasthybrid.container.GameContainerActivity0"
+    flags="reusePreContainer:com.bilibili.bplus.followinglist.page.browser.ui.LightBrowserActivityV2"
+    forcePortraitActivity="tv.danmaku.bili/com.bilibili.app.preferences.storage.BiliStorageManagerActivity"
+  />
+  <package
+    name="com.bilibili.app.blue"
+    defaultSettings="true"
+    forceKillWhenSwitch="true"
+    splitRatio="0.4"
+    isShowDivider="true"
+    supportFullSize="true"
+    placeholder="tv.danmaku.bili.MainActivityV2:com.bilibili.search.main.BiliMainSearchActivity"
+    splitPairRule="tv.danmaku.bili.MainActivityV2:*,com.bilibili.search.main.BiliMainSearchActivity:*,com.bilibili.bplus.followinglist.quick.consume.QuickConsumeActivity:*,tv.danmaku.bili.ui.videodownload.VideoDownloadListActivity:*,com.bilibili.lib.ui.GeneralActivity:*,tv.danmaku.bili.ui.favorite.FavoriteBoxActivity:*,tv.danmaku.bili.ui.main2.WatchLaterActivity:*,com.bilibili.lib.ui.GeneralActivity:*,com.bilibili.app.preferences.BiliPreferencesActivity:*,com.bilibili.app.authorspace.ui.AuthorSpaceActivity:*,com.bilibili.search2.main.BiliMainSearchActivity:*"
+    activityRule="com.bilibili.column.ui.detail.image.ColumnImageViewerActivity,com.bilibili.studio.centerplus.ui.CenterPlusMainActivity,com.bilibili.lib.imageviewer.MediaViewerActivity,com.bilibili.socialize.share.core.ui.BiliShareDelegateActivity,com.bilibili.socialize.share.core.ui.QQAssistActivity,com.tencent.connect.common.AssistActivity,com.bilibili.upper.module.archive.activity.ArchiveTempActivity"
+    transitionRules="tv.danmaku.bili.sms.SmsLoginDialogActivityV2,com.bilibili.teenagersmode.ui.TeenagersModeDialogActivity,tv.danmaku.bili.ui.answer.AnswerDialogTransferActivity,com.bilibili.bilibililive.ui.room.modresource.BlinkModResourceLoadingActivity,com.bilibili.bilibililive.ui.room.BlinkRoomActivityV2,com.bilibili.lib.fasthybrid.blrouter.SADispatcherActivity,com.bilibili.lib.fasthybrid.container.GameContainerActivity0"
+    flags="reusePreContainer:com.bilibili.bplus.followinglist.page.browser.ui.LightBrowserActivityV2"
+    forcePortraitActivity="com.bilibili.app.blue/com.bilibili.app.preferences.storage.BiliStorageManagerActivity"
+  />
+  <package
+    name="com.bilibili.app.in"
+    defaultSettings="true"
+    isShowDivider="true"
+    forceKillWhenSwitch="true"
+    supportFullSize="true"
+    splitRatio="0.4"
+    placeholder="tv.danmaku.bili.MainActivityV2:com.bilibili.search.main.BiliMainSearchActivity"
+    splitPairRule="tv.danmaku.bili.MainActivityV2:*,com.bilibili.search.main.BiliMainSearchActivity:*,com.bilibili.bplus.followinglist.quick.consume.QuickConsumeActivity:*,tv.danmaku.bili.ui.videodownload.VideoDownloadListActivity:*,com.bilibili.lib.ui.GeneralActivity:*,tv.danmaku.bili.ui.favorite.FavoriteBoxActivity:*,tv.danmaku.bili.ui.main2.WatchLaterActivity:*,com.bilibili.lib.ui.GeneralActivity:*,com.bilibili.app.preferences.BiliPreferencesActivity:*,com.bilibili.app.authorspace.ui.AuthorSpaceActivity:*,com.bilibili.search2.main.BiliMainSearchActivity:*"
+    activityRule="com.bilibili.column.ui.detail.image.ColumnImageViewerActivity,com.bilibili.studio.centerplus.ui.CenterPlusMainActivity,com.bilibili.lib.imageviewer.MediaViewerActivity,com.bilibili.socialize.share.core.ui.BiliShareDelegateActivity,com.bilibili.socialize.share.core.ui.QQAssistActivity,com.tencent.connect.common.AssistActivity,com.bilibili.upper.module.archive.activity.ArchiveTempActivity,com.bilibili.video.story.StoryVideoActivity,com.bilibili.video.story.StoryTransparentActivity"
+    transitionRules="com.bilibili.lib.imageviewer.MediaViewerActivity,tv.danmaku.bili.sms.SmsLoginDialogActivityV2,com.bilibili.teenagersmode.ui.TeenagersModeDialogActivity,tv.danmaku.bili.ui.answer.AnswerDialogTransferActivity,com.bilibili.bilibililive.ui.room.modresource.BlinkModResourceLoadingActivity,com.bilibili.bilibililive.ui.room.BlinkRoomActivityV2,com.bilibili.lib.fasthybrid.blrouter.SADispatcherActivity,com.bilibili.lib.fasthybrid.container.GameContainerActivity0"
+    flags="reusePreContainer:com.bilibili.bplus.followinglist.page.browser.ui.LightBrowserActivityV2;"
+    forcePortraitActivity="com.bilibili.app.blue/com.bilibili.app.preferences.storage.BiliStorageManagerActivity"
   />
   <package
     name="com.cmcc.cmvideo"
@@ -131,22 +158,32 @@
     activityRule="com.alipay.android.phone.wallet.snscontenteditor.ui.activity.BaseHalfContentEditor"
     flags="ignoreActivityBelowWhenJudgeMiddle:com.ali.user.mobile.loginupgrade.activity.GuideActivity"
   />
+  <!-- <package name="com.netease.cloudmusic"
+  defaultSettings="true"
+  skipSelfAdaptive="true"
+  flags="reusePreContainer:com.netease.cloudmusic.dsl.activity.DslLayoutProducePicActivity,com.netease.cloudmusic.share.framework.ShareTransferActivity,com.netease.cloudmusic.previewlive.texture.PreDelegateActivity,com.netease.play.livepage.LiveViewerActivity"
+  activityRule="com.netease.cloudmusic.module.login.LoginActivity"
+  autoUiRule="com.netease.cloudmusic.activity.MainActivity:-1;com.netease.cloudmusic.activity.IconChangeDefaultAlias:-1;com.netease.cloudmusic.module.login.LoginActivity:-1"
+  splitPairRule="com.netease.cloudmusic.activity.MainActivity:*,com.netease.cloudmusic.activity.IconChangeDefaultAlias:*"
+  relaunchRule="ProjectionDisplaySwitch:*:false:com.netease.cloudmusic/.module.dailyrecomm.DailyRecommendMusicActivity"
+  transitionRules="com.netease.cloudmusic.activity.RedirectActivity,com.netease.cloudmusic.activity.LoadingActivity,com.netease.cloudmusic.activity.LockScreenActivity" /> -->
   <package
     name="com.xunmeng.pinduoduo"
+    supportFullSize="true"
     defaultSettings="true"
-    source="2"
-    activityRule="com.xunmeng.pinduoduo.login.LoginActivity,com.xunmeng.pinduoduo.activity.NewPageFoldActivity"
+    activityRule="com.xunmeng.pinduoduo.login.LoginActivity,com.xunmeng.pinduoduo.activity.NewPageFoldActivity,com.xunmeng.pinduoduo.ui.activity.HomeActivity,com.xunmeng.pinduoduo.ui.activity.MainFrameActivity"
     clearTop="false"
+    relaunch="false"
+    defaultSettings="true"
     isShowDivider="true"
+    splitRatio="0.3"
     autoUiRule="com.xunmeng.pinduoduo.ui.activity.HomeActivity:-1"
-    splitPairRule="com.xunmeng.pinduoduo.activity.NewPageFoldActivity:*,com.xunmeng.pinduoduo.ui.activity.HomeActivity:*"
-    transitionRules="com.xunmeng.pinduoduo.activity.NewPageMaskActivity,com.xunmeng.pinduoduo.login.PhoneLoginActivity,com.xunmeng.pinduoduo.ui.activity.MainFrameActivity,com.xunmeng.pinduoduo.permission.request.PermissionRequestActivityV2"
-    relaunchRule="ProjectionDisplaySwitch:*:false"
+    splitPairRule="com.xunmeng.pinduoduo.activity.NewPageFoldActivity:*,com.xunmeng.pinduoduo.ui.activity.HomeActivity:*,com.xunmeng.pinduoduo.ui.activity.MainFrameActivity:*"
+    transitionRules="com.xunmeng.pinduoduo.activity.NewPageMaskActivity,com.xunmeng.pinduoduo.login.PhoneLoginActivity,com.xunmeng.pinduoduo.ui.activity.MainFrameActivity,com.xunmeng.pinduoduo.permission.request.PermissionRequestActivityV2,com.xunmeng.pinduoduo.ui.activity.HomeActivity,com.xunmeng.pinduoduo.login.LoginActivity"
   />
   <package
     name="com.dragon.read"
     defaultSettings="true"
-    source="2"
     isShowDivider="true"
     supportFullSize="true"
     disableCameraPreview="com.dragon.read/com.ss.android.qrscan.barcodescanner.DragonCaptureActivity"
@@ -747,7 +784,7 @@
     forcePortraitActivity="com.ss.android.ugc.live/com.ss.android.ugc.aweme.qrcode.view.QRCodeScanActivity,com.ss.android.ugc.live/com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity"
     transitionRules="com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity,com.ss.android.ugc.aweme.account.business.login.DYLoginActivity"
   />
-  <package
+  <!-- <package
     name="com.taobao.taobao"
     defaultSettings="true"
     source="2"
@@ -755,7 +792,7 @@
     placeholder="com.taobao.tao.welcome.Welcome:com.taobao.tao.MagicWindowActivity,com.taobao.tao.TBMainActivity:com.taobao.tao.MagicWindowActivity"
     transitionRules="com.taobao.taolivehome.TaoLiveHomepageActivity,com.taobao.tao.TBMainActivity,com.taobao.android.shop.activity.ShopUrlRouterActivity,com.taobao.linkmanager.afc.TbFlowInActivity,com.taobao.cun.bundle.community.ui.activity.CuntaoRouterActivity,com.taobao.tao.rushpromotion.luaview.activity.LuaOrH5RouterActivity,com.taobao.browser.router.FromH5RouterActivity,com.taobao.android.shop.activity.ShopUrlRouterActivity,com.taobao.taolive.room.TaoLiveRouterActivity"
     relaunchRule="ProjectionDisplaySwitch:*:false"
-  />
+  /> -->
   <package
     name="com.tencent.qqlive"
     defaultSettings="true"

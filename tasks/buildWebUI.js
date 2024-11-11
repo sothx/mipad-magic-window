@@ -13,10 +13,12 @@ module.exports = async function buildWebUI(cb) {
 
     try {
         const pathNotEmpty = fs.readdirSync(path)
-        if (pathNotEmpty) {
+        if (pathNotEmpty && !options.is_projection) {
             return src(`${path}/**`, { dot: true }) // 指定路径
             .pipe(dest('dist/webroot/'))
             .on('end', cb);
+        } else {
+            cb()
         }
     } catch (err) {
         cb()
