@@ -3,10 +3,10 @@ const minimist = require("minimist");
 // 配置命令行可以接受的参数以及默认值
 let knownOptions = {
   string: ['use_platform','use_ratio','use_mode','use_compatibility','netdisk_desc','module_update_version','last_module_update_version','module_version_interface'],
-  boolean: ['use_ext'],
+  boolean: ['use_ext','is_projection'],
   number: ['mi_os_version'],
   default: {
-    use_platform: "pad", // 平板则为pad，大折叠屏则为fold，小折叠屏为flip
+    use_platform: "pad", // 平板则为pad，大折叠屏则为fold，小折叠屏为flip，手机则为phone
     use_ext: false,// true为混入扩展配置，false则不混入扩展配置
     use_ratio: '16:10', // 模块适配比例，6pro及以下是16:10, 6s pro以上是3:2
     use_mode: 'activityEmbedding', // 使用的平行视界模式，支持安卓11时代的magicWindow和安装12L起的activityEmbedding
@@ -16,7 +16,8 @@ let knownOptions = {
     last_module_update_version: '', // 上个需要维护的升级服务版本
     module_update_version: 'V6', // 模块升级服务版本
     module_version_interface: 'standard', // 模块版本，standard 正式版，beta 测试版
-    mi_os_version: 1 // Hyper OS的版本号
+    mi_os_version: 1, // Hyper OS的版本号
+    is_projection: false, // true为镜像配置，false则默认配置
   },
   alias: {
     p: 'use_platform',

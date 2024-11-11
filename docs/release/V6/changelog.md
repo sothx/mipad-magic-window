@@ -12,7 +12,9 @@
 
 [应用横屏布局]
 
-- 针对Hyper OS 2.0修复企业微信无法正常横屏的问题
+- 主体框架针对妙享桌面流转的应用适配做部分代码结构优化
+
+- 优化奥维互动地图的适配规则为强制横屏
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
