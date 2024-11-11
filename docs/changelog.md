@@ -10,11 +10,9 @@
 
 链接: [https://caiyun.139.com/m/i?135CmUWDgnbAM](https://caiyun.139.com/m/i?135CmUWDgnbAM)
 
-[应用横屏布局]
+[模块主体]
 
-- 主体框架针对妙享桌面流转的应用适配做部分代码结构优化
-
-- 优化奥维互动地图的适配规则为强制横屏
+- 新增小米手机妙享桌面版（仅Hyper OS 2.0 +），优化少部分应用在妙享桌面下流转到平板后的体验。
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)

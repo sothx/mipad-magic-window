@@ -55,7 +55,6 @@
     defaultSettings="true"
     splitRatio="0.4"
     isShowDivider="true"
-    forceKillWhenSwitch="true"
     supportFullSize="true"
     placeholder="tv.danmaku.bili.MainActivityV2:com.bilibili.search.main.BiliMainSearchActivity"
     splitPairRule="tv.danmaku.bili.MainActivityV2:*,com.bilibili.search.main.BiliMainSearchActivity:*,com.bilibili.bplus.followinglist.quick.consume.QuickConsumeActivity:*,tv.danmaku.bili.ui.videodownload.VideoDownloadListActivity:*,com.bilibili.lib.ui.GeneralActivity:*,tv.danmaku.bili.ui.favorite.FavoriteBoxActivity:*,tv.danmaku.bili.ui.main2.WatchLaterActivity:*,com.bilibili.lib.ui.GeneralActivity:*,com.bilibili.app.preferences.BiliPreferencesActivity:*,com.bilibili.app.authorspace.ui.AuthorSpaceActivity:*,com.bilibili.search2.main.BiliMainSearchActivity:*"
@@ -67,7 +66,6 @@
   <package
     name="com.bilibili.app.blue"
     defaultSettings="true"
-    forceKillWhenSwitch="true"
     splitRatio="0.4"
     isShowDivider="true"
     supportFullSize="true"
@@ -82,7 +80,6 @@
     name="com.bilibili.app.in"
     defaultSettings="true"
     isShowDivider="true"
-    forceKillWhenSwitch="true"
     supportFullSize="true"
     splitRatio="0.4"
     placeholder="tv.danmaku.bili.MainActivityV2:com.bilibili.search.main.BiliMainSearchActivity"
@@ -158,15 +155,15 @@
     activityRule="com.alipay.android.phone.wallet.snscontenteditor.ui.activity.BaseHalfContentEditor"
     flags="ignoreActivityBelowWhenJudgeMiddle:com.ali.user.mobile.loginupgrade.activity.GuideActivity"
   />
-  <!-- <package name="com.netease.cloudmusic"
+  <package name="com.netease.cloudmusic"
   defaultSettings="true"
   skipSelfAdaptive="true"
   flags="reusePreContainer:com.netease.cloudmusic.dsl.activity.DslLayoutProducePicActivity,com.netease.cloudmusic.share.framework.ShareTransferActivity,com.netease.cloudmusic.previewlive.texture.PreDelegateActivity,com.netease.play.livepage.LiveViewerActivity"
-  activityRule="com.netease.cloudmusic.module.login.LoginActivity"
+  activityRule="com.netease.cloudmusic.module.login.LoginActivity,com.netease.cloudmusic.activity.MainActivity,com.netease.cloudmusic.activity.PlayerActivity"
   autoUiRule="com.netease.cloudmusic.activity.MainActivity:-1;com.netease.cloudmusic.activity.IconChangeDefaultAlias:-1;com.netease.cloudmusic.module.login.LoginActivity:-1"
-  splitPairRule="com.netease.cloudmusic.activity.MainActivity:*,com.netease.cloudmusic.activity.IconChangeDefaultAlias:*"
+  splitPairRule="com.netease.cloudmusic.activity.MainActivity:*,com.netease.cloudmusic.activity.IconChangeDefaultAlias:*,com.netease.cloudmusic.activity.PlayerActivity:*"
   relaunchRule="ProjectionDisplaySwitch:*:false:com.netease.cloudmusic/.module.dailyrecomm.DailyRecommendMusicActivity"
-  transitionRules="com.netease.cloudmusic.activity.RedirectActivity,com.netease.cloudmusic.activity.LoadingActivity,com.netease.cloudmusic.activity.LockScreenActivity" /> -->
+  transitionRules="com.netease.cloudmusic.activity.RedirectActivity,com.netease.cloudmusic.activity.LoadingActivity,com.netease.cloudmusic.activity.LockScreenActivity,com.netease.cloudmusic.activity.MainActivity,com.netease.cloudmusic.activity.PlayerActivity" />
   <package
     name="com.xunmeng.pinduoduo"
     supportFullSize="true"
@@ -784,7 +781,7 @@
     forcePortraitActivity="com.ss.android.ugc.live/com.ss.android.ugc.aweme.qrcode.view.QRCodeScanActivity,com.ss.android.ugc.live/com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity"
     transitionRules="com.ss.android.ugc.aweme.shortvideo.ui.VideoRecordNewActivity,com.ss.android.ugc.aweme.account.business.login.DYLoginActivity"
   />
-  <!-- <package
+  <package
     name="com.taobao.taobao"
     defaultSettings="true"
     source="2"
@@ -792,7 +789,7 @@
     placeholder="com.taobao.tao.welcome.Welcome:com.taobao.tao.MagicWindowActivity,com.taobao.tao.TBMainActivity:com.taobao.tao.MagicWindowActivity"
     transitionRules="com.taobao.taolivehome.TaoLiveHomepageActivity,com.taobao.tao.TBMainActivity,com.taobao.android.shop.activity.ShopUrlRouterActivity,com.taobao.linkmanager.afc.TbFlowInActivity,com.taobao.cun.bundle.community.ui.activity.CuntaoRouterActivity,com.taobao.tao.rushpromotion.luaview.activity.LuaOrH5RouterActivity,com.taobao.browser.router.FromH5RouterActivity,com.taobao.android.shop.activity.ShopUrlRouterActivity,com.taobao.taolive.room.TaoLiveRouterActivity"
     relaunchRule="ProjectionDisplaySwitch:*:false"
-  /> -->
+  />
   <package
     name="com.tencent.qqlive"
     defaultSettings="true"
