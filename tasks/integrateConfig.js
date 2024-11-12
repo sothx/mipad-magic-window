@@ -269,9 +269,6 @@ function generateEmbeddedSettingConfig(cb) {
     let ratio_fullScreenEnable = "false";
 
     // Check if fixedPkg exists and has necessary attributes
-    if (fixedPkg && fixedPkg.getAttribute("disable") === "false"){
-      return;
-    }
 
     fixedOrientationEnable = "true";
 
@@ -291,6 +288,12 @@ function generateEmbeddedSettingConfig(cb) {
     // Check if embeddedPkg exists and handle the embeddedRule enable
     if (embeddedPkg && !embeddedPkg.getAttribute("fullRule") && (!defaultSettings || defaultSettings === 'ae')) {
       embeddedEnable = "true";
+      ratio_fullScreenEnable = "false";
+      fixedOrientationEnable = "false";
+    }
+
+    if (fixedPkg && fixedPkg.getAttribute("disable") === "false"){
+      embeddedEnable = "false";
       ratio_fullScreenEnable = "false";
       fixedOrientationEnable = "false";
     }
