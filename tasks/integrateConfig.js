@@ -280,6 +280,10 @@ function generateEmbeddedSettingConfig(cb) {
     const defaultSettings = fixedPkg ? fixedPkg.getAttribute("defaultSettings") : null;
     const fullRule = embeddedPkg ? embeddedPkg.getAttribute("fullRule") : null;
 
+    if (fixedPkg && fixedPkg.getAttribute("disable") === "false"){
+      return;
+    }
+
 
     if (
       supportModes &&
@@ -289,7 +293,7 @@ function generateEmbeddedSettingConfig(cb) {
       ratio_fullScreenEnable = "true";
       fixedOrientationEnable = "false";
       if (fullRule) {
-        fullScreenEnable = "true";
+        fullScreenEnable = "false";
       }
     }
 
@@ -301,26 +305,29 @@ function generateEmbeddedSettingConfig(cb) {
       fullScreenEnable = "false";
     }
 
-    if (fixedPkg && fixedPkg.getAttribute("disable") === "false"){
-      embeddedEnable = "false";
-      ratio_fullScreenEnable = "false";
-      fixedOrientationEnable = "false";
-      fullScreenEnable = "false";
-    }
-
     const setting = settingDoc.createElement("setting");
     setting.setAttribute("name", pkgName);
-    setting.setAttribute("embeddedEnable", embeddedEnable);
-    setting.setAttribute("fixedOrientationEnable", fixedOrientationEnable);
-    setting.setAttribute("ratio_fullScreenEnable", ratio_fullScreenEnable);
-    setting.setAttribute("fullScreenEnable", fullScreenEnable);
+    if (embeddedPkg) {
+      setting.setAttribute("embeddedEnable", embeddedEnable);
+    }
+    if (fixedPkg) {
+      setting.setAttribute("fixedOrientationEnable", fixedOrientationEnable);
+      setting.setAttribute("ratio_fullScreenEnable", ratio_fullScreenEnable);
+      if (fullRule) {
+        setting.setAttribute("fullScreenEnable", fullScreenEnable);
+      }
+    }
     settingRoot.appendChild(setting);
     
   });
 
+
   const xmlOutput = new XMLSerializer().serializeToString(settingDoc);
 
-  const formattedXml = pd.xml(xmlOutput);  // 使用 pretty-data 格式化 XML
+  // Add the XML declaration manually
+  const xmlWithDeclaration = `<?xml version='1.0' encoding='utf-8' standalone='yes' ?>\n` + xmlOutput;
+
+  const formattedXml = pd.xml(xmlWithDeclaration);  // 使用 pretty-data 格式化 XML
   fs.writeFileSync(`${commonDist}/source/embedded_setting_config.xml`, formattedXml);
 
   cb()
