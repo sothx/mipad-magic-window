@@ -223,6 +223,9 @@ function parseXml(filePath) {
 }
 
 function generateEmbeddedSettingConfig(cb) {
+  if (!buildActionIsActivityEmbedding) {
+    return;
+  }
   const embeddedRulesList = parseXml('temp/embedded_rules_list.xml');
   const fixedOrientationList = parseXml('temp/fixed_orientation_list.xml');
   const settingDoc = new DOMParser().parseFromString(
@@ -267,6 +270,7 @@ function generateEmbeddedSettingConfig(cb) {
     let embeddedEnable = "false";
     let fixedOrientationEnable = "false";
     let ratio_fullScreenEnable = "false";
+    let fullScreenEnable = "false";
 
     // Check if fixedPkg exists and has necessary attributes
 
@@ -274,6 +278,7 @@ function generateEmbeddedSettingConfig(cb) {
 
     const supportModes = fixedPkg ? fixedPkg.getAttribute("supportModes")?.split(',') : null;
     const defaultSettings = fixedPkg ? fixedPkg.getAttribute("defaultSettings") : null;
+    const fullRule = embeddedPkg ? embeddedPkg.getAttribute("fullRule") : null;
 
 
     if (
@@ -283,6 +288,9 @@ function generateEmbeddedSettingConfig(cb) {
     ) {
       ratio_fullScreenEnable = "true";
       fixedOrientationEnable = "false";
+      if (fullRule) {
+        fullScreenEnable = "true";
+      }
     }
 
     // Check if embeddedPkg exists and handle the embeddedRule enable
@@ -290,12 +298,14 @@ function generateEmbeddedSettingConfig(cb) {
       embeddedEnable = "true";
       ratio_fullScreenEnable = "false";
       fixedOrientationEnable = "false";
+      fullScreenEnable = "false";
     }
 
     if (fixedPkg && fixedPkg.getAttribute("disable") === "false"){
       embeddedEnable = "false";
       ratio_fullScreenEnable = "false";
       fixedOrientationEnable = "false";
+      fullScreenEnable = "false";
     }
 
     const setting = settingDoc.createElement("setting");
@@ -303,6 +313,7 @@ function generateEmbeddedSettingConfig(cb) {
     setting.setAttribute("embeddedEnable", embeddedEnable);
     setting.setAttribute("fixedOrientationEnable", fixedOrientationEnable);
     setting.setAttribute("ratio_fullScreenEnable", ratio_fullScreenEnable);
+    setting.setAttribute("fullScreenEnable", fullScreenEnable);
     settingRoot.appendChild(setting);
     
   });
@@ -310,8 +321,7 @@ function generateEmbeddedSettingConfig(cb) {
   const xmlOutput = new XMLSerializer().serializeToString(settingDoc);
 
   const formattedXml = pd.xml(xmlOutput);  // 使用 pretty-data 格式化 XML
-
-  fs.writeFileSync('temp/embedded_setting_config.xml', formattedXml);
+  fs.writeFileSync(`${commonDist}/source/embedded_setting_config.xml`, formattedXml);
 
   cb()
   
@@ -333,5 +343,5 @@ module.exports = series(
     copyGenericRulesToCommon,
     copyActivityEmbeddingThemeOverlayToCommon
   ),
-  // cleanTemp
+  cleanTemp
 );
