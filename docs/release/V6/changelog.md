@@ -10,9 +10,11 @@
 
 链接: [https://caiyun.139.com/m/i?135CmUWDgnbAM](https://caiyun.139.com/m/i?135CmUWDgnbAM)
 
-[模块主体]
+[Web UI]
 
-- 新增小米手机妙享桌面版（仅Hyper OS 2.0 +），优化少部分应用在妙享桌面下流转到平板后的体验。
+- 优化应用横屏配置的部分初始化逻辑为并发请求，提高请求速度。
+
+- 优化部分UI功能元素的布局
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
