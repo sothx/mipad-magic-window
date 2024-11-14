@@ -4,7 +4,6 @@ MODDIR=${0%/*}
 MODULE_CUSTOM_CONFIG_PATH="/data/adb/MIUI_MagicWindow+"
 . "$MODDIR"/util_functions.sh
 api_level_arch_detect
-mi_os_version_code="$(getprop ro.mi.os.version.code)"
 
 if [[ ! -d "$MODDIR/common/temp" ]]; then
   /bin/mkdir -p "$MODDIR/common/temp"
