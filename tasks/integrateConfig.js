@@ -224,9 +224,15 @@ function parseXml(filePath) {
 
 function generateEmbeddedSettingConfig(cb) {
   if (!buildActionIsActivityEmbedding) {
+    cb()
     return;
   }
-  if (!options.mi_os_version) {
+  if (options.mi_os_version <= 2) {
+    cb()
+    return;
+  }
+  if (options.use_platform !== 'pad') {
+    cb()
     return;
   }
   const embeddedRulesList = parseXml('temp/embedded_rules_list.xml');
@@ -296,7 +302,7 @@ function generateEmbeddedSettingConfig(cb) {
       ratio_fullScreenEnable = "true";
       fixedOrientationEnable = "false";
       if (fullRule) {
-        fullScreenEnable = "false";
+        fullScreenEnable = "true";
       }
     }
 

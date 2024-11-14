@@ -4,6 +4,7 @@ const { includes } = require('lodash');
 
 const installTemplateMap = {
   generic: 'install_module_template/generic/**',
+  os2_pad_generic: 'install_module_template/os2_pad_generic/**',
   ext: 'install_module_template/ext/**',
   projection: 'install_module_template/projection/**'
 }
@@ -14,6 +15,9 @@ const getInstallTemplateType = function () {
   }
   if (options.is_projection) {
     return 'projection'
+  }
+  if (options.mi_os_version >= 2 && options.use_platform === 'pad') {
+    return 'os2_pad_generic'
   }
   return 'generic'
 }
