@@ -227,7 +227,7 @@ function generateEmbeddedSettingConfig(cb) {
     cb()
     return;
   }
-  if (options.mi_os_version <= 2) {
+  if (options.mi_os_version < 2) {
     cb()
     return;
   }
