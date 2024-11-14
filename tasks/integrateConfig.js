@@ -226,6 +226,9 @@ function generateEmbeddedSettingConfig(cb) {
   if (!buildActionIsActivityEmbedding) {
     return;
   }
+  if (!options.mi_os_version) {
+    return;
+  }
   const embeddedRulesList = parseXml('temp/embedded_rules_list.xml');
   const fixedOrientationList = parseXml('temp/fixed_orientation_list.xml');
   const settingDoc = new DOMParser().parseFromString(
