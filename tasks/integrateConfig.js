@@ -302,7 +302,7 @@ function generateEmbeddedSettingConfig(cb) {
       ratio_fullScreenEnable = "true";
       fixedOrientationEnable = "false";
       if (fullRule) {
-        fullScreenEnable = "true";
+        fullScreenEnable = "false";
       }
     }
 
@@ -336,7 +336,7 @@ function generateEmbeddedSettingConfig(cb) {
   // Add the XML declaration manually
   const xmlWithDeclaration = `<?xml version='1.0' encoding='utf-8' standalone='yes' ?>\n` + xmlOutput;
 
-  const formattedXml = pd.xml(xmlWithDeclaration);  // 使用 pretty-data 格式化 XML
+  const formattedXml = pd.xml(xmlOutput);  // 使用 pretty-data 格式化 XML
   fs.writeFileSync(`${commonDist}/source/embedded_setting_config.xml`, formattedXml);
 
   cb()
