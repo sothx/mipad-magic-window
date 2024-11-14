@@ -33,6 +33,10 @@ fi
 if [ -f /data/system/cloudFeature_autoui_list.xml ]; then
   chattr -i /data/system/cloudFeature_autoui_list.xml
 fi
+# 检查 /data/system/users/0/embedded_setting_config.xml 是否存在
+if [ -f /data/system/users/0/embedded_setting_config.xml ]; then
+  chattr -i /data/system/users/0/embedded_setting_config.xml
+fi
 # 支持平行窗口自定义配置文件
 if [[ -f "$CUSTOM_CONFIG_EMBEDDED_RULES_LIST" ]] && ([ -z "$is_patch_mode" ] || [ "$is_patch_mode" = "false" ]); then
   cp -f "$MODDIR"/common/source/embedded_rules_list.xml "$MODDIR"/common/embedded_rules_list.xml
