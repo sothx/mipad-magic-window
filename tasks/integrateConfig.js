@@ -310,15 +310,15 @@ function generateEmbeddedSettingConfig(cb) {
 
     const setting = settingDoc.createElement("setting");
     setting.setAttribute("name", pkgName);
-    if (embeddedPkg) {
+    if (embeddedPkg && !fullRule) {
       setting.setAttribute("embeddedEnable", embeddedEnable);
     }
     if (fixedPkg) {
       setting.setAttribute("fixedOrientationEnable", fixedOrientationEnable);
-      setting.setAttribute("ratio_fullScreenEnable", ratio_fullScreenEnable);
       if (fullRule) {
         setting.setAttribute("fullScreenEnable", fullScreenEnable);
       }
+      setting.setAttribute("ratio_fullScreenEnable", ratio_fullScreenEnable);
     }
     settingRoot.appendChild(setting);
     

@@ -325,13 +325,15 @@ is_need_install_ksu_web_ui=1
 if [[ "$KSU" == "true" || "$APATCH" == "true" ]]; then
   is_need_install_ksu_web_ui=0
 fi
-if [[ $(grep_prop is_need_install_ksu_web_ui "$MODULE_CUSTOM_CONFIG_PATH/config.prop") == "0" ]]; then
+HAS_BEEN_INSTALLED_KsuWebUI_APK=$(pm list packages | grep io.github.a13e300.ksuwebui)
+if [[ $HAS_BEEN_INSTALLED_KsuWebUI_APK == *"package:io.github.a13e300.ksuwebui"* ]]; then
   is_need_install_ksu_web_ui=0
 fi
 if [[ $is_need_install_ksu_web_ui == 1 ]]; then
   ui_print "*********************************************"
   ui_print "- 是否安装KsuWebUI？"
-  ui_print "- [重要提醒]: 安装并赋予Root权限可以可视化管理模块提供的部分功能"
+  ui_print "- [重要提醒]: 安装并赋予Root权限可以可视化管理模块提供的应用横屏布局配置功能"
+  ui_print "- [重要提醒]: 在Hyper OS 2.0+ 必须安装此应用以便管理模块的应用横屏布局配置！"
   ui_print "  音量+ ：是"
   ui_print "  音量- ：否"
   ui_print "*********************************************"
