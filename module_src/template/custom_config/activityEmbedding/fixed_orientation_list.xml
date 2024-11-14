@@ -1,5 +1,1 @@
 <!--[自定义规则]信箱模式-->
-<!--调整QQ音乐信箱模式下的比例为11:10-->
-<!-- <package name="com.tencent.qqmusic" relaunch="false" supportFullSize="true" ratio="1.1" /> -->
-<!--让X支持强制横屏和居中布局，且默认强制横屏<仅适用于Hyper OS 2.0 +>-->
-<!-- <package name="com.twitter.android" supportModes="full,fo" ratio="1.1" defaultSettings="full" /> -->

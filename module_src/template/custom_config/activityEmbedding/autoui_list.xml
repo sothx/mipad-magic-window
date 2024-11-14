@@ -1,3 +1,1 @@
 <!--[自定义规则]应用布局优化-->
-<!--增加网易云音乐的应用布局优化规则-->
-<!-- <package name="com.netease.cloudmusic" enable="true" activityRule="*:0" optimizeWebView="true" /> -->
