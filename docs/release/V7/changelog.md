@@ -12,9 +12,13 @@
 
 [Web UI]
 
-- 优化应用横屏配置的部分初始化逻辑为并发请求，提高请求速度。
+- Hyper OS For Pad 适配 OS2.0 应用横屏配置可视化管理
 
-- 优化部分UI功能元素的布局
+[应用横屏布局]
+
+- 高考直通车适配为强制横屏
+
+- Forest 专注森林适配为强制横屏
 
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
