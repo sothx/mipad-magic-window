@@ -20,6 +20,8 @@
 
 - Forest 专注森林适配为强制横屏
 
+- 修复斗鱼的默认适配规则为平行窗口
+
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
