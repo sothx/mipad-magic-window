@@ -289,7 +289,7 @@ function generateEmbeddedSettingConfig(cb) {
     const defaultSettings = fixedPkg ? fixedPkg.getAttribute("defaultSettings") : null;
     const fullRule = embeddedPkg ? embeddedPkg.getAttribute("fullRule") : null;
 
-    if (fixedPkg && fixedPkg.getAttribute("disable") === "false"){
+    if (fixedPkg && fixedPkg.getAttribute("disable") === "true"){
       return;
     }
 
