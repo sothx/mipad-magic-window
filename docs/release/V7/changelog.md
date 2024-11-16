@@ -8,13 +8,9 @@
 
 链接: [https://caiyun.139.com/m/i?135CmUWDgnbAM](https://caiyun.139.com/m/i?135CmUWDgnbAM)
 
-[应用横屏布局]
+[Web UI]
 
-- 修复酷我音乐HD非全屏适配的BUG
-
-[应用布局优化]
-
-- 新增酷我音乐HD的全局缩放布局
+- 新增获取已安装应用名称的功能， 感谢@zjw2017 贡献的实现方案
 
 [内测版主要更新]
 
