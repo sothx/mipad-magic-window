@@ -8,17 +8,14 @@
 
 链接: [https://caiyun.139.com/m/i?135CmUWDgnbAM](https://caiyun.139.com/m/i?135CmUWDgnbAM)
 
-[其他]
+[应用横屏布局]
 
-- 修复部分文件换行符变成CRLF造成模块安装错误的问题
+- 同步部分米板7系列最新适配
 
-[Web UI]
+[应用布局优化]
 
-- 新增获取已安装应用名称的功能， 感谢@zjw2017 贡献的实现方案
+- 修复酷我音乐HD的布局缩放没有默认启用的问题
 
-- 优化定制模式下的使用体验
-
-- 统一部分按钮和提示的文案
 
 [内测版主要更新]
 
@@ -27,6 +24,8 @@
 - 适配 Pad OS2.0 应用横屏配置Web UI可视化管理(新功能内测阶段，激活口令请前往酷安动态搜索)
 
 - 优化 Web UI 搜索栏综合性能和搜索体验
+
+- 新增获取已安装应用名称的功能， 感谢@zjw2017 贡献的实现方案
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
