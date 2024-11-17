@@ -302,7 +302,7 @@ function generateEmbeddedSettingConfig(cb) {
       ratio_fullScreenEnable = "true";
       fixedOrientationEnable = "false";
       if (fullRule) {
-        fullScreenEnable = "false";
+        fullScreenEnable = "true";
       }
     }
 
@@ -320,11 +320,15 @@ function generateEmbeddedSettingConfig(cb) {
       setting.setAttribute("embeddedEnable", embeddedEnable);
     }
     if (fixedPkg) {
-      setting.setAttribute("fixedOrientationEnable", fixedOrientationEnable);
-      if (fullRule) {
-        setting.setAttribute("fullScreenEnable", fullScreenEnable);
+      if (supportModes.includes('full')) {
+        if (fullRule) {
+          setting.setAttribute("fullScreenEnable", fullScreenEnable);
+        }
+        setting.setAttribute("ratio_fullScreenEnable", ratio_fullScreenEnable);
       }
-      setting.setAttribute("ratio_fullScreenEnable", ratio_fullScreenEnable);
+      if (!setting.getAttribute('fullScreenEnable')) {
+        setting.setAttribute("fixedOrientationEnable", fixedOrientationEnable);
+      }
     }
     settingRoot.appendChild(setting);
     
