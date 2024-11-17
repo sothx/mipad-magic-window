@@ -8,6 +8,10 @@
 
 链接: [https://caiyun.139.com/m/i?135CmUWDgnbAM](https://caiyun.139.com/m/i?135CmUWDgnbAM)
 
+[其他]
+
+- 修复部分文件换行符变成CRLF造成模块安装错误的问题
+
 [Web UI]
 
 - 新增获取已安装应用名称的功能， 感谢@zjw2017 贡献的实现方案
