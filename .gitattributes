@@ -40,7 +40,7 @@
 pnpm-lock.yaml text eol=lf
 
 # 模块模板文件
-install_module_template/* text eol=lf
+install_module_template/** text eol=lf
 
 # xml配置生成
 module_src/* text eol=lf
