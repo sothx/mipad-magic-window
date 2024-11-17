@@ -8,9 +8,9 @@
 
 链接: [https://caiyun.139.com/m/i?135CmUWDgnbAM](https://caiyun.139.com/m/i?135CmUWDgnbAM)
 
-[应用横屏布局]
+[Web UI]
 
-- 修复小翼管家适配异常的问题
+- 修复新增应用选择全屏实际失效的问题
 
 [内测版主要更新]
 
