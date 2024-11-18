@@ -10,7 +10,7 @@
 
 [Web UI]
 
-- 捕获所有JavaScript出现的错误
+- 低WebView内核升级提示
 
 [内测版主要更新]
 
