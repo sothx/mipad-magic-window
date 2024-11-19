@@ -8,9 +8,15 @@
 
 链接: [https://caiyun.139.com/m/i?135CmUWDgnbAM](https://caiyun.139.com/m/i?135CmUWDgnbAM)
 
+[应用横屏布局]
+
+- 修复OS1专版模块部分自适配应用异常的问题
+
 [Web UI]
 
-- 低WebView内核升级提示
+- 补充sqlite3 util tools
+
+- 完善窗口控制器UI界面
 
 [内测版主要更新]
 

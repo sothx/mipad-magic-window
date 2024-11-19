@@ -43,7 +43,7 @@ pnpm-lock.yaml text eol=lf
 install_module_template/** text eol=lf
 
 # xml配置生成
-module_src/** text eol=lf
+module_src/* text eol=lf
 
 .gitattributes export-ignore
 .gitignore export-ignore
