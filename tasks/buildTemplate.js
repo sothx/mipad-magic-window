@@ -10,9 +10,9 @@ const installTemplateMap = {
 }
 
 const getInstallTemplateType = function () {
-  if (options.use_ext) {
-    return 'ext';
-  }
+  // if (options.use_ext) {
+  //   return 'ext';
+  // }
   if (options.is_projection) {
     return 'projection'
   }

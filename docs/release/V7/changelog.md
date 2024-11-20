@@ -8,15 +8,13 @@
 
 链接: [https://caiyun.139.com/m/i?135CmUWDgnbAM](https://caiyun.139.com/m/i?135CmUWDgnbAM)
 
-[应用横屏布局]
-
-- 修复OS1专版模块部分自适配应用异常的问题
-
 [Web UI]
 
-- 补充sqlite3 util tools
+- 新增窗口控制器管理(内测期间，需要通过激活口令激活该功能)
 
-- 完善窗口控制器UI界面
+- 修复部分情况下A14提交修改报错的问题
+
+- 更新SQLite3函数库
 
 [内测版主要更新]
 
