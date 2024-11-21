@@ -29,3 +29,12 @@ fi
 if [ "$is_amktiao_pen_update" = 'true' ]; then
   echo 1 > /sys/touchpanel/pen_update
 fi
+
+# 通知图标最大数量
+is_enable_show_notification_icon_num=$(grep_prop is_enable_show_notification_icon_num "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+show_notification_icon_num=$(grep_prop show_notification_icon_num "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+
+if [ "$is_enable_status_bar_show_notification_icon" = 'true' ]; then
+  settings put system status_bar_show_notification_icon $show_notification_icon_num
+fi
+
