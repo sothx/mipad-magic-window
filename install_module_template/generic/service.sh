@@ -17,3 +17,15 @@ wait_login
 
 # 准备环境
 mkdir -p $MODDIR/common/temp
+
+# 水龙移植包相关方法
+is_amktiao_pen_enable=$(grep_prop is_amktiao_pen_enable "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+is_amktiao_pen_update=$(grep_prop is_amktiao_pen_update "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+
+if [ "$is_amktiao_pen_enable" = 'true' ]; then
+  echo 1 > /sys/touchpanel/pen_enable
+fi
+
+if [ "$is_amktiao_pen_update" = 'true' ]; then
+  echo 1 > /sys/touchpanel/pen_update
+fi
