@@ -40,7 +40,10 @@
 pnpm-lock.yaml text eol=lf
 
 # 模块模板文件
-install_module_template/** text eol=lf
+install_module_template/ext/META-INF/** text eol=lf
+install_module_template/generic/META-INF/** text eol=lf
+install_module_template/os2_pad_generic/META-INF/** text eol=lf
+install_module_template/projection/META-INF/** text eol=lf
 
 # xml配置生成
 module_src/* text eol=lf
