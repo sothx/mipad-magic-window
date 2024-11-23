@@ -8,9 +8,9 @@
 
 链接: [https://caiyun.139.com/m/i?135CmUWDgnbAM](https://caiyun.139.com/m/i?135CmUWDgnbAM)
 
-[Web UI]
+[模块主体]
 
-- 修复部分情况下重复提示"重新生成定制应用数据"的问题
+- 模块安装过程增加对Hyper OS版本的校验，避免安装不正确的模块版本
 
 [内测版主要更新]
 
