@@ -13,10 +13,14 @@ const verifyFunctionsExtendsMap = {
     'yudi-device-code': 'module_src/verify_functions_extends/yudi-device-code/**',
     'sheng-device-code': 'module_src/verify_functions_extends/sheng-device-code/**',
     'pipa-device-code': 'module_src/verify_functions_extends/pipa-device-code/**',
-    'miui-based-on-tiramisu': 'module_src/verify_functions_extends/miui-based-on-tiramisu/**'
+    'miui-based-on-tiramisu': 'module_src/verify_functions_extends/miui-based-on-tiramisu/**',
+    'general-phone': 'module_src/verify_functions_extends/general-phone/**'
 }
 
 const buildVerifyFunctionsExtendsType = function () {
+    if (options.is_projection) {
+        return 'general-phone'
+    }
     if (['magicWindow'].includes(options.use_mode)) {
 
         return 'magicWindow'
