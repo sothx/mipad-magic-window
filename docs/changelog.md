@@ -8,9 +8,9 @@
 
 链接: [https://caiyun.139.com/m/i?135CmUWDgnbAM](https://caiyun.139.com/m/i?135CmUWDgnbAM)
 
-[Web UI]
+[应用横屏布局]
 
-- 模块设置增加ddr和ufs存储信息的查看功能
+- 修复美团外卖平行窗口适配规则异常的问题
 
 [内测版主要更新]
 
