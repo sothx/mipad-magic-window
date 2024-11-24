@@ -348,7 +348,8 @@ if [[ $is_need_install_ksu_web_ui == 1 ]]; then
     if [[ $HAS_BEEN_INSTALLED_KsuWebUI_APK == *"package:io.github.a13e300.ksuwebui"* ]]; then
       ui_print "- 好诶，KSUWebUI安装完成！"
     else
-      abort "- 坏诶，KSUWebUI安装失败，请尝试重新安装！"
+      abort "- KSUWebUI安装失败，请尝试重新安装！"
+      abort "- 也可前往模块网盘下载单独的 KsuWebUI apk 进行手动安装！"
     fi
   else
     update_system_prop is_need_install_ksu_web_ui 0 "$MODULE_CUSTOM_CONFIG_PATH/config.prop"

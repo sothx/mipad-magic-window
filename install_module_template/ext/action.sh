@@ -53,7 +53,7 @@ else
                 echo "- 好诶，KSUWebUI安装完成！"
                 sleep 5 # 延迟5秒
             else
-                abort "- 坏诶，KSUWebUI安装失败，请尝试重新安装！"
+                abort "- KSUWebUI安装失败，请尝试重新安装！"
                 sleep 5 # 延迟5秒
             fi
         else

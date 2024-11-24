@@ -8,9 +8,9 @@
 
 链接: [https://caiyun.139.com/m/i?135CmUWDgnbAM](https://caiyun.139.com/m/i?135CmUWDgnbAM)
 
-[Web UI]
+[模块主体]
 
-- 部分功能改为手动启用
+- 优化KsuWebUI安装失败时的引导逻辑
 
 [内测版主要更新]
 
