@@ -8,9 +8,9 @@
 
 链接: [https://caiyun.139.com/m/i?135CmUWDgnbAM](https://caiyun.139.com/m/i?135CmUWDgnbAM)
 
-[模块主体]
+[Web UI]
 
-- 模块安装过程增加对设备类型的校验，避免安装不正确的模块版本
+- 调整部分功能的文本描述
 
 [内测版主要更新]
 
