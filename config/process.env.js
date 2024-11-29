@@ -14,7 +14,7 @@ let knownOptions = {
     use_compatibility: '', // 特别版本的兼容参数，general-tiramisu——Android 13通用版,hyperos-based-on-tiramisu——基于Android 13的 Hyper OS,yudi-device-code——小米平板6 Max 专版，pipa-device-code——小米平板6专版，hyperos1-based-on-upsideDownCake——小米平板6 Pro专版，sheng-device-code-小米平板6S Pro专版
     netdisk_desc: '', // 打包网盘提供的额外参数
     last_module_update_version: '', // 上个需要维护的升级服务版本
-    module_update_version: 'V7', // 模块升级服务版本
+    module_update_version: 'V8', // 模块升级服务版本
     module_version_interface: 'beta', // 模块版本，standard 正式版，beta 测试版
     mi_os_version: 1, // Hyper OS的版本号
     is_projection: false, // true为镜像配置，false则默认配置
