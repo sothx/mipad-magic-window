@@ -13,7 +13,7 @@ module.exports = async function buildWebUI(cb) {
 
     try {
         const pathNotEmpty = fs.readdirSync(path)
-        if (pathNotEmpty && !options.is_projection) {
+        if (pathNotEmpty && !options.is_projection && options.use_mode !== 'magicWindow') {
             return src(`${path}/**`, { dot: true }) // 指定路径
             .pipe(dest('dist/webroot/'))
             .on('end', cb);
