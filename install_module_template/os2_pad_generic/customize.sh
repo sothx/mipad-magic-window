@@ -260,10 +260,6 @@ fi
 is_need_show_game_mode_select=0
 # 游戏显示布局
 if [[ "$API" -ge 33 ]]; then
-  # 判断首次安装
-  if [[ ! -d "$magisk_path$module_id" ]]; then
-    is_need_show_game_mode_select=1
-  fi
   # 判断已配置游戏显示布局
   if [ -f "$magisk_path$module_id/system.prop" ] &&
     [ "$has_been_miui_appcompat_enable" = 'true' ] &&
@@ -282,6 +278,25 @@ if [[ "$API" -ge 33 ]]; then
   else
     ui_print "*********************************************"
     ui_print "- 跳过游戏显示布局设置，如需重新开启，请前往Web UI开启。"
+    ui_print "*********************************************"
+  fi
+fi
+
+# 工作台模式
+is_add_miui_desktop_mode_enabled=$(grep_prop is_add_miui_desktop_mode_enabled "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+if [[ "$API" -ge 33 ]]; then
+  # 判断已配置游戏显示布局
+  if [ -f "$magisk_path$module_id/system.prop" ] &&
+    [ "$is_add_miui_desktop_mode_enabled" = 'true' ]; then
+    ui_print "*********************************************"
+    ui_print "- 已开启工作台模式"
+    ui_print "- （Tips: 可以前往Web UI 模块设置中开启~）"
+    add_props "# 开启工作台模式"
+    add_props "ro.config.miui_desktop_mode_enabled=true"
+    ui_print "*********************************************"
+  else
+    ui_print "*********************************************"
+    ui_print "- 跳过工作台模式设置，如需重新开启，请前往Web UI开启。"
     ui_print "*********************************************"
   fi
 fi
