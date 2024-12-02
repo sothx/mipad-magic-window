@@ -318,6 +318,9 @@ fi
 if [[ $(grep_prop is_need_install_ksu_web_ui "$MODULE_CUSTOM_CONFIG_PATH/config.prop") == "0" ]]; then
   is_need_install_ksu_web_ui=0
 fi
+if [[ "$API" -eq 30 ]]; then
+  is_need_install_ksu_web_ui=0
+fi
 if [[ $is_need_install_ksu_web_ui == 1 ]]; then
   ui_print "*********************************************"
   ui_print "- 是否安装KsuWebUI？"
