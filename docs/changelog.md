@@ -6,11 +6,11 @@
 
 如无法自动更新，可以手动前往网盘获取最新的模块：
 
-链接: [https://caiyun.139.com/m/i?135CmUWDgnbAM](https://caiyun.139.com/m/i?135CmUWDgnbAM)
+链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
-[Web UI]
+[模块主体]
 
-- [修复] 修复折叠屏设备也显示工作台模式的问题
+- 更换模块下载地址
 
 
 
