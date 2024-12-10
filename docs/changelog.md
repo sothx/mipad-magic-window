@@ -2,17 +2,21 @@
 
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
 
-如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
-
 如无法自动更新，可以手动前往网盘获取最新的模块：
 
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
 [模块主体]
 
-- 更换模块下载地址
+- 移除冗余的安装过程判断
 
+[Web UI]
 
+- 尝试优化部分判断的在KSU环境的兼容性
+
+- 优化抽屉弹窗柔性适配不同屏幕尺寸
+
+如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 
 自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
 
