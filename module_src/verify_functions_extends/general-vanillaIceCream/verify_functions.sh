@@ -34,10 +34,9 @@ verify_special_rule_pass() {
         ui_print "- 1.Hyper OS 2.0的模块必须搭配Web UI使用~"
         ui_print "- 2.在[平板专区-应用横屏布局]所做的任何修改会在重启后丢失~"
         ui_print "- 3.如需修改应用横屏适配，请前往Web UI进行修改~"
-        ui_print "- 模块问题反馈Q群：277757185"
         ui_print "- (Tips:请随意选择，不影响模块安装过程~)"
         ui_print "  音量+ ：已了解使用须知"
-        ui_print "  音量- ：已读不回.jpg"
+        ui_print "  音量- ：已了解使用须知"
         ui_print "*********************************************"
         key_check
         if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
