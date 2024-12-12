@@ -1,4 +1,4 @@
-## 更新日志-内测版(Beta)
+## 更新日志-正式版
 
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
 
