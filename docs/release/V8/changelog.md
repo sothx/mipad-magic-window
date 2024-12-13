@@ -1,4 +1,4 @@
-## 更新日志-内测版(Beta)
+## 更新日志-正式版
 
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
 
@@ -6,10 +6,15 @@
 
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
+[应用横屏布局]
+
+- 新增通达信的强制横屏适配规则
 
 [Web UI]
 
-- 优化Web UI部分元素布局
+- 优化部分元素布局
+
+- 优化分页器效果
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 
