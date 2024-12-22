@@ -1,8 +1,6 @@
 ## 更新日志-正式版
 
-模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
-
-如无法自动更新，可以手动前往网盘获取最新的模块：
+为了确保模块的稳定性，Github推送的版本通常会晚几个版本，如需获取最新版本可以前往网盘获取：
 
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
@@ -16,15 +14,10 @@
 
 [Web UI]
 
-- 模块设置新增 实时字幕 便捷开关,来自@hrsthrt74 
-- 模块设置新增 LSPosed 管理器 便捷开关 
-- 优化 性能监视器 新增快捷关闭选项
+- 窗口控制器增加对折叠屏设备的支持
+- 修复部分电池容量显示包含小数点的问题
 
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 
-自定义规则:[https://hyper-magic-window.sothx.com/custom-config.html](https://hyper-magic-window.sothx.com/custom-config.html)
-
-问题合集:[https://hyper-magic-window.sothx.com/FAQ.html](https://hyper-magic-window.sothx.com/FAQ.html)
-
-提交适配需求或者缺陷请点击:[https://github.com/sothx/mipad-magic-window/issues](https://github.com/sothx/mipad-magic-window/issues)
+模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
