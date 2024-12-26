@@ -44,3 +44,10 @@ is_add_miui_desktop_mode_enabled=$(grep_prop ro.config.miui_desktop_mode_enabled
 if [ "$is_module_miui_desktop_mode_enabled" = 'true' ]; then
   ro.config.miui_desktop_mode_enabled=true
 fi
+
+# 隐藏手势提示线
+is_hide_gesture_line=$(grep_prop is_hide_gesture_line "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+
+if [ "$is_hide_gesture_line" = 'true' ]; then
+  settings put global hide_gesture_line 1
+fi

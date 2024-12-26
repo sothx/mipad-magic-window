@@ -37,3 +37,16 @@ if [ "$is_enable_status_bar_show_notification_icon" = 'true' ]; then
   settings put system status_bar_show_notification_icon $show_notification_icon_num
 fi
 
+# 工作台模式
+is_add_miui_desktop_mode_enabled=$(grep_prop ro.config.miui_desktop_mode_enabled "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+
+if [ "$is_module_miui_desktop_mode_enabled" = 'true' ]; then
+  ro.config.miui_desktop_mode_enabled=true
+fi
+
+# 隐藏手势提示线
+is_hide_gesture_line=$(grep_prop is_hide_gesture_line "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+
+if [ "$is_hide_gesture_line" = 'true' ]; then
+  settings put global hide_gesture_line 1
+fi

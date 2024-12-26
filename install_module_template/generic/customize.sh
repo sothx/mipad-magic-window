@@ -336,6 +336,10 @@ fi
 if [[ "$API" -eq 30 ]]; then
   is_need_install_ksu_web_ui=0
 fi
+HAS_BEEN_INSTALLED_KsuWebUI_APK=$(pm list packages | grep io.github.a13e300.ksuwebui)
+if [[ $HAS_BEEN_INSTALLED_KsuWebUI_APK == *"package:io.github.a13e300.ksuwebui"* ]]; then
+  is_need_install_ksu_web_ui=0
+fi
 if [[ $is_need_install_ksu_web_ui == 1 ]]; then
   ui_print "*********************************************"
   ui_print "- 是否安装KsuWebUI？"
