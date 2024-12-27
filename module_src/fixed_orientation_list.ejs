@@ -2052,7 +2052,15 @@
   <package name="com.roblox.client" disable="true" />
   <%_ } _%>
   <package name="com.wepie.weplay" supportModes="full,fo" isScale="true" />
-  <package name="tv.danmaku.bili" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="tv.danmaku.bili" supportModes="full,fo" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.bilibili.app.blue" supportModes="full,fo" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.bilibili.app.in" supportModes="full,fo" />
+  <%_ } _%>
   <package name="com.example.examda" supportModes="full,fo" supportCameraPreview="full:false" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
   <package name="com.kekeclient_" supportModes="full,fo" defaultSettings="full" />
