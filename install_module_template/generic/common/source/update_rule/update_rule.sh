@@ -6,6 +6,8 @@ api_level_arch_detect
 
 is_patch_mode=$(grep_prop is_patch_mode "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 
+local targetService="$1"
+
 # 补丁模式配置文件
 # Android 12 +
 PATCH_MODE_CONFIG_EMBEDDED_RULES_LIST="/data/adb/MIUI_MagicWindow+/patch_rule/embedded_rules_list.xml"
@@ -168,8 +170,13 @@ elif [[ "$API" -ge 31 ]]; then
   #   chattr +i /data/system/cloudFeature_fixed_orientation_list_projection.xml
   # fi
 
+if [[ "$targetService" == "miui_embedding_window" || -z "$targetService" ]]; then
   /bin/cmd miui_embedding_window update-rule
+fi
+
+if [[ "$targetService" == "miui_auto_ui" || -z "$targetService" ]]; then
   /bin/cmd miui_auto_ui reload-rule
+fi
 
   echo '模块已重新载入规则，更新成功了ww'
 fi

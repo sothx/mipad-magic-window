@@ -6,6 +6,8 @@ api_level_arch_detect
 
 is_patch_mode=$(grep_prop is_patch_mode "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 
+local targetService="$1"
+
 # 补丁模式配置文件
 # Android 12 +
 PATCH_MODE_CONFIG_EMBEDDED_RULES_LIST="/data/adb/MIUI_MagicWindow+/patch_rule/embedded_rules_list.xml"
@@ -126,7 +128,14 @@ if [ -f /data/system/users/0/embedded_setting_config.xml ]; then
   chattr +i /data/system/users/0/embedded_setting_config.xml
 fi
 
-/bin/cmd miui_embedding_window update-rule
-/bin/cmd miui_auto_ui reload-rule
+if [[ "$targetService" == "miui_embedding_window" || -z "$targetService" ]]; then
+  /bin/cmd miui_embedding_window update-rule
+  # 系统应用横屏优化
+  . "$MODDIR/common/source/os2_system_app_optimize/os2_system_app_optimize.sh"
+fi
+
+if [[ "$targetService" == "miui_auto_ui" || -z "$targetService" ]]; then
+  /bin/cmd miui_auto_ui reload-rule
+fi
 
 echo '模块已重新载入规则，更新成功了ww'

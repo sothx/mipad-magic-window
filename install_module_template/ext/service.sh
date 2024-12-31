@@ -17,6 +17,9 @@ wait_login
 
 mkdir -p $MODDIR/common/temp
 
+# 系统应用横屏优化
+. "$MODDIR"/common/source/os2_system_app_optimize/os2_system_app_optimize.sh
+
 # 水龙移植包相关方法
 is_amktiao_pen_enable=$(grep_prop is_amktiao_pen_enable "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 is_amktiao_pen_update=$(grep_prop is_amktiao_pen_update "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
