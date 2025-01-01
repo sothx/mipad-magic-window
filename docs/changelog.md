@@ -6,6 +6,10 @@
 
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
+[应用横屏布局]
+
+- 新增 SimpleHook 的强制横屏
+
 [Web UI]
 
 - 修复部分描述文本
