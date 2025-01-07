@@ -6,13 +6,9 @@
 
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
-[Web UI]
+[应用横屏布局]
 
-- 移除 [侧边栏-传送门]
-
-- 新增 [模块设置-传送门]
-
-- 新增 [传送门-传送门异常修复]，可以修复被错误添加到[游戏工具箱]内的传送门
+- 新增黑鲨装备箱(com.blackshark.flutter_toolbox)的强制横屏
 
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
