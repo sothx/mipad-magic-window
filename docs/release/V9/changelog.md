@@ -6,23 +6,15 @@
 
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
-[Web UI]
+[应用横屏布局]
 
-- 移除 [侧边栏-传送门]
-
-- 新增 [模块设置-传送门]
-
-- 新增 [传送门-传送门异常修复]，可以修复被错误添加到[游戏工具箱]内的传送门
+- 新增 黑鲨装备箱(com.blackshark.flutter_toolbox)的强制横屏
 
 [Web UI]
 
-- 新增 [精选应用-WinPlay Mobile]
+- 新增 [侧边栏-外设按键映射]，该功能开发中，暂不可用。
 
-- 新增 [精选应用-小米平板系统应用补全-传送门/悬浮球]
-
-- 新增 [模块设置-WinPlay Mobile]
-
-「WinPlay Mobile」是为小米平板量身定做的「游戏虚拟机」，可以运行市面上常见的 Windows 游戏，，当前仅兼容小米平板6S Pro，且需要运行在最新Beta版的Hyper OS 2.0。
+- 新增 [模块设置-焕新存储]，该功能开发中，暂不可用。
 
 
 
