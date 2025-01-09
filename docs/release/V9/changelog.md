@@ -8,7 +8,11 @@
 
 [应用横屏布局]
 
+<<<<<<< HEAD
 - 新增 黑鲨装备箱(com.blackshark.flutter_toolbox)的强制横屏
+=======
+- 新增黑鲨装备箱(com.blackshark.flutter_toolbox)的强制横屏
+>>>>>>> de359d581b794b36d685a7c05dc11d11c2cabd80
 
 [Web UI]
 
