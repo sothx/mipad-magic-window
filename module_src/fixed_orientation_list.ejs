@@ -131,7 +131,7 @@
   <package name="com.baidu.searchbox.lite" isShowDivider="true" supportFullSize="true" />
   <package name="com.baidu.searchbox" isShowDivider="true" supportFullSize="true" />
   <package name="com.xiachufang" isShowDivider="true" />
-  <package name="com.xiaomi.shop" isShowDivider="true" />
+  <package name="com.xiaomi.shop" isShowDivider="true" supportFullSize="true" />
   <package name="com.alibaba.android.rimet" isShowDivider="true" />
   <package name="windinfo.android" isShowDivider="true" />
   <%_ } else { _%>
@@ -1539,7 +1539,7 @@
   <%_ if (Number(mi_os_version) >= 2) { _%>
   <package name="com.xiaomi.shop" isShowDivider="true" supportFullSize="true" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <%_ } else { _%>
-  <package name="com.xiaomi.shop" disable="true" />
+  <package name="com.xiaomi.shop" isShowDivider="true" supportFullSize="true" />
   <%_ } _%>
   <package name="com.tencent.mymedinfo" relaunch="false" isScale="true" supportFullSize="true" />
   <package name="com.umihome.m" relaunch="false" isScale="true" supportFullSize="true" />
@@ -1607,7 +1607,7 @@
   <%_ if (Number(mi_os_version) >= 2) { _%>
   <package name="com.jingdong.app.mall" supportModes="full,fo" skipSelfAdaptive="true" defaultSettings="full" skipSelfAdaptive="true" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <%_ } else { _%>
-  <package name="com.jingdong.app.mall" isShowDivider="true" disable="true" supportFullSize="true" supportCameraPreview="true" />
+  <package name="com.jingdong.app.mall" isShowDivider="true" supportFullSize="true" supportCameraPreview="true" />
   <%_ } _%>
   <package name="com.hexin.plat.android" supportFullSize="true" isShowDivider="true" skipSelfAdaptive="true" supportModes="full,fo" defaultSettings="fo" />
   <package name="com.wanmei.tiger" supportCameraPreview="true" supportFullSize="true" relaunch="false" isScale="true" />
@@ -3889,7 +3889,6 @@
   <package name="com.hihonor.appmarket" supportModes="full,fo" defaultSettings="full" />
   <package name="one.hh.oneclient" supportModes="full,fo" defaultSettings="full" />
   <package name="com.jhyan.yan" supportModes="full,fo" defaultSettings="full" />
-  <package name="com.sspai.sspaiandroid" supportModes="full,fo" defaultSettings="full" />
   <package name="me.tangke.gamecores" supportModes="full,fo" defaultSettings="full" />
   <package name="com.mi.health" supportModes="full,fo" defaultSettings="full" />
   <package name="com.c114.c114__android" supportModes="full,fo" defaultSettings="full" />
@@ -4349,6 +4348,11 @@
   <package name="cn.vmos.cloudphone" supportModes="full,fo" defaultSettings="full" relaunch="false" />
   <%_ } else { _%>
   <package name="cn.vmos.cloudphone" disable="true" relaunch="false" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.sspai.sspaiandroid" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
+  <package name="com.sspai.sspaiandroid" disable="true" />
   <%_ } _%>
   <!--pkMiConfig Disable End-->
   <package name="com.sevtinge.hyperceiler" supportModes="full,fo" defaultSettings="full" />

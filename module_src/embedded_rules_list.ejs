@@ -1815,11 +1815,10 @@
   <package name="e.cofco.com" fullRule="nra:cr:rcr" />
   <package name="me.tshine.easymarm" clearTop="false" fullRule="nra:cr:rcr" supportCameraPreview="true" scaleMode="1" relaunch="true" />
   <!-- Adaptive For Sothx 1.60.x -->
-  <package name="com.hihonor.appmarket" scaleMode="1" fullRule="nra:cr:rcr" />
-  <package name="one.hh.oneclient" scaleMode="1" fullRule="nra:cr:rcr" />
-  <package name="com.jhyan.yan" scaleMode="1" fullRule="nra:cr:rcr" />
-  <package name="io.moreless.tide" scaleMode="1" fullRule="nra:cr:rcr" />
-  <package name="com.sspai.sspaiandroid" scaleMode="1" fullRule="nra:cr:rcr" />
+  <package name="com.hihonor.appmarket" fullRule="nra:cr:rcr" />
+  <package name="one.hh.oneclient" fullRule="nra:cr:rcr" />
+  <package name="com.jhyan.yan" fullRule="nra:cr:rcr" />
+  <package name="io.moreless.tide" fullRule="nra:cr:rcr" />
   <package name="me.tangke.gamecores" fullRule="nra:cr:rcr" />
   <package name="com.xinli.yixinli" isShowDivider="true" supportFullSize="true" splitRatio="0.3" placeholder="com.xinli.yixinli.activity.MainNewActivity:com.xinli.yixinli.android.view.activity.search.SearchActivity" activityRule="com.xinli.yixinli.android.view.activity.user.LoginActivity" transitionRules="com.xinli.yixinli.android.view.activity.user.LoginActivity" />
   <package name="com.heytap.headset" scaleMode="1" fullRule="nra:cr:rcr" />
@@ -3554,7 +3553,6 @@
   <package name="com.zhiliaoapp.musically" fullRule="*" />
   <package name="com.zhiliaoapp.musically.go" fullRule="*" />
   <package name="com.baidu.baidutranslate" fullRule="nra:cr:rcr:nr" />
-  <package name="com.jingdong.app.mall" fullRule="nra:cr:rcr:nr" />
   <package name="com.tencent.tim" fullRule="nra:cr:rcr:nr" />
   <package name="com.joyshebao.joy" fullRule="nra:cr:rcr:nr" />
   <package name="com.uzero.baimiao" fullRule="nra:cr:rcr" />
@@ -7060,6 +7058,8 @@
   <package name="com.answer.reader" fullRule="nra:cr:rcr:nr" />
   <%_ if (['fold'].includes(platform)) { _%>
   <package name="com.jingdong.app.mall" activityRule="com.jd.lib.mylive.view.activity.VideoLiveRoomActivity,com.jingdong.manto.ui.MantoActivitySingleProcess" placeholder="com.jingdong.app.mall.MainFrameActivity:com.jingdong.app.mall.home.activity.MainRightWebActivity" defaultSettings="true" scaleMode="1" splitPairRule="com.jingdong.app.mall.MainFrameActivity:*" />
+  <%_ } else { _%>
+  <package name="com.jingdong.app.mall" fullRule="nra:cr:rcr:nr" />
   <%_ } _%>
   <package name="com.saiti.echo" fullRule="nra:cr:rcr:nr" />
   <package name="com.huohua.android" splitRatio="0.3" isShowDivider="true" supportFullSize="true" splitPairRule="com.huohua.android.ui.main.MainActivity:*,com.huohua.android.ui.profile.UserProfileActivity2:*,com.huohua.android.ui.world.MomentZoneDetailActivity:*" />
@@ -8206,4 +8206,5 @@
   <package name="com.yunlian.meditationmode" skipSelfAdaptive="true" fullRule="*" />
   <package name="me.simpleHook" skipSelfAdaptive="true" fullRule="*" />
   <package name="com.blackshark.flutter_toolbox" skipSelfAdaptive="true" fullRule="*" />
+  <package name="com.sspai.sspaiandroid" fullRule="nra:cr:rcr:nr" />
 </package_config> 
