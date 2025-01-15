@@ -6,13 +6,10 @@
 
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
-<<<<<<< HEAD
 [应用横屏布局]
 
 - 新增 拍机堂(com.aihuishou.opt)的应用适配规则
 
-=======
->>>>>>> a753142bace2591cfa1fb329f2801ef13c1a7370
 
 [Web UI]
 
