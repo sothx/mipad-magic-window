@@ -6,10 +6,14 @@
 
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
+[应用横屏布局]
+
+- 新增 拍机堂(com.aihuishou.opt)的应用适配规则
+
 
 [Web UI]
 
-- 优化 侧边栏图标美观性与一致性
+- 修复"AI 同声传译"描述错误的问题
 
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
