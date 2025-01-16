@@ -979,7 +979,11 @@
   <package name="cn.readpad.whiteboard" disable="true" />
   <package name="com.cqwx.jdelsfk.mi" isScale="true" />
   <package name="com.tencent.edu" disable="true" />
-  <package name="com.gstarmc.android" disable="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+    <package name="com.gstarmc.android" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" relaunch="false" />
+  <%_ } else { _%>
+    <package name="com.gstarmc.android" disable="true" relaunch="false" />
+  <%_ } _%>
   <package name="com.qb.qtranslator" relaunch="false" supportCameraPreview="false" forcePortraitActivity="com.qb.qtranslator/.qactivity.PhotoActivity" />
   <package name="com.dw.btime" defaultSettings="full" supportModes="full,fo" />
   <package name="com.jyhy.dakaxiu" relaunch="false" />
@@ -4416,5 +4420,7 @@
   <package name="me.simpleHook" supportModes="full,fo" defaultSettings="full"  />
   <package name="com.blackshark.flutter_toolbox" supportModes="full,fo" defaultSettings="full"  />
   <package name="com.aihuishou.opt" />
+  <package name="com.quickview3d" supportModes="full,fo" defaultSettings="full"  />
+  <package name="com.vblast.flipaclip" supportModes="full,fo" defaultSettings="full"  />
   <%_ } _%>
 </package_config>
