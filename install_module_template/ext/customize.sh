@@ -145,7 +145,7 @@ if [[ ! -d "$MODPATH/common/temp" ]]; then
 fi
 # 获取ROOT管理器信息并写入
 
-echo "$KSU,$KSU_VER,$KSU_VER_CODE,$KSU_KERNEL_VER_CODE,$APATCH,$APATCH_VER_CODE,$APATCH_VER,$MAGISK_VER,$MAGISK_VER_CODE" > "$MODPATH/common/temp/root_manager_info.txt"
+echo "$KSU,$KSU_VER,$KSU_VER_CODE,$KSU_KERNEL_VER_CODE,$APATCH,$APATCH_VER_CODE,$APATCH_VER,$MAGISK_VER,$MAGISK_VER_CODE" >"$MODPATH/common/temp/root_manager_info.txt"
 
 # 文件夹赋权
 /bin/chmod -R 777 "$MODULE_CUSTOM_CONFIG_PATH/config/"
@@ -205,38 +205,40 @@ if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" 
     add_props "persist.sys.stability.smartfocusio=off"
     ui_print "*********************************************"
   else
-    ui_print "*********************************************"
-    ui_print "- 检测到你的设备处理器属于骁龙8+Gen1"
-    ui_print "- 目前骁龙8+Gen1机型存在IO调度异常的问题，容易导致系统卡顿或者无响应，模块将自动为你配置合适的I/O调度规则"
-    ui_print "- 是否调整系统I/O调度？"
-    ui_print "  音量+ ：是"
-    ui_print "  音量- ：否"
-    ui_print "*********************************************"
-    key_check
-    if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+    if [[ "$API" -le 34 ]]; then
       ui_print "*********************************************"
-      ui_print "- 请选择需要使用的系统I/O调度？"
-      ui_print "  音量+ ：启用智能I/O调度"
-      ui_print "  音量- ：启用系统默认I/O调度"
+      ui_print "- 检测到你的设备处理器属于骁龙8+Gen1"
+      ui_print "- 目前骁龙8+Gen1机型存在IO调度异常的问题，容易导致系统卡顿或者无响应，模块将自动为你配置合适的I/O调度规则"
+      ui_print "- 是否调整系统I/O调度？"
+      ui_print "  音量+ ：是"
+      ui_print "  音量- ：否"
       ui_print "*********************************************"
       key_check
       if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
         ui_print "*********************************************"
-        ui_print "- 已开启智能I/O调度(Android 14+ 生效)"
-        update_system_prop smartfocusio on "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
-        add_props "# 开启智能I/O调度"
-        add_props "persist.sys.stability.smartfocusio=on"
+        ui_print "- 请选择需要使用的系统I/O调度？"
+        ui_print "  音量+ ：启用智能I/O调度"
+        ui_print "  音量- ：启用系统默认I/O调度"
         ui_print "*********************************************"
+        key_check
+        if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+          ui_print "*********************************************"
+          ui_print "- 已开启智能I/O调度(Android 14+ 生效)"
+          update_system_prop smartfocusio on "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
+          add_props "# 开启智能I/O调度"
+          add_props "persist.sys.stability.smartfocusio=on"
+          ui_print "*********************************************"
+        else
+          ui_print "*********************************************"
+          ui_print "- 已启用系统默认I/O调度(Android 14+ 生效)"
+          update_system_prop smartfocusio off "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
+          add_props "# 开启系统默认I/O调度"
+          add_props "persist.sys.stability.smartfocusio=off"
+          ui_print "*********************************************"
+        fi
       else
-        ui_print "*********************************************"
-        ui_print "- 已启用系统默认I/O调度(Android 14+ 生效)"
-        update_system_prop smartfocusio off "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
-        add_props "# 开启系统默认I/O调度"
-        add_props "persist.sys.stability.smartfocusio=off"
-        ui_print "*********************************************"
+        ui_print "- 你选择不调整系统I/O调度"
       fi
-    else
-      ui_print "- 你选择不调整系统I/O调度"
     fi
   fi
 fi

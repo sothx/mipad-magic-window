@@ -55,3 +55,10 @@ is_hide_gesture_line=$(grep_prop is_hide_gesture_line "$MODULE_CUSTOM_CONFIG_PAT
 if [ "$is_hide_gesture_line" = 'true' ]; then
   settings put global hide_gesture_line 1
 fi
+
+# 鼠标光标样式
+is_auto_start_miui_cursor_style_type=$(grep_prop is_auto_start_miui_cursor_style_type "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+
+if [ "$miui_cursor_style_type" != "null" ] && [ -n "$miui_cursor_style_type" ]; then
+  settings put system miui_cursor_style "$is_auto_start_miui_cursor_style_type"
+fi
