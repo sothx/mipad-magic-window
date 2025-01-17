@@ -7,11 +7,10 @@
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
 
-[Web UI]
+[应用布局优化]
 
-- 新增 [精选应用-小米平板功能补全模块]
+- 同步 Xiaomi Pad 7 Pro 最新应用布局优化适配规则
 
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
-
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
