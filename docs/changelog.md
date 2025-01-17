@@ -7,9 +7,9 @@
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
 
-[应用布局优化]
+[Web UI]
 
-- 同步 Xiaomi Pad 7 Pro 最新应用布局优化适配规则
+- 修复部分icon丢失的问题
 
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
