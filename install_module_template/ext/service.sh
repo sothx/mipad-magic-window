@@ -20,6 +20,14 @@ mkdir -p $MODDIR/common/temp
 # 系统应用横屏优化
 . "$MODDIR"/common/source/os2_system_app_optimize/os2_system_app_optimize.sh
 
+# 第三方应用横屏优化
+. "$MODDIR"/common/source/os2_third_party_app_optimize/os2_third_party_app_optimize_generate.sh
+THIRD_PARTY_APP_OPTIMIZE_RESET_APP_MODE="$MODULE_CUSTOM_CONFIG_PATH"/config/third_party_app_optimize_reset_app_mode.sh
+if [[ -f "$THIRD_PARTY_APP_OPTIMIZE_RESET_APP_MODE" ]]; then
+. "$THIRD_PARTY_APP_OPTIMIZE_RESET_APP_MODE"
+fi
+
+
 # 水龙移植包相关方法
 is_amktiao_pen_enable=$(grep_prop is_amktiao_pen_enable "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 is_amktiao_pen_update=$(grep_prop is_amktiao_pen_update "$MODULE_CUSTOM_CONFIG_PATH/config.prop")

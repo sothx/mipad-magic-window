@@ -1,12 +1,12 @@
 # shellcheck disable=SC2148
 MODDIR=${0%/*}
-MODULE_CUSTOM_CONFIG_PATH="/data/adb/MIUI_MagicWindow+/"
+MODULE_CUSTOM_CONFIG_PATH="/data/adb/MIUI_MagicWindow+"
 
 . "$MODDIR"/util_functions.sh
 api_level_arch_detect
 
-remove_system_prop smartfocusio "$MODULE_CUSTOM_CONFIG_PATH"config.prop
-remove_system_prop create_custom_config_template "$MODULE_CUSTOM_CONFIG_PATH"config.prop
+remove_system_prop smartfocusio "$MODULE_CUSTOM_CONFIG_PATH"/config.prop
+remove_system_prop create_custom_config_template "$MODULE_CUSTOM_CONFIG_PATH"/config.prop
 
 # For Android 12+
 # 对云控文件解除写保护
@@ -21,6 +21,7 @@ rm -rf /data/system/users/0/embedded_setting_config.xml # 重置平行视界默�
 rm -rf /data/system/users/0/autoui_setting_config.xml   # 重置应用布局优化默认配置文件
 if [[ "$API" -ge 35 ]]; then
   rm -rf /data/system/users/0/projection_embedded_setting_config.xml # 重置Android 15+平行视界默认配置文件
+  rm -rf "$MODULE_CUSTOM_CONFIG_PATH"/config/third_party_app_optimize_reset_app_mode.sh # 删除第三方优化脚本
 fi
 
 # 删除模块
