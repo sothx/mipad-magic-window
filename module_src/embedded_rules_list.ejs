@@ -8206,6 +8206,11 @@
   <package name="me.simpleHook" skipSelfAdaptive="true" fullRule="*" />
   <package name="com.blackshark.flutter_toolbox" skipSelfAdaptive="true" fullRule="*" />
   <package name="com.sspai.sspaiandroid" fullRule="nra:cr:rcr:nr" />
+  <%_ if (Number(mi_os_version) >= 2 && ['pad'].includes(platform)) { _%>
+  <package name="com.sspai.sspaiandroid" activityRule="com.sspai.sspaiandroid.MainActivity" splitPairRule="com.sspai.sspaiandroid.MainActivity:*" supportFullSize="true" isShowDivider="true" transitionRules="com.sspai.sspaiandroid.MainActivity" />
+  <%_ } else { _%>
+  <package name="com.sspai.sspaiandroid" fullRule="nra:cr:rcr:nr" />
+  <%_ } _%>
   <package name="com.aihuishou.opt" isShowDivider="true" supportFullSize="true" splitPairRule="com.aihuishou.opt.optpublic.home.main.HomeActivity:*,com.aihuishou.opt.optpublic.home.buyerhome.search.SelectCategoryActivity:*,com.aihuishou.opt.optpublic.home.buyerhome.search.SelectLevelActivity:*,com.aihuishou.opt.MainActivity:*,com.aihuishou.opt.optpublic.home.buyerhome.productdetail.ProductDetailV3Activity:*,com.aihuishou.opt.optpublic.home.main.message.MessageListActivity:*,com.aihuishou.opt.optpublic.setting.personinfo.SettingActivity:*" activityRule="com.aihuishou.opt.optpublic.home.main.HomeActivity,com.aihuishou.opt.ui.splash.SplashActivity" transitionRules="com.aihuishou.opt.optpublic.home.main.HomeActivity,com.aihuishou.opt.ui.splash.SplashActivity" />
   <package name="com.quickview3d" fullRule="nra:cr:rcr:nr" />
   <package name="com.gstarmc.android" supportFullSize="true" isShowDivider="true" fullRule="nra:cr:rcr:nr" />
