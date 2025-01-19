@@ -22,9 +22,6 @@ CUSTOM_CONFIG_EMBEDDED_SETTING_CONFIG="/data/adb/MIUI_MagicWindow+/config/embedd
 CUSTOM_CONFIG_AUTOUI_LIST="/data/adb/MIUI_MagicWindow+/config/autoui_list.xml"
 CUSTOM_CONFIG_GENERIC_RULES_LIST="/data/adb/MIUI_MagicWindow+/config/generic_rules_list.xml"
 
-# 第三方应用横屏优化
-THIRD_PARTY_APP_OPTIMIZE_RESET_APP_MODE="$MODULE_CUSTOM_CONFIG_PATH"/config/third_party_app_optimize_reset_app_mode.sh
-
 # 对云控文件解除写保护
 # 检查 /data/system/cloudFeature_embedded_rules_list.xml 是否存在
 if [ -f /data/system/cloudFeature_embedded_rules_list.xml ]; then
@@ -136,8 +133,8 @@ if [[ "$targetService" == "miui_embedding_window" || -z "$targetService" ]]; the
   # 系统应用横屏优化
   . "$MODDIR/common/source/os2_system_app_optimize/os2_system_app_optimize.sh"
   # 第三方应用横屏优化
-  if [[ -f "$THIRD_PARTY_APP_OPTIMIZE_RESET_APP_MODE" ]]; then
-  . "$THIRD_PARTY_APP_OPTIMIZE_RESET_APP_MODE"
+  if [[ "$MODULE_CUSTOM_CONFIG_PATH/config/third_party_app_optimize_runner.sh" ]]; then
+  . "$MODULE_CUSTOM_CONFIG_PATH/config/third_party_app_optimize_runner.sh"
   fi
 fi
 

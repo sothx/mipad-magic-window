@@ -1,8 +1,8 @@
 {
   "id": "MIUI_MagicWindow+",
   "name": "HyperOS For Pad(Fold) 完美横屏应用计划",
-  "version": "2.06.32",
-  "versionCode": "206032",
+  "version": "2.07.07",
+  "versionCode": "207007",
   "author": "做梦书、柚稚的孩纸 等(原作者:御坂初琴)",
   "description": "适用于HyperOS For Pad/Fold，用于扩展信箱模式、平行视界和应用布局优化的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米(红米)平板通用版]。遇到问题先看[问题合集]，反馈问题请提交[应用名]、[系统版本]、[模块版本]、[不适配的现象]。(反馈应用适配问题可前往酷安私信 @做梦书 或者GitHub:https://github.com/sothx/mipad-magic-window，如需卸载模块请移除模块后重启平板)",
   "updateJson": "https://hyper-magic-window-module-update.sothx.com/release/"

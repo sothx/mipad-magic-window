@@ -21,23 +21,20 @@ mkdir -p $MODDIR/common/temp
 . "$MODDIR"/common/source/os2_system_app_optimize/os2_system_app_optimize.sh
 
 # 第三方应用横屏优化
-. "$MODDIR"/common/source/os2_third_party_app_optimize/os2_third_party_app_optimize_generate.sh
-THIRD_PARTY_APP_OPTIMIZE_RESET_APP_MODE="$MODULE_CUSTOM_CONFIG_PATH"/config/third_party_app_optimize_reset_app_mode.sh
-if [[ -f "$THIRD_PARTY_APP_OPTIMIZE_RESET_APP_MODE" ]]; then
-. "$THIRD_PARTY_APP_OPTIMIZE_RESET_APP_MODE"
+if [[ "$MODULE_CUSTOM_CONFIG_PATH/config/third_party_app_optimize_runner.sh" ]]; then
+  . "$MODULE_CUSTOM_CONFIG_PATH/config/third_party_app_optimize_runner.sh"
 fi
-
 
 # 水龙移植包相关方法
 is_amktiao_pen_enable=$(grep_prop is_amktiao_pen_enable "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 is_amktiao_pen_update=$(grep_prop is_amktiao_pen_update "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 
 if [ "$is_amktiao_pen_enable" = 'true' ]; then
-  echo 1 > /sys/touchpanel/pen_enable
+  echo 1 >/sys/touchpanel/pen_enable
 fi
 
 if [ "$is_amktiao_pen_update" = 'true' ]; then
-  echo 1 > /sys/touchpanel/pen_update
+  echo 1 >/sys/touchpanel/pen_update
 fi
 
 # 通知图标最大数量

@@ -6,12 +6,13 @@
 
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
+[应用横屏布局]
+
+- 修复 少数派在Hyper OS 2.0无法正常横屏的问题
+
 [Web UI]
 
-- 修改有关[dm映射器]有关的描述
-
-- 针对Ksu/Apatch增加独立KsuWebUI的推荐安装弹窗提醒
-
+- 新增 [应用横屏布局-全屏-第三方应用横屏优化]，可以解决Hyper OS 2下，部分应用由于小米的BUG导致重启后丢失全屏适配的问题
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
