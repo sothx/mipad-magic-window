@@ -20,5 +20,7 @@
 
 - 新增 [精选应用-少数派]，模块已为少数派适配横屏
 
+- 新增 [精选应用-随身乐队]，模块已为随身乐队适配横屏
+
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
