@@ -22,7 +22,7 @@ mkdir -p $MODDIR/common/temp
 # 系统应用横屏优化
 . "$MODDIR"/common/source/os2_system_app_optimize/os2_system_app_optimize.sh
 # 第三方应用横屏优化
-if [[ "$MODULE_CUSTOM_CONFIG_PATH/config/third_party_app_optimize_runner.sh" ]]; then
+if [[ -f "$MODULE_CUSTOM_CONFIG_PATH/config/third_party_app_optimize_runner.sh" ]]; then
   . "$MODULE_CUSTOM_CONFIG_PATH/config/third_party_app_optimize_runner.sh"
 fi
 
