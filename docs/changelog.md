@@ -8,7 +8,9 @@
 
 [应用横屏布局]
 
-- 新增结构大师(com.CDA.StructureMaster)的居中布局适配
+- 新增 结构大师(com.CDA.StructureMaster)的居中布局适配
+
+- 新增 淘宝特价版(com.taobao.litetao)的全屏适配
 
 [Web UI]
 
