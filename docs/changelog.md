@@ -8,7 +8,9 @@
 
 [Web UI]
 
-- 优化ZRAM Writeback的显示逻辑，增加回写块的显示
+- Hyper OS 2以上版本移除不兼容的[帧率监视器]
+
+- 新增 [模块设置-开发者模式]
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
