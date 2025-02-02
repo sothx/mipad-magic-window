@@ -7,7 +7,7 @@
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
 
-- 新增部分热门应用的强制横屏适配规则
+- 修复Hyper OS 2下小米视频不能完全横屏化的问题
 
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
