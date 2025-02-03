@@ -595,8 +595,6 @@
   <package name="com.ataaw.tianyi" disable="true" />
   <package name="com.didapinche.booking" skipCompatMode="true" defaultSettings="full" supportModes="full,fo" />
   <package name="com.miui.weather2" disable="true" />
-  <package name="com.duokan.reader" disable="true" />
-  <package name="com.netease.uu" disable="true" />
   <package name="com.cib.cibmb" disable="true" />
   <package name="com.miui.mediaviewer" disable="true" />
   <package name="com.tencent.jkchess" disable="true" />
@@ -4432,6 +4430,16 @@
   <package name="com.miui.video" supportModes="full,fo" defaultSettings="full" />
   <%_ } else { _%>
   <package name="com.miui.video" disable="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.duokan.reader" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
+  <package name="com.duokan.reader" disable="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.netease.uu" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
+  <package name="com.netease.uu" disable="true" />
   <%_ } _%>
   <package name="com.ztgame.yyzy" supportModes="full,fo" defaultSettings="full" />
   <%_ } _%>
