@@ -4424,7 +4424,11 @@
   <package name="com.lanerc.app" ratio="1.8" relaunch="false" supportModes="full,fo" defaultSettings="fo" />
   <package name="com.fanjiao" ratio="1.1" relaunch="false" supportModes="full,fo" defaultSettings="full" />
   <package name="com.epicgames.portal" supportModes="full,fo" defaultSettings="full" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
   <package name="com.deepseek.chat" supportModes="full,fo" defaultSettings="full" />
+  <%_ } else { _%>
+  <package name="com.deepseek.chat" disable="true" />
+  <%_ } _%>
   <package name="com.RobinNotBad.BiliClient" supportModes="full,fo" defaultSettings="full" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
   <package name="com.miui.video" supportModes="full,fo" defaultSettings="full" />
