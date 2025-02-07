@@ -294,7 +294,6 @@
   <%_ } else { _%>
   <package name="com.tencent.qqlive" disable="true" />
   <%_ } _%>
-  <package name="com.fenbi.android.servant" disable="true" />
   <package name="cn.com.chsi.chsiapp" skipCompatMode="true" defaultSettings="full" supportModes="full,fo" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
   <package name="com.dongqiudi.news" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" />
@@ -4417,12 +4416,6 @@
   <package name="me.simpleHook" supportModes="full,fo" defaultSettings="full" />
   <package name="com.blackshark.flutter_toolbox" supportModes="full,fo" defaultSettings="full" />
   <package name="com.aihuishou.opt" />
-  <package name="com.quickview3d" supportModes="full,fo" defaultSettings="full" />
-  <package name="com.vblast.flipaclip" supportModes="full,fo" defaultSettings="full" />
-  <package name="cn.etouch.ecalendar.life" supportModes="full,fo" defaultSettings="full" />
-  <package name="com.CDA.StructureMaster" ratio="1.1" relaunch="false" supportModes="full,fo" defaultSettings="fo" />
-  <package name="com.lanerc.app" ratio="1.8" relaunch="false" supportModes="full,fo" defaultSettings="fo" />
-  <package name="com.fanjiao" ratio="1.1" relaunch="false" supportModes="full,fo" defaultSettings="full" />
   <package name="com.epicgames.portal" supportModes="full,fo" defaultSettings="full" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
   <package name="com.deepseek.chat" supportModes="full,fo" defaultSettings="full" />
@@ -4449,5 +4442,17 @@
   <package name="com.qimao.writerassistant" supportModes="full,fo" defaultSettings="full" />
   <package name="com.faloo.authorhelper" ratio="1.1" relaunch="false" supportModes="full,fo" defaultSettings="fo" />
   <package name="com.xmyl.writing" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.xianghu.organization" supportModes="full,fo" defaultSettings="full" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.fenbi.android.servant" supportModes="full,fo" />
+  <%_ } else { _%>
+  <package name="com.fenbi.android.servant" disable="true" />
+  <%_ } _%>
+  <package name="com.quickview3d" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.vblast.flipaclip" supportModes="full,fo" defaultSettings="full" />
+  <package name="cn.etouch.ecalendar.life" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.CDA.StructureMaster" ratio="1.1" relaunch="false" supportModes="full,fo" defaultSettings="fo" />
+  <package name="com.lanerc.app" ratio="1.8" relaunch="false" supportModes="full,fo" defaultSettings="fo" />
+  <package name="com.fanjiao" ratio="1.1" relaunch="false" supportModes="full,fo" defaultSettings="full" />
   <%_ } _%>
 </package_config>
