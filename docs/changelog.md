@@ -11,6 +11,8 @@
 
 - 优化 部分应用的横屏适配规则
 
+- 新增 部分月圆之夜渠道服的适配规则
+
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
