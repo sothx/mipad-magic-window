@@ -19,7 +19,7 @@ function isSothxExtBuild() {
 
 function releasePad(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/1.小米平板Hyper OS 2.0测试版（仅适配Hyper OS 2.0）`))
+    .pipe(dest(`${releaseNetdiskDir}/1.小米平板Hyper OS 2.0测试版（仅适配Hyper OS 2.0，Android 15+）`))
     .on('end', cb);
 }
 

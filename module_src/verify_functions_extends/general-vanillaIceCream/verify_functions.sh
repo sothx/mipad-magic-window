@@ -1,9 +1,10 @@
 # shellcheck disable=SC2148
 verify_android_api_has_pass() {
     api_num=$(printf "%d" "$1")
-    if [[ "$api_num" -lt 34 ]]; then
+    if [[ "$api_num" -lt 35 ]]; then
         ui_print "*********************************************"
-        ui_print "- 模块仅支持Android 14+，请重新选择正确版本的模块QwQ！！！"
+        ui_print "- 模块仅支持Android 15+，请重新选择正确版本的模块QwQ！！！"
+        ui_print "- 基于 Android 14的Hyper OS 2请安装安卓14通用版，不适用于该版本！！！"
         ui_print "- 您可以选择强制安装Android版本不受支持的模块，但可能导致系统出现各种异常，是否继续？"
         ui_print "  音量+ ：哼，我偏要装(强制安装)"
         ui_print "  音量- ：否"
@@ -22,12 +23,12 @@ verify_android_api_has_pass() {
 }
 
 verify_special_rule_pass() {
-    local mi_os_version_name=$(grep_prop ro.mi.os.version.code /mi_ext/etc/build.prop)
+    local mi_os_version_code=$(grep_prop ro.mi.os.version.code /mi_ext/etc/build.prop)
     # 目录不存在则创建目录
     if [[ ! -d "$MODPATH/system/system_ext/framework" ]]; then
         /bin/mkdir -p "$MODPATH/system/system_ext/framework"
     fi
-    if [[ -z "$mi_os_version_name" || "$mi_os_version_name" == "2" || "$mi_os_version_name" -eq 2 ]]; then
+    if [[ -z "$mi_os_version_code" || "$mi_os_version_code" == "2" || "$mi_os_version_code" -eq 2 ]]; then
         ui_print "*********************************************"
         ui_print "- 感谢参与<完美横屏应用计划>在Hyper OS 2.0的测试~"
         ui_print "- 请了解以下使用须知："
