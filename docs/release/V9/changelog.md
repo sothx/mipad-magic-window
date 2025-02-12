@@ -6,6 +6,7 @@
 
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
+- 修复部分ZRAM Writeback展示错位的问题
 
 - 兼容小米平板6基于Android 14的Hyper OS 2，请基于Android 14的Hyper OS 2安装[安卓14通用版]，而不是[Hyper OS 2测试版]。
 
