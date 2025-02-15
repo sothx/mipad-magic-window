@@ -8192,7 +8192,7 @@
   <package name="me.simpleHook" skipSelfAdaptive="true" fullRule="*" />
   <package name="com.blackshark.flutter_toolbox" skipSelfAdaptive="true" fullRule="*" />
   <%_ if (Number(mi_os_version) >= 2 && ['pad'].includes(platform)) { _%>
-  <package name="com.sspai.sspaiandroid" activityRule="com.sspai.sspaiandroid.MainActivity" splitPairRule="com.sspai.sspaiandroid.MainActivity:*" supportFullSize="true" isShowDivider="true" transitionRules="com.sspai.sspaiandroid.MainActivity" />
+  <package name="com.sspai.sspaiandroid" fullRule="nra:cr:rcr:nr" />
   <%_ } else { _%>
   <package name="com.sspai.sspaiandroid" fullRule="nra:cr:rcr:nr" />
   <%_ } _%>
@@ -8214,11 +8214,7 @@
   <package name="com.duokan.reader" />
   <package name="com.netease.uu" fullRule="nra:cr:rcr:nr" />
   <%_ } _%>
-  <%_ if (Number(mi_os_version) >= 2 && ['pad'].includes(platform)) { _%>
-  <package name="com.bytedance.writer_assistant_flutter" activityRule="com.bd.mpaas.example.MainActivity" splitPairRule="com.bd.mpaas.example.MainActivity:*" supportFullSize="true" isShowDivider="true" transitionRules="com.bd.mpaas.example.MainActivity" />
-  <%_ } else { _%>
   <package name="com.bytedance.writer_assistant_flutter" fullRule="nra:cr:rcr:nr" />
-  <%_ } _%>
   <package name="com.lizhiweike" scaleMode="1" supportFullSize="true" splitPairRule="com.lizhiweike.main.activity.MainActivity:*,com.lizhiweike.search.activity.SearchActivity:*,com.lizhiweike.channel.activity.ChannelDetailActivity:*,com.lizhiweike.settings.activity.GeneralSettingActivity:*" />
   <package name="com.qimao.writerassistant" fullRule="nra:cr:rcr:nr" />
   <package name="com.faloo.authorhelper" />
