@@ -1512,11 +1512,7 @@
   <package name="com.santi.sinology" relaunch="false" isScale="true" supportFullSize="true" />
   <package name="com.vpapps.hdwallpaper.xyz" relaunch="false" isScale="true" supportFullSize="true" />
   <!-- Adaptive For Sothx 1.11.x -->
-  <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.tencent.mm" supportModes="full,fo" isShowDivider="true" defaultSettings="full" supportFullSize="true" skipSelfAdaptive="true" />
-  <%_ } else { _%>
   <package name="com.tencent.mm" disable="true" isShowDivider="true" supportFullSize="true" />
-  <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
   <package name="com.example.hikerview" isShowDivider="true" supportFullSize="true" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
@@ -1656,7 +1652,7 @@
   <package name="com.miui.misound" relaunch="false" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
   <package name="com.android.quicksearchbox" relaunch="false" disable="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.miui.voiceassist" relaunch="false" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
+  <package name="com.miui.voiceassist" disable="true" />
   <%_ } else { _%>
   <package name="com.miui.voiceassist" relaunch="false" />
   <%_ } _%>
@@ -4070,7 +4066,9 @@
   <package name="pmbattle.superyyl.com.pmbattleandroid" supportModes="full,fo" defaultSettings="full" />
   <package name="com.qeeyou.apps.android.onlinetreasure" supportModes="full,fo" defaultSettings="full" />
   <package name="com.zui.browser" supportModes="full,fo" defaultSettings="full" />
-  <package name="com.android.browser" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.android.browser" disable="true" />
+  <%_ } _%>
   <package name="com.microsoft.emmx.canary" supportModes="full,fo" defaultSettings="full" />
   <package name="com.microsoft.emmx.beta" supportModes="full,fo" defaultSettings="full" />
   <package name="com.microsoft.emmx.dev" supportModes="full,fo" defaultSettings="full" />
@@ -4081,7 +4079,9 @@
   <package name="com.xiaomi.tinygame" supportModes="full,fo" defaultSettings="full" />
   <package name="com.cloudgame.plugin.mi" supportModes="full,fo" defaultSettings="full" />
   <package name="com.jishan.jmb" supportModes="full,fo" defaultSettings="full" />
-  <package name="com.miui.securitycenter" supportModes="full,fo" defaultSettings="full" />
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.miui.securitycenter" disable="true" />
+  <%_ } _%>
   <package name="com.ids.templerun01" supportModes="full,fo" defaultSettings="full" />
   <package name="com.zhandoushaonv.android" supportModes="full,fo" defaultSettings="full" />
   <package name="com.youdao.translator" supportModes="full,fo" defaultSettings="full" />

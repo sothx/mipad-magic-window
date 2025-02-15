@@ -116,7 +116,10 @@ if [[ ! -d "$MODULE_CUSTOM_CONFIG_PATH" ]]; then
     /bin/chmod 777 "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
   fi
 fi
-
+# 初始化模块内置配置目录
+if [[ ! -d "$MODULE_CUSTOM_CONFIG_PATH/internal_config/" ]]; then
+  /bin/mkdir -p "$MODULE_CUSTOM_CONFIG_PATH/internal_config/"
+fi
 # 初始化自定义规则配置目录
 if [[ ! -d "$MODULE_CUSTOM_CONFIG_PATH/config/" ]]; then
   /bin/mkdir -p "$MODULE_CUSTOM_CONFIG_PATH/config/"
