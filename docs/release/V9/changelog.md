@@ -7,7 +7,7 @@
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
 
-- 调整部分模块名称描述
+- 新增[应用横屏布局-平行窗口-平行窗口冷启动是否默认首页分屏]，可以禁用模块已适配平行窗口的应用，冷启动时会展开默认首页分屏的配置。
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
