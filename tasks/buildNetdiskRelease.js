@@ -19,7 +19,7 @@ function isSothxExtBuild() {
 
 function releasePad(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/1.小米平板安卓15测试版（推荐安卓15）`))
+    .pipe(dest(`${releaseNetdiskDir}/1.小米平板安卓15通用版（推荐安卓15）`))
     .on('end', cb);
 }
 
