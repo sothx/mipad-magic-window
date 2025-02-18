@@ -30,7 +30,7 @@ verify_special_rule_pass() {
     fi
     if [[ -z "$mi_os_version_code" || "$mi_os_version_code" == "2" || "$mi_os_version_code" -eq 2 ]]; then
         ui_print "*********************************************"
-        ui_print "- 感谢参与<完美横屏应用计划>在Hyper OS 2.0的测试~"
+        ui_print "- 感谢使用<完美横屏应用计划>在Hyper OS 2.0版本~"
         ui_print "- 请了解以下使用须知："
         ui_print "- 1.Hyper OS 2.0的模块必须搭配Web UI使用~"
         ui_print "- 2.在[平板专区-应用横屏布局]所做的任何修改会在重启后丢失~"
