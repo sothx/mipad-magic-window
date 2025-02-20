@@ -6,9 +6,11 @@
 
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
-- 针对Android15版本的模块新增[模块设置-模块使用须知]，可以关闭每次安装模块的使用须知提醒。
+- 新增DeepSeek AI，入口位于[超级小爱]按钮右侧。
 
-- 优化酷我在Android 15 Hyper OS 2的适配规则，避免竖屏转横屏
+- 优化[精选应用-超级小爱]相关版本引导，增加对MIUI 14版本的兼容。
+
+- 新增学小易的强制横屏适配规则
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
