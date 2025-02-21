@@ -320,13 +320,13 @@ function generateEmbeddedSettingConfig(cb) {
       setting.setAttribute("embeddedEnable", embeddedEnable);
     }
     if (fixedPkg) {
-      if (supportModes.includes('full')) {
+      if (supportModes.includes('full') && defaultSettings === 'full') {
         if (fullRule) {
           setting.setAttribute("fullScreenEnable", fullScreenEnable);
         }
         setting.setAttribute("ratio_fullScreenEnable", ratio_fullScreenEnable);
       }
-      if (!setting.getAttribute('fullScreenEnable')) {
+      if (defaultSettings !== 'full') {
         setting.setAttribute("fixedOrientationEnable", fixedOrientationEnable);
       }
     }
