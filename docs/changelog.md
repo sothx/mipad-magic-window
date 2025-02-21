@@ -18,6 +18,7 @@
 
 [Web UI]
 - 修复 [应用横屏布局]，从[全屏]规则切换到[平行窗口]不生效的问题
+- 新增[精选应用-流舟文件]，支持将文件/文件夹映射成快捷图标方式
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
