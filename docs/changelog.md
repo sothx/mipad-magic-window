@@ -13,6 +13,7 @@
 - 新增 MSN的横屏适配
 - 新增 微软翻译的横屏适配
 - 新增 Papago的横屏适配
+- 修复 乐活的横屏适配概率竖屏的BUG
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
