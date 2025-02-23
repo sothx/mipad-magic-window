@@ -51,5 +51,10 @@ verify_special_rule_pass() {
             ui_print "- 正在进入模块安装流程~"
             ui_print "*********************************************"
         fi
+    else
+        ui_print "*********************************************"
+        ui_print "- 您已选择跳过模块使用须知~"
+        add_props "ro.sothx.disabled_os2_install_module_tips=true"
+        ui_print "*********************************************"
     fi
 }
