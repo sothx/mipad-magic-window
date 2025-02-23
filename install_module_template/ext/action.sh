@@ -54,6 +54,7 @@ else
                 sleep 5 # 延迟5秒
             else
                 abort "- KSUWebUI安装失败，请尝试重新安装！"
+                abort "- 也可前往模块网盘下载单独的 KsuWebUI apk 进行手动安装！"
                 sleep 5 # 延迟5秒
             fi
         else

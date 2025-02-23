@@ -145,7 +145,7 @@ if [[ ! -d "$MODPATH/common/temp" ]]; then
 fi
 # 获取ROOT管理器信息并写入
 
-echo "$KSU,$KSU_VER,$KSU_VER_CODE,$KSU_KERNEL_VER_CODE,$APATCH,$APATCH_VER_CODE,$APATCH_VER,$MAGISK_VER,$MAGISK_VER_CODE" >"$MODPATH/common/temp/root_manager_info.txt"
+echo "$KSU,$KSU_VER,$KSU_VER_CODE,$KSU_KERNEL_VER_CODE,$APATCH,$APATCH_VER_CODE,$APATCH_VER,$MAGISK_VER,$MAGISK_VER_CODE" > "$MODPATH/common/temp/root_manager_info.txt"
 
 # 文件夹赋权
 /bin/chmod -R 777 "$MODULE_CUSTOM_CONFIG_PATH/config/"
