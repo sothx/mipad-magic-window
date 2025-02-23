@@ -296,14 +296,11 @@ function generateEmbeddedSettingConfig(cb) {
 
     if (
       supportModes &&
-      supportModes.includes("full") &&
-      (!defaultSettings || defaultSettings === "full")
+      supportModes.includes("full") && defaultSettings === "full"
     ) {
       ratio_fullScreenEnable = "true";
+      fullScreenEnable = "true";
       fixedOrientationEnable = "false";
-      if (fullRule) {
-        fullScreenEnable = "true";
-      }
     }
 
     // Check if embeddedPkg exists and handle the embeddedRule enable
@@ -321,9 +318,7 @@ function generateEmbeddedSettingConfig(cb) {
     }
     if (fixedPkg) {
       if (supportModes.includes('full') && defaultSettings === 'full') {
-        if (fullRule) {
-          setting.setAttribute("fullScreenEnable", fullScreenEnable);
-        }
+        setting.setAttribute("fullScreenEnable", fullScreenEnable);
         setting.setAttribute("ratio_fullScreenEnable", ratio_fullScreenEnable);
       }
       if (defaultSettings !== 'full') {
