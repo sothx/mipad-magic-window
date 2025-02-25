@@ -246,15 +246,13 @@ has_been_miui_appcompat_enable="false"
 has_been_miui_compat_enable="false"
 # 如果存在配置文件则赋值
 if [ -f "$magisk_path$module_id"/system.prop ]; then
-  has_been_miui_appcompat_enable=$(grep_prop ro.config.miui_appcompat_enable "$magisk_path$module_id"/system.prop)
-  has_been_miui_compat_enable=$(grep_prop ro.config.miui_appcompat_enable "$magisk_path$module_id"/system.prop)
+  has_been_miui_compat_enable=$(grep_prop ro.config.miui_compat_enable "$magisk_path$module_id"/system.prop)
 fi
 is_need_show_game_mode_select=0
 # 游戏显示布局
 if [[ "$API" -ge 33 ]]; then
   # 判断已配置游戏显示布局
   if [ -f "$magisk_path$module_id/system.prop" ] &&
-    [ "$has_been_miui_appcompat_enable" = 'true' ] &&
     [ "$has_been_miui_compat_enable" = 'true' ] &&
     [ "$is_need_show_game_mode_select" = '0' ]; then
     ui_print "*********************************************"
@@ -265,7 +263,6 @@ if [[ "$API" -ge 33 ]]; then
     ui_print "- [游戏显示布局使用文档]: https://hyper-magic-window.sothx.com/game-mode.html"
     add_props "# 开启游戏显示布局"
     add_props "ro.config.miui_compat_enable=true"
-    add_props "ro.config.miui_appcompat_enable=true"
     ui_print "*********************************************"
   else
     ui_print "*********************************************"

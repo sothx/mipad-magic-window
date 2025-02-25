@@ -59,6 +59,12 @@ function releasHyperOS1BasedOnUpsideDownCake(cb) {
     .on('end', cb);
 }
 
+function releasHyperOS2BasedOnVanillaIceCream(cb) {
+  return src(`${releaseDir}/${moduleConfig.version}/pad-hyperos2-based-on-vanillaIceCream-${moduleConfig.version}.zip`)
+    .pipe(dest(`${releaseNetdiskDir}/7.小米平板安卓15澎湃2.0专版(仅安卓15澎湃可刷)`))
+    .on('end', cb);
+}
+
 // function releasPipaDeviceCode(cb) {
 //   return src(`${releaseDir}/${moduleConfig.version}/pad-pipa-device-code-${moduleConfig.version}.zip`)
 //     .pipe(dest(`${releaseNetdiskDir}/8.小米平板6澎湃专版(仅适配小米平板6)`))
@@ -80,19 +86,19 @@ function releasHyperOS1BasedOnUpsideDownCake(cb) {
 
 function releasePadByHyperOSBasedOnTiramisu(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-hyperos-based-on-tiramisu-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/7.小米平板5系列安卓13澎湃专版（仅安卓13澎湃可刷）`))
+    .pipe(dest(`${releaseNetdiskDir}/8.小米平板5系列安卓13澎湃专版（仅安卓13澎湃可刷）`))
     .on('end', cb);
 }
 
 function releasePadByMIUIBasedOnTiramisu(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-miui-based-on-tiramisu-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/8.小米平板6系列MIUI14专版（仅MIUI14可刷）`))
+    .pipe(dest(`${releaseNetdiskDir}/9.小米平板6系列MIUI14专版（仅MIUI14可刷）`))
     .on('end', cb);
 }
 
 function releasePhone(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/phone-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/9.小米手机妙享桌面版（仅适配Hyper OS 2.0）`))
+    .pipe(dest(`${releaseNetdiskDir}/10.小米手机妙享桌面版（仅适配Hyper OS 2.0）`))
     .on('end', cb);
 }
 
@@ -105,4 +111,4 @@ function releasePhone(cb) {
 
 
 
-module.exports = parallel(releasePad,releasePhone,releasHyperOS1BasedOnUpsideDownCake,releaseFold, releasePadByMagicWindow, releaseGeneralUpsideDownCake,releaseGeneralTiramisu,releasePadByHyperOSBasedOnTiramisu,releasePadByMIUIBasedOnTiramisu)
+module.exports = parallel(releasePad,releasePhone,releasHyperOS1BasedOnUpsideDownCake,releasHyperOS2BasedOnVanillaIceCream,releaseFold, releasePadByMagicWindow, releaseGeneralUpsideDownCake,releaseGeneralTiramisu,releasePadByHyperOSBasedOnTiramisu,releasePadByMIUIBasedOnTiramisu)

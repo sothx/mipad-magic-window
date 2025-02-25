@@ -11,7 +11,7 @@ let knownOptions = {
     use_ratio: '16:10', // 模块适配比例，6pro及以下是16:10, 6s pro以上是3:2
     use_mode: 'activityEmbedding', // 使用的平行视界模式，支持安卓11时代的magicWindow和安装12L起的activityEmbedding
     use_merge_config_brand: 'hw', // 合并平行视界规则时候使用的规则厂商品牌，hw——华为/荣耀平板，oppo——OPPO Pad
-    use_compatibility: '', // 特别版本的兼容参数，general-tiramisu——Android 13通用版,hyperos-based-on-tiramisu——基于Android 13的 Hyper OS,yudi-device-code——小米平板6 Max 专版，pipa-device-code——小米平板6专版，hyperos1-based-on-upsideDownCake——小米平板6 Pro专版，sheng-device-code-小米平板6S Pro专版
+    use_compatibility: '', // 特别版本的兼容参数
     netdisk_desc: '', // 打包网盘提供的额外参数
     last_module_update_version: 'V8', // 上个需要维护的升级服务版本
     module_update_version: 'V9', // 模块升级服务版本
