@@ -46,12 +46,12 @@ verify_android_api_has_pass() {
 # 处理专版模块
 verify_special_rule_pass() {
     local sothx_miui_device_code=$(grep_prop ro.config.sothx_miui_device_code "$magisk_path$module_id/system.prop")
-    
+
     # 目录不存在则创建目录
     if [[ ! -d "$MODPATH/system/system_ext/framework" ]]; then
         /bin/mkdir -p "$MODPATH/system/system_ext/framework"
     fi
-    
+
     if [[ -z "$sothx_miui_device_code" ]]; then
         ui_print "*********************************************"
         ui_print "- 专版模块不同于通用版，存在可能导致系统异常或者卡米的风险！"
@@ -85,29 +85,61 @@ verify_special_rule_pass() {
     fi
 }
 
-# 机型选择
-device_selection() {
-    local devices=("uke" "muyu" "sheng" "yudi" "liuqin" "dizi" "ruan" "xun" "flare" "spark")
-    local device_names=("小米平板7(uke)" "小米平板7 Pro(muyu)" "小米平板6S Pro(sheng)" "小米平板6 Max(yudi)" "小米平板6 Pro(liuqin)" "红米平板 Pro(dizi)" "红米平板 Pro 5G(ruan)" "红米平板 SE(xun)" "红米平板 SE 8.7 Wi-Fi(flare)" "红米平板 SE 8.7 4G(spark)")
-
-    for i in ${!devices[@]}; do
-        ui_print "*********************************************"
-        ui_print "- 请选择符合你当前系统的机型代号(移植包请以移植包的机型为准)"
-        ui_print "- 是否为${device_names[$i]}？"
-        ui_print "  音量+ ：是"
-        ui_print "  音量- ：否"
-        ui_print "*********************************************"
-        key_check
-        if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
-            ui_print "- 正在为你写入${device_names[$i]}的模块配置文件"
-            add_props "ro.config.sothx_miui_device_code=${devices[$i]}"
-            /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/${devices[$i]}/$API/"* "$MODPATH/system/system_ext/framework/"
-            /bin/chmod -R 777 "$MODPATH/system/system_ext/framework/"
-            return
-        fi
-    done
+select_device() {
+    local device_name=$1
+    local device_code=$2
+    local api_path=$3
 
     ui_print "*********************************************"
-    ui_print "- 全部机型都选择了否，安装失败了QwQ！！！"
-    abort "*********************************************"
+    ui_print "- 请选择符合你当前系统的机型代号(移植包请以移植包的机型为准)"
+    ui_print "- 是否为${device_name}(${device_code})？"
+    ui_print "  音量+ ：是"
+    ui_print "  音量- ：否"
+    ui_print "*********************************************"
+    key_check
+
+    if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+        ui_print "- 正在为你写入${device_name}(${device_code})的模块配置文件"
+        add_props "ro.config.sothx_miui_device_code=${device_code}"
+        /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/${device_code}/${API}/"* "$MODPATH/system/system_ext/framework/"
+        /bin/chmod -R 777 "$MODPATH/system/system_ext/framework/"
+    else
+        return 1  # 选择否，返回1
+    fi
+}
+
+device_selection() {
+    # 第一个设备选择判断（简化）
+    if ! select_device "小米平板7" "uke" "$API"; then
+        # 第二个设备选择判断
+        if ! select_device "小米平板7 Pro" "muyu" "$API"; then
+            # 第三个设备选择判断
+            if ! select_device "小米平板6S Pro" "sheng" "$API"; then
+                # 第四个设备选择判断
+                if ! select_device "小米平板6 Max" "yudi" "$API"; then
+                    # 第五个设备选择判断
+                    if ! select_device "小米平板6 Pro" "liuqin" "$API"; then
+                        # 第六个设备选择判断
+                        if ! select_device "红米平板 Pro" "dizi" "$API"; then
+                            # 第七个设备选择判断
+                            if ! select_device "红米平板 Pro 5G" "ruan" "$API"; then
+                                # 第八个设备选择判断
+                                if ! select_device "红米平板 SE" "xun" "$API"; then
+                                    # 第九个设备选择判断
+                                    if ! select_device "红米平板 SE 8.7 Wi-Fi" "flare" "$API"; then
+                                        # 第十个设备选择判断
+                                        if ! select_device "红米平板 SE 8.7 4G" "spark" "$API"; then
+                                            ui_print "*********************************************"
+                                            ui_print "- 全部机型都选择了否，安装失败了QwQ！！！"
+                                            abort "*********************************************"
+                                        fi
+                                    fi
+                                fi
+                            fi
+                        fi
+                    fi
+                fi
+            fi
+        fi
+    fi
 }
