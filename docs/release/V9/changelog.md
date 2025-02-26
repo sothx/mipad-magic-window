@@ -7,8 +7,12 @@
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
 
-- 因OPPO改为强校验账户token，移除 DeepSeek Web快捷入口
-- 新增[精选应用-蓝牙遥控],可以通过蓝牙模拟键盘、鼠标、遥控器、手柄等功能
+- 新增 [精选应用-Flix]，好用的跨端文件传输工具
+- 新增 薄荷宝箱的横屏适配
+- 新增 有道小P的横屏适配
+- 新增 开眼的横屏适配
+- 新增 西窗烛的横屏适配
+- 同步 小米平板6S Pro最新横屏适配规则
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
