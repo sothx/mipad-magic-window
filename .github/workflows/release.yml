@@ -46,6 +46,7 @@ jobs:
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-miui-based-on-tiramisu-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-hyperos1-based-on-upsideDownCake-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-hyperos2-based-on-vanillaIceCream-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv $GITHUB_WORKSPACE/release/$VERSION/pad-hyperos2-based-on-upsideDownCake-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/ext/pad-ext-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
 
     - name: 上传到Github Release

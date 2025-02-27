@@ -170,3 +170,14 @@ jobs:
           name: pad-hyperos2-based-on-vanillaIceCream-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
+
+    - name: Build Pad Compatibility Use HyperOS2BasedOnUpsideDownCake
+      run: |
+          npm run build:pad-compatibility=hyperos2-based-on-upsideDownCake
+  
+    - name: Upload Pad Compatibility Use HyperOS2BasedOnUpsideDownCake Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+          name: pad-hyperos2-based-on-upsideDownCake-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true

@@ -48,6 +48,11 @@ const buildActionIsHyperOS1BasedOnUpsideDownCake = function () {
   return use_compatibility === 'hyperos1-based-on-upsideDownCake'
 }
 
+const buildActionIsHyperOS2BasedOnUpsideDownCake = function () {
+  const use_compatibility = options.use_compatibility
+  return use_compatibility === 'hyperos2-based-on-upsideDownCake'
+}
+
 const buildActionIsHyperOS2BasedOnVanillaIceCream = function () {
   const use_compatibility = options.use_compatibility
   return use_compatibility === 'hyperos2-based-on-vanillaIceCream'
@@ -129,14 +134,10 @@ module.exports = function jsonToProp(cb) {
       json.description = `${global.applicationRuleCount ? `[★适配应用总数:${global.applicationRuleCount}，仅兼容Android 15 Hyper OS 2.0]` : ''} 适用于HyperOS For Pad，用于扩展应用横屏布局、应用布局优化和游戏显示布局的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板安卓15澎湃2.0专版]。(反馈应用适配问题可前往酷安私信 @做梦书 ，模块首页:https://hyper-magic-window.sothx.com，GitHub仓库:https://github.com/sothx/mipad-magic-window，如需卸载模块请移除模块后重启平板)`;
       return json;
     })))
-    // .pipe(gulpIf(buildActionIsDaguDeviceCode, gulpJSONEdit(function (json) {
-    //   json.description = `${global.applicationRuleCount ? `[★适配应用总数:${global.applicationRuleCount}，仅兼容Android 14,未兼容Android 15]` : ''} 适用于HyperOS For Pad，用于扩展应用横屏布局、应用布局优化和游戏显示布局的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板5 Pro 12.4(dagu)澎湃专版]。(反馈应用适配问题可前往酷安私信 @做梦书 ，模块首页:https://hyper-magic-window.sothx.com，GitHub仓库:https://github.com/sothx/mipad-magic-window，本模块仅适用于小米平板5 Pro 12.4(dagu) 的小米官方 Hyper OS For Pad，升级系统前请先卸载本模块，避免卡米，如需卸载模块请移除模块后重启平板)`;
-    //   return json;
-    // })))
-    // .pipe(gulpIf(buildActionIsShengDeviceCode, gulpJSONEdit(function (json) {
-    //   json.description = `${global.applicationRuleCount ? `[★适配应用总数:${global.applicationRuleCount}，仅兼容Android 14,未兼容Android 15]` : ''} 适用于HyperOS For Pad，用于扩展应用横屏布局、应用布局优化和游戏显示布局的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板6S Pro(sheng)澎湃专版]。(反馈应用适配问题可前往酷安私信 @做梦书 ，模块首页:https://hyper-magic-window.sothx.com，GitHub仓库:https://github.com/sothx/mipad-magic-window，本模块仅适用于小米平板6S Pro(sheng) 的小米官方 Hyper OS For Pad，升级系统前请先卸载本模块，避免卡米，如需卸载模块请移除模块后重启平板)`;
-    //   return json;
-    // })))
+    .pipe(gulpIf(buildActionIsHyperOS2BasedOnUpsideDownCake, gulpJSONEdit(function (json) {
+      json.description = `${global.applicationRuleCount ? `[★适配应用总数:${global.applicationRuleCount}，仅兼容Android 14 Hyper OS 2.0]` : ''} 适用于HyperOS For Pad，用于扩展应用横屏布局、应用布局优化和游戏显示布局的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板安卓14澎湃2.0专版]。(反馈应用适配问题可前往酷安私信 @做梦书 ，模块首页:https://hyper-magic-window.sothx.com，GitHub仓库:https://github.com/sothx/mipad-magic-window，如需卸载模块请移除模块后重启平板)`;
+      return json;
+    })))
     .pipe(gulpIf(buildActionIsGeneralTiramisu, gulpJSONEdit(function (json) {
       json.description = `${global.applicationRuleCount ? `[★适配应用总数:${global.applicationRuleCount}，完全兼容Android 13,部分兼容Android 12]` : ''} 适用于MIUI 14 For Pad，用于扩展应用横屏布局、应用布局优化和游戏显示布局的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板安卓13通用版]。(反馈应用适配问题可前往酷安私信 @做梦书 ，模块首页:https://hyper-magic-window.sothx.com，GitHub仓库:https://github.com/sothx/mipad-magic-window，如需卸载模块请移除模块后重启平板)`;
       return json;
