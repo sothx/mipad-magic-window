@@ -7,8 +7,13 @@
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
 
-- 修复 超级小爱拍照界面摄像头倾斜的问题
-- 修复 关闭[系统应用横屏优化]后，仍然无非修改这部分系统应用规则的问题
+- 新增 小米音箱定制模式白名单
+- 修复 下载管理部分场景下会转竖屏的问题
+- 新增 [精选应用-快递100]
+- 新增 [精选应用-小米白噪音]
+- 新增 德州扑克-菠萝(com.papoker.dz)的居中布局适配
+- 新增 财联社(com.lanjinger.choiassociatedpress)的应用横屏适配
+- 新增 [应用横屏布局-应用适配收集表]，可以在线提交针对未适配应用的适配请求
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
