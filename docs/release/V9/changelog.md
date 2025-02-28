@@ -7,7 +7,7 @@
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
 
-- 修复 收集表图标在深色模式下异常的BUG
+- 新增 [应用横屏布局-切换为系统规则]，如果该应用同时存在[系统内置规则]和[模块规则]，且当前应用规则为[平行窗口]，则可以使用[系统内置规则]作为该应用的[自定义规则]
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
