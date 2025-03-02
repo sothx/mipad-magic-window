@@ -204,7 +204,7 @@ if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" 
     add_props "persist.sys.stability.smartfocusio=off"
     ui_print "*********************************************"
   else
-    if [[ "$API" -le 34 ]]; then
+    if [[ "$API" -eq 34 ]]; then
       ui_print "*********************************************"
       ui_print "- 检测到你的设备处理器属于骁龙8+Gen1"
       ui_print "- 目前骁龙8+Gen1机型存在IO调度异常的问题，容易导致系统卡顿或者无响应，模块将自动为你配置合适的I/O调度规则"
