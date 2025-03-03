@@ -184,7 +184,7 @@ has_been_enabled_smartfocusio=0
 if [[ $(grep_prop persist.sys.stability.smartfocusio $magisk_path"mipad-programmable-completion/system.prop") ]]; then
   has_been_enabled_smartfocusio=1
 fi
-if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" -ge 33 && $has_been_enabled_smartfocusio == 0 ]]; then
+if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" -eq 34 && $has_been_enabled_smartfocusio == 0 ]]; then
 
   if [[ $(grep_prop smartfocusio "$MODULE_CUSTOM_CONFIG_PATH/config.prop") ]]; then
     is_need_smartfocusio=$(grep_prop smartfocusio "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
