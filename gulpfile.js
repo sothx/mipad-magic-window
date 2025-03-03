@@ -8,7 +8,7 @@ const copyChangelog = require('./tasks/copyChangelog');
 const jsonToProp = require('./tasks/jsonToProp');
 const buildEjsTemplate = require('./tasks/buildEjsTemplate');
 const adaptiveHyperOS2 = require('./tasks/adaptiveHyperOS2');
-const adaptiveSkipSelfAdaptive = require('./tasks/adaptiveSkipSelfAdaptive');
+const adaptiveHyperOS1 = require('./tasks/adaptiveHyperOS1');
 const adaptivePlatformToFold = require('./tasks/adaptivePlatformToFold');
 const buildExtConfig = require('./tasks/buildExtConfig');
 const buildCompatibilityExtends = require('./tasks/buildCompatibilityExtends')
@@ -34,7 +34,7 @@ const buildTasks = series(
   buildEjsTemplate,
   adaptivePlatformToFold,
   adaptiveHyperOS2,
-  adaptiveSkipSelfAdaptive,
+  adaptiveHyperOS1,
   adaptiveCompatibilityToGeneralTiramisu,
   buildExtConfig,
   buildApplicationCount,
