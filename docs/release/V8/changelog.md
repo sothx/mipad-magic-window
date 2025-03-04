@@ -6,8 +6,8 @@
 
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
-- 新增三星商城的横屏适配
-- 优化 Web UI 首页资源异步加载，减少首屏加载压力
+- 修改 哔哩哔哩国际版在短视频界面会进入全屏的问题
+- 优化 Web UI部分体验逻辑
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
