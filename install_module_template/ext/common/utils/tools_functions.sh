@@ -25,3 +25,23 @@ remove_system_prop() {
   local file="$2"
   sed -i "/^$prop=/d" "$file"
 }
+
+get_app_list() {
+  { 
+    pm list packages -3 2>/dev/null || pm list packages -s 2>/dev/null || true
+} | awk -F: '{print $2}' | while read -r PACKAGE; do
+    # Get APK path for the package
+    APK_PATH=$(pm path "$PACKAGE" 2>/dev/null | grep "base.apk" | awk -F: '{print $2}' | tr -d '\r')
+    [ -z "$APK_PATH" ] && APK_PATH=$(pm path "$PACKAGE" 2>/dev/null | grep ".apk" | awk -F: '{print $2}' | tr -d '\r')
+
+    # 提取应用名称
+    if [ -n "$APK_PATH" ]; then
+        APP_NAME=$(/data/adb/modules/MIUI_MagicWindow+/common/utils/aapt dump badging "$APK_PATH" 2>/dev/null | grep "application-label:" | sed "s/application-label://g; s/'//g")
+    else
+        APP_NAME="Unknown App"
+    fi
+
+    # 只输出最终结果
+    echo "$APP_NAME,$PACKAGE"
+done
+}
