@@ -66,3 +66,10 @@ is_auto_start_miui_cursor_style_type=$(grep_prop is_auto_start_miui_cursor_style
 if [ "$miui_cursor_style_type" != "null" ] && [ -n "$miui_cursor_style_type" ]; then
   settings put system miui_cursor_style "$is_auto_start_miui_cursor_style_type"
 fi
+
+# 强制启用FBO
+is_auto_enable_fbo=$(grep_prop is_auto_enable_fbo "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+
+if [ "$is_auto_enable_fbo" != "null" ] && [ -n "$is_auto_enable_fbo" ]; then
+  setprop persist.sys.stability.miui_fbo_enable true
+fi
