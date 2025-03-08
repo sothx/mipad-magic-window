@@ -6,8 +6,7 @@
 
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
-- 新增 知了课堂的横屏适配
-- 新增 [模块设置-应用预加载]，支持禁用Hyper OS 2下系统桌面的默认预加载配置
+- 优化 [模块设置-焕新存储]的使用说明文本，增加触发条件的说明
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
