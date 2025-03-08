@@ -145,7 +145,7 @@ if [[ ! -d "$MODPATH/common/temp" ]]; then
 fi
 # 获取ROOT管理器信息并写入
 
-echo "$KSU,$KSU_VER,$KSU_VER_CODE,$KSU_KERNEL_VER_CODE,$APATCH,$APATCH_VER_CODE,$APATCH_VER,$MAGISK_VER,$MAGISK_VER_CODE" > "$MODPATH/common/temp/root_manager_info.txt"
+echo "$KSU,$KSU_VER,$KSU_VER_CODE,$KSU_KERNEL_VER_CODE,$APATCH,$APATCH_VER_CODE,$APATCH_VER,$MAGISK_VER,$MAGISK_VER_CODE" >"$MODPATH/common/temp/root_manager_info.txt"
 
 # 文件夹赋权
 /bin/chmod -R 777 "$MODULE_CUSTOM_CONFIG_PATH/config/"
@@ -298,6 +298,17 @@ if [[ "$API" -ge 33 ]]; then
     ui_print "- 跳过工作台模式设置，如需重新开启，请前往Web UI开启。"
     ui_print "*********************************************"
   fi
+fi
+
+# 禁用应用预加载
+sys_prestart_proc=$(grep_prop persist.sys.prestart.proc "$magisk_path$module_id"/system.prop)
+if [ -f "$magisk_path$module_id/system.prop" ] &&
+  [ "$sys_prestart_proc" = 'false' ]; then
+  ui_print "*********************************************"
+  ui_print "- 已禁用应用预加载"
+  ui_print "- （Tips: 可以前往Web UI 模块设置中修改配置~）"
+  add_props "persist.sys.prestart.proc=false"
+  ui_print "*********************************************"
 fi
 
 # 生成自定义规则模板

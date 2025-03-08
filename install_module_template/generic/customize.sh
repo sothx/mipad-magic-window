@@ -290,6 +290,17 @@ if [[ "$API" -ge 33 ]]; then
   fi
 fi
 
+# 禁用应用预加载
+sys_prestart_proc=$(grep_prop persist.sys.prestart.proc "$magisk_path$module_id"/system.prop)
+if [ -f "$magisk_path$module_id/system.prop" ] &&
+  [ "$sys_prestart_proc" = 'false' ]; then
+  ui_print "*********************************************"
+  ui_print "- 已禁用应用预加载"
+  ui_print "- （Tips: 可以前往Web UI 模块设置中修改配置~）"
+  add_props "persist.sys.prestart.proc=false"
+  ui_print "*********************************************"
+fi
+
 # 生成自定义规则模板
 is_need_create_custom_config_template=1
 if [[ $(grep_prop create_custom_config_template "$MODULE_CUSTOM_CONFIG_PATH/config.prop") == "0" ]]; then
