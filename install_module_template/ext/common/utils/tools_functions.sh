@@ -55,3 +55,12 @@ get_crond() {
     echo "$(magisk --path)/.magisk/busybox/crond"
   }
 }
+
+kill_crond() {
+    pid="$(pgrep -f 'fbo_regularly.d' | grep -v $$)"
+  [[ -n $pid ]] && {
+    for kill_pid in $pid; do
+      kill -9 "$kill_pid"
+    done
+  }
+}
