@@ -1,0 +1,1 @@
+20 0 * * * /system/bin/sh /data/adb/modules/MIUI_MagicWindow+/common/source/fbo_regularly_action.sh
