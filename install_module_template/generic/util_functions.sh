@@ -72,6 +72,26 @@ remove_system_prop() {
   sed -i "/^$prop=/d" "$file"
 }
 
+
+get_crond() {
+  if [[ -f "/data/adb/ksu/bin/busybox" ]]; then
+    echo "/data/adb/ksu/bin/busybox crond"
+  elif [[ -f "/data/adb/ap/bin/busybox" ]]; then
+    echo "/data/adb/ap/bin/busybox crond"
+  else
+    echo "$(magisk --path)/.magisk/busybox/crond"
+  fi
+}
+
+kill_fbo_regularly_dir_crond() {
+  pid="$(pgrep -f 'fbo_regularly.d' | grep -v $$)"
+  [[ -n $pid ]] && {
+    for kill_pid in $pid; do
+      kill -9 "$kill_pid"
+    done
+  }
+}
+
 # remove_old_verison_modules_config_file() {
 #   # 解锁老版本模块配置
 #   chattr -R -i /data/adb/modules/MIUI_MagicWindow+

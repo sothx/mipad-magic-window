@@ -45,22 +45,3 @@ get_app_list() {
     echo "$APP_NAME,$PACKAGE"
   done
 }
-
-get_crond() {
-  if [[ -f "/data/adb/ksu/bin/busybox" ]] {
-    echo "/data/adb/ksu/bin/busybox crond"
-  } else if [[ -f "/data/adb/ap/bin/busybox" ]] {
-    echo "/data/adb/ap/bin/busybox crond"
-  } else {
-    echo "$(magisk --path)/.magisk/busybox/crond"
-  }
-}
-
-kill_crond() {
-    pid="$(pgrep -f 'fbo_regularly.d' | grep -v $$)"
-  [[ -n $pid ]] && {
-    for kill_pid in $pid; do
-      kill -9 "$kill_pid"
-    done
-  }
-}
