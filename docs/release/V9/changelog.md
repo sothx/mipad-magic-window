@@ -6,9 +6,7 @@
 
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
-- 针对大折叠设备，哔哩哔哩竖屏视频默认全屏播放，平板设备仍然为默认分屏
-
-- 解决部分机型京东适配无法全屏的问题
+- 优化 [WebUI-模块设置]打开时候的流畅度，后置部分非必要异步任务
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
