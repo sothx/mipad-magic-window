@@ -6,9 +6,7 @@
 
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
-- 新增 一起公考的应用横屏布局
-- 精简 Web UI部分冗余代码
-- 修复 部分适配横屏的应用丢失横屏适配的BUG
+- 移除 非Android 15 Hyper OS 2的哔哩哔哩应用布局优化
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)

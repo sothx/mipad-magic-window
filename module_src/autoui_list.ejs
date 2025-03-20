@@ -181,7 +181,7 @@
   <package name="cn.kuwo.kwmusichd" enable="true" activityRule="*:0" optimizeWebView="true"  />
   <%_ if (['fold'].includes(platform)) { _%>
   <package name="tv.danmaku.bili" enable="true" optimizeWebView="true" activityRule="tv.danmaku.bili.MainActivityV2:8:recycler_view-100,recyclerView-100,V8Banner-100081404,indicator-100002000,com.bilibili.magicasakura.widgets.TintConstraintLayout-100001600,cover-100001700"/>
-  <%_ } else { _%>
+  <%_ } else if (Number(mi_os_version) >= 2) { _%>
   <package name="tv.danmaku.bili" enable="false" optimizeWebView="true" activityRule="tv.danmaku.bili.MainActivityV2:8:recycler_view-100,recyclerView-100,V8Banner-100081404,indicator-100002000,com.bilibili.magicasakura.widgets.TintConstraintLayout-100001600,cover-100001700"/>
   <%_ } _%>
   <package name="com.ophone.reader.ui" enable="true" activityRule="*:0" optimizeWebView="true"/>

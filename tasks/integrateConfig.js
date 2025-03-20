@@ -302,7 +302,7 @@ function generateEmbeddedSettingConfig(cb) {
       fullScreenEnable = "false";
       fixedOrientationEnable = "false";
       if (fullRule) {
-        ratio_fullScreenEnable = "false";
+        ratio_fullScreenEnable = "true";
         fullScreenEnable = "true";
       }
     }
