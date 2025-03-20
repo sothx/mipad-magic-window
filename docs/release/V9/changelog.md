@@ -6,6 +6,8 @@
 
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
+本次更新大幅度优化了Web UI部分场景下的性能：
+- 根据TreeMap和SunBurst视图，优化Web UI打包后各模块chunk的拆分，避免UI主进程渲染压力过大造成的渲染阻塞
 - 大幅度优化[Web UI-系统体验增强]的启动流畅度，避免异步任务阻塞UI主进程
 - 大幅度优化[Web UI-模块设置]的启动流畅度，避免异步任务阻塞UI主进程
 - 优化[系统体验增强-开发者模式]的加载体验,异步加载过程中展示骨架屏
