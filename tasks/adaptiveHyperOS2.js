@@ -32,9 +32,10 @@ function adaptiveEM(cb) {
         for (let i = elementsWithAttribute.length - 1; i >= 0; i--) {
           const packageElement = elementsWithAttribute[i];
           const packageName = packageElement.getAttribute('name')
+          const skipSelfAdaptive = packageElement.getAttribute('skipSelfAdaptive')
           EMStack[packageName] = true
           // 设置skipSelfAdaptive属性
-          if (!packageElement.getAttribute('skipSelfAdaptive') || packageElement.getAttribute('skipSelfAdaptive') !== 'false') {
+          if (!skipSelfAdaptive || skipSelfAdaptive !== 'false') {
             packageElement.setAttribute('skipSelfAdaptive', 'true');
           }
         }
@@ -56,7 +57,9 @@ function adaptiveFO(cb) {
           const packageElement = elementsWithAttribute[i];
           const packageName = packageElement.getAttribute('name')
           const defaultSettings = packageElement.getAttribute('defaultSettings')
-          if (!packageElement.getAttribute('disable') || packageElement.getAttribute('disable') === 'false') {
+          const skipSelfAdaptive = packageElement.getAttribute('skipSelfAdaptive')
+          const disable = packageElement.getAttribute('disable')
+          if (!disable || disable === 'false') {
             // 设置supportModes属性
             if (!packageElement.getAttribute('supportModes')) {
               packageElement.setAttribute('supportModes', 'full,fo');
@@ -66,7 +69,7 @@ function adaptiveFO(cb) {
               packageElement.setAttribute('defaultSettings', 'fo');
             }
             // 设置skipSelfAdaptive属性
-            if (!packageElement.getAttribute('skipSelfAdaptive') || packageElement.getAttribute('skipSelfAdaptive') !== 'false') {
+            if (!skipSelfAdaptive || skipSelfAdaptive !== 'false') {
               packageElement.setAttribute('skipSelfAdaptive', 'true');
             }
           }
