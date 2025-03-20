@@ -55,13 +55,14 @@ function adaptiveFO(cb) {
         for (let i = elementsWithAttribute.length - 1; i >= 0; i--) {
           const packageElement = elementsWithAttribute[i];
           const packageName = packageElement.getAttribute('name')
+          const defaultSettings = packageElement.getAttribute('defaultSettings')
           if (!packageElement.getAttribute('disable') || packageElement.getAttribute('disable') === 'false') {
             // 设置supportModes属性
             if (!packageElement.getAttribute('supportModes')) {
               packageElement.setAttribute('supportModes', 'full,fo');
             }
             // 设置defaultSettings属性
-            if (!EMStack[packageName]) {
+            if (!EMStack[packageName] && (!defaultSettings || defaultSettings !== 'full')) {
               packageElement.setAttribute('defaultSettings', 'fo');
             }
             // 设置skipSelfAdaptive属性
