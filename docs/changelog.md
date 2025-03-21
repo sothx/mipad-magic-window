@@ -6,6 +6,8 @@
 
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
+- 新增 [应用不兼容感知-墨督督],针对Hyper OS 2以下无法正常触发平行窗口的机型，提供修改版apk
+- 新增 [应用不兼容感知-CCTalk],针对Hyper OS 2以下无法正常触发平行窗口的机型，提供修改版apk
 - 新增 墨督督的平行窗口适配规则
 - 修复 Android 15 Hyper OS 2 For Pad部分情况下，从模块Web UI 选择平行窗口，实际仍然仅生效全屏规则的BUG
 - 优化 Web UI 需要重启才生效的功能，不再强制重启，增加立即重启和稍后手动重启的选项
