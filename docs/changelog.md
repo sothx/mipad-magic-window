@@ -7,7 +7,7 @@
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
 - 新增 酷安的应用布局优化，默认关闭，如有需要请手动开启
-- 修复 [应用布局优化-跳过应用布局优化的Activity规则]不能正常分割的问题
+- 修复 [应用布局优化-跳过应用布局优化的Activity名称]不能正常分割的问题
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
