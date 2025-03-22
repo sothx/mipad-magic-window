@@ -93,7 +93,7 @@ kill_fbo_regularly_dir_crond() {
 }
 
 # remove_old_verison_modules_config_file() {
-#   # 解锁老版本模块配置
+#   # 移除老版本模块配置
 #   chattr -R -i /data/adb/modules/MIUI_MagicWindow+
 #   chattr -i /data/system/users/0/magic_window_setting_config.xml
 #   chattr -i /data/system/magicWindowFeature_magic_window_application_list.xml
