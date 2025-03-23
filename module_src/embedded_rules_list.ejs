@@ -7005,6 +7005,8 @@
   <package name="com.answer.reader" fullRule="nra:cr:rcr:nr" />
   <%_ if (['fold'].includes(platform)) { _%>
   <package name="com.jingdong.app.mall" activityRule="com.jd.lib.mylive.view.activity.VideoLiveRoomActivity,com.jingdong.manto.ui.MantoActivitySingleProcess" placeholder="com.jingdong.app.mall.MainFrameActivity:com.jingdong.app.mall.home.activity.MainRightWebActivity" defaultSettings="true" scaleMode="1" splitPairRule="com.jingdong.app.mall.MainFrameActivity:*" />
+  <%_ } else if (['general-tiramisu','miui-based-on-tiramisu','hyperos-based-on-tiramisu'].includes(compatibility)) { _%>
+  <package name="com.jingdong.app.mall" fullRule="nra:cr:rcr:nr" />
   <%_ } else { _%>
   <package name="com.jingdong.app.mall" fullRule="nra:cr:rcr" />
   <%_ } _%>
