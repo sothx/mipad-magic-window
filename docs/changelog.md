@@ -6,12 +6,7 @@
 
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
-- 新增 [应用布局优化-酷安]，默认关闭，如有需要请手动开启
-- 修复 [应用布局优化-跳过应用布局优化的Activity名称]不能正常分割的问题
-- 新增 [应用不兼容感知-PliPala]
-- 新增 [应用不兼容感知-小米通话]
-- 新增 [应用不兼容感知-5G宽视界]
-- 修复 京东在Android 13 无法正常全屏的BUG
+- 修复 Android 15 ZRAM Writeback无法正常显示的问题
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
