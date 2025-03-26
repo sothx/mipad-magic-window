@@ -6,7 +6,8 @@
 
 链接: [https://caiyun.139.com/m/i?135CeBMHACC6p](https://caiyun.139.com/m/i?135CeBMHACC6p)
 
-- 优化应用布局优化的功能提醒
+- 优化 部分Web UI功能提示
+- 手机版模块默认网易云妙享流转为全屏，不进入平行窗口 
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
