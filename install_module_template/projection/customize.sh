@@ -109,6 +109,9 @@ if [ -f "$MODPATH"/verify_functions.sh ]; then
   fi
 fi
 
+# 生成重载规则脚本
+/bin/cp -rf "$MODPATH/common/source/update_rule/"* "$MODULE_CUSTOM_CONFIG_PATH/config/"
+
 if [[ ! -d "$MODPATH/common/temp" ]]; then
   /bin/mkdir -p "$MODPATH/common/temp"
 fi
