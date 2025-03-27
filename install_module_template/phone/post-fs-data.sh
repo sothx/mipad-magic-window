@@ -31,7 +31,7 @@ fi
 if [ -f /data/system/cloudFeature_generic_rules_list_projection.xml ]; then
   chattr -i /data/system/cloudFeature_generic_rules_list_projection.xml
 fi
-# 支持平行窗口自定义配置文件
+# 支持平行窗口(流转)自定义配置文件
 if [[ -f "$CUSTOM_CONFIG_EMBEDDED_RULES_LIST_PROJECTION" ]]; then
   cp -f "$MODDIR"/common/source/embedded_rules_list_projection.xml "$MODDIR"/common/embedded_rules_list_projection.xml
   sed -i '/<\/package_config>/d' "$MODDIR"/common/embedded_rules_list_projection.xml
@@ -40,7 +40,7 @@ if [[ -f "$CUSTOM_CONFIG_EMBEDDED_RULES_LIST_PROJECTION" ]]; then
 else
   cp -f "$MODDIR"/common/source/embedded_rules_list_projection.xml "$MODDIR"/common/embedded_rules_list_projection.xml
 fi
-# 支持信箱模式自定义配置文件
+# 支持信箱模式(流转)自定义配置文件
 if [[ -f "$CUSTOM_CONFIG_FIXED_ORIENTATION_LIST_PROJECTION" ]]; then
   cp -f "$MODDIR"/common/source/fixed_orientation_list_projection.xml "$MODDIR"/common/fixed_orientation_list_projection.xml
   sed -i '/<\/package_config>/d' "$MODDIR"/common/fixed_orientation_list_projection.xml
@@ -49,7 +49,7 @@ if [[ -f "$CUSTOM_CONFIG_FIXED_ORIENTATION_LIST_PROJECTION" ]]; then
 else
   cp -f "$MODDIR"/common/source/fixed_orientation_list_projection.xml "$MODDIR"/common/fixed_orientation_list_projection.xml
 fi
-# 支持通用配置自定义配置文件
+# 支持通用配置(流转)自定义配置文件
 if [[ -f "$CUSTOM_CONFIG_GENERIC_RULES_LIST_PROJECTION" ]]; then
   cp -f "$MODDIR"/common/source/generic_rules_list_projection.xml "$MODDIR"/common/generic_rules_list_projection.xml
   sed -i '/<\/package_config>/d' "$MODDIR"/common/generic_rules_list_projection.xml
@@ -58,18 +58,18 @@ if [[ -f "$CUSTOM_CONFIG_GENERIC_RULES_LIST_PROJECTION" ]]; then
 else
   cp -f "$MODDIR"/common/source/generic_rules_list_projection.xml "$MODDIR"/common/generic_rules_list_projection.xml
 fi
-# 平行窗口
+# 平行窗口(流转)
 set_perm /data/system/cloudFeature_embedded_rules_list_projection.xml 1000 1000 0666 u:object_r:system_data_file:s0    # 设置平行窗口文件权限
 cp -f "$MODDIR"/common/embedded_rules_list_projection.xml /data/system/cloudFeature_embedded_rules_list_projection.xml # 替换平行窗口配置列表
 set_perm /data/system/cloudFeature_embedded_rules_list_projection.xml 1000 1000 0444 u:object_r:system_data_file:s0    # 禁止平行窗口配置文件被云控
-# 信箱模式
+# 信箱模式(流转)
 set_perm /data/system/cloudFeature_fixed_orientation_list_projection.xml 1000 1000 0666 u:object_r:system_data_file:s0       # 设置信箱模式文件权限
 cp -f "$MODDIR"/common/fixed_orientation_list_projection.xml /data/system/cloudFeature_fixed_orientation_list_projection.xml # 替换信箱模式配置列表
 set_perm /data/system/cloudFeature_fixed_orientation_list_projection.xml 1000 1000 0444 u:object_r:system_data_file:s0       # 禁止信箱模式配置文件被云控
-# 通用规则
-set_perm /data/system/cloudFeature_generic_rules_list_projection.xml 1000 1000 0666 u:object_r:system_data_file:s0   # 设置应用布局优化文件权限
-cp -f "$MODDIR"/common/generic_rules_list_projection.xml /data/system/cloudFeature_generic_rules_list_projection.xml # 替换应用布局优化配置列表
-set_perm /data/system/cloudFeature_generic_rules_list_projection.xml 1000 1000 0444 u:object_r:system_data_file:s0   # 禁止应用布局优化配置文件被云控
+# 通用规则(流转)
+set_perm /data/system/cloudFeature_generic_rules_list_projection.xml 1000 1000 0666 u:object_r:system_data_file:s0   
+cp -f "$MODDIR"/common/generic_rules_list_projection.xml /data/system/cloudFeature_generic_rules_list_projection.xml 
+set_perm /data/system/cloudFeature_generic_rules_list_projection.xml 1000 1000 0444 u:object_r:system_data_file:s0  
 # 对云控文件写保护
 # 检查 /data/system/cloudFeature_embedded_rules_list_projection.xml 是否存在
 if [ -f /data/system/cloudFeature_embedded_rules_list_projection.xml ]; then

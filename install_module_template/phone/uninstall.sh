@@ -10,9 +10,9 @@ api_level_arch_detect
 chattr -i /data/system/cloudFeature_embedded_rules_list_projection.xml
 chattr -i /data/system/cloudFeature_fixed_orientation_list_projection.xml
 chattr -i /data/system/cloudFeature_generic_rules_list_projection.xml
-rm -rf /data/system/cloudFeature_embedded_rules_list_projection.xml    # 删除平行窗口模块配置
-rm -rf /data/system/cloudFeature_fixed_orientation_list_projection.xml # 删除信箱模式模块配置
-rm -rf /data/system/cloudFeature_generic_rules_list_projection.xml           # 删除通用规则模块配置
+rm -rf /data/system/cloudFeature_embedded_rules_list_projection.xml    # 删除平行窗口(流转)模块配置
+rm -rf /data/system/cloudFeature_fixed_orientation_list_projection.xml # 删除信箱模式(流转)模块配置
+rm -rf /data/system/cloudFeature_generic_rules_list_projection.xml           # 删除通用规则(流转)模块配置
 rm -rf /data/system/users/0/projection_embedded_setting_config.xml # 重置平行窗口默认配置文件
 
 # 删除模块

@@ -6,15 +6,19 @@ const installTemplateMap = {
   generic: 'install_module_template/generic/**',
   os2_pad_generic: 'install_module_template/os2_pad_generic/**',
   ext: 'install_module_template/ext/**',
-  projection: 'install_module_template/projection/**'
+  phone: 'install_module_template/phone/**',
+  fold: 'install_module_template/fold/**'
 }
 
 const getInstallTemplateType = function () {
   if (options.use_ext) {
     return 'ext';
   }
-  if (options.is_projection) {
-    return 'projection'
+  if (options.use_platform === 'phone') {
+    return 'phone'
+  }
+  if (options.use_platform === 'fold') {
+    return 'fold'
   }
   if (options.mi_os_version >= 2 && options.use_platform === 'pad') {
     return 'os2_pad_generic'
