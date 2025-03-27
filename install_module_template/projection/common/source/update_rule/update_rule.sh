@@ -1,16 +1,10 @@
-# shellcheck disable=SC2148
-
-MODDIR=${0%/*}
+# 声明变量
 MODULE_CUSTOM_CONFIG_PATH="/data/adb/MIUI_MagicWindow+"
+MODDIR="/data/adb/modules/MIUI_MagicWindow+"
 . "$MODDIR"/util_functions.sh
 api_level_arch_detect
 
-if [[ ! -d "$MODDIR/common/temp" ]]; then
-  /bin/mkdir -p "$MODDIR/common/temp"
-fi
-# 获取ROOT管理器信息并写入
-
-echo "$KSU,$KSU_VER,$KSU_VER_CODE,$KSU_KERNEL_VER_CODE,$APATCH,$APATCH_VER_CODE,$APATCH_VER,$MAGISK_VER,$MAGISK_VER_CODE" >"$MODPATH/common/temp/root_manager_info.txt"
+is_patch_mode=$(grep_prop is_patch_mode "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 
 # 自定义配置文件
 # Android 15 +
@@ -83,3 +77,7 @@ fi
 if [ -f /data/system/cloudFeature_generic_rules_list_projection.xml ]; then
   chattr +i /data/system/cloudFeature_generic_rules_list_projection.xml
 fi
+
+/bin/cmd miui_embedding_window_projection update-rule
+
+echo '模块已重新载入规则，更新成功了ww'
