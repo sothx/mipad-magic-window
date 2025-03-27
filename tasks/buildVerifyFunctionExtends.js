@@ -12,9 +12,13 @@ const verifyFunctionsExtendsMap = {
     'hyperos2-based-on-upsideDownCake': 'module_src/verify_functions_extends/hyperos2-based-on-upsideDownCake/**',
     'hyperos2-based-on-vanillaIceCream': 'module_src/verify_functions_extends/hyperos2-based-on-vanillaIceCream/**',
     'miui-based-on-tiramisu': 'module_src/verify_functions_extends/miui-based-on-tiramisu/**',
+    'general-phone': 'module_src/verify_functions_extends/general-phone/**',
 }
 
 const buildVerifyFunctionsExtendsType = function () {
+    if (options.use_platform === 'phone') {
+        return 'general-phone'
+    }
     if (['magicWindow'].includes(options.use_mode)) {
 
         return 'magicWindow'
