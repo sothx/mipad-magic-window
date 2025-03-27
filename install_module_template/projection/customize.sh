@@ -113,4 +113,60 @@ if [[ ! -d "$MODPATH/common/temp" ]]; then
   /bin/mkdir -p "$MODPATH/common/temp"
 fi
 
+# 获取ROOT管理器信息并写入
+
+echo "$KSU,$KSU_VER,$KSU_VER_CODE,$KSU_KERNEL_VER_CODE,$APATCH,$APATCH_VER_CODE,$APATCH_VER,$MAGISK_VER,$MAGISK_VER_CODE" > "$MODPATH/common/temp/root_manager_info.txt"
+
+# 文件夹赋权
+/bin/chmod -R 777 "$MODULE_CUSTOM_CONFIG_PATH/config/"
+
+# 禁用应用预加载
+sys_prestart_proc=$(grep_prop persist.sys.prestart.proc "$magisk_path$module_id"/system.prop)
+if [ -f "$magisk_path$module_id/system.prop" ] &&
+  [ "$sys_prestart_proc" = 'false' ]; then
+  ui_print "*********************************************"
+  ui_print "- 已禁用应用预加载"
+  ui_print "- （Tips: 可以前往Web UI 模块设置中修改配置~）"
+  add_props "persist.sys.prestart.proc=false"
+  ui_print "*********************************************"
+fi
+
+# KSU Web UI
+is_need_install_ksu_web_ui=1
+if [[ "$KSU" == "true" || "$APATCH" == "true" ]]; then
+  is_need_install_ksu_web_ui=0
+fi
+HAS_BEEN_INSTALLED_KsuWebUI_APK=$(pm list packages | grep io.github.a13e300.ksuwebui)
+if [[ $HAS_BEEN_INSTALLED_KsuWebUI_APK == *"package:io.github.a13e300.ksuwebui"* ]]; then
+  is_need_install_ksu_web_ui=0
+fi
+if [[ $is_need_install_ksu_web_ui == 1 ]]; then
+  ui_print "*********************************************"
+  ui_print "- 是否安装KsuWebUI？"
+  ui_print "- [重要提醒]: 安装并赋予Root权限可以可视化查看并管理模块功能"
+  ui_print "  音量+ ：是"
+  ui_print "  音量- ：否"
+  ui_print "*********************************************"
+  key_check
+  if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+    update_system_prop is_need_install_ksu_web_ui 0 "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
+    ui_print "- 正在为你安装KSU Web UI，请稍等~"
+    unzip -jo "$ZIPFILE" 'common/apks/KsuWebUI.apk' -d /data/local/tmp/ &>/dev/null
+    pm install -r /data/local/tmp/KsuWebUI.apk &>/dev/null
+    rm -rf /data/local/tmp/KsuWebUI.apk
+    HAS_BEEN_INSTALLED_KsuWebUI_APK=$(pm list packages | grep io.github.a13e300.ksuwebui)
+    if [[ $HAS_BEEN_INSTALLED_KsuWebUI_APK == *"package:io.github.a13e300.ksuwebui"* ]]; then
+      ui_print "- 好诶，KSUWebUI安装完成！"
+    else
+      abort "- KSUWebUI安装失败，请尝试重新安装！"
+      abort "- 也可前往模块网盘下载单独的 KsuWebUI apk 进行手动安装！"
+    fi
+  else
+    update_system_prop is_need_install_ksu_web_ui 0 "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
+    ui_print "*********************************************"
+    ui_print "- 你选择不安装KsuWebUI"
+    ui_print "*********************************************"
+  fi
+fi
+
 ui_print "- 好诶w，《HyperOS For Pad/Fold 完美横屏应用计划》安装/更新完成，重启系统后生效！"

@@ -284,7 +284,7 @@ fi
 # 工作台模式
 is_add_miui_desktop_mode_enabled=$(grep_prop is_add_miui_desktop_mode_enabled "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 if [[ "$API" -ge 33 ]]; then
-  # 判断已配置游戏显示布局
+  # 判断已配置工作台模式
   if [ -f "$magisk_path$module_id/system.prop" ] &&
     [ "$is_add_miui_desktop_mode_enabled" = 'true' ]; then
     ui_print "*********************************************"

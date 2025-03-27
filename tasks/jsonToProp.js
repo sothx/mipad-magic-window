@@ -99,7 +99,7 @@ module.exports = function jsonToProp(cb) {
       return json;
     })))
     .pipe(gulpIf(buildActionIsPhone, gulpJSONEdit(function (json) {
-      json.description = `${global.applicationRuleCount ? `[★适配应用总数:${global.applicationRuleCount}，仅兼容Hyper OS 2.0]` : ''} 适用于HyperOS For Phone，用于扩展妙享桌面的支持范围并优化适配体验，。当前刷入的是[小米手机妙享桌面版]。(反馈应用适配问题可前往酷安私信 @做梦书 ，模块首页:https://hyper-magic-window.sothx.com，GitHub仓库:https://github.com/sothx/mipad-magic-window，如需卸载模块请移除模块后重启平板)`;
+      json.description = `${global.applicationRuleCount ? `[★适配应用总数:${global.applicationRuleCount}]` : ''} ，仅适用于手机，用于优化妙享流转应用的平行窗口适配体验，并提供部分系统功能增强。当前刷入的是[小米手机妙享流转版]。(反馈应用适配问题可前往酷安私信 @做梦书 ，模块首页:https://hyper-magic-window.sothx.com，GitHub仓库:https://github.com/sothx/mipad-magic-window，如需卸载模块请移除模块后重启手机)`;
       return json;
     })))
     .pipe(gulpIf(buildActionIsGeneralUpsideDownCake, gulpJSONEdit(function (json) {
