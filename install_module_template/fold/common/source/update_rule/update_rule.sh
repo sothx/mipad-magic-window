@@ -204,6 +204,9 @@ elif [[ "$API" -ge 31 ]]; then
 
   if [[ "$targetService" == "miui_embedding_window" || -z "$targetService" ]]; then
     /bin/cmd miui_embedding_window update-rule
+    if [[ "$API" -ge 35 ]]; then
+      /bin/cmd miui_embedding_window_projection update-rule
+    fi
   fi
 
   if [[ "$targetService" == "miui_auto_ui" || -z "$targetService" ]]; then

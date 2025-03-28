@@ -78,6 +78,6 @@ if [ -f /data/system/cloudFeature_generic_rules_list_projection.xml ]; then
   chattr +i /data/system/cloudFeature_generic_rules_list_projection.xml
 fi
 
-/bin/cmd miui_embedding_window update-rule
+/bin/cmd miui_embedding_window_projection update-rule
 
 echo '模块已重新载入规则，更新成功了ww'
