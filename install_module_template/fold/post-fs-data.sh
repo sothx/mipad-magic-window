@@ -132,7 +132,7 @@ elif [[ "$API" -ge 31 ]]; then
   if [[ -f "$CUSTOM_CONFIG_EMBEDDED_RULES_LIST_PROJECTION" ]]; then
     cp -f "$MODDIR"/common/source/embedded_rules_list_projection.xml "$MODDIR"/common/embedded_rules_list_projection.xml
     sed -i '/<\/package_config>/d' "$MODDIR"/common/embedded_rules_list_projection.xml
-    cat "$CUSTOM_CONFIG_FIXED_ORIENTATION_LIST_PROJECTION" >>"$MODDIR"/common/embedded_rules_list_projection.xml
+    cat "$CUSTOM_CONFIG_EMBEDDED_RULES_LIST_PROJECTION" >>"$MODDIR"/common/embedded_rules_list_projection.xml
     printf "\n</package_config>\n" >>"$MODDIR"/common/embedded_rules_list_projection.xml
   else
     cp -f "$MODDIR"/common/source/embedded_rules_list_projection.xml "$MODDIR"/common/embedded_rules_list_projection.xml
