@@ -139,7 +139,7 @@ elif [[ "$API" -ge 31 ]]; then
     cp -f "$MODDIR"/common/source/fixed_orientation_list_projection.xml "$MODDIR"/common/fixed_orientation_list_projection.xml
     sed -i '/<\/package_config>/d' "$MODDIR"/common/fixed_orientation_list_projection.xml
     cat "$CUSTOM_CONFIG_FIXED_ORIENTATION_LIST_PROJECTION" >>"$MODDIR"/common/fixed_orientation_list_projection.xml
-    printf "\n</package_config>\n" >>"$MODDIR"/common/fixed_orientation_list.xml
+    printf "\n</package_config>\n" >>"$MODDIR"/common/fixed_orientation_list_projection.xml
   else
     cp -f "$MODDIR"/common/source/fixed_orientation_list_projection.xml "$MODDIR"/common/fixed_orientation_list_projection.xml
   fi
