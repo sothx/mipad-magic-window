@@ -1,10 +1,10 @@
-# HyperOS For Pad/Fold 完美横屏应用计划
+# HyperOS 完美横屏应用计划
 
 ## 模块首页
 
 可通过项目首页快速了解本模块：
 
-<a href="https://hyper-magic-window.sothx.com/" target="_blank">HyperOS For Pad/Fold 完美横屏应用计划 - MIUI MagicWindow+</a>
+<a href="https://hyper-magic-window.sothx.com/" target="_blank">HyperOS 完美横屏应用计划 - MIUI MagicWindow+</a>
 
 
 ## 模块版本说明
