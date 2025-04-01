@@ -132,7 +132,7 @@
   <package name="com.baidu.searchbox" isShowDivider="true" supportFullSize="true" />
   <package name="com.xiachufang" isShowDivider="true" supportFullSize="true" />
   <package name="com.xiaomi.shop" isShowDivider="true" supportFullSize="true" />
-  <package name="com.alibaba.android.rimet" isShowDivider="true" supportFullSize="true" />
+  <package name="com.alibaba.android.rimet" disable="true" isShowDivider="true" supportFullSize="true" />
   <package name="windinfo.android" isShowDivider="true" supportFullSize="true" />
   <%_ } else { _%>
   <package name="com.mihoyo.desktopportal" relaunch="false" defaultSettings="full" supportModes="full,fo" />
@@ -219,11 +219,7 @@
   <package name="com.yandex.browser" disable="true" />
   <package name="com.ywhy.zjxjy.mi" relaunch="false" />
   <package name="com.fy.jrxfd.mi" relaunch="false" />
-  <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.alibaba.android.rimet" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" supportFullSize="true" isShowDivider="true" />
-  <%_ } else { _%>
-  <package name="com.alibaba.android.rimet" disable="true" supportFullSize="true" isShowDivider="true" />
-  <%_ } _%>
+  <package name="com.alibaba.android.rimet" disable="true" skipSelfAdaptive="true" supportFullSize="true" isShowDivider="true" />
   <package name="com.fy.xdyqc.mi" relaunch="false" />
   <package name="com.fy.fcds.mi" relaunch="false" />
   <package name="com.dw.xydg.net.mi" relaunch="false" />
@@ -1682,11 +1678,7 @@
   <package name="in.startv.hotstar" disable="true" />
   <package name="com.android.daoway" />
   <package name="com.calculator.hideu" isScale="true" />
-  <%_ if (Number(mi_os_version) >= 2) { _%>
-  <package name="com.baidu.homework" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" isShowDivider="true" supportFullSize="true" skipSelfAdaptive="true" />
-  <%_ } else { _%>
   <package name="com.baidu.homework" disable="true" isShowDivider="true" supportFullSize="true" skipSelfAdaptive="true" />
-  <%_ } _%>
   <!--OnePlus Pad-->
   <package name="com.cctv4g.cctvmobiletv" supportFullSize="true" supportCameraPreview="true" relaunch="false" ratio="1.5" />
   <package name="com.tbc.android.defaults" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
