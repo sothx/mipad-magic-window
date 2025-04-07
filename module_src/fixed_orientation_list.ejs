@@ -964,11 +964,12 @@
   <package name="com.unionpay" relaunch="false" supportCameraPreview="false" forcePortraitActivity="com.unionpay/.activity.payment.UPActivityScan" />
   <package name="com.sinovatech.unicom.ui" relaunch="false" />
   <package name="com.popcap.pvz2cthdxm" disable="true" />
-  <package name="com.cat.readall" isScale="true" defaultSettings="full" supportModes="full,fo" />
+  <package name="com.cat.readall" isScale="true" defaultSettings="full" supportModes="full,fo" supportCameraPreview="*:false" />
   <package name="com.xyhj.hanju" isScale="true" />
   <package name="cn.readpad.whiteboard" disable="true" />
   <package name="com.cqwx.jdelsfk.mi" isScale="true" />
   <package name="com.tencent.edu" disable="true" />
+  <package name="com.vidio.android" disable="true" />
   <%_ if (Number(mi_os_version) >= 2) { _%>
   <package name="com.gstarmc.android" supportModes="full,fo" defaultSettings="full" skipSelfAdaptive="true" relaunch="false" />
   <%_ } else { _%>
@@ -1373,7 +1374,7 @@
   <package name="com.scores365" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.xiwei.logistics" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.jeyluta.timestampcameracnfree" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
-  <package name="com.yitong.ksrcb.mbank.android" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
+  <package name="com.yitong.ksrcb.mbank.android" compatChange="FORCE_RESIZE_APP" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.omnipotent.clean.expert" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.zhangdan.app" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
   <package name="com.sogou.upd.x1" supportFullSize="true" supportCameraPreview="true" relaunch="false" />
@@ -1947,7 +1948,7 @@
   <package name="com.gracg.react_app" relaunch="false" ratio="1.1" supportFullSize="true" supportCameraPreview="true" defaultSettings="full" supportModes="full,fo" />
   <package name="com.qianrun.music" relaunch="false" ratio="1.1" supportFullSize="true" supportCameraPreview="true" defaultSettings="full" supportModes="full,fo" />
   <package name="com.iceasy.chip" supportModes="full,fo" defaultSettings="fo" skipSelfAdaptive="true" relaunch="false" ratio="1.1" supportFullSize="true" supportCameraPreview="true" />
-  <package name="com.parallel.odyssey" relaunch="false" ratio="1.5" supportFullSize="true" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.parallel.odyssey" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" relaunch="false" ratio="1.5" supportFullSize="true" supportModes="full,fo" defaultSettings="full" />
   <package name="com.xingye.app" relaunch="false" ratio="1.5" supportFullSize="true" />
   <package name="com.guazi.android.sellcar" relaunch="false" ratio="1.5" supportFullSize="true" />
   <package name="com.ganji.android.haoche_c" relaunch="false" ratio="1.5" supportFullSize="true" />
@@ -4040,7 +4041,7 @@
   <package name="videoeditor.videorecorder.screenrecorder" supportModes="full,fo" defaultSettings="full" />
   <package name="ru.ozon.app.android" supportModes="full,fo" defaultSettings="full" />
   <package name="com.facebook.orca" supportModes="full,fo" defaultSettings="full" />
-  <package name="com.shanxiang.wangxiao" supportModes="full,fo" defaultSettings="full" />
+  <package name="com.shanxiang.wangxiao" supportModes="full,fo" defaultSettings="full" relaunch="false" compatChange="FORCE_RESIZE_APP" />
   <package name="com.caij.see" supportModes="full,fo" defaultSettings="full" />
   <package name="xzr.hkf" supportModes="full,fo" defaultSettings="full" />
   <package name="com.huanqiu.news" supportModes="full,fo" defaultSettings="full" />
@@ -4469,7 +4470,7 @@
   <package name="com.netease.mkey" relaunch="false" supportModes="full,fo" defaultSettings="full" />
   <package name="com.jihuanshe" supportModes="full,fo" />
   <package name="com.hero.time" supportModes="full,fo" defaultSettings="full" />
-  <package name="cn.kuwo.tingshu" supportFullSize="true" supportCameraPreview="true" ratio="1.5" defaultSettings="fo" />
+  <package name="cn.kuwo.tingshu" supportFullSize="true" supportCameraPreview="true" ratio="1.5" defaultSettings="full" />
   <package name="com.douban.radio" supportFullSize="true" supportCameraPreview="true" ratio="1.1" defaultSettings="fo" />
   <package name="com.xplay.zjgq.huawei" supportFullSize="true" supportCameraPreview="true" ratio="1.5" defaultSettings="fo" />
   <package name="com.xplay.zjgq" supportFullSize="true" supportCameraPreview="true" ratio="1.5" defaultSettings="fo" />
@@ -4579,5 +4580,36 @@
   <package name="com.cahx.huawei" ratio="1.8" />
   <package name="org.kuyo.game" ratio="1.5" />
   <package name="com.a17173.newfahao" ratio="1.8" />
+  <package name="com.jyzx.aqsc" ratio="1.5" />
+  <package name="com.dz.game.elsklxc.mi" ratio="1.5" />
+  <package name="com.zy.game.llsgg.mi" ratio="1.5" />
+  <package name="com.xg.bzfdx.mi" ratio="1.5" />
+  <package name="io.ahrcw.NI2DD730B" ratio="1.5" />
+  <package name="com.sjzmor.srdbp.mi" ratio="1.5" />
+  <package name="cn.ultralisk.balala4.wali" disable="true" />
+  <package name="com.chinavvv.cms.hnsrst" compatChange="FORCE_RESIZE_APP" />
+  <package name="com.yunbu.differences.mi" ratio="1.5" />
+  <package name="com.xiaomi.mimobile" ratio="1.5" compatChange="FORCE_RESIZE_APP" />
+  <package name="com.tencent.lolm" disable="true" />
+  <package name="com.netease.mrzh.mi" disable="true" />
+  <package name="com.netease.mrzh" disable="true" />
+  <package name="com.dadaabc.zhuozan.dadateacher" ratio="1.5" compatChange="FORCE_RESIZE_APP" />
+  <package name="com.hetao101.scratchJr" ratio="1.5" />
+  <package name="com.jz.xydj" ratio="1.5" />
+  <package name="com.huoyu.spidersolitaireclassic.mi" ratio="1.5" relaunch="false" />
+  <package name="com.ld.dianquan" ratio="1.5" relaunch="false" />
+  <package name="com.sabac.hy" ratio="1.5" relaunch="false" />
+  <package name="com.ylzinfo.gad.gdhrss" disable="true" />
+  <package name="com.jd.game.zjgqbk.mi" ratio="1.5" relaunch="false" />
+  <package name="com.mhj.menghuijie" ratio="1.5" relaunch="false" />
+  <package name="cn.myhug.baobao" ratio="1.5" relaunch="false" />
+  <package name="fm.qingting.qtradio" disable="true" />
+  <package name="com.gameley.ttjz" ratio="1.5" relaunch="false" />
+  <package name="com.chinamobile.mcloud" forcePortraitActivity="com.chinamobile.mcloud/.client.ui.store.camera.ui.CameraActivity" />
+  <package name="cn.dictcn.android.digitize.swg_xhzd_21003" compatChange="OVERRIDE_UNDEFINED_ORIENTATION_TO_PORTRAIT" />
+  <package name="com.tencent.tmgp.speedmobile" disable="true" />
+  <package name="com.netease.party.mi" disable="true" />
+  <package name="com.netease.party" disable="true" />
+  <package name="com.tencent.tmgp.pubgmhd" disable="true" />
   <%_ } _%>
 </package_config>

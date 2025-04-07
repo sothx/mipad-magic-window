@@ -3193,11 +3193,7 @@
   <%_ } else { _%>
   <package name="com.zhibo.edu" activityRule="com.zhibo.edu.MainActivity" transitionRules="com.zhibo.edu.MainActivity" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
   <%_ } _%>
-  <%_ if (['general-tiramisu','miui-based-on-tiramisu','hyperos-based-on-tiramisu'].includes(compatibility)) { _%>
-  <package name="cn.kuwo.tingshu" scaleMode="1" activityRule="cn.kuwo.player.activities.MainActivity" transitionRules="cn.kuwo.player.activities.MainActivity" defaultSettings="false" isShowDivider="true" supportFullSize="true" splitRatio="0.42" />
-  <%_ } else { _%>
-  <package name="cn.kuwo.tingshu" scaleMode="1" activityRule="cn.kuwo.player.activities.MainActivity" transitionRules="cn.kuwo.player.activities.MainActivity" isShowDivider="true" supportFullSize="true" splitRatio="0.3" />
-  <%_ } _%>
+  <package name="cn.kuwo.tingshu" fullRule="nra:cr:rcr:nr" />
   <%_ if (['general-tiramisu','miui-based-on-tiramisu','hyperos-based-on-tiramisu'].includes(compatibility)) { _%>
   <package name="com.qiqi.hhvideo" placeholder="com.qiqi.hhvideo.ui.MainActivity2:com.qiqi.hhvideo.ui.home.SearchActivity" isShowDivider="true" supportFullSize="true" splitRatio="0.42" splitPairRule="com.qiqi.hhvideo.ui.MainActivity2:*,com.qiqi.hhvideo.ui.home.SearchActivity:*" />
   <%_ } else { _%>
