@@ -89,18 +89,6 @@ else
   fi
 fi
 
-# 不允许1.25.x之前的老版本模块覆盖更新
-if [[ -d "$magisk_path$module_id" && $has_been_installed_module_versionCode -le 125135 ]]; then
-  ui_print "*********************************************"
-  ui_print "- 您当前的模块版本过旧，无法安装，请自行卸载老版本模块再尝试安装！！！"
-  ui_print "- 请直接卸载模块并且重启后再尝试安装QwQ~"
-  ui_print "- (可以直接卸载，无需任何额外的卸载专用模块)"
-  ui_print "- 模块下载地址:"
-  ui_print "- https://caiyun.139.com/m/i?135CeBMHACC6p"
-  ui_print "- 同时欢迎体验全新的模块Web UI(已适配Android 13-15)"
-  abort "*********************************************"
-fi
-
 # 不允许1.13.x之前的老版本模块覆盖更新
 if [[ -d "$magisk_path$module_id" && $has_been_installed_module_versionCode -le 11300 ]]; then
   ui_print "*********************************************"
