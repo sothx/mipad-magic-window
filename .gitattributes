@@ -43,6 +43,8 @@ pnpm-lock.yaml text eol=lf
 install_module_template/ext/META-INF/** text eol=lf
 install_module_template/generic/META-INF/** text eol=lf
 install_module_template/os2_pad_generic/META-INF/** text eol=lf
+install_module_template/os2_pad_generic/source/os2_system_app_optimize/** text eol=lf
+install_module_template/os2_pad_generic/source/os2_third_party_app_optimize/** text eol=lf
 install_module_template/phone/META-INF/** text eol=lf
 install_module_template/fold/META-INF/** text eol=lf
 
