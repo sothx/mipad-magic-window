@@ -1,4 +1,19 @@
 # shellcheck disable=SC2148
+# 根据机型列表判断是否需要补全对应机型的功能
+check_device_is_need_vaild() {
+    local device_code=$1
+    local pad_list=$2
+    local result=0
+
+    for i in $pad_list; do
+        if [[ "$device_code" == "$i" ]]; then
+            result=1
+            break
+        fi
+    done
+
+    echo $result
+}
 
 # 检查Android API版本
 verify_android_api_has_pass() {
@@ -48,7 +63,7 @@ verify_special_rule_pass() {
     local sothx_miui_device_code=$(grep_prop ro.config.sothx_miui_device_code "$magisk_path$module_id/system.prop")
     local sothx_disabled_os2_install_module_tips=$(getprop ro.sothx.disabled_os2_install_module_tips)
 
-        if [[ -z "$sothx_disabled_os2_install_module_tips" ]]; then
+    if [[ -z "$sothx_disabled_os2_install_module_tips" ]]; then
         ui_print "*********************************************"
         ui_print "- 感谢使用<完美横屏应用计划>Hyper OS 2.0版本~"
         ui_print "- 请了解以下使用须知："
@@ -75,6 +90,33 @@ verify_special_rule_pass() {
         ui_print "- 您已选择跳过模块使用须知~"
         add_props "ro.sothx.disabled_os2_install_module_tips=true"
         ui_print "*********************************************"
+    fi
+
+    # 部分新版本安装强提醒(不允许忽略提醒)
+    local device_code="$(getprop ro.product.device)"
+    need_tips_update_pad_list="uke muyu sheng"
+    is_need_tips_update=$(check_device_is_need_vaild "$device_code" "$need_tips_update_pad_list")
+
+    if [[ "$is_need_tips_update" == 1 ]]; then
+        ui_print "*********************************************"
+        ui_print "- 请了解以下额外须知："
+        ui_print "- 1.该专版模块版本仅兼容OS2.0.200.x~"
+        ui_print "- 2.不符合的系统版本请安装通用版~"
+        ui_print "- 3.误安装会导致卡米，请仔细阅读并了解~"
+        ui_print "- (Tips:请随意选择，不影响模块安装过程~)"
+        ui_print "  音量+ ：已了解额外须知"
+        ui_print "  音量- ：退出安装流程"
+        ui_print "*********************************************"
+        key_check
+        if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+            ui_print "*********************************************"
+            ui_print "- 正在进入模块安装流程~"
+            ui_print "*********************************************"
+        else
+            ui_print "*********************************************"
+            ui_print "- 请重新选择正确版本的模块QwQ！！！"
+            abort "*********************************************"
+        fi
     fi
 
     # 目录不存在则创建目录
@@ -134,7 +176,7 @@ select_device() {
         /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/${device_code}/${API}/"* "$MODPATH/system/system_ext/framework/"
         /bin/chmod -R 777 "$MODPATH/system/system_ext/framework/"
     else
-        return 1  # 选择否，返回1
+        return 1 # 选择否，返回1
     fi
 }
 
