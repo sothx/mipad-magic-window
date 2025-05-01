@@ -22,6 +22,8 @@
 
 - 小米平板OS2专版适配 小米平板7 Pro OS2.0.200.x，低于OS2.0.200.x请切换为通用版模块，否则更新后会卡米
 
+- 小米平板OS2专版部分机型模块版本增加仅兼容OS2.2的强提醒。
+
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
