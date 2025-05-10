@@ -12,6 +12,8 @@
 
 - 新增Lanerc(com.xuzly.hy.lanerc.app)的应用居中适配
 
+- 新增背书匠(com.zzdbwku.zizbnea)的应用横屏适配和应用布局优化
+
 - 小米平板OS2专版适配 小米平板6S Pro/7/7 Pro OS2.0.200.x，低于OS2.0.200.x请切换为通用版模块，否则更新后会卡米
 
 
