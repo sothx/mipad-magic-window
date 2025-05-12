@@ -4,15 +4,12 @@
 
 链接: [https://caiyun.139.com/m/i?135CdgGlXeVEC](https://caiyun.139.com/m/i?135CdgGlXeVEC)
 
-- 新增华为视频的强制横屏适配规则
 
 - 修复平板/手机的完美横屏，dm设备映射器启用状态显示不正常的问题
 
-- 新增云上写作(com.yunshangxiezuo.apk)的应用横屏适配
+- 优化Via在平板横屏时候的部分体验
 
-- 新增Lanerc(com.xuzly.hy.lanerc.app)的应用居中适配
-
-- 新增背书匠(com.zzdbwku.zizbnea)的应用横屏适配和应用布局优化
+- 新增模块内Web UI的更新提醒弹窗，当模块存在新版本时，弹窗提示模块更新。
 
 - 小米平板OS2专版适配 小米平板6S Pro/7/7 Pro OS2.0.200.x，低于OS2.0.200.x请切换为通用版模块，否则更新后会卡米
 
