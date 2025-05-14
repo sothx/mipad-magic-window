@@ -1,6 +1,7 @@
 {
-  "version": "2.12.12",
-  "versionCode": 212012,
-  "zipUrl": "https://github.com/sothx/mipad-magic-window/releases/download/2.12.12/pad-2.12.12.zip",
-  "changelog": "https://hyper-magic-window-module-update.sothx.com/release/V10/changelog.md"
+  "version": "2.12.13",
+  "versionCode": 212013,
+  "zipUrl": "https://github.com/sothx/mipad-magic-window/releases/download/2.12.13/pad-2.12.13.zip",
+  "changelog": "https://hyper-magic-window-module-update.sothx.com/release/V10/changelog.md",
+  "chinaMobileMCloudUrl": "https://caiyun.139.com/m/i?135CdgGlXeVEC"
 }
