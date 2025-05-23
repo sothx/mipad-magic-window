@@ -12,6 +12,8 @@ let EmbeddedRuleListExtConfigStack = {}
 
 let FixedOrientationListExtConfigStack = {} 
 
+let AutoUIListExtConfigStack = {} 
+
 
 const isNeedExtConfig = function() {
   const use_ext = options.use_ext
@@ -171,9 +173,9 @@ function getAutoUIListExtConfig(cb) {
           const attrs = elementsWithAttribute[i].attributes;
           const currentAttrName = elementsWithAttribute[i].getAttribute('name')
           if (currentAttrName) {
-            FixedOrientationListExtConfigStack[currentAttrName] = {}
+            AutoUIListExtConfigStack[currentAttrName] = {}
             for (var j = attrs.length - 1; j >= 0; j--) {
-              FixedOrientationListExtConfigStack[currentAttrName][attrs[j].name] = attrs[j].value
+              AutoUIListExtConfigStack[currentAttrName][attrs[j].name] = attrs[j].value
             }
           }
         }
@@ -195,11 +197,11 @@ function mergeAutoUIListExtConfig(cb) {
         const elementsWithAttribute = doc.getElementsByTagName('package');
         for (let i = 0; i < elementsWithAttribute.length; i++) {
           const currentAttrName = elementsWithAttribute[i].getAttribute('name')
-          if (FixedOrientationListExtConfigStack[currentAttrName]) {
+          if (AutoUIListExtConfigStack[currentAttrName]) {
             elementsWithAttribute[i].parentNode.removeChild(elementsWithAttribute[i])
           }
         }
-        for (const [key, value] of Object.entries(FixedOrientationListExtConfigStack)) {
+        for (const [key, value] of Object.entries(AutoUIListExtConfigStack)) {
           // 创建一个新元素  
           const newElement = doc.createElement('package');
           newElement.setAttribute('name',key)
