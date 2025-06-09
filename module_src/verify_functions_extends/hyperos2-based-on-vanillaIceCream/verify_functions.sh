@@ -181,29 +181,31 @@ select_device() {
 }
 
 device_selection() {
-    # 第一个设备选择判断（简化）
-    if ! select_device "小米平板7" "uke" "$API"; then
-        # 第二个设备选择判断
-        if ! select_device "小米平板7 Pro" "muyu" "$API"; then
-            # 第三个设备选择判断
-            if ! select_device "小米平板6S Pro" "sheng" "$API"; then
-                # 第四个设备选择判断
-                if ! select_device "小米平板6 Max" "yudi" "$API"; then
-                    # 第五个设备选择判断
-                    if ! select_device "小米平板6 Pro" "liuqin" "$API"; then
-                        # 第六个设备选择判断
-                        if ! select_device "红米平板 Pro" "dizi" "$API"; then
-                            # 第七个设备选择判断
-                            if ! select_device "红米平板 Pro 5G" "ruan" "$API"; then
-                                # 第八个设备选择判断
-                                if ! select_device "红米平板 SE" "xun" "$API"; then
-                                    # 第九个设备选择判断
-                                    if ! select_device "红米平板 SE 8.7 Wi-Fi" "flare" "$API"; then
-                                        # 第十个设备选择判断
-                                        if ! select_device "红米平板 SE 8.7 4G" "spark" "$API"; then
-                                            ui_print "*********************************************"
-                                            ui_print "- 全部机型都选择了否，安装失败了QwQ！！！"
-                                            abort "*********************************************"
+    if ! select_device "小米平板7 Ultra" "jinghu" "$API"; then
+        # 第一个设备选择判断（简化）
+        if ! select_device "小米平板7" "uke" "$API"; then
+            # 第二个设备选择判断
+            if ! select_device "小米平板7 Pro" "muyu" "$API"; then
+                # 第三个设备选择判断
+                if ! select_device "小米平板6S Pro" "sheng" "$API"; then
+                    # 第四个设备选择判断
+                    if ! select_device "小米平板6 Max" "yudi" "$API"; then
+                        # 第五个设备选择判断
+                        if ! select_device "小米平板6 Pro" "liuqin" "$API"; then
+                            # 第六个设备选择判断
+                            if ! select_device "红米平板 Pro" "dizi" "$API"; then
+                                # 第七个设备选择判断
+                                if ! select_device "红米平板 Pro 5G" "ruan" "$API"; then
+                                    # 第八个设备选择判断
+                                    if ! select_device "红米平板 SE" "xun" "$API"; then
+                                        # 第九个设备选择判断
+                                        if ! select_device "红米平板 SE 8.7 Wi-Fi" "flare" "$API"; then
+                                            # 第十个设备选择判断
+                                            if ! select_device "红米平板 SE 8.7 4G" "spark" "$API"; then
+                                                ui_print "*********************************************"
+                                                ui_print "- 全部机型都选择了否，安装失败了QwQ！！！"
+                                                abort "*********************************************"
+                                            fi
                                         fi
                                     fi
                                 fi
