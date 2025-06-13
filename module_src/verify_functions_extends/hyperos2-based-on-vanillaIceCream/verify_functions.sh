@@ -94,7 +94,7 @@ verify_special_rule_pass() {
 
     # 部分新版本安装强提醒(不允许忽略提醒)
     local device_code="$(getprop ro.product.device)"
-    need_tips_update_pad_list="uke muyu sheng"
+    need_tips_update_pad_list="uke muyu sheng liuqin yudi"
     is_need_tips_update=$(check_device_is_need_vaild "$device_code" "$need_tips_update_pad_list")
 
     if [[ "$is_need_tips_update" == 1 ]]; then
