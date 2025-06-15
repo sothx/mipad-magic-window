@@ -15,11 +15,11 @@
 
 - Android 15 Hyper OS 2 For Pad 移植包可以主动兼容模块，而后无需使用专版模块，使用通用版模块搭配修改版管家即可使用游戏显示布局。
 
-- 适配WebUI X的沉浸式状态栏,感谢@YifePlayte 
-
 具体可以浏览以下链接:
 
 [https://hyper-magic-window.sothx.com/game-mode.html](https://hyper-magic-window.sothx.com/game-mode.html)
+
+- 适配WebUI X的沉浸式状态栏,感谢@YifePlayte 
 
 - 小米平板安卓15专版适配小米平板6 Pro/Max OS2.0.200.x
 
