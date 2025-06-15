@@ -26,6 +26,13 @@ if [ "$is_hide_gesture_line" = 'true' ]; then
   settings put global hide_gesture_line 1
 fi
 
+# 刷新率与分辨率开机自启动
+display_mode_record_auto_enable_id=$(grep_prop display_mode_record_auto_enable_id "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+if [ "$display_mode_record_auto_enable_id" != "null" ] && [ -n "$display_mode_record_auto_enable_id" ]; then
+  adjusted_id=$(($display_mode_record_auto_enable_id - 1))
+  service call SurfaceFlinger 1035 i32 "$adjusted_id"
+fi
+
 # 鼠标光标样式
 is_auto_start_miui_cursor_style_type=$(grep_prop is_auto_start_miui_cursor_style_type "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 

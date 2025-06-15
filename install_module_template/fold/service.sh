@@ -38,6 +38,13 @@ if [ "$is_enable_status_bar_show_notification_icon" = 'true' ]; then
   settings put system status_bar_show_notification_icon $show_notification_icon_num
 fi
 
+# 刷新率与分辨率开机自启动
+display_mode_record_auto_enable_id=$(grep_prop display_mode_record_auto_enable_id "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+if [ "$display_mode_record_auto_enable_id" != "null" ] && [ -n "$display_mode_record_auto_enable_id" ]; then
+  adjusted_id=$(($display_mode_record_auto_enable_id - 1))
+  service call SurfaceFlinger 1035 i32 "$adjusted_id"
+fi
+
 # 工作台模式
 is_add_miui_desktop_mode_enabled=$(grep_prop ro.config.miui_desktop_mode_enabled "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 
