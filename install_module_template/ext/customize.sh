@@ -15,8 +15,8 @@ has_been_installed_module_versionCode=$(expr "$(grep_prop versionCode "$magisk_p
 MODULE_CUSTOM_CONFIG_PATH="/data/adb/"$module_id
 
 # 重置缓存
-# rm -rf /data/system/package_cache
-# rm -rf /data/resource-cache
+rm -rf /data/system/package_cache
+rm -rf /data/resource-cache
 
 # 赋予文件夹权限
 /bin/chmod -R 777 "$MODPATH"
