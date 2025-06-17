@@ -1,3 +1,4 @@
+# shellcheck disable=SC2148
 MODDIR=${0%/*}
 . "$MODDIR"/util_functions.sh
 api_level_arch_detect
@@ -51,13 +52,6 @@ display_mode_record_auto_enable_id=$(grep_prop display_mode_record_auto_enable_i
 if [ "$display_mode_record_auto_enable_id" != "null" ] && [ -n "$display_mode_record_auto_enable_id" ]; then
   adjusted_id=$(($display_mode_record_auto_enable_id - 1))
   service call SurfaceFlinger 1035 i32 "$adjusted_id"
-fi
-
-# 工作台模式
-is_add_miui_desktop_mode_enabled=$(grep_prop ro.config.miui_desktop_mode_enabled "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
-
-if [ "$is_module_miui_desktop_mode_enabled" = 'true' ]; then
-  ro.config.miui_desktop_mode_enabled=true
 fi
 
 # 隐藏手势提示线
