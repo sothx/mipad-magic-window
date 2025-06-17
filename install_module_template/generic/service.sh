@@ -1,4 +1,4 @@
-# shellcheck disable=SC2148
+# shellcheck disable=SC2148,SC1091,SC2086,SC2034,SC2154,SC2004
 MODDIR=${0%/*}
 . "$MODDIR"/util_functions.sh
 api_level_arch_detect
