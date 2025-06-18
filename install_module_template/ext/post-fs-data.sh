@@ -1,4 +1,4 @@
-# shellcheck disable=SC2148
+# shellcheck disable=SC2148,SC1091,SC2235
 
 MODDIR=${0%/*}
 MODULE_CUSTOM_CONFIG_PATH="/data/adb/MIUI_MagicWindow+"
@@ -13,6 +13,7 @@ fi
 echo "$KSU,$KSU_VER,$KSU_VER_CODE,$KSU_KERNEL_VER_CODE,$APATCH,$APATCH_VER_CODE,$APATCH_VER,$MAGISK_VER,$MAGISK_VER_CODE" >"$MODPATH/common/temp/root_manager_info.txt"
 
 is_patch_mode=$(grep_prop is_patch_mode "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+# is_patch_game_mode=$(grep_prop is_patch_game_mode "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 
 # 补丁模式配置文件
 # Android 15 +
@@ -26,7 +27,7 @@ CUSTOM_CONFIG_EMBEDDED_RULES_LIST="/data/adb/MIUI_MagicWindow+/config/embedded_r
 CUSTOM_CONFIG_FIXED_ORIENTATION_LIST="/data/adb/MIUI_MagicWindow+/config/fixed_orientation_list.xml"
 CUSTOM_CONFIG_EMBEDDED_SETTING_CONFIG="/data/adb/MIUI_MagicWindow+/config/embedded_setting_config.xml"
 CUSTOM_CONFIG_AUTOUI_LIST="/data/adb/MIUI_MagicWindow+/config/autoui_list.xml"
-CUSTOM_CONFIG_GENERIC_RULES_LIST="/data/adb/MIUI_MagicWindow+/config/generic_rules_list.xml"
+# CUSTOM_CONFIG_GENERIC_RULES_LIST="/data/adb/MIUI_MagicWindow+/config/generic_rules_list.xml"
 
 # 对云控文件解除写保护
 # 检查 /data/system/cloudFeature_embedded_rules_list.xml 是否存在

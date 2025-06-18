@@ -1,0 +1,5 @@
+    invoke-static {}, Landroid/sizecompat/MiuiSizeCompatManager;->getMiuiSizeCompatEnabledApps()Ljava/util/Map;
+
+    move-result-object v2
+
+    const/4 v2, 0x0

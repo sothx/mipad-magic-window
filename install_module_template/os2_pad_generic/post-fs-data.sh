@@ -1,4 +1,4 @@
-# shellcheck disable=SC2148
+# shellcheck disable=SC2148,SC1091,SC2235
 
 MODDIR=${0%/*}
 MODULE_CUSTOM_CONFIG_PATH="/data/adb/MIUI_MagicWindow+"
