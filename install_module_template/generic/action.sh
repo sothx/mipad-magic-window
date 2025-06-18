@@ -1,3 +1,4 @@
+# shellcheck disable=SC2148
 MODDIR=${0%/*}
 
 key_check() {

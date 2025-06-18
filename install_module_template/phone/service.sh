@@ -1,3 +1,4 @@
+# shellcheck disable=SC2148,SC1091,SC2086,SC2034,SC2154,SC2004
 MODDIR=${0%/*}
 . "$MODDIR"/util_functions.sh
 api_level_arch_detect
@@ -31,6 +32,12 @@ display_mode_record_auto_enable_id=$(grep_prop display_mode_record_auto_enable_i
 if [ "$display_mode_record_auto_enable_id" != "null" ] && [ -n "$display_mode_record_auto_enable_id" ]; then
   adjusted_id=$(($display_mode_record_auto_enable_id - 1))
   service call SurfaceFlinger 1035 i32 "$adjusted_id"
+fi
+
+# 磁盘IO调度策略自启动
+auto_setting_io_scheduler=$(grep_prop auto_setting_io_scheduler "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+if [ "$auto_setting_io_scheduler" != "null" ] && [ -n "$auto_setting_io_scheduler" ]; then
+  echo "$auto_setting_io_scheduler" > /sys/block/sda/queue/scheduler
 fi
 
 # 鼠标光标样式

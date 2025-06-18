@@ -46,6 +46,12 @@ if [ "$display_mode_record_auto_enable_id" != "null" ] && [ -n "$display_mode_re
   service call SurfaceFlinger 1035 i32 "$adjusted_id"
 fi
 
+# 磁盘IO调度策略自启动
+auto_setting_io_scheduler=$(grep_prop auto_setting_io_scheduler "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+if [ "$auto_setting_io_scheduler" != "null" ] && [ -n "$auto_setting_io_scheduler" ]; then
+  echo "$auto_setting_io_scheduler" > /sys/block/sda/queue/scheduler
+fi
+
 # 隐藏手势提示线
 is_hide_gesture_line=$(grep_prop is_hide_gesture_line "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 
