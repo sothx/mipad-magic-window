@@ -72,7 +72,6 @@ remove_system_prop() {
   sed -i "/^$prop=/d" "$file"
 }
 
-
 get_crond() {
   if [[ -f "/data/adb/ksu/bin/busybox" ]]; then
     echo "/data/adb/ksu/bin/busybox crond"
@@ -92,8 +91,14 @@ kill_fbo_regularly_dir_crond() {
   }
 }
 
+add_lines() {
+  local content="$1"
+  local file="$2"
+  printf "\n$content\n" >>"$file"
+}
+
 # remove_old_verison_modules_config_file() {
-#   # 移除老版本模块配置
+#   # 解锁老版本模块配置
 #   chattr -R -i /data/adb/modules/MIUI_MagicWindow+
 #   chattr -i /data/system/users/0/magic_window_setting_config.xml
 #   chattr -i /data/system/magicWindowFeature_magic_window_application_list.xml

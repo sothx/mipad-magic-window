@@ -1,9 +1,16 @@
+# shellcheck disable=SC2148,SC2059,SC2086
 grep_prop() {
   local REGEX="s/^$1=//p"
   shift
   local FILES=$@
   [ -z "$FILES" ] && FILES='/system/build.prop'
   cat $FILES 2>/dev/null | dos2unix | sed -n "$REGEX" | head -n 1
+}
+
+add_lines() {
+  local content="$1"
+  local file="$2"
+  printf "\n$content\n" >>"$file"
 }
 
 update_system_prop() {

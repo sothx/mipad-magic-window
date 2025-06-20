@@ -145,6 +145,16 @@ if [ -f "$magisk_path$module_id/system.prop" ] &&
   ui_print "*********************************************"
 fi
 
+# 默认闲置刷新率
+idle_default_fps=$(grep_prop ro.vendor.display.idle_default_fps "$magisk_path$module_id"/system.prop)
+if [ -f "$magisk_path$module_id/system.prop" ] && [ "$idle_default_fps" != "null" ] && [ -n "$idle_default_fps" ]; then
+  ui_print "*********************************************"
+  ui_print "- 已配置默认闲置刷新率"
+  ui_print "- （Tips: 可以前往Web UI 系统体验增强中修改配置~）"
+  add_props "ro.vendor.display.idle_default_fps=""$idle_default_fps"
+  ui_print "*********************************************"
+fi
+
 # KSU Web UI
 is_need_install_ksu_web_ui=1
 if [[ "$KSU" == "true" || "$APATCH" == "true" ]]; then
