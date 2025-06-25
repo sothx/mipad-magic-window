@@ -58,13 +58,18 @@ update_system_prop() {
   local file="$3"
 
   if grep -q "^$prop=" "$file"; then
-    # 如果找到匹配行，使用 sed 进行替换
+    # 找到匹配行，替换内容
     sed -i "s/^$prop=.*/$prop=$value/" "$file"
   else
-    # 如果没有找到匹配行，追加新行
-    printf "\n%s" "$prop=$value" >> "$file"
+    # 文件非空且末尾没有换行符，先补一个换行符
+    if [ -s "$file" ] && [ "$(tail -c1 "$file")" != $'\n' ]; then
+      printf "\n" >> "$file"
+    fi
+    # 追加新行，内容后加换行符
+    printf "%s\n" "$prop=$value" >> "$file"
   fi
 }
+
 
 remove_system_prop() {
   local prop="$1"
@@ -94,7 +99,14 @@ kill_fbo_regularly_dir_crond() {
 add_lines() {
   local content="$1"
   local file="$2"
-  printf "\n%s" "$content" >> "$file"
+
+  # 文件非空且末尾没有换行符，先补一个换行符
+  if [ -s "$file" ] && [ "$(tail -c1 "$file")" != $'\n' ]; then
+    printf "\n" >> "$file"
+  fi
+
+  # 追加内容（不加前导换行）
+  printf "%s\n" "$content" >> "$file"
 }
 
 # remove_old_verison_modules_config_file() {
