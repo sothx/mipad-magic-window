@@ -79,7 +79,7 @@ verify_special_rule_pass() {
             ui_print "- 正在为你修补应用横屏布局有关的系统文件"
             ui_print "*********************************************"
             /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/$sothx_miui_device_code/$API/"* "$MODPATH/system/system_ext/framework/"
-            add_props "ro.config.sothx_miui_device_code=$sothx_miui_device_code"
+            add_lines "ro.config.sothx_miui_device_code=$sothx_miui_device_code" "$MODPATH"/system.prop
             /bin/chmod -R 777 "$MODPATH/system/system_ext/framework/"
         fi
     fi
@@ -100,7 +100,7 @@ select_device() {
 
     if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
         ui_print "- 正在为你写入${device_name}(${device_code})的模块配置文件"
-        add_props "ro.config.sothx_miui_device_code=${device_code}"
+        add_lines "ro.config.sothx_miui_device_code=${device_code}" "$MODPATH"/system.prop
         /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/${device_code}/${API}/"* "$MODPATH/system/system_ext/framework/"
         /bin/chmod -R 777 "$MODPATH/system/system_ext/framework/"
     else

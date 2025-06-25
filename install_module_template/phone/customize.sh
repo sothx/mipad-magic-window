@@ -23,11 +23,6 @@ MODULE_CUSTOM_CONFIG_PATH="/data/adb/"$module_id
 
 set_perm_recursive "$MODPATH"/common/utils 0 0 0755 0777 u:object_r:system_file:s0
 
-# 基础函数
-add_props() {
-  local line="$1"
-  printf "\n$line" >>"$MODPATH"/system.prop
-}
 
 key_check() {
   while true; do
@@ -130,7 +125,7 @@ if [ -f "$magisk_path$module_id/system.prop" ] &&
   ui_print "*********************************************"
   ui_print "- 已禁用应用预加载"
   ui_print "- （Tips: 可以前往Web UI 模块设置中修改配置~）"
-  add_props "persist.sys.prestart.proc=false"
+  add_lines "persist.sys.prestart.proc=false" "$MODPATH"/system.prop
   ui_print "*********************************************"
 fi
 
@@ -141,7 +136,7 @@ if [ -f "$magisk_path$module_id/system.prop" ] &&
   ui_print "*********************************************"
   ui_print "- 已禁用深度睡眠"
   ui_print "- （Tips: 可以前往Web UI 模块设置中修改配置~）"
-  add_props "persist.sys.deep_sleep.enable=false"
+  add_lines "persist.sys.deep_sleep.enable=false" "$MODPATH"/system.prop
   ui_print "*********************************************"
 fi
 
@@ -151,7 +146,7 @@ if [ -f "$magisk_path$module_id/system.prop" ] && [ "$idle_default_fps" != "null
   ui_print "*********************************************"
   ui_print "- 已配置默认闲置刷新率"
   ui_print "- （Tips: 可以前往Web UI 系统体验增强中修改配置~）"
-  add_props "ro.vendor.display.idle_default_fps=""$idle_default_fps"
+  add_lines "ro.vendor.display.idle_default_fps=""$idle_default_fps" "$MODPATH"/system.prop
   ui_print "*********************************************"
 fi
 

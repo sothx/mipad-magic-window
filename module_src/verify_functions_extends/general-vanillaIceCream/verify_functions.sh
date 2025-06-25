@@ -54,7 +54,7 @@ verify_special_rule_pass() {
     else
         ui_print "*********************************************"
         ui_print "- 您已选择跳过模块使用须知~"
-        add_props "ro.sothx.disabled_os2_install_module_tips=true"
+        add_lines "ro.sothx.disabled_os2_install_module_tips=true" "$MODPATH"/system.prop
         ui_print "*********************************************"
     fi
 }

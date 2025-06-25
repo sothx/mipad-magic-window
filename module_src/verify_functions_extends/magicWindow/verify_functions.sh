@@ -34,12 +34,12 @@ verify_special_rule_pass() {
         ui_print "*********************************************"
         key_check
         if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
-            add_props "ro.config.sothx_magic_window_version=magicWindow"
+            add_lines "ro.config.sothx_magic_window_version=magicWindow" "$MODPATH"/system.prop
             ui_print "*********************************************"
             ui_print "- 正在进入模块安装流程~"
             ui_print "*********************************************"
         else
-            add_props "ro.config.sothx_magic_window_version=magicWindow"
+            add_lines "ro.config.sothx_magic_window_version=magicWindow" "$MODPATH"/system.prop
             ui_print "*********************************************"
             ui_print "- 正在进入模块安装流程~"
             ui_print "*********************************************"

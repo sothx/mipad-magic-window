@@ -23,12 +23,6 @@ MODULE_CUSTOM_CONFIG_PATH="/data/adb/"$module_id
 
 set_perm_recursive "$MODPATH"/common/utils 0 0 0755 0777 u:object_r:system_file:s0
 
-# 基础函数
-add_props() {
-  local line="$1"
-  printf "\n$line" >>"$MODPATH"/system.prop
-}
-
 key_check() {
   while true; do
     key_check=$(/system/bin/getevent -qlc 1)
@@ -182,15 +176,13 @@ if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" 
     ui_print "*********************************************"
     ui_print "- 已开启智能I/O调度(Android 14+ 生效)"
     update_system_prop smartfocusio on "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
-    add_props "# 开启智能I/O调度"
-    add_props "persist.sys.stability.smartfocusio=on"
+    add_lines "persist.sys.stability.smartfocusio=on" "$MODPATH"/system.prop
     ui_print "*********************************************"
   elif [[ $is_need_smartfocusio == 'off' ]]; then
     ui_print "*********************************************"
     ui_print "- 已启用系统默认I/O调度(Android 14+ 生效)"
     update_system_prop smartfocusio off "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
-    add_props "# 开启系统默认I/O调度"
-    add_props "persist.sys.stability.smartfocusio=off"
+    add_lines "persist.sys.stability.smartfocusio=off" "$MODPATH"/system.prop
     ui_print "*********************************************"
   else
     if [[ "$API" -eq 34 ]]; then
@@ -213,15 +205,13 @@ if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" 
           ui_print "*********************************************"
           ui_print "- 已开启智能I/O调度(Android 14+ 生效)"
           update_system_prop smartfocusio on "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
-          add_props "# 开启智能I/O调度"
-          add_props "persist.sys.stability.smartfocusio=on"
+          add_lines "persist.sys.stability.smartfocusio=on" "$MODPATH"/system.prop
           ui_print "*********************************************"
         else
           ui_print "*********************************************"
           ui_print "- 已启用系统默认I/O调度(Android 14+ 生效)"
           update_system_prop smartfocusio off "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
-          add_props "# 开启系统默认I/O调度"
-          add_props "persist.sys.stability.smartfocusio=off"
+          add_lines "persist.sys.stability.smartfocusio=off" "$MODPATH"/system.prop
           ui_print "*********************************************"
         fi
       else
@@ -230,15 +220,6 @@ if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" 
     fi
   fi
 fi
-
-# 赋值平行窗口相关属性
-# if [[ "$API" -ge 35 && "$device_characteristics" == 'tablet' ]]; then
-#   ui_print "*********************************************"
-#   ui_print "- 检测到你的设备搭载的是 Hyper OS For Pad 2.0 以上的版本"
-#   ui_print "- 已为[应用显示布局]提供更多的选项配置"
-#   add_props "ro.config.miui_embedded_compat_enable=true"
-#   ui_print "*********************************************"
-# fi
 
 has_been_miui_appcompat_enable="false"
 has_been_miui_compat_enable="false"
@@ -259,8 +240,7 @@ if [[ "$API" -ge 33 ]]; then
     ui_print "- 详细使用方式请阅读模块文档~"
     ui_print "- Android 15+需要额外安装修改版手机/平板管家才会生效~"
     ui_print "- [游戏显示布局使用文档]: https://hyper-magic-window.sothx.com/game-mode.html"
-    add_props "# 开启游戏显示布局"
-    add_props "ro.config.miui_compat_enable=true"
+    add_lines "ro.config.miui_compat_enable=true" "$MODPATH"/system.prop
     ui_print "*********************************************"
   else
     ui_print "*********************************************"
@@ -278,8 +258,7 @@ if [[ "$API" -ge 33 ]]; then
     ui_print "*********************************************"
     ui_print "- 已开启工作台模式"
     ui_print "- （Tips: 可以前往Web UI 模块设置中开启~）"
-    add_props "# 开启工作台模式"
-    add_props "ro.config.miui_desktop_mode_enabled=true"
+    add_lines "ro.config.miui_desktop_mode_enabled=true" "$MODPATH"/system.prop
     ui_print "*********************************************"
   else
     ui_print "*********************************************"
@@ -295,7 +274,7 @@ if [ -f "$magisk_path$module_id/system.prop" ] &&
   ui_print "*********************************************"
   ui_print "- 已禁用应用预加载"
   ui_print "- （Tips: 可以前往Web UI 模块设置中修改配置~）"
-  add_props "persist.sys.prestart.proc=false"
+  add_lines "persist.sys.prestart.proc=false" "$MODPATH"/system.prop
   ui_print "*********************************************"
 fi
 
@@ -306,7 +285,7 @@ if [ -f "$magisk_path$module_id/system.prop" ] &&
   ui_print "*********************************************"
   ui_print "- 已禁用深度睡眠"
   ui_print "- （Tips: 可以前往Web UI 模块设置中修改配置~）"
-  add_props "persist.sys.deep_sleep.enable=false"
+  add_lines "persist.sys.deep_sleep.enable=false" "$MODPATH"/system.prop
   ui_print "*********************************************"
 fi
 
@@ -318,8 +297,8 @@ if [ -f "$magisk_path$module_id/system.prop" ] &&
   ui_print "*********************************************"
   ui_print "- 已禁用手写笔刷新率优化"
   ui_print "- （Tips: 可以前往Web UI 系统体验增强中修改配置~）"
-  add_props "ro.vendor.display.smartpen.idle.enable=false"
-  add_props "ro.vendor.display.smartpen_vrr_fps=false"
+  add_lines "ro.vendor.display.smartpen.idle.enable=false" "$MODPATH"/system.prop
+  add_lines "ro.vendor.display.smartpen_vrr_fps=false" "$MODPATH"/system.prop
   ui_print "*********************************************"
 fi
 
@@ -329,7 +308,7 @@ if [ -f "$magisk_path$module_id/system.prop" ] && [ "$idle_default_fps" != "null
   ui_print "*********************************************"
   ui_print "- 已配置默认闲置刷新率"
   ui_print "- （Tips: 可以前往Web UI 系统体验增强中修改配置~）"
-  add_props "ro.vendor.display.idle_default_fps=""$idle_default_fps"
+  add_lines "ro.vendor.display.idle_default_fps=""$idle_default_fps" "$MODPATH"/system.prop
   ui_print "*********************************************"
 fi
 
