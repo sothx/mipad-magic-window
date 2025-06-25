@@ -1,3 +1,4 @@
+# shellcheck disable=SC2148
 grep_prop() {
   local REGEX="s/^$1=//p"
   shift
@@ -16,7 +17,7 @@ update_system_prop() {
     sed -i "s/^$prop=.*/$prop=$value/" "$file"
   else
     # 如果没有找到匹配行，追加新行
-    printf "\n$prop=$value\n" >> "$file"
+    printf "\n%s" "$prop=$value" >> "$file"
   fi
 }
 

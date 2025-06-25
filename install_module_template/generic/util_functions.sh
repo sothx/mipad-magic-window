@@ -62,7 +62,7 @@ update_system_prop() {
     sed -i "s/^$prop=.*/$prop=$value/" "$file"
   else
     # 如果没有找到匹配行，追加新行
-    printf "\n$prop=$value\n" >> "$file"
+    printf "\n%s" "$prop=$value" >> "$file"
   fi
 }
 
@@ -94,7 +94,7 @@ kill_fbo_regularly_dir_crond() {
 add_lines() {
   local content="$1"
   local file="$2"
-  printf "\n$content\n" >>"$file"
+  printf "\n%s" "$content" >> "$file"
 }
 
 # remove_old_verison_modules_config_file() {

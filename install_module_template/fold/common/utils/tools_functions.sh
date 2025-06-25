@@ -10,7 +10,7 @@ grep_prop() {
 add_lines() {
   local content="$1"
   local file="$2"
-  printf "\n$content\n" >>"$file"
+  printf "\n%s" "$content" >> "$file"
 }
 
 update_system_prop() {
@@ -23,7 +23,7 @@ update_system_prop() {
     sed -i "s/^$prop=.*/$prop=$value/" "$file"
   else
     # 如果没有找到匹配行，追加新行
-    printf "\n$prop=$value\n" >> "$file"
+    printf "\n%s" "$prop=$value" >> "$file"
   fi
 }
 
