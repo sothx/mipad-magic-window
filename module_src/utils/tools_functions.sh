@@ -21,7 +21,7 @@ update_system_prop() {
       printf "\n" >> "$file"
     fi
     # 追加新行，内容后加换行符
-    printf "%s\n" "$prop=$value" >> "$file"
+    printf "$prop=$value" >> "$file"
   fi
 }
 

@@ -66,7 +66,7 @@ update_system_prop() {
       printf "\n" >> "$file"
     fi
     # 追加新行，内容后加换行符
-    printf "%s\n" "$prop=$value" >> "$file"
+    printf "$prop=$value" >> "$file"
   fi
 }
 
@@ -99,13 +99,16 @@ add_lines() {
   local content="$1"
   local file="$2"
 
-  # 文件非空且末尾没有换行符，先补一个换行符
-  if [ -s "$file" ] && [ "$(tail -c1 "$file")" != $'\n' ]; then
-    printf "\n" >> "$file"
+  if [ -s "$file" ]; then
+    local last_byte
+    last_byte=$(tail -c1 "$file" | od -An -tx1 | tr -d ' \n\r')
+    if [ "$last_byte" != "0a" ]; then
+      printf "\n" >> "$file"
+    fi
   fi
 
-  # 追加内容（不加前导换行）
-  printf "%s\n" "$content" >> "$file"
+  # 追加内容，不自动加换行
+  printf "%s" "$content" >> "$file"
 }
 
 # remove_old_verison_modules_config_file() {
