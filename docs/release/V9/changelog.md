@@ -7,7 +7,9 @@
 
 本次更新内容:
 
-- 新增 部分移植包专属功能开关UI
+- 新增 系统体验增强-强制竖屏上下分屏，需要OS2小米平板移植包作者主动适配该功能，修改攻略可阅读：
+
+https://www.coolapk.com/feed/65785074?s=M2JlMjU4MjAxZDdjZTdnNjg2MWUwYTF6a1503
 
 - 优化 Web UI字体体积占用大小，减少模块的整体体积，感谢@FurryRbl 
 
