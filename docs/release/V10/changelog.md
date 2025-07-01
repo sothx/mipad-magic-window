@@ -7,6 +7,7 @@
 
 本次更新内容:
 
+- 优化部分系统提示
 
 - 新增 系统体验增强-强制竖屏上下分屏，仅适配安卓15 Hyper OS 2的小米平板，需要安装 @HChenX 的 LSPosed 模块 - SplitScreenPlus：
 
