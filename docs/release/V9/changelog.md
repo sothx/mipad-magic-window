@@ -7,11 +7,9 @@
 
 本次更新内容:
 
-- 优化 系统体验增强-强制竖屏上下分屏的使用引导，同时兼容移植包和模块
+- 优化 系统体验增强-强制竖屏上下分屏，增加对小米大折叠设备的支持
 
-- 新增 系统体验增强-强制竖屏上下分屏，仅适配安卓15 Hyper OS 2的小米平板，需要安装 @HChenX 的 LSPosed 模块 - SplitScreenPlus：
-
-[https://github.com/HChenX/SplitScreenPlus/releases](hhttps://github.com/HChenX/SplitScreenPlus/releases)
+- 新增 系统体验增强-强制竖屏上下分屏，仅适配安卓15 Hyper OS 2的小米平板/小米大折叠，需要安装 @HChenX 的 LSPosed 模块，您可以从[系统体验增强-获取SplitScreenPlus]中获取
 
 - 优化 Web UI字体体积占用大小，减少模块的整体体积，感谢@FurryRbl 
 
