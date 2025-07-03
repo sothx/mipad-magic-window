@@ -5,6 +5,8 @@ MODULE_CUSTOM_CONFIG_PATH="/data/adb/MIUI_MagicWindow+/"
 . "$MODDIR"/util_functions.sh
 api_level_arch_detect
 
+rm -rf /data/adb/MIUI_MagicWindow+/
+
 # For Android 15+
 # 对云控文件解除写保护
 chattr -i /data/system/cloudFeature_embedded_rules_list_projection.xml

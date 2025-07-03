@@ -5,8 +5,7 @@ MODULE_CUSTOM_CONFIG_PATH="/data/adb/MIUI_MagicWindow+/"
 . "$MODDIR"/util_functions.sh
 api_level_arch_detect
 
-remove_system_prop smartfocusio "$MODULE_CUSTOM_CONFIG_PATH"config.prop
-remove_system_prop create_custom_config_template "$MODULE_CUSTOM_CONFIG_PATH"config.prop
+rm -rf /data/adb/MIUI_MagicWindow+/
 
 if [[ "$API" -eq 30 ]]; then
   # For Android 11
