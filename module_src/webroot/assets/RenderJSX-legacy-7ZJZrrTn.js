@@ -1,0 +1,1 @@
+System.register(["./apis-legacy-DcnQWmba.js"],function(t,e){"use strict";var n;return{setters:[function(t){n=t.d}],execute:function(){t("R",n({props:{content:{type:Object,required:!0}},setup:function(t){return function(){return t.content}}}))}}});
