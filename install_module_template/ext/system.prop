@@ -3,4 +3,5 @@
 # ro.sf.lcd_density=320
 # 开启应用布局优化
 persist.miui.auto_ui_enable=true
-ro.config.sothx_project_treble_vertical_screen_split_version=2
+ro.config.sothx_project_treble_support_disable_resize_black_list=true
+ro.config.sothx_project_treble_disable_resize_black_list_version=1
