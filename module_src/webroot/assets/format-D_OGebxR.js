@@ -1,1 +1,0 @@
-function t(t){let n="",r=new Uint8Array(t),e=r.byteLength;for(let o=0;o<e;o++)n+=String.fromCharCode(r[o]);return window.btoa(n)}function n(t){const n=window.atob(t),r=n.length,e=new Uint8Array(r);for(let o=0;o<r;o++)e[o]=n.charCodeAt(o);return e}export{t as a,n as b};
