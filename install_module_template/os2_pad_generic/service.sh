@@ -30,6 +30,7 @@ fi
 # 水龙移植包相关方法
 is_amktiao_pen_enable=$(grep_prop is_amktiao_pen_enable "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 is_amktiao_pen_update=$(grep_prop is_amktiao_pen_update "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+is_amktiao_pen_update_auto_task=$(grep_prop is_amktiao_pen_update_auto_task "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 
 if [ "$is_amktiao_pen_enable" = 'true' ]; then
   echo 1 >/sys/touchpanel/pen_enable
@@ -37,6 +38,9 @@ fi
 
 if [ "$is_amktiao_pen_update" = 'true' ]; then
   echo 1 >/sys/touchpanel/pen_update
+fi
+
+if [[ "$is_amktiao_pen_update_auto_task" = 'true' && "$is_amktiao_pen_update" = 'true' ]]; then
   wake_status=$(dumpsys power | grep -oP "mWakefulness=\K\w+")
   if [ "$wake_status" = "Awake" ]; then
     input keyevent KEYCODE_POWER && sleep 1 && input keyevent KEYCODE_POWER
