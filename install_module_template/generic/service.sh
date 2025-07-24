@@ -29,6 +29,10 @@ fi
 
 if [ "$is_amktiao_pen_update" = 'true' ]; then
   echo 1 > /sys/touchpanel/pen_update
+  wake_status=$(dumpsys power | grep -oP "mWakefulness=\K\w+")
+  if [ "$wake_status" = "Awake" ]; then
+    input keyevent KEYCODE_POWER && sleep 1 && input keyevent KEYCODE_POWER
+  fi
 fi
 
 # 通知图标最大数量
