@@ -1,3 +1,4 @@
+# shellcheck disable=SC2148,SC2034,SC1091,SC2235
 # 声明变量
 MODULE_CUSTOM_CONFIG_PATH="/data/adb/MIUI_MagicWindow+"
 MODDIR="/data/adb/modules/MIUI_MagicWindow+"
@@ -6,7 +7,7 @@ api_level_arch_detect
 
 is_patch_mode=$(grep_prop is_patch_mode "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 
-local targetService="$1"
+targetService="$1"
 
 # 补丁模式配置文件
 # Android 12 +
