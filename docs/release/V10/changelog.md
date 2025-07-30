@@ -7,28 +7,7 @@
 
 本次更新内容:
 
-- 修复 窗口控制器3.0 权限不足导致无法正常使用的BUG
-
-- 优化 META 数据
-
-- 新增 窗口控制器 3.0，目前仅支持该功能的移植包使用，后续会提供给支持附加模块的小米平板机型，配置后窗口控制器将完全由用户自定义规则，且不再受云控管理。
-
-- 修复 部分错误的适配规则
-
-
-历史重要更新:
-
-- 新增 系统体验增强-晕车缓解，需要搭配支持该版本的管家才可以使用
-
-- 新增 系统体验增强-禁用深度睡眠(仅Android14及以上的小米平板设备显示)
-
-- Android 15 Hyper OS 2 For Pad 移植包可以主动兼容模块，而后无需使用专版模块，使用通用版模块搭配修改版管家即可使用游戏显示布局:
-
-[https://hyper-magic-window.sothx.com/game-mode.html](https://hyper-magic-window.sothx.com/game-mode.html)
-
-- 适配WebUI X的沉浸式状态栏,感谢@YifePlayte 
-
-- 小米平板OS2专版适配 小米平板6 Pro/6 Max/6S Pro/7/7 Pro OS2.0.200.x，低于OS2.0.200.x请切换为通用版模块，否则更新后会卡米
+- 优化 窗口控制器 3.0 的部分引导
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
