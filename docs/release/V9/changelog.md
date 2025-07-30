@@ -7,7 +7,7 @@
 
 本次更新内容:
 
-- 优化 窗口控制器 3.0 的部分引导
+- 优化 主动适配了OS2横屏异常修复的移植包不再自动重载系统应用
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
