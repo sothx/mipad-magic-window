@@ -34,6 +34,8 @@ elif [[ "$API" -ge 31 ]]; then
   rm -rf /data/system/cloudFeature_fixed_orientation_list_projection.xml # 删除信箱模式(流转)模块配置
   rm -rf /data/system/cloudFeature_generic_rules_list_projection.xml     # 删除通用规则(流转)模块配置
   rm -rf /data/system/users/0/projection_embedded_setting_config.xml # 重置平行窗口默认配置文件
+  # 窗口控制器配置文件
+  rm -rf /data/system/dot_black_list.json # 删除窗口控制器配置文件
 fi
 
 # 删除模块
