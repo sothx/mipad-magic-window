@@ -11,5 +11,7 @@
 
 - 新增 原始布局-第三方应用横屏优化，解决应用即使配置了原始布局，也会在系统重启后失效的问题
 
+- 修复 第三方应用横屏优化开启后无法正常移除的BUG
+
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
