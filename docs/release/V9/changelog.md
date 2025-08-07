@@ -7,9 +7,7 @@
 
 本次更新内容:
 
-- 优化 学习强国的平行窗口适配规则
-
-- 修复 性能监视器图标丢失的BUG
+- 优化 东方财富的平行窗口适配规则
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
