@@ -7,9 +7,9 @@
 
 本次更新内容:
 
-- 优化 学习强国的平行窗口适配规则
+- 优化 东方财富的平行窗口适配规则
 
-- 修复 性能监视器图标丢失的BUG
+- 屏蔽 小米平板 Hyper OS 2 的哔哩哔哩应用布局优化，因其可能导致异常的内存泄漏问题，将在 Hyper OS 3重新上线新版。
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
