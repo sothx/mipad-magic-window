@@ -41,7 +41,7 @@ fi
 if [ "$is_amktiao_pen_update_auto_task" = 'true' ] && [ "$is_amktiao_pen_update" = 'true' ] || [ "$is_amktiao_tp_firmware_auto_task" = 'true' ] && [ "$is_amktiao_tp_firmware" = 'true' ]; then
   wake_status=$(dumpsys power | grep -o "mWakefulness=[A-Za-z]*" | cut -d= -f2)
   if [ "$wake_status" = "Awake" ]; then
-    input keyevent KEYCODE_POWER && sleep 1 && input keyevent KEYCODE_POWER
+    input keyevent 26 && sleep 1 && input keyevent 224
   fi
 fi
 
