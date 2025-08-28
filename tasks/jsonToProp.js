@@ -95,7 +95,7 @@ module.exports = function jsonToProp(cb) {
       return json;
     }))
     .pipe(gulpIf(buildActionIsPad, gulpJSONEdit(function (json) {
-      json.description = `${global.applicationRuleCount ? `[★适配应用总数:${global.applicationRuleCount}，仅兼容Hyper OS 2.0]` : ''} 适用于HyperOS For Pad，用于扩展应用横屏布局、应用布局优化和游戏显示布局的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板安卓15通用版]。(反馈应用适配问题可前往酷安私信 @做梦书 ，模块首页:https://hyper-magic-window.sothx.com，GitHub仓库:https://github.com/sothx/mipad-magic-window，如需卸载模块请移除模块后重启平板)`;
+      json.description = `${global.applicationRuleCount ? `[★适配应用总数:${global.applicationRuleCount}，仅兼容Hyper OS 2/3]` : ''} 适用于HyperOS For Pad，用于扩展应用横屏布局、应用布局优化和游戏显示布局的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板安卓15/16通用版]。(反馈应用适配问题可前往酷安私信 @做梦书 ，模块首页:https://hyper-magic-window.sothx.com，GitHub仓库:https://github.com/sothx/mipad-magic-window，如需卸载模块请移除模块后重启平板)`;
       return json;
     })))
     .pipe(gulpIf(buildActionIsPhone, gulpJSONEdit(function (json) {
