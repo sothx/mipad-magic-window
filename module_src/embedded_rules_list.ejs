@@ -3516,7 +3516,7 @@
   <!--Adaptive For Sothx 1.17.x-->
   <%_ if (['general-tiramisu','hyperos-based-on-tiramisu','miui-based-on-tiramisu'].includes(compatibility)) { _%>
   <package name="com.coolapk.market" skipSelfAdaptive="true" fullRule="nra:cr:rcr:nr" />
-  <%_ } else if (Number(mi_os_version) >= 2) { _%>
+  <%_ } else if (Number(mi_os_version) === 2) { _%>
   <package name="com.coolapk.market" skipSelfAdaptive="true" fullRule="nra:cr:rcr:nr" />
   <%_ } else if (['fold'].includes(platform)) { _%>
   <package name="com.coolapk.market" skipSelfAdaptive="true" fullRule="nra:cr:rcr:nr" />
