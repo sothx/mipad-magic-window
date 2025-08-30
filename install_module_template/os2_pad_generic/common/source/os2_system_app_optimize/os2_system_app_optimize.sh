@@ -2,9 +2,11 @@
 # 系统应用横屏优化
 is_disabled_os2_system_app_optimize=$(grep_prop is_disabled_os2_system_app_optimize "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 sothx_project_treble_support_magic_window_fix=$(getprop ro.config.sothx_project_treble_support_magic_window_fix)
+mi_os_version_name=$(grep_prop ro.mi.os.version.code /mi_ext/etc/build.prop)
 
-if { [ -z "$is_disabled_os2_system_app_optimize" ] || [ "$is_disabled_os2_system_app_optimize" == "null" ] || [ "$is_disabled_os2_system_app_optimize" == "false" ]; } \
-   && [ "$sothx_project_treble_support_magic_window_fix" != "true" ]; then
+if { [ -z "$is_disabled_os2_system_app_optimize" ] || [ "$is_disabled_os2_system_app_optimize" = "null" ] || [ "$is_disabled_os2_system_app_optimize" = "false" ]; } \
+   && [ "$sothx_project_treble_support_magic_window_fix" != "true" ] \
+   && [ "$mi_os_version_name" = "2" ]; then
   # 超级小爱
   cmd miui_embedding_window set-appMode com.miui.voiceassist 3
   # 安全服务
@@ -12,6 +14,7 @@ if { [ -z "$is_disabled_os2_system_app_optimize" ] || [ "$is_disabled_os2_system
   # 小米浏览器
   cmd miui_embedding_window set-appMode com.android.browser 3
 fi
+
 
 # 截图自动添加至剪贴板
 is_auto_enable_mi_screen_shots_write_clipboard=$(grep_prop is_auto_enable_mi_screen_shots_write_clipboard "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
