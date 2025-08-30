@@ -27,6 +27,9 @@ importers:
       gulp:
         specifier: ^4.0.2
         version: 4.0.2
+      gulp-clone:
+        specifier: ^2.0.1
+        version: 2.0.1
       gulp-copy:
         specifier: ^5.0.0
         version: 5.0.0(gulp@4.0.2)
@@ -742,6 +745,9 @@ packages:
     resolution: {integrity: sha512-zzGBl5fHo0EKSXsHzjspp3y5CONegCm8ErO5Qh0UzFzk2y4tMvzLWhoDokADbarfZRL2pGpRp7yt6gfJX4ph7A==}
     engines: {node: '>= 0.10'}
     hasBin: true
+
+  gulp-clone@2.0.1:
+    resolution: {integrity: sha512-SLg/KsHBbinR/pCX3PF5l1YlR28hLp0X+bcpf77PtMJ6zvAQ5kRjtCPV5Wt1wHXsXWZN0eTUZ15R8ZYpi/CdCA==}
 
   gulp-concat@2.6.1:
     resolution: {integrity: sha512-a2scActrQrDBpBbR3WUZGyGS1JEPLg5PZJdIa7/Bi3GuKAmPYDK6SFhy/NZq5R8KsKKFvtfR0fakbUCcKGCCjg==}
@@ -2679,6 +2685,11 @@ snapshots:
       yargs: 7.1.2
     transitivePeerDependencies:
       - supports-color
+
+  gulp-clone@2.0.1:
+    dependencies:
+      plugin-error: 0.1.2
+      through2: 2.0.5
 
   gulp-concat@2.6.1:
     dependencies:
