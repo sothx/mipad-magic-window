@@ -136,6 +136,9 @@ if [[ "$targetService" == "miui_embedding_window" || -z "$targetService" ]]; the
   # 第三方应用横屏优化
   if [[ -f "$MODULE_CUSTOM_CONFIG_PATH/config/third_party_app_optimize_runner.sh" ]]; then
   . "$MODULE_CUSTOM_CONFIG_PATH/config/third_party_app_optimize_runner.sh"
+    if [[ -f "$MODDIR"/common/source/auto_enable_mi_screen_shots_write_clipboard/auto_enable_mi_screen_shots_write_clipboard.sh ]]; then
+      . "$MODDIR"/common/source/auto_enable_mi_screen_shots_write_clipboard/auto_enable_mi_screen_shots_write_clipboard.sh
+    fi
   fi
 fi
 
