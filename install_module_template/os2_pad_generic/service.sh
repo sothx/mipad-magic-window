@@ -36,6 +36,8 @@ is_amktiao_pen_update=$(grep_prop is_amktiao_pen_update "$MODULE_CUSTOM_CONFIG_P
 is_amktiao_pen_update_auto_task=$(grep_prop is_amktiao_pen_update_auto_task "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 is_amktiao_tp_firmware=$(grep_prop is_amktiao_tp_firmware "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 is_amktiao_tp_firmware_auto_task=$(grep_prop is_amktiao_tp_firmware_auto_task "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+is_amktiao_game_mode=$(grep_prop is_amktiao_game_mode "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+is_amktiao_game_mode_auto_task=$(grep_prop is_amktiao_game_mode_auto_task "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 
 if [ "$is_amktiao_pen_enable" = 'true' ]; then
   echo 1 >/sys/touchpanel/pen_enable
@@ -50,6 +52,17 @@ if [ "$is_amktiao_tp_firmware" = 'true' ]; then
 fi
 
 if [ "$is_amktiao_pen_update_auto_task" = 'true' ] && [ "$is_amktiao_pen_update" = 'true' ] || [ "$is_amktiao_tp_firmware_auto_task" = 'true' ] && [ "$is_amktiao_tp_firmware" = 'true' ]; then
+  wake_status=$(dumpsys power | grep -o "mWakefulness=[A-Za-z]*" | cut -d= -f2)
+  if [ "$wake_status" = "Awake" ]; then
+    input keyevent 26 && sleep 1 && input keyevent 224
+  fi
+fi
+
+if [ "$is_amktiao_game_mode" = 'true' ]; then
+  echo 1 >/sys/touchpanel/game_mode
+fi
+
+if [ "$is_amktiao_pen_update_auto_task" = 'true' ] && [ "$is_amktiao_pen_update" = 'true' ] || [ "$is_amktiao_game_mode_auto_task" = 'true' ] && [ "$is_amktiao_game_mode" = 'true' ]; then
   wake_status=$(dumpsys power | grep -o "mWakefulness=[A-Za-z]*" | cut -d= -f2)
   if [ "$wake_status" = "Awake" ]; then
     input keyevent 26 && sleep 1 && input keyevent 224
