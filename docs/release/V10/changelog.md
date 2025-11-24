@@ -2,7 +2,7 @@
 
 为了确保模块的稳定性，Github推送的版本通常会晚几个版本，如需获取最新版本可以前往网盘获取：
 
-链接: [https://caiyun.139.com/m/i?135CdgGlXeVEC](https://caiyun.139.com/m/i?135CdgGlXeVEC)
+链接: [https://yun.139.com/shareweb/#/w/i/2qieog1Xypz11](https://yun.139.com/shareweb/#/w/i/2qieog1Xypz11)
 
 
 本次更新内容:
