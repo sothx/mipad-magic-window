@@ -1,7 +1,7 @@
 # shellcheck disable=SC2148,SC2034,SC1091,SC2235
 # 声明变量
-MODULE_CUSTOM_CONFIG_PATH="/data/adb/MIUI_MagicWindow+"
-MODDIR="/data/adb/modules/MIUI_MagicWindow+"
+MODULE_CUSTOM_CONFIG_PATH="/data/adb/Hyper_MagicWindow"
+MODDIR="/data/adb/modules/Hyper_MagicWindow"
 . "$MODDIR"/util_functions.sh
 api_level_arch_detect
 
@@ -11,17 +11,17 @@ targetService="$1"
 
 # 补丁模式配置文件
 # Android 12 +
-PATCH_MODE_CONFIG_EMBEDDED_RULES_LIST="/data/adb/MIUI_MagicWindow+/patch_rule/embedded_rules_list.xml"
-PATCH_MODE_CONFIG_FIXED_ORIENTATION_LIST="/data/adb/MIUI_MagicWindow+/patch_rule/fixed_orientation_list.xml"
-PATCH_MODE_CONFIG_EMBEDDED_SETTING_CONFIG="/data/adb/MIUI_MagicWindow+/patch_rule/embedded_setting_config.xml"
+PATCH_MODE_CONFIG_EMBEDDED_RULES_LIST="/data/adb/Hyper_MagicWindow/patch_rule/embedded_rules_list.xml"
+PATCH_MODE_CONFIG_FIXED_ORIENTATION_LIST="/data/adb/Hyper_MagicWindow/patch_rule/fixed_orientation_list.xml"
+PATCH_MODE_CONFIG_EMBEDDED_SETTING_CONFIG="/data/adb/Hyper_MagicWindow/patch_rule/embedded_setting_config.xml"
 
 # 自定义配置文件
 # Android 12 +
-CUSTOM_CONFIG_EMBEDDED_RULES_LIST="/data/adb/MIUI_MagicWindow+/config/embedded_rules_list.xml"
-CUSTOM_CONFIG_FIXED_ORIENTATION_LIST="/data/adb/MIUI_MagicWindow+/config/fixed_orientation_list.xml"
-CUSTOM_CONFIG_EMBEDDED_SETTING_CONFIG="/data/adb/MIUI_MagicWindow+/config/embedded_setting_config.xml"
-CUSTOM_CONFIG_AUTOUI_LIST="/data/adb/MIUI_MagicWindow+/config/autoui_list.xml"
-CUSTOM_CONFIG_GENERIC_RULES_LIST="/data/adb/MIUI_MagicWindow+/config/generic_rules_list.xml"
+CUSTOM_CONFIG_EMBEDDED_RULES_LIST="/data/adb/Hyper_MagicWindow/config/embedded_rules_list.xml"
+CUSTOM_CONFIG_FIXED_ORIENTATION_LIST="/data/adb/Hyper_MagicWindow/config/fixed_orientation_list.xml"
+CUSTOM_CONFIG_EMBEDDED_SETTING_CONFIG="/data/adb/Hyper_MagicWindow/config/embedded_setting_config.xml"
+CUSTOM_CONFIG_AUTOUI_LIST="/data/adb/Hyper_MagicWindow/config/autoui_list.xml"
+CUSTOM_CONFIG_GENERIC_RULES_LIST="/data/adb/Hyper_MagicWindow/config/generic_rules_list.xml"
 
 # 对云控文件解除写保护
 # 检查 /data/system/cloudFeature_embedded_rules_list.xml 是否存在

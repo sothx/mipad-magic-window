@@ -1,0 +1,1264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package_config>
+    <package name="com.wuba">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.wuba.zxing.scan.activity.CaptureFragmentActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.tencent.android.qqdownloader">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.tencent.assistant.plugin.proxy.PluginProxyActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.tal.tiku">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.tal.tiku.main.MainActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.chaoxing.mobile">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.chaoxing.android.scan.ScannerActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.youku.phone">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.youku.saosao.activity.CaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.cubic.autohome">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.autohome.plugin.imgocr.activity.CaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.taobao.trip">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.taobao.trip.scancode.ui.ScanHomeActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.tencent.tv.qie" enable="true">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.tencent.tv.qie.usercenter.scanner.ScannerActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.sina.weibo">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.sina.weibo.qrcode.CaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="tv.danmaku.bili">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.bilibili.app.qrcode.QRcodeCaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.ss.android.article.news">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.ss.android.qrscan.barcodescanner.CaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.midea.ai.appliances">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.midea.business.config.qrcode.SingleConfigEnterActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="air.tv.douyu.android">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="air.tv.douyu.android.loader.a.ActivityN1STPNTS1">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.Qunar">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.mqunar.pay.inner.activity.qrcode.QrScanActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.kingsoft">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.kingsoft.ciba.ocr.OcrActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.fenbi.android.kyzz">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.fenbi.android.module.scan.scan.QRCodeScanActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <!-- <cbinfo attr="rotation" current="" intent="0" /> -->
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="me.ele">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="me.ele.scan.ui.ScanMainActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="cn.xuexi.android">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.taobao.ma.ui.ScanCombineActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.xueersi.parentsmeeting">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.tal.publish.course.activity.camera.BookCameraActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.baidu.BaiduMap">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.baidu.baidumaps.MapsActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.baidu.haokan">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.google.zxing.client.android.CaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.yiyou.ga">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.tt.quwan.camerax.CameraXActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.tal.abctimelibrary">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.xys.libzxing.zxing.new_version.ArScanNewActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.jxedt">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.jxedt.mvp.activitys.barscanner.BarScannerActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.zlketang.mm">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="me.devilsen.czxing.ScanActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.yizhilu.qh">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.huawei.hms.hmsscankit.ScanKitActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.chaoge.athena_android">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.yzq.zxinglibrary.android.CaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="cn.eeo.classin">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="cn.eeo.cluster.classin.ui.MediaRecordActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.baidu.newapp">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.baidu.newapp.multimode.impl.MultiModeSearchActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+                <activity name="com.baidu.newapp.scancode.core.ScanCodeActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.huatu.handheld_huatu">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.huatu.handheld_huatu.business.me.MyScanActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="mark.via">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="mark.via.Shell">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.hujiang.cctalk">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.hujiang.cctalk.zxing.QRCodeScannerActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.gstarmc.android">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.stone.app.ui.activity.QRCodeActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="youqu.android.todesk">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.zuler.desktop.myprofile_module.activity.NewQRCodeScannerActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.oray.sunlogin">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.oray.sunlogin.application.Main">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.zuoyebang.airclass">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.zybang.fusesearch.camera.FuseCameraActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.fenbi.android.zhaojiao">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.fenbi.android.module.scan.scan.QRCodeScanActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.duokan.reader">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.duokan.reader.ui.ScanQRCodeLogin.ScanQRCodeLoginCaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.baidu.homework">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.baidu.homework.common.camera.NewCameraManyQuestionsActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+                <activity name="com.baidu.homeworkhd.common.camera.NewCameraManyQuestionsActivityHD">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+                <activity name="com.baidu.homework.activity.scan.ScanActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="cn.wps.moffice_eng">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="cn.wps.moffice.scan.camera.CameraActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.taobao.idlefish">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.taobao.fleamarket.home.activity.InitActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.taobao.fleamarket.home.activity.InitActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.kuaiduizuoye.scan">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.zybang.camera.activity.SearchCameraSDKActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+                <activity name="com.zybang.camera.activity.SearchCameraSDKActivityHD">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.youdao.dict">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.youdao.dict.activity.TranslatorActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+                <activity name="com.youdao.dict.scan.BarcodeScanActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.netease.cloudmusic">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.netease.cloudmusic.activity.ScanActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.netease.cloudmusic">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.netease.cloudmusic.activity.ScanActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.happyelements.AndroidAnimal">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.happyelements.hellolua.MainActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.alibaba.android.rimet">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.taobao.ma.ui.ScanActivity2">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.xunlei.downloadprovider">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.xunlei.downloadprovider.loader.a.ActivityN1STNTS1">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.tencent.letsgo">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.tencent.moe.qrcode.scan.MoeScanActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.quark.browser">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.ucpro.BrowserActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.hexin.plat.android">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.hexin.plat.android.DetailActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.duowan.kiwi">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.duowan.kiwi.scan.impl.CaptureHwScanActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+                <activity name="com.duowan.liveroom.LiveRoomActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.ximalaya.ting.android">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.ximalaya.ting.android.host.activity.MainActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.jingdong.app.mall">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.jd.lib.scan.lib.zxing.client.android.NewCaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.videogo">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.videogo.add.scan.CaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.kugou.android.lite">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.kugou.android.app.MediaActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.offcn.mini.teacher">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.offcn.mini.view.scan.ScanActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+        <module id="window">
+            <policy id="window">
+                <activity name="com.offcn.mini.view.splash.SplashActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.offcn.mini.view.splash.SplashActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.yangcong345.android.phone">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.yangcong345.main.phone.presentation.activity.QRCodeScanActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.netease.onmyoji.mi">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.netease.ntunisdk.zxing.client.android.CaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.netease.dfjs.mi">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.netease.ntunisdk.zxing.client.android.CaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.netease.party.mi">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.netease.ntunisdk.zxing.client.android.CaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.netease.mrzh.mi">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.netease.ntunisdk.zxing.client.android.CaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.duitang.main">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.duitang.main.activity.SplashActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.duitang.main.activity.SplashActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="1:0.973" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.yueme.itv">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.chinatelecom.smarthome.module.mainpage.ui.CoverActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.chinatelecom.smarthome.module.mainpage.ui.CoverActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.xs.fm">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.xs.fm.karaoke.impl.record.KaraokeRecordActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.xs.fm.karaoke.impl.record.KaraokeRecordActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.baidu.searchbox">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.baidu.searchbox.MainActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.baidu.searchbox.MainActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.netease.cloudmusic">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.netease.cloudmusic.activity.IconChangeDefaultAlias">
+                    <analyzer bindingmode="activity" bindingvalue="com.netease.cloudmusic.activity.IconChangeDefaultAlias" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.netease.cloudmusic.activity.ScanActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.cat.readall">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.cat.readall.activity.BrowserMainActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.cat.readall.activity.BrowserMainActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.baidu.searchbox.lite">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.baidu.searchbox.MainActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.baidu.searchbox.MainActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.eg.android.AlipayGphone">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.eg.android.AlipayGphone.AlipayLogin">
+                    <analyzer bindingmode="activity" bindingvalue="com.eg.android.AlipayGphone.AlipayLogin" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.alipay.mobile.scan.as.main.MainCaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.netease.a13.avg">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.netease.avg.a13.AgreeProtocolActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.netease.avg.a13.AgreeProtocolActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.zy.game.llsgg.mi">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.miui.zeus.mimo.sdk.ad.reward.RewardVideoAdActivityNewPE">
+                    <analyzer bindingmode="activity" bindingvalue="com.miui.zeus.mimo.sdk.ad.reward.RewardVideoAdActivityNewPE" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.tencent.hunyuan.app.chat">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.tencent.hunyuan.app.chat.biz.login.bindPhoneNum.BindPhoneNumActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.tencent.hunyuan.app.chat.biz.login.bindPhoneNum.BindPhoneNumActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.excean.splay">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.excelliance.kxqp.gs.main.MainActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.excelliance.kxqp.gs.main.MainActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.excelliance.kxqp.gs.qrscan.QRScanActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.ybyx.app.euun">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.ybyx.app.euun.MainActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.ybyx.app.euun.MainActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.tencent.weread">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.tencent.weread.LoginActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.tencent.weread.LoginActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.tencent.weread">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.tencent.weread.LoginActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.tencent.weread.LoginActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.netease.gl">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.netease.gl.compfeed.exoplayer.verticalList.GlVideoStreamActivityV2">
+                    <analyzer bindingmode="activity" bindingvalue="com.netease.gl.compfeed.exoplayer.verticalList.GlVideoStreamActivityV2" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+                <activity name="com.netease.gl.ui.activity.welcome.WelcomeActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.netease.gl.ui.activity.welcome.WelcomeActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.baidu.netdisk">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.baidu.netdisk.newvideo.PlayletPlayerActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.baidu.netdisk.newvideo.PlayletPlayerActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.mybank.android.phone">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.alipay.mobile.quinox.LauncherActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.alipay.mobile.quinox.LauncherActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.sinovatech.unicom.ui">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.sinovatech.unicom.basic.ui.activity.WelcomeClient">
+                    <analyzer bindingmode="activity" bindingvalue="com.sinovatech.unicom.basic.ui.activity.WelcomeClient" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.ahrcu.mobilebank">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.yitong.mobile.biz.launcher.app.SplashActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.yitong.mobile.biz.launcher.app.SplashActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="cn.com.langeasy.LangEasyLexis">
+        <module id="window">
+            <policy id="window">
+                <activity name="cn.com.langeasy.LangEasyLexis.activity.SplashActivity">
+                    <analyzer bindingmode="activity" bindingvalue="cn.com.langeasy.LangEasyLexis.activity.SplashActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.ubestkid.beilehu.android">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.ubestkid.foundation.activity.home.PadSongHomeActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.ubestkid.foundation.activity.home.PadSongHomeActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="cn.ysp.app.pad">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.ysp.SplashActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.ysp.SplashActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.sinyee.babybus.chants">
+        <module id="window">
+            <policy id="window">
+                <activity name="com.sinyee.babybus.android.main.MainActivity">
+                    <analyzer bindingmode="activity" bindingvalue="com.sinyee.babybus.android.main.MainActivity" id="dialog">
+                        <cbinfo attr="windowSize" current="" intent="" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.cmcc.cmvideo">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.cmcc.migusso.sdk.activity.QRCodeScanActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.ct.client">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.ct.client.zxing.activity.CtScanActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.pmph.irenwei">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.maning.mlkitscanner.scan.ui.ScanPreviewActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.hunantv.imgo.activity">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.mgtv.ui.login.CaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.yek.android.kfc.activitys">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.yumc.android.scan.zxing.CaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.tencent.qqlive">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.tencent.qqlive.qrcode.ui.ScanQRCustomActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.netease.dhxy.mi">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.netease.ntunisdk.zxing.client.android.CaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.netease.my.mi">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.netease.ntunisdk.zxing.client.android.CaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.tongcheng.android">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.tongcheng.android.module.qrcode.CaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="deform" current="" intent="0" />
+                        <cbinfo attr="rotation" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.fenbi.android.servant">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.fenbi.android.module.scan.scan.QRCodeScanActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.jingyao.easybike">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.hellobike.platform.scan.v2.NewPlatformScanActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.sohu.newsclient">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.sohu.newsclient.scanner.CaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.oupeng.mini.android">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.opera.android.OperaMainActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.benqu.wuta">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.benqu.scanner.ScanActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.xiaomi.gamecenter">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.xiaomi.gamecenter.ui.qrcode.CaptureActivity">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+    <package name="com.tencent.mm">
+        <module id="camera">
+            <policy id="camera">
+                <activity name="com.tencent.mm.plugin.flash.action.FaceFlashActionUI">
+                    <analyzer bindingmode="activity" bindingvalue="" id="camera">
+                        <cbinfo attr="rotation" current="" intent="0" />
+                        <cbinfo attr="deform" current="" intent="0" />
+                    </analyzer>
+                </activity>
+            </policy>
+        </module>
+    </package>
+</package_config>

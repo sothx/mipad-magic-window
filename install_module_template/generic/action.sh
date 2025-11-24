@@ -37,7 +37,7 @@ else
     HAS_BEEN_INSTALLED_KsuWebUI_APK=$(pm list packages | grep io.github.a13e300.ksuwebui)
     if [[ $HAS_BEEN_INSTALLED_KsuWebUI_APK == *"package:io.github.a13e300.ksuwebui"* ]]; then
         echo "- 正在打开Web UI，请稍等~"
-        am start -n io.github.a13e300.ksuwebui/.WebUIActivity -e id MIUI_MagicWindow+
+        am start -n io.github.a13e300.ksuwebui/.WebUIActivity -e id Hyper_MagicWindow
     else
         echo "*********************************************"
         echo "- 是否安装KsuWebUI？"

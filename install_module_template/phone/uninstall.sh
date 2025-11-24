@@ -1,11 +1,11 @@
 # shellcheck disable=SC2148
 MODDIR=${0%/*}
-MODULE_CUSTOM_CONFIG_PATH="/data/adb/MIUI_MagicWindow+/"
+MODULE_CUSTOM_CONFIG_PATH="/data/adb/Hyper_MagicWindow/"
 
 . "$MODDIR"/util_functions.sh
 api_level_arch_detect
 
-rm -rf /data/adb/MIUI_MagicWindow+/
+rm -rf /data/adb/Hyper_MagicWindow/
 
 # For Android 15+
 # 对云控文件解除写保护

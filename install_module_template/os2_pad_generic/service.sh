@@ -2,7 +2,7 @@
 MODDIR=${0%/*}
 . "$MODDIR"/util_functions.sh
 api_level_arch_detect
-MODULE_CUSTOM_CONFIG_PATH="/data/adb/MIUI_MagicWindow+"
+MODULE_CUSTOM_CONFIG_PATH="/data/adb/Hyper_MagicWindow"
 wait_login() {
   while [ "$(getprop sys.boot_completed)" != "1" ]; do
     sleep 1

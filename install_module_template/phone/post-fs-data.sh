@@ -1,7 +1,7 @@
 # shellcheck disable=SC2148,SC1091,SC2235,SC2034
 
 MODDIR=${0%/*}
-MODULE_CUSTOM_CONFIG_PATH="/data/adb/MIUI_MagicWindow+"
+MODULE_CUSTOM_CONFIG_PATH="/data/adb/Hyper_MagicWindow"
 . "$MODDIR"/util_functions.sh
 api_level_arch_detect
 
@@ -14,9 +14,9 @@ echo "$KSU,$KSU_VER,$KSU_VER_CODE,$KSU_KERNEL_VER_CODE,$APATCH,$APATCH_VER_CODE,
 
 # 自定义配置文件
 # Android 15 +
-CUSTOM_CONFIG_EMBEDDED_RULES_LIST_PROJECTION="/data/adb/MIUI_MagicWindow+/config/embedded_rules_list_projection.xml"
-CUSTOM_CONFIG_FIXED_ORIENTATION_LIST_PROJECTION="/data/adb/MIUI_MagicWindow+/config/fixed_orientation_list_projection.xml"
-CUSTOM_CONFIG_GENERIC_RULES_LIST_PROJECTION="/data/adb/MIUI_MagicWindow+/config/generic_rules_list_projection.xml"
+CUSTOM_CONFIG_EMBEDDED_RULES_LIST_PROJECTION="/data/adb/Hyper_MagicWindow/config/embedded_rules_list_projection.xml"
+CUSTOM_CONFIG_FIXED_ORIENTATION_LIST_PROJECTION="/data/adb/Hyper_MagicWindow/config/fixed_orientation_list_projection.xml"
+CUSTOM_CONFIG_GENERIC_RULES_LIST_PROJECTION="/data/adb/Hyper_MagicWindow/config/generic_rules_list_projection.xml"
 
 # 对云控文件解除写保护
 # 检查 /data/system/cloudFeature_embedded_rules_list_projection.xml 是否存在

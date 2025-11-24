@@ -1,6 +1,6 @@
 # 声明变量
-MODULE_CUSTOM_CONFIG_PATH="/data/adb/MIUI_MagicWindow+"
-MODDIR="/data/adb/modules/MIUI_MagicWindow+"
+MODULE_CUSTOM_CONFIG_PATH="/data/adb/Hyper_MagicWindow"
+MODDIR="/data/adb/modules/Hyper_MagicWindow"
 . "$MODDIR"/util_functions.sh
 api_level_arch_detect
 
@@ -8,9 +8,9 @@ is_patch_mode=$(grep_prop is_patch_mode "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
 
 # 自定义配置文件
 # Android 15 +
-CUSTOM_CONFIG_EMBEDDED_RULES_LIST_PROJECTION="/data/adb/MIUI_MagicWindow+/config/embedded_rules_list_projection.xml"
-CUSTOM_CONFIG_FIXED_ORIENTATION_LIST_PROJECTION="/data/adb/MIUI_MagicWindow+/config/fixed_orientation_list_projection.xml"
-CUSTOM_CONFIG_GENERIC_RULES_LIST_PROJECTION="/data/adb/MIUI_MagicWindow+/config/generic_rules_list_projection.xml"
+CUSTOM_CONFIG_EMBEDDED_RULES_LIST_PROJECTION="/data/adb/Hyper_MagicWindow/config/embedded_rules_list_projection.xml"
+CUSTOM_CONFIG_FIXED_ORIENTATION_LIST_PROJECTION="/data/adb/Hyper_MagicWindow/config/fixed_orientation_list_projection.xml"
+CUSTOM_CONFIG_GENERIC_RULES_LIST_PROJECTION="/data/adb/Hyper_MagicWindow/config/generic_rules_list_projection.xml"
 
 # 对云控文件解除写保护
 # 检查 /data/system/cloudFeature_embedded_rules_list_projection.xml 是否存在

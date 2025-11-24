@@ -5,6 +5,7 @@ SKIPUNZIP=0
 . "$MODPATH"/util_functions.sh
 magisk_path=/data/adb/modules/
 module_id=$(grep_prop id "$MODPATH/module.prop")
+old_module_id="MIUI_MagicWindow+"
 module_versionCode=$(expr "$(grep_prop versionCode "$MODPATH/module.prop")" + 0)
 has_been_installed_module_versionCode=$(expr "$(grep_prop versionCode "$magisk_path$module_id/module.prop")" + 0)
 MODULE_CUSTOM_CONFIG_PATH="/data/adb/"$module_id
@@ -44,9 +45,10 @@ key_check() {
 }
 
 # 不允许1.13.x之前的老版本模块覆盖更新
-if [[ -d "$magisk_path$module_id" && $has_been_installed_module_versionCode -le 11300 ]]; then
+if [[ -d "$magisk_path$old_module_id" ]]; then
   ui_print "*********************************************"
-  ui_print "- 您当前的模块版本过旧，无法安装，请自行卸载老版本模块再尝试安装！！！"
+  ui_print "- 新版模块不支持覆盖安装，请卸载老版本模块后重新安装！！！"
+  ui_print "- 模块下载地址：https://yun.139.com/shareweb/#/w/i/2qieog1Xypz11"
   abort "*********************************************"
 fi
 
@@ -240,13 +242,13 @@ fi
 #       fix_auth_manager "$MODPATH"
 #       ui_print "*********************************************"
 #       ui_print "- 已修复权限管理服务，后续不会再提醒修复权限管理服务"
-#       ui_print "- 如需取消修复，请前往/data/adb/MIUI_MagicWindow+/config/config.prop文件下，将fixAuthManager整行删除并重新安装模块会再次提醒。"
+#       ui_print "- 如需取消修复，请前往/data/adb/Hyper_MagicWindow/config/config.prop文件下，将fixAuthManager整行删除并重新安装模块会再次提醒。"
 #       ui_print "*********************************************"
 #     else
 #       printf "fixAuthManager=off\n" >> "$CUSTOM_CONFIG_MODULE_PROP_PATH/config.prop"
 #       ui_print "*********************************************"
 #       ui_print "- 你选择不修复权限管理服务，后续不会再提醒修复权限管理服务"
-#       ui_print "- 如需再次提醒，请前往/data/adb/MIUI_MagicWindow+/config/config.prop文件下，将fixAuthManager整行删除并重新安装模块会再次提醒。"
+#       ui_print "- 如需再次提醒，请前往/data/adb/Hyper_MagicWindow/config/config.prop文件下，将fixAuthManager整行删除并重新安装模块会再次提醒。"
 #       ui_print "*********************************************"
 #     fi
 #   fi
@@ -255,14 +257,14 @@ fi
 #     fix_auth_manager "$MODPATH"
 #     ui_print "*********************************************"
 #     ui_print "- 自动修复权限管理服务"
-#     ui_print "- 如需取消修复，请前往/data/adb/MIUI_MagicWindow+/config/config.prop文件下，将fixAuthManager整行删除并重新安装模块会再次提醒。"
+#     ui_print "- 如需取消修复，请前往/data/adb/Hyper_MagicWindow/config/config.prop文件下，将fixAuthManager整行删除并重新安装模块会再次提醒。"
 #     ui_print "*********************************************"
 #   fi
 #   # 已选择不修复权限管理服务，仅提醒
 #   if [[ "$fixAuthManager" == "off" ]]; then
 #     ui_print "*********************************************"
 #     ui_print "- 不修复权限管理服务"
-#     ui_print "- 如需再次提醒，请前往/data/adb/MIUI_MagicWindow+/config/config.prop文件下，将fixAuthManager整行删除并重新安装模块会再次提醒。"
+#     ui_print "- 如需再次提醒，请前往/data/adb/Hyper_MagicWindow/config/config.prop文件下，将fixAuthManager整行删除并重新安装模块会再次提醒。"
 #     ui_print "*********************************************"
 #   fi
 # fi

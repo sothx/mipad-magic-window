@@ -7,6 +7,7 @@ SKIPUNZIP=0
 api_level_arch_detect
 magisk_path=/data/adb/modules/
 module_id=$(grep_prop id "$MODPATH/module.prop")
+old_module_id="MIUI_MagicWindow+"
 module_versionCode=$(expr "$(grep_prop versionCode "$MODPATH/module.prop")" + 0)
 device_code="$(getprop ro.product.device)"
 device_soc_name="$(getprop ro.vendor.qti.soc_name)"
@@ -87,9 +88,10 @@ else
 fi
 
 # 不允许1.13.x之前的老版本模块覆盖更新
-if [[ -d "$magisk_path$module_id" && $has_been_installed_module_versionCode -le 11300 ]]; then
+if [[ -d "$magisk_path$old_module_id" ]]; then
   ui_print "*********************************************"
-  ui_print "- 您当前的模块版本过旧，无法安装，请自行卸载老版本模块再尝试安装！！！"
+  ui_print "- 新版模块不支持覆盖安装，请卸载老版本模块后重新安装！！！"
+  ui_print "- 模块下载地址：https://yun.139.com/shareweb/#/w/i/2qieog1Xypz11"
   abort "*********************************************"
 fi
 

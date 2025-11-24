@@ -42,7 +42,7 @@ get_app_list() {
 
     # 提取应用名称
     if [ -n "$APK_PATH" ]; then
-      APP_NAME=$(/data/adb/modules/MIUI_MagicWindow+/common/utils/aapt dump badging "$APK_PATH" 2>/dev/null | grep "application-label:" | sed "s/application-label://g; s/'//g")
+      APP_NAME=$(/data/adb/modules/Hyper_MagicWindow/common/utils/aapt dump badging "$APK_PATH" 2>/dev/null | grep "application-label:" | sed "s/application-label://g; s/'//g")
     else
       APP_NAME="Unknown App"
     fi

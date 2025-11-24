@@ -1452,7 +1452,7 @@
   <package name="com.ruanmei.ithome" supportFullSize="true" fullRule="*" />
   <package name="com.qiudashi.qiudashitiyu" scaleMode="1" relaunch="false" />
   <package name="draw.dkqoir.qiao" splitPairRule="draw.dkqoir.qiao.activity.MainActivity:*" activityRule="draw.dkqoir.qiao.activity.SketchpadActivity,draw.dkqoir.qiao.activity.function.FunctionWebActivity,draw.dkqoir.qiao.activity.CalculatorActivity" />
-  <!-- MIUI_MagicWindow+ -->
+  <!-- Hyper_MagicWindow -->
   <package name="com.tencent.mtt" scaleMode="1" fullRule="nra:cr:rcr" />
   <package name="com.taobao.litetao" relaunch="true" placeholder="com.taobao.ltao.maintab.MainFrameActivity:com.taobao.search.searchdoor.SearchDoorLanucherActivity" splitPairRule="com.taobao.ltao.maintab.MainFrameActivity:*,com.taobao.search.searchdoor.SearchDoorActivity:*,com.taobao.search.sf.srp.MainSearchResultActivity:*,com.taobao.search.searchdoor.SearchDoorLanucherActivity:*" />
   <package name="com.sdu.didi.psnger" placeholder="com.didi.sdk.app.MainActivity:com.didi.beatles.im.activity.IMFeedMsgListActivity" />

@@ -1,5 +1,5 @@
 # shellcheck disable=SC2148,SC1091
-MODDIR="/data/adb/modules/MIUI_MagicWindow+"
+MODDIR="/data/adb/modules/Hyper_MagicWindow"
 # 系统应用横屏优化
 is_disabled_os2_system_app_optimize=$(grep_prop is_disabled_os2_system_app_optimize "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 sothx_project_treble_support_magic_window_fix=$(getprop ro.config.sothx_project_treble_support_magic_window_fix)
