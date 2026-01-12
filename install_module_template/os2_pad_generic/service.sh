@@ -135,3 +135,4 @@ if [ "$is_auto_enable_mi_screen_shots_write_clipboard" = "true" ] && [ "$mi_scre
         settings put secure mi_screen_shots_write_clipboard_enable 1
     ) &
 fi
+

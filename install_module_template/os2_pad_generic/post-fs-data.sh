@@ -12,6 +12,13 @@ fi
 
 echo "$KSU,$KSU_VER,$KSU_VER_CODE,$KSU_KERNEL_VER_CODE,$APATCH,$APATCH_VER_CODE,$APATCH_VER,$MAGISK_VER,$MAGISK_VER_CODE" >"$MODPATH/common/temp/root_manager_info.txt"
 
+# 开启小米超级岛
+is_mi_island_auto_task=$(grep_prop is_mi_island_auto_task "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+
+if [ "$is_mi_island_auto_task" = "true" ]; then
+  setprop feature.island.debug true
+fi
+
 is_patch_mode=$(grep_prop is_patch_mode "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 
 # 补丁模式配置文件
