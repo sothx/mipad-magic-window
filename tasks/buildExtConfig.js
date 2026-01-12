@@ -159,7 +159,7 @@ function mergeFixedOrientationListExtConfig(cb) {
 }
 
 /**
- * 支持应用布局优化规则(Only Android 12+)
+ * 支持应用布局优化1.0规则(Only Android 12+)
  */
 
 function getAutoUIListExtConfig(cb) {

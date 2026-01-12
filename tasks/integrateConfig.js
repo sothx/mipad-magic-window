@@ -154,11 +154,25 @@ function copyFixedOrientationListToCommon(cb) {
 }
 
 /**
- * 混入Android 12L 起的应用布局优化的配置
+ * 混入Android 12L 起的应用布局优化1.0的配置
  */
 
 function copyAutoUiListToCommon(cb) {
   return src(`${tempDir}/autoui_list.xml`)
+    .pipe(gulpIf(buildActionIsActivityEmbedding, dest(`${commonDist}/source/`)))
+    .on("end", cb);
+}
+
+/**
+ * 混入Android 16 起的应用布局优化2.0的配置
+ */
+
+function copyAutoUi2ListToCommon(cb) {
+  if (options.mi_os_version < 3) {
+    cb()
+    return;
+  }
+  return src(`${tempDir}/autoui2_list.xml`)
     .pipe(gulpIf(buildActionIsActivityEmbedding, dest(`${commonDist}/source/`)))
     .on("end", cb);
 }
@@ -357,6 +371,7 @@ module.exports = series(
     copyFixedOrientationListToCommon,
     generateEmbeddedSettingConfig,
     copyAutoUiListToCommon,
+    copyAutoUi2ListToCommon,
     copyActivityEmbeddingCustomConfigTemplateToCommon,
     copyGenericRulesToCommon,
     copyActivityEmbeddingThemeOverlayToCommon
