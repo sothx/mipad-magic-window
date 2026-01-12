@@ -9,5 +9,7 @@
 
 - 新增 小米平板支持开启Hyper OS 3小米超级岛，只要是Hyper OS 3的小米平板都可以在[系统体验增强]处开启，目前暂时不支持超级岛位置自定义调整，后续考虑支持！
 
+- 移除 哔哩哔哩的首页默认分屏功能，避免异常的崩溃问题。
+
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
