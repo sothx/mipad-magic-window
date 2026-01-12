@@ -84,7 +84,6 @@
   <package name="com.starbucks.cn" enable="true" activityRule="com.starbucks.cn.home.revamp.RevampMainActivity:1:logOutLayout-19,rv_bean-19,account_background-3,bg_top-19,branchBackground-19,member_reward_bg-19" />
   <package name="com.iflyrec.tingshuo" enable="true" activityRule="*:2:RCRelativeLayout-15,FrameLayout-15,iv_header_bg_activity-3" />
   <!-- Adaptive For Sothx 1.21.x -->
-  <package name="com.tencent.karaoke" enable="true" activityRule="*:0" optimizeWebView="true" />
   <package name="org.telegram.group" enable="true" activityRule="*:0" optimizeWebView="true" />
   <package name="com.lvka.mars" enable="true" activityRule="*:0" optimizeWebView="true" />
   <package name="com.byet.guigul" enable="true" activityRule="*:0" optimizeWebView="true" />
@@ -174,7 +173,21 @@
   <package name="com.MobileTicket" enable="true" activityRule="com.MobileTicket.ui.activity.MainActivity:8:rv_bottom_list-100,home_view_pager-100001804,img_ad_content-1205,ll_right_imags-70205" />
   <package name="com.Qunar" enable="true" activityRule="com.mqunar.atom.alexhome.ui.activity.MainActivity:8:recyclerview-1900,HomeBannerView-303,tag_card_item_image_layout-300" />
   <package name="com.dianping.v1" enable="true" activityRule="com.dianping.v1.NovaMainActivity:8:recycler_view-100,HomeFeedItemView-51034,LazyViewPager-530,picasso_view-1100,PopoverModule-1100" />
+  <%_ if (Number(mi_os_version) >= 3) { _%>
+	<package name="com.baidu.netdisk" enable="true" describe="百度网盘">
+		<activity name="com.baidu.netdisk.ui.MainActivity" policy="7">
+			<view name="" id="se" path="FrameLayout/rv:-1">
+				<view_policy range="1" policytype="column" oldcolumns="2" newcolumns="4" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+			</view>
+		</activity>
+		<activity name="com.baidu.netdisk.ui.NewQuickSettingsActivity" policy="-1" />
+		<activity name="com.baidu.sapi2.activity.LoginActivity" policy="-1" />
+		<activity name="com.baidu.netdisk.ui.account.LoginRegisterActivity" policy="-1" />
+		<activity name="com.baidu.netdisk.ui.DefaultMainActivity" policy="-1" />
+	</package>
+  <%_ } else { _%>
   <package name="com.baidu.netdisk" enable="true" activityRule="com.baidu.netdisk.homepage.HomeActivity:7;com.baidu.netdisk.ui.MainActivity:7:rv-110" />
+  <%_ } _%>
   <package name="com.lianjia.beike" enable="true" activityRule="com.lianjia.activity.MainActivity:8:base_recyclerview-100,base_recycleview-100" />
   <package name="cn.samsclub.app" enable="true" activityRule="cn.samsclub.app.ui.MainActivity:8:rr_fragment_recommend-100,pull_to_refresh_recycler_inner_id-100,DcImageAdsView-802,cart_iv_recommedation_icon-400" />
   <package name="com.netease.cloudmusic" enable="false" activityRule="*:0" optimizeWebView="true" />
@@ -188,10 +201,51 @@
   <package name="com.mfcloudcalculate.networkdisk" enable="true" activityRule="*:0" optimizeWebView="true" />
   <package name="info.muge.appshare" enable="true" activityRule="*:0" optimizeWebView="true" />
   <package name="air.tv.douyu.android" enable="true" activityRule="com.douyu.module.home.pages.main.MainActivity:7:kag-100" />
+  <%_ if (Number(mi_os_version) >= 3) { _%>
+  <package name="com.lofter.android" enable="true" describe="网易LOFTER">
+		<activity name="com.lofter.android.global.home.TabHomeActivity" policy="7">
+			<view name="" id="ae" path="recycler_view:-1">
+				<view_policy range="1" policytype="column" oldcolumns="2" newcolumns="4" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+			</view>
+		</activity>
+		<activity name="com.lofter.android.global.splash.HomeActivity" policy="0" />
+	</package>
+  <%_ } else { _%>
   <package name="com.lofter.android" enable="true" activityRule="com.lofter.android.global.home.TabHomeActivity:7:recycler_view-110" />
-  <package name="com.baidu.haokan" enable="true" activityRule="com.baidu.haokan.app.activity.HomeActivity:7:obfuscated-110" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 3) { _%>
+	<package name="com.duoduo.child.story" enable="true" describe="儿歌多多">
+		<activity name="com.duoduo.child.story.ui.activity.MainActivity" policy="7">
+			<view name="" id="ae" path="content_rv:-1">
+				<view_policy range="1" policytype="column" oldcolumns="2" newcolumns="4" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+			</view>
+		</activity>
+		<activity name="com.duoduo.child.story.ui.activity.SplashActivity" policy="-1" />
+	</package>
+  <%_ } else { _%>
   <package name="com.duoduo.child.story" enable="true" activityRule="com.duoduo.child.story.ui.activity.MainActivity:7:content_rv-110" />
+  <%_ } _%>
+  <package name="com.baidu.haokan" enable="true" activityRule="com.baidu.haokan.app.activity.HomeActivity:7:obfuscated-110" />
+  <%_ if (Number(mi_os_version) >= 3) { _%>
+	<package name="com.gotokeep.keep" enable="true" describe="keep">
+		<activity name="com.gotokeep.keep.refactor.business.main.activity.MainActivity" policy="7">
+			<view name="" id="ae" path="containerRoot/refreshLayout/recyclerView:-1">
+				<view_policy range="1" policytype="column" oldcolumns="2" newcolumns="4" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+			</view>
+		</activity>
+		<activity name="com.gotokeep.keep.splash.SplashActivity" policy="-1" />
+	</package>
+  <%_ } else { _%>
   <package name="com.gotokeep.keep" enable="true" activityRule="com.gotokeep.keep.refactor.business.main.activity.MainActivity:7:recyclerView-110" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 3) { _%>
+	<package name="com.tencent.karaoke" enable="true" describe="全民K歌">
+		<activity name="com.tencent.karaoke.module.splash.ui.SplashBaseActivity" policy="-1" />
+		<activity name="com.tencent.karaoke.module.main.ui.MainTabActivity" policy="-1" />
+	</package>
+  <%_ } else { _%>
+  <package name="com.tencent.karaoke" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <%_ } _%>
   <package name="com.realme.storecn" enable="true" activityRule="*:0" optimizeWebView="true" />
   <package name="com.sony.store.china" enable="true" activityRule="*:0" optimizeWebView="true" />
   <package name="com.qiekj.user" enable="true" activityRule="*:0" optimizeWebView="true" />
@@ -213,4 +267,116 @@
   <package name="com.zzdbwku.zizbnea" enable="true" activityRule="*:0" optimizeWebView="true" />
   <package name="com.zhumaonline.exercise" enable="true" activityRule="*:1" optimizeWebView="true" />
   <package name="cn.emagsoftware.gamehall" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <%_ if (Number(mi_os_version) >= 3) { _%>
+  <package name="tv.danmaku.bili" enable="true" describe="哔哩哔哩">
+		<activity name="tv.danmaku.bili.MainActivityV2" policy="7">
+			<view name="" id="RecyclerView" path="recycler_view:-1">
+				<view_policy range="1" policytype="column" oldcolumns="2" newcolumns="4" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+			</view>
+			<view name="" id="RecyclerView" path="recyclerView:-1">
+				<view_policy range="1" policytype="column" oldcolumns="2" newcolumns="4" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+			</view>
+		</activity>
+	</package>
+  <package name="com.duowan.kiwi" enable="true" describe="虎牙直播">
+		<activity name="com.duowan.kiwi.homepage.Homepage" policy="7">
+			<view name="" id="ae" path="list_root_container/FrameLayout/huya_smart_refresh/container_view/content_view:-1">
+				<view_policy range="1" policytype="column" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+			</view>
+			<view name="" id="ae" path="content/FrameLayout/huya_smart_refresh/container_view/content_view:-1">
+				<view_policy range="1" policytype="column" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+			</view>
+		</activity>
+	</package>
+  <package name="com.i61.dengta" enable="true" describe="小灯塔">
+		<activity name="com.i61.dengta.ui.SplashActivity" policy="-1" />
+	</package>
+  <package name="com.yyxx.study" enable="true" describe="语音学习系统">
+		<activity name="com.fhsljy.android.app.ui.splash.SplashActivity" policy="-1" />
+		<activity name="com.fhsljy.android.app.ui.guider.GuiderActivity" policy="-1" />
+		<activity name="com.fhsljy.android.app.ui.login.activity.LoginActivity" policy="-1" />
+	</package>
+  <package name="cn.eeo.classin" enable="true" describe="ClassIn">
+		<activity name="cn.eeo.startup.ui.LogoSplashActivity" policy="-1" />
+		<activity name="cn.eeo.startup.ui.LoginActivity" policy="-1" />
+		<activity name="cn.eeo.startup.ui.VerifyCodeInputActivity" policy="-1" />
+		<activity name="cn.eeo.startup.ui.PasswordInputActivity" policy="-1" />
+		<activity name="cn.eeo.classin.ui.module.main.MainActivity" policy="-1" />
+	</package>
+  <package name="com.chaoxing.mobile" enable="true" describe="学习通">
+		<activity name="com.chaoxing.mobile.activity.SplashActivity" policy="-1" />
+		<activity name="com.chaoxing.mobile.study.account.LoginActivity" policy="-1" />
+	</package>
+  <package name="com.baidu.wenku" enable="true" describe="百度文库">
+		<activity name="com.baidu.wenku.splash.view.activity.WelcomeActivity" policy="-1" />
+	</package>
+  <package name="com.kmxs.reader" enable="true" describe="七猫免费小说">
+		<activity name="com.km.app.home.view.LoadingActivity" policy="-1" />
+		<activity name="com.qimao.qmbook.init_preference.view.InitPreferenceChooseActivity" policy="-1" />
+		<activity name="com.km.app.home.view.HomeYoungActivity" policy="-1" />
+		<activity name="com.kmxs.reader.home.ui.HomeActivity" policy="-1" />
+	</package>
+  <package name="com.tan8" enable="true" describe="弹琴吧">
+		<activity name="com.tan8.ui.SplashActivity" policy="-1" />
+		<activity name="com.tan8.ui.NewVersionGuideActivity" policy="-1" />
+	</package>
+  <package name="air.tv.douyu.android" enable="true" describe="斗鱼">
+		<activity name="com.douyu.module.home.pages.main.MainActivity" policy="7">
+			<view name="" id="ae" path="DYRefreshLayout/FrameLayout/RecyclerView:-1">
+				<view_policy range="1" policytype="column" oldcolumns="2" newcolumns="4" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+			</view>
+		</activity>
+		<activity name="tv.douyu.view.activity.launcher.DYSplashLauncherActivity" policy="-1" />
+		<activity name="com.douyu.module.list.view.activity.CustomHomeSetupBActivity" policy="-1" />
+	</package>
+  <package name="com.le123.ysdq" enable="true" describe="影视大全">
+		<activity name="com.elinkway.infinitemovies.ui.activity.NewMainActivity" policy="7">
+			<view name="" id="ae" path="home_recyclerview/LinearLayout/recycler_view:-1">
+				<view_policy range="1" policytype="column" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+			</view>
+		</activity>
+		<activity name="com.elinkway.infinitemovies.ui.activity.SplashActivity" policy="-1" />
+	</package>
+  <package name="com.netease.a13.avg" enable="true" describe="易次元">
+		<activity name="com.netease.avg.a13.MainActivity" policy="7">
+			<view name="" id="se" path="LinearLayout/view_content/base_recycler_view:-1">
+				<view_policy range="1" policytype="column" oldcolumns="2" newcolumns="3" itemdecorationflag="0" multisetflag="0" resetflag="1" />
+			</view>
+		</activity>
+		<activity name="com.netease.avg.a13.SplashActivity" policy="-1" />
+		<activity name="com.netease.avg.a13.AgreeProtocolActivity" policy="-1" />
+	</package>
+  <package name="com.bilibili.comic" enable="true" describe="哔哩哔哩漫画">
+		<activity name="com.bilibili.comic.splash.view.activity.SplashActivity" policy="-1" />
+		<activity name="com.bilibili.comic.home.view.FlutterMainActivity" policy="-1" />
+	</package>
+  <package name="com.zhongduomei.rrmj.society" enable="true" describe="人人视频">
+		<activity name="com.rrtv.rrtvtrunk.main.presentation.EmptyActivity" policy="-1" />
+		<activity name="com.rrtv.rrtvtrunk.main.presentation.MainActivity" policy="-1" />
+	</package>
+  <package name="cmccwm.mobilemusic" enable="true" describe="咪咕音乐">
+		<activity name="cmccwm.mobilemusic.ui.SplashActivity" policy="-1" />
+		<activity name="cmccwm.mobilemusic.ui.UserInfoProtectActivity" policy="-1" />
+		<activity name="cmccwm.mobilemusic.ui.base.MainActivity" policy="-1" />
+	</package>
+  <package name="com.skyplatanus.crucio" enable="true" describe="快点阅读">
+		<activity name="com.skyplatanus.crucio.ui.home.HomeContainerActivity" policy="7">
+			<view name="" id="se" path="refresh_layout/recycler_view:-1">
+				<view_policy range="1" policytype="column" oldcolumns="2" newcolumns="4" itemdecorationflag="0" multisetflag="0" resetflag="1" />
+			</view>
+		</activity>
+		<activity name="com.skyplatanus.crucio.ui.splash.SplashContainerActivity" policy="-1" />
+	</package>
+  <package name="com.shuqi.controller" enable="true" describe="书旗小说">
+		<activity name="com.shuqi.home.MainActivity" policy="-1" />
+	</package>
+  <package name="tv.acfundanmaku.video" enable="true" describe="AcFun">
+		<activity name="tv.acfun.core.module.main.MainActivity" policy="7">
+			<view name="" id="ae" path="recycler_view:-1">
+				<view_policy range="1" policytype="column" oldcolumns="2" newcolumns="3" itemdecorationflag="0" multisetflag="0" resetflag="1" />
+			</view>
+		</activity>
+		<activity name="tv.acfun.core.module.splash.SplashActivity" policy="-1" />
+	</package>
+  <%_ } _%>
 </packageRules>
