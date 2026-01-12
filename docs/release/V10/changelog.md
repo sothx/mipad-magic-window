@@ -4,8 +4,12 @@
 
 链接: [https://yun.139.com/shareweb/#/w/i/2qieog1Xypz11](https://yun.139.com/shareweb/#/w/i/2qieog1Xypz11)
 
+本次更新内容：
 
-本次更新内容:
+- 引入Hyper OS 3部分应用布局优化规则
+
+
+历史更新内容:
 
 - 新增 小米平板支持开启Hyper OS 3小米超级岛，只要是Hyper OS 3的小米平板都可以在[系统体验增强]处开启，目前暂时不支持超级岛位置自定义调整，后续考虑支持！
 

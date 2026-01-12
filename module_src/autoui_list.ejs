@@ -61,7 +61,6 @@
   <package name="com.yunlan.xjlm" enable="true" activityRule="*:0" optimizeWebView="true" />
   <%_ } _%>
   <!-- Adaptive For Sothx 1.15.x -->
-  <package name="com.kugou.android.lite" enable="true" activityRule="*:0" />
   <package name="com.xbcx.gdwx3" enable="true" activityRule="*:0" />
   <package name="com.tencent.androidqqmail" enable="true" activityRule="*:6:framelayout-10" skippedActivityRule="com.tencent.qqmail.activity.compose.ComposeMailActivity;com.tencent.qqmail.xmailnote.XMailNoteActivity;com.tencent.qqmail.activity.readmail.ReadMailInlineImageActivity;" />
   <package name="com.sina.weibo" enable="true" activityRule="*:0" />
@@ -245,6 +244,14 @@
 	</package>
   <%_ } else { _%>
   <package name="com.tencent.karaoke" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 3) { _%>
+	<package name="com.kugou.android.lite" enable="true" describe="酷狗概念版">
+		<activity name="com.kugou.android.app.splash.SplashActivity" policy="0" />
+    <activity name="com.kugou.android.app.MediaActivity" policy="0" />
+	</package>
+  <%_ } else { _%>
+  <package name="com.kugou.android.lite" enable="true" activityRule="*:0"/>
   <%_ } _%>
   <package name="com.realme.storecn" enable="true" activityRule="*:0" optimizeWebView="true" />
   <package name="com.sony.store.china" enable="true" activityRule="*:0" optimizeWebView="true" />
