@@ -21,11 +21,11 @@ const getInstallTemplateType = function () {
   if (options.use_platform === 'fold') {
     return 'fold'
   }
-  if (options.mi_os_version >= 2 && options.use_platform === 'pad') {
-    return 'os2_pad_generic'
-  }
   if (options.mi_os_version >= 3 && options.use_platform === 'pad') {
     return 'os3_pad_generic'
+  }
+  if (options.mi_os_version >= 2 && options.use_platform === 'pad') {
+    return 'os2_pad_generic'
   }
   return 'generic'
 }
