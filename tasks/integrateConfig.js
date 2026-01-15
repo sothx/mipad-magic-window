@@ -168,7 +168,7 @@ function copyAutoUiListToCommon(cb) {
  */
 
 function copyAutoUi2ListToCommon(cb) {
-  if (options.mi_os_version < 3) {
+  if (options.mi_os_version < 3 || options.use_platform !== 'fold') {
     cb()
     return;
   }

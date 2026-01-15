@@ -19,6 +19,7 @@ PATCH_MODE_CONFIG_FIXED_ORIENTATION_LIST="/data/adb/Hyper_MagicWindow/patch_rule
 CUSTOM_CONFIG_EMBEDDED_RULES_LIST="/data/adb/Hyper_MagicWindow/config/embedded_rules_list.xml"
 CUSTOM_CONFIG_FIXED_ORIENTATION_LIST="/data/adb/Hyper_MagicWindow/config/fixed_orientation_list.xml"
 CUSTOM_CONFIG_AUTOUI_LIST="/data/adb/Hyper_MagicWindow/config/autoui_list.xml"
+CUSTOM_CONFIG_AUTOUI2_LIST="/data/adb/Hyper_MagicWindow/config/autoui2_list.xml"
 CUSTOM_CONFIG_GENERIC_RULES_LIST="/data/adb/Hyper_MagicWindow/config/generic_rules_list.xml"
 # Android 11
 CUSTOM_CONFIG_MAGIC_WINDOW_APPLICATION_LIST="/data/adb/Hyper_MagicWindow/config/magicWindowFeature_magic_window_application_list.xml"
@@ -77,6 +78,10 @@ elif [[ "$API" -ge 31 ]]; then
   if [ -f /data/system/cloudFeature_autoui_list.xml ]; then
     chattr -i /data/system/cloudFeature_autoui_list.xml
   fi
+  # 检查 /data/system/cloudFeature_autoui2_list.xml 是否存在
+  if [ -f /data/system/cloudFeature_autoui2_list.xml ]; then
+    chattr -i /data/system/cloudFeature_autoui2_list.xml
+  fi
   # 检查 /data/system/cloudFeature_embedded_rules_list_projection.xml 是否存在
   if [ -f /data/system/cloudFeature_embedded_rules_list_projection.xml ]; then
     chattr -i /data/system/cloudFeature_embedded_rules_list_projection.xml
@@ -117,7 +122,7 @@ elif [[ "$API" -ge 31 ]]; then
   else
     cp -f "$MODDIR"/common/source/fixed_orientation_list.xml "$MODDIR"/common/fixed_orientation_list.xml
   fi
-  # 支持应用布局优化自定义配置文件
+  # 支持应用布局优化1.0自定义配置文件
   if [[ -f "$CUSTOM_CONFIG_AUTOUI_LIST" ]]; then
     cp -f "$MODDIR"/common/source/autoui_list.xml "$MODDIR"/common/autoui_list.xml
     sed -i '/<\/packageRules>/d' "$MODDIR"/common/autoui_list.xml
@@ -125,6 +130,15 @@ elif [[ "$API" -ge 31 ]]; then
     printf "\n</packageRules>\n" >>"$MODDIR"/common/autoui_list.xml
   else
     cp -f "$MODDIR"/common/source/autoui_list.xml "$MODDIR"/common/autoui_list.xml
+  fi
+  # 支持应用布局优化2.0自定义配置文件
+  if [[ -f "$CUSTOM_CONFIG_AUTOUI2_LIST" ]]; then
+    cp -f "$MODDIR"/common/source/autoui2_list.xml "$MODDIR"/common/autoui2_list.xml
+    sed -i '/<\/packageRules>/d' "$MODDIR"/common/autoui2_list.xml
+    cat "$CUSTOM_CONFIG_AUTOUI2_LIST" >>"$MODDIR"/common/autoui2_list.xml
+    printf "\n</packageRules>\n" >>"$MODDIR"/common/autoui2_list.xml
+  else
+    cp -f "$MODDIR"/common/source/autoui2_list.xml "$MODDIR"/common/autoui2_list.xml
   fi
   # 支持平行窗口(流转)自定义配置文件
   if [[ -f "$CUSTOM_CONFIG_EMBEDDED_RULES_LIST_PROJECTION" ]]; then
@@ -169,10 +183,14 @@ elif [[ "$API" -ge 31 ]]; then
   set_perm /data/system/cloudFeature_fixed_orientation_list_projection.xml 1000 1000 0666 u:object_r:system_data_file:s0       # 设置信箱模式文件权限
   cp -f "$MODDIR"/common/fixed_orientation_list_projection.xml /data/system/cloudFeature_fixed_orientation_list_projection.xml # 替换信箱模式配置列表
   set_perm /data/system/cloudFeature_fixed_orientation_list_projection.xml 1000 1000 0444 u:object_r:system_data_file:s0       # 禁止信箱模式配置文件被云控
-  # 应用布局优化
-  set_perm /data/system/cloudFeature_autoui_list.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置应用布局优化文件权限
-  cp -f "$MODDIR"/common/autoui_list.xml /data/system/cloudFeature_autoui_list.xml                 # 替换应用布局优化配置列表
-  set_perm /data/system/cloudFeature_autoui_list.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止应用布局优化配置文件被云控
+  # 应用布局优化1.0
+  set_perm /data/system/cloudFeature_autoui_list.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置应用布局优化1.0文件权限
+  cp -f "$MODDIR"/common/autoui_list.xml /data/system/cloudFeature_autoui_list.xml                 # 替换应用布局优化1.0配置列表
+  set_perm /data/system/cloudFeature_autoui_list.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止应用布局优化1.0配置文件被云控
+  # 应用布局优化2.0
+  set_perm /data/system/cloudFeature_autoui2_list.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置应用布局优化2.0文件权限
+  cp -f "$MODDIR"/common/autoui2_list.xml /data/system/cloudFeature_autoui2_list.xml                 # 替换应用布局优化2.0配置列表
+  set_perm /data/system/cloudFeature_autoui2_list.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止应用布局优化2.0配置文件被云控
   # 通用规则(流转)
   set_perm /data/system/cloudFeature_generic_rules_list_projection.xml 1000 1000 0666 u:object_r:system_data_file:s0
   cp -f "$MODDIR"/common/generic_rules_list_projection.xml /data/system/cloudFeature_generic_rules_list_projection.xml
@@ -189,6 +207,10 @@ elif [[ "$API" -ge 31 ]]; then
   # 检查 /data/system/cloudFeature_autoui_list.xml 是否存在
   if [ -f /data/system/cloudFeature_autoui_list.xml ]; then
     chattr +i /data/system/cloudFeature_autoui_list.xml
+  fi
+  # 检查 /data/system/cloudFeature_autoui2_list.xml 是否存在
+  if [ -f /data/system/cloudFeature_autoui2_list.xml ]; then
+    chattr +i /data/system/cloudFeature_autoui2_list.xml
   fi
   # 检查 /data/system/cloudFeature_embedded_rules_list_projection.xml 是否存在
   if [ -f /data/system/cloudFeature_embedded_rules_list_projection.xml ]; then
@@ -211,7 +233,11 @@ elif [[ "$API" -ge 31 ]]; then
   fi
 
   if [[ "$targetService" == "miui_auto_ui" || -z "$targetService" ]]; then
-    /bin/cmd miui_auto_ui reload-rule
+    if [[ "$API" -ge 36 ]]; then
+      /bin/cmd miui.appadaptation autoui reload-rule
+    else
+      /bin/cmd miui_auto_ui reload-rule
+    fi
   fi
 
   echo '模块已重新载入规则，更新成功了ww'
