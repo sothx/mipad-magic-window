@@ -1,13 +1,5 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes' ?>
 <packageRules>
-  <%_ if (['fold'].includes(platform)) { _%>
-  <package name="tv.danmaku.bili" enable="true" optimizeWebView="true" activityRule="tv.danmaku.bili.MainActivityV2:8:recycler_view-100,recyclerView-100,V8Banner-100081405,indicator-100002000,com.bilibili.magicasakura.widgets.TintConstraintLayout-100001600,cover-100001700" />
-  <package name="com.bilibili.app.blue" enable="true" optimizeWebView="true" activityRule="tv.danmaku.bili.MainActivityV2:8:recycler_view-100,recyclerView-100,V8Banner-100081405,indicator-100002000,com.bilibili.magicasakura.widgets.TintConstraintLayout-100001600,cover-100001700" />
-  <package name="com.Qunar" enable="true" optimizeWebView="true" activityRule="com.mqunar.atom.alexhome.ui.activity.MainActivity:8:recyclerview-1900,HomeBannerView-303,tag_card_item_image_layout-300" />
-  <package name="com.baidu.netdisk" enable="true" optimizeWebView="true" activityRule="com.baidu.netdisk.homepage.HomeActivity:8;com.baidu.netdisk.ui.MainActivity:8:rv-100" />
-  <package name="com.lianjia.beike" enable="true" optimizeWebView="true" activityRule="com.lianjia.activity.MainActivity:8:base_recyclerview-100,base_recycleview-100" />
-  <package name="cn.samsclub.app" enable="true" optimizeWebView="true" activityRule="cn.samsclub.app.ui.MainActivity:8:rr_fragment_recommend-100,pull_to_refresh_recycler_inner_id-100,DcImageAdsView-802,cart_iv_recommedation_icon-400" />
-  <%_ } else { _%>
   <package name="tv.danmaku.bili" enable="true" describe="哔哩哔哩">
 		<activity name="tv.danmaku.bili.MainActivityV2" policy="7">
 			<view name="" id="RecyclerView" path="recycler_view:-1">
@@ -167,5 +159,4 @@
 		<activity name="com.baidu.netdisk.ui.account.LoginRegisterActivity" policy="-1" />
 		<activity name="com.baidu.netdisk.ui.DefaultMainActivity" policy="-1" />
 	</package>
-  <%_ } _%>
 </packageRules>
