@@ -1,7 +1,13 @@
 {
+<<<<<<< HEAD
   "version": "2.16.25",
   "versionCode": 216025,
   "zipUrl": "https://github.com/sothx/mipad-magic-window/releases/download/2.16.25/pad-hyperos2-based-on-upsideDownCake-2.16.25.zip",
+=======
+  "version": "2.16.24",
+  "versionCode": 216024,
+  "zipUrl": "https://github.com/sothx/mipad-magic-window/releases/download/2.16.24/pad-hyperos2-based-on-upsideDownCake-2.16.24.zip",
+>>>>>>> 22742540e29f52371800b13450ff3fb7013df2c0
   "changelog": "https://hyper-magic-window-module-update.sothx.com/release/V11/changelog.md",
   "chinaMobileMCloudUrl": "https://yun.139.com/shareweb/#/w/i/2qieog1Xypz11"
 }
