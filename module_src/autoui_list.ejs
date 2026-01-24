@@ -179,7 +179,7 @@
   <package name="cn.samsclub.app" enable="true" activityRule="cn.samsclub.app.ui.MainActivity:8:rr_fragment_recommend-100,pull_to_refresh_recycler_inner_id-100,DcImageAdsView-802,cart_iv_recommedation_icon-400" />
   <package name="com.netease.cloudmusic" enable="false" activityRule="*:0" optimizeWebView="true" />
   <package name="cn.kuwo.kwmusichd" enable="true" activityRule="*:0" optimizeWebView="true" />
-  <%_ if (['fold'].includes(platform) && (Number(mi_os_version) <= 2)) { _%>
+  <%_ if (['fold'].includes(platform)) { _%>
   <package name="tv.danmaku.bili" enable="true" optimizeWebView="true" activityRule="tv.danmaku.bili.MainActivityV2:8:recycler_view-100,recyclerView-100,V8Banner-100081404,indicator-100002000,com.bilibili.magicasakura.widgets.TintConstraintLayout-100001600,cover-100001700" />
   <%_ } else if (Number(mi_os_version) >= 2) { _%>
   <!-- <package name="tv.danmaku.bili" enable="false" optimizeWebView="true" activityRule="tv.danmaku.bili.MainActivityV2:8:recycler_view-100,recyclerView-100,V8Banner-100081404,indicator-100002000,com.bilibili.magicasakura.widgets.TintConstraintLayout-100001600,cover-100001700" /> -->
@@ -214,7 +214,7 @@
   <package name="com.gptqcio.lrhtfmqer" enable="true" activityRule="*:0" optimizeWebView="true" />
   <package name="com.ets100.secondary" enable="true" activityRule="*:0" optimizeWebView="true" />
   <package name="com.coolapk.market" enable="false" activityRule="*:0" skippedActivityRule="com.coolapk.market.view.feedv8.multiSubmit.MultiSubmitActivity;com.coolapk.market.view.photo.PhotoPickerActivity;" optimizeWebView="true" />
-  <%_ if (['fold'].includes(platform) && (Number(mi_os_version) <= 2)) { _%>
+  <%_ if (['fold'].includes(platform)) { _%>
   <package name="com.bilibili.app.blue" enable="true" optimizeWebView="true" activityRule="tv.danmaku.bili.MainActivityV2:8:recycler_view-100,recyclerView-100,V8Banner-100081404,indicator-100002000,com.bilibili.magicasakura.widgets.TintConstraintLayout-100001600,cover-100001700" />
   <%_ } else if (Number(mi_os_version) >= 2) { _%>
   <!-- <package name="com.bilibili.app.blue" enable="false" optimizeWebView="true" activityRule="tv.danmaku.bili.MainActivityV2:8:recycler_view-100,recyclerView-100,V8Banner-100081404,indicator-100002000,com.bilibili.magicasakura.widgets.TintConstraintLayout-100001600,cover-100001700" /> -->
