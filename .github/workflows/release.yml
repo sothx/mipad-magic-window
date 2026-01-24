@@ -39,6 +39,7 @@ jobs:
          cd "$GITHUB_WORKSPACE"
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/fold-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+         mv $GITHUB_WORKSPACE/release/$VERSION/fold-general-vanillaIceCream-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/phone-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-magicWindow-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
          mv $GITHUB_WORKSPACE/release/$VERSION/pad-general-tiramisu-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
