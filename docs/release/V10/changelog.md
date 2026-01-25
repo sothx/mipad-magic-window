@@ -5,8 +5,13 @@
 链接: [https://yun.139.com/shareweb/#/w/i/2qieog1Xypz11](https://yun.139.com/shareweb/#/w/i/2qieog1Xypz11)
 
 本次更新内容：
+
+ - 优化部分应用的适配逻辑
+
  - 优化Web UI部分功能描述体验
+
  - 优化起点读书的模块适配规则体验
+
  - 解除大折叠屏设备部分web ui 功能限制
 
 历史更新内容:
