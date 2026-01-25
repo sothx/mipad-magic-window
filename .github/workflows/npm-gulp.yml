@@ -50,14 +50,14 @@ jobs:
         path: "dist/**"
         overwrite: true
 
-    - name: Build Fold Compatibility Use VanillaIceCream
+    - name: Build Fold Compatibility Use GeneralMiuiAutoUI
       run: |
-          npm run build:fold-compatibility=general-vanillaIceCream
+          npm run build:fold-compatibility=general-miuiAutoUI
 
-    - name: Upload Fold Compatibility Use GeneralVanillaIceCream Release Zip
+    - name: Upload Fold Compatibility Use GeneralMiuiAutoUI Release Zip
       uses: actions/upload-artifact@v4
       with:
-          name: fold-general-vanillaIceCream-${{ env.VERSION }}
+          name: fold-general-miuiAutoUI-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 
@@ -201,6 +201,17 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
           name: pad-hyperos2-based-on-vanillaIceCream-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
+
+    - name: Build Pad Compatibility Use HyperOS3BasedOnVanillaIceCream
+      run: |
+          npm run build:pad-compatibility=hyperos3-based-on-vanillaIceCream
+  
+    - name: Upload Pad Compatibility Use HyperOS3BasedOnVanillaIceCream Release Zip
+      uses: actions/upload-artifact@v4
+      with:
+          name: pad-hyperos3-based-on-vanillaIceCream-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 

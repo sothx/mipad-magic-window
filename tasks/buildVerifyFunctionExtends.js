@@ -6,13 +6,13 @@ const verifyFunctionsExtendsMap = {
     magicWindow: 'module_src/verify_functions_extends/magicWindow/**',
     'general-vanillaIceCream': 'module_src/verify_functions_extends/general-vanillaIceCream/**',
     'general-tiramisu': 'module_src/verify_functions_extends/general-tiramisu/**',
-    'general-vanillaIceCream': 'module_src/verify_functions_extends/general-vanillaIceCream/**',
     'general-upsideDownCake': 'module_src/verify_functions_extends/general-upsideDownCake/**',
     'general-baklava': 'module_src/verify_functions_extends/general-baklava/**',
     'hyperos-based-on-tiramisu': 'module_src/verify_functions_extends/hyperos-based-on-tiramisu/**',
     'hyperos1-based-on-upsideDownCake': 'module_src/verify_functions_extends/hyperos1-based-on-upsideDownCake/**',
     'hyperos2-based-on-upsideDownCake': 'module_src/verify_functions_extends/hyperos2-based-on-upsideDownCake/**',
     'hyperos2-based-on-vanillaIceCream': 'module_src/verify_functions_extends/hyperos2-based-on-vanillaIceCream/**',
+    'hyperos3-based-on-vanillaIceCream': 'module_src/verify_functions_extends/hyperos3-based-on-vanillaIceCream/**',
     'miui-based-on-tiramisu': 'module_src/verify_functions_extends/miui-based-on-tiramisu/**',
     'general-phone': 'module_src/verify_functions_extends/general-phone/**',
 }
@@ -28,7 +28,7 @@ const buildVerifyFunctionsExtendsType = function () {
     if (options.use_platform === 'pad' && options.use_compatibility === '' && !options.use_ext) {
         return 'general-baklava'
     }
-    if (['general-tiramisu','general-vanillaIceCream','general-upsideDownCake','hyperos-based-on-tiramisu','hyperos1-based-on-upsideDownCake','hyperos2-based-on-vanillaIceCream','hyperos2-based-on-upsideDownCake','miui-based-on-tiramisu'].includes(options.use_compatibility)) {
+    if (['general-tiramisu','general-vanillaIceCream','general-upsideDownCake','hyperos-based-on-tiramisu','hyperos1-based-on-upsideDownCake','hyperos2-based-on-vanillaIceCream','hyperos3-based-on-vanillaIceCream','hyperos2-based-on-upsideDownCake','miui-based-on-tiramisu'].includes(options.use_compatibility)) {
         return options.use_compatibility
     }
     return false;
