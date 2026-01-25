@@ -168,7 +168,7 @@ function copyAutoUiListToCommon(cb) {
  */
 
 function copyAutoUi2ListToCommon(cb) {
-  if (options.use_platform === 'fold' || (options.use_platform === 'pad' && options.mi_os_version >= 3)) {
+  if (options.use_platform === 'fold' || (options.use_platform === 'pad' && options.mi_os_version >= 2)) {
     return src(`${tempDir}/autoui2_list.xml`)
     .pipe(gulpIf(buildActionIsActivityEmbedding, dest(`${commonDist}/source/`)))
     .on("end", cb);

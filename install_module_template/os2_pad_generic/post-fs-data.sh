@@ -33,6 +33,7 @@ CUSTOM_CONFIG_EMBEDDED_RULES_LIST="/data/adb/Hyper_MagicWindow/config/embedded_r
 CUSTOM_CONFIG_FIXED_ORIENTATION_LIST="/data/adb/Hyper_MagicWindow/config/fixed_orientation_list.xml"
 CUSTOM_CONFIG_EMBEDDED_SETTING_CONFIG="/data/adb/Hyper_MagicWindow/config/embedded_setting_config.xml"
 CUSTOM_CONFIG_AUTOUI_LIST="/data/adb/Hyper_MagicWindow/config/autoui_list.xml"
+CUSTOM_CONFIG_AUTOUI2_LIST="/data/adb/Hyper_MagicWindow/config/autoui2_list.xml"
 CUSTOM_CONFIG_GENERIC_RULES_LIST="/data/adb/Hyper_MagicWindow/config/generic_rules_list.xml"
 
 # 对云控文件解除写保护
@@ -47,6 +48,10 @@ fi
 # 检查 /data/system/cloudFeature_autoui_list.xml 是否存在
 if [ -f /data/system/cloudFeature_autoui_list.xml ]; then
   chattr -i /data/system/cloudFeature_autoui_list.xml
+fi
+# 检查 /data/system/cloudFeature_autoui2_list.xml 是否存在
+if [ -f /data/system/cloudFeature_autoui2_list.xml ]; then
+  chattr -i /data/system/cloudFeature_autoui2_list.xml
 fi
 # 检查 /data/system/users/0/embedded_setting_config.xml 是否存在
 if [ -f /data/system/users/0/embedded_setting_config.xml ]; then
@@ -94,7 +99,7 @@ elif [[ -f "$PATCH_MODE_CONFIG_EMBEDDED_SETTING_CONFIG" ]] && [ "$is_patch_mode"
 else
   cp -f "$MODDIR"/common/source/embedded_setting_config.xml "$MODDIR"/common/embedded_setting_config.xml
 fi
-# 支持应用布局优化自定义配置文件
+# 支持应用布局优化1.0自定义配置文件
 if [[ -f "$CUSTOM_CONFIG_AUTOUI_LIST" ]]; then
   cp -f "$MODDIR"/common/source/autoui_list.xml "$MODDIR"/common/autoui_list.xml
   sed -i '/<\/packageRules>/d' "$MODDIR"/common/autoui_list.xml
@@ -102,6 +107,15 @@ if [[ -f "$CUSTOM_CONFIG_AUTOUI_LIST" ]]; then
   printf "\n</packageRules>\n" >>"$MODDIR"/common/autoui_list.xml
 else
   cp -f "$MODDIR"/common/source/autoui_list.xml "$MODDIR"/common/autoui_list.xml
+fi
+# 支持应用布局优化2.0自定义配置文件
+if [[ -f "$CUSTOM_CONFIG_AUTOUI2_LIST" ]]; then
+  cp -f "$MODDIR"/common/source/autoui2_list.xml "$MODDIR"/common/autoui2_list.xml
+  sed -i '/<\/packageRules>/d' "$MODDIR"/common/autoui2_list.xml
+  cat "$CUSTOM_CONFIG_AUTOUI2_LIST" >>"$MODDIR"/common/autoui2_list.xml
+  printf "\n</packageRules>\n" >>"$MODDIR"/common/autoui2_list.xml
+else
+  cp -f "$MODDIR"/common/source/autoui2_list.xml "$MODDIR"/common/autoui2_list.xml
 fi
 # 平行窗口
 set_perm /data/system/cloudFeature_embedded_rules_list.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置平行窗口文件权限
@@ -111,10 +125,14 @@ set_perm /data/system/cloudFeature_embedded_rules_list.xml 1000 1000 0444 u:obje
 set_perm /data/system/cloudFeature_fixed_orientation_list.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置信箱模式文件权限
 cp -f "$MODDIR"/common/fixed_orientation_list.xml /data/system/cloudFeature_fixed_orientation_list.xml      # 替换信箱模式配置列表
 set_perm /data/system/cloudFeature_fixed_orientation_list.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止信箱模式配置文件被云控
-# 应用布局优化
+# 应用布局优化1.0
 set_perm /data/system/cloudFeature_autoui_list.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置应用布局优化文件权限
 cp -f "$MODDIR"/common/autoui_list.xml /data/system/cloudFeature_autoui_list.xml                 # 替换应用布局优化配置列表
 set_perm /data/system/cloudFeature_autoui_list.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止应用布局优化配置文件被云控
+# 应用布局优化2.0
+set_perm /data/system/cloudFeature_autoui2_list.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置应用布局优化2文件权限
+cp -f "$MODDIR"/common/autoui2_list.xml /data/system/cloudFeature_autoui2_list.xml                 # 替换应用布局优化2配置列表
+set_perm /data/system/cloudFeature_autoui2_list.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止应用布局优化2配置文件被云控
 # 应用横屏布局配置
 set_perm /data/system/users/0/embedded_setting_config.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置应用横屏布局配置文件权限
 cp -f "$MODDIR"/common/embedded_setting_config.xml /data/system/users/0/embedded_setting_config.xml      # 替换应用横屏布局配置文件
@@ -135,6 +153,10 @@ fi
 # 检查 /data/system/cloudFeature_autoui_list.xml 是否存在
 if [ -f /data/system/cloudFeature_autoui_list.xml ]; then
   chattr +i /data/system/cloudFeature_autoui_list.xml
+fi
+# 检查 /data/system/cloudFeature_autoui2_list.xml 是否存在
+if [ -f /data/system/cloudFeature_autoui2_list.xml ]; then
+  chattr +i /data/system/cloudFeature_autoui2_list.xml
 fi
 # 检查 /data/system/users/0/embedded_setting_config.xml 是否存在
 if [ -f /data/system/users/0/embedded_setting_config.xml ]; then
