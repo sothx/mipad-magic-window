@@ -1406,7 +1406,6 @@
   <package name="com.jd.game.popbear.mi" fullRule="*" />
   <package name="com.cyg.novafly.mi" fullRule="*" />
   <package name="net.unitepower.zhitong" fullRule="*" />
-  <package name="com.tencent.wemeet.app" fullRule="nra:cr:rcr" />
   <package name="com.daojia.jz.ayi" fullRule="*" />
   <package name="com.biquge.book.noverls" fullRule="*" />
   <package name="com.jd.game.bubblezuma.mi" fullRule="*" />
@@ -8304,4 +8303,9 @@
   <package name="com.eastmoney.android.berlin" supportFullSize="true" scaleMode="1" activityRule="com.eastmoney.android.module.launcher.internal.home.HomeActivity,com.eastmoney.android.news.activity.FullscreenVideoActivity,com.eastmoney.android.account.activity.PassportLoginActivity,com.eastmoney.android.module.launcher.internal.settings.SkinThemeSettingActivity,com.eastmoney.android.gubainfo.activity.SelectPhotoActivity" transitionRules="com.eastmoney.android.module.launcher.internal.home.HomeActivity" splitPairRule="com.eastmoney.android.module.launcher.internal.home.HomeActivity:*,com.eastmoney.android.activity.StockActivity:*,com.eastmoney.android.news.activity.NewsUGCDetailActivity:*,com.eastmoney.android.gubainfo.activity.UserHomePageActivity:*,com.eastmoney.android.news.activity.DouGuDetailActivity:*,com.eastmoney.android.stocktable.activity.QuoteListActivity:*,com.eastmoney.android.module.launcher.internal.search.NewSearchActivity:*,com.eastmoney.android.news.activity.NewsDetailActivity:*" />
   <package name="com.refreshrate.arc" fullRule="nra:cr:rcr:nr" />
   <package name="com.andromeda.androbench2" fullRule="*" />
+  <%_ if (Number(mi_os_version) >= 3) { _%>
+  <package name="com.tencent.wemeet.app" fullRule="nra:cr:rcr:nr" />
+  <%_ } else { _%>
+  <package name="com.tencent.wemeet.app" fullRule="nra:cr:rcr" />
+  <%_ } _%>
 </package_config>
