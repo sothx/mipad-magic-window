@@ -13,9 +13,9 @@ let knownOptions = {
     use_merge_config_brand: 'hw', // 合并平行视界规则时候使用的规则厂商品牌，hw——华为/荣耀平板，oppo——OPPO Pad
     use_compatibility: '', // 特别版本的兼容参数
     netdisk_desc: '', // 打包网盘提供的额外参数
-    last_module_update_version: 'V10', // 上个需要维护的升级服务版本
-    module_update_version: 'V11', // 模块升级服务版本
-    module_version_interface: 'standard', // 模块版本，standard 正式版，beta 测试版
+    last_module_update_version: 'V11', // 上个需要维护的升级服务版本
+    module_update_version: 'V12', // 模块升级服务版本
+    module_version_interface: 'beta', // 模块版本，standard 正式版，beta 测试版
     mi_os_version: 1, // Hyper OS的版本号
     is_projection: false, // true为镜像配置，false则默认配置
   },
