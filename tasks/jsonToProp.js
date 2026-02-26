@@ -109,6 +109,8 @@ module.exports = function jsonToProp(cb) {
       }
       /** 配置版本号 */
       json.version = `${moduleType}-${json.version}.${options.module_version_interface}`
+      /** 配置版本类型 */
+      json.versionType = options.module_version_interface
       return json;
     }))
     .pipe(gulpIf(buildActionIsPad, gulpJSONEdit(function (json) {
