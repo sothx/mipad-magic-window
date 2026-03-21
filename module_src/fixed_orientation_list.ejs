@@ -2143,7 +2143,6 @@
   <package name="com.tocaboca.tocahairsalon4" skipCompatMode="true" />
   <package name="com.pdragon.new2048.mi" skipCompatMode="true" />
   <package name="com.ustwo.monumentvalleyzz" skipCompatMode="true" defaultSettings="full" supportModes="full,fo" />
-  <package name="com.quark.browser" supportModes="full,fo" defaultSettings="full" supportCameraPreview="full:true" />
   <package name="com.xnhd.apkzpjldz.mi" />
   <package name="com.snda.lantern.wifilocating" />
   <package name="com.yg.mini.games" disable="true" />
@@ -4635,6 +4634,11 @@
   <package name="com.antutu.ABenchMark" defaultSettings="full" supportModes="full,fo" />
   <%_ } else { _%>
   <package name="com.antutu.ABenchMark" disable="true" />
+  <%_ } _%>
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.quark.browser" defaultSettings="full" supportModes="full,fo" />
+  <%_ } else { _%>
+  <package name="com.quark.browser" disable="true" supportCameraPreview="false" />
   <%_ } _%>
   <package name="com.xiaomi.account" disable="true" />
   <%_ } _%>
