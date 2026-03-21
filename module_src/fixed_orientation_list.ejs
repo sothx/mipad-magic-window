@@ -3169,7 +3169,6 @@
   <package name="com.eastmoney.android.newyork" supportModes="full,fo" />
   <package name="cn.ecook.jiachangcai" supportModes="full,fo" />
   <package name="com.songheng.eastnews" supportModes="full,fo" />
-  <package name="com.antutu.ABenchMark" supportModes="full,fo" defaultSettings="full" />
   <package name="com.xunrui.videowallpaper" supportModes="full,fo" />
   <package name="com.innovation.driftbottle" supportModes="full,fo" />
   <package name="com.wenhua.bamboo" supportModes="full,fo" />
@@ -4632,6 +4631,11 @@
   <package name="com.aliyun.tongyi" supportModes="full,fo" defaultSettings="full" />
   <package name="com.xiaomi.gamecenter" disable="true" />
   <package name="com.kylin.read" supportModes="full,fo" defaultSettings="full" />
-
+  <%_ if (Number(mi_os_version) >= 2) { _%>
+  <package name="com.antutu.ABenchMark" defaultSettings="full" supportModes="full,fo" />
+  <%_ } else { _%>
+  <package name="com.antutu.ABenchMark" disable="true" />
+  <%_ } _%>
+  <package name="com.xiaomi.account" disable="true" />
   <%_ } _%>
 </package_config>
