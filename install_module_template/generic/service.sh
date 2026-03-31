@@ -21,6 +21,7 @@ mkdir -p $MODDIR/common/temp
 
 # 水龙移植包相关方法
 is_amktiao_pen_enable=$(grep_prop is_amktiao_pen_enable "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+is_amktiao_liuqin_pen_enable=$(grep_prop is_amktiao_liuqin_pen_enable "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 is_amktiao_pen_update=$(grep_prop is_amktiao_pen_update "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 is_amktiao_pen_update_auto_task=$(grep_prop is_amktiao_pen_update_auto_task "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 is_amktiao_tp_firmware=$(grep_prop is_amktiao_tp_firmware "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
@@ -30,6 +31,10 @@ is_amktiao_game_mode_auto_task=$(grep_prop is_amktiao_game_mode_auto_task "$MODU
 
 if [ "$is_amktiao_pen_enable" = 'true' ]; then
   echo 1 >/sys/touchpanel/pen_enable
+fi
+
+if [ "$is_amktiao_liuqin_pen_enable" = 'true' ]; then
+  $MODDIR/common/utils/xiaomi_pen 1
 fi
 
 if [ "$is_amktiao_pen_update" = 'true' ]; then
