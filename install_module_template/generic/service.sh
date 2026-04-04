@@ -81,7 +81,7 @@ fi
 # 磁盘IO调度策略自启动
 auto_setting_io_scheduler=$(grep_prop auto_setting_io_scheduler "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 if [ "$auto_setting_io_scheduler" != "null" ] && [ -n "$auto_setting_io_scheduler" ]; then
-  echo "$auto_setting_io_scheduler" > /sys/block/sda/queue/scheduler
+  echo "$auto_setting_io_scheduler" >/sys/block/sda/queue/scheduler
 fi
 
 # 隐藏手势提示线
@@ -123,9 +123,13 @@ fi
 is_auto_enable_mi_screen_shots_write_clipboard=$(grep_prop is_auto_enable_mi_screen_shots_write_clipboard "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 mi_screen_shots_write_clipboard_enable=$(settings get secure mi_screen_shots_write_clipboard_enable)
 
-if [ "$is_auto_enable_mi_screen_shots_write_clipboard" = "true" ] && [ "$mi_screen_shots_write_clipboard_enable" = "0" ]; then
-    (
-        sleep 30
-        settings put secure mi_screen_shots_write_clipboard_enable 1
-    ) &
+if [ "$is_auto_enable_mi_screen_shots_write_clipboard" = "true" ]; then
+  auto_enable_mi_screen_shots_write_clipboard_dir_path="$MODDIR/common/source/auto_enable_mi_screen_shots_write_clipboard/auto_enable_mi_screen_shots_write_clipboard.d"
+  source "$MODDIR"/common/source/auto_enable_mi_screen_shots_write_clipboard/auto_enable_mi_screen_shots_write_clipboard.sh
+  # 执行 kill_auto_enable_mi_screen_shots_write_clipboard_dir_crond 以避免重复进程
+  kill_auto_enable_mi_screen_shots_write_clipboard_dir_crond
+  # 获取 crond 命令路径并执行
+  crond_cmd=$(get_crond)
+  $crond_cmd -c "$auto_enable_mi_screen_shots_write_clipboard_dir_path"
+  settings put secure mi_screen_shots_write_clipboard_enable 1
 fi

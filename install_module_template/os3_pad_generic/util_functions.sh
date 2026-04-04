@@ -63,13 +63,12 @@ update_system_prop() {
   else
     # 文件非空且末尾没有换行符，先补一个换行符
     if [ -s "$file" ] && [ "$(tail -c1 "$file")" != $'\n' ]; then
-      printf "\n" >> "$file"
+      printf "\n" >>"$file"
     fi
     # 追加新行，内容后加换行符
-    printf "$prop=$value" >> "$file"
+    printf "$prop=$value" >>"$file"
   fi
 }
-
 
 remove_system_prop() {
   local prop="$1"
@@ -96,6 +95,15 @@ kill_fbo_regularly_dir_crond() {
   }
 }
 
+kill_auto_enable_mi_screen_shots_write_clipboard_dir_crond() {
+  pid="$(pgrep -f 'auto_enable_mi_screen_shots_write_clipboard.d' | grep -v $$)"
+  [[ -n $pid ]] && {
+    for kill_pid in $pid; do
+      kill -9 "$kill_pid"
+    done
+  }
+}
+
 add_lines() {
   local content="$1"
   local file="$2"
@@ -104,12 +112,12 @@ add_lines() {
     local last_byte
     last_byte=$(tail -c1 "$file" | od -An -tx1 | tr -d ' \n\r')
     if [ "$last_byte" != "0a" ]; then
-      printf "\n" >> "$file"
+      printf "\n" >>"$file"
     fi
   fi
 
   # 追加内容，不自动加换行
-  printf "%s" "$content" >> "$file"
+  printf "%s" "$content" >>"$file"
 }
 
 # remove_old_verison_modules_config_file() {
