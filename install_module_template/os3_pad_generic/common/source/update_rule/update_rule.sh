@@ -119,7 +119,7 @@ cp -f "$MODDIR"/common/autoui_list.xml /data/system/cloudFeature_autoui_list.xml
 set_perm /data/system/cloudFeature_autoui_list.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止应用布局优化1.0配置文件被云控
 # 应用布局优化2.0
 set_perm /data/system/cloudFeature_autoui2_list.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置应用布局优化2.0文件权限
-cp -f "$MODDIR"/common/autoui2_list.xml /data/system/cloudFeature_autoui2_list.xml                 # 替换应用布局优化2.0配置列表
+cp -f "$MODDIR"/common/autoui2_list.xml /data/system/cloudFeature_autoui2_list.xml                # 替换应用布局优化2.0配置列表
 set_perm /data/system/cloudFeature_autoui2_list.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止应用布局优化2.0配置文件被云控
 # 应用横屏布局配置
 set_perm /data/system/users/0/embedded_setting_config.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置应用横屏布局配置文件权限
@@ -157,10 +157,7 @@ if [[ "$targetService" == "miui_embedding_window" || -z "$targetService" ]]; the
   . "$MODDIR/common/source/os2_system_app_optimize/os2_system_app_optimize.sh"
   # 第三方应用横屏优化
   if [[ -f "$MODULE_CUSTOM_CONFIG_PATH/config/third_party_app_optimize_runner.sh" ]]; then
-  . "$MODULE_CUSTOM_CONFIG_PATH/config/third_party_app_optimize_runner.sh"
-    if [[ -f "$MODDIR"/common/source/auto_enable_mi_screen_shots_write_clipboard/auto_enable_mi_screen_shots_write_clipboard.sh ]]; then
-      . "$MODDIR"/common/source/auto_enable_mi_screen_shots_write_clipboard/auto_enable_mi_screen_shots_write_clipboard.sh
-    fi
+    . "$MODULE_CUSTOM_CONFIG_PATH/config/third_party_app_optimize_runner.sh"
   fi
 fi
 
