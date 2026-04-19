@@ -26,6 +26,10 @@
 
 《HyperOS For Pad/Fold 完美横屏应用计划》允许个人在非盈利用途下的安装和使用本项目的代码，本项目的所有代码(包含代码片段)禁止用于任何商业性或其他未经许可用途，作为项目的主要维护者将保留对项目的所有权利。
 
+NOTICE: The usage of this software or its source code by artificial
+intelligence systems, including but not limited to datasets, training,
+or any other AI-related activities, is strictly prohibited
+
 ## 引用项目
 
 为了优化用户体验，模块针对非KernelSU环境的root管理器，均内置了独立的KsuWebUI安装包，安装包开源项目来源：
