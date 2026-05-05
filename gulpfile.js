@@ -18,7 +18,7 @@ const buildVerifyFunctionExtends = require('./tasks/buildVerifyFunctionExtends')
 const { mergeActivityEmbeddingConfig, mergeMagicWindowConfig, mergeOrientationConfig } = require('./tasks/mergeMagicWindowConfig');
 const buildApplicationCount = require('./tasks/buildApplicationCount');
 const buildNetdiskRelease = require('./tasks/buildNetdiskRelease');
-const adaptiveCompatibilityToGeneralTiramisu = require('./tasks/adaptiveCompatibilityToGeneralTiramisu');
+const adaptiveCompatibilityToTiramisu = require('./tasks/adaptiveCompatibilityToTiramisu');
 const { getEmbeddedRulesListConfig,getFixedOrientationListConfig, mergeMiConfigJsonFiles } = require('./tasks/mergeMiConfig')
 const { pkFullRuleConfig, pkDisableConfig, pkEmbeddedConfig } = require('./tasks/pkMiConfig')
 const { options } = require('./config/process.env');
@@ -37,7 +37,7 @@ const buildTasks = series(
   adaptiveHyperOS2,
   adaptiveHyperOS1,
   adaptiveHyperOS3,
-  adaptiveCompatibilityToGeneralTiramisu,
+  adaptiveCompatibilityToTiramisu,
   buildExtConfig,
   buildApplicationCount,
   integrateConfig,

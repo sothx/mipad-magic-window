@@ -7,9 +7,9 @@ const gulpIf = require('gulp-if');
 const DOMParser = require('xmldom').DOMParser;
 const XMLSerializer = require('xmldom').XMLSerializer;
 
-const buildActionIsGeneralTiramisu = function () {
+const buildActionIsTiramisu = function () {
   const use_compatibility = options.use_compatibility
-  if (use_compatibility === 'general-tiramisu') {
+  if (['general-tiramisu','hyperos-based-on-tiramisu'].includes(use_compatibility)) {
     return true;
   }
   return false;
@@ -18,7 +18,7 @@ const buildActionIsGeneralTiramisu = function () {
 /**
  * 不支持左右滑动条的设备，默认分屏比例从0.3统一改为0.35(强迫症？)
  */
-module.exports = function adaptiveCompatibilityToGeneralTiramisu(cb) {
+module.exports = function adaptiveCompatibilityToTiramisu(cb) {
   return src('temp/embedded_rules_list.xml') // 指定XML文件的路径
     .pipe(gulpIf(buildActionIsGeneralTiramisu,gulpXML({
       callback: function (result) {
@@ -26,6 +26,10 @@ module.exports = function adaptiveCompatibilityToGeneralTiramisu(cb) {
         const elementsWithAttribute = doc.getElementsByTagName('package');
         for (let i = 0; i < elementsWithAttribute.length; i++) {
           const attrs = elementsWithAttribute[i].attributes;
+          let hasSplitRatio = attrs.some((value) => value.name === 'splitRatio')
+          if (!hasSplitRatio) {
+            elementsWithAttribute[i].setAttribute('splitRatio','0.49')
+          }
           for (var j = attrs.length - 1; j >= 0; j--) {
             if (attrs[j].name === 'splitRatio') {
               if (elementsWithAttribute[i].getAttribute(attrs[j].name) === '0.3') {
@@ -37,6 +41,6 @@ module.exports = function adaptiveCompatibilityToGeneralTiramisu(cb) {
         return new XMLSerializer().serializeToString(doc);
       }
     })))
-    .pipe(gulpIf(buildActionIsGeneralTiramisu,dest('temp')))
+    .pipe(gulpIf(buildActionIsTiramisu,dest('temp')))
     .on('end', cb);
 }
