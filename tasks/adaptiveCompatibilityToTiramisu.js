@@ -20,13 +20,13 @@ const buildActionIsTiramisu = function () {
  */
 module.exports = function adaptiveCompatibilityToTiramisu(cb) {
   return src('temp/embedded_rules_list.xml') // 指定XML文件的路径
-    .pipe(gulpIf(buildActionIsGeneralTiramisu,gulpXML({
+    .pipe(gulpIf(buildActionIsTiramisu,gulpXML({
       callback: function (result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml')
         const elementsWithAttribute = doc.getElementsByTagName('package');
         for (let i = 0; i < elementsWithAttribute.length; i++) {
           const attrs = elementsWithAttribute[i].attributes;
-          let hasSplitRatio = attrs.some((value) => value.name === 'splitRatio')
+          let hasSplitRatio = Array.from(attrs).some((value) => value.name === 'splitRatio')
           if (!hasSplitRatio) {
             elementsWithAttribute[i].setAttribute('splitRatio','0.49')
           }
