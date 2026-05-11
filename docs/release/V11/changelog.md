@@ -6,9 +6,7 @@
 
 本次更新内容：
 
-- 优化 盖世游戏6.0的横竖屏切换兼容
-
-- 同步 部分8Pro横屏适配规则
+- 新增 折叠屏的酷安精适配规则
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
