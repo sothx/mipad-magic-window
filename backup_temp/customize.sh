@@ -48,7 +48,7 @@ key_check() {
 if [[ -d "$magisk_path$old_module_id" ]]; then
   ui_print "*********************************************"
   ui_print "- 新版模块不支持覆盖安装，请卸载老版本模块后重新安装！！！"
-  ui_print "- 模块下载地址：https://yun.139.com/shareweb/#/w/i/2qieog1Xypz11"
+  ui_print "- 模块下载地址：https://yun.139.com/shareweb/#/w/i/2v3EzdcAAyc5b"
   abort "*********************************************"
 fi
 
