@@ -6,7 +6,8 @@
 
 本次更新内容：
 
-- 修复 未启用截图自动复制到剪切板的情况下，不应该默认启用
+- 新增 系统体验增强-PC游戏引擎（原 WinPlay），支持该功能的手机/平板设备可以从这里直接启动PC游戏引擎
+- 优化 WinPlay(老版本)的机型适配描述，增加对Android 15 Hyper OS 3的 6 Pro / 6 Max 官方ROM兼容，需下载对应的apk
 
 如果是处于测试版(Beta)的模块，可能存在较多的不稳定性以及异常BUG，如遇问题可反馈，反馈Q群：277757185
 模块首页:[https://hyper-magic-window.sothx.com/](https://hyper-magic-window.sothx.com/)
