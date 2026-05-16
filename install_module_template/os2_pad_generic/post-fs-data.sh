@@ -13,10 +13,17 @@ fi
 echo "$KSU,$KSU_VER,$KSU_VER_CODE,$KSU_KERNEL_VER_CODE,$APATCH,$APATCH_VER_CODE,$APATCH_VER,$MAGISK_VER,$MAGISK_VER_CODE" >"$MODPATH/common/temp/root_manager_info.txt"
 
 # 开启小米超级岛
-is_mi_island_auto_task=$(grep_prop is_mi_island_auto_task "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+is_mi_island_auto_enable_task=$(grep_prop is_mi_island_auto_enable_task "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 
-if [ "$is_mi_island_auto_task" = "true" ]; then
+if [ "$is_mi_island_auto_enable_task" = "true" ]; then
   setprop feature.island.debug true
+fi
+
+# 禁用小米超级岛
+is_mi_island_auto_disable_task=$(grep_prop is_mi_island_auto_disable_task "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+
+if [ "$is_mi_island_auto_disable_task" = "true" ]; then
+  setprop feature.island.debug false
 fi
 
 is_patch_mode=$(grep_prop is_patch_mode "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
@@ -131,11 +138,11 @@ cp -f "$MODDIR"/common/autoui_list.xml /data/system/cloudFeature_autoui_list.xml
 set_perm /data/system/cloudFeature_autoui_list.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止应用布局优化配置文件被云控
 # 应用布局优化2.0
 set_perm /data/system/cloudFeature_autoui2_list.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置应用布局优化2文件权限
-cp -f "$MODDIR"/common/autoui2_list.xml /data/system/cloudFeature_autoui2_list.xml                 # 替换应用布局优化2配置列表
+cp -f "$MODDIR"/common/autoui2_list.xml /data/system/cloudFeature_autoui2_list.xml                # 替换应用布局优化2配置列表
 set_perm /data/system/cloudFeature_autoui2_list.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止应用布局优化2配置文件被云控
 # 应用横屏布局配置
 set_perm /data/system/users/0/embedded_setting_config.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置应用横屏布局配置文件权限
-cp -f "$MODDIR"/common/embedded_setting_config.xml /data/system/users/0/embedded_setting_config.xml      # 替换应用横屏布局配置文件
+cp -f "$MODDIR"/common/embedded_setting_config.xml /data/system/users/0/embedded_setting_config.xml     # 替换应用横屏布局配置文件
 set_perm /data/system/users/0/embedded_setting_config.xml 1000 1000 0444 u:object_r:system_data_file:s0 # 禁止应用横屏布局配置文件被云控
 # 通用配置
 # set_perm /data/system/cloudFeature_generic_rules_list.xml 1000 1000 0666 u:object_r:system_data_file:s0 # 设置通用配置文件权限
