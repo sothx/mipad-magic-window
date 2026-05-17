@@ -24,7 +24,6 @@ MODULE_CUSTOM_CONFIG_PATH="/data/adb/"$module_id
 
 set_perm_recursive "$MODPATH"/common/utils 0 0 0755 0777 u:object_r:system_file:s0
 
-
 key_check() {
   while true; do
     key_check=$(/system/bin/getevent -qlc 1)
@@ -52,6 +51,26 @@ if [[ "$KSU" == "true" ]]; then
     ui_print "*********************************************"
     ui_print "- 请更新 KernelSU 到 v0.8.0+ ！"
     abort "*********************************************"
+  fi
+  if [ "$KSU_VER_CODE" -gt 30000 ]; then
+    ui_print "- KernelSU 版本号高于 30000，检查元模块状态"
+    if [ -f "/data/adb/metamodule/module.prop" ]; then
+      # 元模块存在，检查是否被禁用
+      if [ -f "/data/adb/metamodule/disable" ]; then
+        ui_print "*********************************************"
+        ui_print "- 元模块已被禁用，请启用元模块后再尝试安装~"
+        abort "*********************************************"
+      fi
+      # 元模块存在且未禁用，正常继续安装流程（不执行abort）
+      ui_print "*********************************************"
+      ui_print "- 已检测到元模块且状态正常，进入模块安装流程~"
+      ui_print "*********************************************"
+    else
+      # 元模块不存在，终止安装并提示
+      ui_print "*********************************************"
+      ui_print "- 您未安装元模块，KernelSU 系管理器必须安装元模块才能正常使用~"
+      abort "*********************************************"
+    fi
   fi
 elif [[ "$APATCH" == "true" ]]; then
   ui_print "- APatch 当前的版本号: $APATCH_VER_CODE"
@@ -128,7 +147,7 @@ if [[ ! -d "$MODPATH/common/temp" ]]; then
 fi
 # 获取ROOT管理器信息并写入
 
-echo "$KSU,$KSU_VER,$KSU_VER_CODE,$KSU_KERNEL_VER_CODE,$APATCH,$APATCH_VER_CODE,$APATCH_VER,$MAGISK_VER,$MAGISK_VER_CODE" > "$MODPATH/common/temp/root_manager_info.txt"
+echo "$KSU,$KSU_VER,$KSU_VER_CODE,$KSU_KERNEL_VER_CODE,$APATCH,$APATCH_VER_CODE,$APATCH_VER,$MAGISK_VER,$MAGISK_VER_CODE" >"$MODPATH/common/temp/root_manager_info.txt"
 
 # 文件夹赋权
 /bin/chmod -R 777 "$MODULE_CUSTOM_CONFIG_PATH/config/"
