@@ -114,6 +114,23 @@ kill_fbo_regularly_dir_crond() {
   }
 }
 
+kill_display_mode_record_auto_enable_shell() {
+  # 接收外部传进来的完整路径
+  local SCRIPT_PATH="$1"
+
+  # 如果没传路径，直接退出
+  if [ -z "$SCRIPT_PATH" ]; then
+    return 1
+  fi
+
+  pid="$(pgrep -f "$SCRIPT_PATH" | grep -v $$)"
+  [[ -n $pid ]] && {
+    for kill_pid in $pid; do
+      kill -9 "$kill_pid"
+    done
+  }
+}
+
 kill_auto_enable_mi_screen_shots_write_clipboard_dir_crond() {
   pid="$(pgrep -f 'auto_enable_mi_screen_shots_write_clipboard.d' | grep -v $$)"
   [[ -n $pid ]] && {
