@@ -7,6 +7,7 @@ api_level_arch_detect
 magisk_path=/data/adb/modules/
 module_id=$(grep_prop id "$MODPATH/module.prop")
 module_versionCode=$(expr "$(grep_prop versionCode "$MODPATH/module.prop")" + 0)
+device_type="$(get_device_type)"
 device_code="$(getprop ro.product.device)"
 device_soc_name="$(getprop ro.vendor.qti.soc_name)"
 device_soc_model="$(getprop ro.vendor.qti.soc_model)"
@@ -42,6 +43,12 @@ key_check() {
     fi
   done
 }
+
+if [[ "$device_type" != 'phone' ]]; then
+  ui_print "*********************************************"
+  ui_print "- 当前模块版本适配的设备类型为手机，您当前的设备类型不符合，请寻找合适的模块版本~"
+  abort "*********************************************"
+fi
 
 if [[ "$KSU" == "true" ]]; then
   ui_print "- KernelSU 用户空间当前的版本号: $KSU_VER_CODE"

@@ -60,7 +60,7 @@ if [[ ! -d "$MODULE_CUSTOM_CONFIG_PATH" ]]; then
     /bin/chmod 777 "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
   fi
 fi
-
+device_type="$(get_device_type)"
 device_code="$(getprop ro.product.device)"
 device_soc_name="$(getprop ro.vendor.qti.soc_name)"
 device_soc_model="$(getprop ro.vendor.qti.soc_model)"
@@ -83,7 +83,7 @@ if [[ "$device_soc_model" == "SM8475" && "$device_soc_name" == "cape" && "$API" 
     ui_print "- 已开启智能I/O调度(Android 14+ 生效)"
     update_system_prop smartfocusio on "$MODULE_CUSTOM_CONFIG_PATH/config.prop"
     add_lines "persist.sys.stability.smartfocusio=on" "$MODPATH"/system.prop
-    
+
     ui_print "*********************************************"
   elif [[ $is_need_smartfocusio == 'off' ]]; then
     ui_print "*********************************************"

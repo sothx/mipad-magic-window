@@ -22,7 +22,7 @@
     "build:fold": "cross-env gulp build --use_platform fold  --is_projection true --mi_os_version 3",
     "release:fold": "cross-env gulp release --use_platform fold  --is_projection true --mi_os_version 3",
     "package:fold": "cross-env gulp package --use_platform fold  --is_projection true --mi_os_version 3",
-    "build::fold-compatibility=general-miuiAutoUI": "cross-env gulp build --use_platform fold  --is_projection true  --use_compatibility general-miuiAutoUI",
+    "build:fold-compatibility=general-miuiAutoUI": "cross-env gulp build --use_platform fold  --is_projection true  --use_compatibility general-miuiAutoUI",
     "release:fold-compatibility=general-miuiAutoUI": "cross-env gulp release --use_platform fold  --is_projection true  --use_compatibility general-miuiAutoUI",
     "package:fold-compatibility=general-miuiAutoUI": "cross-env gulp package --use_platform fold  --is_projection true  --use_compatibility general-miuiAutoUI",
     "build:pad-compatibility=general-vanillaIceCream": "cross-env gulp build --use_platform pad --mi_os_version 2 --use_compatibility general-vanillaIceCream",

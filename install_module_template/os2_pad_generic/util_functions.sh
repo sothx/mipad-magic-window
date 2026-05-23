@@ -22,6 +22,25 @@ api_level_arch_detect() {
   fi
 }
 
+get_device_type() {
+  # 先判断折叠屏 muiltdisplay_type == 2
+  local multi_type=$(getprop persist.sys.muiltdisplay_type)
+  if [ "$multi_type" = "2" ]; then
+    echo "fold"
+    return
+  fi
+
+  # 再判断平板 characteristics == tablet
+  local chara=$(getprop ro.build.characteristics)
+  if [ "$chara" = "tablet" ]; then
+    echo "tablet"
+    return
+  fi
+
+  # 默认手机
+  echo "phone"
+}
+
 set_perm() {
   chown $2:$3 $1 || return 1
   chmod $4 $1 || return 1

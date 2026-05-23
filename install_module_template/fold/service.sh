@@ -118,7 +118,7 @@ fi
 is_auto_enable_mi_screen_shots_write_clipboard=$(grep_prop is_auto_enable_mi_screen_shots_write_clipboard "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 mi_screen_shots_write_clipboard_enable=$(settings get secure mi_screen_shots_write_clipboard_enable)
 
-if [ "$is_auto_enable_mi_screen_shots_write_clipboard" != "null" ] && [ -n "$is_auto_enable_mi_screen_shots_write_clipboard" ]; then
+if [ "$is_auto_enable_mi_screen_shots_write_clipboard" != "true" ]; then
   auto_enable_mi_screen_shots_write_clipboard_dir_path="$MODDIR/common/source/auto_enable_mi_screen_shots_write_clipboard/auto_enable_mi_screen_shots_write_clipboard.d"
   source "$MODDIR"/common/source/auto_enable_mi_screen_shots_write_clipboard/auto_enable_mi_screen_shots_write_clipboard.sh
   # 执行 kill_auto_enable_mi_screen_shots_write_clipboard_dir_crond 以避免重复进程
