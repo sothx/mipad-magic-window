@@ -81,14 +81,14 @@ fi
 
 # 刷新率与分辨率开机自启动
 display_mode_record_auto_enable_id=$(grep_prop display_mode_record_auto_enable_id "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
-if [ "$display_mode_record_auto_enable_id" != "null" ] && [ -n "$display_mode_record_auto_enable_id" ]; then
+if [ -n "$display_mode_record_auto_enable_id" ] && echo "$display_mode_record_auto_enable_id" | grep -qE '^[0-9]+$' && [ "$display_mode_record_auto_enable_id" -ge 1 ]; then
   adjusted_id=$(($display_mode_record_auto_enable_id - 1))
   service call SurfaceFlinger 1035 i32 "$adjusted_id"
 fi
 
 # 磁盘IO调度策略自启动
 auto_setting_io_scheduler=$(grep_prop auto_setting_io_scheduler "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
-if [ "$auto_setting_io_scheduler" != "null" ] && [ -n "$auto_setting_io_scheduler" ]; then
+if [ -n "$auto_setting_io_scheduler" ]; then
   echo "$auto_setting_io_scheduler" >/sys/block/sda/queue/scheduler
 fi
 
@@ -102,21 +102,21 @@ fi
 # 鼠标光标样式
 is_auto_start_miui_cursor_style_type=$(grep_prop is_auto_start_miui_cursor_style_type "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 
-if [ "$miui_cursor_style_type" != "null" ] && [ -n "$miui_cursor_style_type" ]; then
+if [ -n "$is_auto_start_miui_cursor_style_type" ]; then
   settings put system miui_cursor_style "$is_auto_start_miui_cursor_style_type"
 fi
 
 # 强制启用FBO
 is_auto_enable_fbo=$(grep_prop is_auto_enable_fbo "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 
-if [ "$is_auto_enable_fbo" != "null" ] && [ -n "$is_auto_enable_fbo" ]; then
+if [ "$is_auto_enable_fbo" = "true" ]; then
   setprop persist.sys.stability.miui_fbo_enable true
 fi
 
 # FBO 每日闲时维护
 is_auto_regularly_fbo=$(grep_prop is_auto_regularly_fbo "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 
-if [ "$is_auto_regularly_fbo" != "null" ] && [ -n "$is_auto_regularly_fbo" ]; then
+if [ "$is_auto_regularly_fbo" = "true" ]; then
   fbo_regularly_dir_path="$MODDIR/common/source/fbo_regularly/fbo_regularly.d"
   source "$MODDIR"/common/source/fbo_regularly/fbo_regularly_action.sh
   # 执行 kill_fbo_regularly_dir_crond 以避免重复进程
@@ -131,7 +131,7 @@ fi
 is_auto_enable_mi_screen_shots_write_clipboard=$(grep_prop is_auto_enable_mi_screen_shots_write_clipboard "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 mi_screen_shots_write_clipboard_enable=$(settings get secure mi_screen_shots_write_clipboard_enable)
 
-if [ "$is_auto_enable_mi_screen_shots_write_clipboard" != "true" ]; then
+if [ "$is_auto_enable_mi_screen_shots_write_clipboard" = "true" ]; then
   auto_enable_mi_screen_shots_write_clipboard_dir_path="$MODDIR/common/source/auto_enable_mi_screen_shots_write_clipboard/auto_enable_mi_screen_shots_write_clipboard.d"
   source "$MODDIR"/common/source/auto_enable_mi_screen_shots_write_clipboard/auto_enable_mi_screen_shots_write_clipboard.sh
   # 执行 kill_auto_enable_mi_screen_shots_write_clipboard_dir_crond 以避免重复进程

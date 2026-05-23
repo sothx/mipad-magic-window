@@ -68,7 +68,7 @@ grep_prop() {
   shift
   local FILES=$@
   [ -z "$FILES" ] && FILES='/system/build.prop'
-  cat $FILES 2>/dev/null | dos2unix | sed -n "$REGEX" | head -n 1
+  cat $FILES 2>/dev/null | dos2unix | sed -n "$REGEX" | head -n 1 | xargs
 }
 
 update_system_prop() {
