@@ -19,9 +19,6 @@ MODULE_CUSTOM_CONFIG_PATH="/data/adb/"$module_id
 # rm -rf /data/system/package_cache
 # rm -rf /data/resource-cache
 
-# 赋予文件夹权限
-/bin/chmod -R 777 "$MODPATH"
-
 set_perm_recursive "$MODPATH"/common/utils 0 0 0755 0777 u:object_r:system_file:s0
 
 key_check() {

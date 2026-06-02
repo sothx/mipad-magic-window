@@ -20,9 +20,6 @@ MODULE_CUSTOM_CONFIG_PATH="/data/adb/"$module_id
 # rm -rf /data/system/package_cache
 # rm -rf /data/resource-cache
 
-# 赋予文件夹权限
-/bin/chmod -R 777 "$MODPATH"
-
 set_perm_recursive "$MODPATH"/common/utils 0 0 0755 0777 u:object_r:system_file:s0
 
 key_check() {
@@ -186,7 +183,6 @@ if [[ -d "$MODPATH/common/source/miui_embedding_window_service/$API/" ]]; then
   fi
   # 复制文件并写入权限
   /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/$API/"* "$MODPATH/system/system_ext/framework/"
-  /bin/chmod -R 777 "$MODPATH/system/system_ext/framework/"
 fi
 
 ## 导入MIUI Auoto UI 服务
@@ -197,7 +193,6 @@ if [[ -d "$MODPATH/common/source/miui_autoui_service/$API/" ]]; then
   fi
   # 复制文件并写入权限
   /bin/cp -rf "$MODPATH/common/source/miui_autoui_service/$API/"* "$MODPATH/system/system_ext/framework/"
-  /bin/chmod -R 777 "$MODPATH/system/system_ext/framework/"
 fi
 
 # 骁龙8+Gen1机型判断
