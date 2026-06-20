@@ -20,6 +20,7 @@ MODULE_CUSTOM_CONFIG_PATH="/data/adb/"$module_id
 # rm -rf /data/resource-cache
 
 set_perm_recursive "$MODPATH"/common 0 0 0755 0777 u:object_r:system_file:s0
+set_perm_recursive "$MODPATH"/util_functions.sh 0 0 0755 0777 u:object_r:system_file:s0
 
 key_check() {
   while true; do
