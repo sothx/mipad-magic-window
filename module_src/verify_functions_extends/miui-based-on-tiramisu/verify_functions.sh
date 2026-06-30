@@ -23,10 +23,6 @@ verify_android_api_has_pass() {
 
 verify_special_rule_pass() {
   local sothx_miui_device_code=$(grep_prop ro.config.sothx_miui_device_code "$magisk_path$module_id/system.prop")
-  # 目录不存在则创建目录
-  if [[ ! -d "$MODPATH/system/system_ext/framework" ]]; then
-    /bin/mkdir -p "$MODPATH/system/system_ext/framework"
-  fi
   if [ -z "$sothx_miui_device_code" ]; then
 
     ui_print "*********************************************"
@@ -57,6 +53,9 @@ verify_special_rule_pass() {
     if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
       ui_print "- 正在为你写入小米平板6 Max(yudi)的模块配置文件"
       add_lines "ro.config.sothx_miui_device_code=yudi" "$MODPATH"/system.prop
+      if [[ ! -d "$MODPATH/system/system_ext/framework" ]]; then
+        /bin/mkdir -p "$MODPATH/system/system_ext/framework"
+      fi
       /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/yudi/"* "$MODPATH/system/system_ext/framework/"
     else
       ui_print "*********************************************"
@@ -69,6 +68,9 @@ verify_special_rule_pass() {
       if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
         ui_print "- 正在为你写入小米平板6 Pro(liuqin)的模块配置文件"
         add_lines "ro.config.sothx_miui_device_code=liuqin" "$MODPATH"/system.prop
+        if [[ ! -d "$MODPATH/system/system_ext/framework" ]]; then
+          /bin/mkdir -p "$MODPATH/system/system_ext/framework"
+        fi
         /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/liuqin/"* "$MODPATH/system/system_ext/framework/"
       else
         ui_print "*********************************************"
@@ -81,6 +83,9 @@ verify_special_rule_pass() {
         if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
           ui_print "- 正在为你写入小米平板6(pipa)的模块配置文件"
           add_lines "ro.config.sothx_miui_device_code=pipa" "$MODPATH"/system.prop
+          if [[ ! -d "$MODPATH/system/system_ext/framework" ]]; then
+            /bin/mkdir -p "$MODPATH/system/system_ext/framework"
+          fi
           /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/pipa/"* "$MODPATH/system/system_ext/framework/"
         else
           ui_print "*********************************************"
@@ -93,6 +98,9 @@ verify_special_rule_pass() {
           if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
             ui_print "- 正在为你写入小米平板5 Pro 12.4(dagu)的模块配置文件"
             add_lines "ro.config.sothx_miui_device_code=dagu" "$MODPATH"/system.prop
+            if [[ ! -d "$MODPATH/system/system_ext/framework" ]]; then
+              /bin/mkdir -p "$MODPATH/system/system_ext/framework"
+            fi
             /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/dagu/"* "$MODPATH/system/system_ext/framework/"
           else
             ui_print "*********************************************"
@@ -107,6 +115,9 @@ verify_special_rule_pass() {
       ui_print "*********************************************"
       ui_print "- 正在为你修补"应用横屏布局"有关的系统文件"
       ui_print "*********************************************"
+      if [[ ! -d "$MODPATH/system/system_ext/framework" ]]; then
+        /bin/mkdir -p "$MODPATH/system/system_ext/framework"
+      fi
       /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/$sothx_miui_device_code/"* "$MODPATH/system/system_ext/framework/"
     fi
     add_lines "ro.config.sothx_miui_device_code=$sothx_miui_device_code" "$MODPATH"/system.prop

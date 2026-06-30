@@ -119,11 +119,6 @@ verify_special_rule_pass() {
     fi
   fi
 
-  # 目录不存在则创建目录
-  if [[ ! -d "$MODPATH/system/system_ext/framework" ]]; then
-    /bin/mkdir -p "$MODPATH/system/system_ext/framework"
-  fi
-
   if [[ -z "$sothx_miui_device_code" ]]; then
     ui_print "*********************************************"
     ui_print "- 专版模块不同于通用版，存在可能导致系统异常或者卡米的风险！"
@@ -150,6 +145,9 @@ verify_special_rule_pass() {
       ui_print "*********************************************"
       ui_print "- 正在为你修补应用横屏布局有关的系统文件"
       ui_print "*********************************************"
+      if [[ ! -d "$MODPATH/system/system_ext/framework" ]]; then
+        /bin/mkdir -p "$MODPATH/system/system_ext/framework"
+      fi
       /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/$sothx_miui_device_code/$API/"* "$MODPATH/system/system_ext/framework/"
       add_lines "ro.config.sothx_miui_device_code=$sothx_miui_device_code" "$MODPATH"/system.prop
     fi
@@ -172,6 +170,9 @@ select_device() {
   if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
     ui_print "- 正在为你写入${device_name}(${device_code})的模块配置文件"
     add_lines "ro.config.sothx_miui_device_code=${device_code}" "$MODPATH"/system.prop
+    if [[ ! -d "$MODPATH/system/system_ext/framework" ]]; then
+      /bin/mkdir -p "$MODPATH/system/system_ext/framework"
+    fi
     /bin/cp -rf "$MODPATH/common/source/miui_embedding_window_service/${device_code}/${API}/"* "$MODPATH/system/system_ext/framework/"
   else
     return 1 # 选择否，返回1
