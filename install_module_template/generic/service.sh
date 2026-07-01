@@ -73,11 +73,12 @@ fi
 
 # 刷新率与分辨率开机自启动
 display_mode_record_auto_enable_id=$(grep_prop display_mode_record_auto_enable_id "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+is_disable_display_mode_daemon_process=$(grep_prop is_disable_display_mode_daemon_process "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 if [ -n "$display_mode_record_auto_enable_id" ] && echo "$display_mode_record_auto_enable_id" | grep -qE '^[0-9]+$' && [ "$display_mode_record_auto_enable_id" -ge 1 ]; then
   # 杀死旧进程
   kill_display_mode_record_auto_enable_shell "$MODDIR"/common/source/display_mode_record_auto_enable/display_mode_record_auto_enable.sh
 
-  nohup "$MODDIR"/common/source/display_mode_record_auto_enable/display_mode_record_auto_enable.sh "$display_mode_record_auto_enable_id" >/dev/null 2>&1 &
+  nohup "$MODDIR"/common/source/display_mode_record_auto_enable/display_mode_record_auto_enable.sh "$display_mode_record_auto_enable_id" "$is_disable_display_mode_daemon_process" >/dev/null 2>&1 &
 fi
 
 # 磁盘IO调度策略自启动
