@@ -36,12 +36,13 @@ is_amktiao_tp_firmware=$(grep_prop is_amktiao_tp_firmware "$MODULE_CUSTOM_CONFIG
 is_amktiao_tp_firmware_auto_task=$(grep_prop is_amktiao_tp_firmware_auto_task "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 is_amktiao_game_mode=$(grep_prop is_amktiao_game_mode "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
 is_amktiao_game_mode_auto_task=$(grep_prop is_amktiao_game_mode_auto_task "$MODULE_CUSTOM_CONFIG_PATH/config.prop")
+project_treble_support_amktiao_xiaomi_pen=$(getprop ro.config.sothx_project_treble_support_amktiao_xiaomi_pen)
 
 if [ "$is_amktiao_pen_enable" = 'true' ]; then
   echo 1 >/sys/touchpanel/pen_enable
 fi
 
-if [ "$is_amktiao_liuqin_pen_enable" = 'true' ]; then
+if [ "$is_amktiao_liuqin_pen_enable" = 'true' ] && [ "$project_treble_support_amktiao_xiaomi_pen" != 'true' ]; then
   $MODDIR/common/utils/xiaomi_pen 1
 fi
 

@@ -72,7 +72,6 @@
   <package name="cn.danatech.xingseapp" enable="true" activityRule="*:0" optimizeWebView="true" />
   <package name="com.peopledailychina.activity" enable="true" activityRule="*:0" optimizeWebView="true" />
   <package name="com.ruguoapp.jike" enable="true" activityRule="*:0" optimizeWebView="true" />
-  <package name="com.baidu.tieba" enable="true" activityRule="*:0" optimizeWebView="true" />
   <package name="com.mihoyo.hyperion" enable="true" activityRule="*:0" optimizeWebView="true" />
   <package name="com.dongqiudi.news" enable="true" activityRule="*:0" optimizeWebView="true" />
   <package name="com.douban.frodo" enable="true" activityRule="*:0" optimizeWebView="true" />
@@ -181,7 +180,9 @@
   <package name="com.ophone.reader.ui" enable="true" activityRule="*:0" optimizeWebView="true" />
   <package name="com.mfcloudcalculate.networkdisk" enable="true" activityRule="*:0" optimizeWebView="true" />
   <package name="info.muge.appshare" enable="true" activityRule="*:0" optimizeWebView="true" />
+  <%_ if (Number(mi_os_version) < 3) { _%>
   <package name="air.tv.douyu.android" enable="true" activityRule="com.douyu.module.home.pages.main.MainActivity:7:kag-100" />
+  <%_ } _%>
   <%_ if (Number(mi_os_version) < 3) { _%>
   <package name="com.lofter.android" enable="true" activityRule="com.lofter.android.global.home.TabHomeActivity:7:recycler_view-110" />
   <%_ } _%>
