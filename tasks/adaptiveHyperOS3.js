@@ -21,6 +21,32 @@ let EMStack = {}
  * 小米平板 Hyper OS 3.0 适配优化
  */
 
+function adaptiveEM(cb) {
+  return src('temp/embedded_rules_list.xml') // 指定XML文件的路径
+    .pipe(gulpIf(buildActionIsOS3Pad, gulpXML({
+      callback: function (result) {
+        const doc = new DOMParser().parseFromString(result, 'text/xml')
+        const elementsWithAttribute = doc.getElementsByTagName('package');
+        for (let i = 0; i < elementsWithAttribute.length; i++) {
+          const attrs = elementsWithAttribute[i].attributes;
+          let hasSplitRatio = Array.from(attrs).some((value) => value.name === 'splitRatio')
+          if (hasSplitRatio) {
+            for (var j = attrs.length - 1; j >= 0; j--) {
+              if (attrs[j].name === 'splitRatio') {
+                if (elementsWithAttribute[i].getAttribute(attrs[j].name) === '0.3') {
+                  elementsWithAttribute[i].setAttribute(attrs[j].name, '0.4')
+                }
+              }
+            }
+          }
+        }
+        return new XMLSerializer().serializeToString(doc);
+      }
+    })))
+    .pipe(dest('temp'))
+    .on('end', cb);
+}
+
 
 function adaptiveFO(cb) {
   return src('temp/fixed_orientation_list.xml') // 指定XML文件的路径
@@ -77,4 +103,4 @@ function adaptiveFO(cb) {
     .on('end', cb);
 }
 
-module.exports = series(adaptiveFO)
+module.exports = series(adaptiveEM, adaptiveFO)
