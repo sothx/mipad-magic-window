@@ -34,7 +34,7 @@ function adaptiveEM(cb) {
             for (var j = attrs.length - 1; j >= 0; j--) {
               if (attrs[j].name === 'splitRatio') {
                 if (elementsWithAttribute[i].getAttribute(attrs[j].name) === '0.3') {
-                  elementsWithAttribute[i].setAttribute(attrs[j].name, '0.4')
+                  elementsWithAttribute[i].setAttribute(attrs[j].name, '0.35')
                 }
               }
             }
