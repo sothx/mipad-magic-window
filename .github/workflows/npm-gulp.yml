@@ -2,9 +2,9 @@ name: NodeJs with Build
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
@@ -15,213 +15,224 @@ jobs:
         node-version: [20.x]
 
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
 
-    - name: Load environment
-      uses: GuillaumeFalourd/convert-json-to-env@v1
-      with:
-        json_file: ./config/module.config.json
+      - name: Load environment
+        uses: GuillaumeFalourd/convert-json-to-env@v1
+        with:
+          json_file: ./config/module.config.json
 
-    - name: Build Pad
-      run: |
-        npm install
-        npm run build:pad
+      - name: Build Pad
+        run: |
+          npm install
+          npm run build:pad
 
-    - name: Upload Pad Release Zip
-      uses: actions/upload-artifact@v4
-      with:
-        name: pad-${{ env.VERSION }}
-        path: "dist/**"
-        overwrite: true
+      - name: Upload Pad Release Zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: pad-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
 
-    - name: Build Fold
-      run: |
-        npm run build:fold
+      - name: Build Fold
+        run: |
+          npm run build:fold
 
-    - name: Upload Fold Release Zip
-      uses: actions/upload-artifact@v4
-      with:
-        name: fold-${{ env.VERSION }}
-        path: "dist/**"
-        overwrite: true
+      - name: Upload Fold Release Zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: fold-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
 
-    - name: Build Fold Compatibility Use GeneralMiuiAutoUI
-      run: |
+      - name: Build Fold Compatibility Use GeneralMiuiAutoUI
+        run: |
           npm run build:fold-compatibility=general-miuiAutoUI
 
-    - name: Upload Fold Compatibility Use GeneralMiuiAutoUI Release Zip
-      uses: actions/upload-artifact@v4
-      with:
+      - name: Upload Fold Compatibility Use GeneralMiuiAutoUI Release Zip
+        uses: actions/upload-artifact@v4
+        with:
           name: fold-general-miuiAutoUI-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 
-    - name: Build Phone
-      run: |
-        npm run build:phone
+      - name: Build Phone
+        run: |
+          npm run build:phone
 
-    - name: Upload Phone Release Zip
-      uses: actions/upload-artifact@v4
-      with:
-        name: phone-${{ env.VERSION }}
-        path: "dist/**"
-        overwrite: true
+      - name: Upload Phone Release Zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: phone-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
 
-    - name: Build Ext Pad
-      run: |
-        npm run build-ext:pad
+      - name: Build Ext Pad
+        run: |
+          npm run build-ext:pad
 
-    - name: Upload Ext Pad Release Zip
-      uses: actions/upload-artifact@v4
-      with:
-        name: pad-ext-${{ env.VERSION }}
-        path: "dist/**"
-        overwrite: true
-        
-    # - name: Build Pad Compatibility Use YudiDeviceCode
-    #   run: |
-    #       npm run build:pad-compatibility=yudi-device-code
-  
-    # - name: Upload Pad Compatibility Use YudiDeviceCode Release Zip
-    #   uses: actions/upload-artifact@v4
-    #   with:
-    #       name: pad-yudi-device-code-${{ env.VERSION }}
-    #       path: "dist/**"
-    #       overwrite: true
+      - name: Upload Ext Pad Release Zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: pad-ext-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
 
-    # - name: Build Pad Compatibility Use ShengDeviceCode
-    #   run: |
-    #       npm run build:pad-compatibility=sheng-device-code
-  
-    # - name: Upload Pad Compatibility Use ShengDeviceCode Release Zip
-    #   uses: actions/upload-artifact@v4
-    #   with:
-    #       name: pad-sheng-device-code-${{ env.VERSION }}
-    #       path: "dist/**"
-    #       overwrite: true
+      # - name: Build Pad Compatibility Use YudiDeviceCode
+      #   run: |
+      #       npm run build:pad-compatibility=yudi-device-code
 
-    - name: Build Pad Mode Use MagicWindow
-      run: |
+      # - name: Upload Pad Compatibility Use YudiDeviceCode Release Zip
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #       name: pad-yudi-device-code-${{ env.VERSION }}
+      #       path: "dist/**"
+      #       overwrite: true
+
+      # - name: Build Pad Compatibility Use ShengDeviceCode
+      #   run: |
+      #       npm run build:pad-compatibility=sheng-device-code
+
+      # - name: Upload Pad Compatibility Use ShengDeviceCode Release Zip
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #       name: pad-sheng-device-code-${{ env.VERSION }}
+      #       path: "dist/**"
+      #       overwrite: true
+
+      - name: Build Pad Mode Use MagicWindow
+        run: |
           npm run build:pad-mode=magicWindow
-  
-    - name: Upload Pad Mode Use MagicWindow Release Zip
-      uses: actions/upload-artifact@v4
-      with:
+
+      - name: Upload Pad Mode Use MagicWindow Release Zip
+        uses: actions/upload-artifact@v4
+        with:
           name: pad-magicWindow-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 
-    - name: Build Pad Compatibility Use GeneralUpsideDownCake
-      run: |
+      - name: Build Pad Compatibility Use GeneralUpsideDownCake
+        run: |
           npm run build:pad-compatibility=general-upsideDownCake
-  
-    - name: Upload Pad Compatibility Use GeneralUpsideDownCake Release Zip
-      uses: actions/upload-artifact@v4
-      with:
+
+      - name: Upload Pad Compatibility Use GeneralUpsideDownCake Release Zip
+        uses: actions/upload-artifact@v4
+        with:
           name: general-upsideDownCake-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 
-    - name: Build Pad Compatibility Use GeneralVanillaIceCream
-      run: |
+      - name: Build Pad Compatibility Use GeneralBaklava
+        run: |
+          npm run build:pad-compatibility=general-baklava
+
+      - name: Upload Pad Compatibility Use GeneralBaklava Release Zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: general-baklava-${{ env.VERSION }}
+          path: "dist/**"
+          overwrite: true
+
+      - name: Build Pad Compatibility Use GeneralVanillaIceCream
+        run: |
           npm run build:pad-compatibility=general-vanillaIceCream
-  
-    - name: Upload Pad Compatibility Use GeneralVanillaIceCream Release Zip
-      uses: actions/upload-artifact@v4
-      with:
+
+      - name: Upload Pad Compatibility Use GeneralVanillaIceCream Release Zip
+        uses: actions/upload-artifact@v4
+        with:
           name: general-vanillaIceCream-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
-  
-    - name: Build Pad Compatibility Use GeneralTiramisu
-      run: |
+
+      - name: Build Pad Compatibility Use GeneralTiramisu
+        run: |
           npm run build:pad-compatibility=general-tiramisu
-  
-    - name: Upload Pad Compatibility Use GeneralTiramisu Release Zip
-      uses: actions/upload-artifact@v4
-      with:
+
+      - name: Upload Pad Compatibility Use GeneralTiramisu Release Zip
+        uses: actions/upload-artifact@v4
+        with:
           name: general-tiramisu-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 
-    - name: Build Pad Compatibility Use HyperOSBasedOnTiramisu
-      run: |
+      - name: Build Pad Compatibility Use HyperOSBasedOnTiramisu
+        run: |
           npm run build:pad-compatibility=hyperos-based-on-tiramisu
-  
-    - name: Upload Pad Compatibility Use HyperOSBasedOnTiramisu Release Zip
-      uses: actions/upload-artifact@v4
-      with:
+
+      - name: Upload Pad Compatibility Use HyperOSBasedOnTiramisu Release Zip
+        uses: actions/upload-artifact@v4
+        with:
           name: pad-hyperos-based-on-tiramisu-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 
-    - name: Build Pad Compatibility Use MIUI14BasedOnTiramisu
-      run: |
+      - name: Build Pad Compatibility Use MIUI14BasedOnTiramisu
+        run: |
           npm run build:pad-compatibility=miui-based-on-tiramisu
-  
-    - name: Upload Pad Compatibility Use MIUI14BasedOnTiramisu Release Zip
-      uses: actions/upload-artifact@v4
-      with:
+
+      - name: Upload Pad Compatibility Use MIUI14BasedOnTiramisu Release Zip
+        uses: actions/upload-artifact@v4
+        with:
           name: pad-miui-based-on-tiramisu-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 
-    # - name: Build Pad Compatibility Use PipaDeviceCode
-    #   run: |
-    #       npm run build:pad-compatibility=pipa-device-code
-  
-    # - name: Upload Pad Compatibility Use PipaDeviceCode Release Zip
-    #   uses: actions/upload-artifact@v4
-    #   with:
-    #       name: pad-pipa-device-code-${{ env.VERSION }}
-    #       path: "dist/**"
-    #       overwrite: true
+      # - name: Build Pad Compatibility Use PipaDeviceCode
+      #   run: |
+      #       npm run build:pad-compatibility=pipa-device-code
 
-    - name: Build Pad Compatibility Use HyperOS1BasedOnUpsideDownCake
-      run: |
+      # - name: Upload Pad Compatibility Use PipaDeviceCode Release Zip
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #       name: pad-pipa-device-code-${{ env.VERSION }}
+      #       path: "dist/**"
+      #       overwrite: true
+
+      - name: Build Pad Compatibility Use HyperOS1BasedOnUpsideDownCake
+        run: |
           npm run build:pad-compatibility=hyperos1-based-on-upsideDownCake
-  
-    - name: Upload Pad Compatibility Use HyperOS1BasedOnUpsideDownCake Release Zip
-      uses: actions/upload-artifact@v4
-      with:
+
+      - name: Upload Pad Compatibility Use HyperOS1BasedOnUpsideDownCake Release Zip
+        uses: actions/upload-artifact@v4
+        with:
           name: pad-hyperos1-based-on-upsideDownCake-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 
-    - name: Build Pad Compatibility Use HyperOS2BasedOnVanillaIceCream
-      run: |
+      - name: Build Pad Compatibility Use HyperOS2BasedOnVanillaIceCream
+        run: |
           npm run build:pad-compatibility=hyperos2-based-on-vanillaIceCream
-  
-    - name: Upload Pad Compatibility Use HyperOS2BasedOnVanillaIceCream Release Zip
-      uses: actions/upload-artifact@v4
-      with:
+
+      - name: Upload Pad Compatibility Use HyperOS2BasedOnVanillaIceCream Release Zip
+        uses: actions/upload-artifact@v4
+        with:
           name: pad-hyperos2-based-on-vanillaIceCream-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 
-    - name: Build Pad Compatibility Use HyperOS3BasedOnVanillaIceCream
-      run: |
+      - name: Build Pad Compatibility Use HyperOS3BasedOnVanillaIceCream
+        run: |
           npm run build:pad-compatibility=hyperos3-based-on-vanillaIceCream
-  
-    - name: Upload Pad Compatibility Use HyperOS3BasedOnVanillaIceCream Release Zip
-      uses: actions/upload-artifact@v4
-      with:
+
+      - name: Upload Pad Compatibility Use HyperOS3BasedOnVanillaIceCream Release Zip
+        uses: actions/upload-artifact@v4
+        with:
           name: pad-hyperos3-based-on-vanillaIceCream-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true
 
-    - name: Build Pad Compatibility Use HyperOS2BasedOnUpsideDownCake
-      run: |
+      - name: Build Pad Compatibility Use HyperOS2BasedOnUpsideDownCake
+        run: |
           npm run build:pad-compatibility=hyperos2-based-on-upsideDownCake
-  
-    - name: Upload Pad Compatibility Use HyperOS2BasedOnUpsideDownCake Release Zip
-      uses: actions/upload-artifact@v4
-      with:
+
+      - name: Upload Pad Compatibility Use HyperOS2BasedOnUpsideDownCake Release Zip
+        uses: actions/upload-artifact@v4
+        with:
           name: pad-hyperos2-based-on-upsideDownCake-${{ env.VERSION }}
           path: "dist/**"
           overwrite: true

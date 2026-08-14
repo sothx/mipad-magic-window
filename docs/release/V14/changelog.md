@@ -6,7 +6,7 @@
 
 本次更新内容：
 
-- 新增 小米平板 Android 17 通用版
+- 屏蔽部分移植包的Winplay功能(当GPU驱动不满足vulkan 1.3且存在ro.config.sothx_project_treble_disable_winplay_support声明)
 
 近期更新内容：
 

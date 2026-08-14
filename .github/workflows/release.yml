@@ -2,9 +2,9 @@ name: NodeJs with Release
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
@@ -16,62 +16,61 @@ jobs:
         node-version: [20.x]
 
     steps:
-    - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
 
-    - name: Load environment
-      uses: GuillaumeFalourd/convert-json-to-env@v1
-      with:
-        json_file: ./config/module.config.json
+      - name: Load environment
+        uses: GuillaumeFalourd/convert-json-to-env@v1
+        with:
+          json_file: ./config/module.config.json
 
-    - name: 生成版本代码
-      run: |
-        npm install
-        npm run package-ext:sothx
+      - name: 生成版本代码
+        run: |
+          npm install
+          npm run package-ext:sothx
 
-    - name: 写入所有模块文件到发布目录
-      run: |
-         mkdir -p "$GITHUB_WORKSPACE"/GithubRelease
-         cd "$GITHUB_WORKSPACE"
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/fold-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/fold-general-miuiAutoUI-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/phone-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-magicWindow-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-general-tiramisu-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-general-vanillaIceCream-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-general-upsideDownCake-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-hyperos-based-on-tiramisu-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-miui-based-on-tiramisu-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-hyperos1-based-on-upsideDownCake-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-hyperos2-based-on-vanillaIceCream-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-hyperos2-based-on-upsideDownCake-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/pad-hyperos3-based-on-vanillaIceCream-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
-         mv $GITHUB_WORKSPACE/release/$VERSION/ext/pad-ext-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+      - name: 写入所有模块文件到发布目录
+        run: |
+          mkdir -p "$GITHUB_WORKSPACE"/GithubRelease
+          cd "$GITHUB_WORKSPACE"
+          mv $GITHUB_WORKSPACE/release/$VERSION/pad-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+          mv $GITHUB_WORKSPACE/release/$VERSION/fold-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+          mv $GITHUB_WORKSPACE/release/$VERSION/fold-general-miuiAutoUI-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+          mv $GITHUB_WORKSPACE/release/$VERSION/phone-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+          mv $GITHUB_WORKSPACE/release/$VERSION/pad-magicWindow-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+          mv $GITHUB_WORKSPACE/release/$VERSION/pad-general-tiramisu-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+          mv $GITHUB_WORKSPACE/release/$VERSION/pad-general-baklava-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+          mv $GITHUB_WORKSPACE/release/$VERSION/pad-general-vanillaIceCream-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+          mv $GITHUB_WORKSPACE/release/$VERSION/pad-general-upsideDownCake-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+          mv $GITHUB_WORKSPACE/release/$VERSION/pad-hyperos-based-on-tiramisu-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+          mv $GITHUB_WORKSPACE/release/$VERSION/pad-miui-based-on-tiramisu-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+          mv $GITHUB_WORKSPACE/release/$VERSION/pad-hyperos1-based-on-upsideDownCake-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+          mv $GITHUB_WORKSPACE/release/$VERSION/pad-hyperos2-based-on-vanillaIceCream-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+          mv $GITHUB_WORKSPACE/release/$VERSION/pad-hyperos2-based-on-upsideDownCake-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+          mv $GITHUB_WORKSPACE/release/$VERSION/pad-hyperos3-based-on-vanillaIceCream-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
+          mv $GITHUB_WORKSPACE/release/$VERSION/ext/pad-ext-$VERSION.zip "$GITHUB_WORKSPACE"/GithubRelease
 
-    - name: 上传到Github Release
-      uses: ncipollo/release-action@main
-      with:
-        artifacts: ${{ github.workspace }}/GithubRelease/*
-        name: "${{ env.VERSION }}"
-        tag: "${{ env.VERSION }}"
-        bodyFile: "${{ github.workspace }}/docs/changelog.md"
-        allowUpdates: false
-        artifactErrorsFailBuild: true
-        makeLatest: true
-        skipIfReleaseExists: true
+      - name: 上传到Github Release
+        uses: ncipollo/release-action@main
+        with:
+          artifacts: ${{ github.workspace }}/GithubRelease/*
+          name: "${{ env.VERSION }}"
+          tag: "${{ env.VERSION }}"
+          bodyFile: "${{ github.workspace }}/docs/changelog.md"
+          allowUpdates: false
+          artifactErrorsFailBuild: true
+          makeLatest: true
+          skipIfReleaseExists: true
 
-    - name: 更新版本链接
-      run: |
-        git config --global user.email "i@sothx.com"
-        git config --global user.name "sothx"
-        git add ./docs/release/*
-        if git commit -m "Release $VERSION"; then
-              git push
-        fi
-
-
+      - name: 更新版本链接
+        run: |
+          git config --global user.email "i@sothx.com"
+          git config --global user.name "sothx"
+          git add ./docs/release/*
+          if git commit -m "Release $VERSION"; then
+                git push
+          fi

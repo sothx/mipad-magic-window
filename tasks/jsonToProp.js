@@ -28,6 +28,12 @@ const buildActionIsFoldGeneralMiuiAutoUI = function () {
   return use_platform === 'fold' && use_compatibility === 'general-miuiAutoUI'
 }
 
+const buildActionIsPadGeneralBaklava = function () {
+  const use_platform = options.use_platform
+  const use_compatibility = options.use_compatibility
+  return use_platform === 'pad' && use_compatibility === 'general-baklava'
+}
+
 const buildActionIsPadGeneralVanillaIceCream = function () {
   const use_platform = options.use_platform
   const use_compatibility = options.use_compatibility
@@ -114,6 +120,10 @@ module.exports = function jsonToProp(cb) {
       return json;
     }))
     .pipe(gulpIf(buildActionIsPad, gulpJSONEdit(function (json) {
+      json.description = `${global.applicationRuleCount ? `[★适配应用总数:${global.applicationRuleCount}，仅兼容Android 17]` : ''} 适用于HyperOS For Pad，用于扩展应用横屏布局、应用布局优化和游戏显示布局的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板安卓17通用版]。(反馈应用适配问题可前往酷安私信 @做梦书 ，模块首页:https://hyper-magic-window.sothx.com，GitHub仓库:https://github.com/sothx/mipad-magic-window，如需卸载模块请移除模块后重启平板)`;
+      return json;
+    })))
+    .pipe(gulpIf(buildActionIsPadGeneralBaklava, gulpJSONEdit(function (json) {
       json.description = `${global.applicationRuleCount ? `[★适配应用总数:${global.applicationRuleCount}，仅兼容Android 16]` : ''} 适用于HyperOS For Pad，用于扩展应用横屏布局、应用布局优化和游戏显示布局的支持范围并优化适配体验，支持[自定义规则]扩充或覆盖部分应用适配。当前刷入的是[小米平板安卓16通用版]。(反馈应用适配问题可前往酷安私信 @做梦书 ，模块首页:https://hyper-magic-window.sothx.com，GitHub仓库:https://github.com/sothx/mipad-magic-window，如需卸载模块请移除模块后重启平板)`;
       return json;
     })))
