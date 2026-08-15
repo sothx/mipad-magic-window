@@ -6,7 +6,9 @@
 
 本次更新内容：
 
-- 屏蔽部分移植包的Winplay功能(当GPU驱动不满足vulkan 1.3且存在ro.config.sothx_project_treble_disable_winplay_support声明)
+- 新增 小米平板 A17 通用版（A17 OS4应用布局优化失效，原因未知，暂不可用）
+
+- 修复 A17通用版的安装提示
 
 近期更新内容：
 

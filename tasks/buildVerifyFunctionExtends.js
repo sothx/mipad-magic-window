@@ -4,6 +4,7 @@ const { includes } = require('lodash');
 
 const verifyFunctionsExtendsMap = {
     magicWindow: 'module_src/verify_functions_extends/magicWindow/**',
+    'general-cinnamonBun':'module_src/verify_functions_extends/general-cinnamonBun/**',
     'general-vanillaIceCream': 'module_src/verify_functions_extends/general-vanillaIceCream/**',
     'general-tiramisu': 'module_src/verify_functions_extends/general-tiramisu/**',
     'general-upsideDownCake': 'module_src/verify_functions_extends/general-upsideDownCake/**',
@@ -26,9 +27,9 @@ const buildVerifyFunctionsExtendsType = function () {
         return 'magicWindow'
     }
     if (options.use_platform === 'pad' && options.use_compatibility === '' && !options.use_ext) {
-        return 'general-baklava'
+        return 'general-cinnamonBun'
     }
-    if (['general-tiramisu','general-vanillaIceCream','general-upsideDownCake','hyperos-based-on-tiramisu','hyperos1-based-on-upsideDownCake','hyperos2-based-on-vanillaIceCream','hyperos3-based-on-vanillaIceCream','hyperos2-based-on-upsideDownCake','miui-based-on-tiramisu'].includes(options.use_compatibility)) {
+    if (['general-tiramisu','general-vanillaIceCream','general-upsideDownCake','hyperos-based-on-tiramisu','hyperos1-based-on-upsideDownCake','hyperos2-based-on-vanillaIceCream','hyperos3-based-on-vanillaIceCream','hyperos2-based-on-upsideDownCake','miui-based-on-tiramisu','general-baklava'].includes(options.use_compatibility)) {
         return options.use_compatibility
     }
     return false;
