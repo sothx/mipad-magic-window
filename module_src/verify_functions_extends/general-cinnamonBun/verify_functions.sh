@@ -24,10 +24,14 @@ verify_android_api_has_pass() {
 
 verify_special_rule_pass() {
   local mi_os_version_code=$(grep_prop ro.mi.os.version.code /mi_ext/etc/build.prop)
+  local sothx_project_treble_support_autoui_services_fix=$(getprop ro.config.sothx_project_treble_support_autoui_services_fix)
   local sothx_disabled_os2_install_module_tips=$(getprop ro.sothx.disabled_os2_install_module_tips)
   local is_need_install_autoui_cloudfix_apk=1
   HAS_BEEN_INSTALLED_AutoUI_CloudFix_APK=$(pm list packages | grep io.github.sothx.autouicloudfix)
   if [[ $HAS_BEEN_INSTALLED_AutoUI_CloudFix_APK == *"package:io.github.sothx.autouicloudfix"* ]]; then
+    is_need_install_autoui_cloudfix_apk=0
+  fi
+  if [[ $sothx_project_treble_support_autoui_services_fix == 'true' ]]; then
     is_need_install_autoui_cloudfix_apk=0
   fi
   if [[ $is_need_install_autoui_cloudfix_apk == 1 ]]; then

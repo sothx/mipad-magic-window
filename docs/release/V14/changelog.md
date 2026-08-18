@@ -6,9 +6,11 @@
 
 本次更新内容：
 
-- 修复Android 17 Hyper OS 4 应用布局优化功能不生效的问题，请安装模块要求的附加LSPosed模块——AutoUI Cloud Fix
+- 优化Android 17版本模块的判断逻辑
 
 近期更新内容：
+
+- 修复Android 17 Hyper OS 4 应用布局优化功能不生效的问题，请安装模块要求的附加LSPosed模块——AutoUI Cloud Fix
 
 - 新增 精选应用-Bili Tablet Unlock，支持B站内置的平板大屏适配（灰度功能），横屏全屏使用平板布局，竖屏与小窗自动回退手机布局。
 
