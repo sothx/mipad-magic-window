@@ -8,6 +8,8 @@
 
 - 优化Android 17版本模块的判断逻辑
 
+- 新增部分应用布局优化应用列表
+
 近期更新内容：
 
 - 修复Android 17 Hyper OS 4 应用布局优化功能不生效的问题，请安装模块要求的附加LSPosed模块——AutoUI Cloud Fix
