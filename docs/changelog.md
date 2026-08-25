@@ -6,11 +6,11 @@
 
 本次更新内容：
 
-- 由于哔哩哔哩国际版(6.0)开始已经逐步灰度平板UI，调整国际版的首页为全屏，二级界面为平行窗口。
+- 修复Android 17 Hyper OS 4 For Pad应用横屏布局和应用布局优化功能不生效的问题，请安装模块要求的附加LSPosed模块——Fix Hyper Magic Window Cloud Config
 
 近期更新内容：
 
-- 修复Android 17 Hyper OS 4 应用布局优化功能不生效的问题，请安装模块要求的附加LSPosed模块——AutoUI Cloud Fix
+- 由于哔哩哔哩国际版(6.0)开始已经逐步灰度平板UI，调整国际版的首页为全屏，二级界面为平行窗口。
 
 - 新增 精选应用-Bili Tablet Unlock，支持B站内置的平板大屏适配（灰度功能），横屏全屏使用平板布局，竖屏与小窗自动回退手机布局。
 
