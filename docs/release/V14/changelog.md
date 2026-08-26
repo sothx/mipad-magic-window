@@ -6,7 +6,8 @@
 
 本次更新内容：
 
-- 修复Android 17 Hyper OS 4 For Pad应用横屏布局和应用布局优化功能不生效的问题，请安装模块要求的附加LSPosed模块——Fix Hyper Magic Window Cloud Config
+- 修复OS4 Beta部分应用无法正常横屏的BUG，请更新最新配套修复的LSPosed模块，模块版本号为2.0
+- 修复OS4 Beta千问无法正常全屏的BUG
 
 近期更新内容：
 
