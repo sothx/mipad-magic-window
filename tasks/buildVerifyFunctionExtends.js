@@ -16,12 +16,16 @@ const verifyFunctionsExtendsMap = {
     'hyperos3-based-on-vanillaIceCream': 'module_src/verify_functions_extends/hyperos3-based-on-vanillaIceCream/**',
     'miui-based-on-tiramisu': 'module_src/verify_functions_extends/miui-based-on-tiramisu/**',
     'general-phone': 'module_src/verify_functions_extends/general-phone/**',
+    'general-fold': 'module_src/verify_functions_extends/general-fold/**',
 }
 
 const buildVerifyFunctionsExtendsType = function () {
     if (options.use_platform === 'phone') {
         return 'general-phone'
     }
+  if (options.use_platform === 'fold') {
+     return 'general-fold'
+   }
     if (['magicWindow'].includes(options.use_mode)) {
 
         return 'magicWindow'

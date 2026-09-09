@@ -1,16 +1,6 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes' ?>
 <packageRules dataVersion="360816">
   <%_ if (['fold'].includes(platform)) { _%>
-  <package name="tv.danmaku.bili" enable="true" describe="哔哩哔哩" optimizeWebView="true">
-    <activity name="tv.danmaku.bili.MainActivityV2" policy="8">
-      <view name="" id="RecyclerView" path="recycler_view:-1">
-        <view_policy range="3" policytype="column" oldcolumns="2" newcolumns="4" itemdecorationflag="1" multisetflag="0" resetflag="1" />
-      </view>
-      <view name="" id="RecyclerView" path="recyclerView:-1">
-        <view_policy range="3" policytype="column" oldcolumns="2" newcolumns="4" itemdecorationflag="1" multisetflag="0" resetflag="1" />
-      </view>
-    </activity>
-  </package>
   <package name="com.bilibili.app.blue" enable="true" describe="哔哩哔哩概念版" optimizeWebView="true">
     <activity name="tv.danmaku.bili.MainActivityV2" policy="8">
       <view name="" id="RecyclerView" path="recycler_view:-1">
@@ -31,7 +21,6 @@
       </view>
     </activity>
   </package>
-
   <package name="com.MobileTicket" enable="true" describe="铁路12306">
     <activity name="com.MobileTicket.ui.activity.MainActivity" policy="8">
       <view name="" id="RecyclerView" path="ConstraintLayout/rv_bottom_list:-1">
@@ -39,14 +28,787 @@
       </view>
     </activity>
   </package>
-
-  <package name="com.Qunar" enable="true" describe="去哪儿旅行">
-    <activity name="com.mqunar.atom.alexhome.ui.activity.MainActivity" policy="8">
-      <view name="" id="RecyclerView" path="recyclerview:-1">
-        <view_policy range="3" policytype="column" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+  <package name="com.xueqiu.android" describe="雪球" enable="true">
+    <activity name="com.xueqiu.android.mainnesting.view.MainNestingActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="自选" path="row_first_column:-1">
+        <view_policy policytype="size" range="1" width="600" height="-3" resetflag="1" />
       </view>
-      <view name="" id="RecyclerView" path="tag_card_item_image_layout:-1">
-        <view_policy range="3" policytype="weight" widthW="-3.0" heightW="0.4" resetflag="1" />
+      <view id="ae" describe="自选" path="row_first_column/RelativeLayout:-1">
+        <view_policy policytype="size" range="1" width="600" height="-3" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="cn.jsb.china" describe="江苏银行" enable="true">
+    <activity name="com.yitong.mobile.biz.launcher.app.main.MainActivityJsbank" policy="8" embeddingExpand="false">
+      <view id="ivIcon" describe="图标" path="ivIcon:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="-7" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="tvName" describe="文字" path="tvName:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="-7" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.sina.weibo" describe="微博" enable="true">
+    <activity name="com.sina.weibo.account.login.LoginActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="登录" path="scroll_container:-1">
+        <view_policy policytype="size" range="8" width="-3" height="430" resetflag="1" />
+      </view>
+      <view id="ae" describe="登录" path="scroll_container/ll_login_container/RelativeLayout:-1">
+        <view_policy policytype="size" range="8" width="-3" height="430" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.midea.ai.appliances" describe="美的美居" enable="true">
+    <activity name="com.midea.business.ucenter.account.SetPhotoActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="头像" path="user_photo:-1">
+        <view_policy policytype="scale" range="1" scalex="0.58" scaley="0.58" pivotx="-1.0" pivoty="0.0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.lucky.luckyclient" describe="瑞幸咖啡" enable="true">
+    <activity name="com.luckin.lkb.engine.EngineActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="点击输入图标及文字" path="ButtonViewGroup/ReactViewGroup/ReactTextView:1">
+        <view_policy policytype="scale" range="8" scalex="0.7" scaley="0.7" pivotx="-1.0" pivoty="0.0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.android.icredit" describe="企查查" enable="true">
+    <activity name="com.android.icredit.zxing.CaptureActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="取景器自绘内容居中缩放避免提示气泡与圆按钮重叠" path="r0/FrameLayout/ul/ViewfinderViewForCard:-1">
+        <view_policy policytype="scale" range="8" scalex="0.7" scaley="0.7" pivotx="-1.0" pivoty="-1.0" resetflag="1" />
+      </view>
+      <view id="agc" describe="圆按钮缩到47dp" path="r0/FrameLayout/ul/bow/agc:-1">
+        <view_policy policytype="size" range="8" width="47" height="47" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.autonavi.minimap" describe="高德地图" enable="true">
+    <activity name="com.autonavi.map.activity.SplashActivity" policy="8">
+      <view id="ae" describe="登录浮层缩放避开底部tabbar" path="mapInteractiveRelativeLayout/RelativeLayout/AmapAjxView/FullView/BodyView:-1">
+        <view_policy policytype="scale" range="1" scalex="0.9" scaley="0.9" pivotx="-1.0" pivoty="-1.0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.sankuai.meituan.meituanwaimaibusiness" enable="true" describe="美团外卖商家版">
+    <activity name="com.sankuai.meituan.waimaib.account.passport.login.WMECustomLoginActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="a" path="ll_privacy:-1">
+        <view_policy policytype="margin" range="9" marginleft="0" margintop="0" marginright="0" marginbottom="20" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="ae" describe="a" path="forget_act_and_pwd:-1">
+        <view_policy policytype="margin" range="1" marginleft="0" margintop="80" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="ae" describe="a" path="tv_voice_login:-1">
+        <view_policy policytype="margin" range="1" marginleft="0" margintop="80" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="ae" describe="a" path="nation_login_layout:-1">
+        <view_policy policytype="margin" range="9" marginleft="0" margintop="0" marginright="0" marginbottom="85" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="ae" describe="a" path="title_ti:-1">
+        <view_policy policytype="margin" range="9" marginleft="0" margintop="0" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="ae" describe="a" path="login_view_pager:-1">
+        <view_policy policytype="margin" range="9" marginleft="0" margintop="0" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.parallel.odyssey" enable="true" describe="猫箱">
+    <activity name="com.story.ai.biz.home.ui.HomeActivity" policy="8" embeddingExpand="false">
+      <view id="RecyclerView" describe="列表" path="RecyclerView:-1">
+        <view_policy policytype="column" range="8" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+      </view>
+      <view id="RecyclerView" describe="列表" path="RecyclerView/ConstraintLayout:-1">
+        <view_policy policytype="size" range="8" width="-3" height="200" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="me.ele.napos" enable="true" describe="淘宝闪购商家版">
+    <activity name="me.ele.napos.module.main.module.splash.UserGuideActivity" policy="8" embeddingExpand="false">
+      <view name="AppCompatImageView" id="guide_img" describe="place illustration above action buttons with correct dp top margin" path="content_frame/activity_user_guide/RelativeLayout/guide_img:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="190" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.yiyou.ga" enable="true" describe="TT语音">
+    <activity name="com.tt.auth.biz.login.threeOperatorOneKeyLogin.getVerificationCode.GetVerificationCodeActivity" policy="8" embeddingExpand="false">
+      <view id="se" describe="keep agreement slightly lower for spacing" path="login_content_no_password_layout/layout_auth_include_privacy_agreement:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="65" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="se" describe="move submit button up and reduce height" path="login_content_no_password_layout/tv_submit:-1">
+        <view_policy policytype="margin" range="8" marginleft="32" margintop="30" marginright="32" marginbottom="0" marginstart="32" marginend="32" resetflag="1" />
+        <view_policy policytype="size" range="8" width="-3" height="50" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.kwai.hisense" enable="true" describe="回森">
+    <activity name="com.kwai.sun.hisense.ui.login_v2.ui.LonginCenterActivity" policy="8" embeddingExpand="false">
+      <view id="se" describe="shrink logo height" path="content/ConstraintLayout/iv_one_key_login_main_logo:-1">
+        <view_policy policytype="size" range="8" width="-3" height="100" resetflag="1" />
+      </view>
+      <view id="se" describe="reduce bottomMargin" path="content/ConstraintLayout/cl_content_info:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="50" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="se" describe="reduce topMargin" path="cl_other_login/ll_third_login:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="5" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="se" describe="move wechat area up" path="content/ConstraintLayout/cl_other_login:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="55" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.dyimedical.bte" enable="true" describe="白天鹅">
+    <activity name="com.dyimedical.module_login.activity.loginregister.RegisterSuccessActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="ConstraintLayout/iv_qrcode:-1">
+        <view_policy policytype="size" range="8" width="80" height="80" resetflag="1" />
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="ae" path="ConstraintLayout/bu_button:-1">
+        <view_policy policytype="size" range="8" width="340" height="40" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="guoyuan.szkingdom.android.phone" describe="国元点金" enable="true">
+    <activity name="com.szkingdom.android.phone.init.InitImageGuideActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="微博个人banner" path="RelativeLayout/img_guide:-1">
+        <view_policy policytype="scale" range="8" scalex="1.1" scaley="1.1" pivotx="-1.0" pivoty="0.0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="edu.www.qsxt" describe="青书学堂" enable="true">
+    <activity name="elearning.qsxt.course.boutique.zk.activity.ZKCourseMainActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="title_bar/plan_not_accomplished:-1">
+        <view_policy policytype="padding" range="8" paddingleft="0" paddingtop="0" paddingright="20" paddingbottom="0" resetflag="1" />
+        <view_policy policytype="size" range="8" width="78" height="-3" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.gdhaode.taxi.driver" describe="好的出租联盟" enable="true">
+    <activity name="com.bailongma.activity.NewMapActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="DecorView:-1">
+        <view_policy policytype="sliding" range="8" height="900" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.unionpay" describe="云闪付" enable="true">
+    <activity name="com.unionpay.activity.UPActivityStartTransition" policy="8" embeddingExpand="false">
+      <view id="ae" describe="banner" path="view_dialog_btn_container/UPButton:-1">
+        <view_policy policytype="size" range="8" width="-3" height="40" resetflag="1" />
+      </view>
+      <view id="ae" describe="banner" path="view_dialog_btn_container/UPButton:0">
+        <view_policy policytype="size" range="8" width="-3" height="40" resetflag="1" />
+      </view>
+      <view id="ae" describe="banner" path="LinearLayout/view_dialog_btn_container/UPButton:0">
+        <view_policy policytype="padding" range="8" paddingleft="0" paddingtop="36" paddingright="0" paddingbottom="20" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.unionpay.activity.UPActivityCityList" policy="8">
+      <view id="ae" describe="banner" path="top_image:-1">
+        <view_policy policytype="size" range="1" width="206" height="176" resetflag="1" />
+      </view>
+      <view id="ae" describe="banner" path="LinearLayout/view_dialog_btn_container/UPButton:0">
+        <view_policy policytype="size" range="1" width="600" height="400" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.kwai.thanos" describe="噗叽" enable="true">
+    <activity name="com.yxcorp.gifshow.register.PujiRegisterActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="scale" path="DecorView:-1">
+        <view_policy policytype="sliding" range="8" height="800" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.xyhj.hanju" describe="韩剧TV" enable="true">
+    <activity name="com.xyhj.hanju.ui.activity.SplashActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="微博个人banner" path="splash_viewpager:-1">
+        <view_policy policytype="size" range="8" width="300" height="528" resetflag="1" />
+        <view_policy policytype="margin" range="8" marginleft="62" margintop="0" marginright="0" marginbottom="0" marginstart="62" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.ovital.ovitalMap" describe="奥维互动地图" enable="true">
+    <activity name="com.ovital.ovitalMap.SearchPosiActivity" policy="8">
+      <view id="ae" path="toolbar1/LinearLayout:-1">
+        <view_policy policytype="padding" range="1" paddingleft="0" paddingtop="5" paddingright="0" paddingbottom="0" resetflag="1" />
+        <view_policy policytype="padding" range="8" paddingleft="0" paddingtop="8" paddingright="0" paddingbottom="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+
+  <package name="com.chaoxing.mobile" enable="true" describe="学习通">
+    <activity name="com.chaoxing.mobile.activity.SplashActivity" policy="-1" />
+    <activity name="com.chaoxing.mobile.study.account.LoginActivity" policy="-1" />
+  </package>
+  <package name="com.ifreetalk.ftalk" describe="派派" enable="true">
+    <activity name="com.ifreetalk.ftalk.module.policy.HiddenPolicyActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="scale" path="LinearLayout/policy_title:0">
+        <view_policy policytype="scale" range="8" scalex="0.85" scaley="0.85" pivotx="-1.0" pivoty="-1.0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.pwrd.steam.esports" describe="完美世界电竞" enable="true">
+    <activity name="com.pwrd.steam.esports.ui.activity.login.phone.VerificationCodeLoginActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="ConstraintLayout/other_login_type_tv:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="90" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.ets100.secondary" describe="E听说中学" enable="true">
+    <activity name="com.ets100.secondary.ui.loginregister.LoginRegisterActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="banner" path="LinearLayout/btn_login:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="5" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+        <view_policy policytype="size" range="8" width="300" height="-3" resetflag="1" />
+      </view>
+      <view id="ae" describe="banner" path="LinearLayout/tv_how_login:0">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="6" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.hwabao.hbstockwarning" describe="华宝智投" enable="true">
+    <activity name="tdx.com.FragmentManagerV4.tdxHqFragmentActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="banner" path="tdxCustomHScrollView/LinearLayout/tdxTextView:-1">
+        <view_policy policytype="size" range="8" width="70" height="-3" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.huaxiaozhu.driver" describe="花小猪司机端" enable="true">
+    <activity name="com.didi.safety.onesdk.business.guide.GuideActivity$HorizontalGuideActivity" policy="8">
+      <view id="ae" describe="banner" path="iv_outline_rect:-1">
+        <view_policy policytype="size" range="4" width="198" height="149" resetflag="1" />
+      </view>
+      <view id="ae" describe="banner" path="ConstraintLayout/capture_require_title:0">
+        <view_policy policytype="size" range="4" width="200" height="300" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.saicmobility.driver" describe="享道出行司机" enable="true">
+    <activity name="com.saicmobility.webview.activity.HighSeaCameraActivity" policy="8">
+      <view id="ae" describe="微博个人banner" path="iv_guide:-1">
+        <view_policy policytype="size" range="4" width="171" height="116" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.netease.a13.avg" enable="true" describe="易次元">
+    <activity name="com.netease.avg.a13.SplashActivity" policy="8" />
+    <activity name="com.netease.avg.a13.AgreeProtocolActivity" policy="8" />
+    <activity name="com.netease.avg.a13.MainActivity" policy="8">
+      <view id="ae" describe="第一次启动图片" path="view_pager/Page/LinearLayout/image:-1">
+        <view_policy policytype="scaleType" range="11" scaletype="3" translatex="0.0" translatey="0.0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.netease.a13.activity.LoginMainActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="phone_edit_layout:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="-200" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="ae" path="container/RelativeLayout/LinearLayout/LinearLayout:-1">
+        <view_policy policytype="size" range="8" width="-1" height="42" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="im.xingzhe" describe="行者" enable="true">
+    <activity name="im.xingzhe.mvp.view.activity.AccountNumLoginActivity" policy="8">
+      <view id="ae" path="mainView:-1">
+        <view_policy policytype="scale" range="8" scalex="0.75" scaley="0.75" pivotx="-1.0" pivoty="-1.0" resetflag="1" />
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view name="LinearLayout" id="logoView" describe="shrink logo container" path="logoView:-1">
+        <view_policy policytype="size" range="1" width="-3" height="29" resetflag="1" />
+        <view_policy policytype="margin" range="1" marginleft="0" margintop="11" marginright="0" marginbottom="4" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view name="AppCompatImageView" id="logoImage" describe="shrink logo image" path="logoView/logoImage:-1">
+        <view_policy policytype="size" range="1" width="50" height="29" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.miHoYo.cloudgames.ys" describe="云·原神" enable="true">
+    <activity name="com.mihoyo.cloudgame.main.MiHoYoCloudMainActivity" policy="8">
+      <view id="ae" describe="banner" path="ivClose:-1">
+        <view_policy policytype="padding" range="4" paddingleft="0" paddingtop="0" paddingright="10" paddingbottom="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.mszmapp.detective" describe="百变大侦探" enable="true">
+    <activity name="com.mszmapp.detective.module.spash.SplashActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="FrameLayout/rlGameNorm:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="100" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.mszmapp.detective.module.info.login.PhoneLoginOneActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="banner" path="strSendSms:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="10" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="ae" describe="banner" path="iv_login_logo:-1">
+        <view_policy policytype="scale" range="8" scalex="0.8" scaley="0.8" pivotx="-1.0" pivoty="0.0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.ushaqi.zhuishushenqi" describe="追书神器" enable="true">
+    <activity name="com.ushaqi.zhuishushenqi.teenager.activity.OpenTeenagerModeActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="bt_open_teenager:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.ushaqi.zhuishushenqi.ui.home.HomeActivity" policy="8">
+      <view id="ae" describe="banner" path="home_menu_search_container/AppCompatImageView:-1">
+        <view_policy policytype="size" range="2" width="15" height="15" resetflag="1" />
+      </view>
+      <view id="ae" describe="banner" path="home_menu_more_container/AppCompatImageView:-1">
+        <view_policy policytype="size" range="2" width="15" height="15" resetflag="1" />
+      </view>
+      <view id="ae" describe="banner" path="home_menu_read_history_container/AppCompatImageView:-1">
+        <view_policy policytype="size" range="2" width="15" height="15" resetflag="1" />
+      </view>
+      <view id="ae" describe="banner" path="rl_login/tv_tourist_login:-1">
+        <view_policy policytype="size" range="2" width="-3" height="25" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.truedian.dragon" describe="微购相册" enable="true">
+    <activity name="com.truedian.dragon.activity.LaunchActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="banner" path="ll_bottom/RelativeLayout:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="10" marginright="0" marginbottom="10" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="ae" describe="banner" path="RelativeLayout/ImageView:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="10" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="cn.longmaster.pengpeng" describe="语玩" enable="true">
+    <activity name="login.GuideUI" policy="8" embeddingExpand="false">
+      <view id="ae" path="ConstraintLayout/btnLoginByMobile:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="120" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="zhongxinjiantou.szkingdom.android.newphone" describe="蜻蜓点金" enable="true">
+    <activity name="kds.szkingdom.jiaoyi.android.newuser.NewUserOpenAccountGuideActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="iv_open_account:-1">
+        <view_policy policytype="clampScale" range="1" scalewidth="-1.0" scaleheight="-1.0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.xt.retouch" describe="醒图" enable="true">
+    <activity name="com.xt.retouch.uilauncher.MainActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="banner" path="content_view/RecyclerViewImpl:-1">
+        <view_policy policytype="banner" range="8" paddingleft="90" paddingright="90" height="150" commontype="0" resetflag="1" />
+      </view>
+      <view id="ae" describe="banner" path="bannerContainer:-1">
+        <view_policy policytype="size" range="8" width="-3" height="150" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.meitu.meiyancamera" describe="美颜相机" enable="true">
+    <activity name="com.meitu.myxj.selfie.merge.activity.SelfieCameraActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="banner" path="CameraActionButton:-1">
+        <view_policy policytype="scale" range="8" scalex="0.7" scaley="0.7" pivotx="100.0" pivoty="200.0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.meitu.myxj.aismart.activity.AISmartCameraActivity" policy="8" embeddingExpand="false">
+      <view id="RoundRecyclerView" describe="倍数按钮上移" path="RoundRecyclerView:-1">
+        <view_policy policytype="margin" range="10" marginleft="0" margintop="0" marginright="0" marginbottom="70" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="ImageView" describe="拍照按钮缩小" path="FrameLayout/ImageView:-1">
+        <view_policy policytype="scale" range="10" scalex="0.78" scaley="0.78" pivotx="-1.0" pivoty="-1.0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.wepie.weplay" enable="true" describe="会玩">
+    <activity name="com.wepie.wespy.module.login.login.LoginActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="scale" path="LinearLayout/FrameLayout/phone_not_available_tv:0">
+        <view_policy policytype="margin" range="8" marginleft="36" margintop="25" marginright="36" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.wepie.wespy.module.main.MainActivity" policy="8">
+      <view id="root_lay" describe="首页recycler" path="home_friend_refresh_layout/OuterRecyclerViewKt:-1">
+        <view_policy policytype="column" range="1" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.wepie.wespy.default" policy="-1" />
+  </package>
+
+  <package name="com.jiongji.andriod.card" describe="百词斩" enable="true">
+    <activity name="com.baicizhan.main.plusreview.activity.DefaultPreloadActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="banner" path="bx/AppCompatImageView:-1">
+        <view_policy policytype="clampScale" range="8" scalewidth="0.8" scaleheight="0.8" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.baicizhan.main.activity.SingleFragmentActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="banner" path="LinearLayout/AppCompatTextView:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="1" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.netease.moyi" describe="心遇" enable="true">
+    <activity name="com.netease.moyi.biz.login.LoginActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="scale" path="contain_login/hintContainer:-1">
+        <view_policy policytype="scale" range="8" scalex="0.7" scaley="0.7" pivotx="400.0" pivoty="0.0" resetflag="1" />
+      </view>
+      <view id="ae" describe="scale" path="contain_login/login_contain:-1">
+        <view_policy policytype="scale" range="8" scalex="0.8" scaley="0.8" pivotx="-1.0" pivoty="-1.0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.cubic.autohome" describe="汽车之家" enable="true">
+    <activity name="com.autohome.main.me.ui.activity.OwnerLoginActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="scale" path="fast_login_layout:-1">
+        <view_policy policytype="scale" range="8" scalex="0.85" scaley="0.85" pivotx="-1.0" pivoty="-1.0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.autohome.plugin.imgocr.activity.CaptureActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="content:-1">
+        <view_policy policytype="padding" range="8" paddingleft="50" paddingtop="0" paddingright="50" paddingbottom="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.huayi.cme" describe="掌上华医" enable="true">
+    <activity name="com.huayi.cme.ui.login.LoginNewActivity" policy="8">
+      <view id="ae" describe="scale" path="btn_login_new_wx:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="30" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+        <view_policy policytype="margin" range="1" marginleft="0" margintop="15" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="ae" describe="scale" path="btn_login_new_qq:-1">
+        <view_policy policytype="margin" range="9" marginleft="0" margintop="10" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.lanjiyin.lanjiyin" describe="蓝基因" enable="true">
+    <activity name="com.lanjiyin.module_my.activity.RankTotalActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="banner" path="rl_r_t_top_bg:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="-173" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.tencent.start" describe="腾讯START云游戏" enable="true">
+    <activity name="com.tencent.start.ui.LoginDialogActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="ConstraintLayout/layout_login_wx:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="10" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.leisu.sports" enable="true" describe="leisu">
+    <activity name="com.leisu.sports.base.BaseActivity" policy="8">
+      <view id="ae" describe="微博个人banner" path="ConstraintLayout/image:-1">
+        <view_policy policytype="clampScale" range="10" scalewidth="-1.0" scaleheight="-1.0" resetflag="1" />
+      </view>
+      <view id="ae" describe="微博个人banner" path="open:-1">
+        <view_policy policytype="margin" range="2" marginleft="0" margintop="0" marginright="0" marginbottom="250" marginstart="0" marginend="0" resetflag="1" />
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="150" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.smzdm.client.android" describe="什么值得买" enable="true">
+    <activity name="com.zbar.lib.CaptureActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="RelativeLayout/iv_open_photolib:0">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="50" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="ae" path="iv_open_photolib:-1">
+        <view_policy policytype="size" range="8" width="50" height="50" resetflag="1" />
+      </view>
+      <view id="ae" path="iv_light:-1">
+        <view_policy policytype="size" range="8" width="50" height="50" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.qihoo.magic" describe="分身大师" enable="true">
+    <activity name="com.qihoo.magic.ui.experiencevip.ExperienceVipActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="scale" path="ConstraintLayout/open_vip:0">
+        <view_policy policytype="scale" range="8" scalex="0.75" scaley="0.75" pivotx="-1.0" pivoty="0.0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.mt.mtxx.mtxx" describe="美图秀秀" enable="true">
+    <activity name="com.mt.mtxx.mtxx.alias.MainActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="微博个人banner" path="ConstraintLayout/RelativeLayout/AdaptiveHeightViewPagerFix:0">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.ss.android.ugc.aweme.hubble" describe="AI抖音" enable="true">
+    <activity name="com.ss.android.ugc.aweme.account.business.login.DYLoginActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="margin" path="DuxAvatar:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="200" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="cn.com.essence.stock" describe="国投证券" enable="true">
+    <activity name="cn.com.essence.mobile.module.login.loginv3.verify.V3VerifyPhoneActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="tv_no_pass_code:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="100" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.zztzt.android.simple.PhoneVGModule.activitys.MainActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="tztViewGroup/ax_skin_page_container/ax_select_default_skin_button:-1">
+        <view_policy policytype="scale" range="8" scalex="0.7" scaley="0.7" pivotx="-1.0" pivoty="-1.0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.mosheng" describe="爱聊" enable="true">
+    <activity name="com.mosheng.me.view.activity.UserSignatureAudioActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="banner" path="RelativeLayout/touchView:0">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="85" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="cn.xiaochuankeji.zuiyouLite" describe="皮皮搞笑" enable="true">
+    <activity name="cn.xiaochuankeji.zuiyouLite.ui.welcome.ActivityFirstWelcome" policy="8" embeddingExpand="false">
+      <view id="ae" path="WelcomeLayout/center:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="cn.xiaochuankeji.zuiyouLite.ui.main.MainTest" policy="8">
+      <view id="se" describe="profile_banner_image" path="profile_banner_image:-1">
+        <view_policy policytype="size" range="1" width="-3" height="150" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.netease.edu.ucmooc" describe="中国大学MOOC" enable="true">
+    <activity name="com.netease.edu.ucmooc.polyv.activity.PolyvLiveActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="no_stream_ly/ImageView:-1">
+        <view_policy policytype="size" range="8" width="424" height="238" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.preference.driver" describe="携程司导端" enable="true">
+    <activity name="com.preference.driver.ui.activity.WelcomeActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="ImageView:-1">
+        <view_policy policytype="scaleType" range="8" scaletype="3" translatex="-1.0" translatey="-1.0" resetflag="1" />
+        <view_policy policytype="scale" range="8" scalex="1.1" scaley="1.1" pivotx="-1.0" pivoty="-1.0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.ld.dianquan" describe="雷电云手机" enable="true">
+    <activity name="com.ld.main.HomeActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="card大小" path="picker_phone/LinearLayout/CardView:-1">
+        <view_policy policytype="size" range="8" width="-3" height="434" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.ss.android.lark.saxmsa667" describe="小米办公Pro" enable="true">
+    <activity name="com.ss.android.lark.qrcode.ui.QRCodeScanActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="qrcode_open_my_qrcode_root:-1">
+        <view_policy policytype="margin" range="8" marginleft="60" margintop="0" marginright="0" marginbottom="30" marginstart="60" marginend="0" resetflag="1" />
+      </view>
+      <view id="ae" path="qrcode_open_album_root:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="60" marginbottom="30" marginstart="0" marginend="60" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.A17zuoye.mobile.homework" describe="一起作业" enable="true">
+    <activity name="com.A17zuoye.mobile.homework.main.activity.LoginActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="scale" path="main_login_btn_login:-1">
+        <view_policy policytype="scale" range="8" scalex="0.7" scaley="0.7" pivotx="-1.0" pivoty="0.0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.gstarmc.android" describe="CAD看图王" enable="true">
+    <activity name="com.stone.app.chat.project.ChatProjectActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="tipText:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="-30" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.juduoduo.csjzfac" describe="剧多多" enable="true">
+    <activity name="com.player.v04.ui.mime.guess.DianYinActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="banner" path="img_url:-1">
+        <view_policy policytype="size" range="8" width="-3" height="100" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.lingan.seeyou" describe="美柚" enable="true">
+    <activity name="com.lingan.seeyou.ui.activity.user.login.LoginActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="content_ll:-1">
+        <view_policy policytype="scale" range="8" scalex="0.8" scaley="0.8" pivotx="-1.0" pivoty="-1.0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.meiyou.seeyoubaby.circle.activity.BbjAiGuideActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="btn_ok:-1">
+        <view_policy policytype="size" range="8" width="-3" height="42" resetflag="1" />
+      </view>
+      <view id="ae" path="btn_no:-1">
+        <view_policy policytype="size" range="8" width="-3" height="42" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.zuoyebang.airclass" describe="作业帮直播课" enable="true">
+    <activity name="com.baidu.homework.activity.init.InitActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="微博个人banner" path="FrameLayout/ImageView:-1">
+        <view_policy policytype="clampScale" range="8" scalewidth="-1.0" scaleheight="-1.0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.renrui.rk" describe="人康课堂" enable="true">
+    <activity name="com.renrui.wz.activity.LoginActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="banner" path="layout_login:-1">
+        <view_policy policytype="scale" range="8" scalex="0.7" scaley="0.7" pivotx="-1.0" pivoty="-1.0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.huojianchuxing.driver" describe="火箭出行车主端" enable="true">
+    <activity name="com.bailongma.activity.NewMapActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="DecorView:-1">
+        <view_policy policytype="sliding" range="8" height="900" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.glodon.drawingexplorer" describe="CAD快速看图" enable="true">
+    <activity name="com.glodon.drawingexplorer.activity.GSplashActivity" policy="8">
+      <view id="ae" describe="scale" path="rlView:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="50" marginstart="0" marginend="0" resetflag="1" />
+        <view_policy policytype="margin" range="1" marginleft="0" margintop="0" marginright="0" marginbottom="70" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.plan.kot32.tomatotime" describe="番茄Todo" enable="true">
+    <activity name="com.plan.kot32.tomatotime.activity.MainActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="微博个人banner" path="lock_setting_button:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="110" marginright="12" marginbottom="0" marginstart="0" marginend="12" resetflag="1" />
+      </view>
+      <view id="ae" describe="微博个人banner" path="lock_gradient:-1">
+        <view_policy policytype="size" range="8" width="-3" height="90" resetflag="1" />
+      </view>
+      <view id="ae" describe="微博个人banner" path="enfklrklnre:-1">
+        <view_policy policytype="margin" range="8" marginleft="40" margintop="25" marginright="0" marginbottom="0" marginstart="40" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.gkid.crazyrope" describe="天天跳绳" enable="true">
+    <activity name="com.gkid.crazyrope.ui.login.LogInEntranceActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="ConstraintLayout/iv_wechat:0">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="100" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.gkid.crazyrope.ui.home.HomeActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="cl_empty/iv_empty:-1">
+        <view_policy policytype="scale" range="8" scalex="0.5" scaley="0.5" pivotx="-1.0" pivoty="-1.0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.vphonegaga.titan" enable="true" describe="光速虚拟机">
+    <activity name="com.vphonegaga.titan.homepage.HomePageActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="DecorView:-1">
+        <view_policy policytype="sliding" range="8" height="850" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.intsig.camscanner" describe="扫描全能王" enable="true">
+    <activity name="com.intsig.camscanner.mainmenu.mainactivity.MainActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="微博个人banner" path="tv_cs_protocols_agree:-1">
+        <view_policy policytype="size" range="8" width="-3" height="36" resetflag="1" />
+      </view>
+      <view id="ae" describe="微博个人banner" path="tv_cs_protocols_disagree:-1">
+        <view_policy policytype="size" range="8" width="-3" height="36" resetflag="1" />
+        <view_policy policytype="margin" range="8" marginleft="36" margintop="0" marginright="36" marginbottom="5" marginstart="36" marginend="36" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.dinoenglish.yyb" describe="E英语宝" enable="true">
+    <activity name="com.dinoenglish.yyb.user.UserLoginActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="恐龙形象图片过大挤压底部第三方登录区域出屏" path="ebao_iv:-1">
+        <view_policy policytype="size" range="8" width="-3" height="120" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.hm.hmysct" describe="河马畅听" enable="true">
+    <activity name="cn.audio.novel.ui.MoreActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="LinearLayout/icon:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="70" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.vehicles.activities" describe="车旺大卡" enable="true">
+    <activity name="com.sinoiov.usercenter.sdk.auth.activity.UCenterLoginActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="tv_protocol_tip_ll/cb_protocol_read_agree:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.sankuai.meituan.merchant" describe="美团经营宝" enable="true">
+    <activity name="com.sankuai.merchant.user.EPassportLoginActivityV2" policy="8" embeddingExpand="false">
+      <view id="ae" describe="scale" path="tv_register:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="10" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="ae" describe="scale" path="third_login_layout:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="ae" describe="scale" path="LinearLayout/tv_account_help_center:0">
+        <view_policy policytype="margin" range="8" marginleft="5" margintop="0" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="ae" describe="scale" path="LinearLayout/tv_mobile_help_center:0">
+        <view_policy policytype="margin" range="8" marginleft="5" margintop="0" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="io.dcloud.H576E6CC7" describe="鱼泡直聘" enable="true">
+    <activity name="com.yupao.rn.base.activity.ReactNativeMainActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="DecorView:-1">
+        <view_policy policytype="sliding" range="8" height="800" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.bokecc.dance" enable="true" describe="糖豆">
+    <activity name="com.bokecc.dance.activity.MainActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="微博个人banner" path="main_tab_RadioGroup:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="-40" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.bokecc.dance.activity.BaseSplashActivity" policy="-1" />
+    <activity name="com.bokecc.dance.activity.SplashActivity" policy="-1" />
+  </package>
+  <package name="com.xtc.watch" describe="小天才" enable="true">
+    <activity name="com.xtc.choneclick.activity.AccountVerifyLoginActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="rl_verify_code:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="10" marginright="0" marginbottom="10" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="ae" path="ll_account_password_login:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="20" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.zwcode.p6slite" describe="睿博士" enable="true">
+    <activity name="com.zwcode.p6slite.MainActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="layout_not_device:-1">
+        <view_policy policytype="padding" range="8" paddingleft="20" paddingtop="0" paddingright="0" paddingbottom="0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.zwcode.p6slite.activity.LoginActivity" policy="8" embeddingExpand="false">
+      <view name="LinearLayout" id="read_privacy_layout" describe="fix overlap between privacy and third-party login" path="login_layout/read_privacy_layout:-1">
+        <view_policy policytype="margin" range="8" marginleft="30" margintop="0" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.tvbc.maiduidui" describe="埋堆堆" enable="true">
+    <activity name="com.tvbc.maiduidui.activity.WebActivity" policy="8" embeddingExpand="false">
+      <view id="ae" path="DecorView:-1">
+        <view_policy policytype="sliding" range="8" height="800" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.uu898.uuhavequality" enable="true" optimizeWebView="true" describe="悠悠有品">
+    <activity name="com.uu898.web.JsH5Activity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="微博个人banner" path="webViewContainer/DWebView/a:-1">
+        <view_policy policytype="size" range="8" width="300" height="-3" resetflag="1" />
+        <view_policy policytype="margin" range="8" marginleft="60" margintop="0" marginright="0" marginbottom="0" marginstart="60" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+
+  <package name="tv.danmaku.bili" enable="true" describe="哔哩哔哩">
+    <activity name="com.bilibili.bililive.room.ui.roomv3.LiveRoomActivityV3" policy="9">
+      <view id="RelativeLayout" describe="roundedcorner padding" path="LinearLayout/BatteryView2:0">
+        <view_policy policytype="padding" range="7" paddingleft="0" paddingtop="0" paddingright="50" paddingbottom="0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="tv.danmaku.bili.ui.video.VideoDetailsActivity" policy="9" embeddingExpand="false">
+      <view id="RelativeLayout" describe="roundedcorner padding" path="control_container/PlayerInsetControllerWidget/player_container_phone_info:-1">
+        <view_policy policytype="padding" range="7" paddingleft="0" paddingtop="0" paddingright="50" paddingbottom="0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.bilibili.ship.theseus.detail.UnitedBizDetailsActivity" policy="9" embeddingExpand="false">
+      <view id="RelativeLayout" describe="roundedcorner padding" path="control_container/PlayerInsetControllerWidget/player_container_phone_info:-1">
+        <view_policy policytype="padding" range="7" paddingleft="0" paddingtop="0" paddingright="50" paddingbottom="0" resetflag="1" />
+      </view>
+      <view id="RelativeLayout" describe="roundedcorner padding" path="PlayerInsetControllerWidget/bbplayer_fullscreen_playersetting:-1">
+        <view_policy policytype="padding" range="1" paddingleft="0" paddingtop="0" paddingright="50" paddingbottom="0" resetflag="1" />
+        <view_policy policytype="size" range="1" width="94" height="-3" resetflag="1" />
+        <view_policy policytype="scale" range="1" scalex="0.5" scaley="0.5" pivotx="-1.0" pivoty="-1.0" resetflag="1" />
       </view>
     </activity>
   </package>
@@ -57,16 +819,324 @@
         <view_policy range="3" policytype="column" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
       </view>
     </activity>
+    <activity name="com.baidu.netdisk.ui.cloudp2p.MyQrcodeCommandActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="我的二维码" path="qr_code:-1">
+        <view_policy policytype="size" range="9" width="170" height="170" resetflag="1" />
+        <view_policy policytype="margin" range="9" marginleft="0" margintop="0" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
     <activity name="com.baidu.netdisk.ui.DefaultMainActivity" policy="-1" />
     <activity name="com.baidu.netdisk.ui.account.LoginRegisterActivity" policy="-1" />
     <activity name="com.baidu.sapi2.activity.LoginActivity" policy="-1" />
     <activity name="com.baidu.netdisk.ui.NewQuickSettingsActivity" policy="-1" />
+    <activity name="com.baidu.swan.apps.SwanAppActivity" policy="8" embeddingExpand="false">
+      <view id="se" path="ai_apps_fragment_content/NgWebView:-1">
+        <view_policy policytype="size" range="1" width="400" height="-3" resetflag="1" />
+        <view_policy policytype="margin" range="1" marginleft="230" margintop="0" marginright="230" marginbottom="0" marginstart="230" marginend="230" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.baidu.netdisk.ui.cloudp2p.RichMediaActivity" policy="8" embeddingExpand="false">
+      <view id="se" path="content_webview/NestedNetDiskWebView:-1">
+        <view_policy policytype="margin" range="1" marginleft="230" margintop="0" marginright="230" marginbottom="0" marginstart="230" marginend="230" resetflag="1" />
+        <view_policy policytype="size" range="1" width="400" height="-3" resetflag="1" />
+      </view>
+    </activity>
   </package>
 
   <package name="com.lianjia.beike" enable="true" describe="贝壳找房">
     <activity name="com.lianjia.activity.MainActivity" policy="8">
       <view name="" id="RecyclerView" path="FrameLayout/base_recyclerview:-1">
         <view_policy range="3" policytype="column" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.i61.dengta" enable="true" describe="小灯塔">
+    <activity name="com.i61.dengta.ui.SplashActivity" policy="-1" />
+  </package>
+  <package name="com.wuba" enable="true" describe="58同城">
+    <activity name="com.wuba.home.activity.HomeActivity" policy="8">
+      <view id="ae" describe="首页recycler" path="king_kong_component/ConstraintLayout/LinearLayout/rl_content:-1">
+        <view_policy policytype="size" range="1" width="100" height="100" resetflag="1" />
+      </view>
+      <view id="ae" describe="首页recycler" path="recycler_view_feed:-1">
+        <view_policy policytype="column" range="1" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+      </view>
+      <view id="ae" describe="首页recycler" path="rv_feed_list:-1">
+        <view_policy policytype="column" range="1" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.eastmoney.android.berlin.activity.MainActivity" policy="-1" />
+  </package>
+  <package name="com.tan8" enable="true" describe="弹琴吧">
+    <activity name="com.tan8.ui.SplashActivity" policy="-1" />
+    <activity name="com.tan8.ui.NewVersionGuideActivity" policy="-1" />
+  </package>
+  <package name="com.bilibili.comic" enable="true" describe="哔哩哔哩漫画">
+    <activity name="com.bilibili.comic.splash.view.activity.SplashActivity" policy="-1" />
+    <activity name="com.bilibili.comic.home.view.FlutterMainActivity" policy="-1" />
+  </package>
+  <package name="com.sinyee.babybus.recommendapp" enable="true" describe="宝宝巴士">
+    <activity name="com.sinyee.babybus.recommendapp.home.ui.HomeActivity" policy="8">
+      <view id="ae" describe="七大能力banner图大小" path="SkinCompatFrameLayout/refresh/rv_main/SkinCompatFrameLayout/banner_view/ViewPager2/RecyclerViewImpl:3">
+        <view_policy policytype="size" range="1" width="-3" height="179" resetflag="1" />
+      </view>
+      <view id="ae" describe="七大能力banner图大小" path="SkinCompatFrameLayout/refresh/rv_main/SkinCompatFrameLayout/banner_view/ViewPager2/RecyclerViewImpl:-1">
+        <view_policy policytype="size" range="1" width="-3" height="179" resetflag="1" />
+      </view>
+      <view id="ae" describe="精选banner" path="SkinCompatFrameLayout/banner_view/ViewPager2/RecyclerViewImpl:-1">
+        <view_policy policytype="banner" range="1" paddingleft="171" paddingright="171" height="240" commontype="0" resetflag="1" />
+      </view>
+      <view id="ae" describe="家长页VIP控件" path="ll_vip_area/rv_vip_equity:-1">
+        <view_policy policytype="padding" range="1" paddingleft="20" paddingtop="0" paddingright="0" paddingbottom="0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.sinyee.babybus.recommendapp.privacy.LaunchActivity" policy="-1" />
+    <activity name="com.sinyee.babybus.recommendapp.SplashActivity" policy="-1" />
+    <activity name="com.sinyee.babybus.recommendapp.privacy.LaunchPrivacyActivity" policy="-1" />
+  </package>
+  <package name="com.xs.fm.lite" enable="true" describe="番茄畅听音乐版">
+    <activity name="com.dragon.read.pages.main.MainFragmentActivity" policy="8">
+      <view id="ae" describe="首页列表" path="FrameLayout/ow/e/BookMallRecyclerView:-1">
+        <view_policy policytype="column" range="1" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="1" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.dragon.read.pages.splash.SplashActivity" policy="-1" />
+  </package>
+  <package name="com.qihoo.camera" enable="true" describe="360智慧生活">
+    <activity name="com.qihoo.jia.ui.activity.TabMainActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="主页面RelativeLayout左右padding适配" path="main_pager/LinearLayout/RelativeLayout:-1">
+        <view_policy policytype="padding" range="8" paddingleft="21" paddingtop="0" paddingright="21" paddingbottom="0" resetflag="1" />
+      </view>
+      <view id="web_view" describe="WebView宽度限制" path="main_pager/LinearLayout/RelativeLayout/web_view:-1">
+        <view_policy policytype="size" range="8" width="400" height="-3" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.taobao.etao" enable="true" describe="一淘">
+    <activity name="com.ali.user.mobile.login.ui.UserLoginActivity" policy="8" embeddingExpand="false">
+      <view name="FrameLayout" id="etao_taobao_login_btn" describe="move login btn up" path="aliuser_user_login_ll/etao_taobao_login_btn:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="50" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view name="RelativeLayout" id="aliuser_check_rl" describe="move protocol below bottom area" path="aliuser_user_login_ll/aliuser_check_rl:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="110" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.jdd.motorfans" enable="true" describe="摩托范">
+    <activity name="com.jdd.motorfans.modules.account.login.PhoneFastLoginActivity" policy="8">
+      <view name="LinearLayout" id="fast_login_ll_wx" describe="move wechat login icon up to avoid navbar cutoff" path="fast_login_ll_wx:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="0" marginright="0" marginbottom="20" marginstart="0" marginend="0" resetflag="1" />
+        <view_policy policytype="margin" range="1" marginleft="0" margintop="-60" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.tencent.qqmusic" enable="true" describe="QQ音乐">
+    <activity name="com.tencent.qqmusic.recognizekt.RecognizeActivity" policy="8">
+      <view name="RecognizeAnimView" id="ae" describe="scale缩放+负bottomMargin拉近下方" path="content/RelativeLayout/RelativeLayout/RecognizeAnimView:-1">
+        <view_policy policytype="scale" range="1" scalex="0.65" scaley="0.65" pivotx="-1.0" pivoty="0.0" resetflag="1" />
+        <view_policy policytype="margin" range="1" marginleft="0" margintop="0" marginright="0" marginbottom="-80" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.tencent.qqmusic.activity.base.FragmentActivityWithMinibar" policy="8">
+      <view id="ae" describe="搜索Item" path="RelativeLayout/RecyclerView/RoundedRelativeLayout:-1">
+        <view_policy policytype="size" range="1" width="300" height="-3" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.tencent.qqmusic.activity.AppStarterActivity" policy="-1" />
+    <activity name="com.tencent.qqmusic.activity.baseactivity.StartUpPrivacyPolicyActivity" policy="-1" />
+  </package>
+  <package name="com.duoduo.child.story" enable="true" describe="儿歌多多">
+    <activity name="com.duoduo.child.story.ui.activity.MainActivity" policy="8">
+      <view id="ae" describe="动画片列表" path="content_rv:-1">
+        <view_policy policytype="column" range="1" oldcolumns="2" newcolumns="4" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.duoduo.child.story.ui.activity.SplashActivity" policy="-1" />
+  </package>
+  <package name="com.skyplatanus.crucio" enable="true" describe="快点阅读">
+    <activity name="com.skyplatanus.crucio.feature.home.HomeContainerActivity" policy="-1" />
+  </package>
+  <package name="com.kugou.android.lite" enable="true" describe="酷狗概念版">
+    <activity name="com.kugou.android.app.splash.SplashActivity" policy="-1" />
+    <activity name="com.kugou.common.useraccount.app.KgUserLoginAndRegActivity" policy="-1" />
+    <activity name="com.kugou.android.app.startguide.GuideActivity" policy="-1" />
+    <activity name="com.kugou.android.app.MediaActivity" policy="-1" />
+    <activity name="com.kugou.android.app.setting.YoungModeTipsActivity" policy="-1" />
+  </package>
+  <package name="com.anjuke.android.app" enable="true" describe="安居客">
+    <activity name="com.anjuke.android.app.mainmodule.common.activity.MainTabPageActivityV5" policy="8">
+      <view id="ae" describe="推荐recycler" path="FrameLayout/recycler_view:-1">
+        <view_policy policytype="column" range="1" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.gotokeep.keep" enable="true" describe="Keep">
+    <activity name="com.gotokeep.keep.refactor.business.main.activity.MainActivity" policy="8">
+      <view id="ae" path="containerRoot/refreshLayout/recyclerView:-1">
+        <view_policy policytype="column" range="1" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.gotokeep.keep.splash.SplashActivity" policy="-1" />
+    <activity name="com.gotokeep.keep.fd.business.account.login.LoginMainActivity" policy="-1" />
+  </package>
+  <package name="com.shuqi.controller" enable="true" describe="书旗小说">
+    <activity name="com.shuqi.home.MainActivity" policy="-1" />
+  </package>
+  <package name="cn.damai" enable="true" describe="大麦">
+    <activity name="cn.damai.launcher.splash.SplashMainActivity" policy="-1" />
+    <activity name="cn.damai.homepage.MainActivity" policy="-1" />
+  </package>
+  <package name="com.xuexiaoyi.xxy" enable="true" describe="学小易">
+    <activity name="com.xuexiaoyi.entrance.main.MainActivity" policy="8">
+      <view id="se" describe="拍照搜题image" path="RelativeLayout/LinearLayout/a53:-1">
+        <view_policy policytype="size" range="1" width="156" height="58" resetflag="1" />
+      </view>
+      <view id="se" describe="文字搜题image" path="RelativeLayout/LinearLayout/aco:-1">
+        <view_policy policytype="size" range="1" width="156" height="58" resetflag="1" />
+      </view>
+      <view id="se" describe="文档搜题image" path="RelativeLayout/LinearLayout/pw:-1">
+        <view_policy policytype="size" range="1" width="156" height="58" resetflag="1" />
+      </view>
+      <view id="se" describe="image" path="LinearLayout/a8k/w1:-1">
+        <view_policy policytype="size" range="1" width="-3" height="133" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.xuexiaoyi.entrance.splash.SplashActivity" policy="-1" />
+  </package>
+  <package name="com.zhongduomei.rrmj.society" enable="true" describe="人人视频">
+    <activity name="com.rrtv.rrtvtrunk.main.presentation.EmptyActivity" policy="-1" />
+    <activity name="com.rrtv.rrtvtrunk.main.presentation.MainActivity" policy="-1" />
+  </package>
+  <package name="com.tencent.karaoke" enable="true" describe="全民K歌">
+    <activity name="com.tencent.karaoke.module.splash.ui.SplashBaseActivity" policy="-1" />
+    <activity name="com.tencent.karaoke.module.main.ui.MainTabActivity" policy="-1" />
+    <activity name="com.tencent.karaoke.module.ktvroom.ui.KtvRoomActivityNew" policy="-1" />
+  </package>
+  <package name="com.baidu.wenku" enable="true" describe="百度文库">
+    <activity name="com.baidu.wenku.splash.view.activity.WelcomeActivity" policy="-1" />
+  </package>
+  <package name="com.delivery.aggregator" enable="true" describe="青云聚信">
+    <activity name="com.delivery.aggregator.login.hook.HookEPassportLoginActivity" policy="8" embeddingExpand="false">
+      <view id="account_type_des" describe="描述文字topMargin过大" path="mRootLayout/account_type_des:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="15" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="title_ti" describe="登录方式Tab topMargin过大" path="mRootLayout/title_ti:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="5" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="login_view_pager" describe="ViewPager topMargin过大" path="mRootLayout/login_view_pager:-1">
+        <view_policy policytype="margin" range="8" marginleft="0" margintop="8" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+      <view id="account_login_btn" describe="密码登录按钮被裁切" path="login_view_pager/LinearLayout/account_login_btn:-1">
+        <view_policy policytype="margin" range="8" marginleft="19" margintop="10" marginright="19" marginbottom="0" marginstart="19" marginend="19" resetflag="1" />
+      </view>
+      <view id="mobile_login_btn" describe="验证码登录按钮被裁切" path="login_view_pager/LinearLayout/mobile_login_btn:-1">
+        <view_policy policytype="margin" range="8" marginleft="19" margintop="10" marginright="19" marginbottom="0" marginstart="19" marginend="19" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.dragon.read" enable="true" describe="番茄免费小说">
+    <activity name="com.dragon.read.pages.main.MainFragmentActivity" policy="8" embeddingExpand="false">
+      <view id="RecyclerView" describe="列数" path="FrameLayout/CommonLayout/RecyclerView:-1">
+        <view_policy policytype="column" range="1" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+      </view>
+      <view id="ChildRecyclerView" describe="列数" path="FrameLayout/CommonLayout/ChildRecyclerView:-1">
+        <view_policy policytype="column" range="1" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+      </view>
+      <view id="ChildRecyclerView" describe="列数" path="StaggeredFeedLayout/FrameLayout/ChildRecyclerView:-1">
+        <view_policy policytype="column" range="1" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.smile.gifmaker" enable="true" describe="快手">
+    <activity name="com.yxcorp.gifshow.HomeActivity" policy="8">
+      <view id="ae" describe="快手商城" path="RootNodeView/DynamicNestedRecyclerView:-1">
+        <view_policy policytype="column" range="10" oldcolumns="3" newcolumns="2" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+        <view_policy policytype="column" range="1" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+      </view>
+      <view id="FindDiscoveryRecyclerView" describe="发现页feed2列改3列" path="MortiseRefreshLayout/FindDiscoveryRecyclerView:-1">
+        <view_policy policytype="column" range="1" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+      </view>
+      <view id="CustomRecyclerView" describe="热门页feed2列改3列" path="ForceNestedScrollRefreshLayout/CustomRecyclerView:-1">
+        <view_policy policytype="column" range="1" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+      </view>
+      <view id="ae" describe="更多按钮" path="ConstraintLayout/lv_top_feature_btn:0">
+        <view_policy policytype="padding" range="1" paddingleft="0" paddingtop="22" paddingright="30" paddingbottom="0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.kuaishou.merchant.home2.nex.activity.MerchantHomeNexActivity" policy="8">
+      <view id="recyclerView" describe="快手小店" path="RoundCornerViewLayout/KwaiNestRecyclerView:-1">
+        <view_policy policytype="column" range="10" oldcolumns="3" newcolumns="2" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+        <view_policy policytype="column" range="1" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.kuaishou.nebula" enable="true" describe="快手极速版">
+    <activity name="com.yxcorp.gifshow.HomeActivity" policy="8" embeddingExpand="false">
+      <view id="recycler_view" describe="快手生活" path="MortiseRefreshLayout/FindDiscoveryRecyclerView:-1">
+        <view_policy policytype="column" range="1" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+      </view>
+      <view id="recycler_view" describe="快手同城" path="HomeEnterCoordinatorLayout/NearbyCustomRecycleView:-1">
+        <view_policy policytype="column" range="1" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+      </view>
+      <view id="ae" describe="快手商城" path="RootNodeView/DynamicNestedRecyclerView:-1">
+        <view_policy policytype="column" range="10" oldcolumns="3" newcolumns="2" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+        <view_policy policytype="column" range="1" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+      </view>
+      <view id="ae" describe="更多按钮" path="ConstraintLayout/lv_top_feature_btn:0">
+        <view_policy policytype="padding" range="1" paddingleft="0" paddingtop="22" paddingright="30" paddingbottom="0" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.kuaishou.merchant.home2.nex.activity.MerchantHomeNexActivity" policy="8" embeddingExpand="false">
+      <view id="recyclerView" describe="快手小店" path="RoundCornerViewLayout/KwaiNestRecyclerView:-1">
+        <view_policy policytype="column" range="10" oldcolumns="3" newcolumns="2" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+        <view_policy policytype="column" range="1" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.tencent.mm" enable="true" describe="微信">
+    <activity name="com.tencent.mm.plugin.account.ui.WelcomeActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="内屏登陆页面语言" path="WelcomeSelectView/FrameLayout/FrameLayout/TextView:-1">
+        <view_policy policytype="margin" range="1" marginleft="0" margintop="60" marginright="15" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+        <view_policy policytype="margin" range="2" marginleft="0" margintop="80" marginright="15" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.phoenix.read" describe="红果免费短剧" enable="true">
+    <activity name="com.dragon.read.pages.main.MainFragmentActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="" path="fvo:-1">
+        <view_policy policytype="scale" range="1" scalex="0.7" scaley="0.7" pivotx="-1.0" pivoty="0.0" resetflag="1" />
+        <view_policy policytype="size" range="1" width="-3" height="1006" resetflag="1" />
+      </view>
+    </activity>
+    <activity name="com.dragon.read.component.biz.impl.mine.LoginActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="去除margin" path="ConstraintLayout/AgreementsPoliciesLayout:-1">
+        <view_policy policytype="margin" range="1" marginleft="0" margintop="0" marginright="0" marginbottom="0" marginstart="0" marginend="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.lemon.lv" describe="剪映" enable="true">
+    <activity name="com.vega.main.MainActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="更多侧边栏" path="slide_menu_end/NoScrollConstraintLayout:-1">
+        <view_policy policytype="scale" range="8" scalex="0.85" scaley="0.85" pivotx="950" pivoty="0" resetflag="1" />
+        <view_policy policytype="size" range="8" width="-3" height="750" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.luna.music" enable="true" describe="汽水音乐">
+    <activity name="com.luna.biz.main.main.MainActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="首页列数" path="SmartPreloadRefreshLayout/LunaRecyclerView:-1">
+        <view_policy policytype="column" range="3" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="1" resetflag="1" />
+      </view>
+      <view id="ae" describe="首页列数" path="SmartPreloadRefreshLayout/NestedChildRecyclerView:-1">
+        <view_policy policytype="column" range="3" oldcolumns="2" newcolumns="3" itemdecorationflag="1" multisetflag="0" resetflag="1" />
+      </view>
+    </activity>
+  </package>
+  <package name="com.baidu.searchbox.lite" enable="true" describe="百度极速版">
+    <activity name="com.baidu.searchbox.MainActivity" policy="8" embeddingExpand="false">
+      <view id="ae" describe="游戏tab缩放" path="tabcontent/FrameLayout/FrameLayout/TalosPageContainer:-1">
+        <view_policy policytype="scale" range="1" scalex="0.6" scaley="0.6" pivotx="-1" pivoty="0" resetflag="1" />
+        <view_policy policytype="size" range="1" width="-1" height="920" resetflag="1" />
       </view>
     </activity>
   </package>
@@ -410,15 +1480,6 @@
     </activity>
     <activity name="com.qh.tesla.splash.SplashActivity" policy="-1" />
     <activity name="com.qh.tesla.register.RegisterActivity" policy="-1" />
-  </package>
-  <package name="com.tencent.qqmusic" enable="true" describe="QQ音乐">
-    <activity name="com.tencent.qqmusic.activity.base.FragmentActivityWithMinibar" policy="7">
-      <view id="ae" describe="搜索Item" path="RelativeLayout/RecyclerView/RoundedRelativeLayout:-1">
-        <view_policy policytype="size" range="1" width="300" height="-3" resetflag="1" />
-      </view>
-    </activity>
-    <activity name="com.tencent.qqmusic.activity.AppStarterActivity" policy="-1" />
-    <activity name="com.tencent.qqmusic.activity.baseactivity.StartUpPrivacyPolicyActivity" policy="-1" />
   </package>
   <package name="com.qq.ac.android" enable="true" describe="腾讯动漫">
     <activity name="com.qq.ac.android.main.MainActivity" policy="7">
