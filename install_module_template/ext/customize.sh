@@ -159,7 +159,7 @@ if [ -f "$MODPATH"/verify_functions.sh ]; then
   fi
   # 专版模块判断逻辑
   if type verify_special_rule_pass &>/dev/null; then
-    verify_special_rule_pass
+    verify_special_rule_pass $API
   fi
 fi
 
