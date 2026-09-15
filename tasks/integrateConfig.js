@@ -170,8 +170,8 @@ function copyAutoUiListToCommon(cb) {
 function copyAutoUi2ListToCommon(cb) {
   if (options.use_platform === 'fold' || (options.use_platform === 'pad' && options.mi_os_version >= 2)) {
     return src(`${tempDir}/autoui2_list.xml`)
-    .pipe(gulpIf(buildActionIsActivityEmbedding, dest(`${commonDist}/source/`)))
-    .on("end", cb);
+      .pipe(gulpIf(buildActionIsActivityEmbedding, dest(`${commonDist}/source/`)))
+      .on("end", cb);
   } else {
     cb()
     return;
@@ -242,11 +242,21 @@ function generateEmbeddedSettingConfig(cb) {
     cb()
     return;
   }
-  if (options.mi_os_version < 2) {
+  // ====== 替换这里的平台版本判断 ======
+  const isPad = options.use_platform === 'pad';
+  const isFold = options.use_platform === 'fold';
+  // 非pad、非fold直接跳过
+  if (!isPad && !isFold) {
     cb()
     return;
   }
-  if (options.use_platform !== 'pad') {
+  // fold 必须 mi_os_version >=4
+  if (isFold && options.mi_os_version < 4) {
+    cb()
+    return;
+  }
+  // pad 维持原来 >=2
+  if (isPad && options.mi_os_version < 2) {
     cb()
     return;
   }
@@ -304,7 +314,7 @@ function generateEmbeddedSettingConfig(cb) {
     const defaultSettings = fixedPkg ? fixedPkg.getAttribute("defaultSettings") : null;
     const fullRule = embeddedPkg ? embeddedPkg.getAttribute("fullRule") : null;
 
-    if (fixedPkg && fixedPkg.getAttribute("disable") === "true"){
+    if (fixedPkg && fixedPkg.getAttribute("disable") === "true") {
       return;
     }
 
@@ -344,7 +354,7 @@ function generateEmbeddedSettingConfig(cb) {
       }
     }
     settingRoot.appendChild(setting);
-    
+
   });
 
 
@@ -357,7 +367,7 @@ function generateEmbeddedSettingConfig(cb) {
   fs.writeFileSync(`${commonDist}/source/embedded_setting_config.xml`, formattedXml);
 
   cb()
-  
+
 }
 
 module.exports = series(

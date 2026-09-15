@@ -8,7 +8,8 @@ const installTemplateMap = {
   os3_pad_generic: 'install_module_template/os3_pad_generic/**',
   ext: 'install_module_template/ext/**',
   phone: 'install_module_template/phone/**',
-  fold: 'install_module_template/fold/**'
+  fold: 'install_module_template/fold/**',
+  os4_fold_generic: 'install_module_template/os4_fold_generic/**',
 }
 
 const getInstallTemplateType = function () {
@@ -17,6 +18,9 @@ const getInstallTemplateType = function () {
   }
   if (options.use_platform === 'phone') {
     return 'phone'
+  }
+    if (options.mi_os_version >= 4 && options.use_platform === 'fold') {
+    return 'os4_fold_generic'
   }
   if (options.use_platform === 'fold') {
     return 'fold'

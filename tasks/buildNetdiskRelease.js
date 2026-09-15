@@ -56,60 +56,66 @@ function releaseGeneralTiramisu(cb) {
 
 function releaseFold(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/fold-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/7.小米折叠屏安卓16-17通用版（适配Fold系列）`))
+    .pipe(dest(`${releaseNetdiskDir}/7.小米折叠屏安卓18通用版（适配Fold系列）`))
+    .on('end', cb);
+}
+
+function releaseMixFold(cb) {
+  return src(`${releaseDir}/${moduleConfig.version}/mix-fold-${moduleConfig.version}.zip`)
+    .pipe(dest(`${releaseNetdiskDir}/8.小米折叠屏安卓16-17通用版（适配Mix Fold系列）`))
     .on('end', cb);
 }
 
 function releaseFoldGeneralMiuiAutoUI(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/fold-general-miuiAutoUI-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/8.小米折叠屏安卓13-15通用版（适配Mix Fold系列）`))
+    .pipe(dest(`${releaseNetdiskDir}/9.小米折叠屏安卓13-15通用版（适配Mix Fold系列）`))
     .on('end', cb);
 }
 
 function releasePadByMagicWindow(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-magicWindow-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/9.小米平板安卓11通用版`))
+    .pipe(dest(`${releaseNetdiskDir}/10.小米平板安卓11通用版`))
     .on('end', cb);
 }
 
 function releasHyperOS3BasedOnVanillaIceCream(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-hyperos3-based-on-vanillaIceCream-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/10.小米平板安卓15澎湃3.0专版(仅安卓15澎湃3.0可刷)`))
+    .pipe(dest(`${releaseNetdiskDir}/11.小米平板安卓15澎湃3.0专版(仅安卓15澎湃3.0可刷)`))
     .on('end', cb);
 }
 
 function releasHyperOS2BasedOnVanillaIceCream(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-hyperos2-based-on-vanillaIceCream-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/11.小米平板安卓15澎湃2.0专版(仅安卓15澎湃2.0可刷)`))
+    .pipe(dest(`${releaseNetdiskDir}/12.小米平板安卓15澎湃2.0专版(仅安卓15澎湃2.0可刷)`))
     .on('end', cb);
 }
 
 function releasHyperOS2BasedOnUpsideDownCake(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-hyperos2-based-on-upsideDownCake-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/12.小米平板安卓14澎湃2.0专版(仅安卓14澎湃2.0可刷)`))
+    .pipe(dest(`${releaseNetdiskDir}/13.小米平板安卓14澎湃2.0专版(仅安卓14澎湃2.0可刷)`))
     .on('end', cb);
 }
 
 
 function releasHyperOS1BasedOnUpsideDownCake(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-hyperos1-based-on-upsideDownCake-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/13.小米平板安卓14澎湃1.0专版(仅安卓14澎湃可刷，不支持红米平板)`))
+    .pipe(dest(`${releaseNetdiskDir}/14.小米平板安卓14澎湃1.0专版(仅安卓14澎湃可刷，不支持红米平板)`))
     .on('end', cb);
 }
 
 
 function releasePadByHyperOSBasedOnTiramisu(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-hyperos-based-on-tiramisu-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/14.小米平板5系列安卓13澎湃专版（仅安卓13澎湃可刷）`))
+    .pipe(dest(`${releaseNetdiskDir}/15.小米平板5系列安卓13澎湃专版（仅安卓13澎湃可刷）`))
     .on('end', cb);
 }
 
 function releasePadByMIUIBasedOnTiramisu(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/pad-miui-based-on-tiramisu-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/15.小米平板6系列MIUI14专版（仅MIUI14可刷）`))
+    .pipe(dest(`${releaseNetdiskDir}/16.小米平板6系列MIUI14专版（仅MIUI14可刷）`))
     .on('end', cb);
 }
 
 
 
-module.exports = parallel(releasePad,releasePhone,releasHyperOS1BasedOnUpsideDownCake,releasHyperOS2BasedOnVanillaIceCream,releasHyperOS3BasedOnVanillaIceCream,releasHyperOS2BasedOnUpsideDownCake,releaseFold,releaseFoldGeneralMiuiAutoUI,releasePadByMagicWindow,releaseGeneralBaklava,releaseGeneralVanillaIceCream,releaseGeneralUpsideDownCake,releaseGeneralTiramisu,releasePadByHyperOSBasedOnTiramisu,releasePadByMIUIBasedOnTiramisu)
+module.exports = parallel(releasePad,releasePhone,releasHyperOS1BasedOnUpsideDownCake,releasHyperOS2BasedOnVanillaIceCream,releasHyperOS3BasedOnVanillaIceCream,releasHyperOS2BasedOnUpsideDownCake,releaseFold,releaseMixFold,releaseFoldGeneralMiuiAutoUI,releasePadByMagicWindow,releaseGeneralBaklava,releaseGeneralVanillaIceCream,releaseGeneralUpsideDownCake,releaseGeneralTiramisu,releasePadByHyperOSBasedOnTiramisu,releasePadByMIUIBasedOnTiramisu)

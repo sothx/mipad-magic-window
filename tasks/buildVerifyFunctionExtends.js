@@ -3,47 +3,51 @@ const { options } = require('../config/process.env');
 const { includes } = require('lodash');
 
 const verifyFunctionsExtendsMap = {
-    magicWindow: 'module_src/verify_functions_extends/magicWindow/**',
-    'general-cinnamonBun':'module_src/verify_functions_extends/general-cinnamonBun/**',
-    'general-vanillaIceCream': 'module_src/verify_functions_extends/general-vanillaIceCream/**',
-    'general-tiramisu': 'module_src/verify_functions_extends/general-tiramisu/**',
-    'general-upsideDownCake': 'module_src/verify_functions_extends/general-upsideDownCake/**',
-    'general-baklava': 'module_src/verify_functions_extends/general-baklava/**',
-    'hyperos-based-on-tiramisu': 'module_src/verify_functions_extends/hyperos-based-on-tiramisu/**',
-    'hyperos1-based-on-upsideDownCake': 'module_src/verify_functions_extends/hyperos1-based-on-upsideDownCake/**',
-    'hyperos2-based-on-upsideDownCake': 'module_src/verify_functions_extends/hyperos2-based-on-upsideDownCake/**',
-    'hyperos2-based-on-vanillaIceCream': 'module_src/verify_functions_extends/hyperos2-based-on-vanillaIceCream/**',
-    'hyperos3-based-on-vanillaIceCream': 'module_src/verify_functions_extends/hyperos3-based-on-vanillaIceCream/**',
-    'miui-based-on-tiramisu': 'module_src/verify_functions_extends/miui-based-on-tiramisu/**',
-    'general-phone': 'module_src/verify_functions_extends/general-phone/**',
-    'general-fold': 'module_src/verify_functions_extends/general-fold/**',
+  magicWindow: 'module_src/verify_functions_extends/magicWindow/**',
+  'general-cinnamonBun': 'module_src/verify_functions_extends/general-cinnamonBun/**',
+  'general-vanillaIceCream': 'module_src/verify_functions_extends/general-vanillaIceCream/**',
+  'general-tiramisu': 'module_src/verify_functions_extends/general-tiramisu/**',
+  'general-upsideDownCake': 'module_src/verify_functions_extends/general-upsideDownCake/**',
+  'general-baklava': 'module_src/verify_functions_extends/general-baklava/**',
+  'hyperos-based-on-tiramisu': 'module_src/verify_functions_extends/hyperos-based-on-tiramisu/**',
+  'hyperos1-based-on-upsideDownCake': 'module_src/verify_functions_extends/hyperos1-based-on-upsideDownCake/**',
+  'hyperos2-based-on-upsideDownCake': 'module_src/verify_functions_extends/hyperos2-based-on-upsideDownCake/**',
+  'hyperos2-based-on-vanillaIceCream': 'module_src/verify_functions_extends/hyperos2-based-on-vanillaIceCream/**',
+  'hyperos3-based-on-vanillaIceCream': 'module_src/verify_functions_extends/hyperos3-based-on-vanillaIceCream/**',
+  'miui-based-on-tiramisu': 'module_src/verify_functions_extends/miui-based-on-tiramisu/**',
+  'general-phone': 'module_src/verify_functions_extends/general-phone/**',
+  'general-fold': 'module_src/verify_functions_extends/general-fold/**',
+  'general-mix-fold': 'module_src/verify_functions_extends/general-mix-fold/**',
 }
 
 const buildVerifyFunctionsExtendsType = function () {
-    if (options.use_platform === 'phone') {
-        return 'general-phone'
-    }
+  if (options.use_platform === 'phone') {
+    return 'general-phone'
+  }
+  if (options.use_platform === 'fold' && options.mi_os_version >= 4) {
+    return 'general-fold'
+  }
   if (options.use_platform === 'fold') {
-     return 'general-fold'
-   }
-    if (['magicWindow'].includes(options.use_mode)) {
+    return 'general-mix-fold'
+  }
+  if (['magicWindow'].includes(options.use_mode)) {
 
-        return 'magicWindow'
-    }
-    if (options.use_platform === 'pad' && options.use_compatibility === '' && !options.use_ext) {
-        return 'general-cinnamonBun'
-    }
-    if (['general-tiramisu','general-vanillaIceCream','general-upsideDownCake','hyperos-based-on-tiramisu','hyperos1-based-on-upsideDownCake','hyperos2-based-on-vanillaIceCream','hyperos3-based-on-vanillaIceCream','hyperos2-based-on-upsideDownCake','miui-based-on-tiramisu','general-baklava'].includes(options.use_compatibility)) {
-        return options.use_compatibility
-    }
-    return false;
+    return 'magicWindow'
+  }
+  if (options.use_platform === 'pad' && options.use_compatibility === '' && !options.use_ext) {
+    return 'general-cinnamonBun'
+  }
+  if (['general-tiramisu', 'general-vanillaIceCream', 'general-upsideDownCake', 'hyperos-based-on-tiramisu', 'hyperos1-based-on-upsideDownCake', 'hyperos2-based-on-vanillaIceCream', 'hyperos3-based-on-vanillaIceCream', 'hyperos2-based-on-upsideDownCake', 'miui-based-on-tiramisu', 'general-baklava'].includes(options.use_compatibility)) {
+    return options.use_compatibility
+  }
+  return false;
 }
 
 module.exports = async function buildVerifyFunctionsExtends(cb) {
-    if (!buildVerifyFunctionsExtendsType()) {
-        cb()
-    }
-    return src(verifyFunctionsExtendsMap[buildVerifyFunctionsExtendsType()])
-        .pipe(dest('dist'))
-        .on('end', cb);
+  if (!buildVerifyFunctionsExtendsType()) {
+    cb()
+  }
+  return src(verifyFunctionsExtendsMap[buildVerifyFunctionsExtendsType()])
+    .pipe(dest('dist'))
+    .on('end', cb);
 }

@@ -11,7 +11,7 @@ const adaptiveHyperOS4 = require('./tasks/adaptiveHyperOS4');
 const adaptiveHyperOS3 = require('./tasks/adaptiveHyperOS3');
 const adaptiveHyperOS2 = require('./tasks/adaptiveHyperOS2');
 const adaptiveHyperOS1 = require('./tasks/adaptiveHyperOS1');
-const adaptivePlatformToFold = require('./tasks/adaptivePlatformToFold');
+const adaptivePlatformToMixFold = require('./tasks/adaptivePlatformToMixFold');
 const buildExtConfig = require('./tasks/buildExtConfig');
 const buildCompatibilityExtends = require('./tasks/buildCompatibilityExtends')
 const buildWebUI = require('./tasks/buildWebUI')
@@ -34,7 +34,7 @@ const buildTasks = series(
   buildCompatibilityExtends,
   buildVerifyFunctionExtends,
   buildEjsTemplate,
-  adaptivePlatformToFold,
+  adaptivePlatformToMixFold,
   adaptiveHyperOS1,
   adaptiveHyperOS2,
   adaptiveHyperOS3,

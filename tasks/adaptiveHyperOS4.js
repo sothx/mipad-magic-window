@@ -11,7 +11,7 @@ const buildActionIsOS4Pad = function () {
   const use_platform = options.use_platform;
   const use_mode = options.use_mode;
   const mi_os_version = options.mi_os_version;
-  return use_platform === 'pad' && use_mode === 'activityEmbedding' && mi_os_version >= 4;
+  return use_mode === 'activityEmbedding' && mi_os_version >= 4;
 }
 
 // 缓存 embedded_rules 中包含非空 fullRule 属性的包名集合
@@ -24,6 +24,7 @@ function adaptiveEM(cb) {
   return src('temp/embedded_rules_list.xml')
     .pipe(gulpIf(buildActionIsOS4Pad, gulpXML({
       callback: function (result) {
+        const use_platform = options.use_platform;
         const doc = new DOMParser().parseFromString(result, 'text/xml');
         const packageNodes = doc.getElementsByTagName('package');
 
@@ -33,11 +34,17 @@ function adaptiveEM(cb) {
           const pkgNode = packageNodes[i];
           const pkgName = pkgNode.getAttribute('name');
           const fullRuleVal = pkgNode.getAttribute('fullRule');
+          const splitMinWidthVal = pkgNode.getAttribute('splitMinWidth');
 
           // 包名存在 + fullRule 属性存在且值非空
-          if (pkgName && fullRuleVal !== null && fullRuleVal.trim() !== '') {
+          if (use_platform === 'tablet' && pkgName && fullRuleVal !== null && fullRuleVal.trim() !== '') {
             fullRulePackages.add(pkgName);
           }
+
+          if (use_platform === 'fold' && pkgName && splitMinWidthVal !== null && splitMinWidthVal.trim() !== '') {
+            pkgNode.removeAttribute('splitMinWidth');
+          }
+
         }
 
         return new XMLSerializer().serializeToString(doc);
@@ -56,6 +63,7 @@ function adaptiveFO(cb) {
       callback: function (result) {
         const doc = new DOMParser().parseFromString(result, 'text/xml');
         const packageNodes = doc.getElementsByTagName('package');
+        const use_platform = options.use_platform;
 
         for (let i = packageNodes.length - 1; i >= 0; i--) {
           const pkgNode = packageNodes[i];
@@ -63,7 +71,7 @@ function adaptiveFO(cb) {
           const isDisable = pkgNode.getAttribute('disable') === 'true';
 
           // 同时满足：embedded 有非空 fullRule + 当前节点 disable=true
-          if (fullRulePackages.has(pkgName) && isDisable) {
+          if (fullRulePackages.has(pkgName) && isDisable && use_platform === 'tablet') {
             // 移除 disable 属性
             pkgNode.removeAttribute('disable');
             // setAttribute 原生支持「不存在则添加、存在则覆盖更新」

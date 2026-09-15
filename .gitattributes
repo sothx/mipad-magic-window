@@ -50,6 +50,9 @@ install_module_template/os3_pad_generic/source/os2_system_app_optimize/** text e
 install_module_template/os3_pad_generic/source/os2_third_party_app_optimize/** text eol=lf
 install_module_template/phone/META-INF/** text eol=lf
 install_module_template/fold/META-INF/** text eol=lf
+install_module_template/os4_fold_generic/META-INF/** text eol=lf
+install_module_template/os4_fold_generic/source/os2_system_app_optimize/** text eol=lf
+install_module_template/os4_fold_generic/source/os2_third_party_app_optimize/** text eol=lf
 
 # xml配置生成
 module_src/* text eol=lf
