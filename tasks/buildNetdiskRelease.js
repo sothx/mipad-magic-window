@@ -117,5 +117,14 @@ function releasePadByMIUIBasedOnTiramisu(cb) {
 }
 
 
+const isGithubActions = !!process.env.GITHUB_ACTIONS;
 
-module.exports = parallel(releasePad,releasePhone,releasHyperOS1BasedOnUpsideDownCake,releasHyperOS2BasedOnVanillaIceCream,releasHyperOS3BasedOnVanillaIceCream,releasHyperOS2BasedOnUpsideDownCake,releaseFold,releaseMixFold,releaseFoldGeneralMiuiAutoUI,releasePadByMagicWindow,releaseGeneralBaklava,releaseGeneralVanillaIceCream,releaseGeneralUpsideDownCake,releaseGeneralTiramisu,releasePadByHyperOSBasedOnTiramisu,releasePadByMIUIBasedOnTiramisu)
+const allReleaseTasks = parallel(releasePad,releasePhone,releasHyperOS1BasedOnUpsideDownCake,releasHyperOS2BasedOnVanillaIceCream,releasHyperOS3BasedOnVanillaIceCream,releasHyperOS2BasedOnUpsideDownCake,releaseFold,releaseMixFold,releaseFoldGeneralMiuiAutoUI,releasePadByMagicWindow,releaseGeneralBaklava,releaseGeneralVanillaIceCream,releaseGeneralUpsideDownCake,releaseGeneralTiramisu,releasePadByHyperOSBasedOnTiramisu,releasePadByMIUIBasedOnTiramisu)
+
+module.exports = function(cb) {
+  if (isGithubActions) {
+    console.log("Detected GitHub Actions, skip netdisk copy tasks");
+    return cb();
+  }
+  return allReleaseTasks(cb);
+}
