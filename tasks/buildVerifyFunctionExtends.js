@@ -17,7 +17,7 @@ const verifyFunctionsExtendsMap = {
   'miui-based-on-tiramisu': 'module_src/verify_functions_extends/miui-based-on-tiramisu/**',
   'general-phone': 'module_src/verify_functions_extends/general-phone/**',
   'general-fold': 'module_src/verify_functions_extends/general-fold/**',
-  'general-mix-fold': 'module_src/verify_functions_extends/general-mix-fold/**',
+  'general-mixFold': 'module_src/verify_functions_extends/general-mixFold/**',
 }
 
 const buildVerifyFunctionsExtendsType = function () {
@@ -28,7 +28,7 @@ const buildVerifyFunctionsExtendsType = function () {
     return 'general-fold'
   }
   if (options.use_platform === 'fold') {
-    return 'general-mix-fold'
+    return 'general-mixFold'
   }
   if (['magicWindow'].includes(options.use_mode)) {
 

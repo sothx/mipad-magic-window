@@ -56,13 +56,13 @@ function releaseGeneralTiramisu(cb) {
 
 function releaseFold(cb) {
   return src(`${releaseDir}/${moduleConfig.version}/fold-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/7.小米折叠屏安卓18通用版（适配Fold系列）`))
+    .pipe(dest(`${releaseNetdiskDir}/7.小米折叠屏安卓17通用版（适配Fold系列）`))
     .on('end', cb);
 }
 
 function releaseMixFold(cb) {
-  return src(`${releaseDir}/${moduleConfig.version}/mix-fold-${moduleConfig.version}.zip`)
-    .pipe(dest(`${releaseNetdiskDir}/8.小米折叠屏安卓16-17通用版（适配Mix Fold系列）`))
+  return src(`${releaseDir}/${moduleConfig.version}/fold-general-mixFold-${moduleConfig.version}.zip`)
+    .pipe(dest(`${releaseNetdiskDir}/8.小米折叠屏安卓16通用版（适配Mix Fold系列）`))
     .on('end', cb);
 }
 

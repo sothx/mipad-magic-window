@@ -50,11 +50,11 @@ jobs:
           path: "dist/**"
           overwrite: true
 
-      - name: Build Mix Fold
+      - name: Build Fold Compatibility Use GeneralMixFold
         run: |
-          npm run build:mix-fold
+          npm run build:fold-compatibility=general-mixFold
 
-      - name: Upload Fold Release Zip
+      - name: Upload Fold Compatibility Use GeneralMixFold Release Zip
         uses: actions/upload-artifact@v4
         with:
           name: mix-fold-${{ env.VERSION }}

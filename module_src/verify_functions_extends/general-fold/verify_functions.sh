@@ -1,5 +1,25 @@
 # shellcheck disable=SC2148
 verify_android_api_has_pass() {
+  api_num=$(printf "%d" "$1")
+  if [[ "$api_num" -ne 37 ]]; then
+    ui_print "*********************************************"
+    ui_print "- 模块仅支持Android 17，请重新选择正确版本的模块QwQ！！！"
+    ui_print "- 基于 Android 16的Hyper OS 4请安装安卓16通用版，不适用于该版本！！！"
+    ui_print "- 您可以选择强制安装Android版本不受支持的模块，但可能导致系统出现各种异常，是否继续？"
+    ui_print "  音量+ ：哼，我偏要装(强制安装)"
+    ui_print "  音量- ：否"
+    ui_print "*********************************************"
+    key_check
+    if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+      ui_print "*********************************************"
+      ui_print "- 你选择了强制安装Android版本不受支持的模块！！！"
+      ui_print "*********************************************"
+    else
+      ui_print "*********************************************"
+      ui_print "- 请重新选择正确版本的模块QwQ！！！"
+      abort "*********************************************"
+    fi
+  fi
   local muiltdisplayType=$(getprop persist.sys.muiltdisplay_type)
   if [[ "$muiltdisplayType" != 2 ]]; then
     ui_print "*********************************************"
@@ -67,5 +87,34 @@ verify_special_rule_pass() {
       ui_print "- Hyper OS 4 需要安装该LSPosed模块才能修复应用横屏布局和应用布局优化不生效的问题"
       ui_print "*********************************************"
     fi
+  fi
+
+  if [[ -z "$sothx_disabled_os2_install_module_tips" ]]; then
+    ui_print "*********************************************"
+    ui_print "- 感谢使用<完美横屏应用计划>Hyper OS 4.0版本~"
+    ui_print "- 请了解以下使用须知："
+    ui_print "- 1.Hyper OS 4.0的模块必须搭配Web UI使用~"
+    ui_print "- 2.在[折叠屏专区-应用显示布局]所做的任何修改会在重启后丢失~"
+    ui_print "- 3.如需修改应用横屏适配，请前往Web UI进行修改~"
+    ui_print "- 4.可前往[模块设置-模块使用须知]，禁用该提醒"
+    ui_print "- (Tips:请随意选择，不影响模块安装过程~)"
+    ui_print "  音量+ ：已了解使用须知"
+    ui_print "  音量- ：已了解使用须知"
+    ui_print "*********************************************"
+    key_check
+    if [[ "$keycheck" == "KEY_VOLUMEUP" ]]; then
+      ui_print "*********************************************"
+      ui_print "- 正在进入模块安装流程~"
+      ui_print "*********************************************"
+    else
+      ui_print "*********************************************"
+      ui_print "- 正在进入模块安装流程~"
+      ui_print "*********************************************"
+    fi
+  else
+    ui_print "*********************************************"
+    ui_print "- 您已选择跳过模块使用须知~"
+    add_lines "ro.sothx.disabled_os2_install_module_tips=true" "$MODPATH"/system.prop
+    ui_print "*********************************************"
   fi
 }
