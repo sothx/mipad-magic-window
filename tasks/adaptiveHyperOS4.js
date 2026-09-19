@@ -11,7 +11,7 @@ const buildActionIsOS4Pad = function () {
   const use_platform = options.use_platform;
   const use_mode = options.use_mode;
   const mi_os_version = options.mi_os_version;
-  return use_mode === 'activityEmbedding' && mi_os_version >= 4;
+  return ['pad','fold'].includes(use_platform) &&  use_mode === 'activityEmbedding' && mi_os_version >= 4;
 }
 
 // 缓存 embedded_rules 中包含非空 fullRule 属性的包名集合
@@ -37,7 +37,7 @@ function adaptiveEM(cb) {
           const splitMinWidthVal = pkgNode.getAttribute('splitMinWidth');
 
           // 包名存在 + fullRule 属性存在且值非空
-          if (use_platform === 'tablet' && pkgName && fullRuleVal !== null && fullRuleVal.trim() !== '') {
+          if (use_platform === 'pad' && pkgName && fullRuleVal !== null && fullRuleVal.trim() !== '') {
             fullRulePackages.add(pkgName);
           }
 
@@ -71,7 +71,7 @@ function adaptiveFO(cb) {
           const isDisable = pkgNode.getAttribute('disable') === 'true';
 
           // 同时满足：embedded 有非空 fullRule + 当前节点 disable=true
-          if (fullRulePackages.has(pkgName) && isDisable && use_platform === 'tablet') {
+          if (fullRulePackages.has(pkgName) && isDisable && use_platform === 'pad') {
             // 移除 disable 属性
             pkgNode.removeAttribute('disable');
             // setAttribute 原生支持「不存在则添加、存在则覆盖更新」
