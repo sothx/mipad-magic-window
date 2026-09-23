@@ -1992,7 +1992,11 @@
   <package name="cn.ieway.evmirror" relaunch="false" ratio="1.5" supportFullSize="true" />
   <package name="com.jd.jdlogistic" relaunch="true" ratio="1.1" supportFullSize="true" />
   <package name="com.yek.android.kfc.activitys" supportModes="full,fo" defaultSettings="fo" relaunch="true" ratio="1.5" supportFullSize="true" />
+  <%_ if (['fold'].includes(platform) && Number(mi_os_version) >= 4) { _%>
+  <package name="com.taobao.idlefish" ratio="1.5" supportModes="full,fo" supportFullSize="true" relaunch="true" />
+  <%_ } else { _%>
   <package name="com.taobao.idlefish" ratio="1.5" supportModes="full,fo" defaultSettings="fo" supportFullSize="true" relaunch="true" />
+  <%_ } _%>
   <%_ if (Number(mi_os_version) >= 2) { _%>
   <package name="windinfo.android" supportModes="full,fo" defaultSettings="full" isShowDivider="true" skipSelfAdaptive="true" supportFullSize="true" />
   <%_ } else { _%>
